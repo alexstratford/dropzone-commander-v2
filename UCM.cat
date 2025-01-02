@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7504-b7a2-cf56-9902" name="UCM_New" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7504-b7a2-cf56-9902" name="United Colonies Of Mankind" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>UCM for v2.2 of Dropzone Commander</comment>
   <sharedSelectionEntries>
     <selectionEntry id="d5d1-cc2e-0f55-1c0c" name="Condor Dropship" publicationId="0a0b-b837-fa34-a21d" page="38" hidden="false" collective="false" import="true" type="unit">
