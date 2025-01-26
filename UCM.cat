@@ -346,33 +346,6 @@
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Limited-2</characteristic>
               </characteristics>
-              <comment>Left</comment>
-            </profile>
-            <profile name="Minigun Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f7be-194a-56c2-2088" publicationId="0a0b-b837-fa34-a21d" page="6">
-              <characteristics>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
-              </characteristics>
-              <comment>Right</comment>
-            </profile>
-            <profile name="Minigun Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f7be-194a-56c2-2088" publicationId="0a0b-b837-fa34-a21d" page="6">
-              <characteristics>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
-              </characteristics>
-              <comment>Right</comment>
             </profile>
           </profiles>
           <constraints>
@@ -393,9 +366,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fde-2b9e-0b06-0a59" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b87-a0ac-5ce9-92a3" includeChildSelections="false"/>
           </constraints>
-          <comment>F/S</comment>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missile Battery" hidden="false" id="5708-d570-3790-a609" collective="true" flatten="false">
           <profiles>
             <profile name="SMG Special" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1743-4d8d-f87e-f752" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
@@ -482,7 +452,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="570c-e659-2ab5-592d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c46-f787-42a0-f714" includeChildSelections="false"/>
           </constraints>
-          <comment>F 24&quot; </comment>
+          <comment>F 24&quot;</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="AA Battery" hidden="false" id="8af3-b7bf-054c-6211" collective="true" flatten="false">
           <profiles>
@@ -554,9 +524,10 @@
             <categoryLink name="Command" hidden="false" id="6205-745d-4aca-16c3" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Kodiak Command ACV" hidden="false" id="aa56-0ee3-519b-f563">
+            <selectionEntry type="model" import="true" name="Kodiak Command ACV" hidden="false" id="aa56-0ee3-519b-f563" collective="false">
               <entryLinks>
                 <entryLink import="true" name="Orbital Strike" hidden="false" id="4eb9-943a-e1c7-5211" type="selectionEntry" targetId="b205-7170-fa0f-d817"/>
+                <entryLink import="true" name="Commander" hidden="false" id="7a58-ab37-49e0-0537" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="297d-e7fc-d4d4-e6ab" includeChildSelections="false"/>
@@ -599,6 +570,7 @@
                 <entryLink import="true" name="AA Battery" hidden="false" id="f68c-5841-2b4d-ce40" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
                 <entryLink import="true" name="Minigun Triad" hidden="false" id="9ebd-45c7-2f07-bc26" type="selectionEntry" targetId="e2e7-cf48-e7af-2d71"/>
                 <entryLink import="true" name="Missile Battery" hidden="false" id="0f81-3c23-92d7-bd5e" type="selectionEntry" targetId="5708-d570-3790-a609"/>
+                <entryLink import="true" name="Commander" hidden="false" id="5aa6-57e1-ec05-387b" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="d5e9-24c1-7af5-34af" includeChildSelections="false"/>
@@ -615,8 +587,7 @@
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">Self-Repair
-
-When this unit is destroyed, instead of exploding it lands on the closest available spot. It cannot be damaged for the rest of the round in any way. In the round up phase, roll a dice. On a 1-3 it is destroyed. Ond a 4-5 it replenishes 2 Damage Points, and on a 6 it replenishes 3 Damage Points.</characteristic>
+</characteristic>
                     <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1</characteristic>
                   </characteristics>
                 </profile>
@@ -624,6 +595,12 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
               <costs>
                 <cost name="pts" typeId="points" value="190"/>
               </costs>
+              <rules>
+                <rule name="Self-Repair" id="2f3c-eefe-b341-06d6" hidden="false">
+                  <description>When this unit is destroyed, instead of exploding it lands on the closest available spot. It cannot be damaged for the rest of the round in any way. In the round up phase, roll a dice. On a 1-3 it is destroyed. Ond a 4-5 it replenishes 2 Damage Points, and on a 6 it replenishes 3 Damage Points.
+</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -635,6 +612,7 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
             <selectionEntry type="model" import="true" name="Wolf Command LAV" hidden="false" id="29ea-5d2e-eaa7-b47c">
               <entryLinks>
                 <entryLink import="true" name="Wolf Missiles" hidden="false" id="5d65-fe4b-26bd-63b7" type="selectionEntry" targetId="ebb6-06dd-d92d-43b0"/>
+                <entryLink import="true" name="Commander" hidden="false" id="d121-f372-df8a-f379" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="cf03-9192-39dc-e9f3" includeChildSelections="false"/>
@@ -900,11 +878,11 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
             <selectionEntry type="model" import="true" name="Albatross" hidden="false" id="22f7-2248-475e-e653" publicationId="0a0b-b837-fa34-a21d" page="39" collective="false">
               <costs>
                 <cost name="pts" typeId="points" value="60"/>
-                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-18"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
+                <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
               </costs>
               <categoryLinks>
                 <categoryLink name="Auxiliary" hidden="false" id="d9b1-c1d6-1b24-9242" targetId="de27-8358-5d78-6eeb" primary="true"/>
