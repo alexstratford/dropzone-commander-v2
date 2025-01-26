@@ -515,6 +515,116 @@
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gatling Gun" hidden="false" id="6d8c-16ac-5f90-bb18" collective="true" flatten="false">
+          <profiles>
+            <profile name="Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4b99-a76e-eac7-4224" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6898-ecfe-1ea4-3a3d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca75-6bc4-400c-1117" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Point Defence Launchers" hidden="false" id="b7fc-1bab-f74b-53e1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c60-34c9-a45d-3826" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b71-3705-de1b-5310" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Point Defence Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d424-7e32-65de-2f2e">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="0705-094a-151a-1f4c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Penetrative" id="e64e-a98c-dbdf-80db" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="adf3-9f68-da71-728c" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="07e0-c54e-5008-b045" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4e-01d1-42b7-1a9c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cea6-1eef-96f9-323e" includeChildSelections="false"/>
+          </constraints>
+          <comment>F/S (R) 24&quot;</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="9eb4-6880-7782-1e2f" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a4e2-c021-f933-26a0" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6491-2f4a-2896-f71b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f0-e63a-a617-8705" includeChildSelections="false"/>
+          </constraints>
+          <comment>F/S (L) 24&quot;</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Golden Arrow" hidden="false" id="978f-a5da-4cad-c695">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ce1-49b0-7402-d30f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d6a-6f05-8390-c1ad" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Golden Arrow" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1847-e282-b7c8-25b3">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">15&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Focus-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="3440-5d71-726a-6c6c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Focus" id="ed41-dcb8-4c15-04d5" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="a6d2-8eb7-1cb3-86bc">
@@ -586,8 +696,7 @@
                     <characteristic name="Points" typeId="506f696e747323232344415441232323">190</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Self-Repair
-</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
                     <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1</characteristic>
                   </characteristics>
                 </profile>
@@ -597,8 +706,7 @@
               </costs>
               <rules>
                 <rule name="Self-Repair" id="2f3c-eefe-b341-06d6" hidden="false">
-                  <description>When this unit is destroyed, instead of exploding it lands on the closest available spot. It cannot be damaged for the rest of the round in any way. In the round up phase, roll a dice. On a 1-3 it is destroyed. Ond a 4-5 it replenishes 2 Damage Points, and on a 6 it replenishes 3 Damage Points.
-</description>
+                  <description>When this unit is destroyed, instead of exploding it lands on the closest available spot. It cannot be damaged for the rest of the round in any way. In the round up phase, roll a dice. On a 1-3 it is destroyed. Ond a 4-5 it replenishes 2 Damage Points, and on a 6 it replenishes 3 Damage Points.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -791,7 +899,7 @@
             <categoryLink name="Support" hidden="false" id="f224-cd57-d5ca-1c21" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Rapier AA Tank" hidden="false" id="e8f8-6ee6-12f5-8330">
+            <selectionEntry type="model" import="true" name="Rapier AA Tank" hidden="false" id="e8f8-6ee6-12f5-8330" collective="false">
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="unit" shared="true" id="3c57-3578-64de-12bc" includeChildSelections="false"/>
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f923-e741-4031-89ab" includeChildSelections="false"/>
@@ -1065,6 +1173,48 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Katana Light Tank" hidden="false" id="d060-164a-b775-09d9">
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="f779-d75b-cdc4-fbe8" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Katana Light Tank" hidden="false" id="9962-12c3-a361-4d9a" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="89b0-c796-9dcb-c29e" includeChildSelections="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="edf0-d924-b399-a911" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Katana Light Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="6f8e-3347-c37a-e38c">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Standard</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">3-9</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Katana Weapon Selection" hidden="false" id="bf60-cfb3-2f71-ebac" type="selectionEntryGroup" targetId="39c7-930f-a28e-e4f1" collective="true"/>
+              </entryLinks>
+              <rules>
+                <rule name="Smoke Launchers" id="cf15-c618-13dd-e3cd" hidden="false">
+                  <description>Instead of making a Shooting action, this squad may Launch Smoke. Until the end of the round, weapons targeting this squad and other non-Behemoth units within 2” of any unit in this squad suffer a +2 Accuracy modifier.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="c182-e034-7b11-17c0">
@@ -1109,6 +1259,94 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ferrum Drone Base" hidden="false" id="4e8c-4552-f181-62dc">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ferrum Drone Base" hidden="false" id="9a5a-ea06-f2b9-0380">
+          <costs>
+            <cost name="pts" typeId="points" value="155"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="18"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Point Defence Launchers" hidden="false" id="5a60-66f9-ed67-9636" type="selectionEntry" targetId="b7fc-1bab-f74b-53e1"/>
+            <entryLink import="true" name="Commander" hidden="false" id="2754-efe8-ae13-1b6c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+            <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e5fb-cdaa-be6d-e308" type="selectionEntry" targetId="9eb4-6880-7782-1e2f"/>
+            <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e39b-f355-b2aa-ad87" type="selectionEntry" targetId="adf3-9f68-da71-728c"/>
+            <entryLink import="true" name="Starsprite Drones" hidden="false" id="14fb-4883-cfce-ddec" type="selectionEntry" targetId="3bb2-de1a-3350-eb97">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="725b-6cb6-e837-82d8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="725b-6cb6-e837-82d8-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Ferrum Drone base" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="79f1-fe83-34d2-97ca">
+              <characteristics>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">7</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
+                <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Large</characteristic>
+                <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Drone Base" id="e350-4f04-6ed2-5ac2" hidden="false">
+              <description>At any point during this unit’s activation it may launch 4 Starsprite Drones. These Starsprite Drones are placed in a squad on the board, following disembarking rules as if this unit was their Transport.
+
+
+The Drone Base can do this each turn, with each new squad of Starsprite Drones operating individually, as part of this unit’s Battlegroup. However, no more than 2 squads of Starsprite Drones may be in play at any time for each Ferrum Drone Base on the board.
+
+
+If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casualties immediately until there are no more than 2 squads per Ferrum Drone Base.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10f4-6d3a-d81e-1928" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ec5-4d2f-27e2-a2c9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ed7f-0593-2e55-430d" id="4451-214c-2c29-e177" primary="true" name="Command"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Starsprite Drones" hidden="false" id="3bb2-de1a-3350-eb97">
+      <categoryLinks>
+        <categoryLink name="Scout" hidden="false" id="5f74-b57e-fd85-8422" targetId="5f13-c39f-577a-8947" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Starsprite Drones" hidden="false" id="8cf7-8d90-45fa-042a">
+          <profiles>
+            <profile name="Starsprite Drones" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="b5fd-5302-449f-3492">
+              <characteristics>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">8</characteristic>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">30&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft-S</characteristic>
+                <characteristic name="Category" typeId="43617465676f727923232344415441232323">Scout</characteristic>
+                <characteristic name="Squad Size" typeId="5.326432323234442e+25">4</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Golden Arrow" hidden="false" id="4e6f-11ad-1230-8313" type="selectionEntry" targetId="978f-a5da-4cad-c695"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="UCM Stat Cards" id="0a0b-b837-fa34-a21d" hidden="false" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/UCM_Stat_Cards_240501.pdf?v=1714558426"/>
@@ -1129,6 +1367,8 @@
     <entryLink import="true" name="Gladius Heavy Tank" hidden="false" id="cedf-2c9e-fa85-9ce8" targetId="44f0-a486-d84c-9fdf" type="selectionEntry"/>
     <entryLink import="true" name="Vulture Dropship" hidden="false" id="3e5c-294b-33bd-9b20" targetId="b54c-7b62-f1a9-b869" type="selectionEntry"/>
     <entryLink import="true" name="Vulture Troopship" hidden="false" id="9b61-b491-5e7c-8cd8" targetId="4fb2-ef7e-faa4-6e75" type="selectionEntry"/>
+    <entryLink import="true" name="Katana Light Tank" hidden="false" id="989f-ec17-998f-e406" type="selectionEntry" targetId="d060-164a-b775-09d9"/>
+    <entryLink import="true" name="Ferrum Drone Base" hidden="false" id="a5e7-7823-5e20-cdaf" targetId="4e8c-4552-f181-62dc" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Light_Transport" id="29a2-235e-6304-0a86" hidden="false"/>
@@ -1192,6 +1432,59 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec5e-9949-dda6-1f7a" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a30-784b-2a74-0530" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Katana Weapon Selection" id="39c7-930f-a28e-e4f1" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="554b-1354-23ec-fff8" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="babb-3109-8615-645c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7853-cf76-16c3-89ec">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="f200-fbb3-e26d-3989" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Cannon" hidden="false" id="1d0a-5523-6d4b-bf64" collective="true">
+          <profiles>
+            <profile name="Twin Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a788-9907-0dd8-0072">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b85-74fa-a042-9267" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1455-7c47-ab79-d35d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1455-7c47-ab79-d35d"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ecb-4f2e-2337-f48d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ecb-4f2e-2337-f48d-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
