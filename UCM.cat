@@ -409,6 +409,78 @@
             </infoLink>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SMGs, Assault Grenades" hidden="false" id="78c0-b1d5-2689-52b6" page="" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fde-2b9e-0b06-0a59" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b87-a0ac-5ce9-92a3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="SMG Special" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1743-4d8d-f87e-f752" publicationId="0a0b-b837-fa34-a21d" page="9">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Assault Grenades" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0d69-17b0-5f96-676f" publicationId="0a0b-b837-fa34-a21d" page="9">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="SMG Close" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9e34-ba52-6e69-5110" publicationId="0a0b-b837-fa34-a21d" page="9">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="6c57-bfe9-ee16-3993" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
+              <modifiers>
+                <modifier type="set" value="Reduced-1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="0a49-15d5-bc7b-b079" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="de70-3973-1ddb-a52c" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff6d-cea9-1e61-a0a0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b7e-9f5a-ced5-4359" includeChildSelections="false"/>
+          </constraints>
+          <comment>F 36&quot;</comment>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="a6d2-8eb7-1cb3-86bc">
@@ -583,7 +655,7 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Praetorian Spec-Ops" hidden="false" id="667b-c716-85fa-43af">
               <entryLinks>
-                <entryLink import="true" name="Assault Rifles, Close Assault Rifles, Missile Launcher" hidden="false" id="bf6a-376e-5fbf-c36b" type="selectionEntry" targetId="a7b0-e92b-6a43-0301"/>
+                <entryLink import="true" name="SMGs, Assault Grenades" hidden="false" id="bf6a-376e-5fbf-c36b" type="selectionEntry" targetId="78c0-b1d5-2689-52b6"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="unit" shared="true" id="560f-de5e-2d6e-0879" includeChildSelections="false"/>
@@ -878,6 +950,48 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="c182-e034-7b11-17c0">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Gladius Heavy Tank" hidden="false" id="44f0-a486-d84c-9fdf" collective="false">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="dcd5-f2d4-2976-ccf4" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Gladius Heavy Tank" hidden="false" id="eba9-c113-0bfa-a169" collective="true">
+              <profiles>
+                <profile name="Gladius Heavy Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="ecc5-788c-e98e-ce48">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">55</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Heavy</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">2-6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="55"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Gladius Weapon Selection" hidden="false" id="4e9b-ee11-5815-2452" type="selectionEntryGroup" targetId="e4be-a6cc-92dd-6397" collective="true" sortIndex="1"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="d642-90aa-6f36-11c7" type="selectionEntry" targetId="0a49-15d5-bc7b-b079" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="53bf-19f8-bc3b-2f2d"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="795b-b901-e809-3420"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="UCM Stat Cards" id="0a0b-b837-fa34-a21d" hidden="false" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/UCM_Stat_Cards_240501.pdf?v=1714558426"/>
@@ -894,10 +1008,72 @@ When this unit is destroyed, instead of exploding it lands on the closest availa
     <entryLink import="true" name="Praetorian Snipers" hidden="false" id="db4c-1792-65d5-939c" type="selectionEntry" targetId="30bc-c5c0-d2ec-3e6f"/>
     <entryLink import="true" name="Bear APC" hidden="false" id="6588-36cc-6149-cd8a" type="selectionEntry" targetId="4c7f-e5b3-9fbd-e341"/>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="ddaa-8efb-8a3a-643a" type="selectionEntry" targetId="e28e-c594-1ee6-f751"/>
+    <entryLink import="true" name="Praetorian Spec-Ops" hidden="false" id="bf8f-c9ed-9a80-e3e4" targetId="87e3-b54c-1acd-0d5a" type="selectionEntry"/>
+    <entryLink import="true" name="Gladius Heavy Tank" hidden="false" id="cedf-2c9e-fa85-9ce8" targetId="44f0-a486-d84c-9fdf" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Light_Transport" id="29a2-235e-6304-0a86" hidden="false"/>
     <categoryEntry name="Medium_Transport" id="82fa-2d8a-3043-b46e" hidden="false"/>
     <categoryEntry name="Infantry_Transport" id="22c8-3512-a165-1aa2" hidden="false"/>
   </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Quake Accelerated Mortar" hidden="false" id="9ede-2f54-36ea-b597" collective="true">
+          <profiles>
+            <profile name="Quake Accelerated Mortar" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ead1-db40-01c0-7d63">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Indirect, Devastator-3 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="3e57-37dd-435a-459c" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Indirect" id="eac2-fc6c-b405-0718" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Area" id="bf62-015a-c4b4-8ffe" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9db-072d-7c4e-a6e1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Avenger Railguns" hidden="false" id="0a95-4ae1-6a85-b1da" collective="true">
+          <profiles>
+            <profile name="Twin Avenger Railguns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f753-eae3-e553-50e8">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Articulated</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Articulated" id="c16d-b317-3ee5-d97b" hidden="false" type="rule" targetId="350e-9dc1-106a-3ac3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc2f-72d0-aeec-1bee" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e8-8d0c-8cd5-f62f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="fc2f-72d0-aeec-1bee"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec5e-9949-dda6-1f7a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a30-784b-2a74-0530" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
