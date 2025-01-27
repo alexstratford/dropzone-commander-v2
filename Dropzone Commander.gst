@@ -5,14 +5,17 @@
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="1750"/>
-    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false">
-      <comment>UCM</comment>
+    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1">
+      <comment>Scourge Vampires</comment>
     </costType>
-    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Light</comment>
+    <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1">
+      <comment>Scourge Crab</comment>
     </costType>
-    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Tank</comment>
+    <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1">
+      <comment>Scourge Screamer</comment>
     </costType>
   </costTypes>
   <profileTypes>

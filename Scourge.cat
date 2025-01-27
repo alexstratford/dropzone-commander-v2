@@ -514,11 +514,6 @@
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
-  <costTypes>
-    <costType name="Vampire_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1"/>
-    <costType name="Crab_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1"/>
-    <costType name="Screamer_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1"/>
-  </costTypes>
   <entryLinks>
     <entryLink import="true" name="Harbinger Troopship" hidden="false" id="25e0-2a04-cfe1-4493" targetId="f4f3-caf4-529e-56bb" type="selectionEntry"/>
     <entryLink import="true" name="Desolator Command Barge" hidden="false" id="e219-3218-5cc7-df27" targetId="7af4-d761-b159-ca6b" type="selectionEntry"/>
