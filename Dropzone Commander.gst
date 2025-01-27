@@ -592,10 +592,6 @@
       </modifierGroups>
     </forceEntry>
     <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <constraints>
-        <constraint type="min" value="0" field="forces" scope="roster" shared="true" id="8f55-d16f-46bd-d645"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c1f3-cbe8-b660-eb93"/>
-      </constraints>
       <categoryLinks>
         <categoryLink name="Behemoth" hidden="false" id="06ce-68f6-934f-6dfd" targetId="97a8-8f9f-5241-a322">
           <constraints>

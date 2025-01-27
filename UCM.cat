@@ -2271,6 +2271,16 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Transport" hidden="false" id="955f-8d1c-3399-e649">
+                  <associations>
+                    <association min="1" max="6" scope="force" childId="unit" name="Transporting" id="977d-8c0b-c1da-29af" includeChildSelections="true" includeChildForces="true"/>
+                  </associations>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9566-e7fb-aa11-fee0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3203,6 +3213,104 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hazard Suits" hidden="false" id="5545-5d94-3da0-a4dc">
+      <categoryLinks>
+        <categoryLink targetId="b09c-78fb-f3c3-4438" id="cfc7-0a19-2d2b-2f87" primary="true" name="Exotic"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hazard Suits" hidden="false" id="0e30-4b83-fc97-b6ed" collective="true">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="66fb-e0ad-4cba-0623" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f4-c4ec-61b5-2aea" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hazard Suits" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
+              <characteristics>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">1&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 3+</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Resilient" id="d6bb-1aa6-df77-9166" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Compact Railguns" hidden="false" id="50d0-018e-8d04-7f95" type="selectionEntry" targetId="b291-3b2c-dbb3-4132"/>
+            <entryLink import="true" name="Powered Armour" hidden="false" id="82cb-8e17-2c3f-8c85" type="selectionEntry" targetId="df29-50c0-b3f4-b570"/>
+          </entryLinks>
+          <rules>
+            <rule name="Hazard Suit" id="ca56-06db-1049-5c30" hidden="false">
+              <description>Re-roll successful Collateral Damage hits against this unit.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Powered Armour" hidden="false" id="df29-50c0-b3f4-b570" collective="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5561-2682-eb4a-5739" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2605-8748-0cc9-08ee" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Powered Armour" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2527-e1af-53d4-faf4">
+          <characteristics>
+            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+            <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+            <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+            <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+            <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reduced-X" id="0e8e-a08a-968b-a1bb" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="India Light Battle-Mech" hidden="false" id="6996-8f40-fc3d-3a11">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680">
+          <profiles>
+            <profile name="India Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
+              <characteristics>
+                <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="India Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM_Light_Behemoth_Legs" hidden="false" id="0d89-aaa1-54d9-0267">
+              <characteristics>
+                <characteristic name="Legs" typeId="642a-6a40-14dc-8266"/>
+                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="India Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
+              <characteristics>
+                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7"/>
+                <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1384-acab-b768-52d3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-3141-e93a-29ad" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="97a8-8f9f-5241-a322" id="1431-7112-b3d7-32d3" primary="true" name="Behemoth"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="UCM Stat Cards" id="0a0b-b837-fa34-a21d" hidden="false" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/UCM_Stat_Cards_240501.pdf?v=1714558426"/>
@@ -3252,6 +3360,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Seraphim Bomber" hidden="false" id="63a9-7e69-368a-fcee" targetId="c287-4193-eac0-6b29" type="selectionEntry"/>
     <entryLink import="true" name="Roc Heavy Gunship" hidden="false" id="3534-2e0d-f175-8699" targetId="e64c-dea6-3b42-403c" type="selectionEntry"/>
     <entryLink import="true" name="Hazard Suits" hidden="false" id="ad09-17e2-5475-d6ba" targetId="5545-5d94-3da0-a4dc" type="selectionEntry"/>
+    <entryLink import="true" name="India Light Battle-Mech" hidden="false" id="02e9-790b-3484-a634" targetId="6996-8f40-fc3d-3a11" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Light_Transport" id="29a2-235e-6304-0a86" hidden="false"/>
@@ -3768,6 +3877,25 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <profileTypes>
+    <profileType name="UCM_Light_Behemoth_Hull" id="1f6a-0300-e145-f89c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Hull" id="8811-54e4-a9bb-90ce"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="UCM_Light_Behemoth_Legs" id="c969-b6ba-a3e6-b344" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Legs" id="642a-6a40-14dc-8266"/>
+        <characteristicType name="Legs" id="4f27-2432-cb23-2fd0"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="UCM_Light_Behemoth_Weapons" id="60a8-4d72-41c9-086a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="4ebe-421e-14d3-1fb7"/>
+        <characteristicType name="Weapons" id="71b5-8a80-ab42-0ae2"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
   <sharedRules>
     <rule name="Loader" id="694d-50d6-1840-d6c4" hidden="false">
       <description>This unit reduces its Shots value by 1 for every 2 Damage Points lost, instead of every 1 Damage Point.</description>
