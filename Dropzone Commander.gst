@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem profiles="" rules="" infoLinks="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="2.03" id="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" name="Dropzone Commander v2.2.0" revision="4" authorName="Alex" authorContact="https://github.com/alexstratford/dropzone-commander-v2" authorUrl="https://github.com/alexstratford/dropzone-commander-v2" type="gameSystem">
+<gameSystem profiles="" rules="" infoLinks="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="2.03" id="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" name="Dropzone Commander v2.2.0" revision="5" authorName="Alex" authorContact="https://github.com/alexstratford/dropzone-commander-v2" authorUrl="https://github.com/alexstratford/dropzone-commander-v2" type="gameSystem">
   <publications>
     <publication name="Dropzone Commander Rulebook" id="9aaf-4a48-3cce-441f" hidden="false" shortName="Core Rules" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/Desktop_Dropzone_Rulebook_ac593214-77aa-4252-841f-0085439a4629.pdf?v=1617981364"/>
   </publications>
@@ -20,48 +20,41 @@
       <characteristicTypes>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
+        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
-		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-        <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
-        <characteristicType id="466f7274697475646523232344415441232323" name="Fortitude"/>
-        <characteristicType id="5.326432323234442e+25" name="Squad Size"/>
+        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="4c616e6420556e697423232344415441232323" name="Vehicle">
       <characteristicTypes>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
+        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
-		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-        <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
-        <characteristicType name="Squad Size" id="3caa-585d-3221-48d4"/>
+        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="41697220556e697423232344415441232323" name="Aircraft">
       <characteristicTypes>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
+        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
-		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-        <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
-        <characteristicType id="5.326432323234442e+25" name="Squad Size"/>
+        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
-		<characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
-		<characteristicType id="4.1726323232344415e+25" name="Arc"/>
+        <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
+        <characteristicType id="4.1726323232344415e+25" name="Arc"/>
         <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="Range (Full)"/>
         <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="Range (Countered)"/>
-		<characteristicType id="53686f747323232344415441232323" name="Shots"/>
-		<characteristicType id="4.163637572616379e+35" name="Accuracy"/>
-		<characteristicType id="456e6572677923232344415441232323" name="Energy"/>
+        <characteristicType id="53686f747323232344415441232323" name="Shots"/>
+        <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
+        <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
         <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
@@ -694,15 +687,12 @@
               <profiles>
                 <profile name="EAA Columbus Battlewalker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Points" typeId="506f696e747323232344415441232323">70</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
-                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Scout</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
-                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1-3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -711,13 +701,13 @@
                   <profiles>
                     <profile name="Twin Punisher Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18b2-52dd-73ce-881b">
                       <characteristics>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                        <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                         <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
                         <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
                       </characteristics>
                     </profile>
@@ -731,13 +721,13 @@
                   <profiles>
                     <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec9-bbae-7a76-d2ee">
                       <characteristics>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                         <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
                         <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
                       </characteristics>
                     </profile>
@@ -772,13 +762,13 @@
                       <profiles>
                         <profile name="Heavy Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8f6a-5544-bf15-7f45">
                           <characteristics>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                            <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                             <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
                             <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
                           </characteristics>
                         </profile>
@@ -794,13 +784,13 @@
                       <profiles>
                         <profile name="AA Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2716-3df2-9511-a7ab">
                           <characteristics>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                            <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                             <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                            <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
                             <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
                           </characteristics>
                         </profile>
@@ -845,9 +835,7 @@
 
 In addition, AA weapons can Reaction Fire.
 
-If an enemy Aircraft squad makes a Moving action within range and line of sight of an AA weapon that has not shot this round, declare that the unit will Reaction Fire. The unit immediately makes an out of sequence Shooting action at the enemy Aircraft squad with an AA weapon. Reaction Fire can be declared before an aircraft lands. Weapons shot in Reaction Fire follow all the normal rules (M&amp;F, disembarking etc) and cannot shoot again during the round, although the unit may still make two actions that round when Reaction Firing as normal. Measure line of sight and range to the enemy squad as normal, measuring to any
-point along its movement path. Note that this means a squad may Reaction Fire at a Fast Aircraft that has moved off the board,
-doing damage before it leaves. Multiple units may choose to Reaction Fire against the same enemy Aircraft after the same move, simply declare and resolve each unit one by one.
+If an enemy Aircraft squad makes a Moving action within range and line of sight of an AA weapon that has not shot this round, declare that the unit will Reaction Fire. The unit immediately makes an out of sequence Shooting action at the enemy Aircraft squad with an AA weapon. Reaction Fire can be declared before an aircraft lands. Weapons shot in Reaction Fire follow all the normal rules (M&amp;F, disembarking etc) and cannot shoot again during the round, although the unit may still make two actions that round when Reaction Firing as normal. Measure line of sight and range to the enemy squad as normal, measuring to any point along its movement path. Note that this means a squad may Reaction Fire at a Fast Aircraft that has moved off the board, doing damage before it leaves. Multiple units may choose to Reaction Fire against the same enemy Aircraft after the same move, simply declare and resolve each unit one by one.
 
 Reaction Fire is by its very nature somewhat less accurate than a well considered flurry, and as such suffers a +2 penalty to its Accuracy. AA weapons that also have the Indirect Fire special rule may not Reaction Fire.</description>
     </rule>
@@ -864,29 +852,19 @@ Reaction Fire is by its very nature somewhat less accurate than a well conside
     <rule name="Area" id="2c4f-a243-5354-a407" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>Roll to hit with the weapon following normal targeting rules.
 
-
-If the weapon hits, place the centre of the Blast template over the centre of the body of the target unit. Any unit (friendly or enemy) at least partially touched by the template gets hit automatically. Roll to damage separately for each unit hit, following the
-normal rules.
-
+If the weapon hits, place the centre of the Blast template over the centre of the body of the target unit. Any unit (friendly or enemy) at least partially touched by the template gets hit automatically. Roll to damage separately for each unit hit, following the normal rules.
 
 If the roll to hit is a 1, the weapon misses.
 
-
 If the roll to hit misses on any other number, the weapon glances its target. Do not place the template. Instead only the target unit is hit, and the weapon suffers -2 Energy.
-
 
 Area weapons targeting a Behemoth or scenery piece lose the Area rule for that shot. Behemoths and scenery pieces touched by a Blast template are unaffected.
 
-
 Infantry units hit by an Area weapon instead suffer D6 hits, and Destructible scenery pieces suffer D3 hits.
 
+When targeting Infantry against an edge of a Garrison, do not place the template. Instead, all units on that edge are hit (for D6 hits as above). An infantry unit on the edge of a Garrison that is touched by the template but not the target of the Shooting action is not hit.
 
-When targeting Infantry against an edge of a Garrison, do not place the template. Instead, all units on that edge are hit (for D6
-hits as above). An infantry unit on the edge of a Garrison that is touched by the template but not the target of the Shooting action is not hit.
-
-
-Area weapons with multiple Shots or squads with multiple area weapons place all of the blast markers at the same time, although can place them on different units in the same squad. Resolve hits and damage for each blast marker simultaneously.
-Area weapons with the AA special rule may target Aircraft as normal, but only other Aircraft can be hit by the Blast template.</description>
+Area weapons with multiple Shots or squads with multiple area weapons place all of the blast markers at the same time, although can place them on different units in the same squad. Resolve hits and damage for each blast marker simultaneously. Area weapons with the AA special rule may target Aircraft as normal, but only other Aircraft can be hit by the Blast template.</description>
     </rule>
     <rule name="Cover-X" id="96af-8bf9-11b1-3754" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>Cover weapons can have up to four keywords denoted: Soft, Body, Hull and All. Weapons with Soft ignore Soft Cover, weapons with Body ignore Body Cover, weapons with Hull ignore Hull Down, and weapons with All ignore all cover!</description>
@@ -895,29 +873,21 @@ Area weapons with the AA special rule may target Aircraft as normal, but only o
     <rule name="Destroyer-X" id="fc5c-a89b-86c1-8f46" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>A Destroyer weapon is denoted by a DS with a number after it.
 
-
 If a Destroyer weapon hits its target by rolling equal to or higher than the X value shown, it automatically causes a Critical hit without needing to roll for damage. If a shooter’s Accuracy is modified above the X value, it still misses as normal, the X value instead becoming the lowest number required to hit - in this instance any hit would automatically become a Destroyer hit!
 
-
 Passive Countermeasures may still be used against Destroyer hits.</description>
-      <alias>Destroyer-1+</alias>
-      <alias>Destroyer-2+</alias>
-      <alias>Destroyer-3+</alias>
-      <alias>Destroyer-4+</alias>
-      <alias>Destroyer-5+</alias>
-      <alias>Destroyer-6+</alias>
-      <alias>Destroyer-7+</alias>
+      <alias>Destroyer 1+</alias>
+      <alias>Destroyer 2+</alias>
+      <alias>Destroyer 3+</alias>
+      <alias>Destroyer 4+</alias>
+      <alias>Destroyer 5+</alias>
+      <alias>Destroyer 6+</alias>
+      <alias>Destroyer 7+</alias>
     </rule>
     <rule name="Devastator-X" id="f34b-6e21-a034-1168" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>This weapon is denoted by a DV with a number and keywords after it.
 
-
-When a Devastator weapon hits a target with the type in brackets, roll to damage as normal. However, it instead does the amount of damage listed by the X value. If this weapon scores a natural Critical, multiply the X value by 2!
-For example a weapon with DV-3 (Behemoths) hits a Behemoth once. Roll one dice to Damage as normal. If successful, the
-Behemoth in fact takes three Damage! This special rule may target particular unit types (such as Infantry, Vehicles etc), or
-even types of scenery pieces. It may even affect every type of unit, denoted by “All”. Sometimes a Devastator weapon has more
-than one value for different types of units, and sometimes a unit can be affected by multiple types (such as a Large Vehicle for
-example). In this situation, simply pick the highest applicable number.
+When a Devastator weapon hits a target with the type in brackets, roll to damage as normal. However, it instead does the amount of damage listed by the X value. If this weapon scores a natural Critical, multiply the X value by 2! For example a weapon with DV-3 (Behemoths) hits a Behemoth once. Roll one dice to Damage as normal. If successful, the Behemoth in fact takes three Damage! This special rule may target particular unit types (such as Infantry, Vehicles etc), or even types of scenery pieces. It may even affect every type of unit, denoted by “All”. Sometimes a Devastator weapon has more than one value for different types of units, and sometimes a unit can be affected by multiple types (such as a Large Vehicle for example). In this situation, simply pick the highest applicable number.
 
 
 Note that if a weapon is Devastator (Scenery), on a Critical the damage isn’t multiplied by 2 and it still only receives 1 Collateral Damage token.</description>
@@ -932,9 +902,7 @@ Note that if a weapon is Devastator (Scenery), on a Critical the damage isn’
     <rule name="Indirect" id="1b28-deec-5ed9-9e34" hidden="false" page="46" publicationId="9aaf-4a48-3cce-441f">
       <description>An Indirect weapon may draw line of sight from a friendly Scout unit instead of its own unit - simply check line of sight as normal from the Scout unit instead.
 
-
-This might mean targets are Hull Down - following the normal rules (judging from the Scout unit instead).
-An Indirect weapon can instead choose to target an enemy squad that it (or any friendly Scout units) cannot draw line of sight to. If it does so, its Accuracy becomes 5+ before modifiers (even when targeting Scenery pieces). When firing in this way, the target does not count as Hull Down, but can benefit from Soft or Body Cover as normal.</description>
+This might mean targets are Hull Down - following the normal rules (judging from the Scout unit instead). An Indirect weapon can instead choose to target an enemy squad that it (or any friendly Scout units) cannot draw line of sight to. If it does so, its Accuracy becomes 5+ before modifiers (even when targeting Scenery pieces). When firing in this way, the target does not count as Hull Down, but can benefit from Soft or Body Cover as normal.</description>
     </rule>
     <rule name="Reduced-X" id="a7e1-7b0f-c257-7510" hidden="false">
       <alias>Reduced-1</alias>
@@ -949,10 +917,7 @@ An Indirect weapon can instead choose to target an enemy squad that it (or any�
       <alias>Reduced-10</alias>
       <description>A Reduced weapon is denoted with a number by it.
 
-
-Every time the unit with the weapon loses 1 Damage Point, reduce the Shots characteristic of the weapon by the number listed.
-A weapon with this special rule may instead combine its fire. For that attack it reduces its Shots characteristic to 1 and increases its Energy by 1 for every Shot removed (after reducing the Shots due to damage taken), to a maximum of 9.
-
+Every time the unit with the weapon loses 1 Damage Point, reduce the Shots characteristic of the weapon by the number listed. A weapon with this special rule may instead combine its fire. For that attack it reduces its Shots characteristic to 1 and increases its Energy by 1 for every Shot removed (after reducing the Shots due to damage taken), to a maximum of 9.
 
 If not a Close Quarters Weapon, this combined fire can gain the AA rule for that action, although if doing so it reduces its R(F) and R(C) ranges to 6”. Note that the same restrictions apply to shooting at Aircraft as normal, such as being unable to do so if the squad disembarked from an Aerial Transport.</description>
     </rule>
@@ -969,19 +934,180 @@ If not a Close Quarters Weapon, this combined fire can gain the AA rule for th
       <alias>Limited-10</alias>
       <description>A weapon with Limited uses is denoted by an L with a number by it.
 
-
 The number is the number of times that weapon can be used for a Shooting action in a game. After that it cannot be used again.</description>
     </rule>
     <rule name="Penetrative" id="d90e-d63f-649e-1ca6" hidden="false">
       <description>Penetrative weapons always do damage to targets on a damage roll of 6.</description>
     </rule>
     <rule name="Flame" id="7fe5-1098-f28b-e066" hidden="false">
-      <description>These weapons may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not. Simply target the
-edge of a Garrison as if they were on that edge. Units in Garrisons occupied by friendly Infantry can be targeted by Flame weapons, however any missed shots are counted as successful hits against one of those friendly units, allocated by the target’s player.
+      <description>These weapons may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not. Simply target the edge of a Garrison as if they were on that edge. Units in Garrisons occupied by friendly Infantry can be targeted by Flame weapons, however any missed shots are counted as successful hits against one of those friendly units, allocated by the target’s player. 
+
 Neither Body Cover nor Soft Cover can be used against Flame weapons, and they ignore Evasion Countermeasures. Additionally, every time a Flame weapon targets an Infantry unit inside a Garrison or a Destructible scenery piece, the scenery piece receives 1 additional Collateral Damage token, regardless of how much damage is done. If that scenery piece has the Flammable rule, it receives 2 additional Collateral Damage tokens instead.</description>
     </rule>
     <rule name="Command Centre" id="69c8-c7bd-0b67-dfbe" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="p42">
       <description>A Commander can be mounted in this unit as if it had the Command category.</description>
+    </rule>
+    <rule name="Access" id="0c03-83da-1be7-bdec" hidden="false">
+      <description>Units with this rule are always Transports, and use the normal rules, including which type of units they can transport (indicated by the Transport Value symbol as normal). 
+
+
+Squads that embark into Access units are counted as in Holding rather than inside that Transport. To remove a squad from in Holding they simply disembark from any Access unit currently on the board provided their Transport Values match. That means that Squads may embark into one Access unit and disembark from a completely different one!
+
+
+Embarking and disembarking otherwise follows the usual rules, including a free embark or disembark if an Aerial Transport lands. Units embarking into Access units still cannot exceed the Capacity of that unit, although in real terms this is more to do with how many units can feasibly pass through the access point rather than them actually being “inside”.
+
+
+An Access unit cannot embark more than its Capacity in a single round, nor can it disembark more than its Capacity in a single round. 
+
+
+Units in Holding aren’t affected if an Access unit is destroyed, since they’re technically not inside them! However, if all Access units are destroyed there is no way for any in Holding units to return to the game, so they count as destroyed.
+
+
+Any squads that start the game in Holding must be declared as such. Those squads may only arrive onto the battlefield by disembarking from an Access unit, and are ignored for the purposes of the Aerial Advantage rule. While Access units are never actually “full”, the total Requirement capacity of units starting the game in Holding must still cause all Access units to be at least half full (and indeed can “overfill” Access units if desired).</description>
+    </rule>
+    <rule name="Bloodthirsty" id="9134-48fd-ee38-1054" hidden="false">
+      <description>If this unit is in the same Garrison as an enemy unit, then it may not move away or leave the Garrison. This unit suffers a -2 penalty when searching for objectives.</description>
+    </rule>
+    <rule name="Dodge" id="4fdb-af55-c6cc-3e6c" hidden="false">
+      <alias>Dodge 1+</alias>
+      <alias>Dodge 2+</alias>
+      <alias>Dodge 3+</alias>
+      <alias>Dodge 4+</alias>
+      <alias>Dodge 5+</alias>
+      <alias>Dodge 6+</alias>
+      <alias>Dodge 7+</alias>
+      <description>This unit gains a Passive Countermeasures save equal to the X value against Close Quarters weapons and Collateral Damage. This may be taken in addition to any other Passive Countermeasures save the unit has.</description>
+    </rule>
+    <rule name="Fast" id="5ca6-fb78-323a-0702" hidden="false">
+      <description>This unit has two stats on its MV value - a minimum and a maximum. Unlike other units, a Fast unit has to make a Moving action each activation, and must move at least its minimum MV, up to its maximum MV, in a straight line.
+
+
+Fast units may only turn on their axis a maximum of 90 degrees after completing their move, and cannot land.
+
+
+Due to the speed of these units, it’s common for them to travel away from the battlefield. Unlike other units, a Fast unit can move off the board as part of their move. If they do so, they’re put In Readiness, coming on from the usual point of the table edge for your army in subsequent rounds.
+
+
+A Fast unit can elect to fly high as part of its Moving action. When flying high, it ignores all Impassable scenery, but cannot make Shooting actions in the same round. If a unit otherwise couldn’t complete its move (due to Impassable scenery over 8” being in the way), it must fly high.
+
+
+Unless explicitly mentioned in the scenario special rules, units with this special rule always begin the game In Reserve, and are ignored for determining Victory Points at any time, but still concede Kill Points.</description>
+    </rule>
+    <rule name="Infiltrate X" id="6dbe-5af2-2a9b-abb1" hidden="false">
+      <description>Infiltrate units are denoted with a number value. This unit may be Directly Deployed even when the scenario would not normally allow it to do so, ignoring the Aerial Advantage rule. It may deploy up to the listed number of inches from a friendly table edge. Infantry with this special rule may deploy directly into a Garrison if within range. The rest of this unit’s Battlegroup deploys normally, and this unit can make actions even if the rest of its Battlegroup are In Readiness or In Reserve.
+
+
+A unit deploying using this rule cannot deploy in a Transport, but a Transport with this rule confers it to any units deployed in it.</description>
+      <alias>Infiltrate 0&quot;</alias>
+      <alias>Infiltrate 1&quot;</alias>
+      <alias>Infiltrate 2&quot;</alias>
+      <alias>Infiltrate 3&quot;</alias>
+      <alias>Infiltrate 4&quot;</alias>
+      <alias>Infiltrate 5&quot;</alias>
+      <alias>Infiltrate 6&quot;</alias>
+      <alias>Infiltrate 7&quot;</alias>
+      <alias>Infiltrate 8&quot;</alias>
+      <alias>Infiltrate 9&quot;</alias>
+      <alias>Infiltrate 10&quot;</alias>
+      <alias>Infiltrate 11&quot;</alias>
+      <alias>Infiltrate 12&quot;</alias>
+      <alias>Infiltrate 13&quot;</alias>
+      <alias>Infiltrate 14&quot;</alias>
+      <alias>Infiltrate 15&quot;</alias>
+      <alias>Infiltrate 16&quot;</alias>
+      <alias>Infiltrate 17&quot;</alias>
+      <alias>Infiltrate 18&quot;</alias>
+      <alias>Infiltrate 19&quot;</alias>
+      <alias>Infiltrate 20&quot;</alias>
+      <alias>Infiltrate 21&quot;</alias>
+      <alias>Infiltrate 22&quot;</alias>
+      <alias>Infiltrate 23&quot;</alias>
+      <alias>Infiltrate 24&quot;</alias>
+    </rule>
+    <rule name="Large" id="45e1-bc6d-e75c-45a2" hidden="false">
+      <description>This unit cannot be Hull Down.</description>
+    </rule>
+    <rule name="Rapid Insertion-X" id="ed15-ec95-1603-67f8" hidden="false">
+      <description>This unit may disembark from Aerial Transports that haven’t landed. Some units with this rule will have a number listed after. That is the number of inches further than normal an Aerial Transport they’re embarked in can move and still disembark this unit (up to its maximum MV value). 
+
+
+They may also disembark straight into a Garrison from any direction (including the roof if the Aerial Transport is on top of it!), regardless of whether it has an entrance point. 
+
+
+Additionally, if this unit shoots with Close Quarters weapons in the turn it enters a Garrison via this rule, it doesn’t have to re-roll successful damage rolls.</description>
+      <alias>Rapid Insertion</alias>
+      <alias>Rapid Insertion 0&quot;</alias>
+      <alias>Rapid Insertion 1&quot;</alias>
+      <alias>Rapid Insertion 2&quot;</alias>
+      <alias>Rapid Insertion 3&quot;</alias>
+      <alias>Rapid Insertion 4&quot;</alias>
+      <alias>Rapid Insertion 5&quot;</alias>
+      <alias>Rapid Insertion 6&quot;</alias>
+      <alias>Rapid Insertion 7&quot;</alias>
+      <alias>Rapid Insertion 8&quot;</alias>
+      <alias>Rapid Insertion 9&quot;</alias>
+      <alias>Rapid Insertion 10&quot;</alias>
+      <alias>Rapid Insertion 11&quot;</alias>
+      <alias>Rapid Insertion 12&quot;</alias>
+      <alias>Rapid Insertion 13&quot;</alias>
+      <alias>Rapid Insertion 14&quot;</alias>
+      <alias>Rapid Insertion 15&quot;</alias>
+      <alias>Rapid Insertion 16&quot;</alias>
+      <alias>Rapid Insertion 17&quot;</alias>
+      <alias>Rapid Insertion 18&quot;</alias>
+      <alias>Rapid Insertion 19&quot;</alias>
+      <alias>Rapid Insertion 20&quot;</alias>
+      <alias>Rapid Insertion 21&quot;</alias>
+      <alias>Rapid Insertion 22&quot;</alias>
+      <alias>Rapid Insertion 23&quot;</alias>
+      <alias>Rapid Insertion 24&quot;</alias>
+    </rule>
+    <rule name="Resilient" id="bee8-5b68-340e-b6bb" hidden="false">
+      <description>A unit with this special rule is immune to Critical hits. They instead act just like normal hits, doing a single point of damage.</description>
+    </rule>
+    <rule name="Wide" id="3ab1-40ff-10e9-2f89" hidden="false">
+      <description>This unit doubles the usual distance of its coherency.</description>
+    </rule>
+    <rule name="Focus" id="5d31-f577-8070-6820" hidden="false">
+      <alias>Focus-1</alias>
+      <alias>Focus-2</alias>
+      <alias>Focus-3</alias>
+      <alias>Focus-4</alias>
+      <alias>Focus-5</alias>
+      <alias>Focus-6</alias>
+      <alias>Focus-7</alias>
+      <alias>Focus-8</alias>
+      <alias>Focus-9</alias>
+      <alias>Focus-10</alias>
+      <description>Focus weapons are denoted with a number after them. 
+
+
+After rolling to hit, you can choose to discard any number of hits from a single Focus weapon and add the X number to the Energy value of one or more of the remaining shots.
+
+
+For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3. They hit with 4 shots. The player decides to discard 2 of the shots to turn the Energy of the remaining 2 shots from 3 to 6. Alternatively they could discard 3 of the shots so the 1 remaining shot fires at a massive Energy 12!</description>
+    </rule>
+    <rule name="Strafe-X" id="c922-67ea-3ea5-b76d" hidden="false">
+      <alias>Strafe-1</alias>
+      <alias>Strafe-2</alias>
+      <alias>Strafe-3</alias>
+      <alias>Strafe-4</alias>
+      <alias>Strafe-5</alias>
+      <alias>Strafe-6</alias>
+      <alias>Strafe-7</alias>
+      <alias>Strafe-8</alias>
+      <alias>Strafe-9</alias>
+      <alias>Strafe-10</alias>
+      <description>Strafe weapons are denoted with a number by them. When making a Shooting action, this weapon can be fired the number of times listed, but each must be fired at units within 3” of at least one other targeted unit. You can target the same unit multiple times. Declare all targets before rolling to hit as normal.</description>
+    </rule>
+    <rule name="Structural" id="06ea-b689-94e2-9be4" hidden="false">
+      <description>Weapons with the Structural special rule cannot be affected by Crippled results unless specifically mentioned.</description>
+    </rule>
+    <rule name="Tech Killer" id="d9e0-d31c-1f00-9d05" hidden="false">
+      <description>A Tech Killer weapon cannot damage scenery pieces.</description>
+    </rule>
+    <rule name="Rare" id="b430-8b04-52c2-a2c6" hidden="false">
+      <description>You may only take a maximum of one of each type of Rare squad in a Skirmish sized game, two of each type in a Clash, and three of each type in a Battle. This restriction applies to each Rare squad individually (you may take two different types of Rare squads in a Skirmish for example).</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
