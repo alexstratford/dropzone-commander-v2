@@ -4,7 +4,7 @@
     <publication name="Dropzone Commander Rulebook" id="9aaf-4a48-3cce-441f" hidden="false" shortName="Core Rules" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/Desktop_Dropzone_Rulebook_ac593214-77aa-4252-841f-0085439a4629.pdf?v=1617981364"/>
   </publications>
   <costTypes>
-    <costType id="points" name="pts" defaultCostLimit="0"/>
+    <costType id="points" name="pts" defaultCostLimit="1750"/>
     <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false">
       <comment>UCM</comment>
     </costType>
@@ -92,9 +92,10 @@
     <categoryEntry name="Drill" id="243f-ea96-5f0b-72e6" hidden="false"/>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
+    <categoryEntry name="HQ Battlegroup" id="e3ef-6462-5233-fb26" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="">
+    <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="6c0e-eeab-b788-eedb" targetId="8a9e-8399-ae64-5be9"/>
       </categoryLinks>
@@ -399,227 +400,348 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-    </forceEntry>
-    <forceEntry name="HQ Battlegroup" id="e550-8c0c-113b-b654" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <categoryLinks>
-        <categoryLink name="Transport Requirement" hidden="true" id="2259-4235-8c48-a25e" targetId="89b8-bfe2-c294-f341"/>
-        <categoryLink name="Command" hidden="false" id="e9ab-b4c6-d72d-f868" targetId="ed7f-0593-2e55-430d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2153-11e7-8306-80a7" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6236-2c4c-9f3b-dd04" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy" hidden="false" id="a462-2fad-5c10-49f5" targetId="ff91-8cc3-f775-3d20">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5761-3171-e2d4-9890" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="592b-850f-d086-565f" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Scout" hidden="false" id="1f22-5cf3-10f0-e7e7" targetId="5f13-c39f-577a-8947">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="326e-7970-da06-aa63" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="d42f-ccce-fe08-b17b" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Auxiliary" hidden="false" id="2e01-85b7-2f4e-e2c0" targetId="de27-8358-5d78-6eeb">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="bc8b-1c3d-cebc-5829" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>0-1/1/1-2</comment>
-    </forceEntry>
-    <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <categoryLinks>
-        <categoryLink name="Transport Requirement" hidden="false" id="431d-4404-2c32-5afe" targetId="89b8-bfe2-c294-f341"/>
-        <categoryLink name="Standard" hidden="false" id="5c8f-ab06-d3e2-6a21" targetId="7bea-a1e7-3cab-7ecb">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2200-6ff8-2b2a-3146" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d3d-b22e-3d9a-212a" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy" hidden="false" id="7bbc-aa5c-5bc4-0e62" targetId="ff91-8cc3-f775-3d20">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="54d9-8dde-7775-ff7e" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b9d-4976-f3ad-2608" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="9323-e22f-27bb-3128" targetId="1742-0b1d-252f-505d">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4664-ea0d-486d-7f27" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2f8-56ab-8290-9667" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Auxiliary" hidden="false" id="4348-2c83-c5a5-33fc" targetId="de27-8358-5d78-6eeb">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="42da-aa63-9e7e-eb89" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>1/1-2/1-2</comment>
-      <modifierGroups>
-        <modifierGroup type="and">
+      <forceEntries>
+        <forceEntry name="HQ Battlegroup" id="e550-8c0c-113b-b654" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="dfaf-8ba6-37ac-e786" targetId="ed7f-0593-2e55-430d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93dd-8acc-04d1-a937" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="074b-070c-700e-3f63" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy" hidden="false" id="340c-db0f-71ff-c113" targetId="ff91-8cc3-f775-3d20">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6806-15e9-800d-b6cd" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="95bd-f92f-25d4-a223" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Scout" hidden="false" id="94a5-332a-42d7-2e17" targetId="5f13-c39f-577a-8947">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="80a8-45d8-96d3-4795" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="8c40-5727-4a04-3085" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary" hidden="false" id="8c4d-c8ac-30cf-8bd4" targetId="de27-8358-5d78-6eeb">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="83da-0b10-81bc-b289" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>0-1/1/1-2</comment>
           <modifiers>
-            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
                       </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                      </conditions>
+                      <comment>Enable Scourge</comment>
                     </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <comment>Transport Requirements</comment>
-        </modifierGroup>
-      </modifierGroups>
-    </forceEntry>
-    <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <categoryLinks>
-        <categoryLink name="Transport Requirement" hidden="false" id="de38-06fa-e8a9-a24e" targetId="89b8-bfe2-c294-f341"/>
-        <categoryLink name="Troops" hidden="false" id="931a-e918-03aa-30ac" targetId="43a9-1ec6-f0bc-8f37">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a946-a413-4669-4f2c" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5adb-93a9-cd56-17e0" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Exotic" hidden="false" id="2d29-8554-f037-543b" targetId="b09c-78fb-f3c3-4438">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="313c-13af-4b8d-ccd0" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="77ac-6eb5-980a-bdb1" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="b36e-77a6-75d9-929b" targetId="1742-0b1d-252f-505d">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="bebc-6900-bc5a-3c9a" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d5ed-a726-6620-466c" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Auxiliary" hidden="false" id="2e3e-7cff-d91d-6b07" targetId="de27-8358-5d78-6eeb">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b8d2-6a4b-7380-e259" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>1-2/1-2/1-2</comment>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
+        </forceEntry>
+        <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
+          <categoryLinks>
+            <categoryLink name="Transport Requirement" hidden="false" id="cd25-e0ef-6eb0-6a94" targetId="89b8-bfe2-c294-f341"/>
+            <categoryLink name="Troops" hidden="false" id="da99-8e0a-e962-3981" targetId="43a9-1ec6-f0bc-8f37">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06e0-204a-9205-46fd" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1b0b-5398-7bbe-8f4d" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Exotic" hidden="false" id="3903-8d02-1f3c-42b9" targetId="b09c-78fb-f3c3-4438">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="fa5e-275c-8a29-ede9" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="28a0-bd77-f5ea-6ca8" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="cdf9-6591-6f7e-65b0" targetId="1742-0b1d-252f-505d">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="2ba8-1b0f-4a96-48ad" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e61f-5e2d-2f1f-1c54" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary" hidden="false" id="90ad-84c9-6f3c-651a" targetId="de27-8358-5d78-6eeb">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3d89-fd00-1f1d-972c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>1-2/1-2/1-2</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="add" value="{this} has insufficient transport capacity" field="error">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Transport Requirements</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                      </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                      </conditions>
+                      <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <comment>Transport Requirements</comment>
-        </modifierGroup>
-      </modifierGroups>
-    </forceEntry>
-    <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <categoryLinks>
-        <categoryLink name="Scout" hidden="false" id="ca6e-9856-7fdb-b497" targetId="5f13-c39f-577a-8947">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="74c0-e780-8525-b8fa" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1a73-183a-2133-4f64" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Exotic" hidden="false" id="298b-b196-dcc3-ec6b" targetId="b09c-78fb-f3c3-4438">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1ddd-f6f6-a38c-7af9" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="0711-a262-09aa-80e8" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="f7e6-b75b-626a-4d49" targetId="1742-0b1d-252f-505d">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9459-09e2-6339-4cb7" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ebfa-f938-8bf2-9ae8" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Auxiliary" hidden="false" id="6030-d7dc-9c66-7cb8" targetId="de27-8358-5d78-6eeb">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5d1c-de12-3f3e-2a71" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Transport Requirement" hidden="false" id="63d6-db3a-9566-4165" targetId="89b8-bfe2-c294-f341"/>
-      </categoryLinks>
-      <comment>0-1/0-2/0-2</comment>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
+        </forceEntry>
+        <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
+          <categoryLinks>
+            <categoryLink name="Transport Requirement" hidden="false" id="5dd1-148e-534a-d3f6" targetId="89b8-bfe2-c294-f341"/>
+            <categoryLink name="Standard" hidden="false" id="b89b-ef74-2a6f-b81f" targetId="7bea-a1e7-3cab-7ecb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a9a-b365-e0b0-b5b8" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9556-699d-5b83-5a93" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy" hidden="false" id="f4e8-6dd6-0690-7bbb" targetId="ff91-8cc3-f775-3d20">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d8fb-b400-9688-90fd" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="edb8-26e7-292c-e5dc" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="6d95-538c-38fe-e306" targetId="1742-0b1d-252f-505d">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="afff-3a24-fec0-6536" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="655f-59a4-08a7-17a9" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary" hidden="false" id="052a-5749-b991-fed8" targetId="de27-8358-5d78-6eeb">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe27-c480-0f9f-ca6d" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>1/1-2/1-2</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="add" value="{this} has insufficient transport capacity" field="error">
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                       <conditions>
-                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
-                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Transport Requirements</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                      </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                      </conditions>
+                      <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <comment>Transport Requirements</comment>
-        </modifierGroup>
-      </modifierGroups>
-    </forceEntry>
-    <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <categoryLinks>
-        <categoryLink name="Behemoth" hidden="false" id="06ce-68f6-934f-6dfd" targetId="97a8-8f9f-5241-a322">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8c54-3c0c-47e2-ac9b" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d7fa-5263-b185-c940" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>0-1/0-2/0-3</comment>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Battle Size Settings</comment>
+        </forceEntry>
+        <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="1e24-135e-ef27-3a5c" targetId="5f13-c39f-577a-8947">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f5d3-e306-fbe9-1230" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="baef-c27b-cd33-3c2c" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Exotic" hidden="false" id="f100-a105-92ae-02cd" targetId="b09c-78fb-f3c3-4438">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="98e9-f69e-fab7-1e4b" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="9984-de21-a559-f108" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="8d3e-eef2-7eb9-71fe" targetId="1742-0b1d-252f-505d">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b2bf-02c6-8056-10c6" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="08a1-c740-1b39-e35b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary" hidden="false" id="f01e-ba8f-6ea5-da5a" targetId="de27-8358-5d78-6eeb">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="ff27-3153-6557-22e3" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport Requirement" hidden="false" id="c981-5140-4bc1-32ba" targetId="89b8-bfe2-c294-f341"/>
+          </categoryLinks>
+          <comment>0-1/0-2/0-2</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="add" value="{this} has insufficient transport capacity" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>Transport Requirements</comment>
+            </modifierGroup>
+          </modifierGroups>
           <modifiers>
-            <modifier type="set" value="3" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="2" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                      </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                      </conditions>
+                      <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </forceEntry>
+        <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="dba6-d760-2d7a-3ab6" targetId="97a8-8f9f-5241-a322">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="cae6-027a-73e6-406a" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8f40-8ecd-9825-faa4" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>0-1/0-2/0-3</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Battle Size Settings</comment>
+              <modifiers>
+                <modifier type="set" value="3" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <comment>Battle Roster Setting</comment>
+                </modifier>
+                <modifier type="set" value="2" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <comment>Clash Roster Setting</comment>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                      </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                      </conditions>
+                      <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+      </forceEntries>
     </forceEntry>
   </forceEntries>
   <entryLinks>
