@@ -938,6 +938,78 @@
             <infoLink name="Strafe-X" id="6589-4648-42a7-62a3" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Quick Glaives, Heavy Glaives" hidden="false" id="9afe-e656-3228-2420">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c531-b110-2922-fc6e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="245d-6e88-c356-781f" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Quick Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ae21-a459-29bd-5aba">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4213-a5ac-a531-ffe9">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">18</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="3afb-bf42-777a-e9c9" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Reduced-X" id="567d-012d-4c89-7652" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Acid Spout, Acid Proboscis" hidden="false" id="52a9-b510-7a68-1510" collective="true">
+          <profiles>
+            <profile name="Acid Spout" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a32f-0170-76b0-c520">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Acid Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1b47-6786-1b15-6809">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="534b-eb1b-f618-7b95" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03de-d9e1-6522-fdd0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Penetrative" id="adba-0a23-c6b0-3bf6" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+            <infoLink name="Flame" id="d555-bbf0-3d87-ee9e" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
@@ -1029,7 +1101,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Demolisher Shock Troops" hidden="false" id="463e-e2f0-cb33-82be">
               <profiles>
-                <profile name="Demolisher Shock Troops" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="7216-fc0a-59e6-088c">
+                <profile name="Demolisher Shock Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7216-fc0a-59e6-088c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">P4+</characteristic>
@@ -1385,6 +1457,197 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exotic" hidden="false" id="f73d-532c-7d71-604f">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Eviscerator Assault Troops" hidden="false" id="40af-58ab-b852-e444">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Eviscerator Assault Troops" hidden="false" id="4244-cca3-5bd5-7c03" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Quick Glaives, Heavy Glaives" hidden="false" id="11e1-8cc6-e89b-c2c6" type="selectionEntry" targetId="9afe-e656-3228-2420"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f131-79b9-0109-6684" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ffc8-699c-84f3-12e3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ac9b-9ae2-8d6a-d1ea" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Eviscerator Assault Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="358e-9d17-c7e8-a04b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">P4+</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Resilient, Rare</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="3" field="ac9b-9ae2-8d6a-d1ea">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="ac9b-9ae2-8d6a-d1ea">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="2" field="ac9b-9ae2-8d6a-d1ea">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Rare Config</comment>
+                </modifierGroup>
+              </modifierGroups>
+              <infoLinks>
+                <infoLink name="Rare" id="5970-6e4a-8eee-3a90" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Bloodthirsty" id="77c3-6a5e-2a94-ab7b" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
+                <infoLink name="Resilient" id="6998-91d7-1615-3414" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Exotic" hidden="false" id="e89d-50e7-c23a-696a" targetId="b09c-78fb-f3c3-4438" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Raptor Spider Drone" hidden="false" id="3744-63e9-dc82-1ffc">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Raptor Spider Drone" hidden="false" id="1bc7-e890-32a8-b0e6">
+              <profiles>
+                <profile name="Raptor Spider Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="69cd-5941-532e-2114">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Acid Spout, Acid Proboscis" hidden="false" id="3175-3888-3a74-6cb1" type="selectionEntry" targetId="52a9-b510-7a68-1510"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8eda-1eef-e408-2f98" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="e3bf-b3e0-6de4-9827" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Exotic" hidden="false" id="dc41-0af6-c0c9-2f9f" targetId="b09c-78fb-f3c3-4438" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Screamer" hidden="false" id="66c0-251e-7270-25d9">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Screamer" hidden="false" id="fa84-99bc-0694-59d4">
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e7-1b68-69f7-438a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4949-54ec-36e5-e83f" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Screamer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2440-f876-9b2c-70f8">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+2</characteristic>
+                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Huge Claws, Hunting Scream" hidden="false" id="decf-3977-8f8c-c236" type="selectionEntry" targetId="55b6-6a3c-bab3-e5d4"/>
+          </entryLinks>
+          <rules>
+            <rule name="Abhorrent" id="50ed-8075-0415-3f7a" hidden="false">
+              <description>Any enemy Infantry in the same or Linked Garrison suffer a further -1 penalty when searching for objectives, and a +1 penalty to their Fortitude.</description>
+            </rule>
+            <rule name="Squeeze" id="6692-9334-8171-033c" hidden="false">
+              <description>When this unit enters a Garrison or starts its activation in a Garrison, it causes D3 Collateral Damage to that Garrison</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Bloodthirsty" id="4bcf-947b-1765-c489" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b09c-78fb-f3c3-4438" id="8f68-e5a0-dd5d-3167" primary="true" name="Exotic"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Huge Claws, Hunting Scream" hidden="false" id="55b6-6a3c-bab3-e5d4">
+      <profiles>
+        <profile name="Huge Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-7695-b38f-c9b1">
+          <characteristics>
+            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+            <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+            <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+            <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+            <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+            <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hunting Scream" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98ae-12c7-f9c6-1e42">
+          <characteristics>
+            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+            <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+            <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+            <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+            <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+            <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c479-8cc5-4029-99f3" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcee-9fb0-4839-1ccf" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hunting Scream" id="af79-1ee6-d73c-5343" hidden="false">
+          <description>When a unit is targeted by this weapon, the Screamer doesn’t roll damage as normal. Instead, the controlling player rolls a dice for every damage point remaining in the targeted squad and consults their Fortitude. For every roll under the Fortitude value, that squad loses 1 Damage Point with no saves of any kind.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Harbinger Troopship" hidden="false" id="25e0-2a04-cfe1-4493" targetId="f4f3-caf4-529e-56bb" type="selectionEntry"/>
@@ -1407,6 +1670,9 @@
     <entryLink import="true" name="Slaughterer Ordnance Barge" hidden="false" id="feb7-c5bf-ac90-c34b" targetId="7276-4849-694a-72dc" type="selectionEntry"/>
     <entryLink import="true" name="Decapitator Heavy Tank" hidden="false" id="9ea3-aac3-8041-4223" targetId="1c5e-c844-6e0c-9e73" type="selectionEntry"/>
     <entryLink import="true" name="Executioner Heavy Tank" hidden="false" id="f079-9caf-f11c-c006" targetId="0992-3e25-4397-1faa" type="selectionEntry"/>
+    <entryLink import="true" name="Eviscerator Assault Troops" hidden="false" id="fa2c-0144-c4d5-2992" targetId="40af-58ab-b852-e444" type="selectionEntry"/>
+    <entryLink import="true" name="Raptor Spider Drone" hidden="false" id="b1f6-9396-1477-afd8" targetId="3744-63e9-dc82-1ffc" type="selectionEntry"/>
+    <entryLink import="true" name="Screamer" hidden="false" id="33c3-52f9-1b60-84e0" targetId="66c0-251e-7270-25d9" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
@@ -1460,7 +1726,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5585-cea3-3bfd-7a63" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Slayer Heavy Tank Weapon Selection" id="58ba-b6c0-4293-a877" hidden="false">
+    <selectionEntryGroup name="Slayer Heavy Tank Weapon Selection" id="58ba-b6c0-4293-a877" hidden="false" collective="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Twin Plasma Cannon" hidden="false" id="815b-6349-457d-4bf0" defaultAmount="1" collective="true" sortIndex="1">
           <profiles>

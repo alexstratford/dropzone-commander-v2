@@ -2646,9 +2646,10 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b13-ae17-aa18-b41d" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="870f-6bda-e9ba-99ba" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5dc6-0f30-deb0-c9ca" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <profiles>
-                <profile name="Seraphim Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="929d-ff37-c3b7-e52b">
+                <profile name="Seraphim Bomber" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="929d-ff37-c3b7-e52b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-28&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
@@ -2668,33 +2669,30 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Firestorm Heavenfire" hidden="false" id="fe11-b7b7-1953-55c0" type="selectionEntry" targetId="6629-2cff-b113-8cc5"/>
                 <entryLink import="true" name="Seraphim Weapons Selection" hidden="false" id="1541-c1a7-9bfb-399d" type="selectionEntryGroup" targetId="6151-7503-1bcb-eaea"/>
               </entryLinks>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="3" field="5dc6-0f30-deb0-c9ca">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="5dc6-0f30-deb0-c9ca">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="2" field="5dc6-0f30-deb0-c9ca">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Rare Config</comment>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dc65-8861-96d8-80f0" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="set" value="3" field="dc65-8861-96d8-80f0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="dc65-8861-96d8-80f0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="dc65-8861-96d8-80f0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <comment>Rare Config</comment>
-            </modifierGroup>
-          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>

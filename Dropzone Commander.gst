@@ -944,6 +944,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="334e-0ada-9165-6a2d"/>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
