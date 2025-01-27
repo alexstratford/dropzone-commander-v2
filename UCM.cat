@@ -3251,9 +3251,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Archangel Tactical Bomber" hidden="false" id="724b-8472-5532-deb2" targetId="e413-e7f1-998e-62f0" type="selectionEntry"/>
     <entryLink import="true" name="Seraphim Bomber" hidden="false" id="63a9-7e69-368a-fcee" targetId="c287-4193-eac0-6b29" type="selectionEntry"/>
     <entryLink import="true" name="Roc Heavy Gunship" hidden="false" id="3534-2e0d-f175-8699" targetId="e64c-dea6-3b42-403c" type="selectionEntry"/>
-    <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="a6b5-6c55-fbc5-60c1" type="selectionEntry" targetId="4929-e36a-d12e-689f">
-      <comment>F arc, 36&quot; range, 3+ acc</comment>
-    </entryLink>
     <entryLink import="true" name="Hazard Suits" hidden="false" id="ad09-17e2-5475-d6ba" targetId="5545-5d94-3da0-a4dc" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
