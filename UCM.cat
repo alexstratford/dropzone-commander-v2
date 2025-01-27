@@ -2836,6 +2836,9 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="ff91-8cc3-f775-3d20" id="d3b4-837a-d497-aee7" primary="true" name="Heavy"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
