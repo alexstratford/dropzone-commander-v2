@@ -19,7 +19,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Devastator-2 (Vehicle)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
             <profile name="AA Flak missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6477-0c8d-4a38-ceea" publicationId="0a0b-b837-fa34-a21d" page="1">
@@ -31,7 +31,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, AA-2, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-2, Indirect</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -61,7 +61,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Articulated, AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Articulated, AA-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Wide Vindicator" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5674-d7d3-713b-e30a" publicationId="0a0b-b837-fa34-a21d" page="21">
@@ -73,7 +73,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Articulated</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Articulated</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -106,7 +106,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -131,7 +131,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1, Destroyer-6+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1, Destroyer-6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -163,7 +163,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -190,7 +190,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-2 (Scenery), Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Scenery), Indirect</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -215,7 +215,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -235,7 +235,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Articulated</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -258,7 +258,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>Left</comment>
             </profile>
@@ -271,7 +271,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>Right</comment>
             </profile>
@@ -297,7 +297,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Assault Grenades" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0d69-17b0-5f96-676f" publicationId="0a0b-b837-fa34-a21d" page="9">
@@ -309,7 +309,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="SMG Close" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9e34-ba52-6e69-5110" publicationId="0a0b-b837-fa34-a21d" page="9">
@@ -321,7 +321,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -344,7 +344,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323"/>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35"/>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323"/>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -361,7 +361,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -382,7 +382,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -399,7 +399,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -428,7 +428,7 @@
                     <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                     <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                     <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -459,7 +459,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -484,7 +484,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>Left</comment>
             </profile>
@@ -497,7 +497,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>Right</comment>
             </profile>
@@ -510,7 +510,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>Front</comment>
             </profile>
@@ -532,7 +532,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Limited-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Limited-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -560,7 +560,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -595,7 +595,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -611,7 +611,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -649,7 +649,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -672,7 +672,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Cover (All)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Cover (All)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -693,7 +693,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -720,7 +720,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (All), Devastator-4 (Behemoth, Scenery), Limited-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-4 (Behemoth, Scenery), Limited-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -744,7 +744,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-2, Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -764,7 +764,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -789,7 +789,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -812,7 +812,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery), Flame</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery), Flame</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -841,7 +841,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -861,7 +861,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -884,7 +884,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Flame</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Flame</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -908,7 +908,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Close Assault Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b91a-b9a7-1bde-0015">
@@ -920,7 +920,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Missile Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="26d0-29e3-b5e8-300f">
@@ -932,7 +932,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -955,7 +955,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -980,7 +980,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect</characteristic>
               </characteristics>
             </profile>
             <profile name="Daisy Cutter Shell" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b6c4-c9bc-360c-440b">
@@ -992,7 +992,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Indirect, Devastator-6 (Flammable Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Indirect, Devastator-6 (Flammable Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1019,7 +1019,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1048,7 +1048,7 @@
                     <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                     <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                     <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1083,7 +1083,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Indirect, Penetrative, Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Indirect, Penetrative, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Concussion Round" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2fdc-bb09-1758-3e67">
@@ -1095,7 +1095,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1127,7 +1127,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1152,7 +1152,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1176,7 +1176,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1196,7 +1196,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
             <profile name="Compound Missile Pods" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fdd2-d37e-f8b6-242e">
@@ -1208,7 +1208,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1231,7 +1231,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1251,7 +1251,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Cover (Soft), Tech Killer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Cover (Soft), Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1281,7 +1281,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1305,7 +1305,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1330,7 +1330,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1357,14 +1357,14 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9c8e-05d4-113a-fc71" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Kodiak Command ACV" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="c676-ad1a-04ab-51ec" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Kodiak Command ACV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="c676-ad1a-04ab-51ec" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">4</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1397,14 +1397,14 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="aa57-c772-3790-3920" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Phoenix Command Gunship" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="f78b-4200-6c72-0e52" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="f78b-4200-6c72-0e52" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">9</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1434,14 +1434,14 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="f5bd-45e5-ceb2-2492" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Wolf Command LAV" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="03bc-a790-8625-09dd" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Wolf Command LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="03bc-a790-8625-09dd" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1484,14 +1484,14 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Ferrum Drone base" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="79f1-fe83-34d2-97ca">
+                <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="79f1-fe83-34d2-97ca">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">7</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Large</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1534,14 +1534,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Legionnaires" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323"/>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">5</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1571,14 +1571,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f1fc-8a4f-d47e-9ee8" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Legionnaires" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">-</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">5</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Dodge 4+, Rapid Insertion 4”</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Rapid Insertion 4”</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1614,14 +1614,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="5f49-b2d3-4242-ca59" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Praetorian Snipers" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="00b1-0755-3fee-34ac" publicationId="0a0b-b837-fa34-a21d" page="30">
+                <profile name="Praetorian Snipers" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="00b1-0755-3fee-34ac" publicationId="0a0b-b837-fa34-a21d" page="30">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">E+4</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Infiltrate 18&quot;, Resilient</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+4</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 18&quot;, Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1641,14 +1641,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Starsprite Drones" hidden="false" id="8cf7-8d90-45fa-042a">
               <profiles>
-                <profile name="Starsprite Drones" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="b5fd-5302-449f-3492">
+                <profile name="Starsprite Drones" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="b5fd-5302-449f-3492">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">30&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">8</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft-S</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1684,14 +1684,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5640-80cd-3225-d4bb" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Wolverine Scout Buggy" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="7fc7-4969-7f55-e2a4">
+                <profile name="Wolverine Scout Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="7fc7-4969-7f55-e2a4">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1722,14 +1722,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
               </entryLinks>
               <profiles>
-                <profile name="Buzzard Aerial Target Craft" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
+                <profile name="Buzzard Aerial Target Craft" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1757,14 +1757,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b9eb-5f04-363e-d8ac" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Flak AA Team" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="f35f-b00b-f288-904f">
+                <profile name="Flak AA Team" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="f35f-b00b-f288-904f">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1789,14 +1789,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f4-c4ec-61b5-2aea" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Hazard Suits" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
+                <profile name="Hazard Suits" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">1&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 3+</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">1&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1849,14 +1849,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
               </costs>
               <profiles>
-                <profile name="Rapier AA Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="fbdf-7c09-b991-8488" publicationId="0a0b-b837-fa34-a21d" page="21">
+                <profile name="Rapier AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="fbdf-7c09-b991-8488" publicationId="0a0b-b837-fa34-a21d" page="21">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1880,14 +1880,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2d63-6da0-21d4-9084" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Longbow Howitzer" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1cac-4908-b4b2-f555">
+                <profile name="Longbow Howitzer" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="1cac-4908-b4b2-f555">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">0&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1917,14 +1917,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
               </costs>
               <profiles>
-                <profile name="Crossbow Laser Artillery" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="2285-6780-2ea0-639c">
+                <profile name="Crossbow Laser Artillery" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="2285-6780-2ea0-639c">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">0&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1948,14 +1948,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e76-9c04-18ec-1ea8" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Mortar Team" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="338c-905a-aa80-0fea">
+                <profile name="Mortar Team" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="338c-905a-aa80-0fea">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">-</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1989,14 +1989,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0b-f041-3644-e489" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Falcon Light Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="a793-9d3a-de41-ff15">
+                <profile name="Falcon Light Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="a793-9d3a-de41-ff15">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+4</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2024,14 +2024,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9353-0a9a-be1b-5d41" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Osprey Light Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="2697-3d36-2562-5e0e">
+                <profile name="Osprey Light Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="2697-3d36-2562-5e0e">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2066,14 +2066,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f15-73c0-f125-0681" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Eagle Heavy Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="82b8-7f75-6aef-f86d">
+                <profile name="Eagle Heavy Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="82b8-7f75-6aef-f86d">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2102,14 +2102,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="54fd-defc-f2d2-e330" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Dingo LAV" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="9f4b-f204-a538-41c2">
+                <profile name="Dingo LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="9f4b-f204-a538-41c2">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2136,14 +2136,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
               </costs>
               <profiles>
-                <profile name="Grizzly Mortar" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="dd22-0ff3-7d7c-6b53">
+                <profile name="Grizzly Mortar" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="dd22-0ff3-7d7c-6b53">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2176,14 +2176,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b8-b167-2c28-7b30" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Bear APC" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="bdb1-e593-ba60-98a5" publicationId="0a0b-b837-fa34-a21d" page="36">
+                <profile name="Bear APC" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="bdb1-e593-ba60-98a5" publicationId="0a0b-b837-fa34-a21d" page="36">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2215,14 +2215,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43c2-99c8-b9f3-a311" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Albatross" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="512a-8d4a-710c-e669">
+                <profile name="Albatross" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="512a-8d4a-710c-e669">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2236,14 +2236,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Condor Dropship" hidden="false" id="d1b0-a9a7-e78e-ac4d">
               <profiles>
-                <profile name="Condor Dropship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="cc2d-d2cb-a801-cd55">
+                <profile name="Condor Dropship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="cc2d-d2cb-a801-cd55">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2269,14 +2269,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Vulture Dropship" hidden="false" id="2f8c-c6e4-bc0c-8b36" collective="true">
               <profiles>
-                <profile name="Vulture Troopship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="6480-1cdc-9d9c-d264">
+                <profile name="Vulture Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="6480-1cdc-9d9c-d264">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2303,14 +2303,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Vulture Troopship" hidden="false" id="4ac7-7031-d88c-5551" collective="true">
               <profiles>
-                <profile name="Vulture Troopship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="41d7-4a76-44ab-fd6a">
+                <profile name="Vulture Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="41d7-4a76-44ab-fd6a">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2348,14 +2348,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6b6-e77a-590b-b2d2" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Badger Buggy" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="7b64-0563-9d0d-b53c">
+                <profile name="Badger Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="7b64-0563-9d0d-b53c">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2382,14 +2382,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1c20-59f7-597d-97d3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Ferret Buggy" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="3c5b-b816-490e-6ccd">
+                <profile name="Ferret Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="3c5b-b816-490e-6ccd">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2417,14 +2417,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e263-0e04-2de2-5c48" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Panda APC" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="a35f-f2f1-1a16-e070">
+                <profile name="Panda APC" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="a35f-f2f1-1a16-e070">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2456,14 +2456,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="4d25-797c-daaa-af6c" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Dropship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
+                <profile name="Raven Light Dropship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2490,14 +2490,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="2c1b-ada8-9ea1-7189" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Troopship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
+                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2524,14 +2524,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Retribution Cannons" hidden="false" id="0239-5487-bd79-8fa4" type="selectionEntry" targetId="ebc7-fd33-72aa-f69c"/>
               </entryLinks>
               <profiles>
-                <profile name="Archangel Interceptor" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="55e8-2c80-d419-47e1">
+                <profile name="Archangel Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="55e8-2c80-d419-47e1">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;-36&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+5</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Fast, Rare</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2588,14 +2588,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Incendiary Missiles" hidden="false" id="f61d-0b45-c3e4-fd77" type="selectionEntry" targetId="0537-9b76-5814-c1bc"/>
               </entryLinks>
               <profiles>
-                <profile name="Archangel Tactical Bomber" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="0410-1c0f-1516-3d8f">
+                <profile name="Archangel Tactical Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="0410-1c0f-1516-3d8f">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;-36&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+5</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Fast, Rare</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2648,14 +2648,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="870f-6bda-e9ba-99ba" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Seraphim Bomber" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="929d-ff37-c3b7-e52b">
+                <profile name="Seraphim Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="929d-ff37-c3b7-e52b">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;-28&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+4</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Fast, Rare</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-28&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2724,14 +2724,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
               </costs>
               <profiles>
-                <profile name="Sabre Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="8ad0-76cd-0c9a-7487" publicationId="0a0b-b837-fa34-a21d" page="6">
+                <profile name="Sabre Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="8ad0-76cd-0c9a-7487" publicationId="0a0b-b837-fa34-a21d" page="6">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2755,14 +2755,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="edf0-d924-b399-a911" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Katana Light Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="6f8e-3347-c37a-e38c">
+                <profile name="Katana Light Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="6f8e-3347-c37a-e38c">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2793,14 +2793,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               <entryLinks>
                 <entryLink import="true" name="Polecat Weapons Selection" hidden="false" id="e29e-cb41-0878-f398" type="selectionEntryGroup" targetId="ea6f-f728-a785-ff7b" collective="true">
                   <profiles>
-                    <profile name="Polecat Weapons Selection" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="a736-0215-a2c6-2e67">
+                    <profile name="Polecat Weapons Selection" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="a736-0215-a2c6-2e67">
                       <characteristics>
-                        <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                        <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                        <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                        <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                        <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                        <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                        <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                        <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -2823,14 +2823,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Gladius Heavy Tank" hidden="false" id="eba9-c113-0bfa-a169" collective="true">
               <profiles>
-                <profile name="Gladius Heavy Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="ecc5-788c-e98e-ce48">
+                <profile name="Gladius Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="ecc5-788c-e98e-ce48">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2868,14 +2868,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Marksman Laser" hidden="false" id="43b8-c6ca-afbb-eea9" type="selectionEntry" targetId="2090-8f2b-72a4-b3bc"/>
               </entryLinks>
               <profiles>
-                <profile name="Scimitar Heavy Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="36da-7ee3-9b11-c3bb">
+                <profile name="Scimitar Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="36da-7ee3-9b11-c3bb">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2893,14 +2893,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Flail Heavy Tank" hidden="false" id="fc49-a2d7-d899-8452" collective="true">
               <profiles>
-                <profile name="Flail Heavy Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="9167-0867-6fd5-5ef3">
+                <profile name="Flail Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="9167-0867-6fd5-5ef3">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2938,14 +2938,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Broadsword Weapon Selection" hidden="false" id="bdd4-550a-3d20-458c" type="selectionEntryGroup" targetId="ddbf-6660-dc46-6bc1"/>
               </entryLinks>
               <profiles>
-                <profile name="Broadsword Super-Heavy Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="f086-2f23-96e9-66b4">
+                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="f086-2f23-96e9-66b4">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">15</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">4</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2972,14 +2972,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a548-f74a-645a-2b08" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Vulture Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="b707-9171-d46c-7357">
+                <profile name="Vulture Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="b707-9171-d46c-7357">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">10</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">10</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3002,14 +3002,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da1f-31b8-ff11-c433" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Dominion Heavy Bomber" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="a66c-56d9-02c8-dddb">
+                <profile name="Dominion Heavy Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="a66c-56d9-02c8-dddb">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;-24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">4</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Fast, Rare</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;-24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3076,14 +3076,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6601-c2c0-c9e3-4e2e" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Jackal LAV" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="917b-c558-c9b4-2139">
+                <profile name="Jackal LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="917b-c558-c9b4-2139">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3119,14 +3119,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b27-d967-6beb-17a7" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Roc Heavy Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="28eb-69ef-cabe-ba7d">
+                <profile name="Roc Heavy Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="28eb-69ef-cabe-ba7d">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">9</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Command Centre</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3241,7 +3241,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Indirect, Devastator-3 (Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3265,7 +3265,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Articulated</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3302,7 +3302,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3321,7 +3321,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3352,7 +3352,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3385,7 +3385,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Cover (Body, Soft), Focus-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft), Focus-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3417,7 +3417,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-3 (Vehicle), Devastator 2 (Behemoth)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Vehicle), Devastator 2 (Behemoth)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3442,7 +3442,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Devastator-4 (Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-4 (Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Tremor Rotary Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b0ee-c6be-6da8-2880">
@@ -3454,7 +3454,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Cover (All), Flame, Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Flame, Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3487,7 +3487,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3512,7 +3512,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Penetrative, Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Penetrative, Strafe-2</characteristic>
               </characteristics>
             </profile>
             <profile name="AA Multi-Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="33b4-4786-8ed6-ae92">
@@ -3524,7 +3524,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3561,7 +3561,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Indirect, Devastator-3 (Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3585,7 +3585,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Indirect, Devastator-2 (Infantry, Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Indirect, Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3621,7 +3621,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3646,7 +3646,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3671,7 +3671,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3702,7 +3702,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Cover (All), Limited-4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Cover (All), Limited-4</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3726,7 +3726,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">5+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-5 (Scenery), Devastator-2 (Behemoth)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-5 (Scenery), Devastator-2 (Behemoth)</characteristic>
               </characteristics>
             </profile>
           </profiles>

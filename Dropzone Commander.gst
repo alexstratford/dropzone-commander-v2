@@ -19,36 +19,6 @@
     </costType>
   </costTypes>
   <profileTypes>
-    <profileType id="496e66616e74727923232344415441232323" name="Infantry">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="4c616e6420556e697423232344415441232323" name="Vehicle">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="41697220556e697423232344415441232323" name="Aircraft">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
         <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
@@ -58,7 +28,7 @@
         <characteristicType id="53686f747323232344415441232323" name="Shots"/>
         <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
         <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="436f6d6d616e64657223232344415441232323" name="Commander">
@@ -74,6 +44,16 @@
         <characteristicType id="4761746520546f74616c23232344415441232323" name="Gate Total"/>
         <characteristicType id="4.761746520537175e+41" name="Gate Squads"/>
         <characteristicType id="4f746865722053717561647323232344415441232323" name="Other Squads"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f28" name="Unit">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="Countermeasures"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="Armour"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="Damage Points"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -806,14 +786,14 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="EAA Columbus Battlewalker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1b9c-154b-6a95-b8e0">
+                <profile name="EAA Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -829,7 +809,7 @@
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                         <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -849,7 +829,7 @@
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                         <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -890,7 +870,7 @@
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                             <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                             <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                            <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -912,7 +892,7 @@
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                             <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                             <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                            <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1114,7 +1094,7 @@ Any squads that start the game in Holding must be declared as such. Those squad
     <rule name="Bloodthirsty" id="9134-48fd-ee38-1054" hidden="false">
       <description>If this unit is in the same Garrison as an enemy unit, then it may not move away or leave the Garrison. This unit suffers a -2 penalty when searching for objectives.</description>
     </rule>
-    <rule name="Dodge" id="4fdb-af55-c6cc-3e6c" hidden="false">
+    <rule name="Dodge-X" id="4fdb-af55-c6cc-3e6c" hidden="false">
       <alias>Dodge 1+</alias>
       <alias>Dodge 2+</alias>
       <alias>Dodge 3+</alias>
