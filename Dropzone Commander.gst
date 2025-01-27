@@ -19,36 +19,6 @@
     </costType>
   </costTypes>
   <profileTypes>
-    <profileType id="496e66616e74727923232344415441232323" name="Infantry">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="4c616e6420556e697423232344415441232323" name="Vehicle">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType id="41697220556e697423232344415441232323" name="Aircraft">
-      <characteristicTypes>
-        <characteristicType id="4d6f766523232344415441232323" name="Move"/>
-        <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
-        <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="5.479706523232345e+27" name="Type"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
         <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
@@ -816,14 +786,14 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="EAA Columbus Battlewalker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1b9c-154b-6a95-b8e0">
+                <profile name="EAA Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
-                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
-                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
