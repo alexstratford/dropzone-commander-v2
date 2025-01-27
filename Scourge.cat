@@ -190,9 +190,206 @@
             <categoryLink name="Auxiliary" hidden="false" id="b564-8896-cb4d-6c30" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Marauder Dropship" hidden="false" id="b3d5-0ad2-c01c-45a3">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Marauder Dropship" hidden="false" id="2c97-e65d-f981-1660">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
+                <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="-2"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Marauder Dropship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="4347-3059-ca72-b429">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Hose" hidden="false" id="7e5b-8edd-4f13-11c3" type="selectionEntry" targetId="7b1b-751c-5058-1839"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="695c-c446-a84f-5e5d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b6-4cfd-d308-5b1e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="96b9-e2e9-0eb2-6eed" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="d3b9-6431-8d13-9d71"/>
+    <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="d3b9-6431-8d13-9d71">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Hunter Tank" hidden="false" id="454e-a9cd-9a90-41b1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hunter Tank" hidden="false" id="e43c-bdf0-a743-470f" collective="true">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0749-fecf-264d-206f" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dc9d-b09c-7042-ac42" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+                <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Hunter Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="f49d-e893-e6f2-a262">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+2</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Cannon" hidden="false" id="77a5-d334-3bc0-edef" type="selectionEntry" targetId="04c6-1414-00a0-0dd5"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="5b81-d459-a5f2-a830" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Stalker Beetle" hidden="false" id="df73-3aaa-95fd-99b7">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Stalker Beetle" hidden="false" id="c468-8bf8-76ec-b7d2" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Stalker Beetle" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="d727-e46c-cb04-05d6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Infiltrate 8&quot;, Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="feb1-e3b4-925a-e010" type="selectionEntry" targetId="5e74-7851-f3ac-10e9"/>
+                <entryLink import="true" name="Electroweb Caster" hidden="false" id="95e7-9a60-940c-6bc4" type="selectionEntry" targetId="d7d4-03d8-412c-ee56" collective="true"/>
+                <entryLink import="true" name="Cutting Claws" hidden="false" id="5854-3687-bb6c-8767" type="selectionEntry" targetId="fabe-2a6c-3c28-c20c" collective="true"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="45df-5bff-6b1f-7244" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9a23-14b0-7458-fab2" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Resilient" id="8191-8513-78dc-7964" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="2c8f-fd01-8b2d-ccc1" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Spectre Skimtank" hidden="false" id="80fd-d998-6a1c-17e9">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Spectre Skimtank" hidden="false" id="5ef8-a1d7-4998-e472" collective="true">
+              <profiles>
+                <profile name="Spectre Skimtank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="a84a-e713-88a4-5489">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+3</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="1"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="baab-abe6-4781-38cc" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2ea2-a51a-bf50-7912" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Spectre Skimtank Weapon Selection" hidden="false" id="25ae-2994-0751-24b3" type="selectionEntryGroup" targetId="312e-3583-62e7-8d1c"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="822e-9f2a-17cd-2347" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Ravenor Laser Walker" hidden="false" id="748c-c139-a911-5996">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Ravenor Laser Walker" hidden="false" id="b01f-c0fa-0346-714f" defaultAmount="1" collective="true">
+              <profiles>
+                <profile name="Ravenor Laser Walker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="9769-e44e-8876-580b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="4"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Resilient" id="0f40-6501-84a4-92fc" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Razor Claws" hidden="false" id="9ba0-0fd2-843b-1995" type="selectionEntry" targetId="1cd2-8918-7972-6556" sortIndex="2"/>
+                <entryLink import="true" name="Standoff Energy Cluster" hidden="false" id="1480-1fa7-75a1-bde7" type="selectionEntry" targetId="d9fa-a40d-22dc-2708" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-fe82-aa85-e68c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0a-27a2-cea9-8344" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="63e3-bb25-ef7b-06aa" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="8795-24cb-12be-bec3">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Ion Cyclone" hidden="false" id="f3d7-3b92-d765-5f9e" collective="true">
@@ -211,8 +408,8 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Destroyer-5+" id="e109-006c-1637-5552" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-            <infoLink name="Alt-1" id="42ed-747d-6e5a-edce" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Destroyer-X" id="e109-006c-1637-5552" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+            <infoLink name="Alt-X" id="42ed-747d-6e5a-edce" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
             <infoLink name="Flame" id="e474-8b0e-ef0f-9b17" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
           <constraints>
@@ -242,14 +439,14 @@
           </rules>
           <infoLinks>
             <infoLink name="Tech Killer" id="30ef-889a-8d40-c4ab" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
-            <infoLink name="Alt-1" id="584e-9489-8b20-d175" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Alt-X" id="584e-9489-8b20-d175" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a03-bc0c-f642-100d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f1a-29eb-fd98-e963" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Razor Claws" hidden="false" id="1cd2-8918-7972-6556">
+        <selectionEntry type="upgrade" import="true" name="Razor Claws" hidden="false" id="1cd2-8918-7972-6556" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d78d-9dd2-3911-5a82" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="816c-db85-b38d-42c1" includeChildSelections="false"/>
@@ -269,7 +466,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Electroweb Caster" hidden="false" id="d7d4-03d8-412c-ee56">
+        <selectionEntry type="upgrade" import="true" name="Electroweb Caster" hidden="false" id="d7d4-03d8-412c-ee56" collective="true">
           <infoLinks>
             <infoLink name="Tech Killer" id="5ba9-bfd6-8338-1ffd" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
@@ -292,7 +489,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Carbines" hidden="false" id="74b7-1ab4-0905-7bcc">
+        <selectionEntry type="upgrade" import="true" name="Plasma Carbines" hidden="false" id="74b7-1ab4-0905-7bcc" collective="true">
           <profiles>
             <profile name="Focused Plasma Carbines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fbd9-9a7b-cdb7-b0f1">
               <characteristics>
@@ -329,7 +526,7 @@
             <infoLink name="Strafe-X" id="e5b7-e581-d5d6-b2a5" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Hose" hidden="false" id="0da6-2eb2-286d-b11d">
+        <selectionEntry type="upgrade" import="true" name="Plasma Hose" hidden="false" id="0da6-2eb2-286d-b11d" collective="true">
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c7b2-9da0-0b6d-713a">
               <characteristics>
@@ -345,7 +542,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Focus" id="a6f6-efc1-71e3-c0db" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+            <infoLink name="Focus-X" id="a6f6-efc1-71e3-c0db" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="023d-11ab-6eab-30e9" includeChildSelections="false"/>
@@ -353,7 +550,7 @@
           </constraints>
           <comment>Double</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Hose" hidden="false" id="7b1b-751c-5058-1839">
+        <selectionEntry type="upgrade" import="true" name="Plasma Hose" hidden="false" id="7b1b-751c-5058-1839" collective="true">
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9199-edcb-3daa-a8dd">
               <characteristics>
@@ -369,14 +566,14 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Focus" id="5be1-8a4a-1ed9-ef13" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+            <infoLink name="Focus-X" id="5be1-8a4a-1ed9-ef13" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cd4-e8a9-c1ae-effe" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca4-02ff-beb9-e409" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="04c6-1414-00a0-0dd5">
+        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="04c6-1414-00a0-0dd5" collective="true">
           <profiles>
             <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8b2f-a3df-a330-140f">
               <characteristics>
@@ -399,44 +596,199 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bc8-da80-7732-cbf1" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hunter Tank" hidden="false" id="454e-a9cd-9a90-41b1">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hunter Tank" hidden="false" id="e43c-bdf0-a743-470f" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Cutting Claws" hidden="false" id="fabe-2a6c-3c28-c20c" collective="true">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0749-fecf-264d-206f" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dc9d-b09c-7042-ac42" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0f9-6738-6c0f-92c6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ccc-385e-30d2-a90f" includeChildSelections="false"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="35"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
-            <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
           <profiles>
-            <profile name="Hunter Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="f49d-e893-e6f2-a262">
+            <profile name="Cutting Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="129f-d1f0-9fbc-8e35">
               <characteristics>
-                <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+2</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
-                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
-                <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Plasma Cannon" hidden="false" id="77a5-d334-3bc0-edef" type="selectionEntry" targetId="04c6-1414-00a0-0dd5"/>
-          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Lance" hidden="false" id="89b7-6baf-850a-e889" defaultAmount="1" collective="true">
+          <profiles>
+            <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fe42-8314-22f3-d4a0">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="93c6-c428-8b93-5471" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8119-073b-5fc9-70b4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="620a-a76b-80cc-91d9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Standoff Energy Cluster" hidden="false" id="d9fa-a40d-22dc-2708" collective="true">
+          <profiles>
+            <profile name="Standoff Energy Cluster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6dba-e7b9-0169-3100">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer (6+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="5788-0395-27f6-52bc" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec94-868a-9645-b4ce" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a93-0d82-a3e6-7303" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Rifles, Assault Pistols" hidden="false" id="1eb4-139b-7aa2-a907" collective="true">
+          <profiles>
+            <profile name="Plasma Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2e22-27aa-6ca3-0247">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-3, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Assault Pistols" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fc49-d69d-1b33-7595">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="797b-dd14-f532-0aa6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffcd-8bc0-4be0-2331" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="bb90-759f-f49f-8ca5" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+            <infoLink name="Focus-X" id="19dc-f824-6eb1-1d18" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Teeth &amp; Claws" hidden="false" id="dd1f-581e-86e6-fa6b" collective="true">
+          <profiles>
+            <profile name="Teeth &amp; Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="247a-e892-ec0f-74b6">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="6ba8-2072-6d6f-4ee6" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ba3-ad8c-144d-3d97" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1814-59bf-c50f-80a9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Charger, Shard Cannon" hidden="false" id="f6f3-9a52-9b3a-adfc">
+          <profiles>
+            <profile name="Plasma Charger" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2ba9-32d0-fc8f-d952">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shard Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="763e-b8af-e043-169f">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="8eae-82d6-1928-8271" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51a0-3784-74a7-59c3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d08-1112-83a1-2735" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Injecting Proboscis, Spewing Proboscis" hidden="false" id="53eb-44df-7064-cfb9">
+          <profiles>
+            <profile name="Plasma Injecting Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3ab6-715b-9d5c-75cc">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Spewing Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d801-c258-57df-4d0c">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c3d-dd8a-07ee-8221" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f3d-e4d1-1080-211c" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="5b81-d459-a5f2-a830" primary="true" name="Standard"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
       <selectionEntries>
@@ -445,7 +797,7 @@
             <categoryLink name="Troops" hidden="false" id="c8a6-b21d-dccf-7881" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Warriors" hidden="false" id="177e-3b37-3aeb-7763">
+            <selectionEntry type="model" import="true" name="Warriors" hidden="false" id="177e-3b37-3aeb-7763" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
@@ -471,48 +823,123 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ad2f-a834-3d09-e66a" includeChildSelections="false"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2949-2809-a564-f769" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Rifles, Assault Pistols" hidden="false" id="d48b-54af-ce44-5a28" type="selectionEntry" targetId="1eb4-139b-7aa2-a907"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Marauder Dropship" hidden="false" id="b3d5-0ad2-c01c-45a3">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Marauder Dropship" hidden="false" id="2c97-e65d-f981-1660">
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
-            <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="-2"/>
-            <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Marauder Dropship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="4347-3059-ca72-b429">
-              <characteristics>
-                <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
-                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Plasma Hose" hidden="false" id="7e5b-8edd-4f13-11c3" type="selectionEntry" targetId="7b1b-751c-5058-1839"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="695c-c446-a84f-5e5d" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b6-4cfd-d308-5b1e" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="unit" import="true" name="Razorworms" hidden="false" id="2148-9f87-2c9f-8ae2">
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="cffb-f332-5eb6-63ee" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Razorworms" hidden="false" id="94df-d4c1-2dcb-cd2c" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Teeth &amp; Claws" hidden="false" id="448f-3fbe-b6d1-5251" type="selectionEntry" targetId="dd1f-581e-86e6-fa6b"/>
+              </entryLinks>
+              <rules>
+                <rule name="Living Weapon" id="45fd-4f4e-fa15-243f" hidden="false">
+                  <description>This unit cannot search for or claim Objectives, and cannot embark in transports during battle, though may start the game embarked.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aafd-a738-921f-f58a" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="aa79-1ff3-a06a-5371" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Demolisher Shock Troops" hidden="false" id="ddeb-48d8-ae39-1025">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Demolisher Shock Troops" hidden="false" id="463e-e2f0-cb33-82be">
+              <profiles>
+                <profile name="Demolisher Shock Troops" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="7216-fc0a-59e6-088c">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">P4+</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Tough" id="1b89-a7b2-ab85-0cc0" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
+                <infoLink name="Resilient" id="c600-22c4-572c-8b93" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6ed1-adec-dfb2-03a5" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ebef-bce6-c53b-2d69" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Charger, Shard Cannon" hidden="false" id="acea-565c-30d8-82d4" type="selectionEntry" targetId="f6f3-9a52-9b3a-adfc"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="c442-557f-96d2-79eb" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Prowler Spider Drone" hidden="false" id="7037-0c6d-a6d7-9a02">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Prowler Spider Drone" hidden="false" id="0bd5-9f2b-247d-1e97">
+              <profiles>
+                <profile name="Prowler Spider Drone" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="f15e-ec35-984e-21a9">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Injecting Proboscis, Spewing Proboscis" hidden="false" id="1239-46c0-3c9a-f79d" type="selectionEntry" targetId="53eb-44df-7064-cfb9"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="39b6-3ff9-40c4-54e4" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="cbeb-37ec-74d5-df3e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="f7ca-7200-11d9-465a" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="de27-8358-5d78-6eeb" id="96b9-e2e9-0eb2-6eed" primary="true" name="Auxiliary"/>
-      </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="9405-20f4-1652-03af"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Harbinger Troopship" hidden="false" id="25e0-2a04-cfe1-4493" targetId="f4f3-caf4-529e-56bb" type="selectionEntry"/>
@@ -522,5 +949,68 @@
     <entryLink import="true" name="Hunter Tank" hidden="false" id="6cb8-1974-2409-f5e6" targetId="454e-a9cd-9a90-41b1" type="selectionEntry"/>
     <entryLink import="true" name="Warriors" hidden="false" id="e413-7a8f-4fc0-9683" targetId="29c0-3971-7a26-1da9" type="selectionEntry"/>
     <entryLink import="true" name="Marauder Dropship" hidden="false" id="e251-6c0b-640c-72c9" targetId="b3d5-0ad2-c01c-45a3" type="selectionEntry"/>
+    <entryLink import="true" name="Stalker Beetle" hidden="false" id="5218-246f-b1a0-c601" targetId="df73-3aaa-95fd-99b7" type="selectionEntry"/>
+    <entryLink import="true" name="Spectre Skimtank" hidden="false" id="0018-d6a3-8dd7-a3a0" targetId="80fd-d998-6a1c-17e9" type="selectionEntry"/>
+    <entryLink import="true" name="Ravenor Laser Walker" hidden="false" id="915c-4b34-bbba-6202" targetId="748c-c139-a911-5996" type="selectionEntry"/>
+    <entryLink import="true" name="Razorworms" hidden="false" id="b82d-3d14-689e-0130" targetId="2148-9f87-2c9f-8ae2" type="selectionEntry"/>
+    <entryLink import="true" name="Demolisher Shock Troops" hidden="false" id="747e-bc45-0f82-a9d8" targetId="ddeb-48d8-ae39-1025" type="selectionEntry"/>
+    <entryLink import="true" name="Prowler Spider Drone" hidden="false" id="7638-3885-39f4-e781" targetId="7037-0c6d-a6d7-9a02" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Photon Blaster" hidden="false" id="d1b0-d7c5-c723-b1f0" collective="true">
+          <profiles>
+            <profile name="Photon Blaster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e8b2-62a1-1bc2-50f6">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Indirect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Indirect" id="58dd-2f49-de11-dcf8" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+          </infoLinks>
+          <rules>
+            <rule name="Photon Blaster" id="a7f7-8884-836b-e8f7" hidden="false">
+              <description>This weapon always does damage to targets on a damage roll of 5 or 6.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6548-f25b-14c6-1406" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3652-7aaf-f9e1-e1eb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Lance" hidden="false" id="17bf-7887-6cd0-1dcc" defaultAmount="1" collective="true">
+          <profiles>
+            <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4f38-e31e-30d5-787b">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="080c-faba-c44b-e2e9" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b84a-69d9-9a5c-2727" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5585-cea3-3bfd-7a63" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
