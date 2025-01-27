@@ -5,14 +5,17 @@
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="1750"/>
-    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false">
-      <comment>UCM</comment>
+    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1">
+      <comment>Scourge Vampires</comment>
     </costType>
-    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Light</comment>
+    <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1">
+      <comment>Scourge Crab</comment>
     </costType>
-    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Tank</comment>
+    <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1">
+      <comment>Scourge Screamer</comment>
     </costType>
   </costTypes>
   <profileTypes>
@@ -646,9 +649,9 @@
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
-                            <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
-                            <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -936,6 +939,31 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infiltrating" hidden="false" id="5e74-7851-f3ac-10e9" defaultAmount="1" collective="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fdc2-234a-0a2a-398a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6d5-1980-c84d-1740" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Infiltrate X" id="c9cf-ec34-09e0-ca69" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
+      </infoLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="466e-b8ec-f298-b782" scope="model"/>
+            <modifier type="set" value="0" field="f4ee-4eec-0c72-6c13" scope="model"/>
+            <modifier type="set" value="0" field="1832-e9be-1e78-02df" scope="model"/>
+            <modifier type="set" value="0" field="adf6-547d-2c51-e81a" scope="model"/>
+            <modifier type="set" value="0" field="1657-edf7-a484-c3e7" scope="model"/>
+            <modifier type="set" value="0" field="5bb1-3f94-8396-e8d2" scope="model"/>
+            <modifier type="add" value="8d7c-89a4-5368-5a3c" field="category" scope="unit"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="model" childId="5e74-7851-f3ac-10e9" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
@@ -1186,7 +1214,7 @@ Additionally, if this unit shoots with Close Quarters weapons in the turn it en
     <rule name="Wide" id="3ab1-40ff-10e9-2f89" hidden="false">
       <description>This unit doubles the usual distance of its coherency.</description>
     </rule>
-    <rule name="Focus" id="5d31-f577-8070-6820" hidden="false">
+    <rule name="Focus-X" id="5d31-f577-8070-6820" hidden="false">
       <alias>Focus-1</alias>
       <alias>Focus-2</alias>
       <alias>Focus-3</alias>
@@ -1226,6 +1254,9 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
     </rule>
     <rule name="Rare" id="b430-8b04-52c2-a2c6" hidden="false">
       <description>You may only take a maximum of one of each type of Rare squad in a Skirmish sized game, two of each type in a Clash, and three of each type in a Battle. This restriction applies to each Rare squad individually (you may take two different types of Rare squads in a Skirmish for example).</description>
+    </rule>
+    <rule name="Tough" id="48e3-db2d-d554-e0dc" hidden="false">
+      <description>Re-roll successful Collateral Damage hits against this unit. In addition, this unit may enter a Garrison from any direction, regardless of entrances.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -1349,14 +1380,10 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa19-a355-87fd-1580" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Transport Req" hidden="false" id="cb46-2269-a3b6-774f" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Transport Req" hidden="false" id="cb46-2269-a3b6-774f" sortIndex="1" defaultAmount="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1363-be35-d6db-3277" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e78b-e8c8-0224-a9aa" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="e78b-e8c8-0224-a9aa"/>
-          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Holding" hidden="false" id="17f7-74ea-40f0-2d75">
           <constraints>
