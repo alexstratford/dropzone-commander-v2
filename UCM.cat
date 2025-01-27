@@ -3340,6 +3340,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Jackal LAV" hidden="false" id="9753-01c0-6d48-eb48" targetId="9b5e-c994-c4fb-6b1f" type="selectionEntry"/>
     <entryLink import="true" name="Vulture Gunship" hidden="false" id="650e-32c6-7b79-d6e0" targetId="461b-c7bc-a4c7-6c99" type="selectionEntry"/>
     <entryLink import="true" name="Dominion Heavy Bomber" hidden="false" id="038f-3081-1f1e-0f0f" targetId="06db-6398-5210-b138" type="selectionEntry"/>
+    <entryLink import="true" name="India Light Battle-Mech" hidden="false" id="02e9-790b-3484-a634" targetId="6996-8f40-fc3d-3a11" type="selectionEntry"/>
     <entryLink import="true" name="Flak AA Team" hidden="false" id="fbd1-92d4-6e67-d5ef" targetId="d193-89dc-e321-839d" type="selectionEntry"/>
     <entryLink import="true" name="Longbow Howitzer" hidden="false" id="4e2e-9b60-e3ff-71a9" targetId="0625-3c12-c821-d673" type="selectionEntry"/>
     <entryLink import="true" name="Mortar Team" hidden="false" id="a064-383d-6b4c-d9fa" targetId="24b7-d90a-c5ac-6875" type="selectionEntry"/>
