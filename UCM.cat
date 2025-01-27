@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7504-b7a2-cf56-9902" name="United Colonies Of Mankind" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7504-b7a2-cf56-9902" name="United Colonies Of Mankind" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>UCM for v2.2 of Dropzone Commander</comment>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="true" id="e9a7-3680-5faf-edb5" flatten="true">
@@ -12,25 +12,25 @@
           <profiles>
             <profile name="Armour Breaker Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="774a-7c65-77c4-7516" publicationId="0a0b-b837-fa34-a21d" page="1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
             <profile name="AA Flak missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6477-0c8d-4a38-ceea" publicationId="0a0b-b837-fa34-a21d" page="1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, AA-2, Indirect</characteristic>
               </characteristics>
             </profile>
@@ -54,25 +54,25 @@
           <profiles>
             <profile name="AA Vindicator" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="48f0-d5eb-c2fe-f0a2" publicationId="0a0b-b837-fa34-a21d" page="21">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Articulated, AA-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Wide Vindicator" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5674-d7d3-713b-e30a" publicationId="0a0b-b837-fa34-a21d" page="21">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Articulated</characteristic>
               </characteristics>
             </profile>
@@ -99,13 +99,13 @@
           <profiles>
             <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="efed-85e3-eb8a-33aa" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
@@ -124,13 +124,13 @@
           <profiles>
             <profile name="Sniper Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="30ad-a5b0-7751-30bd" page="">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1, Destroyer-6+</characteristic>
               </characteristics>
             </profile>
@@ -156,13 +156,13 @@
           <profiles>
             <profile name="Sidearms" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="57b1-3f3e-24d8-5e87" page="">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQB</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQB</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQB</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQB</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -183,13 +183,13 @@
           <profiles>
             <profile name="Orbital Strike" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4adc-5893-7677-5013" publicationId="0a0b-b837-fa34-a21d" page="1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-2 (Scenery), Indirect</characteristic>
               </characteristics>
             </profile>
@@ -208,13 +208,13 @@
           <profiles>
             <profile name="Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2557-5e6e-9d6e-4c24" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
@@ -228,13 +228,13 @@
           <profiles>
             <profile name="Avenger Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="679e-f43c-383a-693a" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Articulated</characteristic>
               </characteristics>
             </profile>
@@ -255,37 +255,37 @@
           <profiles>
             <profile name="Assault Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0c0d-5fa4-3277-fdb9" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Missile Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7eac-e972-a0cd-0353" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Close Assault Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5bb3-700c-806a-45ea" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -302,26 +302,26 @@
           <profiles>
             <profile name="Minigun Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="be18-e054-2bf6-7c46" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
               <comment>Left</comment>
             </profile>
             <profile name="Minigun Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f7be-194a-56c2-2088" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
               <comment>Right</comment>
@@ -333,34 +333,6 @@
           </constraints>
           <comment>Phoenix</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missile Battery" hidden="false" id="5708-d570-3790-a609" collective="true" flatten="false">
-          <profiles>
-            <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="003c-e8ef-e1c2-3de7" publicationId="0a0b-b837-fa34-a21d" page="6">
-              <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Limited-2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef49-a0c1-9544-4a2a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5c0-f7ed-4aa1-b450" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Area" id="db64-b86a-b00e-4f6d" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
-            <infoLink name="Limited-X" id="85cf-7fbb-34e7-1802" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="SMGs, Assault Grenades" hidden="false" id="78c0-b1d5-2689-52b6" page="" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fde-2b9e-0b06-0a59" includeChildSelections="false"/>
@@ -369,37 +341,37 @@
           <profiles>
             <profile name="SMG Special" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1743-4d8d-f87e-f752" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Assault Grenades" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0d69-17b0-5f96-676f" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="SMG Close" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9e34-ba52-6e69-5110" publicationId="0a0b-b837-fa34-a21d" page="9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -412,17 +384,17 @@
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="4929-e36a-d12e-689f" collective="true" flatten="false">
+        <selectionEntry type="upgrade" import="true" name="Gatling Gun" hidden="false" id="6d8c-16ac-5f90-bb18" collective="true" flatten="false">
           <profiles>
-            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="85ee-ade8-1bea-e179" publicationId="0a0b-b837-fa34-a21d" page="6">
+            <profile name="Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4b99-a76e-eac7-4224" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
@@ -432,7 +404,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca75-6bc4-400c-1117" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Point Defence Launchers" hidden="false" id="b7fc-1bab-f74b-53e1">
+        <selectionEntry type="upgrade" import="true" name="Point Defence Launchers" hidden="false" id="b7fc-1bab-f74b-53e1" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c60-34c9-a45d-3826" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b71-3705-de1b-5310" includeChildSelections="false"/>
@@ -440,6 +412,31 @@
           <profiles>
             <profile name="Point Defence Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d424-7e32-65de-2f2e">
               <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="0705-094a-151a-1f4c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Penetrative" id="e64e-a98c-dbdf-80db" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="adf3-9f68-da71-728c" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="07e0-c54e-5008-b045" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -488,11 +485,26 @@
                 <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">15&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Focus-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="3440-5d71-726a-6c6c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Focus" id="ed41-dcb8-4c15-04d5" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="0a49-15d5-bc7b-b079" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="de70-3973-1ddb-a52c" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
@@ -530,6 +542,38 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4b5-7951-8137-733f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa9-b8cf-1a7f-6b6b" includeChildSelections="false"/>
           </constraints>
+          <comment>Scimitar version</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="3a62-725f-2c16-700a" collective="true">
+              <profiles>
+                <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3724-b16b-35cf-a91f">
+                  <characteristics>
+                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Destroyer-X" id="0852-94b0-3e3b-77df" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+              </infoLinks>
+              <rules>
+                <rule name="Marksman Laser" id="240a-0bf5-43dd-41c2" hidden="false">
+                  <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eedc-170a-fd9e-c8aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc08-b893-fede-1304" includeChildSelections="false"/>
+              </constraints>
+              <comment>Scimitar version</comment>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tesla Array" hidden="false" id="1712-6ae8-68d2-f87f" collective="true">
           <profiles>
@@ -636,13 +680,13 @@
           <profiles>
             <profile name="AA Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="243c-1cdf-2a26-1dd6" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -717,13 +761,13 @@
           <profiles>
             <profile name="AA Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6eac-5454-fe73-afeb" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -768,7 +812,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Quad Autocannons" hidden="false" id="d6f7-84ae-ee35-9dfb">
+        <selectionEntry type="upgrade" import="true" name="Quad Autocannons" hidden="false" id="d6f7-84ae-ee35-9dfb" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2c5-2649-f587-3e18" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dea5-703f-10e4-7368" includeChildSelections="false"/>
@@ -887,6 +931,214 @@
             <infoLink name="Reduced-X" id="adee-f282-4593-f11a" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Powered Armour" hidden="false" id="df29-50c0-b3f4-b570" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5561-2682-eb4a-5739" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2605-8748-0cc9-08ee" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Powered Armour" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2527-e1af-53d4-faf4">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="0e8e-a08a-968b-a1bb" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Flak Cannons" hidden="false" id="a4b9-69e0-e043-eb63" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d94-2b9d-1788-08c2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5fe-3995-4aa4-1637" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Flak Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5dc9-dac5-e24e-f933">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="c349-be9e-01f4-0446" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Reduced-X" id="a3e5-e416-9559-2b70" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armour Piercing Shell" hidden="false" id="02ee-3a8b-b656-f2a1" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5ce-e4f6-17e0-706b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d3f-6557-7337-fd2f" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Armour Piercing Shell" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="02df-4a2b-d59b-aec7">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Indirect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="7880-0175-49df-af41" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Indirect" id="da06-88f6-e7d1-a3d0" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daisy Cutter Shell" hidden="false" id="0c56-f045-6dce-fe03" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="743f-e940-582f-2b53" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="359b-091c-8181-ff05" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Daisy Cutter Shell" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4acd-587f-56cd-3dab">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Indirect, Devastator-6 (Flammable Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="10ac-d1cd-5904-8bc7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Alt-X" id="586a-1d8f-4bf9-382a" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Indirect" id="1229-e385-243f-1858" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="ff22-d956-6d42-bfec" collective="true">
+          <profiles>
+            <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f4ad-e58d-1bba-238e">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="52eb-585e-c7f4-b60f" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+          <rules>
+            <rule name="Marksman Laser" id="5b41-8f6c-c9f1-afc4" hidden="false">
+              <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4941-6dfb-1238-3c84" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b936-d1d3-515b-2f8c" includeChildSelections="false"/>
+          </constraints>
+          <comment>Crossbow Version</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mortar Round" hidden="false" id="9ec4-121d-d35f-d439" collective="true">
+          <profiles>
+            <profile name="Mortar Round" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8731-cd99-c4b5-41a3">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Indirect, Penetrative, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa5d-cf57-ffb9-1e6c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaea-0cec-dffc-e825" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Alt-X" id="597a-be63-3357-c7df" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Area" id="a9f2-dd37-6df6-b7ad" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Indirect" id="b6f9-4fcd-3f88-e2a1" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Penetrative" id="633e-1721-b075-c9c4" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+            <infoLink name="Reduced-X" id="c410-8e89-32a6-32de" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <rules>
+            <rule name="Mortar Round" id="bd67-6833-a970-a99c" hidden="false">
+              <description>This weapon cannot combine its fire from the Reduced rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Concussion Round" hidden="false" id="c6e1-83e4-4907-477a" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7626-c1f2-35af-ae44" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd15-c461-9fd5-35c0" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Concussion Round" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74f7-6d18-f9b7-77d5">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Indirect, Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="68e9-120d-0f62-aa9d" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Indirect" id="026c-22a2-c50d-3590" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Reduced-X" id="5d71-0424-cae2-6dda" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <rules>
+            <rule name="Concussion Round" id="e830-c77c-f108-3dc4" hidden="false">
+              <description>If a Garrison is hit by this weapon, all Infantry inside are moved away from the edges, and no Infantry can move to the edges during this round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="4929-e36a-d12e-689f" collective="true" flatten="false">
+          <profiles>
+            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="85ee-ade8-1bea-e179" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="570c-e659-2ab5-592d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c46-f787-42a0-f714" includeChildSelections="false"/>
+          </constraints>
+          <comment>F 24&quot;</comment>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="a6d2-8eb7-1cb3-86bc">
@@ -912,6 +1164,7 @@
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">4</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">125</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -954,6 +1207,7 @@
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">16&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">9</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">190</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -993,6 +1247,7 @@
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">55</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Command</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -1093,9 +1348,10 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323"/>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">5</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
-                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Troops</characteristic>
-                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323">4+</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">20</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">2-3</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
                   </characteristics>
@@ -1133,9 +1389,10 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">-</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">5</characteristic>
-                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
-                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Troops</characteristic>
-                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323">3+</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">40</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 3+</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">2-3</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">Dodge 4+, Rapid Insertion 4”</characteristic>
                   </characteristics>
@@ -1179,6 +1436,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">E+4</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Infantry</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Scout</characteristic>
                     <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323">3+</characteristic>
@@ -1232,7 +1490,99 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Exotic" hidden="false" id="1da5-821a-e9e7-6304"/>
+    <selectionEntry type="upgrade" import="true" name="Exotic" hidden="false" id="1da5-821a-e9e7-6304">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Hazard Suits" hidden="false" id="5545-5d94-3da0-a4dc">
+          <categoryLinks>
+            <categoryLink name="Exotic" hidden="false" id="cfc7-0a19-2d2b-2f87" targetId="b09c-78fb-f3c3-4438" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hazard Suits" hidden="false" id="0e30-4b83-fc97-b6ed" collective="true">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="66fb-e0ad-4cba-0623" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f4-c4ec-61b5-2aea" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hazard Suits" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">1&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 3+</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
+                    <characteristic name="Squad Size" typeId="5.326432323234442e+25">2</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Resilient" id="d6bb-1aa6-df77-9166" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Compact Railguns" hidden="false" id="50d0-018e-8d04-7f95" type="selectionEntry" targetId="b291-3b2c-dbb3-4132"/>
+                <entryLink import="true" name="Powered Armour" hidden="false" id="82cb-8e17-2c3f-8c85" type="selectionEntry" targetId="df29-50c0-b3f4-b570"/>
+              </entryLinks>
+              <rules>
+                <rule name="Hazard Suit" id="ca56-06db-1049-5c30" hidden="false">
+                  <description>Re-roll successful Collateral Damage hits against this unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Flak AA Team" hidden="false" id="d193-89dc-e321-839d">
+          <categoryLinks>
+            <categoryLink name="Exotic" hidden="false" id="9eac-4c58-2ef3-02ea" targetId="b09c-78fb-f3c3-4438" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Flak AA Team" hidden="false" id="138d-56d8-d709-8063" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9b5a-8a6d-acc8-1c72" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b9eb-5f04-363e-d8ac" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Flak AA Team" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="f35f-b00b-f288-904f">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
+                    <characteristic name="Squad Size" typeId="5.326432323234442e+25">2</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resilient" id="2597-91a7-6832-98bb" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Loader" id="a26c-75b1-a955-faf4" hidden="false" type="rule" targetId="694d-50d6-1840-d6c4"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Flak Cannons" hidden="false" id="5ec1-d6ee-8223-1395" type="selectionEntry" targetId="a4b9-69e0-e043-eb63"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Support" hidden="false" id="0eb6-8031-0dd1-9fea">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Rapier AA Tank" hidden="false" id="5585-bda2-bd53-d4ec" publicationId="0a0b-b837-fa34-a21d" page="21">
@@ -1265,6 +1615,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Standard</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -1274,6 +1625,132 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </profiles>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Longbow Howitzer" hidden="false" id="0625-3c12-c821-d673">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="6905-f174-f549-1b4d" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Longbow Howitzer" hidden="false" id="9881-9734-e48f-0627" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2f3-d49b-985e-f4e3" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2d63-6da0-21d4-9084" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Longbow Howitzer" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1cac-4908-b4b2-f555">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">0&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1-4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Armour Piercing Shell" hidden="false" id="0952-bcad-4112-e432" type="selectionEntry" targetId="02ee-3a8b-b656-f2a1"/>
+                <entryLink import="true" name="Daisy Cutter Shell" hidden="false" id="628e-9c52-cdc2-840f" type="selectionEntry" targetId="0c56-f045-6dce-fe03"/>
+              </entryLinks>
+              <rules>
+                <rule name="Smart Smoke" id="3492-ce8c-4a7a-06a7" hidden="false">
+                  <description>Instead of of making a Shooting action, this squad may launch Smart Smoke. Pick a friendly non-Behemoth squad in line of sight that is in coherency. Until the end of the round, weapons targeting this squad and other units within 2” of any unit in this squad suffer a +2 Accuracy modifier.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Crossbow Laser Artillery" hidden="false" id="032c-dafe-d372-5a19">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="8e94-6170-d1c3-ca5c" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crossbow Laser Artillery" hidden="false" id="9c53-71f9-4127-fed8" collective="true">
+              <categoryLinks>
+                <categoryLink name="Support" hidden="false" id="bbd0-7e03-d2b9-f4de" targetId="1742-0b1d-252f-505d" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="028b-0ac7-ed2e-00a5" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0b9-6411-b754-dbd3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Crossbow Laser Artillery" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="2285-6780-2ea0-639c">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">12</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">0&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1-4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Marksman Laser" hidden="false" id="7d29-6898-9cd2-8333" type="selectionEntry" targetId="ff22-d956-6d42-bfec"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mortar Team" hidden="false" id="24b7-d90a-c5ac-6875">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mortar Team" hidden="false" id="4d43-65ad-a13f-9ea0" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2404-989b-abe3-e6fb" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e76-9c04-18ec-1ea8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mortar Team" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="338c-905a-aa80-0fea">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">-</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                    <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
+                    <characteristic name="Squad Size" typeId="5.326432323234442e+25">2</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Loader" id="9ef6-9c47-8787-739e" hidden="false" type="rule" targetId="694d-50d6-1840-d6c4"/>
+                <infoLink name="Resilient" id="f68d-06c8-31ee-d134" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Mortar Round" hidden="false" id="1415-0ece-e6f0-24fb" type="selectionEntry" targetId="9ec4-121d-d35f-d439"/>
+                <entryLink import="true" name="Concussion Round" hidden="false" id="717d-57fb-f207-9069" type="selectionEntry" targetId="c6e1-83e4-4907-477a" collective="false"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="f5fb-ceae-59e8-8021" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1304,6 +1781,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">15</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Auxiliary</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
@@ -1345,6 +1823,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">6</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">60</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Auxiliary</characteristic>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
@@ -1368,6 +1847,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">30</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Transport</characteristic>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
@@ -1403,6 +1883,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Auxiliary</characteristic>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
@@ -1439,6 +1920,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Auxiliary</characteristic>
                     <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
@@ -1497,6 +1979,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">4&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Standard</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -1604,6 +2087,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="4d6f766523232344415441232323">3&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
                     <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">2</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">55</characteristic>
                     <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
                     <characteristic name="Category" typeId="43617465676f727923232344415441232323">Heavy</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
@@ -1823,150 +2307,118 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Roc Heavy Gunship" hidden="false" id="81fe-94ce-29d6-34b6">
-      <costs>
-        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="ff91-8cc3-f775-3d20" id="5437-f646-0804-dbc4" primary="true" name="Heavy"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Roc Heavy Gunship" hidden="false" id="55ce-621f-f7f4-5418" collective="true">
+        <selectionEntry type="unit" import="true" name="Jackal LAV" hidden="false" id="9b5e-c994-c4fb-6b1f">
           <categoryLinks>
-            <categoryLink name="Heavy" hidden="false" id="cc86-11dd-1d91-efdb" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+            <categoryLink name="Heavy" hidden="false" id="acf2-b0f1-845a-cb63" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b9c-8736-c26d-d4ce" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b27-d967-6beb-17a7" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Minigun Triad" hidden="false" id="4125-4558-779f-fa73" type="selectionEntry" targetId="378d-14fa-d98a-1305"/>
-            <entryLink import="true" name="Missile Battery" hidden="false" id="73aa-5df9-6fc8-a85d" type="selectionEntry" targetId="5708-d570-3790-a609"/>
-            <entryLink import="true" name="AA Battery" hidden="false" id="82c6-0655-5bce-47b7" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
-            <entryLink import="true" name="Twin Missile Pods" hidden="false" id="49f6-8574-fd76-3847" type="selectionEntry" targetId="b96c-2149-6e6b-d430" collective="true"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Roc Heavy Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="28eb-69ef-cabe-ba7d">
-              <characteristics>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
-                <characteristic name="Move" typeId="4d6f766523232344415441232323">16&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">9</characteristic>
-                <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
-                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
-                <characteristic name="Category" typeId="43617465676f727923232344415441232323">Heavy</characteristic>
-                <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Command Centre</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Command Centre" id="9886-d283-0cc2-b0fb" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
-          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Jackal LAV" hidden="false" id="d070-b23d-7e55-711f" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce54-81e1-11e9-9e43" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3d17-036e-6371-1ef0" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Requiter Organ Gun" hidden="false" id="bf51-2e54-56da-d9a5" type="selectionEntry" targetId="1711-33d4-e9bc-936c"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Roc Heavy Gunship" hidden="false" id="81fe-94ce-29d6-34b6">
           <costs>
-            <cost name="pts" typeId="points" value="220"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="5437-f646-0804-dbc4" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Roc Heavy Gunship" hidden="false" id="55ce-621f-f7f4-5418" collective="true">
+              <categoryLinks>
+                <categoryLink name="Heavy" hidden="false" id="cc86-11dd-1d91-efdb" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b9c-8736-c26d-d4ce" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b27-d967-6beb-17a7" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Minigun Triad" hidden="false" id="4125-4558-779f-fa73" type="selectionEntry" targetId="378d-14fa-d98a-1305"/>
+                <entryLink import="true" name="Missile Battery" hidden="false" id="73aa-5df9-6fc8-a85d" type="selectionEntry" targetId="5708-d570-3790-a609"/>
+                <entryLink import="true" name="AA Battery" hidden="false" id="82c6-0655-5bce-47b7" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
+                <entryLink import="true" name="Twin Missile Pods" hidden="false" id="49f6-8574-fd76-3847" type="selectionEntry" targetId="b96c-2149-6e6b-d430" collective="true"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Roc Heavy Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="28eb-69ef-cabe-ba7d">
+                  <characteristics>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">16&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">9</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Heavy</characteristic>
+                    <characteristic name="Squad Size" typeId="5.326432323234442e+25">1</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">Command Centre</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Command Centre" id="9886-d283-0cc2-b0fb" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="220"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Jackal LAV" hidden="false" id="9b5e-c994-c4fb-6b1f">
+    <selectionEntry type="unit" import="true" name="Falcon Light Gunship" hidden="false" id="14af-b125-522f-6c85">
       <categoryLinks>
-        <categoryLink targetId="ff91-8cc3-f775-3d20" id="acf2-b0f1-845a-cb63" primary="true" name="Heavy"/>
+        <categoryLink targetId="1742-0b1d-252f-505d" id="e4f9-e95b-3113-72ab" primary="true" name="Support"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Jackal LAV" hidden="false" id="d070-b23d-7e55-711f" collective="true">
-          <costs>
-            <cost name="pts" typeId="points" value="50"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce54-81e1-11e9-9e43" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3d17-036e-6371-1ef0" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Requiter Organ Gun" hidden="false" id="bf51-2e54-56da-d9a5" type="selectionEntry" targetId="1711-33d4-e9bc-936c"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hazard Suits" hidden="false" id="5545-5d94-3da0-a4dc">
-      <categoryLinks>
-        <categoryLink targetId="b09c-78fb-f3c3-4438" id="cfc7-0a19-2d2b-2f87" primary="true" name="Exotic"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hazard Suits" hidden="false" id="0e30-4b83-fc97-b6ed" collective="true">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="66fb-e0ad-4cba-0623" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f4-c4ec-61b5-2aea" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Hazard Suits" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
-              <characteristics>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">9</characteristic>
-                <characteristic name="Move" typeId="4d6f766523232344415441232323">1&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
-                <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 3+</characteristic>
-                <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
-                <characteristic name="Fortitude" typeId="466f7274697475646523232344415441232323"/>
-                <characteristic name="Squad Size" typeId="5.326432323234442e+25">2</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Resilient</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry type="upgrade" import="true" name="Falcon Light Gunship" hidden="false" id="fc00-8fc2-b3d7-0909" collective="true">
           <costs>
             <cost name="pts" typeId="points" value="35"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Resilient" id="d6bb-1aa6-df77-9166" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
-          </infoLinks>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1bbf-c013-de36-3f9b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0b-f041-3644-e489" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Falcon Light Gunship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="a793-9d3a-de41-ff15">
+              <characteristics>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+4</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323"/>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
+                <characteristic name="Category" typeId="43617465676f727923232344415441232323"/>
+                <characteristic name="Squad Size" typeId="5.326432323234442e+25">1-4</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <entryLinks>
-            <entryLink import="true" name="Compact Railguns" hidden="false" id="50d0-018e-8d04-7f95" type="selectionEntry" targetId="b291-3b2c-dbb3-4132"/>
-            <entryLink import="true" name="Powered Armour" hidden="false" id="82cb-8e17-2c3f-8c85" type="selectionEntry" targetId="df29-50c0-b3f4-b570"/>
+            <entryLink import="true" name="Falcon Weapon Selection" hidden="false" id="3204-fdb5-32a7-c743" type="selectionEntryGroup" targetId="4130-9275-7528-b75f"/>
+            <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="68b1-c59f-41ac-3d8d" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
           </entryLinks>
-          <rules>
-            <rule name="Hazard Suit" id="ca56-06db-1049-5c30" hidden="false">
-              <description>Re-roll successful Collateral Damage hits against this unit.</description>
-            </rule>
-          </rules>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Powered Armour" hidden="false" id="df29-50c0-b3f4-b570" collective="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5561-2682-eb4a-5739" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2605-8748-0cc9-08ee" includeChildSelections="false"/>
-      </constraints>
-      <profiles>
-        <profile name="Powered Armour" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2527-e1af-53d4-faf4">
-          <characteristics>
-            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-            <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-            <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
-            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-            <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-            <characteristic name="Special" typeId="5370656369616c23232344415441232323">Reduced-1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Reduced-1" id="0e8e-a08a-968b-a1bb" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
-      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
@@ -1998,6 +2450,11 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Jackal LAV" hidden="false" id="9753-01c0-6d48-eb48" targetId="9b5e-c994-c4fb-6b1f" type="selectionEntry"/>
     <entryLink import="true" name="Vulture Gunship" hidden="false" id="650e-32c6-7b79-d6e0" targetId="461b-c7bc-a4c7-6c99" type="selectionEntry"/>
     <entryLink import="true" name="Dominion Heavy Bomber" hidden="false" id="038f-3081-1f1e-0f0f" targetId="06db-6398-5210-b138" type="selectionEntry"/>
+    <entryLink import="true" name="Hazard Suits" hidden="false" id="4ced-25d2-9dd4-096d" targetId="5545-5d94-3da0-a4dc" type="selectionEntry"/>
+    <entryLink import="true" name="Flak AA Team" hidden="false" id="fbd1-92d4-6e67-d5ef" targetId="d193-89dc-e321-839d" type="selectionEntry"/>
+    <entryLink import="true" name="Longbow Howitzer" hidden="false" id="4e2e-9b60-e3ff-71a9" targetId="0625-3c12-c821-d673" type="selectionEntry"/>
+    <entryLink import="true" name="Mortar Team" hidden="false" id="a064-383d-6b4c-d9fa" targetId="24b7-d90a-c5ac-6875" type="selectionEntry"/>
+    <entryLink import="true" name="Falcon Light Gunship" hidden="false" id="3a31-8214-c960-9e1d" targetId="14af-b125-522f-6c85" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Light_Transport" id="29a2-235e-6304-0a86" hidden="false"/>
@@ -2011,13 +2468,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <profiles>
             <profile name="Quake Accelerated Mortar" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ead1-db40-01c0-7d63">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Indirect, Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -2035,13 +2492,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <profiles>
             <profile name="Twin Avenger Railguns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f753-eae3-e553-50e8">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Articulated</characteristic>
               </characteristics>
             </profile>
@@ -2199,7 +2656,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-3 (Vehicle), Devastator-2 (Behemoth)" id="f902-3bf4-9bce-02b3" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Devastator-X" id="f902-3bf4-9bce-02b3" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
           <modifiers>
             <modifier type="set" value="0" field="47e0-0a48-dbf8-c1fe"/>
@@ -2236,13 +2693,92 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-4 (Scenery)" id="a738-aaf6-8cac-d233" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-            <infoLink name="Cover (All)" id="1230-ea0b-a693-e0ab" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Devastator-X" id="a738-aaf6-8cac-d233" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Cover-X" id="1230-ea0b-a693-e0ab" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Flame" id="e9ac-e74c-08c8-3485" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
-            <infoLink name="Strafe-2" id="2162-b52d-fa41-9e7e" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+            <infoLink name="Strafe-X" id="2162-b52d-fa41-9e7e" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Falcon Weapon Selection" id="4130-9275-7528-b75f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Minigun" hidden="false" id="d637-4ceb-a028-28dc" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0e5-9403-c3a7-5d86" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b2e-ce26-eb2f-05ad" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="0b2e-ce26-eb2f-05ad"/>
+          </modifiers>
+          <profiles>
+            <profile name="Twin Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e7f2-d5ca-aaba-4cbf">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="AP and AA Multi-Missiles" hidden="false" id="2f0f-c94f-faf6-7c39" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7431-6b2c-7b78-f8f9" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="AP Multi-Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0776-d384-91cc-2147">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Penetrative, Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="AA Multi-Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="33b4-4786-8ed6-ae92">
+              <characteristics>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="8d24-2588-c77c-8dee" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Penetrative" id="92e9-fb47-0bea-8f8b" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+            <infoLink name="Strafe-X" id="02a4-8f27-9b69-723f" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+            <infoLink name="AA-X" id="b42a-7245-949d-09a5" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe20-2bb0-dbb2-c2af" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="525b-0135-104d-13ab" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Loader" id="694d-50d6-1840-d6c4" hidden="false">
+      <description>This unit reduces its Shots value by 1 for every 2 Damage Points lost, instead of every 1 Damage Point.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
