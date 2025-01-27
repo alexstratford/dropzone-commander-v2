@@ -5,20 +5,11 @@
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0"/>
-    <costType name="Infantry_Cap" id="89b0-730e-0a38-bfab" defaultCostLimit="-1" hidden="false">
-      <comment>UCM</comment>
-    </costType>
     <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false">
       <comment>UCM</comment>
     </costType>
-    <costType name="Light_Cap" id="acb7-4263-ce1f-84d0" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Light</comment>
-    </costType>
     <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false">
       <comment>UCM Light</comment>
-    </costType>
-    <costType name="Tank_Cap" id="ff3b-470e-29b7-dc8a" defaultCostLimit="-1" hidden="false">
-      <comment>UCM Tank</comment>
     </costType>
     <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false">
       <comment>UCM Tank</comment>
@@ -31,7 +22,6 @@
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="506f696e747323232344415441232323" name="Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
         <characteristicType id="466f7274697475646523232344415441232323" name="Fortitude"/>
@@ -45,7 +35,6 @@
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="506f696e747323232344415441232323" name="Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
         <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
@@ -58,7 +47,6 @@
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
-        <characteristicType id="506f696e747323232344415441232323" name="Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
         <characteristicType id="5.326432323234442e+25" name="Squad Size"/>
@@ -67,13 +55,13 @@
     </profileType>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
-        <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
-        <characteristicType id="53686f747323232344415441232323" name="Shots"/>
-        <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
+		<characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
+		<characteristicType id="4.1726323232344415e+25" name="Arc"/>
         <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="Range (Full)"/>
         <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="Range (Countered)"/>
-        <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
-        <characteristicType id="4.1726323232344415e+25" name="Arc"/>
+		<characteristicType id="53686f747323232344415441232323" name="Shots"/>
+		<characteristicType id="4.163637572616379e+35" name="Accuracy"/>
+		<characteristicType id="456e6572677923232344415441232323" name="Energy"/>
         <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
@@ -121,13 +109,305 @@
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="dd46-a6d4-ee4d-118f" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="4f10-8eee-cd4f-1cb2" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="Roster requires at least 1 Armour Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="706a-61eb-8e36-7ddf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster requires at least 1 HQ Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="e550-8c0c-113b-b654" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster requires at least 1 Frontline Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="9abc-7686-4bab-45ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Minimum Battlegroup Requirements</comment>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Skirmish Maximum Battlegroup Requirements</comment>
+          <modifiers>
+            <modifier type="add" value="Roster can have at most 1 HQ Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="forces" scope="roster" childId="e550-8c0c-113b-b654" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Frontline Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="9abc-7686-4bab-45ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 1 Vanguard Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="forces" scope="roster" childId="88f2-9609-5f41-d02f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 1 Armour Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="forces" scope="roster" childId="706a-61eb-8e36-7ddf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 1 War Engine Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="forces" scope="roster" childId="8586-e6c8-bde7-4c33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Clash Maximum Battlegroup Requirements</comment>
+          <modifiers>
+            <modifier type="add" value="Roster can have at most 1 HQ Battlegroup" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="forces" scope="roster" childId="e550-8c0c-113b-b654" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Frontline Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="9abc-7686-4bab-45ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Vanguard Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="88f2-9609-5f41-d02f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Armour Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="706a-61eb-8e36-7ddf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 War Engine Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="8586-e6c8-bde7-4c33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <comment>Battle Maximum Battlegroup Requirements</comment>
+          <modifiers>
+            <modifier type="add" value="Roster can have at most 2 HQ Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="e550-8c0c-113b-b654" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 3 War Engine Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="3" field="forces" scope="roster" childId="8586-e6c8-bde7-4c33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Frontline Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="9abc-7686-4bab-45ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Vanguard Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="88f2-9609-5f41-d02f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Roster can have at most 2 Armour Battlegroups" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="2" field="forces" scope="roster" childId="706a-61eb-8e36-7ddf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </forceEntry>
     <forceEntry name="HQ Battlegroup" id="e550-8c0c-113b-b654" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <constraints>
-        <constraint type="min" value="0" field="89b0-730e-0a38-bfab" scope="force" shared="true" id="e5d9-857a-c95a-2ce3" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="acb7-4263-ce1f-84d0" scope="force" shared="true" id="e24f-ab90-e8e4-7739" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="ff3b-470e-29b7-dc8a" scope="force" shared="true" id="52d3-82c7-84cb-703a" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
       <categoryLinks>
         <categoryLink name="Transport Requirement" hidden="true" id="2259-4235-8c48-a25e" targetId="89b8-bfe2-c294-f341"/>
         <categoryLink name="Command" hidden="false" id="e9ab-b4c6-d72d-f868" targetId="ed7f-0593-2e55-430d">
@@ -155,85 +435,8 @@
         </categoryLink>
       </categoryLinks>
       <comment>0-1/1/1-2</comment>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="0" field="52d3-82c7-84cb-703a">
-              <repeats>
-                <repeat value="1" repeats="1" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="0" field="e24f-ab90-e8e4-7739">
-              <repeats>
-                <repeat value="1" repeats="1" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="0" field="e5d9-857a-c95a-2ce3">
-              <repeats>
-                <repeat value="1" repeats="1" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="52d3-82c7-84cb-703a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="e24f-ab90-e8e4-7739">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="e5d9-857a-c95a-2ce3">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Transport Requirements</comment>
-        </modifierGroup>
-      </modifierGroups>
     </forceEntry>
     <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="1288-541a-7055-5e72" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="8df9-07fc-5d08-fc92"/>
-        <constraint type="min" value="0" field="ff3b-470e-29b7-dc8a" scope="force" shared="true" id="a82d-8eb0-fe3b-bfd7" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="acb7-4263-ce1f-84d0" scope="force" shared="true" id="405d-0e45-46c0-cc7f" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="89b0-730e-0a38-bfab" scope="force" shared="true" id="b48b-8e56-888d-f85b" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
       <categoryLinks>
         <categoryLink name="Transport Requirement" hidden="false" id="431d-4404-2c32-5afe" targetId="89b8-bfe2-c294-f341"/>
         <categoryLink name="Standard" hidden="false" id="5c8f-ab06-d3e2-6a21" targetId="7bea-a1e7-3cab-7ecb">
@@ -264,85 +467,23 @@
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="set" value="2" field="8df9-07fc-5d08-fc92" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="2" field="8df9-07fc-5d08-fc92" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-          </modifiers>
-          <comment>Battle Size Settings</comment>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="1" field="a82d-8eb0-fe3b-bfd7">
-              <repeats>
-                <repeat value="1" repeats="1" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
+            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
               <conditionGroups>
                 <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="405d-0e45-46c0-cc7f">
-              <repeats>
-                <repeat value="1" repeats="1" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="b48b-8e56-888d-f85b">
-              <repeats>
-                <repeat value="1" repeats="1" field="466e-b8ec-f298-b782" scope="unit" childId="any" shared="false" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="a82d-8eb0-fe3b-bfd7">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="405d-0e45-46c0-cc7f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="b48b-8e56-888d-f85b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
             </modifier>
           </modifiers>
           <comment>Transport Requirements</comment>
@@ -350,13 +491,6 @@
       </modifierGroups>
     </forceEntry>
     <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="192d-6ef4-767d-a8d0"/>
-        <constraint type="max" value="2" field="forces" scope="roster" shared="true" id="45cf-d01f-16a2-ed74"/>
-        <constraint type="min" value="0" field="ff3b-470e-29b7-dc8a" scope="force" shared="true" id="9c9d-7262-c579-7f0a" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="acb7-4263-ce1f-84d0" scope="force" shared="true" id="c96d-1e12-7b0d-b94c" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="89b0-730e-0a38-bfab" scope="force" shared="true" id="8884-2b9e-4d17-c8e5" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
       <categoryLinks>
         <categoryLink name="Transport Requirement" hidden="false" id="de38-06fa-e8a9-a24e" targetId="89b8-bfe2-c294-f341"/>
         <categoryLink name="Troops" hidden="false" id="931a-e918-03aa-30ac" targetId="43a9-1ec6-f0bc-8f37">
@@ -386,86 +520,24 @@
       <comment>1-2/1-2/1-2</comment>
       <modifierGroups>
         <modifierGroup type="and">
-          <comment>Battle Size Settings</comment>
           <modifiers>
-            <modifier type="set" value="2" field="45cf-d01f-16a2-ed74" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="2" field="45cf-d01f-16a2-ed74" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="1" field="9c9d-7262-c579-7f0a">
-              <repeats>
-                <repeat value="1" repeats="1" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
+            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
               <conditionGroups>
                 <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="c96d-1e12-7b0d-b94c">
-              <repeats>
-                <repeat value="1" repeats="1" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="8884-2b9e-4d17-c8e5">
-              <repeats>
-                <repeat value="1" repeats="1" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="8884-2b9e-4d17-c8e5">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="c96d-1e12-7b0d-b94c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="9c9d-7262-c579-7f0a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
             </modifier>
           </modifiers>
           <comment>Transport Requirements</comment>
@@ -473,13 +545,6 @@
       </modifierGroups>
     </forceEntry>
     <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41">
-      <constraints>
-        <constraint type="min" value="0" field="forces" scope="roster" shared="true" id="450a-eb58-c9ec-ebf1"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="4e8b-1aa9-09b6-17df"/>
-        <constraint type="min" value="0" field="89b0-730e-0a38-bfab" scope="force" shared="false" id="ae85-090a-f82d-c007" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="acb7-4263-ce1f-84d0" scope="force" shared="false" id="60f5-2d13-1eaf-6501" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="0" field="ff3b-470e-29b7-dc8a" scope="force" shared="false" id="3ccc-dbda-d438-370e" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
       <categoryLinks>
         <categoryLink name="Scout" hidden="false" id="ca6e-9856-7fdb-b497" targetId="5f13-c39f-577a-8947">
           <constraints>
@@ -509,86 +574,24 @@
       <comment>0-1/0-2/0-2</comment>
       <modifierGroups>
         <modifierGroup type="and">
-          <comment>Battle Size Settings</comment>
           <modifiers>
-            <modifier type="set" value="2" field="4e8b-1aa9-09b6-17df" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="2" field="4e8b-1aa9-09b6-17df" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="1" field="3ccc-dbda-d438-370e">
-              <repeats>
-                <repeat value="1" repeats="1" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
+            <modifier type="add" value="{this} has insufficient transport capacity" field="error">
               <conditionGroups>
                 <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                        <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="force" shared="true" includeChildSelections="false" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="60f5-2d13-1eaf-6501">
-              <repeats>
-                <repeat value="1" repeats="1" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="ae85-090a-f82d-c007">
-              <repeats>
-                <repeat value="1" repeats="1" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="8d7c-89a4-5368-5a3c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="cfdd-90c2-4b0b-c707" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="243f-ea96-5f0b-72e6" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="899b-2d5a-e8f3-1b5b" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atMost" value="0" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="3ccc-dbda-d438-370e">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="60f5-2d13-1eaf-6501">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="ae85-090a-f82d-c007">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
             </modifier>
           </modifiers>
           <comment>Transport Requirements</comment>
@@ -638,7 +641,6 @@
       </constraints>
     </entryLink>
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
-    <entryLink import="true" name="HQ Battlegroup" hidden="false" id="e4ad-dd06-51f8-2cc9" type="selectionEntry" targetId="935c-c8f1-3184-decc"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Game Size" hidden="false" id="71a0-476c-277b-1c28">
@@ -655,108 +657,6 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">1</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">4&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">0</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="2516-18f9-0553-88f8" primary="true" name="Commander"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 2)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="4de3-21cc-7321-e28b" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">2</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">8&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="35"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="f01f-0533-4c0a-f6ca" primary="true" name="Commander"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 5)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="1922-aeda-0451-ebc5" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">5</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">20&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">125</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="125"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="26ab-fe23-d012-bbe1" primary="true" name="Commander"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 4)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="901c-9dca-dcd2-3cfb" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">4</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">16&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">95</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="95"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="364d-b429-a25f-c5ff" primary="true" name="Commander"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 6)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="e778-2aa4-a7cd-1442" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">6</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">24&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">155</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="155"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="d576-82a9-f874-8d2d" primary="true" name="Commander"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9">
-      <profiles>
-        <profile name="Commander (CV 3)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="010d-0e07-7482-a80a" publicationId="9aaf-4a48-3cce-441f" page="9">
-          <characteristics>
-            <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">3</characteristic>
-            <characteristic name="Radius" typeId="5.261646975732324e+31">12&quot;</characteristic>
-            <characteristic name="Points" typeId="506f696e747323232344415441232323">65</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="pts" typeId="points" value="65"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="1cac-032f-4580-2381" id="50ec-b7d4-d1fe-094c" primary="true" name="Commander"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Transport Requirement" hidden="false" id="4379-c9b6-890d-afa4">
@@ -778,188 +678,155 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="e28e-c594-1ee6-f751">
-      <categoryLinks>
-        <categoryLink name="Scout" hidden="false" id="5142-30bc-824b-68eb" targetId="5f13-c39f-577a-8947" primary="true"/>
-        <categoryLink name="Drop Harness" hidden="false" id="e440-f9e3-2b17-6c28" targetId="899b-2d5a-e8f3-1b5b" primary="false"/>
-      </categoryLinks>
+    <selectionEntry type="upgrade" import="true" name="Shared Units" hidden="false" id="a2ae-d80f-cd56-8d07">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="EAA Columbus Battlewalker" hidden="false" id="6a59-32ac-aabe-ffd0" collective="false" flatten="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2f2-4d9d-4fe5-b650"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="EAA Columbus Battlewalker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1b9c-154b-6a95-b8e0">
-              <characteristics>
-                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
-                <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
-                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
-                <characteristic name="Points" typeId="506f696e747323232344415441232323">70</characteristic>
-                <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
-                <characteristic name="Category" typeId="43617465676f727923232344415441232323">Scout</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
-                <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1-3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="e28e-c594-1ee6-f751" collective="false">
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="5142-30bc-824b-68eb" targetId="5f13-c39f-577a-8947" primary="true"/>
+            <categoryLink name="Drop Harness" hidden="false" id="e440-f9e3-2b17-6c28" targetId="899b-2d5a-e8f3-1b5b" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin Punisher Cannons" hidden="false" id="74f4-aebf-9e5b-782d" sortIndex="1" collective="false" flatten="true">
+            <selectionEntry type="model" import="true" name="EAA Columbus Battlewalker" hidden="false" id="6a59-32ac-aabe-ffd0" collective="true" flatten="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2f2-4d9d-4fe5-b650"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
+              </constraints>
               <profiles>
-                <profile name="Twin Punisher Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18b2-52dd-73ce-881b">
+                <profile name="EAA Columbus Battlewalker" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">14</characteristic>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                    <characteristic name="Points" typeId="506f696e747323232344415441232323">70</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Walker</characteristic>
+                    <characteristic name="Category" typeId="43617465676f727923232344415441232323">Scout</characteristic>
                     <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                    <characteristic name="Squad Size" typeId="3caa-585d-3221-48d4">1-3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd76-c91b-ca13-d7e2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-d5d7-dc31-b9d2" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="480c-cc3a-69b2-e4f9" sortIndex="2" collective="false" flatten="true">
-              <profiles>
-                <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec9-bbae-7a76-d2ee">
-                  <characteristics>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f02-9486-04e6-055e" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dcf-b493-cffc-b4f6" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Penetrative" id="a482-6d57-6ab0-4a1a" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="70"/>
-            <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Cap" typeId="ff3b-470e-29b7-dc8a" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-          </costs>
-          <rules>
-            <rule name="Retro Thrusters" id="4384-d054-967b-f0af" hidden="false">
-              <description>When deploying this squad, you may declare that it will deploy via Retro Thrusters. It is placed in Reserve. An Infantry unit may use one action during their activation to call in this squad from In Readiness. Place 1 unit from this squad within 6” of one of the Infantry units. Then place any other units from the squad within coherency. All of these units must be placed on Passable terrain, and cannot be placed within 3” of enemy units. The squad is free to activate during their Battlegroup’s activation, but any Shooting attacks made by them suffer a +2 penalty to their Accuracy.</description>
-            </rule>
-          </rules>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Selection" id="c8de-43df-085d-8314" hidden="false" collective="false" flatten="false" sortIndex="3">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="dc54-e44e-fec1-bccb" collective="true" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Twin Punisher Cannons" hidden="false" id="74f4-aebf-9e5b-782d" sortIndex="1" collective="true" flatten="true">
                   <profiles>
-                    <profile name="Heavy Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8f6a-5544-bf15-7f45">
+                    <profile name="Twin Punisher Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18b2-52dd-73ce-881b">
                       <characteristics>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                        <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
-                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink name="Flame" id="5381-8a70-abec-e0a0" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
-                  </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3492-6efb-32b2-98b9" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd76-c91b-ca13-d7e2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a416-d5d7-dc31-b9d2" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="AA Cannon" hidden="false" id="1d14-1e58-2f26-e961" collective="true" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="480c-cc3a-69b2-e4f9" sortIndex="2" collective="true" flatten="true">
                   <profiles>
-                    <profile name="AA Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2716-3df2-9511-a7ab">
+                    <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec9-bbae-7a76-d2ee">
                       <characteristics>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                        <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                         <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                         <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink name="AA-X" id="e306-5df6-4347-e643" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
-                  </infoLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a38-9bf1-7e24-5c2e"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c59-ee26-10b3-21a6" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f02-9486-04e6-055e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dcf-b493-cffc-b4f6" includeChildSelections="false"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="7a38-9bf1-7e24-5c2e"/>
-                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Penetrative" id="a482-6d57-6ab0-4a1a" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39f0-0c84-7807-485f-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39f0-0c84-7807-485f-max"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Cap" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+              </costs>
+              <rules>
+                <rule name="Retro Thrusters" id="4384-d054-967b-f0af" hidden="false">
+                  <description>When deploying this squad, you may declare that it will deploy via Retro Thrusters. It is placed in Reserve. An Infantry unit may use one action during their activation to call in this squad from In Readiness. Place 1 unit from this squad within 6” of one of the Infantry units. Then place any other units from the squad within coherency. All of these units must be placed on Passable terrain, and cannot be placed within 3” of enemy units. The squad is free to activate during their Battlegroup’s activation, but any Shooting attacks made by them suffer a +2 penalty to their Accuracy.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Selection" id="c8de-43df-085d-8314" hidden="false" collective="true" flatten="false" sortIndex="3">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Flamethrower" hidden="false" id="dc54-e44e-fec1-bccb" collective="true" sortIndex="2">
+                      <profiles>
+                        <profile name="Heavy Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8f6a-5544-bf15-7f45">
+                          <characteristics>
+                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                            <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Flame" id="5381-8a70-abec-e0a0" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3492-6efb-32b2-98b9" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="AA Cannon" hidden="false" id="1d14-1e58-2f26-e961" collective="true" sortIndex="1">
+                      <profiles>
+                        <profile name="AA Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2716-3df2-9511-a7ab">
+                          <characteristics>
+                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                            <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="AA-X" id="e306-5df6-4347-e643" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a38-9bf1-7e24-5c2e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c59-ee26-10b3-21a6" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="0" field="7a38-9bf1-7e24-5c2e"/>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39f0-0c84-7807-485f-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39f0-0c84-7807-485f-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="HQ Battlegroup" hidden="false" id="935c-c8f1-3184-decc">
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Battle Size Settings</comment>
-          <modifiers>
-            <modifier type="set" value="2" field="132a-dc5a-df8b-d9fe" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="2" field="132a-dc5a-df8b-d9fe" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="1" field="2af9-7ec2-2898-0988" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Battle Roster Setting</comment>
-            </modifier>
-            <modifier type="set" value="1" field="2af9-7ec2-2898-0988" affects="" scope="force">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Clash Roster Setting</comment>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="2af9-7ec2-2898-0988" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="132a-dc5a-df8b-d9fe" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -1113,6 +980,9 @@ The number is the number of times that weapon can be used for a Shooting action
 edge of a Garrison as if they were on that edge. Units in Garrisons occupied by friendly Infantry can be targeted by Flame weapons, however any missed shots are counted as successful hits against one of those friendly units, allocated by the target’s player.
 Neither Body Cover nor Soft Cover can be used against Flame weapons, and they ignore Evasion Countermeasures. Additionally, every time a Flame weapon targets an Infantry unit inside a Garrison or a Destructible scenery piece, the scenery piece receives 1 additional Collateral Damage token, regardless of how much damage is done. If that scenery piece has the Flammable rule, it receives 2 additional Collateral Damage tokens instead.</description>
     </rule>
+    <rule name="Command Centre" id="69c8-c7bd-0b67-dfbe" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="p42">
+      <description>A Commander can be mounted in this unit as if it had the Command category.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="3fda-65f2-6cc3-ee33">
@@ -1244,6 +1114,11 @@ Neither Body Cover nor Soft Cover can be used against Flame weapons, and they 
             <modifier type="set" value="0" field="e78b-e8c8-0224-a9aa"/>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Holding" hidden="false" id="17f7-74ea-40f0-2d75">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2493-d365-8141-d72f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8391-985f-dbef-a35c" includeChildSelections="false"/>
@@ -1253,6 +1128,129 @@ Neither Body Cover nor Soft Cover can be used against Flame weapons, and they 
         <modifier type="set" value="0" field="8391-985f-dbef-a35c">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e550-8c0c-113b-b654" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">1</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">4&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="2516-18f9-0553-88f8" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ae-d5e0-8412-a8d0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="92ae-d5e0-8412-a8d0"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 2)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="4de3-21cc-7321-e28b" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">2</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">8&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="f01f-0533-4c0a-f6ca" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 3)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="010d-0e07-7482-a80a" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">3</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">12&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">65</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="65"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="50ec-b7d4-d1fe-094c" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 4)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="901c-9dca-dcd2-3cfb" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">4</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">16&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">95</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="95"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="364d-b429-a25f-c5ff" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 5)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="1922-aeda-0451-ebc5" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">5</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">20&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">125</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="125"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="26ab-fe23-d012-bbe1" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9">
+          <profiles>
+            <profile name="Commander (CV 6)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="e778-2aa4-a7cd-1442" publicationId="9aaf-4a48-3cce-441f" page="9">
+              <characteristics>
+                <characteristic name="Command Value" typeId="436f6d6d616e642056616c756523232344415441232323">6</characteristic>
+                <characteristic name="Radius" typeId="5.261646975732324e+31">24&quot;</characteristic>
+                <characteristic name="Points" typeId="506f696e747323232344415441232323">155</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="155"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="d576-82a9-f874-8d2d" targetId="1cac-032f-4580-2381" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9b2a-18a7-dcf4-2499"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a3-df78-bcf3-8201" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="add" value="{this} does not have a commander!" field="info" scope="parent">
+          <conditions>
+            <condition type="atMost" value="0" field="selections" scope="parent" childId="35d6-3921-58bd-457c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
