@@ -24,7 +24,7 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Transport Selection" hidden="false" id="8426-4955-be8c-db96">
+            <selectionEntry type="upgrade" import="true" name="Transport Selection" hidden="false" id="8426-4955-be8c-db96" defaultAmount="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="2e89-7ce2-bf7c-b8af" defaultAmount="4">
                   <costs>
