@@ -1177,7 +1177,12 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Golden Arrow" hidden="false" id="4e6f-11ad-1230-8313" type="selectionEntry" targetId="978f-a5da-4cad-c695"/>
+                <entryLink import="true" name="Golden Arrow" hidden="false" id="4e6f-11ad-1230-8313" type="selectionEntry" targetId="978f-a5da-4cad-c695">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43cf-b327-9af0-463f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c9-b8b0-484f-3978" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-min" includeChildSelections="false"/>
