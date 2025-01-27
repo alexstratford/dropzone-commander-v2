@@ -333,34 +333,6 @@
           </constraints>
           <comment>Phoenix</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missile Battery" hidden="false" id="4bfd-cece-b838-48b6" collective="true" flatten="false">
-          <profiles>
-            <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9e00-41d5-7b6f-7f15" publicationId="0a0b-b837-fa34-a21d" page="6">
-              <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Limited-2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef49-a0c1-9544-4a2a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5c0-f7ed-4aa1-b450" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Area" id="db64-b86a-b00e-4f6d" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
-            <infoLink name="Limited-X" id="85cf-7fbb-34e7-1802" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="SMGs, Assault Grenades" hidden="false" id="78c0-b1d5-2689-52b6" page="" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fde-2b9e-0b06-0a59" includeChildSelections="false"/>
@@ -588,7 +560,7 @@
           </constraints>
           <comment>Roc trio</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missile Battery" hidden="false" id="5708-d570-3790-a609" collective="true" flatten="false">
+        <selectionEntry type="upgrade" import="true" name="Missile Battery" hidden="false" id="e996-2caa-d321-d3f4" collective="true" flatten="false">
           <profiles>
             <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="003c-e8ef-e1c2-3de7" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
@@ -943,7 +915,7 @@
               <entryLinks>
                 <entryLink import="true" name="AA Battery" hidden="false" id="f68c-5841-2b4d-ce40" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
                 <entryLink import="true" name="Minigun Triad" hidden="false" id="9ebd-45c7-2f07-bc26" type="selectionEntry" targetId="e2e7-cf48-e7af-2d71"/>
-                <entryLink import="true" name="Missile Battery" hidden="false" id="0f81-3c23-92d7-bd5e" type="selectionEntry" targetId="5708-d570-3790-a609"/>
+                <entryLink import="true" name="Missile Battery" hidden="false" id="0f81-3c23-92d7-bd5e" type="selectionEntry" targetId="e996-2caa-d321-d3f4"/>
                 <entryLink import="true" name="Commander" hidden="false" id="5aa6-57e1-ec05-387b" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
               <constraints>
@@ -1769,6 +1741,31 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a30a-5e70-177f-5900" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="a30a-5e70-177f-5900">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="a30a-5e70-177f-5900">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="a30a-5e70-177f-5900">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1792,7 +1789,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Minigun Triad" hidden="false" id="4125-4558-779f-fa73" type="selectionEntry" targetId="378d-14fa-d98a-1305"/>
-            <entryLink import="true" name="Missile Battery" hidden="false" id="73aa-5df9-6fc8-a85d" type="selectionEntry" targetId="5708-d570-3790-a609"/>
+            <entryLink import="true" name="Missile Battery" hidden="false" id="73aa-5df9-6fc8-a85d" type="selectionEntry" targetId="e996-2caa-d321-d3f4"/>
             <entryLink import="true" name="AA Battery" hidden="false" id="82c6-0655-5bce-47b7" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
             <entryLink import="true" name="Twin Missile Pods" hidden="false" id="49f6-8574-fd76-3847" type="selectionEntry" targetId="b96c-2149-6e6b-d430" collective="true"/>
           </entryLinks>
