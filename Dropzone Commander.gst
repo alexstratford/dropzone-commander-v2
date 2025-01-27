@@ -76,6 +76,16 @@
         <characteristicType id="4f746865722053717561647323232344415441232323" name="Other Squads"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="b88a-b68e-168b-9f28" name="Unit">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="Countermeasures"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="Armour"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="Damage Points"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
@@ -1114,7 +1124,7 @@ Any squads that start the game in Holding must be declared as such. Those squad
     <rule name="Bloodthirsty" id="9134-48fd-ee38-1054" hidden="false">
       <description>If this unit is in the same Garrison as an enemy unit, then it may not move away or leave the Garrison. This unit suffers a -2 penalty when searching for objectives.</description>
     </rule>
-    <rule name="Dodge" id="4fdb-af55-c6cc-3e6c" hidden="false">
+    <rule name="Dodge-X" id="4fdb-af55-c6cc-3e6c" hidden="false">
       <alias>Dodge 1+</alias>
       <alias>Dodge 2+</alias>
       <alias>Dodge 3+</alias>
