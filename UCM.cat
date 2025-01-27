@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7504-b7a2-cf56-9902" name="United Colonies Of Mankind" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7504-b7a2-cf56-9902" name="UCM" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>UCM for v2.2 of Dropzone Commander</comment>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="true" id="e9a7-3680-5faf-edb5" flatten="true">
