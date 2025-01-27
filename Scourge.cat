@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="d4a3-4b36-bde2-4468" name="Scourge" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Harbinger Troopship" hidden="false" id="f4f3-caf4-529e-56bb">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Harbinger Troopship" hidden="false" id="c14d-57f1-9ca2-a382">
+          <costs>
+            <cost name="pts" typeId="points" value="50"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="-2"/>
+          </costs>
+          <profiles>
+            <profile name="Harbinger Troopship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="39b9-4ee3-b465-6c2c">
+              <characteristics>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">18&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">11</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">4</characteristic>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Transport Selection" hidden="false" id="8426-4955-be8c-db96" defaultAmount="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="2e89-7ce2-bf7c-b8af" defaultAmount="4">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Light Vehicle" hidden="false" id="e965-1e67-134f-8316" defaultAmount="0">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="-1"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="self" shared="true" id="f0ca-cf57-952c-9919-min" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="self" shared="true" id="f0ca-cf57-952c-9919-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83f8-5881-2285-2b10" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00a7-ea7c-d9c2-d99a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eacf-0a39-6866-3d7f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eacf-0a39-6866-3d7f-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="de27-8358-5d78-6eeb" id="b564-8896-cb4d-6c30" primary="true" name="Auxiliary"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <costTypes>
+    <costType name="Vampire_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1"/>
+  </costTypes>
+  <entryLinks>
+    <entryLink import="true" name="Harbinger Troopship" hidden="false" id="25e0-2a04-cfe1-4493" targetId="f4f3-caf4-529e-56bb" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
