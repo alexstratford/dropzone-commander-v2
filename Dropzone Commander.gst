@@ -28,7 +28,7 @@
         <characteristicType id="53686f747323232344415441232323" name="Shots"/>
         <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
         <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="436f6d6d616e64657223232344415441232323" name="Commander">
@@ -809,7 +809,7 @@
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                         <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -829,7 +829,7 @@
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                         <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                        <characteristic name="Special" typeId="5370656369616c23232344415441232323"/>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -870,7 +870,7 @@
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                             <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                             <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
-                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
+                            <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -892,7 +892,7 @@
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                             <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                             <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                            <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+                            <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
