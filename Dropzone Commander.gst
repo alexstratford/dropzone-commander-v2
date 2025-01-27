@@ -18,39 +18,39 @@
   <profileTypes>
     <profileType id="496e66616e74727923232344415441232323" name="Infantry">
       <characteristicTypes>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
+		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
+		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
         <characteristicType id="466f7274697475646523232344415441232323" name="Fortitude"/>
         <characteristicType id="5.326432323234442e+25" name="Squad Size"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="4c616e6420556e697423232344415441232323" name="Vehicle">
       <characteristicTypes>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
+		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
+		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
         <characteristicType name="Squad Size" id="3caa-585d-3221-48d4"/>
       </characteristicTypes>
     </profileType>
     <profileType id="41697220556e697423232344415441232323" name="Aircraft">
       <characteristicTypes>
-        <characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="4d6f766523232344415441232323" name="Move"/>
         <characteristicType id="436f756e7465726d6561737572657323232344415441232323" name="Countermeasures"/>
+		<characteristicType id="41726d6f757223232344415441232323" name="Armour"/>
         <characteristicType id="44616d61676520506f696e747323232344415441232323" name="Damage Points"/>
         <characteristicType id="5.479706523232345e+27" name="Type"/>
+		<characteristicType id="5370656369616c23232344415441232323" name="Special"/>
         <characteristicType id="43617465676f727923232344415441232323" name="Category"/>
         <characteristicType id="5.326432323234442e+25" name="Squad Size"/>
-        <characteristicType id="5370656369616c23232344415441232323" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
