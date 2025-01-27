@@ -993,7 +993,12 @@
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="18"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Point Defence Launchers" hidden="false" id="5a60-66f9-ed67-9636" type="selectionEntry" targetId="b7fc-1bab-f74b-53e1"/>
+                <entryLink import="true" name="Point Defence Launchers" hidden="false" id="5a60-66f9-ed67-9636" type="selectionEntry" targetId="b7fc-1bab-f74b-53e1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4627-702a-67e2-7a7e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="203c-7090-f208-12ec" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Commander" hidden="false" id="2754-efe8-ae13-1b6c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e5fb-cdaa-be6d-e308" type="selectionEntry" targetId="9eb4-6880-7782-1e2f"/>
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e39b-f355-b2aa-ad87" type="selectionEntry" targetId="f468-a4f9-f0e5-914d"/>
