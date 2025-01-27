@@ -376,7 +376,142 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca4-02ff-beb9-e409" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="04c6-1414-00a0-0dd5">
+          <profiles>
+            <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8b2f-a3df-a330-140f">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="d25a-8bf1-63e1-9209" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd6b-bde5-6f59-b864" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bc8-da80-7732-cbf1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hunter Tank" hidden="false" id="454e-a9cd-9a90-41b1">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hunter Tank" hidden="false" id="e43c-bdf0-a743-470f" collective="true">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0749-fecf-264d-206f" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dc9d-b09c-7042-ac42" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+            <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Hunter Tank" typeId="4c616e6420556e697423232344415441232323" typeName="Vehicle" hidden="false" id="f49d-e893-e6f2-a262">
+              <characteristics>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">9&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A, E+2</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">13</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">1</characteristic>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Plasma Cannon" hidden="false" id="77a5-d334-3bc0-edef" type="selectionEntry" targetId="04c6-1414-00a0-0dd5"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="5b81-d459-a5f2-a830" primary="true" name="Standard"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Warriors" hidden="false" id="29c0-3971-7a26-1da9">
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="c8a6-b21d-dccf-7881" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Warriors" hidden="false" id="177e-3b37-3aeb-7763">
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Warriors" typeId="496e66616e74727923232344415441232323" typeName="Infantry" hidden="false" id="7068-3cc6-0e0f-afb5">
+                  <characteristics>
+                    <characteristic name="Move" typeId="4d6f766523232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">-</characteristic>
+                    <characteristic name="Armour" typeId="41726d6f757223232344415441232323">7</characteristic>
+                    <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">5</characteristic>
+                    <characteristic name="Type" typeId="5.479706523232345e+27">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ad2f-a834-3d09-e66a" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2949-2809-a564-f769" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marauder Dropship" hidden="false" id="b3d5-0ad2-c01c-45a3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Marauder Dropship" hidden="false" id="2c97-e65d-f981-1660">
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
+            <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="-2"/>
+            <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Marauder Dropship" typeId="41697220556e697423232344415441232323" typeName="Aircraft" hidden="false" id="4347-3059-ca72-b429">
+              <characteristics>
+                <characteristic name="Move" typeId="4d6f766523232344415441232323">24&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="436f756e7465726d6561737572657323232344415441232323">A</characteristic>
+                <characteristic name="Armour" typeId="41726d6f757223232344415441232323">10</characteristic>
+                <characteristic name="Damage Points" typeId="44616d61676520506f696e747323232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Aircraft</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Plasma Hose" hidden="false" id="7e5b-8edd-4f13-11c3" type="selectionEntry" targetId="7b1b-751c-5058-1839"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="695c-c446-a84f-5e5d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93b6-4cfd-d308-5b1e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="de27-8358-5d78-6eeb" id="96b9-e2e9-0eb2-6eed" primary="true" name="Auxiliary"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <costTypes>
@@ -389,5 +524,8 @@
     <entryLink import="true" name="Desolator Command Barge" hidden="false" id="e219-3218-5cc7-df27" targetId="7af4-d761-b159-ca6b" type="selectionEntry"/>
     <entryLink import="true" name="Oppressor Command Arthropod" hidden="false" id="7bf0-7c63-472b-aa40" targetId="442f-08dd-d233-04d3" type="selectionEntry"/>
     <entryLink import="true" name="Despot Suppression Walker" hidden="false" id="b82e-f2c9-5649-da8a" targetId="0ad8-bdfc-e753-d928" type="selectionEntry"/>
+    <entryLink import="true" name="Hunter Tank" hidden="false" id="6cb8-1974-2409-f5e6" targetId="454e-a9cd-9a90-41b1" type="selectionEntry"/>
+    <entryLink import="true" name="Warriors" hidden="false" id="e413-7a8f-4fc0-9683" targetId="29c0-3971-7a26-1da9" type="selectionEntry"/>
+    <entryLink import="true" name="Marauder Dropship" hidden="false" id="e251-6c0b-640c-72c9" targetId="b3d5-0ad2-c01c-45a3" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
