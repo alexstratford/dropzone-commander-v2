@@ -77,6 +77,7 @@
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
     <categoryEntry name="HQ Battlegroup" id="e3ef-6462-5233-fb26" hidden="false"/>
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
+    <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
@@ -1050,7 +1051,6 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="334e-0ada-9165-6a2d"/>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
@@ -1472,10 +1472,34 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1363-be35-d6db-3277" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Holding" hidden="false" id="17f7-74ea-40f0-2d75">
+        <selectionEntry type="upgrade" import="true" name="Holding" hidden="true" id="17f7-74ea-40f0-2d75">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2493-d365-8141-d72f" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>

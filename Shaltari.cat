@@ -1,2 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c017-50c0-52a0-3f24" name="Shaltari" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="c017-50c0-52a0-3f24" name="Shaltari" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Daimyo Battlesuit" hidden="false" id="a10b-a27d-b87d-f006">
+      <categoryLinks>
+        <categoryLink targetId="ed7f-0593-2e55-430d" id="3229-d3ce-2050-4924" primary="true" name="Command"/>
+        <categoryLink targetId="4416-02b4-a45b-07f0" id="72f3-cb29-3dff-4eb3" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Daimyo Battlesuit" hidden="false" id="43d3-f4d3-6bc6-d385" defaultAmount="1" collective="true">
+          <costs>
+            <cost name="pts" typeId="points" value="65"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0523-0d5b-4865-4b28" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d09f-3816-b0a8-39e6" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Resilient" id="0389-48a8-cd4b-84d9" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+            <infoLink name="Command Centre" id="a0f8-0cec-bf38-5443" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+            <infoLink name="Warsuit" id="2666-449a-1afd-eb44" hidden="false" type="rule" targetId="78ab-d7d9-dfe8-de1e"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Commander" hidden="false" id="767a-bd9f-b075-def7" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="true"/>
+          </entryLinks>
+          <rules>
+            <rule name="Warband" id="66da-f1c1-236c-386b" hidden="false">
+              <description>At the start of the game, before deployment,this unit may join any other squad of Shaltari Infantry. For all purposes it is treated as part of their squad and battlegroup, taking on their category too (although a Commander may still be mounted in it due to the Command Centre special rule).</description>
+            </rule>
+            <rule name="Nano Gateway" id="80e2-94db-4d7d-4b07" hidden="false">
+              <description>Instead of making a Moving action, this squad may immediately go into Holding. Any held objectives are dropped before this squad is put into holding.</description>
+            </rule>
+            <rule name="Web Projector" id="5aff-0bc5-8c7f-f68a" hidden="false">
+              <description>When this weapon deals damage, instead of causing damage you may place the target squad in coherency outside the Garrison within 2&quot; of a wall.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="4416-02b4-a45b-07f0" id="abe7-36f0-bc43-ddb9" primary="true" name="Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warband Selection" hidden="false" id="3580-cbe0-5b31-16a0" collective="true" defaultAmount="1">
+          <associations>
+            <association min="1" max="1" scope="roster" childId="unit" name="Warband" id="3d60-f2a9-443f-1e35" includeChildSelections="true" includeChildForces="true"/>
+          </associations>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c807-cab6-dc37-5018" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5110-7fda-4943-ab3c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ronin Battlesuit" hidden="false" id="77c7-ab18-63e5-51d0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ronin Battlesuit" hidden="false" id="7cba-bfc9-0712-0e93" collective="true">
+          <profiles>
+            <profile name="Ronin Battlesuit" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4960-f9ce-8939-033c">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P6+</characteristic>
+                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Transport Selection" id="f3d7-3204-3572-7d15" hidden="false" collective="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Infantry" hidden="false" id="379a-6a79-b35a-ad28" defaultAmount="1" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vehicle" hidden="false" id="1668-a36f-ef9f-7a87" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="1"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc1d-eb83-07f5-25a0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8440-50dc-da31-c24a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d630-50a0-973f-63a2" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="06bd-a414-e8ca-aaef" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="4416-02b4-a45b-07f0" id="65b7-4724-1b0c-bd79" primary="true" name="Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b09c-78fb-f3c3-4438" id="3833-e52e-5cfc-d70a" primary="true" name="Exotic"/>
+        <categoryLink targetId="4416-02b4-a45b-07f0" id="a671-1705-e0b1-f90e" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
+      <description>This unit’s Active Countermeasures only take effect against weapons of E6 or less. In addition, re-roll successful Collateral Damage hits against this unit.
+
+</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Daimyo Battlesuit" hidden="false" id="7950-14ed-d4ed-d9f9" targetId="a10b-a27d-b87d-f006" type="selectionEntry"/>
+    <entryLink import="true" name="Ronin Battlesuit" hidden="false" id="bb43-9546-a527-1950" targetId="77c7-ab18-63e5-51d0" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
