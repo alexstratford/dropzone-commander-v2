@@ -1379,13 +1379,17 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden" scope="self">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+                <modifier type="add" value="Kate Rawlins does not allow {this} to be selected" field="warning"/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Phoenix Command Gunship" hidden="false" id="7788-fef1-39db-1fc1" publicationId="0a0b-b837-fa34-a21d" page="2">
           <categoryLinks>
@@ -2403,13 +2407,17 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden" scope="self">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+                <modifier type="add" value="Kate Rawlins does not allow {this} to be selected" field="warning"/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Albatross Dropship" hidden="false" id="8a39-07a4-398a-e447" publicationId="0a0b-b837-fa34-a21d" page="39" collective="false">
           <categoryLinks>
@@ -2653,13 +2661,17 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </rules>
             </selectionEntry>
           </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+                <modifier type="add" value="Kate Rawlins does not allow {this} to be selected" field="warning"/>
+              </modifiers>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
-            </modifier>
-          </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Raven Light Troopship" hidden="false" id="dfb9-aad5-85e5-fbca">
           <categoryLinks>
