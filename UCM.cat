@@ -1379,6 +1379,13 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" scope="self">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Phoenix Command Gunship" hidden="false" id="7788-fef1-39db-1fc1" publicationId="0a0b-b837-fa34-a21d" page="2">
           <categoryLinks>
@@ -1434,7 +1441,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="f5bd-45e5-ceb2-2492" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Wolf Command LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="03bc-a790-8625-09dd" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Wolf Command LAV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="03bc-a790-8625-09dd" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1443,6 +1450,13 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="077a-2fc8-20f2-4084" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -1515,6 +1529,196 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="4451-214c-2c29-e177" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="077a-2fc8-20f2-4084">
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="dbb3-7376-a9a0-527d" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Command" hidden="false" id="99f6-9665-c020-bf14" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Wolf Command LAV" hidden="false" id="6209-b46b-507d-1a01">
+              <entryLinks>
+                <entryLink import="true" name="Wolf Missiles" hidden="false" id="18a6-31be-550a-d4e6" type="selectionEntry" targetId="ebb6-06dd-d92d-43b0"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="667b-712a-9376-116f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="7581-6c24-2104-1ed1" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wolf Command LAV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4faa-b07c-e8d4-8045" publicationId="0a0b-b837-fa34-a21d" page="1">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="077a-2fc8-20f2-4084" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="195"/>
+                <cost name="Infantry Transport" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Tank Transport" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
+              </costs>
+              <rules>
+                <rule name="Benefit" id="24d0-1522-c8c4-a35d" hidden="false">
+                  <description>Wolves, Polecats, and Wolverines gain Evasion +1 Countermeasures.</description>
+                </rule>
+                <rule name="Detriment" id="0fb3-239e-3e7f-214f" hidden="false">
+                  <description>Friendly Heavy units cannot be Hull Down.</description>
+                </rule>
+                <rule name="Scrying Array" id="8b09-1a78-63c6-82d1" hidden="false">
+                  <description>At the end of a turn where Terrence Agu is on the board, look at the top two cards of your Command Card Deck. Put any number of them on top of your deck and the rest on the bottom of your deck.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7c71-7647-620c-fb82" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b2d-455f-1015-c28d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Luciana M Cato - Ferrum Drone Base " hidden="false" id="6e4b-14f2-dc26-7c25">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Ferrum Drone Base" hidden="false" id="f468-b892-fc71-6d56">
+              <costs>
+                <cost name="pts" typeId="points" value="310"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="18"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Point Defence Launchers" hidden="false" id="a13b-e9dc-8b58-6d48" type="selectionEntry" targetId="b7fc-1bab-f74b-53e1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21e7-35a6-8497-07f7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e13b-7b21-7016-b299" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="85f5-f4ae-8fca-64de" type="selectionEntry" targetId="9eb4-6880-7782-1e2f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="143e-98ed-594d-67c7" type="selectionEntry" targetId="f468-a4f9-f0e5-914d"/>
+                <entryLink import="true" name="Starsprite Drones" hidden="false" id="144d-8a2a-54d2-618e" type="selectionEntry" targetId="3bb2-de1a-3350-eb97">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32c9-b60e-0319-4118" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="006b-11d0-5d27-e17d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ba99-7e1a-4350-cc38">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Drone Base" id="a95e-c4db-39d5-e75a" hidden="false">
+                  <description>At any point during this unit’s activation it may launch 4 Starsprite Drones. These Starsprite Drones are placed in a squad on the board, following disembarking rules as if this unit was their Transport.
+
+
+The Drone Base can do this each turn, with each new squad of Starsprite Drones operating individually, as part of this unit’s Battlegroup. However, no more than 2 squads of Starsprite Drones may be in play at any time for each Ferrum Drone Base on the board.
+
+
+If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casualties immediately until there are no more than 2 squads per Ferrum Drone Base.</description>
+                </rule>
+                <rule name="Benefit" id="41ce-81e2-a60e-c2eb" hidden="false">
+                  <description>All Units with the Fast special rule gain a -1 Accuracy bonus the turn they enter the battlefield.</description>
+                </rule>
+                <rule name="Detriment" id="3d0f-cf80-a16d-03d4" hidden="false">
+                  <description>Non-transport Auxiliary Aircraft must be permanently assigned to a Battlegroup.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ef5-4760-66ff-b184" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2af-a0c4-c5ba-7942" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="a5c7-8155-44c8-8cab" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Command" hidden="false" id="b971-c840-2b27-01df" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="ffa8-7ea2-6215-c89d" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d271-99c1-5e2d-e5ad" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Kate Rawlins - Phoenix Command Gunship" hidden="false" id="28d9-5abb-5e3b-50eb">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Phoenix Command Gunship" hidden="false" id="76aa-ae15-2acd-5f57">
+              <entryLinks>
+                <entryLink import="true" name="AA Battery" hidden="false" id="ec1c-a754-e47a-2564" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
+                <entryLink import="true" name="Minigun Triad" hidden="false" id="8f49-9639-9402-d034" type="selectionEntry" targetId="e2e7-cf48-e7af-2d71"/>
+                <entryLink import="true" name="Missile Battery" hidden="false" id="9fd8-5b68-f22d-8387" type="selectionEntry" targetId="e996-2caa-d321-d3f4"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="de62-dcd3-a9ef-e4be" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8458-2377-b27c-a729" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b517-fb6f-9aa6-a0eb" publicationId="0a0b-b837-fa34-a21d" page="1">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="365"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <rules>
+                <rule name="Self-Repair" id="fb86-cc2f-5b4d-a0c6" hidden="false">
+                  <description>When this unit is destroyed, instead of exploding it lands on the closest available spot. It cannot be damaged for the rest of the round in any way. In the round up phase, roll a dice. On a 1-3 it is destroyed. Ond a 4-5 it replenishes 2 Damage Points, and on a 6 it replenishes 3 Damage Points.</description>
+                </rule>
+                <rule name="Benefit" id="df3a-c9af-a474-45c5" hidden="false">
+                  <description>All Command Cards with a range of Influence become range Global</description>
+                </rule>
+                <rule name="Detriment" id="564f-b634-4263-ff09" hidden="false">
+                  <description>Kodiak Command ACV, Bear APC, and Panda APC&apos;s may no be included in an army with Kate Rawlins</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="88b3-6afa-70ef-ac59" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Command" hidden="false" id="ba75-685d-46e0-03ec" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="43ac-ae4d-3cf3-70ff" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c644-87b4-2475-b1c0" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1684,7 +1888,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5640-80cd-3225-d4bb" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Wolverine Scout Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="7fc7-4969-7f55-e2a4">
+                <profile name="Wolverine Scout Buggy" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7fc7-4969-7f55-e2a4">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1693,6 +1897,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="077a-2fc8-20f2-4084" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -2192,6 +2403,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden" scope="self">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Albatross Dropship" hidden="false" id="8a39-07a4-398a-e447" publicationId="0a0b-b837-fa34-a21d" page="39" collective="false">
           <categoryLinks>
@@ -2435,6 +2653,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28d9-5abb-5e3b-50eb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Raven Light Troopship" hidden="false" id="dfb9-aad5-85e5-fbca">
           <categoryLinks>
@@ -2789,21 +3014,27 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2c44-3559-e457-d4b9" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Polecat Weapons Selection" hidden="false" id="e29e-cb41-0878-f398" type="selectionEntryGroup" targetId="ea6f-f728-a785-ff7b" collective="true">
-                  <profiles>
-                    <profile name="Polecat Weapons Selection" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="a736-0215-a2c6-2e67">
-                      <characteristics>
-                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                        <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                        <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                        <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
-                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
-                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </entryLink>
+                <entryLink import="true" name="Polecat Weapons Selection" hidden="false" id="e29e-cb41-0878-f398" type="selectionEntryGroup" targetId="ea6f-f728-a785-ff7b" collective="true"/>
               </entryLinks>
+              <profiles>
+                <profile name="Polecat Buggy" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5c33-3926-cc27-b568">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="077a-2fc8-20f2-4084" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -3219,12 +3450,10 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Roc Heavy Gunship" hidden="false" id="3534-2e0d-f175-8699" targetId="e64c-dea6-3b42-403c" type="selectionEntry"/>
     <entryLink import="true" name="Hazard Suits" hidden="false" id="ad09-17e2-5475-d6ba" targetId="5545-5d94-3da0-a4dc" type="selectionEntry"/>
     <entryLink import="true" name="India Light Battle-Mech" hidden="false" id="02e9-790b-3484-a634" targetId="6996-8f40-fc3d-3a11" type="selectionEntry"/>
+    <entryLink import="true" name="Kate Rawlins - Phoenix Command Gunship" hidden="false" id="9607-b68f-14d0-f865" targetId="28d9-5abb-5e3b-50eb" type="selectionEntry"/>
+    <entryLink import="true" name="Luciana M Cato - Ferrum Drone Base " hidden="false" id="789b-333e-cbf0-5265" targetId="6e4b-14f2-dc26-7c25" type="selectionEntry"/>
+    <entryLink import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="fb59-5ea4-9668-d2db" targetId="077a-2fc8-20f2-4084" type="selectionEntry"/>
   </entryLinks>
-  <categoryEntries>
-    <categoryEntry name="Light_Transport" id="29a2-235e-6304-0a86" hidden="false"/>
-    <categoryEntry name="Medium_Transport" id="82fa-2d8a-3043-b46e" hidden="false"/>
-    <categoryEntry name="Infantry_Transport" id="22c8-3512-a165-1aa2" hidden="false"/>
-  </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
       <selectionEntries>
