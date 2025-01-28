@@ -59,7 +59,6 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
-    <categoryEntry name="Battlegroups" id="f286-8f1e-310f-4d48" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41"/>
     <categoryEntry name="Commander" id="1cac-032f-4580-2381" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="9"/>
     <categoryEntry name="Standard" id="7bea-a1e7-3cab-7ecb" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
     <categoryEntry name="Auxiliary" id="de27-8358-5d78-6eeb" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
@@ -75,7 +74,6 @@
     <categoryEntry name="Drill" id="243f-ea96-5f0b-72e6" hidden="false"/>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
-    <categoryEntry name="HQ Battlegroup" id="e3ef-6462-5233-fb26" hidden="false"/>
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
     <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
   </categoryEntries>

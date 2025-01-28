@@ -40,18 +40,11 @@
               <description>When this weapon deals damage, instead of causing damage you may place the target squad in coherency outside the Garrison within 2&quot; of a wall.</description>
             </rule>
           </rules>
-          <categoryLinks>
-            <categoryLink targetId="4416-02b4-a45b-07f0" id="abe7-36f0-bc43-ddb9" primary="true" name="Infantry"/>
-          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warband Selection" hidden="false" id="3580-cbe0-5b31-16a0" collective="true" defaultAmount="1">
           <associations>
-            <association min="1" max="1" scope="roster" childId="unit" name="Warband" id="3d60-f2a9-443f-1e35" includeChildSelections="true" includeChildForces="true"/>
+            <association min="1" max="1" scope="force" childId="unit" name="Warband" id="3d60-f2a9-443f-1e35" includeChildSelections="true" includeChildForces="true"/>
           </associations>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c807-cab6-dc37-5018" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5110-7fda-4943-ab3c" includeChildSelections="false"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -116,16 +109,72 @@
         <categoryLink targetId="4416-02b4-a45b-07f0" id="a671-1705-e0b1-f90e" primary="false" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yari Light Gravtank" hidden="false" id="cd20-8b32-abe9-c01a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Yari Light Gravtank" hidden="false" id="a74f-be58-a3f0-fc4e">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a89f-b847-9f34-3a08" includeChildSelections="false"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="c7b3-0c89-0514-3af5" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Transport Selection" id="b4f6-61de-e728-1de6" hidden="false" collective="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Infantry" hidden="false" id="c6f8-0f09-3e20-1d21" defaultAmount="1" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vehicle" hidden="false" id="728d-e7e1-98c4-dd62" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a09-0510-1f86-7cb3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0812-96c1-5a8d-f824" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5f13-c39f-577a-8947" id="2f1a-7382-54c4-a74a" primary="true" name="Scout"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
-      <description>This unit’s Active Countermeasures only take effect against weapons of E6 or less. In addition, re-roll successful Collateral Damage hits against this unit.
-
-</description>
+      <description>This unit’s Active Countermeasures only take effect against weapons of E6 or less. In addition, re-roll successful Collateral Damage hits against this unit.</description>
     </rule>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Daimyo Battlesuit" hidden="false" id="7950-14ed-d4ed-d9f9" targetId="a10b-a27d-b87d-f006" type="selectionEntry"/>
     <entryLink import="true" name="Ronin Battlesuit" hidden="false" id="bb43-9546-a527-1950" targetId="77c7-ab18-63e5-51d0" type="selectionEntry"/>
+    <entryLink import="true" name="Yari Light Gravtank" hidden="false" id="93d2-7b53-e924-15be" targetId="cd20-8b32-abe9-c01a" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false"/>
+  </sharedSelectionEntryGroups>
 </catalogue>
