@@ -76,6 +76,7 @@
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
     <categoryEntry name="HQ Battlegroup" id="e3ef-6462-5233-fb26" hidden="false"/>
+    <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
