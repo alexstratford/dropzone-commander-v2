@@ -393,6 +393,93 @@
             <categoryLink name="Standard" hidden="false" id="63e3-bb25-ef7b-06aa" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Corruptor Hiveship" hidden="false" id="f9b7-d72f-fed1-f473">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Corruptor Hiveship" hidden="false" id="69d7-0946-750b-403a" collective="true">
+              <profiles>
+                <profile name="Corruptor Hiveship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5696-6191-e555-287d">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Hose" hidden="false" id="fb4b-1b34-2dc6-977e" type="selectionEntry" targetId="8f27-272e-556e-4a88"/>
+                <entryLink import="true" name="Razorworms" hidden="false" id="61b3-c6af-1822-4456" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
+              </entryLinks>
+              <rules>
+                <rule name="Razorworm Pod" id="5d72-ce4d-e841-951a" hidden="false">
+                  <description>During this squad’s activation, each unit may launch a Razorworm volley at a Garrison within 6”. Roll 1 dice for each unit launching a volley. Rolls of 1 have is no effect. For every roll of 2-4, place 1 unit of Razorworms in that Garrison. For every roll of 5-6 place 2 units of Razorworms in that Garrison.
+
+
+All Razorworm units launched into a Garrison at the same time from the same squad count as being a single squad. That squad is the same Battlegroup as the launching squad and may activate in the same round they are spawned, although do not have to re-roll Damage if Shooting a unit in that Garrison this round.
+
+
+The Garrison receives an equal number of Collateral Damage tokens to units of Razorworms placed.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cf2-3537-558c-fc7a" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4269-57b2-7957-5db6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="9c6f-b136-f8af-fb58" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Reaver Gunship" hidden="false" id="8fca-6c5e-71ec-d34d">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Reaver Gunship" hidden="false" id="f860-397f-8fc0-bb4f" collective="true">
+              <profiles>
+                <profile name="Reaver Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aba4-df79-afb8-e1e1">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="55"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Hose" hidden="false" id="f2d2-765e-eae0-8354" type="selectionEntry" targetId="8f27-272e-556e-4a88"/>
+                <entryLink import="true" name="Plasma Lance" hidden="false" id="4f11-72e6-3ddb-72d8" type="selectionEntry" targetId="4a1a-4815-b1ff-d8c2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="186c-5986-ec20-a470" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="02bb-8ad2-3bce-f3c5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="8569-715f-110f-9c2a" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="8795-24cb-12be-bec3">
@@ -643,6 +730,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8119-073b-5fc9-70b4" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="620a-a76b-80cc-91d9" includeChildSelections="false"/>
           </constraints>
+          <comment>F</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Standoff Energy Cluster" hidden="false" id="d9fa-a40d-22dc-2708" collective="true">
           <profiles>
@@ -874,7 +962,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43e6-dd5d-98f6-eba7" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Thrust Cutter" hidden="false" id="6c78-2414-2a53-7061">
+        <selectionEntry type="upgrade" import="true" name="Thrust Cutter" hidden="false" id="6c78-2414-2a53-7061" collective="true">
           <profiles>
             <profile name="Thrust Cutter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4136-b16e-3b1a-2a96">
               <characteristics>
@@ -897,7 +985,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c06a-29be-8c03-4579" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Light Bio-Mortar" hidden="false" id="d76f-b74b-df6a-b25e">
+        <selectionEntry type="upgrade" import="true" name="Light Bio-Mortar" hidden="false" id="d76f-b74b-df6a-b25e" collective="true">
           <profiles>
             <profile name="Light Bio-Mortar (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98b4-5071-f00d-4073">
               <characteristics>
@@ -1010,6 +1098,311 @@
             <infoLink name="Flame" id="d555-bbf0-3d87-ee9e" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Huge Claws, Hunting Scream" hidden="false" id="55b6-6a3c-bab3-e5d4" collective="true">
+          <profiles>
+            <profile name="Huge Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-7695-b38f-c9b1">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hunting Scream" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98ae-12c7-f9c6-1e42">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c479-8cc5-4029-99f3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcee-9fb0-4839-1ccf" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Hunting Scream" id="af79-1ee6-d73c-5343" hidden="false">
+              <description>When a unit is targeted by this weapon, the Screamer doesn’t roll damage as normal. Instead, the controlling player rolls a dice for every damage point remaining in the targeted squad and consults their Fortitude. For every roll under the Fortitude value, that squad loses 1 Damage Point with no saves of any kind.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shard Flak Cannons" hidden="false" id="7881-c8dd-6e93-5388" collective="true">
+          <profiles>
+            <profile name="Shard Flak Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f046-049b-04e6-2455">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+              <comment>Left</comment>
+            </profile>
+            <profile name="Shard Flak Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="528d-d484-7d73-69ef">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+              <comment>Right</comment>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="658c-1c2f-e1e1-b5e7" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2f3-09e7-7b86-90ae" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d019-5d66-d731-0964" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Arc Caster" hidden="false" id="b55e-68a3-ed8d-f798" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2283-46c0-633b-e3f5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f898-7937-acd0-ef60" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0788-fba2-d84f-c0af">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="fc5b-d4ba-1142-ebc5" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <rules>
+            <rule name="Arc Caster" id="6502-43f3-f02b-6a04" hidden="false">
+              <description>If targeting an Aircraft this weapon hits on a 2+. If targeting a Scenery Piece this weapon hits on a 6+.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="4bcb-e5a9-edd2-7449" collective="true">
+          <infoLinks>
+            <infoLink name="Indirect" id="eb0e-f638-50b5-796c" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Devastator-X" id="3b1e-741a-b0c1-9bb8" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Area" id="a2e0-6eeb-7540-875f" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Plasma Bombard" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7699-c1ae-4d0a-a116">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">30&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-2 (Vehicle, Scenery), Indirect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b55d-ecc8-6135-ac9b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7787-3d36-50fb-5fe0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pheremone Spray" hidden="false" id="cbb0-8939-3335-fa74">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb24-e80e-9ae8-2373" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b80-6347-02d6-dd3e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pheremone Spray" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e235-69b1-f763-bcbd">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">1</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Area" id="8abe-22ce-ef29-ce88" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Penetrative" id="6151-d3f4-2182-a7bd" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Hose" hidden="false" id="8f27-272e-556e-4a88" collective="true">
+          <profiles>
+            <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b792-6ffe-6c9b-7e2a">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Focus-X" id="886a-ddee-0823-87cf" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db60-32a5-be36-47f7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1e0-868d-4f98-5898" includeChildSelections="false"/>
+          </constraints>
+          <comment>12&quot; M/F</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Lance" hidden="false" id="4a1a-4815-b1ff-d8c2" defaultAmount="1" collective="true">
+          <profiles>
+            <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8094-70d8-e912-6722">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1fcc-aaee-8bdf-a8d1">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="8834-bcee-77f1-2aff" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="178b-b38b-103e-92f3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0907-51eb-cd64-796e" includeChildSelections="false"/>
+          </constraints>
+          <comment>12&quot; M/F F/S</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ion Cradle" hidden="false" id="5444-bb2d-f179-38af" collective="true">
+          <profiles>
+            <profile name="Ion Cradle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f8cd-7c4e-70ea-4323">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;
+</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-3, Strafe-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="1d59-f577-7a94-7571" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+            <infoLink name="AA-X" id="1e95-280a-a6d3-4775" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="976f-a28e-10b5-c3fa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6a4-245a-e9ea-323a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Micro Arc Caster" hidden="false" id="e171-8ea0-75f8-e57d" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82cc-042d-a2a5-4c34" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bcb-2255-220e-0c61" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Micro Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bc31-de74-4bc0-1b82">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="69d5-bf9e-0c97-f681" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <rules>
+            <rule name="Micro Arc Caster" id="1e90-b478-22ad-8917" hidden="false">
+              <description>If targeting an Aircraft this weapon hits on a 2+. If targeting a Scenery Piece this weapon hits on a 6+.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Shard Cannons, Self-Destruct" hidden="false" id="fd34-cf0f-6cc2-4422">
+          <profiles>
+            <profile name="Shard Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dcac-050b-e2d6-3ea7">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Self-Destruct" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f6a6-2b9b-d5b1-5f9a">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="af36-af81-e7bc-aba9" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Area" id="8b55-8c0e-594e-8c10" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+          <rules>
+            <rule name="Self-Destruct" id="6100-d9a0-3ba3-90a2" hidden="false">
+              <description>Only 1 unit in a squad may use this weapon each activation. When firing this weapon, place the template over the firing unit and roll to hit as if targeting the firing unit. The firing unit is not damaged, but all other units under the template are hit as normal. Once resolving a shot with this weapon, this unit is destroyed. This weapon cannot be used if this squad disembarks in the same activation.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="659a-fadd-6019-1035" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2767-84db-e341-7478" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
@@ -1096,6 +1489,7 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <comment>Paid Version</comment>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Demolisher Shock Troops" hidden="false" id="ddeb-48d8-ae39-1025">
           <selectionEntries>
@@ -1175,6 +1569,43 @@
             <categoryLink name="Troops" hidden="false" id="f7ca-7200-11d9-465a" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Razorworms" hidden="false" id="50ee-13d2-7059-c2fa">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Razorworms" hidden="false" id="a7f4-35b5-49e6-eb82" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Teeth &amp; Claws" hidden="false" id="95f6-e69b-67fc-85fb" type="selectionEntry" targetId="dd1f-581e-86e6-fa6b"/>
+              </entryLinks>
+              <rules>
+                <rule name="Living Weapon" id="c2b1-37be-de60-5643" hidden="false">
+                  <description>This unit cannot search for or claim Objectives, and cannot embark in transports during battle, though may start the game embarked.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d5e-dbaf-a7d9-b69e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2c6-3cbc-f9da-9f12" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Bloodthirsty" id="a4f9-a101-50c3-03c0" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
+                <infoLink name="Dodge-X" id="c268-5b57-50c8-5511" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+                <infoLink name="Razorworms" id="5554-ae24-f764-c6d4" hidden="false" type="profile" targetId="0f23-2f0f-2794-d92d"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e34a-d623-99b6-624e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ced-d435-a1ef-98b5" includeChildSelections="false"/>
+          </constraints>
+          <comment>Free Version</comment>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="9405-20f4-1652-03af">
@@ -1229,7 +1660,7 @@
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Subjugator Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="c916-3c9c-e87e-d4da">
+                <profile name="Subjugator Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="c916-3c9c-e87e-d4da">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
@@ -1255,6 +1686,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Resilient" id="6f0e-3f85-a68e-3072" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Large" id="b5b4-4114-a193-c1ac" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1561,92 +1993,433 @@
             <categoryLink name="Exotic" hidden="false" id="dc41-0af6-c0c9-2f9f" targetId="b09c-78fb-f3c3-4438" primary="true"/>
           </categoryLinks>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Screamer" hidden="false" id="66c0-251e-7270-25d9">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Screamer" hidden="false" id="fa84-99bc-0694-59d4">
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="2"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e7-1b68-69f7-438a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4949-54ec-36e5-e83f" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Screamer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2440-f876-9b2c-70f8">
-              <characteristics>
-                <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+2</characteristic>
-                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
-                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Huge Claws, Hunting Scream" hidden="false" id="decf-3977-8f8c-c236" type="selectionEntry" targetId="55b6-6a3c-bab3-e5d4"/>
-          </entryLinks>
-          <rules>
-            <rule name="Abhorrent" id="50ed-8075-0415-3f7a" hidden="false">
-              <description>Any enemy Infantry in the same or Linked Garrison suffer a further -1 penalty when searching for objectives, and a +1 penalty to their Fortitude.</description>
-            </rule>
-            <rule name="Squeeze" id="6692-9334-8171-033c" hidden="false">
-              <description>When this unit enters a Garrison or starts its activation in a Garrison, it causes D3 Collateral Damage to that Garrison</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink name="Bloodthirsty" id="4bcf-947b-1765-c489" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
-          </infoLinks>
+        <selectionEntry type="unit" import="true" name="Screamer" hidden="false" id="66c0-251e-7270-25d9">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Screamer" hidden="false" id="fa84-99bc-0694-59d4">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e7-1b68-69f7-438a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4949-54ec-36e5-e83f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Screamer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2440-f876-9b2c-70f8">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+2</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Huge Claws, Hunting Scream" hidden="false" id="decf-3977-8f8c-c236" type="selectionEntry" targetId="55b6-6a3c-bab3-e5d4"/>
+              </entryLinks>
+              <rules>
+                <rule name="Abhorrent" id="50ed-8075-0415-3f7a" hidden="false">
+                  <description>Any enemy Infantry in the same or Linked Garrison suffer a further -1 penalty when searching for objectives, and a +1 penalty to their Fortitude.</description>
+                </rule>
+                <rule name="Squeeze" id="6692-9334-8171-033c" hidden="false">
+                  <description>When this unit enters a Garrison or starts its activation in a Garrison, it causes D3 Collateral Damage to that Garrison</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Bloodthirsty" id="4bcf-947b-1765-c489" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Exotic" hidden="false" id="8f68-e5a0-dd5d-3167" targetId="b09c-78fb-f3c3-4438" primary="true"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="b09c-78fb-f3c3-4438" id="8f68-e5a0-dd5d-3167" primary="true" name="Exotic"/>
-      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Huge Claws, Hunting Scream" hidden="false" id="55b6-6a3c-bab3-e5d4">
-      <profiles>
-        <profile name="Huge Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-7695-b38f-c9b1">
-          <characteristics>
-            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-            <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
-            <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-            <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-            <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
-            <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Hunting Scream" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98ae-12c7-f9c6-1e42">
-          <characteristics>
-            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-            <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
-            <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-            <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-            <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
-            <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c479-8cc5-4029-99f3" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcee-9fb0-4839-1ccf" includeChildSelections="false"/>
-      </constraints>
-      <rules>
-        <rule name="Hunting Scream" id="af79-1ee6-d73c-5343" hidden="false">
-          <description>When a unit is targeted by this weapon, the Screamer doesn’t roll damage as normal. Instead, the controlling player rolls a dice for every damage point remaining in the targeted squad and consults their Fortitude. For every roll under the Fortitude value, that squad loses 1 Damage Point with no saves of any kind.</description>
-        </rule>
-      </rules>
+    <selectionEntry type="upgrade" import="true" name="Support" hidden="false" id="e774-db76-17bf-c6cf">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Reaper AA Tank" hidden="false" id="c012-bf5d-f5a1-aa92">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Reaper AA Tank" hidden="false" id="2960-c4d7-7d12-7ecd">
+              <profiles>
+                <profile name="Reaper AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fa62-f47c-60d0-ebd6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="deb6-d430-3fbf-ac2e" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="30a5-01db-6946-563b" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Arc Caster" hidden="false" id="b84f-e291-850d-01bd" type="selectionEntry" targetId="b55e-68a3-ed8d-f798"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="af4f-01e8-e07f-a20b" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Ravager AA Beetle" hidden="false" id="8da5-5552-5807-3702">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Ravager AA Beetle" hidden="false" id="15dc-e2c3-d4bf-e669" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Ravager AA Beetle" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4ebe-7e30-2b76-270b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 8&quot;, Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="94e9-4f20-b743-f79d" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
+                <entryLink import="true" name="Cutting Claws" hidden="false" id="b302-1f45-45c2-dbca" type="selectionEntry" targetId="fabe-2a6c-3c28-c20c" collective="true" sortIndex="3"/>
+                <entryLink import="true" name="Shard Flak Cannons" hidden="false" id="d4bd-a4fc-5082-b73f" type="selectionEntry" targetId="7881-c8dd-6e93-5388" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="241a-9518-d15e-f11b" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b9af-f876-2892-cd53" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Resilient" id="de39-ab8b-528d-f598" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="3474-86d5-462d-a0e2" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Eradicator Chameleopod" hidden="false" id="32f3-ac9a-b962-b24b">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Eradicator Chameleopod" hidden="false" id="4603-47d0-1ba5-6029" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="110"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="3"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Eradicator Chameleopod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2639-4049-c80e-7216">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient, Rare</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Electroweb Caster" hidden="false" id="a86c-302d-8ea9-832c" type="selectionEntry" targetId="d7d4-03d8-412c-ee56" sortIndex="1"/>
+                <entryLink import="true" name="Razor Claws" hidden="false" id="99d3-8582-6ab4-7a93" type="selectionEntry" targetId="1cd2-8918-7972-6556" sortIndex="3"/>
+                <entryLink import="true" name="Eradicator Chameleopod Weapon Selection" hidden="false" id="f56a-6b2f-7430-5abb" type="selectionEntryGroup" targetId="bc49-d858-b445-0a3f" sortIndex="2"/>
+              </entryLinks>
+              <rules>
+                <rule name="Chameleonic Scales" id="d54b-6d03-9ee8-c668" hidden="false">
+                  <description>If this unit does not move during its activation and has not disembarked this round, it gains +2 Evasion Countermeasures until the start of its next activation.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c22-1f21-e56d-ae7a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="802f-05f2-cf58-3f30" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Resilient" id="b338-7d1b-d3ed-7bb5" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Rare" id="1d8b-ea0e-b46c-4419" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Large" id="c941-eb1e-e51a-b3ca" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="2226-4127-d1ac-e195" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Annihilator Mobile Ordnance" hidden="false" id="6234-7745-69ee-f05b">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Annihilator Mobile Ordnance" hidden="false" id="7061-9e3e-c316-4c62" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="120"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Annihilator Mobile Ordnance" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b7ff-13c4-4a1d-9dfa">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Large" id="fc9d-2ec1-1470-03f7" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fcd-8448-7007-3986" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f4e-2506-177e-56b4" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Bombard" hidden="false" id="0ba6-1b26-f96d-c15b" type="selectionEntry" targetId="4bcb-e5a9-edd2-7449"/>
+              </entryLinks>
+              <rules>
+                <rule name="Flight Mode" id="1d6e-de9e-26d9-e752" hidden="false">
+                  <description>When making a Moving action this unit may move 18”, ignoring scenery pieces up to 8” high. Enemy AA weapons may choose to Reaction Fire against an Annihilator when it does this, counting it as an Aircraft with Armour 10. In addition, this unit counts as an aircraft for Aerial Advantage deployment purposes.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ancient Bond" hidden="false" id="04d1-1d87-f804-1744">
+                  <entryLinks>
+                    <entryLink import="true" name="Commander" hidden="false" id="71c1-09ae-1e54-946f" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Command Centre" id="e90f-127b-6009-077e" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f81b-7739-5bdf-fa66" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f81-4a16-bee2-16f4" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="28fa-10c2-b167-a9fc" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Afflictor Hive Walker" hidden="false" id="8292-830c-bc50-728f">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Afflictor Hive Walker" hidden="false" id="7535-26ad-0bed-9bec" defaultAmount="1" collective="true">
+              <profiles>
+                <profile name="Afflictor Hive Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2d63-df76-b30b-8bc5">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="55"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="4"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Resilient" id="61b2-bfeb-f7f5-2a2d" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Razor Claws" hidden="false" id="021f-c090-dc81-e5ca" type="selectionEntry" targetId="1cd2-8918-7972-6556" sortIndex="2"/>
+                <entryLink import="true" name="Pheremone Spray" hidden="false" id="46a9-0be9-5b1d-cc8f" type="selectionEntry" targetId="cbb0-8939-3335-fa74" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="000c-2907-29a4-7666" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48bd-8c4c-382b-f67a" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Pheremone Spray" id="e6f7-1531-0c93-e8e6" hidden="false">
+                  <description>This weapon does D6 hits to all units hit regardless of type, including Behemoths when directly targeted. Roll once and apply the roll to all. After resolving hits from this weapon, leave the Blast template on the board. Until the end of the round all units moving through the area (friendly, enemy, &amp; Aircraft) underneath the template use 2” of MV for every 1” of it crossed as if it were Tough Scenery, even if they would normally not be affected. Behemoths and Aircraft with the Fast Special Rule are unaffected by this movement penalty</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="144a-377a-c2a4-5dfc" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Overseer Cradle Barge" hidden="false" id="8e26-c753-1942-5b3f">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Overseer Cradle Barge" hidden="false" id="0ed5-7308-a7d1-0042" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="145"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="46fd-f99c-7f7b-cec3">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3cc-4735-f0e6-c398" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecc8-2f01-67d2-b406" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Ion Cradle" hidden="false" id="170d-ea07-5e04-7ed2" type="selectionEntry" targetId="5444-bb2d-f179-38af" collective="true"/>
+                <entryLink import="true" name="Commander" hidden="false" id="d587-c66c-38ef-0bfa" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Command Centre" id="c2d9-1d57-0bd0-3cfe" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+              <rules>
+                <rule name="Plasma Generator" id="9861-7174-7732-05e0" hidden="false">
+                  <description>Any friendly units firing weapons containing the word “Plasma” or “Electroweb” in their name re-roll failed damage rolls for those weapons if they are within 9” of this unit when firing. Units with the Fast special rule, Behemoth type, or weapons with a range of CQ are not affected.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="cff7-1302-6e7f-d383" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="5a6b-45c7-f00c-f7ec">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Minder AA Drone" hidden="false" id="5a62-6f1d-6835-2b2c">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Minder AA Drone" hidden="false" id="a016-0cd4-ef77-7aba">
+              <profiles>
+                <profile name="Minder AA Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6724-5787-8c4f-dbc0">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 4&quot;, Wide</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="f2cc-5c75-6a3d-88ca" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Wide" id="2cd2-b3ed-29d9-cf78" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Micro Arc Caster" hidden="false" id="086d-1795-8d73-8cc9" type="selectionEntry" targetId="e171-8ea0-75f8-e57d"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="acde-e9ab-2668-44b7" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="2482-5af7-6b0e-bff5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="37d7-dcd6-1da5-53b0" targetId="5f13-c39f-577a-8947" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Emeritus Incendiary Drone" hidden="false" id="07ba-8504-7d16-6dc7">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Emeritus Incendiary Drone" hidden="false" id="9474-801e-b96b-d53c">
+              <profiles>
+                <profile name="Emeritus Incendiary Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="bedb-1cf3-bd12-0d94">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Wide</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="03d2-b6a9-e205-2ad2" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Wide" id="74f3-4dec-ac79-64f6" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Twin Shard Cannons, Self-Destruct" hidden="false" id="fe23-261d-f076-e4c8" type="selectionEntry" targetId="fd34-cf0f-6cc2-4422"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b87f-5d56-c58f-40fa" includeChildSelections="false"/>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ea42-9e34-8c58-2edb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="d407-f3d2-e370-e194" targetId="5f13-c39f-577a-8947" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -1673,6 +2446,20 @@
     <entryLink import="true" name="Eviscerator Assault Troops" hidden="false" id="fa2c-0144-c4d5-2992" targetId="40af-58ab-b852-e444" type="selectionEntry"/>
     <entryLink import="true" name="Raptor Spider Drone" hidden="false" id="b1f6-9396-1477-afd8" targetId="3744-63e9-dc82-1ffc" type="selectionEntry"/>
     <entryLink import="true" name="Screamer" hidden="false" id="33c3-52f9-1b60-84e0" targetId="66c0-251e-7270-25d9" type="selectionEntry"/>
+    <entryLink import="true" name="Ravager AA Beetle" hidden="false" id="1565-a719-59d4-b669" targetId="8da5-5552-5807-3702" type="selectionEntry"/>
+    <entryLink import="true" name="Reaper AA Tank" hidden="false" id="c3c8-4480-9cf9-2b50" targetId="c012-bf5d-f5a1-aa92" type="selectionEntry"/>
+    <entryLink import="true" name="Eradicator Chameleopod" hidden="false" id="0132-e04f-6b80-2646" targetId="32f3-ac9a-b962-b24b" type="selectionEntry"/>
+    <entryLink import="true" name="Annihilator Mobile Ordnance" hidden="false" id="d66d-9a21-ba34-218e" targetId="6234-7745-69ee-f05b" type="selectionEntry"/>
+    <entryLink import="true" name="Afflictor Hive Walker" hidden="false" id="b467-6ff0-ec4b-5af9" targetId="8292-830c-bc50-728f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="1742-0b1d-252f-505d" id="d0e0-e807-7fe5-36e0" primary="true" name="Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Corruptor Hiveship" hidden="false" id="bce6-01ab-809e-8091" targetId="f9b7-d72f-fed1-f473" type="selectionEntry"/>
+    <entryLink import="true" name="Reaver Gunship" hidden="false" id="74a4-c670-977f-1054" targetId="8fca-6c5e-71ec-d34d" type="selectionEntry"/>
+    <entryLink import="true" name="Overseer Cradle Barge" hidden="false" id="1a88-1875-4a15-a9e0" targetId="8e26-c753-1942-5b3f" type="selectionEntry"/>
+    <entryLink import="true" name="Minder AA Drone" hidden="false" id="35c5-62b4-1b6e-c30a" targetId="5a62-6f1d-6835-2b2c" type="selectionEntry"/>
+    <entryLink import="true" name="Emeritus Incendiary Drone" hidden="false" id="1c25-fde2-be58-bd8e" targetId="07ba-8504-7d16-6dc7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
@@ -1770,6 +2557,91 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25f1-88e6-0eb7-8f26" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59bd-828f-aaf0-5459" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Eradicator Chameleopod Weapon Selection" id="bc49-d858-b445-0a3f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bio-Mortar" hidden="false" id="6ad1-f45a-bea5-d271" defaultAmount="1">
+          <profiles>
+            <profile name="Bio-Mortar (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd6b-05e4-57d0-32f1">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Cover (All), Devastator-3 (Infantry), Indirect</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bio-Mortar (Spread)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fbd6-f6f2-d70a-78a9">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Cover (All), Devastator-3 (Infantry), Flame, Indirect, Strafe-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="4511-a749-bf14-08a0" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Area" id="6b49-509c-f4a4-3990" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Cover-X" id="20a0-946a-7f04-c634" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Devastator-X" id="57c2-1463-aa42-b999" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Flame" id="4917-57bc-63e0-8e89" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Indirect" id="6e73-b752-ffe9-6516" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Strafe-X" id="d8fc-d394-2479-8326" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Fusillade" hidden="false" id="69df-e34f-a343-4e78">
+          <profiles>
+            <profile name="Plasma Fusillade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e9c8-8b25-5bb1-b34f">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plasma Fusillade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2fff-59c4-aac8-dd41">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="b1c0-ce77-acfa-8af3" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05a8-7709-83ce-830a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edd3-7066-e617-6de2" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
