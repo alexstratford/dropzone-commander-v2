@@ -162,7 +162,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Transport Selection" id="1ea5-2aa6-aa13-5acc" hidden="false" sortIndex="1">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Light Vehicle" hidden="false" id="e965-1e67-134f-8316" defaultAmount="0">
+                    <selectionEntry type="upgrade" import="true" name="Screamer and Skimtank" hidden="false" id="e965-1e67-134f-8316" defaultAmount="0">
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                         <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
@@ -173,7 +173,7 @@
                         <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="-1"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="2e89-7ce2-bf7c-b8af" defaultAmount="4">
+                    <selectionEntry type="upgrade" import="true" name="Infantry" hidden="false" id="2e89-7ce2-bf7c-b8af" defaultAmount="4">
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                         <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
@@ -1508,8 +1508,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;
-</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
@@ -2882,7 +2881,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <description>This squad must be deployed in a single Transport, although does not count towards that Transport’s starting Capacity.</description>
             </rule>
             <rule name="Concentrated Cutting" id="022d-38c3-9743-7ac1" hidden="false">
-              <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad. </description>
+              <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad.</description>
             </rule>
           </rules>
           <entryLinks>
