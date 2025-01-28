@@ -14,10 +14,10 @@
                 <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
               </costs>
               <profiles>
-                <profile name="Desolator Command Barge" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="02eb-2552-a118-711e">
+                <profile name="Desolator Command Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="02eb-2552-a118-711e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
@@ -52,10 +52,10 @@
                 <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="3"/>
               </costs>
               <profiles>
-                <profile name="Oppressor Command Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="10f3-3117-3f13-1121">
+                <profile name="Oppressor Command Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="10f3-3117-3f13-1121">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
@@ -100,10 +100,10 @@
                 <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
               </costs>
               <profiles>
-                <profile name="Despot Suppression Walker" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="7652-6727-9bea-df1d">
+                <profile name="Despot Suppression Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7652-6727-9bea-df1d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
@@ -144,10 +144,10 @@
                 <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="-2"/>
               </costs>
               <profiles>
-                <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="39b9-4ee3-b465-6c2c">
+                <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39b9-4ee3-b465-6c2c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
@@ -215,7 +215,7 @@
                 <profile name="Marauder Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4347-3059-ca72-b429">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
@@ -445,10 +445,10 @@
                 <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Hunter Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="f49d-e893-e6f2-a262">
+                <profile name="Hunter Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f49d-e893-e6f2-a262">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A, E+2</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
@@ -511,10 +511,10 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Spectre Skimtank" hidden="false" id="5ef8-a1d7-4998-e472" collective="true">
               <profiles>
-                <profile name="Spectre Skimtank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="a84a-e713-88a4-5489">
+                <profile name="Spectre Skimtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a84a-e713-88a4-5489">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A, E+3</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+3</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
@@ -548,10 +548,10 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Ravenor Laser Walker" hidden="false" id="b01f-c0fa-0346-714f" defaultAmount="1" collective="true">
               <profiles>
-                <profile name="Ravenor Laser Walker" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="9769-e44e-8876-580b">
+                <profile name="Ravenor Laser Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9769-e44e-8876-580b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
@@ -1754,10 +1754,10 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Warriors" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="7068-3cc6-0e0f-afb5">
+                <profile name="Warriors" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7068-3cc6-0e0f-afb5">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">-</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
@@ -1829,7 +1829,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Demolisher Shock Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7216-fc0a-59e6-088c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">P4+</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">P4+</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
@@ -1867,10 +1867,10 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Prowler Spider Drone" hidden="false" id="0bd5-9f2b-247d-1e97">
               <profiles>
-                <profile name="Prowler Spider Drone" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="f15e-ec35-984e-21a9">
+                <profile name="Prowler Spider Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f15e-ec35-984e-21a9">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
                     <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
