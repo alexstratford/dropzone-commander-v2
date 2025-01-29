@@ -1095,7 +1095,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect, Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2044,6 +2044,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </profiles>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="6ef1-0dd1-aea1-b934">
+          <entryLinks>
+            <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="2423-cd31-c02c-b9d6" type="selectionEntry" targetId="6a59-32ac-aabe-ffd0"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="6778-d03a-2ca6-6e99" targetId="5f13-c39f-577a-8947" primary="true"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3557,25 +3565,25 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-3&quot;</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Threshold" typeId="a930-add9-74a3-1505" typeName="Hull" hidden="false" id="228a-ade6-9a72-991f">
+                <profile name="Threshold" typeId="a930-add9-74a3-1505" typeName="UCM Heavy Hull" hidden="false" id="228a-ade6-9a72-991f">
                   <characteristics>
                     <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">9</characteristic>
                     <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">9</characteristic>
                     <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit reduces its Armour by 2, and one Missile Battery cannot be used for the rest of the game.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Threshold" typeId="92bd-be74-95c9-05cf" typeName="Weapons" hidden="false" id="bdaf-e0ab-d702-5354">
+                <profile name="Threshold" typeId="92bd-be74-95c9-05cf" typeName="UCM Heavy Weapons" hidden="false" id="bdaf-e0ab-d702-5354">
                   <characteristics>
                     <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">9</characteristic>
                     <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">9</characteristic>
                     <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f">One UMH-1 Mass Driver cannot be used for the rest of the game.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Threshold" typeId="a04f-0090-a3a5-b2c3" typeName="Legs" hidden="false" id="35a5-eafa-80bf-ad4a">
+                <profile name="Threshold" typeId="a04f-0090-a3a5-b2c3" typeName="UCM Heavy Legs" hidden="false" id="35a5-eafa-80bf-ad4a">
                   <characteristics>
-                    <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee">3</characteristic>
-                    <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15">3</characteristic>
-                    <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa">3</characteristic>
+                    <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee"/>
+                    <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15"/>
+                    <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa"/>
                     <characteristic name="Legs" typeId="5934-9162-fa2b-2f7e">3</characteristic>
                     <characteristic name="Crippled Result" typeId="4c84-cf9c-f038-5951">This unit reduces its Move by 2”. Once all Damage Thresholds are passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                   </characteristics>
@@ -3655,6 +3663,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Luciana M Cato - Ferrum Drone Base " hidden="false" id="789b-333e-cbf0-5265" targetId="6e4b-14f2-dc26-7c25" type="selectionEntry"/>
     <entryLink import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="fb59-5ea4-9668-d2db" targetId="077a-2fc8-20f2-4084" type="selectionEntry"/>
     <entryLink import="true" name="America Heavy Battle-Mech" hidden="false" id="7d23-e240-cb98-59e1" targetId="a2bd-5105-5e9a-1c5d" type="selectionEntry"/>
+    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
@@ -3871,13 +3880,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-4 (Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Tremor Rotary Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b0ee-c6be-6da8-2880">
               <characteristics>
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
