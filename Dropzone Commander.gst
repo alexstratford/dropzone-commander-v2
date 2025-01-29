@@ -9,13 +9,13 @@
     <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false"/>
     <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false"/>
     <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1">
-      <comment>Scourge Vampires</comment>
+      <comment>Scourge Vampires, Resistance Baby Drill</comment>
     </costType>
     <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1">
-      <comment>Scourge Crab</comment>
+      <comment>Scourge Crab, Resistance Wheel</comment>
     </costType>
     <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1">
-      <comment>Scourge Screamer</comment>
+      <comment>Scourge Screamer, Resistance Bus</comment>
     </costType>
   </costTypes>
   <profileTypes>
@@ -59,7 +59,6 @@
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
-    <categoryEntry name="Battlegroups" id="f286-8f1e-310f-4d48" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="41"/>
     <categoryEntry name="Commander" id="1cac-032f-4580-2381" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="9"/>
     <categoryEntry name="Standard" id="7bea-a1e7-3cab-7ecb" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
     <categoryEntry name="Auxiliary" id="de27-8358-5d78-6eeb" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
@@ -75,7 +74,8 @@
     <categoryEntry name="Drill" id="243f-ea96-5f0b-72e6" hidden="false"/>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
-    <categoryEntry name="HQ Battlegroup" id="e3ef-6462-5233-fb26" hidden="false"/>
+    <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
+    <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
@@ -430,6 +430,27 @@
                       </conditions>
                       <comment>Enable Scourge</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -481,6 +502,7 @@
                       </conditionGroups>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="17f7-74ea-40f0-2d75" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -507,6 +529,27 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
                       </conditions>
                       <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -559,6 +602,7 @@
                       </conditionGroups>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="17f7-74ea-40f0-2d75" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -585,6 +629,27 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
                       </conditions>
                       <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -637,6 +702,7 @@
                       </conditionGroups>
                       <conditions>
                         <condition type="lessThan" value="1" field="selections" scope="force" childId="eb0e-3fa2-0169-0bfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="17f7-74ea-40f0-2d75" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -663,6 +729,27 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
                       </conditions>
                       <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -717,6 +804,27 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
                       </conditions>
                       <comment>Enable Scourge</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -795,6 +903,22 @@
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                          </conditions>
+                          <comment>Enable Resistance</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -914,6 +1038,24 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier type="set" value="6" field="1657-edf7-a484-c3e7"/>
+                    <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                    <modifier type="set" value="Resistance Columbus Battlewalker" field="name" scope="unit"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -944,7 +1086,6 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="334e-0ada-9165-6a2d"/>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
@@ -1366,10 +1507,34 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1363-be35-d6db-3277" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Holding" hidden="false" id="17f7-74ea-40f0-2d75">
+        <selectionEntry type="upgrade" import="true" name="Holding" hidden="true" id="17f7-74ea-40f0-2d75">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2493-d365-8141-d72f" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c017-50c0-52a0-3f24" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                      </conditions>
+                      <comment>Enable Shaltari</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
