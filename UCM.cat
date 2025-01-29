@@ -3481,62 +3481,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="India Light Battle-Mech" hidden="false" id="6996-8f40-fc3d-3a11">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680">
-          <profiles>
-            <profile name="India Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="d522-60f6-6d56-2708">
-              <characteristics>
-                <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">6&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
-                <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
-                <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
-                <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="India Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
-              <characteristics>
-                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">5</characteristic>
-                <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2">5</characteristic>
-                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">One UMH-2 Mass Driver Pair cannot be used for the rest of the game</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="India Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
-              <characteristics>
-                <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
-                <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit reduces its Armour by 3</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="India Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM_Light_Behemoth_Legs" hidden="false" id="0d89-aaa1-54d9-0267">
-              <characteristics>
-                <characteristic name="Legs" typeId="642a-6a40-14dc-8266">5</characteristic>
-                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
-                <characteristic name="Crippled Result" typeId="0b0a-b8da-9bac-d225">This unit reduces its Move by 3”</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1384-acab-b768-52d3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-3141-e93a-29ad" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Spread X" id="6445-9bd0-af31-5b31" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="280"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="97a8-8f9f-5241-a322" id="1431-7112-b3d7-32d3" primary="true" name="Behemoth"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="2d03-84c9-45b4-8276">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="America Heavy Battle-Mech" hidden="false" id="a2bd-5105-5e9a-1c5d">
@@ -3610,6 +3554,168 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM Light Behemoth" hidden="false" id="8c9a-8368-b319-9f56">
+          <profiles>
+            <profile name="Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
+              <characteristics>
+                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">5</characteristic>
+                <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2">5</characteristic>
+                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c"/>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="One UMH-19 Flak Cannon Pair cannot be used for the rest of the game." field="92cf-1405-30aa-be7c"/>
+                    <modifier type="set" value="India Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a060-d288-0558-4680" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="One UMH-2 Mass Driver Pair cannot be used for the rest of the game" field="92cf-1405-30aa-be7c"/>
+                    <modifier type="set" value="Brazil Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7225-7f5a-abb5-fa5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
+              <characteristics>
+                <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
+                <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit reduces its Armour by 3</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Brazil Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7225-7f5a-abb5-fa5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="India Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a060-d288-0558-4680" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM_Light_Behemoth_Legs" hidden="false" id="0d89-aaa1-54d9-0267">
+              <characteristics>
+                <characteristic name="Legs" typeId="642a-6a40-14dc-8266">5</characteristic>
+                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
+                <characteristic name="Crippled Result" typeId="0b0a-b8da-9bac-d225">This unit reduces its Move by 3”</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="India Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a060-d288-0558-4680" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Brazil Light Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7225-7f5a-abb5-fa5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="740b-c7f1-eea2-f4ce" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e81d-abc9-b194-8568" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Brazil Light Battle-Mech" hidden="false" id="ec5d-a790-ce89-89eb">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Brazil Light Battle-Mech" hidden="false" id="7225-7f5a-abb5-fa5d">
+              <profiles>
+                <profile name="Brazil Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="dcf1-a246-7e6d-2d22">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b17e-84da-24ee-ed97" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a53-5435-1534-d42d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Spread X" id="03b0-3d24-40da-c70e" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="280"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="1f1f-fab8-f407-c57d" type="selectionEntry" targetId="8c9a-8368-b319-9f56"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="8dc0-bdd1-d77a-93b5" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="India Light Battle-Mech" hidden="false" id="6996-8f40-fc3d-3a11">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680">
+              <profiles>
+                <profile name="India Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="d522-60f6-6d56-2708">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">6&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1384-acab-b768-52d3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-3141-e93a-29ad" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Spread X" id="6445-9bd0-af31-5b31" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="280"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="07a1-a969-8c40-4884" type="selectionEntry" targetId="8c9a-8368-b319-9f56"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="1431-7112-b3d7-32d3" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3667,6 +3773,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="fb59-5ea4-9668-d2db" targetId="077a-2fc8-20f2-4084" type="selectionEntry"/>
     <entryLink import="true" name="America Heavy Battle-Mech" hidden="false" id="7d23-e240-cb98-59e1" targetId="a2bd-5105-5e9a-1c5d" type="selectionEntry"/>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
+    <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
