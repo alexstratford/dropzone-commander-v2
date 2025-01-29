@@ -3574,7 +3574,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </modifierGroup>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="One UMH-2 Mass Driver Pair cannot be used for the rest of the game" field="92cf-1405-30aa-be7c"/>
+                    <modifier type="set" value="One UMH-2 Mass Driver Pair cannot be used for the rest of the game." field="92cf-1405-30aa-be7c"/>
                     <modifier type="set" value="Brazil Light Battle-Mech" field="name"/>
                   </modifiers>
                   <conditions>
@@ -3586,7 +3586,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <profile name="Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
               <characteristics>
                 <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
-                <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit reduces its Armour by 3</characteristic>
+                <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit reduces its Armour by 3.</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -3611,7 +3611,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               <characteristics>
                 <characteristic name="Legs" typeId="642a-6a40-14dc-8266">5</characteristic>
                 <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
-                <characteristic name="Crippled Result" typeId="0b0a-b8da-9bac-d225">This unit reduces its Move by 3”</characteristic>
+                <characteristic name="Crippled Result" typeId="0b0a-b8da-9bac-d225">This unit reduces its Move by 3”.</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
