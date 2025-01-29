@@ -1019,7 +1019,6 @@
     <entryLink import="true" name="Firstborn Duelists" hidden="false" id="15c3-46b9-27f4-2e1d" targetId="72b5-1521-c022-7d7b" type="selectionEntry"/>
     <entryLink import="true" name="Pungari" hidden="false" id="0a43-bb5e-f66e-80e7" targetId="38f3-d002-6d92-b59a" type="selectionEntry"/>
     <entryLink import="true" name="Jaguar Warstrider" hidden="false" id="b247-ddb4-c927-50f3" targetId="5618-e612-9a46-5951" type="selectionEntry"/>
-    <entryLink import="true" name="New Link" hidden="false" id="8092-6d44-8af4-b7c8" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">

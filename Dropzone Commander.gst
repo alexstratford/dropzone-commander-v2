@@ -953,7 +953,7 @@
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                         <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
                         <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
-                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
