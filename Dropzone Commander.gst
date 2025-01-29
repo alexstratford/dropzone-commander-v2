@@ -9,13 +9,13 @@
     <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false"/>
     <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false"/>
     <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1">
-      <comment>Scourge Vampires</comment>
+      <comment>Scourge Vampires, Resistance Baby Drill</comment>
     </costType>
     <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1">
-      <comment>Scourge Crab</comment>
+      <comment>Scourge Crab, Resistance Wheel</comment>
     </costType>
     <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1">
-      <comment>Scourge Screamer</comment>
+      <comment>Scourge Screamer, Resistance Bus</comment>
     </costType>
   </costTypes>
   <profileTypes>
@@ -903,6 +903,22 @@
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                          </conditions>
+                          <comment>Enable Resistance</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <selectionEntries>
@@ -1022,6 +1038,24 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier type="set" value="6" field="1657-edf7-a484-c3e7"/>
+                    <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                    <modifier type="set" value="Resistance Columbus Battlewalker" field="name" scope="unit"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>

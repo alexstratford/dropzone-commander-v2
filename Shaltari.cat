@@ -719,6 +719,29 @@
             <infoLink name="Reduced-X" id="acc5-0ae9-ad62-aa6f" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Ion Cannons" hidden="false" id="606a-156e-16d1-eebc" collective="true">
+          <profiles>
+            <profile name="Twin Ion Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8380-e386-1fd8-4703">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="73db-3ab9-45d1-8734" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2b5-4ce2-60e8-20ea" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4244-6853-a286-b8a8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="1ec6-18fe-45ec-67be">
@@ -935,6 +958,44 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Jaguar Warstrider" hidden="false" id="5618-e612-9a46-5951">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Jaguar Warstrider" hidden="false" id="9a77-d246-39c5-df0a" collective="true">
+          <costs>
+            <cost name="pts" typeId="points" value="95"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Jaguar Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e8c6-1411-0ac0-87be">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
+                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f195-475f-75c4-d185" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0843-5489-a59b-7f3a" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Twin Ion Cannons" hidden="false" id="f247-ca27-0079-11c2" type="selectionEntry" targetId="606a-156e-16d1-eebc"/>
+            <entryLink import="true" name="Jaguar Warstrider Weapon Selection" hidden="false" id="68cb-2318-592f-ea45" type="selectionEntryGroup" targetId="7541-f6d2-deb7-1494"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="1d02-c865-e12b-0ade" primary="true" name="Standard"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
@@ -957,6 +1018,8 @@
     <entryLink import="true" name="Brave Warsuits" hidden="false" id="c29a-a06f-5b5c-3cfa" targetId="76c2-2b8d-cb5c-8c2e" type="selectionEntry"/>
     <entryLink import="true" name="Firstborn Duelists" hidden="false" id="15c3-46b9-27f4-2e1d" targetId="72b5-1521-c022-7d7b" type="selectionEntry"/>
     <entryLink import="true" name="Pungari" hidden="false" id="0a43-bb5e-f66e-80e7" targetId="38f3-d002-6d92-b59a" type="selectionEntry"/>
+    <entryLink import="true" name="Jaguar Warstrider" hidden="false" id="b247-ddb4-c927-50f3" targetId="5618-e612-9a46-5951" type="selectionEntry"/>
+    <entryLink import="true" name="New Link" hidden="false" id="8092-6d44-8af4-b7c8" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -1033,6 +1096,53 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="beb9-b42f-7eb9-4ae4" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="025b-abf3-eb18-ebf8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Jaguar Warstrider Weapon Selection" id="7541-f6d2-deb7-1494" hidden="false" collective="true" defaultSelectionEntryId="1684-3c95-aff1-a56a">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Gauss Cannons" hidden="false" id="1684-3c95-aff1-a56a" collective="true" sortIndex="1">
+          <profiles>
+            <profile name="Twin Gauss Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b68a-9b45-1483-2ae8">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="9cb5-1987-08e1-d835" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Heavy Bio-Atomisers" hidden="false" id="f399-c5e2-2ac2-9ab0" sortIndex="2" collective="true">
+          <profiles>
+            <profile name="Twin Heavy Bio-Atomisers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="08f4-01fb-7e26-10ab">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Focus-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="7524-dac0-b5f1-0539" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Focus-X" id="c5e6-2bb2-58a3-d88b" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b01-b550-afda-8a23" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02fd-f5e6-2b40-439f" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
