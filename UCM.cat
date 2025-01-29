@@ -3477,6 +3477,21 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
       <selectionEntries>
         <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680">
           <profiles>
+            <profile name="India Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="d522-60f6-6d56-2708">
+              <characteristics>
+                <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">6&quot;</characteristic>
+                <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="India Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
+              <characteristics>
+                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">5</characteristic>
+                <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2">5</characteristic>
+              </characteristics>
+            </profile>
             <profile name="India Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
               <characteristics>
                 <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
@@ -3485,13 +3500,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <profile name="India Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM_Light_Behemoth_Legs" hidden="false" id="0d89-aaa1-54d9-0267">
               <characteristics>
                 <characteristic name="Legs" typeId="642a-6a40-14dc-8266">5</characteristic>
-                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0"/>
-              </characteristics>
-            </profile>
-            <profile name="India Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
-              <characteristics>
-                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">5</characteristic>
-                <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2"/>
+                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3499,6 +3508,18 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1384-acab-b768-52d3" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f533-3141-e93a-29ad" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Spread X" id="6445-9bd0-af31-5b31" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="280"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -3545,16 +3566,16 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </profile>
                 <profile name="Threshold" typeId="92bd-be74-95c9-05cf" typeName="Weapons" hidden="false" id="bdaf-e0ab-d702-5354">
                   <characteristics>
-                    <characteristic name="Weapons" typeId="790d-ede3-f03d-843c"/>
+                    <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">9</characteristic>
                     <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">9</characteristic>
                     <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f">One UMH-1 Mass Driver cannot be used for the rest of the game.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Threshold" typeId="a04f-0090-a3a5-b2c3" typeName="Legs" hidden="false" id="35a5-eafa-80bf-ad4a">
                   <characteristics>
-                    <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee"/>
-                    <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15"/>
-                    <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa"/>
+                    <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee">3</characteristic>
+                    <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15">3</characteristic>
+                    <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa">3</characteristic>
                     <characteristic name="Legs" typeId="5934-9162-fa2b-2f7e">3</characteristic>
                     <characteristic name="Crippled Result" typeId="4c84-cf9c-f038-5951">This unit reduces its Move by 2”. Once all Damage Thresholds are passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                   </characteristics>
@@ -3630,7 +3651,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="Seraphim Bomber" hidden="false" id="63a9-7e69-368a-fcee" targetId="c287-4193-eac0-6b29" type="selectionEntry"/>
     <entryLink import="true" name="Roc Heavy Gunship" hidden="false" id="3534-2e0d-f175-8699" targetId="e64c-dea6-3b42-403c" type="selectionEntry"/>
     <entryLink import="true" name="Hazard Suits" hidden="false" id="ad09-17e2-5475-d6ba" targetId="5545-5d94-3da0-a4dc" type="selectionEntry"/>
-    <entryLink import="true" name="India Light Battle-Mech" hidden="false" id="02e9-790b-3484-a634" targetId="6996-8f40-fc3d-3a11" type="selectionEntry"/>
     <entryLink import="true" name="Kate Rawlins - Phoenix Command Gunship" hidden="false" id="9607-b68f-14d0-f865" targetId="28d9-5abb-5e3b-50eb" type="selectionEntry"/>
     <entryLink import="true" name="Luciana M Cato - Ferrum Drone Base " hidden="false" id="789b-333e-cbf0-5265" targetId="6e4b-14f2-dc26-7c25" type="selectionEntry"/>
     <entryLink import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="fb59-5ea4-9668-d2db" targetId="077a-2fc8-20f2-4084" type="selectionEntry"/>
