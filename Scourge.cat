@@ -162,7 +162,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Transport Selection" id="1ea5-2aa6-aa13-5acc" hidden="false" sortIndex="1">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Screamer and Skimtank" hidden="false" id="e965-1e67-134f-8316" defaultAmount="0">
+                    <selectionEntry type="upgrade" import="true" name="Screamers or Spectre Skimtanks" hidden="false" id="e965-1e67-134f-8316" defaultAmount="0">
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
                         <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
@@ -422,6 +422,146 @@
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Auxiliary" hidden="false" id="2ac8-d986-7638-586e" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Corsair Interceptor" hidden="false" id="d235-999f-429e-e2e8">
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="cf10-1cd0-2a47-9b1e" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Corsair Interceptor" hidden="false" id="7354-703b-9291-e429">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Corsair Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aed1-9061-6de1-3290">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fast" id="aa80-c2aa-4dae-a11e" hidden="false" type="rule" targetId="5ca6-fb78-323a-0702"/>
+                <infoLink name="Rare" id="b648-5765-0954-31f2" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Corsair Interceptor Weapon Selection" hidden="false" id="696d-fd1e-5366-71f0" type="selectionEntryGroup" targetId="6502-b75c-ad8f-a6e5"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e7-540c-9093-8050" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a778-de4f-dd21-3b24" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="2c65-d9c6-5955-17d4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="2c65-d9c6-5955-17d4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="2c65-d9c6-5955-17d4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c65-d9c6-5955-17d4" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Vampire" hidden="false" id="b7a7-38ea-d023-9c27">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Vampire" hidden="false" id="46cd-0b99-c2e2-5ae1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18b9-79c4-2d58-ee74"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1e79-0f9c-e899-286a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="3"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Vampire" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e385-1808-c056-4d01">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+3</characteristic>
+                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Rare</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="ab92-1e1e-4566-fded" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Rare" id="2a4c-f55c-6c40-5b34" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <rules>
+                <rule name="Grasping" id="d154-13fe-dcac-0fdc" hidden="false">
+                  <description>This squad must be deployed in a single Transport, although does not count towards that Transport’s starting Capacity.</description>
+                </rule>
+                <rule name="Concentrated Cutting" id="022d-38c3-9743-7ac1" hidden="false">
+                  <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Cutting Beam" hidden="false" id="5ba5-3968-699c-265e" type="selectionEntry" targetId="a0e9-472b-80e5-d1a9"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="f1c8-2d1f-ad09-4f0f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="f1c8-2d1f-ad09-4f0f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="f1c8-2d1f-ad09-4f0f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f1c8-2d1f-ad09-4f0f" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="59a3-2a59-56fb-feee" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2777,146 +2917,6 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Corsair Interceptor" hidden="false" id="d235-999f-429e-e2e8">
-      <categoryLinks>
-        <categoryLink targetId="de27-8358-5d78-6eeb" id="cf10-1cd0-2a47-9b1e" primary="true" name="Auxiliary"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Corsair Interceptor" hidden="false" id="7354-703b-9291-e429">
-          <costs>
-            <cost name="pts" typeId="points" value="40"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Corsair Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aed1-9061-6de1-3290">
-              <characteristics>
-                <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
-                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
-                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Fast" id="aa80-c2aa-4dae-a11e" hidden="false" type="rule" targetId="5ca6-fb78-323a-0702"/>
-            <infoLink name="Rare" id="b648-5765-0954-31f2" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="Corsair Interceptor Weapon Selection" hidden="false" id="696d-fd1e-5366-71f0" type="selectionEntryGroup" targetId="6502-b75c-ad8f-a6e5"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e7-540c-9093-8050" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a778-de4f-dd21-3b24" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="3" field="2c65-d9c6-5955-17d4">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="2c65-d9c6-5955-17d4">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="2c65-d9c6-5955-17d4">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Rare Config</comment>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c65-d9c6-5955-17d4" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vampire" hidden="false" id="b7a7-38ea-d023-9c27">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vampire" hidden="false" id="46cd-0b99-c2e2-5ae1">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18b9-79c4-2d58-ee74"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1e79-0f9c-e899-286a" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="3"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Vampire" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e385-1808-c056-4d01">
-              <characteristics>
-                <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+3</characteristic>
-                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
-                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
-                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Rare</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Rapid Insertion-X" id="ab92-1e1e-4566-fded" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
-            <infoLink name="Rare" id="2a4c-f55c-6c40-5b34" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
-          </infoLinks>
-          <rules>
-            <rule name="Grasping" id="d154-13fe-dcac-0fdc" hidden="false">
-              <description>This squad must be deployed in a single Transport, although does not count towards that Transport’s starting Capacity.</description>
-            </rule>
-            <rule name="Concentrated Cutting" id="022d-38c3-9743-7ac1" hidden="false">
-              <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad.</description>
-            </rule>
-          </rules>
-          <entryLinks>
-            <entryLink import="true" name="Cutting Beam" hidden="false" id="5ba5-3968-699c-265e" type="selectionEntry" targetId="a0e9-472b-80e5-d1a9"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="3" field="f1c8-2d1f-ad09-4f0f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="1" field="f1c8-2d1f-ad09-4f0f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="2" field="f1c8-2d1f-ad09-4f0f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>Rare Config</comment>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f1c8-2d1f-ad09-4f0f" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="de27-8358-5d78-6eeb" id="59a3-2a59-56fb-feee" primary="true" name="Auxiliary"/>
-      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

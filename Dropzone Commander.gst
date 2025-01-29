@@ -56,6 +56,15 @@
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="d3ad-5a11-6f2d-62a0" name="Behemoth">
+      <characteristicTypes>
+        <characteristicType id="fb57-0d3e-9738-5de3" name="Move"/>
+        <characteristicType id="ff6e-fe09-97fb-a7c9" name="Countermeasures"/>
+        <characteristicType id="79df-458c-d53c-5b64" name="Armour"/>
+        <characteristicType id="79c0-084f-6995-f27b" name="Type"/>
+        <characteristicType id="463e-6079-0c6d-3830" name="Special"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
@@ -1344,6 +1353,12 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
     </rule>
     <rule name="Tough" id="48e3-db2d-d554-e0dc" hidden="false">
       <description>Re-roll successful Collateral Damage hits against this unit. In addition, this unit may enter a Garrison from any direction, regardless of entrances.</description>
+    </rule>
+    <rule name="Spread X" id="c4c3-3e64-4970-288b" hidden="false">
+      <description>Behemoths have a number associated with them, known as their Spread, measured in inches from the centre of the Behemoth.
+
+
+When targeting a Behemoth, measure to any point within its Spread.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
