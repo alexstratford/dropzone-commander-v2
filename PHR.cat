@@ -138,6 +138,10 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5564-fa97-d217-2534" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83b5-dd4b-e8dd-6929" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -182,8 +186,7 @@
                     <characteristic name="Weapons" typeId="5638-80f3-2ad0-a871">6</characteristic>
                     <characteristic name="Weapons" typeId="c5bf-b91a-be61-9b8e">6</characteristic>
                     <characteristic name="Weapons" typeId="dc21-db64-e2a8-469d">6</characteristic>
-                    <characteristic name="Crippled Result" typeId="ed57-d451-207f-f71c">Pick one weapon. That weapon and all weapons with identical arcs
-(e.g. F/S(Left)) cannot be used for the rest of the game.</characteristic>
+                    <characteristic name="Crippled Result" typeId="ed57-d451-207f-f71c">Pick one weapon. That weapon and all weapons with identical arcs (e.g. F/S(Left)) cannot be used for the rest of the game.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Tethys" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="4633-7112-2bb8-bf8b">
@@ -1410,6 +1413,15 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                   <description>When activating this unit, it automatically uses its Sonic Disruptor, which stays active until the end of the round. Any squads (friendly or enemy) within 3” (or Garrisons they are in) of one or more active Sonic Disruptors suffer a -2 penalty to Search rolls and cannot use Scan Tokens.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="1"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3360,7 +3372,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
