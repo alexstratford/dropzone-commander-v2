@@ -1132,7 +1132,7 @@
       <alias>AA-5</alias>
       <alias>AA-6</alias>
       <alias>AA-7</alias>
-      <description>AA weapons are the only weapons able to target Aircraft. AA weapons may target other units as normal. AA weapons are denoted with a number after them. This number modifies the target’s Evasion Countermeasures by the amount listed.
+      <description>AA weapons are the only weapons able to target Aircraft. AA weapons may target other units as normal. AA weapons are denoted with a number after them. This number reduces the target’s Evasion Countermeasures by the amount listed.
 
 In addition, AA weapons can Reaction Fire.
 
@@ -1186,7 +1186,7 @@ Passive Countermeasures may still be used against Destroyer hits.</description>
       <alias>Destroyer 7+</alias>
     </rule>
     <rule name="Devastator-X" id="f34b-6e21-a034-1168" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
-      <description>This weapon is denoted by a DV with a number and keywords after it.
+      <description>This weapon is denoted by a value and keywords after it in brackets, e.g. Devastator-2 (Vehicle). 
 
 When a Devastator weapon hits a target with the type in brackets, roll to damage as normal. However, it instead does the amount of damage listed by the X value. If this weapon scores a natural Critical, multiply the X value by 2! For example a weapon with DV-3 (Behemoths) hits a Behemoth once. Roll one dice to Damage as normal. If successful, the Behemoth in fact takes three Damage! This special rule may target particular unit types (such as Infantry, Vehicles etc), or even types of scenery pieces. It may even affect every type of unit, denoted by “All”. Sometimes a Devastator weapon has more than one value for different types of units, and sometimes a unit can be affected by multiple types (such as a Large Vehicle for example). In this situation, simply pick the highest applicable number.
 
