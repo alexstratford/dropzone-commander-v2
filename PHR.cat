@@ -35,11 +35,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Rapid Insertion-X" id="43d8-8000-6de5-bf9f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
-                  <modifiers>
-                    <modifier type="set" value="Rapid Insertion 8&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Rapid Insertion-X" id="43d8-8000-6de5-bf9f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
                 <infoLink name="Thrusters" id="02d5-5ed3-51e1-d200" hidden="false" type="rule" targetId="eef8-268a-2085-6293"/>
               </infoLinks>
               <rules>
@@ -173,10 +169,10 @@
                 </profile>
                 <profile name="Tethys" typeId="4027-27ec-cc41-de5e" typeName="PHR Heavy Behemoth Legs" hidden="false" id="ae39-8e60-dffb-ac58">
                   <characteristics>
-                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167">3</characteristic>
-                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659">3</characteristic>
-                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b">3</characteristic>
-                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032">3</characteristic>
+                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167"/>
+                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659"/>
+                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b"/>
+                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032"/>
                     <characteristic name="Legs" typeId="d1a1-ab4b-9d6f-0830">3</characteristic>
                     <characteristic name="Crippled Result" typeId="7a0e-0dc0-b0de-2707">This unit reduces its Move by 2”.</characteristic>
                   </characteristics>
@@ -200,11 +196,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="c8fe-a99a-ceb3-391f" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-3&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="c8fe-a99a-ceb3-391f" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="2 R7X-2 Sunglaives" hidden="false" id="e290-9ce5-58ad-078f" type="selectionEntry" targetId="f7b2-afeb-2e76-7904"/>
@@ -987,10 +979,10 @@
                 </profile>
                 <profile name="Chronus" typeId="4027-27ec-cc41-de5e" typeName="PHR Heavy Behemoth Legs" hidden="false" id="f7a1-597f-e626-a5be">
                   <characteristics>
-                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167">3</characteristic>
-                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659">3</characteristic>
-                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b">3</characteristic>
-                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032">3</characteristic>
+                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167"/>
+                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659"/>
+                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b"/>
+                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032"/>
                     <characteristic name="Legs" typeId="d1a1-ab4b-9d6f-0830">3</characteristic>
                     <characteristic name="Crippled Result" typeId="7a0e-0dc0-b0de-2707">This unit reduces its Move by 2”.</characteristic>
                   </characteristics>
@@ -1015,11 +1007,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="11ba-2cb1-2c4e-42d9" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-3&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="11ba-2cb1-2c4e-42d9" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Dual RX-30 Minigun" hidden="false" id="6685-177b-9d97-c59c" type="selectionEntry" targetId="eaab-5f3e-42f3-d4b3"/>
@@ -1059,10 +1047,10 @@
                 </profile>
                 <profile name="Tethys" typeId="4027-27ec-cc41-de5e" typeName="PHR Heavy Behemoth Legs" hidden="false" id="fc5d-80b7-87d4-5d18">
                   <characteristics>
-                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167">3</characteristic>
-                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659">3</characteristic>
-                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b">3</characteristic>
-                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032">3</characteristic>
+                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167"/>
+                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659"/>
+                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b"/>
+                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032"/>
                     <characteristic name="Legs" typeId="d1a1-ab4b-9d6f-0830">3</characteristic>
                     <characteristic name="Crippled Result" typeId="7a0e-0dc0-b0de-2707">This unit reduces its Move by 2”.</characteristic>
                   </characteristics>
@@ -1087,11 +1075,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="eb05-ef99-74da-4b31" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-3&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="eb05-ef99-74da-4b31" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="2 R7X-2 Sunglaives" hidden="false" id="f5d9-0a5c-56f5-b72c" type="selectionEntry" targetId="f7b2-afeb-2e76-7904"/>
@@ -1144,7 +1128,7 @@
                 </profile>
                 <profile name="Alcyoneus Grand Walker" typeId="516d-1a6f-0e4a-fce2" typeName="PHR Light Behemoth Legs" hidden="false" id="05e9-fbda-ab1e-58fa">
                   <characteristics>
-                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd">5</characteristic>
+                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd"/>
                     <characteristic name="Legs" typeId="efcc-7638-87ac-926f">5</characteristic>
                     <characteristic name="Crippled Result" typeId="4e3c-5e59-96ab-dc00">This unit reduces its Move by 4”.</characteristic>
                   </characteristics>
@@ -1158,11 +1142,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="24e3-584e-c9ca-c890" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-2&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="24e3-584e-c9ca-c890" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Nova Missile" hidden="false" id="2db5-569a-c204-8d74" type="selectionEntry" targetId="ef3e-7972-64f4-1223"/>
@@ -1209,7 +1189,7 @@
                 </profile>
                 <profile name="Porphyrion Grand Walker" typeId="516d-1a6f-0e4a-fce2" typeName="PHR Light Behemoth Legs" hidden="false" id="ff70-905b-d9e3-b411">
                   <characteristics>
-                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd">5</characteristic>
+                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd"/>
                     <characteristic name="Legs" typeId="efcc-7638-87ac-926f">5</characteristic>
                     <characteristic name="Crippled Result" typeId="4e3c-5e59-96ab-dc00">This unit reduces its Move by 4”.</characteristic>
                   </characteristics>
@@ -1222,11 +1202,7 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="0442-34b1-af93-19c5" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-2&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="0442-34b1-af93-19c5" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Nova Missile" hidden="false" id="75c7-c80c-c8e9-0207" type="selectionEntry" targetId="ef3e-7972-64f4-1223"/>
@@ -1280,16 +1256,8 @@ If a Porphyrion Grand Walker is destroyed, remove squads of Venus Light Drones 
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Dodge-X" id="3d84-c456-baab-0a2a" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c">
-                  <modifiers>
-                    <modifier type="set" value="Dodge 5+" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Rapid Insertion-X" id="4fa8-9a4c-7dad-951f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
-                  <modifiers>
-                    <modifier type="set" value="Rapid Insertion 0&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Dodge-X" id="3d84-c456-baab-0a2a" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+                <infoLink name="Rapid Insertion-X" id="4fa8-9a4c-7dad-951f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
               </infoLinks>
               <rules>
                 <rule name="Jump-Jet Pack" id="9246-812e-26ae-f902" hidden="false">
@@ -1323,11 +1291,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0d37-e9ea-2b4c-ec3b" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Rapid Insertion-X" id="67fb-dae1-ff5d-19d9" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
-                  <modifiers>
-                    <modifier type="set" value="Rapid Insertion 0&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Rapid Insertion-X" id="67fb-dae1-ff5d-19d9" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
               </infoLinks>
               <rules>
                 <rule name="Scanner" id="7338-e828-9713-34fb" hidden="false">
@@ -1760,11 +1724,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Dodge-X" id="9765-dad9-f1b6-4ac7" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c">
-                  <modifiers>
-                    <modifier type="set" value="Dodge 4+" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Dodge-X" id="9765-dad9-f1b6-4ac7" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
                 <infoLink name="Rare" id="9fa5-89eb-c654-d27d" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
                 <infoLink name="Resilient" id="1115-993e-9b8a-e56d" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
                 <infoLink name="White Nanomachines" id="a4eb-abd5-83be-f1db" hidden="false" type="rule" targetId="24c0-9d89-d770-bfcb"/>
@@ -1806,16 +1766,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <entryLink import="true" name="Autosensing &amp; Assault Magnums" hidden="false" id="ea54-d889-e0ec-bfda" type="selectionEntry" targetId="ea14-4ac4-2b15-1e2f"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Dodge-X" id="e6b4-142f-f5e1-b2bc" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c">
-                  <modifiers>
-                    <modifier type="set" value="Dodge 2+" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Rapid Insertion-X" id="acb4-d92a-4f84-1721" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
-                  <modifiers>
-                    <modifier type="set" value="Rapid Insertion 6&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Dodge-X" id="e6b4-142f-f5e1-b2bc" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+                <infoLink name="Rapid Insertion-X" id="acb4-d92a-4f84-1721" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
               </infoLinks>
               <profiles>
                 <profile name="Siren Corps" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aacb-2ddf-3641-a282">
@@ -2131,11 +2083,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           </profiles>
           <infoLinks>
             <infoLink name="Articulated" id="3282-55a4-ad26-2ff7" hidden="false" type="rule" targetId="350e-9dc1-106a-3ac3"/>
-            <infoLink name="Devastator-X" id="7165-1841-856b-8a5d" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Behemoth, Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="7165-1841-856b-8a5d" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rail Repeater" hidden="false" id="730a-3104-8d63-aaa2" collective="true">
@@ -2158,11 +2106,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bb4-6d8a-37e9-19a6" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="AA-X" id="86a3-c24a-3358-8689" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="86a3-c24a-3358-8689" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Molecular Agitator" hidden="false" id="04d6-9e77-65df-9b7e" collective="true">
@@ -2185,16 +2129,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310c-4c2e-b895-b48e" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Devastator-X" id="e593-081b-17cb-824a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Focus-X" id="56d3-2815-fdab-bc57" hidden="false" type="rule" targetId="5d31-f577-8070-6820">
-              <modifiers>
-                <modifier type="set" value="Focus-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="e593-081b-17cb-824a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Focus-X" id="56d3-2815-fdab-bc57" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <rules>
             <rule name="Molecular Absorbers" id="b249-d480-c1ae-5db2" hidden="false">
@@ -2246,16 +2182,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Reduced-X" id="357f-fe59-531f-cc2a" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
-              <modifiers>
-                <modifier type="set" value="Reduced-2" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Cover-X" id="d67c-b90a-936b-1231" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (Soft, Body)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Reduced-X" id="357f-fe59-531f-cc2a" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+            <infoLink name="Cover-X" id="d67c-b90a-936b-1231" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Penetrative" id="9560-d046-e7d4-4880" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
         </selectionEntry>
@@ -2291,17 +2219,9 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="12e7-374f-9ebf-d43e" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (Soft, Body)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Cover-X" id="12e7-374f-9ebf-d43e" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Penetrative" id="24b1-e14a-f371-e236" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
-            <infoLink name="Reduced-X" id="2e62-6a33-4a43-7711" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
-              <modifiers>
-                <modifier type="set" value="Reduced-1" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Reduced-X" id="2e62-6a33-4a43-7711" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Minigun" hidden="false" id="0d74-3948-5288-519a" collective="true">
@@ -2346,11 +2266,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           </profiles>
           <infoLinks>
             <infoLink name="Articulated" id="a8c7-2db8-67b9-2b52" hidden="false" type="rule" targetId="350e-9dc1-106a-3ac3"/>
-            <infoLink name="Strafe-X" id="b1fb-cc07-ba29-5ed7" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-3" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Strafe-X" id="b1fb-cc07-ba29-5ed7" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Nanomachine Swarm" hidden="false" id="6e2a-bf02-9a57-62dd" collective="true">
@@ -2549,11 +2465,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           </profiles>
           <infoLinks>
             <infoLink name="Articulated" id="6ff2-e064-77e1-1175" hidden="false" type="rule" targetId="350e-9dc1-106a-3ac3"/>
-            <infoLink name="Devastator-X" id="f543-da69-53e1-d5f7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-3 (All)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="f543-da69-53e1-d5f7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Super-Heavy Rail Cannons" hidden="false" id="b6ed-642d-bc5c-2611" collective="true">
@@ -2576,16 +2488,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="f2c6-0cc2-adb5-8b43" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (All)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Strafe-X" id="f2b3-129e-acb8-241c" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="f2c6-0cc2-adb5-8b43" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Strafe-X" id="f2b3-129e-acb8-241c" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rail Repeater Pair" hidden="false" id="c50b-2fd7-a05e-5973" collective="true">
@@ -2608,16 +2512,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="AA-X" id="4f47-8e04-c92e-c349" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-2" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Strafe-X" id="25e1-dfe6-a459-b3fb" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="4f47-8e04-c92e-c349" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Strafe-X" id="25e1-dfe6-a459-b3fb" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Nanomachine Surge &amp; Tendrils" hidden="false" id="00aa-0c1b-1fb6-5b6c" collective="true">
@@ -2652,16 +2548,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Focus-X" id="312e-5c99-9f2b-c756" hidden="false" type="rule" targetId="5d31-f577-8070-6820">
-              <modifiers>
-                <modifier type="set" value="Focus-2" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Reduced-X" id="2036-801b-7351-30f6" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
-              <modifiers>
-                <modifier type="set" value="Reduced-1" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Focus-X" id="312e-5c99-9f2b-c756" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+            <infoLink name="Reduced-X" id="2036-801b-7351-30f6" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
             <infoLink name="Flame" id="0db5-2511-330c-82c5" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
         </selectionEntry>
@@ -2697,16 +2585,8 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="476b-54df-5a37-6241" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (All)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Reduced-X" id="7b9a-96d8-fc33-98aa" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
-              <modifiers>
-                <modifier type="set" value="Reduced-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Cover-X" id="476b-54df-5a37-6241" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Reduced-X" id="7b9a-96d8-fc33-98aa" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Railgun" hidden="false" id="d3db-4cee-ddf5-bead" collective="true">
@@ -2916,21 +2796,8 @@ One unit in the squad may choose to not shoot. If the remaining unit is in coher
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="d6fc-636b-4b0d-3782" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Devastator-X" id="70af-f4fd-3560-fb30" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (All)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Destroyer-X" id="55ba-18aa-beb1-c35e" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46">
-              <modifiers>
-                <modifier type="set" value="Destroyer 6+" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="70af-f4fd-3560-fb30" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Destroyer-X" id="55ba-18aa-beb1-c35e" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
           </infoLinks>
           <rules>
             <rule name="Overcharge" id="74c4-c656-471d-874e" hidden="false">
@@ -2992,11 +2859,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Reduced-X" id="a9ee-0206-2a06-0107" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510">
-              <modifiers>
-                <modifier type="set" value="Reduced-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Reduced-X" id="a9ee-0206-2a06-0107" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Minigun" hidden="false" id="6801-200f-4a6e-7176" collective="true">
@@ -3026,11 +2889,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4279-ac9d-94de-424a" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="AA-X" id="7f70-2d26-b627-c13c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-0" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="7f70-2d26-b627-c13c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
             <infoLink name="Penetrative" id="b2c1-3292-1ac3-ad0b" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
           <profiles>
@@ -3227,11 +3086,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="AA-X" id="7436-831f-89e6-492f" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-3" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="7436-831f-89e6-492f" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="355e-bdc9-2643-072e" includeChildSelections="false"/>
@@ -3266,21 +3121,9 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="8846-9462-0cb9-e889" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Devastator-X" id="f822-f56f-7b66-fe44" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (All)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Destroyer-X" id="b18f-4926-aee6-66d3" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46">
-              <modifiers>
-                <modifier type="set" value="Destroyer 4+" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="8846-9462-0cb9-e889" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Devastator-X" id="f822-f56f-7b66-fe44" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Destroyer-X" id="b18f-4926-aee6-66d3" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
           </infoLinks>
           <rules>
             <rule name="Overcharge" id="a254-8171-a953-5b5f" hidden="false">
@@ -3324,17 +3167,9 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="c573-a4e9-1842-a338" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-5 (Infantry)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="c573-a4e9-1842-a338" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
             <infoLink name="Flame" id="b0da-50fa-9ea4-df59" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
-            <infoLink name="Strafe-X" id="705b-73b9-f3ab-c49a" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-3" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Strafe-X" id="705b-73b9-f3ab-c49a" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Dual RX-30 Minigun" hidden="false" id="eaab-5f3e-42f3-d4b3" collective="true">
@@ -3372,17 +3207,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-3</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Devastator-X" id="aae8-e0ef-6e56-4e34" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-            <infoLink name="Limited-X" id="07b7-40f2-ad7d-618d" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Limited-X" id="07b7-40f2-ad7d-618d" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2 Stealth-X Missile Clusters" hidden="false" id="28af-9e02-63fe-549d" collective="true">
@@ -3452,16 +3283,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="419a-5027-52fd-c2e1" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (Soft, Body)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Focus-X" id="1aaf-2b2c-afe2-040a" hidden="false" type="rule" targetId="5d31-f577-8070-6820">
-              <modifiers>
-                <modifier type="set" value="Focus-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Cover-X" id="419a-5027-52fd-c2e1" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Focus-X" id="1aaf-2b2c-afe2-040a" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <rules>
             <rule name="R7X-5 Rotary Cannon" id="343e-07d1-a51d-0e47" hidden="false">
@@ -3501,16 +3324,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="39b4-4051-076f-6b13" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-3 (Behemoth)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Devastator-X" id="f7c7-a579-9839-563f" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="39b4-4051-076f-6b13" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Devastator-X" id="f7c7-a579-9839-563f" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Nova Missile" hidden="false" id="ef3e-7972-64f4-1223" collective="true">
@@ -3534,11 +3349,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
           </profiles>
           <infoLinks>
             <infoLink name="Devastator-X" id="2bee-bbf6-c336-969e" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-            <infoLink name="Limited-X" id="b18d-d844-078c-64f0" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Limited-X" id="b18d-d844-078c-64f0" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="R6X-1 Railgun Pair" hidden="false" id="48d4-d130-e538-c7c3" collective="true">
@@ -3561,16 +3372,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="4f07-a6a0-84fd-6f97" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (All)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Strafe-X" id="3676-8e16-2973-765e" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="4f07-a6a0-84fd-6f97" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Strafe-X" id="3676-8e16-2973-765e" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Railgun Triad" hidden="false" id="cea2-280f-c809-f2ae" collective="true">
@@ -3639,11 +3442,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="efd6-328a-d856-c5e0" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Large)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="efd6-328a-d856-c5e0" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
           <rules>
             <rule name="Fusion Mine" id="e381-a1eb-af8d-ff23" hidden="false">
@@ -3801,11 +3600,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Strafe-X" id="3777-81d4-0b26-6bb7" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d">
-              <modifiers>
-                <modifier type="set" value="Strafe-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Strafe-X" id="3777-81d4-0b26-6bb7" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -3875,11 +3670,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="6325-6e95-55a8-d41b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="6325-6e95-55a8-d41b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -3923,11 +3714,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="a3da-05e9-f4e7-0ebd" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-3 (Scenery)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="a3da-05e9-f4e7-0ebd" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="4862-0020-b09a-1a0e" collective="true">
@@ -3993,11 +3780,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="b33d-19c9-630c-671b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Scenery)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="b33d-19c9-630c-671b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flamethrower" hidden="false" id="0f95-7bba-2ace-28d9" collective="true">
@@ -4077,11 +3860,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="343d-9e90-f573-65d2" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-3 (Scenery)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="343d-9e90-f573-65d2" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hyperion Laser" hidden="false" id="193a-c45a-4ab4-dc93" collective="true">
@@ -4104,11 +3883,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Destroyer-X" id="e393-53ed-19ab-84dd" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46">
-              <modifiers>
-                <modifier type="set" value="Destroyer 5+" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Destroyer-X" id="e393-53ed-19ab-84dd" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4142,11 +3917,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Focus-X" id="e692-dbb2-5c14-b403" hidden="false" type="rule" targetId="5d31-f577-8070-6820">
-              <modifiers>
-                <modifier type="set" value="Focus-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Focus-X" id="e692-dbb2-5c14-b403" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
             <infoLink name="Indirect" id="48d1-1528-7ee8-8e33" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
             <infoLink name="Tech Killer" id="b4b0-cc77-efde-e381" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
@@ -4182,11 +3953,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="AA-X" id="049c-b32b-9e50-8db6" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="049c-b32b-9e50-8db6" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
             <infoLink name="Penetrative" id="9bdc-f4a3-0c1f-454d" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
           <costs>
@@ -4242,22 +4009,10 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Alt-X" id="0492-04eb-9b54-415f" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4">
-              <modifiers>
-                <modifier type="set" value="Alt-1" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Alt-X" id="0492-04eb-9b54-415f" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
             <infoLink name="Indirect" id="89b9-5cd2-147a-d94d" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
-            <infoLink name="Destroyer-X" id="1a80-372d-76ef-7e49" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46">
-              <modifiers>
-                <modifier type="set" value="Destroyer 5+" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Devastator-X" id="7abd-3607-0a0e-b363" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-4 (Flammable Scenery)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Destroyer-X" id="1a80-372d-76ef-7e49" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+            <infoLink name="Devastator-X" id="7abd-3607-0a0e-b363" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
             <infoLink name="Area" id="39be-8ce9-7e2b-a069" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
           </infoLinks>
         </selectionEntry>
@@ -4311,11 +4066,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="895e-d2c1-71bb-fb94" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (All)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Cover-X" id="895e-d2c1-71bb-fb94" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Flame" id="c2b7-334b-5362-6c81" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Tech Killer" id="da03-5ef6-82e9-5e51" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
@@ -4455,11 +4206,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
           </profiles>
           <infoLinks>
             <infoLink name="Indirect" id="108d-97be-3e1a-7ef6" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
-            <infoLink name="Limited-X" id="5e9c-c2c3-2b6d-25fd" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Limited-X" id="5e9c-c2c3-2b6d-25fd" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4528,11 +4275,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Focus-X" id="5b06-715b-ff14-3a88" hidden="false" type="rule" targetId="5d31-f577-8070-6820">
-              <modifiers>
-                <modifier type="set" value="Focus-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Focus-X" id="5b06-715b-ff14-3a88" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
             <infoLink name="Indirect" id="9e3b-b463-6b6e-c994" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
             <infoLink name="Tech Killer" id="9289-33b8-8440-3ecd" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
@@ -4568,16 +4311,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="2156-1ec3-955c-34a5" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-3 (Scenery)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Limited-X" id="0830-0e0d-b994-aac5" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d">
-              <modifiers>
-                <modifier type="set" value="Limited-2" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Devastator-X" id="2156-1ec3-955c-34a5" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Limited-X" id="0830-0e0d-b994-aac5" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shooting Star Missiles" hidden="false" id="bdc8-b735-571e-a2bc" collective="true">
@@ -4599,11 +4334,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="cc23-cf86-2571-1e08" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754">
-              <modifiers>
-                <modifier type="set" value="Cover (All)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Cover-X" id="cc23-cf86-2571-1e08" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Penetrative" id="706e-1150-e5a0-7aad" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
         </selectionEntry>
