@@ -238,6 +238,21 @@
               <categoryLinks>
                 <categoryLink name="Infantry" hidden="false" id="65b7-4724-1b0c-bd79" targetId="4416-02b4-a45b-07f0" primary="true"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Tough" id="23d3-350b-cff5-f56c" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Ronin Weapon Selection" hidden="false" id="c98c-cb0a-8f0d-678f" type="selectionEntryGroup" targetId="4e44-3472-19d5-25d2"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -410,7 +425,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Neutron Launchers" hidden="false" id="4d62-a842-4afc-78ee" collective="true">
           <profiles>
-            <profile name="Neutron Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c941-1af9-4946-9a26">
+            <profile name="Neutron Launchers (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c941-1af9-4946-9a26">
               <characteristics>
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
@@ -422,7 +437,7 @@
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-1</characteristic>
               </characteristics>
             </profile>
-            <profile name="Neutron Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="13db-57e5-00e1-4f47">
+            <profile name="Neutron Launchers (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="13db-57e5-00e1-4f47">
               <characteristics>
                 <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
@@ -1142,6 +1157,99 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b01-b550-afda-8a23" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02fd-f5e6-2b40-439f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ronin Weapon Selection" id="4e44-3472-19d5-25d2" hidden="false" collective="true" defaultSelectionEntryId="cecf-ba4e-79e0-ad30">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gauss Carbine, Battlesuit" hidden="false" id="cecf-ba4e-79e0-ad30" collective="true" sortIndex="1">
+          <profiles>
+            <profile name="Gauss Carbine" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="93b0-3f7a-a5ef-18a6">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Battlesuit" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="26cd-df7c-ce68-758f">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Energy Blade, Bio-Atomiser, Energy Blade (CQ)" hidden="false" id="c6c2-06a4-15f8-4271" collective="true" sortIndex="2">
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Energy Blade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3ec4-4d8f-bc2a-fc48">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bio-Atomiser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="acd7-0ea8-9ebb-be1c">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Energy Blade (CQ)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f51c-53b7-9b7e-ab36">
+              <characteristics>
+                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Bio-Atomiser" id="0e54-d11c-87bb-6eeb" hidden="false">
+              <description>Shots from this weapon cause 2 extra points of damage on a damage roll of 6. </description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="d88f-4f49-0a4e-e0ce" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0114-2f44-beb9-8527" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f32e-7566-75f0-c332" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

@@ -833,6 +833,30 @@
           </modifiers>
         </forceEntry>
       </forceEntries>
+      <modifiers>
+        <modifier type="add" value="Insufficient Vehicle Access capacity to deploy entire force turn 1" field="info">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="17f7-74ea-40f0-2d75" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="roster" childId="any" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Holding Battlegroup Alert</comment>
+        </modifier>
+        <modifier type="add" value="Insufficient Infantry Access capacity to deploy entire force turn 1" field="info">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="17f7-74ea-40f0-2d75" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="roster" childId="any" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>Holding Battlegroup Alert</comment>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <entryLinks>
