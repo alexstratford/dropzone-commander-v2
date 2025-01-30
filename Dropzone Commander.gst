@@ -21,13 +21,13 @@
   <profileTypes>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
-        <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
+        <characteristicType id="4d6f76652026204669726523232344415441232323" name="M&amp;F"/>
         <characteristicType id="4.1726323232344415e+25" name="Arc"/>
-        <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="Range (Full)"/>
-        <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="Range (Countered)"/>
+        <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="R(F)"/>
+        <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="R(C)"/>
         <characteristicType id="53686f747323232344415441232323" name="Shots"/>
-        <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
-        <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
+        <characteristicType id="4.163637572616379e+35" name="Acc"/>
+        <characteristicType id="456e6572677923232344415441232323" name="E"/>
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
@@ -38,22 +38,59 @@
         <characteristicType id="506f696e747323232344415441232323" name="Points"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="4.7617465232323444e+27" name="Gate">
-      <characteristicTypes>
-        <characteristicType id="4d61737320546f74616c23232344415441232323" name="Mass Total"/>
-        <characteristicType id="4761746520546f74616c23232344415441232323" name="Gate Total"/>
-        <characteristicType id="4.761746520537175e+41" name="Gate Squads"/>
-        <characteristicType id="4f746865722053717561647323232344415441232323" name="Other Squads"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="b88a-b68e-168b-9f28" name="Unit">
       <characteristicTypes>
         <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
-        <characteristicType id="725f-50fa-0778-01b0" name="Countermeasures"/>
-        <characteristicType id="dadd-5f09-c124-988c" name="Armour"/>
-        <characteristicType id="4f0a-b592-a15b-4f82" name="Damage Points"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
         <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f29" name="Aircraft">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f30" name="Aircraft (Drop)">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f31" name="Aircraft (Transport)">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="a7a0-2f14-30f9-c88b" name="Vehicle (Transport)">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
       </characteristicTypes>
     </profileType>
     <profileType id="d3ad-5a11-6f2d-62a0" name="Behemoth">
@@ -930,11 +967,12 @@
                 <profile name="EAA Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                   <modifierGroups>
                     <modifierGroup type="and">
@@ -959,13 +997,13 @@
                   <profiles>
                     <profile name="Twin Punisher Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18b2-52dd-73ce-881b">
                       <characteristics>
-                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                         <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
@@ -979,13 +1017,13 @@
                   <profiles>
                     <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec9-bbae-7a76-d2ee">
                       <characteristics>
-                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                         <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
                       </characteristics>
                     </profile>
@@ -1020,13 +1058,13 @@
                       <profiles>
                         <profile name="Heavy Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8f6a-5544-bf15-7f45">
                           <characteristics>
-                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                            <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                             <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
                           </characteristics>
                         </profile>
@@ -1042,13 +1080,13 @@
                       <profiles>
                         <profile name="AA Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2716-3df2-9511-a7ab">
                           <characteristics>
-                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                            <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                            <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                            <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                             <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
                           </characteristics>
                         </profile>
