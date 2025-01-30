@@ -1110,6 +1110,95 @@ Remember: always ask your opponent to move their own miniatures!</description>
             <infoLink name="Devastator-X" id="d801-db2d-5fa7-df98" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Charged Earth" hidden="false" id="cb96-d389-3536-8d21" collective="true">
+          <profiles>
+            <profile name="Charged Earth" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="575f-cb4c-183b-2931">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">4&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">4&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4cd-f3f3-4cf2-3751" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42ae-edab-6efa-00b5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Charged Atmosphere" hidden="false" id="d9d6-53eb-b72a-ca4e" collective="true">
+          <profiles>
+            <profile name="Charged Atmosphere" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e352-5d07-7ab2-196d">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">4&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">4&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d702-2cfb-ce1d-1180" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dc1-7f67-16e4-2281" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Heavy Ion Cannons" hidden="false" id="a38c-ebaf-2fc3-88aa" collective="true">
+          <profiles>
+            <profile name="Twin Heavy Ion Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1eab-bbb8-7864-803f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="51ff-288f-8148-9959" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Alt-X" id="c1c0-e7a0-b6f2-3db4" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b91d-f7b1-57d9-a421" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e6c-c423-e484-06c3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ion Storm" hidden="false" id="4277-576a-9fd3-58db" collective="true">
+          <profiles>
+            <profile name="Ion Storm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="31d1-873a-11a1-b628">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">*</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Tech Killer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Ion Storm" id="4043-a6f0-0285-6772" hidden="false">
+              <description>This weapon hits every non-Aircraft unit within range (friendly and enemy). Each unit gets hit by the weapon profile once, but Infantry not in a Garrison instead get hit D6 times each (roll once for all units). Infantry in a Garrison cannot be hit. This weapon has Accuracy 6+ on any units over 6” away</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d51-b070-b549-edc5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="456a-c830-b7cc-5b20" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard" hidden="false" id="1ec6-18fe-45ec-67be" subType="unit-group">
@@ -1552,7 +1641,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-9"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
@@ -2032,7 +2121,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="f89d-a3f1-a718-4692">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="c5d2-bbba-4dee-272b">
+            <selectionEntry type="model" import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="c5d2-bbba-4dee-272b" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="125"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
@@ -2072,6 +2161,531 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="3182-4a79-ec86-0c7e" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Thunderbird Light Gunship" hidden="false" id="c11e-7314-e862-56bb">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Thunderbird Light Gunship" hidden="false" id="245a-00f2-67a8-05b3" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Thunderbird Light Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="3c47-5ce1-aaca-af7d">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+4, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Thunderbird Light Gunship Weapon Selection" hidden="false" id="f123-04d8-27a7-2153" type="selectionEntryGroup" targetId="a729-20f4-d351-8be5"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8376-6413-a676-469d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c58c-122d-ab49-81b5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="6e1b-2432-d62c-1770" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Alligator Heavy Gravcharger" hidden="false" id="b46e-905d-6816-e7af">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Alligator Heavy Gravcharger" hidden="false" id="f0bd-e2d1-3781-3992" collective="true">
+              <profiles>
+                <profile name="Alligator Heavy Gravcharger" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ab97-153a-fdd0-bcf2">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Wide</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0042-dbb8-d620-4ac2" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="401d-e6e6-4e42-f0ee" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Wide" id="a1c1-4cfb-5b85-4fc3" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
+              </infoLinks>
+              <rules>
+                <rule name="Gravcharger" id="47f4-8cdc-64ba-aed0" hidden="false">
+                  <description>If a friendly non-Aircraft, non-Behemoth unit (including this one) starts its activation within 6” of one or more
+units with this special rule, its entire squad increases their Move and Move &amp; Fire values by +3” for that
+activation. Skimmers increase this bonus to +6”.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="1742-0b1d-252f-505d" id="d5dd-a6dc-4831-8a2b" primary="true" name="Support"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxiliary" hidden="false" id="09f7-38d1-0308-d1a3" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Haven Terragate" hidden="false" id="fde9-ba81-e4f6-3e04">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Haven Terragate" hidden="false" id="705b-2e5f-04ae-79a1" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Haven Terragate" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="f7c3-1769-ff77-66bf">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Teleport" id="5b29-d1e6-ceb1-7312" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="c566-9d0c-50d9-ffa8" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77c4-34a1-a371-1cb7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a7b-1ad1-02d0-e35a" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Charged Earth" hidden="false" id="829b-7428-586b-f8f4" type="selectionEntry" targetId="cb96-d389-3536-8d21"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="752d-6d3c-04b2-0195" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Eden Gate" hidden="false" id="8f0f-8bb2-c70b-329d">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Eden Gate" hidden="false" id="2744-fe3a-6547-71f0" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Eden Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="181e-f60b-5110-1e6c">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Teleport" id="51ff-1aea-82be-15a6" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="5ca2-bb70-648b-b572" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+                <infoLink name="Interference" id="cc5c-2cfb-f0b5-b9d3" hidden="false" type="rule" targetId="8955-61d6-c888-4f0f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be86-fcc8-6a28-85aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="468b-9f25-0fdb-cc14" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Charged Atmosphere" hidden="false" id="49cb-5870-3ba2-c829" type="selectionEntry" targetId="d9d6-53eb-b72a-ca4e"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="423d-c3c7-eeea-7646" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Gaia Heavy Gate" hidden="false" id="d7b1-3227-9f1c-8667">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Gaia Heavy Gate" hidden="false" id="d181-ffbe-f349-468f" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-18"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Gaia Heavy Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="2568-0960-11f8-e111">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">18 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Teleport" id="05f4-0c6d-5d2f-3d69" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="376a-9db2-5d8c-f34a" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+                <infoLink name="Interference" id="a39b-c59b-51a3-455b" hidden="false" type="rule" targetId="8955-61d6-c888-4f0f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="252d-cd25-f765-fc44" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b0-6e83-8000-dfd1" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Charged Atmosphere" hidden="false" id="3185-dbbb-b438-e4c4" type="selectionEntry" targetId="d9d6-53eb-b72a-ca4e"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="693a-4404-aa24-7214" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Spirit Light Gate" hidden="false" id="9028-84cd-a484-6412">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Spirit Light Gate" hidden="false" id="78fa-24b4-5c5a-4f72" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Spirit Light Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="08dc-1c33-82d4-b526">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Teleport" id="578e-7f2a-fbcb-ce3a" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="6d22-3d13-dec1-5e73" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+                <infoLink name="Interference" id="81e1-b2b9-5542-8aa9" hidden="false" type="rule" targetId="8955-61d6-c888-4f0f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="788a-aa52-0240-09cf" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59c8-5efb-0101-5f62" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Charged Atmosphere" hidden="false" id="c0fa-cd18-9974-ad8f" type="selectionEntry" targetId="d9d6-53eb-b72a-ca4e"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="501a-31a8-0b7c-3b33" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Warspear Interceptor" hidden="false" id="84ee-8009-93bf-3acb">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Warspear Interceptor" hidden="false" id="3d7d-e544-d6b4-4377" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Warspear Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="c41f-5607-3702-2465">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;-48&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9971-4e2d-4245-e1be" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c504-7241-2564-74c7" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Fast" id="49a7-b3ff-15bd-8813" hidden="false" type="rule" targetId="5ca6-fb78-323a-0702"/>
+                <infoLink name="Rare" id="5123-e05d-d18d-2a7b" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Twin Heavy Ion Cannons" hidden="false" id="b042-00f2-3834-474b" type="selectionEntry" targetId="a38c-ebaf-2fc3-88aa"/>
+                <entryLink import="true" name="Warspear Interceptor Weapon Selection" hidden="false" id="a693-5c8a-9821-2e63" type="selectionEntryGroup" targetId="1413-71f6-2b2b-e1d4"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="4d1f-4e8b-bb35-4f5c" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="40a5-ed82-935b-0f11">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="40a5-ed82-935b-0f11">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="40a5-ed82-935b-0f11">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="40a5-ed82-935b-0f11" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Zion Gatespire" hidden="false" id="6c20-2fb4-5b08-db0b">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Zion Gatespire" hidden="false" id="9837-7ed9-745d-da88" collective="true">
+              <profiles>
+                <profile name="Zion Gatespire" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="c88e-f2a1-e48b-ec7d">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access, Rare</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">18 Tank</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c960-1188-b01e-f6b8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-bb4d-4953-4052" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Remote Gateway" id="909f-7a20-c3f1-d5fb" hidden="false">
+                  <description>When this unit activates, you may pick another friendly non-Behemoth unit with a transport Requirement (of any symbol) within 12”. Remove that unit and place it in Holding as if it were embarking into this transport (though it does not use any of this unit’s transport capacity and ignores any restrictions on shooting and embarking).</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Teleport" id="6086-e02e-e55a-1d1e" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="6a31-9699-9ae5-6e8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="6a31-9699-9ae5-6e8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="6a31-9699-9ae5-6e8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a31-9699-9ae5-6e8a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="de27-8358-5d78-6eeb" id="54ed-4721-026a-e30a" primary="true" name="Auxiliary"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Obelisk Ionspire" hidden="false" id="b9a3-a34a-fe16-3c98">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Obelisk Ionspire" hidden="false" id="8754-cedb-092c-7480" collective="true">
+              <profiles>
+                <profile name="Obelisk Ionspire" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0ced-b99e-c355-f497">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e62a-1089-547d-8a4b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe73-fc8b-67c2-a8e5" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Ion Storm" hidden="false" id="5f34-0ce3-9d8f-ea95" type="selectionEntry" targetId="4277-576a-9fd3-58db"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="8545-8e6f-59b3-7259">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="8545-8e6f-59b3-7259">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="8545-8e6f-59b3-7259">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8545-8e6f-59b3-7259" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="99a2-0882-2a8c-01c8" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Totem Shieldspire" hidden="false" id="b550-916c-7b8a-0b49">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Totem Shieldspire" hidden="false" id="11c7-3ba7-7c62-4aac" collective="true">
+              <profiles>
+                <profile name="Totem Shieldspire" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f4d9-121e-25cc-5747">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8897-6ea5-f6bc-c111" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab0-f299-e315-a182" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Shield Projector" id="09f1-8a5c-0350-d0bd" hidden="false">
+                  <description>Once per activation choose a scenery piece in Line of Sight within 6”. This selected item and (if a Garrison) any units inside gain 5+ Passive Countermeasures until this unit is activate again. This ceases to work if this unit is removed from the board (embarking or being destroyed etc).</description>
+                </rule>
+                <rule name="Protective Bubble" id="0b92-1c76-e64e-ce61" hidden="false">
+                  <description>All friendly units within 6” of this unit may re-roll dice Passive saves of 1.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="14f6-d116-5291-f242">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="14f6-d116-5291-f242">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="14f6-d116-5291-f242">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="14f6-d116-5291-f242" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="8c43-0d37-7aba-c34f" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2128,6 +2742,16 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
     <entryLink import="true" name="Dreamsnare Shieldstrider" hidden="false" id="6f1f-b1b3-0775-c0ad" targetId="2804-2099-a13a-fd08" type="selectionEntry"/>
     <entryLink import="true" name="Tegu Gatestrider" hidden="false" id="aeb3-fc53-85c3-2592" type="selectionEntry" targetId="ab5f-60ce-d326-dad9"/>
     <entryLink import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="e5b7-cb3b-154e-d5a0" targetId="f89d-a3f1-a718-4692" type="selectionEntry"/>
+    <entryLink import="true" name="Thunderbird Light Gunship" hidden="false" id="dceb-918a-dbb0-1b03" targetId="c11e-7314-e862-56bb" type="selectionEntry"/>
+    <entryLink import="true" name="Alligator Heavy Gravcharger" hidden="false" id="3355-69df-5dd5-6ffe" type="selectionEntry" targetId="b46e-905d-6816-e7af"/>
+    <entryLink import="true" name="Haven Terragate" hidden="false" id="931d-fcfc-343d-3966" targetId="fde9-ba81-e4f6-3e04" type="selectionEntry"/>
+    <entryLink import="true" name="Eden Gate" hidden="false" id="4387-4a64-73cf-254c" targetId="8f0f-8bb2-c70b-329d" type="selectionEntry"/>
+    <entryLink import="true" name="Gaia Heavy Gate" hidden="false" id="18f7-c624-63de-305e" targetId="d7b1-3227-9f1c-8667" type="selectionEntry"/>
+    <entryLink import="true" name="Spirit Light Gate" hidden="false" id="dfa4-0a5f-b20a-a5eb" targetId="9028-84cd-a484-6412" type="selectionEntry"/>
+    <entryLink import="true" name="Warspear Interceptor" hidden="false" id="58d0-c7d2-6bff-3960" targetId="84ee-8009-93bf-3acb" type="selectionEntry"/>
+    <entryLink import="true" name="Zion Gatespire" hidden="false" id="d1d7-07a1-f307-02a7" targetId="6c20-2fb4-5b08-db0b" type="selectionEntry"/>
+    <entryLink import="true" name="Obelisk Ionspire" hidden="false" id="cb2d-9c4e-8533-3334" targetId="b9a3-a34a-fe16-3c98" type="selectionEntry"/>
+    <entryLink import="true" name="Totem Shieldspire" hidden="false" id="e3f6-73f9-426c-e03d" targetId="b550-916c-7b8a-0b49" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -2399,6 +3023,102 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3675-e651-3ea7-21cd" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8859-2932-41bf-320a" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Thunderbird Light Gunship Weapon Selection" id="a729-20f4-d351-8be5" hidden="false" collective="true" defaultSelectionEntryId="6c4b-762b-a065-25ff">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Disintegrators" hidden="false" id="6c4b-762b-a065-25ff" collective="true" sortIndex="1">
+          <profiles>
+            <profile name="Twin Disintegrators" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="78cb-c071-8aaf-d491">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle), Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="a783-9e83-fac2-7ef7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Penetrative" id="4846-5089-c485-75f5" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Short Barrel Gauss Cannon" hidden="false" id="5c1d-d25a-de82-e2f9" collective="true" sortIndex="2">
+          <profiles>
+            <profile name="Short Barrel Gauss Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="50a9-d6d1-e941-262d">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="639b-b0a7-7990-666f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c575-d0ea-6be1-4bed" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Warspear Interceptor Weapon Selection" id="1413-71f6-2b2b-e1d4" hidden="false" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser" hidden="false" id="ca3a-b39b-f357-6a46">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Heavy Bio-Atomiser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2585-5816-2e4a-8ad8">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Focus-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="49fa-9bb2-49f9-1ce3" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Focus-X" id="6ff2-02b5-a259-6787" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gauss Cannon" hidden="false" id="56d7-31dc-da44-6794" collective="true">
+          <profiles>
+            <profile name="Gauss Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2233-a6f3-65d2-ec6d">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Alt-X" id="0b66-256f-f00e-c3f6" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
