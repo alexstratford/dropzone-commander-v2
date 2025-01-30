@@ -17,11 +17,12 @@
                 <profile name="Desolator Command Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="02eb-2552-a118-711e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -55,11 +56,12 @@
                 <profile name="Oppressor Command Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="10f3-3117-3f13-1121">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -103,11 +105,12 @@
                 <profile name="Despot Suppression Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7652-6727-9bea-df1d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -147,11 +150,12 @@
                 <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39b9-4ee3-b465-6c2c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -215,11 +219,12 @@
                 <profile name="Marauder Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4347-3059-ca72-b429">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -243,11 +248,12 @@
                 <profile name="Invader APC" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="17cc-3c9d-7b80-1d53">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -291,11 +297,12 @@
                 <profile name="Despoiler Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9a7e-ff16-642c-8c66">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -319,11 +326,12 @@
                 <profile name="Intruder Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e46f-de1c-7779-5961">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -356,11 +364,12 @@
                 <profile name="Intruder Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8a5f-848f-41d1-a5dc">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -402,11 +411,12 @@
                 <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b717-70aa-d7fa-7117">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0"/>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -448,11 +458,12 @@
                 <profile name="Hunter Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f49d-e893-e6f2-a262">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -482,10 +493,11 @@
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 8&quot;, Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -514,11 +526,12 @@
                 <profile name="Spectre Skimtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a84a-e713-88a4-5489">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+3</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -551,11 +564,12 @@
                 <profile name="Ravenor Laser Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9769-e44e-8876-580b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -592,11 +606,12 @@
                 <profile name="Corruptor Hiveship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5696-6191-e555-287d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -641,11 +656,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Reaver Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aba4-df79-afb8-e1e1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -680,13 +696,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Ion Cyclone" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b03c-53ad-64c7-befa">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Destroyer 5+, Flame</characteristic>
               </characteristics>
             </profile>
@@ -705,13 +721,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Ion Storm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9261-ecc5-85dd-644b">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">*</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -738,13 +754,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Razor Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="578a-a32d-0722-5ab4">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -761,13 +777,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Electroweb Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="53c8-5983-9b0b-6a31">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -777,25 +793,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Focused Plasma Carbines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fbd9-9a7b-cdb7-b0f1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (Scenery), Strafe-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Spread Plasma Carbines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3ebf-9f18-7ef2-fe0f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -814,13 +830,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c7b2-9da0-0b6d-713a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-3</characteristic>
               </characteristics>
             </profile>
@@ -838,13 +854,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9199-edcb-3daa-a8dd">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-3</characteristic>
               </characteristics>
             </profile>
@@ -861,13 +877,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8b2f-a3df-a330-140f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -888,13 +904,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Cutting Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="129f-d1f0-9fbc-8e35">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -904,13 +920,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fe42-8314-22f3-d4a0">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -928,13 +944,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Standoff Energy Cluster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6dba-e7b9-0169-3100">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer (6+)</characteristic>
               </characteristics>
             </profile>
@@ -956,25 +972,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2e22-27aa-6ca3-0247">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-3, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Assault Pistols" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fc49-d69d-1b33-7595">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -992,13 +1008,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Teeth &amp; Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="247a-e892-ec0f-74b6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -1015,25 +1031,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Charger" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2ba9-32d0-fc8f-d952">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Shard Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="763e-b8af-e043-169f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -1050,25 +1066,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Injecting Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3ab6-715b-9d5c-75cc">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Spewing Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d801-c258-57df-4d0c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -1086,13 +1102,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Furnace Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8980-9628-d7bc-e731">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 5+, Devastator-3 (Behemoth, Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -1106,13 +1122,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Standoff Energy Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fe6d-5f20-d441-1b92">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Destroyer 5+</characteristic>
               </characteristics>
             </profile>
@@ -1134,13 +1150,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Howitzer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="28f5-6895-25d4-9641">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-4 (Behemoth, Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -1158,13 +1174,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Thrust Cutter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4136-b16e-3b1a-2a96">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
@@ -1181,25 +1197,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Light Bio-Mortar (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98b4-5071-f00d-4073">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Cover (All), Devastator-2 (Infantry), Indirect</characteristic>
               </characteristics>
             </profile>
             <profile name="Light Bio-Mortar (Spread)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e860-1dca-5149-9bd6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Cover (All), Devastator-2 (Infantry), Flame, Indirect, Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -1226,25 +1242,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Quick Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ae21-a459-29bd-5aba">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4213-a5ac-a531-ffe9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">18</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-6</characteristic>
               </characteristics>
             </profile>
@@ -1258,25 +1274,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Acid Spout" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a32f-0170-76b0-c520">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
               </characteristics>
             </profile>
             <profile name="Acid Proboscis" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1b47-6786-1b15-6809">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -1294,25 +1310,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Huge Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-7695-b38f-c9b1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Hunting Scream" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98ae-12c7-f9c6-1e42">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">-</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">-</characteristic>
               </characteristics>
             </profile>
@@ -1331,26 +1347,26 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Shard Flak Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f046-049b-04e6-2455">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
               <comment>Left</comment>
             </profile>
             <profile name="Shard Flak Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="528d-d484-7d73-69ef">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
               <comment>Right</comment>
@@ -1372,13 +1388,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0788-fba2-d84f-c0af">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -1401,13 +1417,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Bombard" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7699-c1ae-4d0a-a116">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">30&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">30&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-2 (Vehicle, Scenery), Indirect</characteristic>
               </characteristics>
             </profile>
@@ -1425,13 +1441,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Pheremone Spray" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e235-69b1-f763-bcbd">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">1</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -1445,13 +1461,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b792-6ffe-6c9b-7e2a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-3</characteristic>
               </characteristics>
             </profile>
@@ -1469,25 +1485,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8094-70d8-e912-6722">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1fcc-aaee-8bdf-a8d1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1505,14 +1521,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Ion Cradle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f8cd-7c4e-70ea-4323">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;
-</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-3, Strafe-3</characteristic>
               </characteristics>
             </profile>
@@ -1534,13 +1549,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Micro Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bc31-de74-4bc0-1b82">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -1558,25 +1573,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Shard Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dcac-050b-e2d6-3ea7">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Self-Destruct" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f6a6-2b9b-d5b1-5f9a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area</characteristic>
               </characteristics>
             </profile>
@@ -1599,13 +1614,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Twin Plasma Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="20ec-3dd9-346a-48e0">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1631,13 +1646,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Bombs" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec8-53e6-634d-575f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">5+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1658,13 +1673,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Mini Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bc26-963d-cbaf-51c8">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -1691,13 +1706,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Acid Streamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6ea9-3b21-6302-957e">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Flame</characteristic>
               </characteristics>
             </profile>
@@ -1714,13 +1729,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Cutting Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9c12-f271-ef98-4f8c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Focus-2, AA-4</characteristic>
               </characteristics>
             </profile>
@@ -1757,11 +1772,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Warriors" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7068-3cc6-0e0f-afb5">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1806,11 +1822,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Razorworms" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0f23-2f0f-2794-d92d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Dodge 5+</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1829,11 +1846,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Demolisher Shock Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7216-fc0a-59e6-088c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">P4+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">P4+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1870,11 +1888,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Prowler Spider Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f15e-ec35-984e-21a9">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1958,10 +1977,11 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1995,10 +2015,11 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2041,11 +2062,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Obliterator Mobile Ordnance" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9655-d723-2eb1-7555">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2086,11 +2108,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b41-5da2-eca5-288b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2123,11 +2146,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Slaughterer Ordnance Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b4f-badd-f224-ff87">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2160,11 +2184,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Decapitator Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39c4-66a4-a3b8-74e2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0"/>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2197,11 +2222,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Executioner Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ad26-064c-e57d-9d5c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0"/>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2245,11 +2271,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Eviscerator Assault Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="358e-9d17-c7e8-a04b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">P4+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">P4+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Resilient, Rare</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2296,11 +2323,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Raptor Spider Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="69cd-5941-532e-2114">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2346,11 +2374,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Screamer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2440-f876-9b2c-70f8">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2385,11 +2414,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Reaper AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fa62-f47c-60d0-ebd6">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2431,11 +2461,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Ravager AA Beetle" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4ebe-7e30-2b76-270b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 8&quot;, Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2473,11 +2504,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Eradicator Chameleopod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2639-4049-c80e-7216">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">9</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient, Rare</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2547,11 +2579,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Annihilator Mobile Ordnance" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b7ff-13c4-4a1d-9dfa">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2606,11 +2639,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Afflictor Hive Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2d63-df76-b30b-8bc5">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2661,11 +2695,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="46fd-f99c-7f7b-cec3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2702,11 +2737,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Minder AA Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6724-5787-8c4f-dbc0">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 4&quot;, Wide</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2743,11 +2779,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <profile name="Emeritus Incendiary Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="bedb-1cf3-bd12-0d94">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Wide</characteristic>
+                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2798,11 +2835,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             <profile name="Corsair Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aed1-9061-6de1-3290">
               <characteristics>
                 <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
-                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                 <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
+                <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2865,11 +2903,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             <profile name="Vampire" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e385-1808-c056-4d01">
               <characteristics>
                 <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+3</characteristic>
-                <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
-                <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+3</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                 <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Rare</characteristic>
+                <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2882,7 +2921,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <description>This squad must be deployed in a single Transport, although does not count towards that Transport’s starting Capacity.</description>
             </rule>
             <rule name="Concentrated Cutting" id="022d-38c3-9743-7ac1" hidden="false">
-              <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad. </description>
+              <description>This unit may not Reaction Fire. Additionally, Cutting Beam’s Focus special rule can be used to combine shots from the unit’s whole squad.</description>
             </rule>
           </rules>
           <entryLinks>
@@ -2973,13 +3012,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Photon Blaster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e8b2-62a1-1bc2-50f6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Indirect</characteristic>
               </characteristics>
             </profile>
@@ -2997,13 +3036,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4f38-e31e-30d5-787b">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -3024,13 +3063,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Twin Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8b06-909a-0273-7a18">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -3043,13 +3082,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Acid Streamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5b8e-62d6-5617-a78b">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
               </characteristics>
             </profile>
@@ -3070,25 +3109,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Bio-Mortar (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd6b-05e4-57d0-32f1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Cover (All), Devastator-3 (Infantry), Indirect</characteristic>
               </characteristics>
             </profile>
             <profile name="Bio-Mortar (Spread)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fbd6-f6f2-d70a-78a9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Cover (All), Devastator-3 (Infantry), Flame, Indirect, Strafe-3</characteristic>
               </characteristics>
             </profile>
@@ -3107,25 +3146,25 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Fusillade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e9c8-8b25-5bb1-b34f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Plasma Fusillade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2fff-59c4-aac8-dd41">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -3155,13 +3194,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="91bf-4878-a42d-5adb">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">6+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">6+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-3</characteristic>
               </characteristics>
             </profile>
@@ -3185,13 +3224,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="236f-5786-1105-6bf9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-0, Devastator-2 (Scenery, Infantry)</characteristic>
               </characteristics>
             </profile>

@@ -40,6 +40,19 @@
                   <description>Instead of making a Moving action, this squad may immediately go into Holding. Any held objectives are dropped before this squad is put into holding.</description>
                 </rule>
               </rules>
+              <profiles>
+                <profile name="Daimyo Battlesuit" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="866c-d703-ddff-18d8">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Warband Selection" hidden="false" id="3580-cbe0-5b31-16a0" collective="true" defaultAmount="1">
               <associations>
@@ -64,21 +77,23 @@
                 <profile name="Lynx Chiefstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="cdb4-9e36-5071-c1ae">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Command Module" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="be05-974f-1f08-7f66">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">N/A</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -116,12 +131,12 @@
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Frostdrake Command Ship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2df5-9d4e-08be-09ee">
+                <profile name="Frostdrake Command Ship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="2df5-9d4e-08be-09ee">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+, E+3</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+, E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
@@ -158,11 +173,12 @@
                 <profile name="Gharial Command Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e19b-5044-b86a-57f9">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -191,11 +207,12 @@
                 <profile name="Ronin Battlesuit" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4960-f9ce-8939-033c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P6+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P6+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry/Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -287,18 +304,18 @@
                 <profile name="Tate Light Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d1e0-22b3-f118-9c56">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry/Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
-                <rule name="New Rule" id="abd8-4dac-0359-2c88" hidden="false">
+                <rule name="Shield Boosting Relay" id="abd8-4dac-0359-2c88" hidden="false">
                   <description>All friendly non-Behemoth Shaltari units (including this one) with Passive Countermeasures gain a -1 modifier to their Passive Countermeasures save if they are within 6” of one or more units with this special rule (for example a 5+ becomes a 4+).</description>
-                  <alias>Shield Boosting Relay</alias>
                 </rule>
               </rules>
             </selectionEntry>
@@ -331,11 +348,12 @@
                 <profile name="Yari Light Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f30d-e396-c258-283e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry/Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -353,13 +371,13 @@
           <profiles>
             <profile name="Web Projector" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="67c4-04a4-3af3-6662">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -381,13 +399,13 @@
           <profiles>
             <profile name="Twin Gauss Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4345-3b33-8b66-125f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -404,13 +422,13 @@
           <profiles>
             <profile name="Heavy Microwave Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd94-8fb4-85b4-cccf">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft)</characteristic>
               </characteristics>
             </profile>
@@ -427,25 +445,25 @@
           <profiles>
             <profile name="Neutron Launchers (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c941-1af9-4946-9a26">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Neutron Launchers (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="13db-57e5-00e1-4f47">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-1</characteristic>
               </characteristics>
             </profile>
@@ -463,13 +481,13 @@
           <profiles>
             <profile name="Foe Crusher Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="be49-d6e7-9f41-057a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Tank, Walker), Devastator-4 (Large)</characteristic>
               </characteristics>
             </profile>
@@ -486,13 +504,13 @@
           <profiles>
             <profile name="Dragon Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e08a-87f5-c9c4-1961">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">12</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft), Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -510,13 +528,13 @@
           <profiles>
             <profile name="Disruption Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c75f-cdf5-73c8-1f7a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area</characteristic>
               </characteristics>
             </profile>
@@ -538,13 +556,13 @@
           <profiles>
             <profile name="Gauss Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9c2d-bede-0f2b-adc3">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -558,13 +576,13 @@
           <profiles>
             <profile name="Laser Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f160-5a20-33ef-5d95">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
@@ -585,13 +603,13 @@
           <profiles>
             <profile name="Gravity Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9351-8339-8cee-ffac">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
@@ -604,13 +622,13 @@
           <profiles>
             <profile name="Discus Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cc32-3352-c6e4-8dd2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-4</characteristic>
               </characteristics>
             </profile>
@@ -624,13 +642,13 @@
           <profiles>
             <profile name="Gauss Rifle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="828e-8785-85b2-f639">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">)&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">)&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -644,13 +662,13 @@
           <profiles>
             <profile name="Heads" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ced1-a853-9a66-a685">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -667,13 +685,13 @@
           <profiles>
             <profile name="Warsuits" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="12e0-429d-0723-fc52">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -690,13 +708,13 @@
           <profiles>
             <profile name="Energy Swords" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d7d8-1e17-98f4-d339">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -714,13 +732,13 @@
           <profiles>
             <profile name="Wave Pistols" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cbad-b353-f6ac-6a92">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">12</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-4</characteristic>
               </characteristics>
             </profile>
@@ -738,13 +756,13 @@
           <profiles>
             <profile name="Twin Ion Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8380-e386-1fd8-4703">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -761,13 +779,13 @@
           <profiles>
             <profile name="Bradyon Carbines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0d35-b2e7-5cef-6dc8">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -786,13 +804,13 @@
           <profiles>
             <profile name="Energy Storm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c619-05d6-8b79-0471">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-4</characteristic>
               </characteristics>
             </profile>
@@ -818,13 +836,13 @@
           <profiles>
             <profile name="Teleport Beamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1a2e-904c-6061-49c0">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">-</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -847,25 +865,25 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Gravity Cannon (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1fc6-fe2c-e603-1872">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
             <profile name="Gravity Cannon (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7ba3-5b81-170c-7a6f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
@@ -879,13 +897,13 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Gauss Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="95d7-c0d8-59f8-9b81">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -902,25 +920,25 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Laser Pod (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="693b-991a-3567-52bc">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
             <profile name="Laser Pod (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2ea9-4b76-bc24-85c9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
@@ -937,25 +955,25 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Twin Dragon Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cf81-45d6-c10e-35d2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">12</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Cover (Body, Soft), Strafe-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
             <profile name="Concentrated Dragon Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a4fd-3c38-c50a-0f93">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Cover (Body, Soft), Focus-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -975,13 +993,13 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Thermal Lance" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6f48-a43a-70f7-dbc4">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -999,25 +1017,25 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="High Power AA Particle Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3491-23c6-747f-1cbb">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-0, Devastator-2 (Aircraft), Devastator-4 (Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Low Power AA Particle Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5d72-4e8c-fefe-76dd">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-0, Devastator-2 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1040,25 +1058,25 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="High Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7997-a268-98c2-a103">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (All), Devastator-4 (Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Low Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a4ff-b248-bfd4-b6c6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1077,13 +1095,13 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="Sonic Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="96b1-c67e-5b4a-621b">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1103,11 +1121,12 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <profile name="Tomahawk Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f730-53a5-795f-0029">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1140,11 +1159,12 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <profile name="Tarantula Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d817-0b90-e9fc-16a3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1190,11 +1210,12 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <profile name="Jaguar Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e8c6-1411-0ac0-87be">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1219,11 +1240,12 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <profile name="Recluse Mirrorwalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="57cf-399b-a063-6afb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+3, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+3, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Wide</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1263,11 +1285,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Widow Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f027-ebdb-62d1-c5cb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1303,11 +1326,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Atlatl Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a0a1-230b-ec19-90b0">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P4+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P4+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1340,11 +1364,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Arrowhead Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0bbe-376e-4264-e549">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P4+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P4+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1384,11 +1409,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Brave Warsuits" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f6ed-7176-751c-a92e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1427,11 +1453,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Firstborn Duelists" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0d84-ef0b-d367-98f2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1474,11 +1501,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Pungari" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="dd51-87a9-dd70-411f">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">5</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">5</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 5+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1524,20 +1552,21 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-9"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Adamah Gungate" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="11b9-9213-0524-422b">
+                <profile name="Adamah Gungate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="11b9-9213-0524-422b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">9 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1575,11 +1604,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Bobcat Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fd4f-6678-2e7e-9628">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1603,11 +1633,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Caiman Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0910-5b1a-47b4-02f5">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1641,11 +1672,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Crocodile Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="378d-c578-4f82-fc70">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1684,11 +1716,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Leopard Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="05b6-b82c-ede1-7bf2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1722,11 +1755,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7802-71ca-3764-b671">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1759,11 +1793,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Panther AA Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6dc6-1e9e-fd9a-a9c5">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1801,11 +1836,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Puma Sonic Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ec8f-4cb0-b574-2772">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1834,11 +1870,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Kukri AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3bf6-647f-f8e0-8948">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1871,11 +1908,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Tarantula Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="183d-5da9-7496-1d62">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1921,11 +1959,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Dreamsnare Shieldstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6c5d-c8b4-39c6-55ce">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1952,22 +1991,24 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
             <selectionEntry type="model" import="true" name="Tegu Gatestrider" hidden="false" id="31f5-8c3b-4f59-c79d" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="85"/>
-                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Tegu Gatestrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b523-80ee-6984-598a">
+                <profile name="Tegu Gatestrider" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="b523-80ee-6984-598a">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Infantry/Tank</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1981,41 +2022,56 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
               <infoLinks>
                 <infoLink name="Supplementary Gate" id="3224-67bb-f272-c4f6" hidden="false" type="rule" targetId="a27a-749c-647f-b073"/>
                 <infoLink name="Teleport" id="c177-7839-f277-f5d8" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="ac67-081a-2cb7-bb48" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Transport Selection" id="96d1-8f32-74df-ba0e" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Vehicle" hidden="false" id="af62-6422-c2d5-7544" defaultAmount="0">
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-1"/>
-                        <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                        <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-                        <cost name="Screamer_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Infantry" hidden="false" id="844d-454d-eea3-0444" defaultAmount="4">
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
-                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                        <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="model" shared="true" id="7864-e7e7-8e92-3f3f" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="model" shared="true" id="1d17-e06f-1ff4-7d53" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="af63-929e-326f-1038" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="f89d-a3f1-a718-4692">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="c5d2-bbba-4dee-272b">
+              <costs>
+                <cost name="pts" typeId="points" value="125"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Firedrake Heavy Assault Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="6575-0dba-2379-4ff7">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+, E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank/Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2ba-e93a-2419-8730" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11e9-bde9-04ad-ed62" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Disruption Cannon" hidden="false" id="6547-81aa-bfcf-95bd" type="selectionEntry" targetId="1680-e43c-db2c-0f15" sortIndex="2"/>
+                <entryLink import="true" name="Dragon Cannon" hidden="false" id="9445-d4a2-02ec-af8e" type="selectionEntry" targetId="4e06-cfd3-c2c2-549d" sortIndex="3"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Supplementary Gate" id="9259-cd2a-5304-7930" hidden="false" type="rule" targetId="a27a-749c-647f-b073"/>
+                <infoLink name="Teleport" id="13e4-202e-14e7-7d4f" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Access" id="02a7-aaf0-c4f0-61d4" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="3182-4a79-ec86-0c7e" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2071,6 +2127,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
     <entryLink import="true" name="Birdeater Battlewalker" hidden="false" id="b76f-b883-ac3a-e72b" targetId="134b-6931-b048-1c0c" type="selectionEntry"/>
     <entryLink import="true" name="Dreamsnare Shieldstrider" hidden="false" id="6f1f-b1b3-0775-c0ad" targetId="2804-2099-a13a-fd08" type="selectionEntry"/>
     <entryLink import="true" name="Tegu Gatestrider" hidden="false" id="aeb3-fc53-85c3-2592" type="selectionEntry" targetId="ab5f-60ce-d326-dad9"/>
+    <entryLink import="true" name="Firedrake Heavy Assault Gate" hidden="false" id="e5b7-cb3b-154e-d5a0" targetId="f89d-a3f1-a718-4692" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -2079,13 +2136,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Microwave Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dddf-2688-847f-dde1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft)</characteristic>
               </characteristics>
             </profile>
@@ -2098,13 +2155,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Light Ion Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9909-2d1d-d423-8ee3">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -2155,13 +2212,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Twin Gauss Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b68a-9b45-1483-2ae8">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -2174,13 +2231,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Twin Heavy Bio-Atomisers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="08f4-01fb-7e26-10ab">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Focus-2</characteristic>
               </characteristics>
             </profile>
@@ -2202,25 +2259,25 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Gauss Carbine" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="93b0-3f7a-a5ef-18a6">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Battlesuit" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="26cd-df7c-ce68-758f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2240,37 +2297,37 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Energy Blade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3ec4-4d8f-bc2a-fc48">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
               </characteristics>
             </profile>
             <profile name="Bio-Atomiser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="acd7-0ea8-9ebb-be1c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Energy Blade (CQ)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f51c-53b7-9b7e-ab36">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2297,13 +2354,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Twin Gravity Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a00a-5dd1-17a3-0d27">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
@@ -2316,13 +2373,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <profiles>
             <profile name="Ion Cannon Array" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b512-41cf-bf56-501a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">5+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
