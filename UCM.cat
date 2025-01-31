@@ -2827,7 +2827,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="4d25-797c-daaa-af6c" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Dropship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
+                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2847,7 +2847,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <categoryLink name="Auxiliary" hidden="false" id="e65a-2220-955c-78e4" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Raven Light Dropship" hidden="false" id="c537-2e0d-fa8c-766d" collective="true">
+            <selectionEntry type="model" import="true" name="Raven Light Dropship" hidden="false" id="c537-2e0d-fa8c-766d" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
