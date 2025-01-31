@@ -2812,7 +2812,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <categoryLink name="Auxiliary" hidden="false" id="1c36-b01a-0f52-0b9d" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Raven Light Troopship" hidden="false" id="fa25-7ca3-101f-ed66" collective="true">
+            <selectionEntry type="model" import="true" name="Raven Light Troopship" hidden="false" id="fa25-7ca3-101f-ed66" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
