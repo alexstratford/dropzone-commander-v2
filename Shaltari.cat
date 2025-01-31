@@ -111,6 +111,7 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Twin Gauss Cannons" hidden="false" id="a917-8a71-8b10-108b" type="selectionEntry" targetId="5a93-95aa-778b-3355"/>
+                <entryLink import="true" name="Commander" hidden="false" id="0c87-cc3b-c2a5-411f" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="true"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -150,6 +151,7 @@
                 <entryLink import="true" name="Foe Crusher Cannon" hidden="false" id="0b52-d1d5-6c84-f742" type="selectionEntry" targetId="4b42-e525-b383-a3be" sortIndex="1"/>
                 <entryLink import="true" name="Disruption Cannon" hidden="false" id="b280-6ba9-d6b0-47f1" type="selectionEntry" targetId="1680-e43c-db2c-0f15" sortIndex="2"/>
                 <entryLink import="true" name="Dragon Cannon" hidden="false" id="a517-fa69-e412-c062" type="selectionEntry" targetId="4e06-cfd3-c2c2-549d" sortIndex="3"/>
+                <entryLink import="true" name="Commander" hidden="false" id="f3a5-adb7-6129-cc10" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="true"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -189,6 +191,7 @@
               <entryLinks>
                 <entryLink import="true" name="Heavy Microwave Cannon" hidden="false" id="e65e-e549-e94c-828d" type="selectionEntry" targetId="1d81-2481-98f3-0e35"/>
                 <entryLink import="true" name="Neutron Launchers" hidden="false" id="9c7c-a44c-1083-573b" type="selectionEntry" targetId="4d62-a842-4afc-78ee"/>
+                <entryLink import="true" name="Commander" hidden="false" id="8536-b731-4305-4cd4" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="true"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
