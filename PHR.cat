@@ -198,15 +198,11 @@
               </infoLinks>
               <rules>
                 <rule name="Detriment" id="2fe0-6f9d-8bb3-5196" hidden="false">
-                  <description>Valkyrie Assault Troops, Mercury Scout Drones, Janus Scout Walkers, and Hermes Disruption Walkers may not be included in an army with Marcus Barros.
-
-</description>
+                  <description>Valkyrie Assault Troops, Mercury Scout Drones, Janus Scout Walkers, and Hermes Disruption Walkers may not be included in an army with Marcus Barros.</description>
                 </rule>
                 <rule name="Benefit" id="aabb-69ad-0d16-c818" hidden="false">
                   <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades, Persephone, Bellona) can enter play via Drop Harness. Type-4 Walkers deploying this way follow the same rules as Behemoths using Drop Harness with a spread of 2” and a single Zone. Type-4 Walkers arriving this way may activate in the same round as if they had not arrived by Drop Harness. This benefit persists even if Marcus Barros has
-been destroyed.
-
-</description>
+been destroyed.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -295,12 +291,12 @@ been destroyed.
                 <profile name="Medusa" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="51c7-74a5-9db8-94a2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+4</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">6</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">10</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+4</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">6</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">10</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Rare, Resilient</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -332,15 +328,6 @@ been destroyed.
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="079f-33ae-cdd6-a6bc"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f01-19b1-427f-fc93"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="bed2-784a-7f1e-bffb" type="selectionEntry" targetId="193c-b0e6-c33e-673f">
-                  <modifiers>
-                    <modifier type="set" value="0" field="points"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c044-5b9c-9915-3976"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c31-5334-a5ca-ec60"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -377,11 +364,12 @@ been destroyed.
                 <profile name="Ares Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6676-c30a-7399-3abb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -420,11 +408,12 @@ been destroyed.
                 <profile name="Phobos AA Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1efd-fa5f-1642-9dc9">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -458,11 +447,12 @@ been destroyed.
                 <profile name="Menchit Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a1c4-7159-ad0f-66a2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -499,14 +489,16 @@ been destroyed.
                 </rule>
               </rules>
               <profiles>
-                <profile name="Angelos Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="25bd-05c0-3974-f003">
+                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="25bd-05c0-3974-f003">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">1 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -539,11 +531,12 @@ been destroyed.
                 <profile name="Diana Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="951b-c47f-b5dc-1529">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -580,11 +573,12 @@ been destroyed.
                 <profile name="Immortals" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="608f-16c4-32d8-0561">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -617,11 +611,12 @@ been destroyed.
                 <profile name="Longreach Snipers" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4c54-0e6e-5a04-548b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+3</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">8</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -664,14 +659,16 @@ been destroyed.
                 </rule>
               </rules>
               <profiles>
-                <profile name="Angelos Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="42f4-faeb-1295-9400">
+                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="42f4-faeb-1295-9400">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">1 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -701,14 +698,16 @@ been destroyed.
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3221-3a3d-6f80-82e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Juno APC" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7246-4f50-7984-34b4">
+                <profile name="Juno APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="7246-4f50-7984-34b4">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -738,14 +737,15 @@ been destroyed.
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a951-9c76-887a-6428" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Neptune Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="c928-1012-39aa-c2bd">
+                <profile name="Neptune Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="c928-1012-39aa-c2bd">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -782,11 +782,12 @@ been destroyed.
                 <profile name="Njord Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3ada-2719-371d-59a3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -819,11 +820,12 @@ been destroyed.
                 <profile name="Poseidon Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e70c-148c-2e14-9723">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -850,18 +852,19 @@ been destroyed.
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dfd-277c-01ba-151d" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Triton 1st Weapon Selection" hidden="false" id="bf74-2026-a8e0-d075" type="selectionEntryGroup" targetId="e9aa-dc21-0155-1106"/>
-                <entryLink import="true" name="Triton 2nd Weapon Selection" hidden="false" id="4d00-eb9a-a807-ad38" type="selectionEntryGroup" targetId="3358-10ae-358d-2165"/>
+                <entryLink import="true" name="Triton Under-Wing Weapon Selection" hidden="false" id="bf74-2026-a8e0-d075" type="selectionEntryGroup" targetId="e9aa-dc21-0155-1106"/>
+                <entryLink import="true" name="Triton Over-Wing Weapon Selection" hidden="false" id="4d00-eb9a-a807-ad38" type="selectionEntryGroup" targetId="3358-10ae-358d-2165"/>
               </entryLinks>
               <profiles>
                 <profile name="Triton Light Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="29b0-1f6e-f82c-3fce">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Drone</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -888,18 +891,19 @@ been destroyed.
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5446-464b-fe71-8452" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Triton 1st Weapon Selection" hidden="false" id="3cf9-ad5a-67c7-076c" type="selectionEntryGroup" targetId="e9aa-dc21-0155-1106"/>
-                <entryLink import="true" name="Triton 2nd Weapon Selection" hidden="false" id="ddf7-2a96-00c3-ab09" type="selectionEntryGroup" targetId="3358-10ae-358d-2165"/>
+                <entryLink import="true" name="Triton Under-Wing Weapon Selection" hidden="false" id="3cf9-ad5a-67c7-076c" type="selectionEntryGroup" targetId="e9aa-dc21-0155-1106"/>
+                <entryLink import="true" name="Triton Over-Wing Weapon Selection" hidden="false" id="ddf7-2a96-00c3-ab09" type="selectionEntryGroup" targetId="3358-10ae-358d-2165"/>
               </entryLinks>
               <profiles>
                 <profile name="Triton Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ef02-0471-8edd-9d84">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -958,12 +962,12 @@ been destroyed.
                 </modifierGroup>
               </modifierGroups>
               <profiles>
-                <profile name="Athena Air Superiority Fighter" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="af08-5a8f-33f3-cb60">
+                <profile name="Athena Air Superiority Fighter" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="af08-5a8f-33f3-cb60">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-48&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
                   </characteristics>
@@ -1000,12 +1004,12 @@ been destroyed.
                 <entryLink import="true" name="Huntsman Cluster" hidden="false" id="4652-cd9b-5323-6dda" type="selectionEntry" targetId="9f27-9881-fbd4-3f05"/>
               </entryLinks>
               <profiles>
-                <profile name="Hecate Target Support Craft" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d518-b1e6-6c37-e444">
+                <profile name="Hecate Target Support Craft" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="d518-b1e6-6c37-e444">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rare</characteristic>
                   </characteristics>
@@ -1071,14 +1075,16 @@ been destroyed.
                 <entryLink import="true" name="Light Railgun Pair" hidden="false" id="045e-34f7-e4b9-8af0" type="selectionEntry" targetId="ac44-7ae7-0387-dff5"/>
               </entryLinks>
               <profiles>
-                <profile name="Atlas Bulk Personnel Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="78e1-0188-628d-a826">
+                <profile name="Atlas Bulk Personnel Walker" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="78e1-0188-628d-a826">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1401,11 +1407,12 @@ If a Porphyrion Grand Walker is destroyed, remove squads of Venus Light Drones 
                 <profile name="Valkyrie Assault Troops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f97e-8321-20a3-5a31">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+3</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">7</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 5+, Rapid Insertion 0&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1479,11 +1486,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Mercury Scout Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3e3a-3f8d-df53-31f3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1532,6 +1540,19 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8ac6-3c25-c18a-fcb5" includeChildSelections="false"/>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9edc-49b4-77d8-a8e6" includeChildSelections="false"/>
               </constraints>
+              <profiles>
+                <profile name="Janus Scout Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b93f-16a7-55a9-3993">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <modifierGroups>
@@ -1563,11 +1584,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Hermes Disruption Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5455-97e1-c9b8-a170">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1645,11 +1667,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Helios Support Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="dc8e-f7fb-e1f5-c0e1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1677,11 +1700,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Taranis Artillery Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4985-39e0-6fed-c3aa">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1725,11 +1749,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Apollo Strike Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="eef7-ec74-03de-7b03">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1765,11 +1790,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Apollo Strike Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="08c8-76d9-9881-8400">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1800,11 +1826,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Persephone Hive Scorpion" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9b39-b7ef-8d4c-5d39">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">8</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">8</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1846,11 +1873,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Aurora Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aa09-e8dc-82a0-400f">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1880,12 +1908,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0ff-c2f3-b469-16b6" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Luna Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4c27-5dc7-b62b-d8a9">
+                <profile name="Luna Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="4c27-5dc7-b62b-d8a9">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">12</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
@@ -1925,20 +1953,17 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Medusa" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1c9c-763f-a50a-c8bf">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">E+4</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">6</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">10</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+4</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">6</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">10</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Rare, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Dodge-X" id="9765-dad9-f1b6-4ac7" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c">
-                  <modifiers>
-                    <modifier type="set" value="Dodge 4+" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Dodge-X" id="9765-dad9-f1b6-4ac7" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
                 <infoLink name="Rare" id="9fa5-89eb-c654-d27d" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
                 <infoLink name="Resilient" id="1115-993e-9b8a-e56d" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
                 <infoLink name="White Nanomachines" id="a4eb-abd5-83be-f1db" hidden="false" type="rule" targetId="24c0-9d89-d770-bfcb"/>
@@ -1980,26 +2005,19 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <entryLink import="true" name="Autosensing &amp; Assault Magnums" hidden="false" id="ea54-d889-e0ec-bfda" type="selectionEntry" targetId="ea14-4ac4-2b15-1e2f"/>
               </entryLinks>
               <infoLinks>
-                <infoLink name="Dodge-X" id="e6b4-142f-f5e1-b2bc" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c">
-                  <modifiers>
-                    <modifier type="set" value="Dodge 2+" field="name"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink name="Rapid Insertion-X" id="acb4-d92a-4f84-1721" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
-                  <modifiers>
-                    <modifier type="set" value="Rapid Insertion 6&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Dodge-X" id="e6b4-142f-f5e1-b2bc" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+                <infoLink name="Rapid Insertion-X" id="acb4-d92a-4f84-1721" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
               </infoLinks>
               <profiles>
                 <profile name="Siren Corps" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aacb-2ddf-3641-a282">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">-</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">6</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">6</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 2+, Rapid Insertion 6&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2033,11 +2051,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Odin Heavy Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="314d-16cc-1732-e84e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P+5</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2079,11 +2098,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Zeus Guardian Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="55e4-85d3-3d79-9c7d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">15</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2118,11 +2138,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Hades Scorpion" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9103-f9fd-ba5b-f5c2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">8</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">8</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Rare, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2160,12 +2181,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cda-82b2-6efe-7fb0" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Tiamat Ordnance Ship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="930f-74f0-742e-2ffe">
+                <profile name="Tiamat Ordnance Ship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="930f-74f0-742e-2ffe">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
@@ -2205,11 +2226,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Bellona Ordnance Scorpion" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0b6e-3742-6594-4330">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">8</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">8</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2248,11 +2270,12 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <profile name="Lokheira Bulk Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b375-3b6e-57de-ec2b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4590,7 +4613,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Triton 1st Weapon Selection" id="e9aa-dc21-0155-1106" hidden="false" collective="true">
+    <selectionEntryGroup name="Triton Under-Wing Weapon Selection" id="e9aa-dc21-0155-1106" hidden="false" collective="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d6-cbf4-38f4-452d" includeChildSelections="false"/>
       </constraints>
@@ -4666,7 +4689,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Triton 2nd Weapon Selection" id="3358-10ae-358d-2165" hidden="false" collective="true">
+    <selectionEntryGroup name="Triton Over-Wing Weapon Selection" id="3358-10ae-358d-2165" hidden="false" collective="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9761-ad83-98cc-e04e" includeChildSelections="false"/>
       </constraints>
