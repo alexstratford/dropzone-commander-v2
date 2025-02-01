@@ -1659,6 +1659,17 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">8&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="10&quot;" field="5.261646975732324e+31"/>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5927-42f9-2ef6-e050" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1693,6 +1704,17 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">16&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">95</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="8&quot;" field="5.261646975732324e+31"/>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1ee1-3b9e-13a4-1db0" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1710,6 +1732,17 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">20&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">125</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="5.261646975732324e+31"/>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a335-ee7d-fcd5-dd2d" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>

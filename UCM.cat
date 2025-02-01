@@ -1641,6 +1641,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <selectionEntry type="model" import="true" name="Wolf Command LAV" hidden="false" id="6209-b46b-507d-1a01">
               <entryLinks>
                 <entryLink import="true" name="Wolf Missiles" hidden="false" id="18a6-31be-550a-d4e6" type="selectionEntry" targetId="ebb6-06dd-d92d-43b0"/>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="70d9-4a30-766a-8c4a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="667b-712a-9376-116f" includeChildSelections="false"/>
@@ -1723,6 +1724,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="006b-11d0-5d27-e17d" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="e9dd-4158-d55f-cb19" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
               </entryLinks>
               <profiles>
                 <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ba99-7e1a-4350-cc38">
@@ -1776,6 +1778,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="AA Battery" hidden="false" id="ec1c-a754-e47a-2564" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
                 <entryLink import="true" name="Minigun Triad" hidden="false" id="8f49-9639-9402-d034" type="selectionEntry" targetId="e2e7-cf48-e7af-2d71"/>
                 <entryLink import="true" name="Missile Battery" hidden="false" id="9fd8-5b68-f22d-8387" type="selectionEntry" targetId="e996-2caa-d321-d3f4"/>
+                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="213b-69f7-feec-0505" type="selectionEntry" targetId="425b-ba23-208f-1d7e"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="de62-dcd3-a9ef-e4be" includeChildSelections="false"/>
