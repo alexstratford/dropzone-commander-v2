@@ -1626,7 +1626,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false">
+    <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1636,6 +1636,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">4&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">0</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1644,12 +1654,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="2516-18f9-0553-88f8" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ae-d5e0-8412-a8d0"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="92ae-d5e0-8412-a8d0"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1668,6 +1682,24 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5927-42f9-2ef6-e050" shared="true"/>
                   </conditions>
+                  <comment>Oriana Nueva</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6381-5112-4217-8c4d" shared="true"/>
+                  </conditions>
+                  <comment>Seti the Kinslayer</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -1678,6 +1710,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="f01f-0533-4c0a-f6ca" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1687,6 +1729,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">12&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">65</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1695,6 +1747,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="50ec-b7d4-d1fe-094c" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1708,10 +1770,27 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="8&quot;" field="5.261646975732324e+31"/>
-                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
                   </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1ee1-3b9e-13a4-1db0" shared="true"/>
+                  </conditions>
+                  <comment>Stheno</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Apep</comment>
+                  <modifiers>
+                    <modifier type="set" value="4&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ee17-3d29-95aa-3135" shared="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1723,6 +1802,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="364d-b429-a25f-c5ff" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1736,10 +1825,17 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="set" value="18&quot;" field="5.261646975732324e+31"/>
-                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
                   </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a335-ee7d-fcd5-dd2d" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1751,6 +1847,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="26ab-fe23-d012-bbe1" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9">
           <profiles>
@@ -1760,6 +1866,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">24&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">155</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1768,6 +1884,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="d576-82a9-f874-8d2d" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>

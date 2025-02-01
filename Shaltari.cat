@@ -199,6 +199,136 @@
             <categoryLink name="Command" hidden="false" id="d36b-bf88-6c41-3bc1" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Seti the Kinslayer - Frostdrake Command Ship" hidden="false" id="6381-5112-4217-8c4d">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Frostdrake Command Ship" hidden="false" id="feb1-7920-72e1-ac01">
+              <costs>
+                <cost name="pts" typeId="points" value="160"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Frostdrake Command Ship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="6e9f-f605-b174-2e00">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+, E+3</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd16-1b25-7d3f-5052" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24c8-1575-32d8-dec5" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Foe Crusher Cannon" hidden="false" id="f013-3bb8-c363-7edd" type="selectionEntry" targetId="4b42-e525-b383-a3be" sortIndex="1"/>
+                <entryLink import="true" name="Disruption Cannon" hidden="false" id="797d-47e8-8c38-2663" type="selectionEntry" targetId="1680-e43c-db2c-0f15" sortIndex="2"/>
+                <entryLink import="true" name="Dragon Cannon" hidden="false" id="d2a0-57b5-844c-28e9" type="selectionEntry" targetId="4e06-cfd3-c2c2-549d" sortIndex="3"/>
+                <entryLink import="true" name="Commander (CV 2)" hidden="false" id="4e5b-bc76-be21-7897" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f264-2247-f84e-cd3e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fd-49a9-dbac-4f73" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <rules>
+                <rule name="Benefit" id="10c3-fa31-4646-dfac" hidden="false">
+                  <description>Friendly Infantry may choose either pass or fail their Fortitude tests.</description>
+                </rule>
+                <rule name="Detriment" id="c0c2-a8ef-5ebf-76a8" hidden="false">
+                  <description>Your area weapons that glance the target deal their damage only to friendly units under that template, with the shot suffering -2 Energy instead of following the normal rules.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="806f-e593-4034-2d03" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="53b3-250a-f258-3d42" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2fa-f5a2-41fb-aa16" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Akhenten the Mad - Daimyo Battlesuit " hidden="false" id="9694-589b-0e58-d70c">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="14f2-c7e8-89f1-6da6" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Infantry" hidden="false" id="adb1-3c38-07ec-7ed3" targetId="4416-02b4-a45b-07f0" primary="false"/>
+            <categoryLink name="Famous Commander" hidden="false" id="0ea3-3491-7e18-ea8c" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Daimyo Battlesuit" hidden="false" id="cb7b-4841-bb76-23b6" defaultAmount="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="160"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="658d-94c0-bcc4-70e6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6466-64d4-c5a9-e6fe" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Resilient" id="0424-8d8b-597a-8ecc" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Command Centre" id="a546-3120-c25c-7988" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                <infoLink name="Warsuit" id="c847-27df-0070-e54f" hidden="false" type="rule" targetId="78ab-d7d9-dfe8-de1e"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Spider Web Projector" hidden="false" id="6ca1-092e-3f32-721e" type="selectionEntry" targetId="b07e-7424-93ae-cee3"/>
+                <entryLink import="true" name="Commander (CV 2)" hidden="false" id="55d5-6abb-f709-e4f1" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a649-cd8d-6fe9-2b68" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39a7-28c3-c353-df2b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <rules>
+                <rule name="Warband" id="83ec-eedb-3b92-7f2c" hidden="false">
+                  <description>At the start of the game, before deployment,this unit may join any other squad of Shaltari Infantry. For all purposes it is treated as part of their squad and battlegroup, taking on their category too (although a Commander may still be mounted in it due to the Command Centre special rule).</description>
+                </rule>
+                <rule name="Nano Gateway" id="b825-073e-a43c-f58a" hidden="false">
+                  <description>Instead of making a Moving action, this squad may immediately go into Holding. Any held objectives are dropped before this squad is put into holding.</description>
+                </rule>
+                <rule name="Benefit" id="5d1c-9677-c02b-32e8" hidden="false">
+                  <description>Friendly Infantry squads ignore Defender’s Advantage.</description>
+                </rule>
+                <rule name="Detriment" id="55ae-2e04-792f-5932" hidden="false">
+                  <description>Units with the category of Scout or Exotic cannot be included in an army with Akhenten the Mad.</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Daimyo Battlesuit" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7dfd-66a3-3c95-9500">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre, Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warband Selection" hidden="true" id="4f37-4e1b-9af8-b938" collective="true" defaultAmount="1">
+              <associations>
+                <association min="1" max="1" scope="force" childId="unit" name="Warband" id="3d60-f2a9-443f-1e35" includeChildSelections="true" includeChildForces="true"/>
+              </associations>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f52-b140-8223-9e7b" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exotic" hidden="false" id="2f71-1a37-1e5e-11d7" subType="unit-group">
@@ -1089,6 +1219,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
             <infoLink name="Alt-X" id="41f7-dd51-5bcf-c44b" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
             <infoLink name="Devastator-X" id="f2b2-7d31-d96c-d53f" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
+          <comment>Walker</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sonic Cannon" hidden="false" id="eb0f-39e1-e1d9-4fba" collective="true">
           <constraints>
@@ -1201,6 +1332,102 @@ Remember: always ask your opponent to move their own miniatures!</description>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d51-b070-b549-edc5" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="456a-c830-b7cc-5b20" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Spider Web Projector" hidden="false" id="b07e-7424-93ae-cee3" collective="true">
+          <profiles>
+            <profile name="Web Projector" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="37ec-f2a8-5c42-8a6c">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reduced-X" id="d95c-7deb-15c9-edcd" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32c0-4cf6-820d-221e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9560-e1be-14e8-7949" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Spider Web Projector" id="7edb-0ec2-c139-0103" hidden="false">
+              <description>When this weapon damages a vehicle with the Type Aircraft, you may force that Aircraft to either land, take off, or force any infantry it is transporting to disembark if it is already landed. That unit cannot land or take off during its next activation.
+
+</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Particle Cannon" hidden="false" id="ca8c-8778-f2bc-5298" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f8a-700d-c452-a5a5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f14-b6d1-8bba-0e62" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="High Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="be64-527d-54b1-2973">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (All), Devastator-4 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Low Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="219f-c1db-74da-90ab">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Particle Cannon" id="0e98-6065-79d8-f90a" hidden="false" type="rule" targetId="6843-73d2-6b57-5cc4"/>
+            <infoLink name="Alt-X" id="bf20-6744-d16f-89ad" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Devastator-X" id="c59d-a176-aeff-963f" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <comment>Gravtank</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Godeater Particle Cannon " hidden="false" id="4d3f-6b92-111e-da48" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6698-534d-6204-5e03" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e26-ec00-3c64-0bbe" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="High Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="81f1-d72d-10c6-80c5">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-4 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="c99b-a610-6d8b-2a38" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <rules>
+            <rule name="Godeater Particle Cannon" id="c1f1-5ae3-15a4-8919" hidden="false">
+              <description>This weapon ignores Evasion and Passive Countermeasures. Additionally, when firing this weapon at a Behemoth, it always causes 1 additional point of damage (even if it fails to hit).</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1786,6 +2013,9 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0efc-0ead-a71a-da50" includeChildSelections="false"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0dba-216d-6297-9826" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Particle Cannon" hidden="false" id="dc70-2b7d-c6e7-7951" type="selectionEntry" targetId="ca8c-8778-f2bc-5298"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2693,6 +2923,52 @@ activation. Skimmers increase this bonus to +6”.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="ee17-3d29-95aa-3135">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="71dc-020f-4bf2-8612">
+          <profiles>
+            <profile name="Crocodile Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2684-be6d-0f83-4dcf">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="240"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e39e-6f59-c734-c06c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="947a-dc60-46ef-4a33" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Godeater Particle Cannon " hidden="false" id="9e85-76fc-9d7f-8a04" type="selectionEntry" targetId="4d3f-6b92-111e-da48"/>
+            <entryLink import="true" name="Commander (CV 4)" hidden="false" id="048b-7a74-7cf7-105a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Command Centre" id="e4b0-6cad-dccb-1eb9" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b9fe-b6e1-3716-8d88" id="e3fe-b191-a929-3f65" primary="false" name="Famous Commander"/>
+        <categoryLink targetId="ed7f-0593-2e55-430d" id="2d7b-7573-fb50-7ee5" primary="true" name="Command"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a40d-f21e-cff7-dcd0" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
@@ -2755,6 +3031,8 @@ activation. Skimmers increase this bonus to +6”.</description>
     <entryLink import="true" name="Zion Gatespire" hidden="false" id="d1d7-07a1-f307-02a7" targetId="6c20-2fb4-5b08-db0b" type="selectionEntry"/>
     <entryLink import="true" name="Obelisk Ionspire" hidden="false" id="cb2d-9c4e-8533-3334" targetId="b9a3-a34a-fe16-3c98" type="selectionEntry"/>
     <entryLink import="true" name="Totem Shieldspire" hidden="false" id="e3f6-73f9-426c-e03d" targetId="b550-916c-7b8a-0b49" type="selectionEntry"/>
+    <entryLink import="true" name="Seti the Kinslayer - Frostdrake Command Ship" hidden="false" id="9815-2fda-452f-15c8" targetId="6381-5112-4217-8c4d" type="selectionEntry"/>
+    <entryLink import="true" name="Akhenten the Mad - Daimyo Battlesuit " hidden="false" id="19a1-51e7-299f-122a" targetId="9694-589b-0e58-d70c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">

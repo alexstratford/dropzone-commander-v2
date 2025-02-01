@@ -150,6 +150,7 @@
         <selectionEntry type="unit" import="true" name="Marcus Barros - Nemesis Control Scorpion " hidden="false" id="a335-ee7d-fcd5-dd2d">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="61bf-4a1b-522d-88e3" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink targetId="b9fe-b6e1-3716-8d88" id="ad43-aae7-9a17-b6a9" primary="false" name="Famous Commander"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Nemesis Control Scorpion" hidden="false" id="67f7-c9c7-1d43-b372" collective="true">
@@ -166,12 +167,9 @@
                 <entryLink import="true" name="Nemesis Laser" hidden="false" id="63f4-5a1e-9896-a685" type="selectionEntry" targetId="a5b3-46ff-a410-8409"/>
                 <entryLink import="true" name="Light Railgun" hidden="false" id="3c16-7d2c-bdd5-24f9" type="selectionEntry" targetId="dfbb-21ba-4ae8-6953"/>
                 <entryLink import="true" name="Commander (CV 5)" hidden="false" id="9516-69c0-4eb3-f4ed" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
-                  <modifiers>
-                    <modifier type="set" value="0" field="points"/>
-                  </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a467-fbc0-b749-0391"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eecf-d00c-5e8f-2c40"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ffb-2792-7e6a-bd7d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be22-a347-608d-dd43" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -214,6 +212,7 @@ been destroyed.</description>
         <selectionEntry type="unit" import="true" name="Oriana Nueva - Proteus Mobile Command Post" hidden="false" id="5927-42f9-2ef6-e050">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="14f9-cfe2-36cd-523f" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink targetId="b9fe-b6e1-3716-8d88" id="3a45-2340-a181-a9c4" primary="false" name="Famous Commander"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Proteus Mobile Command Post" hidden="false" id="8181-3ab9-24e2-1c83" collective="true">
@@ -228,12 +227,9 @@ been destroyed.</description>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Commander (CV 2)" hidden="false" id="8b40-4cc8-6c01-2467" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f">
-                  <modifiers>
-                    <modifier type="set" value="0" field="points"/>
-                  </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec5e-5b83-8528-0534"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-cc36-5721-6732"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b33-d67b-f711-2d54" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f790-2cd1-bbfc-17b3" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Orbital Shot" hidden="false" id="f44d-abe7-3c8c-dd11" type="selectionEntry" targetId="0b7d-70db-ebdb-f8a1"/>
@@ -271,6 +267,7 @@ been destroyed.</description>
         <selectionEntry type="unit" import="true" name="Stheno, Medusa Matriarch - Medusa " hidden="false" id="1ee1-3b9e-13a4-1db0">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="41ab-9e8f-a2b5-851b" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink targetId="b9fe-b6e1-3716-8d88" id="ee4b-a7f1-f5a0-8f68" primary="false" name="Famous Commander"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="4477-2995-1e70-267b" collective="true">
@@ -322,12 +319,9 @@ been destroyed.</description>
               </rules>
               <entryLinks>
                 <entryLink import="true" name="Commander (CV 4)" hidden="false" id="624a-cca2-539e-a939" type="selectionEntry" targetId="193c-b0e6-c33e-673f">
-                  <modifiers>
-                    <modifier type="set" value="0" field="points"/>
-                  </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="079f-33ae-cdd6-a6bc"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f01-19b1-427f-fc93"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0a8-db71-56ea-52d3" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67cc-f639-5c4a-dbce" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
