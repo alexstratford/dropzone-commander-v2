@@ -522,7 +522,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="1a25-ff9c-c33d-9ea5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -622,7 +630,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="40c3-4ddf-9496-cdba">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -722,7 +738,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="4bce-8379-42b0-398a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -822,7 +846,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="f3b4-8464-2135-9164">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -1641,7 +1673,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
     </selectionEntryGroup>
     <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1" sortIndex="1">
           <profiles>
             <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1678,7 +1710,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="2">
           <profiles>
             <profile name="Commander (CV 2)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="4de3-21cc-7321-e28b" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1734,7 +1766,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="3">
           <profiles>
             <profile name="Commander (CV 3)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="010d-0e07-7482-a80a" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1779,7 +1811,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="4">
           <profiles>
             <profile name="Commander (CV 4)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="901c-9dca-dcd2-3cfb" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1834,7 +1866,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="5">
           <profiles>
             <profile name="Commander (CV 5)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="1922-aeda-0451-ebc5" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1887,7 +1919,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="6">
           <profiles>
             <profile name="Commander (CV 6)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="e778-2aa4-a7cd-1442" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
