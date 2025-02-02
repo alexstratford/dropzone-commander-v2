@@ -329,6 +329,52 @@
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f52-b140-8223-9e7b" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="ee17-3d29-95aa-3135">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="71dc-020f-4bf2-8612">
+              <profiles>
+                <profile name="Crocodile Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2684-be6d-0f83-4dcf">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="240"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e39e-6f59-c734-c06c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="947a-dc60-46ef-4a33" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Godeater Particle Cannon " hidden="false" id="9e85-76fc-9d7f-8a04" type="selectionEntry" targetId="4d3f-6b92-111e-da48"/>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="048b-7a74-7cf7-105a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Command Centre" id="e4b0-6cad-dccb-1eb9" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="e3fe-b191-a929-3f65" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Command" hidden="false" id="2d7b-7573-fb50-7ee5" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a40d-f21e-cff7-dcd0" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exotic" hidden="false" id="2f71-1a37-1e5e-11d7" subType="unit-group">
@@ -1357,9 +1403,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
           </constraints>
           <rules>
             <rule name="Spider Web Projector" id="7edb-0ec2-c139-0103" hidden="false">
-              <description>When this weapon damages a vehicle with the Type Aircraft, you may force that Aircraft to either land, take off, or force any infantry it is transporting to disembark if it is already landed. That unit cannot land or take off during its next activation.
-
-</description>
+              <description>When this weapon damages a vehicle with the Type Aircraft, you may force that Aircraft to either land, take off, or force any infantry it is transporting to disembark if it is already landed. That unit cannot land or take off during its next activation.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2923,51 +2967,288 @@ activation. Skimmers increase this bonus to +6”.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="ee17-3d29-95aa-3135">
+    <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="642f-df50-1eb1-3b2a">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="71dc-020f-4bf2-8612">
+        <selectionEntry type="unit" import="true" name="Lion Siegestrider" hidden="false" id="c465-e029-c4aa-df0b">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="7c43-9ad1-3ab6-e112" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Lion Siegestrider" hidden="false" id="1366-587e-bcd3-c95f">
+              <entryLinks>
+                <entryLink import="true" name="Shaltari Light Behemoth" hidden="false" id="27e7-a2fe-b8c4-0770" type="selectionEntry" targetId="d032-4438-cb2e-e78b"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df82-d692-e3c2-5276" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d060-b1ce-ba79-8184" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="300"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Tiger Siegestrider" hidden="false" id="732e-5c9f-11bf-2bcf">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="a034-d518-c98b-e365" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Tiger Siegestrider" hidden="false" id="6094-2625-200b-d3c9">
+              <entryLinks>
+                <entryLink import="true" name="Shaltari Light Behemoth" hidden="false" id="c135-075c-c9ce-a5ed" type="selectionEntry" targetId="d032-4438-cb2e-e78b"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6745-4e36-3316-baff" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b01-37b9-4515-9101" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="280"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shaltari Light Behemoth" hidden="false" id="d032-4438-cb2e-e78b">
           <profiles>
-            <profile name="Crocodile Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2684-be6d-0f83-4dcf">
+            <profile name="Lion Siegestrider" typeId="60a8-4d72-41c9-086a" typeName="Shaltari Light Weapons" hidden="true" id="c908-5f9f-1791-ad53">
               <characteristics>
-                <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
-                <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
-                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
-                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
-                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">8</characteristic>
+                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">Transmatter Beam cannot be used for the rest of the game. This unit
+loses all of its transport capacity</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c465-e029-c4aa-df0b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="Shaltari Light Hull" hidden="false" id="8bc5-0c6a-f175-7f90">
+              <characteristics>
+                <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">4</characteristic>
+                <characteristic name="Hull" typeId="5017-428f-8ea3-94b4">4</characteristic>
+                <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit increases its Passive Countermeasures by 1 (5+ becomes 6+ etc)</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Lion Siegestrider" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c465-e029-c4aa-df0b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Tiger Siegestrider" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="732e-5c9f-11bf-2bcf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="Shaltari Light Legs" hidden="false" id="870b-1e23-0680-d11b">
+              <characteristics>
+                <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">4</characteristic>
+                <characteristic name="Legs" typeId="642a-6a40-14dc-8266">4</characteristic>
+                <characteristic name="Crippled Result" typeId="0b0a-b8da-9bac-d225">This unit reduces its Move by 4”</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Lion Siegestrider" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c465-e029-c4aa-df0b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Tiger Siegestrider" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="732e-5c9f-11bf-2bcf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Tiger Siegestrider" typeId="4ec1-337e-b89e-7b2a" typeName="Shaltari Light Weapons" hidden="true" id="c950-372c-c138-f298">
+              <characteristics>
+                <characteristic name="Weapons" typeId="93dd-7e8b-348c-b925">4</characteristic>
+                <characteristic name="Weapons" typeId="c0b2-a9c3-00e1-5352">4</characteristic>
+                <characteristic name="Crippled Result" typeId="fd8c-9edf-f781-8fab">One weapon cannot be used for the rest of the game</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Tiger Siegestrider" field="name"/>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="732e-5c9f-11bf-2bcf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="240"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-          </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e39e-6f59-c734-c06c" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="947a-dc60-46ef-4a33" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0437-86c6-30fa-be05" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbbd-b94a-fead-541a" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Godeater Particle Cannon " hidden="false" id="9e85-76fc-9d7f-8a04" type="selectionEntry" targetId="4d3f-6b92-111e-da48"/>
-            <entryLink import="true" name="Commander (CV 4)" hidden="false" id="048b-7a74-7cf7-105a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Command Centre" id="e4b0-6cad-dccb-1eb9" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
-          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shaltari Heavy Behemoth" hidden="false" id="c64c-f5b4-9fd3-f63f">
+          <profiles>
+            <profile name="Heavy Battle-Mech" typeId="92bd-be74-95c9-05cf" typeName="Shaltari Heavy Weapons" hidden="false" id="fe10-44c9-83e0-34ba">
+              <characteristics>
+                <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">8</characteristic>
+                <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f">Transmatter Beam cannot be used for the rest of the game. This unit
+loses all of its transport capacity</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Celestial Dragon" field="name"/>
+                    <modifier type="set" value="Both High Power Particle Triad and Low Power Particle Triad cannot be
+used for the rest of the game." field="f7f9-ca6b-8689-452f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5ce0-ef77-6d51-ee29" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Earth Dragon" field="name"/>
+                    <modifier type="set" value="Super Disruption Cannon cannot be used for the rest of the the game." field="f7f9-ca6b-8689-452f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6c42-be3c-3013-8c30" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Heavy Battle-Mech" typeId="a930-add9-74a3-1505" typeName="Shaltari Heavy Hull" hidden="false" id="90a1-41d2-d2eb-9ad1">
+              <characteristics>
+                <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">4</characteristic>
+                <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">4</characteristic>
+				<characteristic name="Hull" typeId="8913-0430-9c3c-b4eb">4</characteristic>
+                <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit increases its Passive Countermeasures by 1 (4+ becomes 5+ etc)</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Celestial Dragon" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5ce0-ef77-6d51-ee29" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Earth Dragon" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6c42-be3c-3013-8c30" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Heavy Battle-Mech" typeId="a04f-0090-a3a5-b2c3" typeName="Shaltari Heavy Legs" hidden="false" id="d962-364b-e52d-986e">
+              <characteristics>
+                <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee">3</characteristic>
+                <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15">3</characteristic>
+                <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa">3</characteristic>
+                <characteristic name="Legs" typeId="5934-9162-fa2b-2f7e">3</characteristic>
+                <characteristic name="Crippled Result" typeId="4c84-cf9c-f038-5951">Reduce Gauss Destroyers Strafe value by 1.
+Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the rest of the game.</characteristic>
+                <characteristic name="Legs" typeId="db37-71be-6bef-0522">3</characteristic>
+                <characteristic name="Legs" typeId="1ffb-ca67-9b06-4711">3</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Celestial Dragon" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5ce0-ef77-6d51-ee29" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Earth Dragon" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6c42-be3c-3013-8c30" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9897-083a-6a2d-8f11" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="424a-23f5-b90c-7b37" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Earth Dragon" hidden="false" id="6c42-be3c-3013-8c30">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Earth Dragon" hidden="false" id="ec4c-073c-8179-4e1b">
+              <entryLinks>
+                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="1e1a-12e6-87ee-5bff" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1a7-5fa9-dc98-7261" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15c-a606-a0a7-171a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="500"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Celestial Dragon" hidden="false" id="5ce0-ef77-6d51-ee29">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Celestial Dragon" hidden="false" id="4ba8-1824-dd7b-d105">
+              <entryLinks>
+                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="55e0-9530-3fa6-ce15" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f91b-eea5-fc3d-2bbb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a954-5508-6ec9-451f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="500"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="b9fe-b6e1-3716-8d88" id="e3fe-b191-a929-3f65" primary="false" name="Famous Commander"/>
-        <categoryLink targetId="ed7f-0593-2e55-430d" id="2d7b-7573-fb50-7ee5" primary="true" name="Command"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a40d-f21e-cff7-dcd0" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -3033,6 +3314,10 @@ activation. Skimmers increase this bonus to +6”.</description>
     <entryLink import="true" name="Totem Shieldspire" hidden="false" id="e3f6-73f9-426c-e03d" targetId="b550-916c-7b8a-0b49" type="selectionEntry"/>
     <entryLink import="true" name="Seti the Kinslayer - Frostdrake Command Ship" hidden="false" id="9815-2fda-452f-15c8" targetId="6381-5112-4217-8c4d" type="selectionEntry"/>
     <entryLink import="true" name="Akhenten the Mad - Daimyo Battlesuit " hidden="false" id="19a1-51e7-299f-122a" targetId="9694-589b-0e58-d70c" type="selectionEntry"/>
+    <entryLink import="true" name="Lion Siegestrider" hidden="false" id="1263-8b92-92d9-5469" targetId="c465-e029-c4aa-df0b" type="selectionEntry"/>
+    <entryLink import="true" name="Tiger Siegestrider" hidden="false" id="a4a2-4272-9f83-76ed" targetId="732e-5c9f-11bf-2bcf" type="selectionEntry"/>
+    <entryLink import="true" name="Earth Dragon" hidden="false" id="b2e9-f5d2-1138-caa9" targetId="6c42-be3c-3013-8c30" type="selectionEntry"/>
+    <entryLink import="true" name="Celestial Dragon" hidden="false" id="fe1f-77f7-2379-786d" targetId="5ce0-ef77-6d51-ee29" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -3402,4 +3687,63 @@ activation. Skimmers increase this bonus to +6”.</description>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <profileTypes>
+    <profileType name="Shaltari Light Hull" id="1f6a-0300-e145-f89c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Hull" id="8811-54e4-a9bb-90ce"/>
+        <characteristicType name="Hull" id="5017-428f-8ea3-94b4"/>
+        <characteristicType name="Crippled Result" id="33c7-dfa1-0364-1fda"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Shaltari Light Legs" id="c969-b6ba-a3e6-b344" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Legs" id="4f27-2432-cb23-2fd0"/>
+        <characteristicType name="Legs" id="642a-6a40-14dc-8266"/>
+        <characteristicType name="Crippled Result" id="0b0a-b8da-9bac-d225"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Shaltari Light Weapons" id="60a8-4d72-41c9-086a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="4ebe-421e-14d3-1fb7"/>
+        <characteristicType name="Crippled Result" id="92cf-1405-30aa-be7c"/>
+      </characteristicTypes>
+      <comment>Lion</comment>
+    </profileType>
+    <profileType name="Shaltari Heavy Hull" id="a930-add9-74a3-1505" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Hull" id="bfa5-72bc-fcaf-8f30"/>
+        <characteristicType name="Hull" id="b6f8-1b58-bc2f-e84e"/>
+        <characteristicType name="Hull" id="8913-0430-9c3c-b4eb"/>
+		<characteristicType name="Crippled Result" id="6129-0fa5-4c85-3e7c"/>
+      </characteristicTypes>
+      <comment>Shaltari Heavy</comment>
+    </profileType>
+    <profileType name="Shaltari Heavy Legs" id="a04f-0090-a3a5-b2c3" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Legs" id="97eb-ff55-2bed-87ee"/>
+        <characteristicType name="Legs" id="8d87-086a-8fbe-3b15"/>
+        <characteristicType name="Legs" id="12e0-ec98-92c3-a1fa"/>
+        <characteristicType name="Legs" id="5934-9162-fa2b-2f7e"/>
+        <characteristicType name="Legs" id="db37-71be-6bef-0522"/>
+        <characteristicType name="Legs" id="1ffb-ca67-9b06-4711"/>
+		<characteristicType name="Crippled Result" id="4c84-cf9c-f038-5951"/>
+      </characteristicTypes>
+      <comment>Shaltari Heavy</comment>
+    </profileType>
+    <profileType name="Shaltari Heavy Weapons" id="92bd-be74-95c9-05cf" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="790d-ede3-f03d-843c"/>
+        <characteristicType name="Crippled Result" id="f7f9-ca6b-8689-452f"/>
+      </characteristicTypes>
+      <comment>Shaltari Heavy</comment>
+    </profileType>
+    <profileType name="Shaltari Light Weapons" id="4ec1-337e-b89e-7b2a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="93dd-7e8b-348c-b925"/>
+        <characteristicType name="Weapons" id="c0b2-a9c3-00e1-5352"/>
+        <characteristicType name="Crippled Result" id="fd8c-9edf-f781-8fab"/>
+      </characteristicTypes>
+      <comment>Tiger</comment>
+    </profileType>
+  </profileTypes>
 </catalogue>
