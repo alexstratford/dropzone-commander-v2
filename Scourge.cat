@@ -221,7 +221,12 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Ion Cradle" hidden="false" id="443f-a165-3071-30ca" type="selectionEntry" targetId="5444-bb2d-f179-38af" collective="true" sortIndex="3"/>
-                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="4117-ab0d-91ff-7ff0" type="selectionEntry" targetId="425b-ba23-208f-1d7e" sortIndex="1"/>
+                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="4117-ab0d-91ff-7ff0" type="selectionEntry" targetId="425b-ba23-208f-1d7e" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba3a-d7ac-ffc1-05da" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42b6-3269-3558-69fc" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Plasma Vent" hidden="false" id="1cd9-9bd8-ff2e-bd3f" type="selectionEntry" targetId="3141-bd13-038e-5eae" sortIndex="2"/>
               </entryLinks>
               <infoLinks>
@@ -283,7 +288,12 @@
               <entryLinks>
                 <entryLink import="true" name="Razor Claws" hidden="false" id="125f-dd9e-3ddb-6a37" type="selectionEntry" targetId="1cd2-8918-7972-6556"/>
                 <entryLink import="true" name="Plasma Hose" hidden="false" id="51db-4b85-b70f-1d88" type="selectionEntry" targetId="0da6-2eb2-286d-b11d"/>
-                <entryLink import="true" name="Commander (CV 2)" hidden="false" id="21cd-c036-4bef-b5b8" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f"/>
+                <entryLink import="true" name="Commander (CV 2)" hidden="false" id="21cd-c036-4bef-b5b8" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bbf-30d4-e588-9cee" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="572d-6c3d-b457-4dd4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <rules>
                 <rule name="Micro Subjugation Field" id="598a-2d44-e0fe-466d" hidden="false">
