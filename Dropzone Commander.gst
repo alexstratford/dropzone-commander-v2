@@ -1628,7 +1628,7 @@ When targeting a Behemoth, measure to any point within its Spread.</description
     </selectionEntryGroup>
     <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1">
           <profiles>
             <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>

@@ -1,10 +1,177 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8263-3abb-ae06-a255" name="Resistance" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="false" id="8263-3abb-ae06-a255" name="Resistance" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <entryLinks>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="1353-1a5f-ade5-8300" type="selectionEntry" targetId="e28e-c594-1ee6-f751">
       <categoryLinks>
         <categoryLink targetId="5f13-c39f-577a-8947" id="0e0d-ebfc-7d82-b1bc" primary="true" name="Scout"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Pizzaro Hazard Walker" hidden="false" id="d49b-5413-855f-656a" targetId="26ea-e127-42da-c86e" type="selectionEntry"/>
+    <entryLink import="true" name="Hydra Relay Hovercraft" hidden="false" id="50cb-c64e-c8b7-c450" targetId="b44d-580f-c936-da8c" type="selectionEntry"/>
+    <entryLink import="true" name="Carryhawk Tilt Carrier" hidden="false" id="4b3a-da8b-1604-884b" targetId="ab39-c101-8451-b400" type="selectionEntry"/>
+    <entryLink import="true" name="Alexander Heavy Tank" hidden="false" id="0988-eb46-15d5-9a04" targetId="9b2e-5d98-db1c-8b9c" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Alexander Heavy Tank" hidden="false" id="9b2e-5d98-db1c-8b9c">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="84c9-ff47-1397-dce7" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alexander Heavy Tank" hidden="false" id="6719-f0b7-0eb3-51b9">
+              <costs>
+                <cost name="pts" typeId="points" value="100"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="22d2-81d7-8c7f-15bc" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="026c-0919-7bb2-72e8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="683b-cf45-cc8d-9339" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Alexander Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8727-60d5-34df-6da6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carryhawk Command Bunker" hidden="false" id="3072-afa1-c2af-d3a9">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="7570-7e3c-3c82-b150" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carryhawk Command Bunker" hidden="false" id="a272-f8d1-6537-fb5d">
+              <costs>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="b191-e109-f1a5-7098" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="494c-53b0-1a14-1f63" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3b6-52b5-9c4c-69f3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d4e-f233-094d-779c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e5a-ff11-ac7d-d58e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carryhawk Tilt Carrier" hidden="false" id="ab39-c101-8451-b400">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="19f0-824e-4a2f-bbb2" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carryhawk Tilt Carrier" hidden="false" id="981b-c464-1e81-d662">
+              <costs>
+                <cost name="pts" typeId="points" value="185"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="5dd2-bc98-8448-f8d2" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ada1-cf51-6fa3-bdc3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4313-3c32-4805-e05c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Carryhawk Command Bunker" hidden="false" id="4154-97b2-238b-47ee" type="selectionEntry" targetId="3072-afa1-c2af-d3a9"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hydra Relay Hovercraft" hidden="false" id="b44d-580f-c936-da8c">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="afce-259a-02e3-7891" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hydra Relay Hovercraft" hidden="false" id="4007-7af6-3b62-efa8">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="7e1d-b246-e80a-b065" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb4-80fb-abd9-f298" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d970-62e9-ede5-08ca" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pizzaro Hazard Walker" hidden="false" id="26ea-e127-42da-c86e">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="28be-ed76-b2c6-ecab" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pizzaro Hazard Walker" hidden="false" id="b130-3657-968d-a46b">
+              <costs>
+                <cost name="pts" typeId="points" value="95"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="fe13-89ab-3eec-497d" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="077e-9be7-235b-a20b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03aa-0ddc-d5dd-d111" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pizzaro Hazard Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="acb9-b03c-0314-f1f9">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae"/>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c"/>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82"/>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02"/>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
