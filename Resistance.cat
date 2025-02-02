@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8263-3abb-ae06-a255" name="Resistance" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8263-3abb-ae06-a255" name="Resistance" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <entryLinks>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="1353-1a5f-ade5-8300" type="selectionEntry" targetId="e28e-c594-1ee6-f751">
       <categoryLinks>
