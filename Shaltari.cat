@@ -1473,6 +1473,245 @@ Remember: always ask your opponent to move their own miniatures!</description>
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lightning Crown" hidden="false" id="aefb-edb6-7be2-dc55" collective="true">
+          <profiles>
+            <profile name="Lightning Crown" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="06d1-6678-9b0c-247c">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Area, Tech Killer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1adf-734f-3df8-e4c3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32ae-6ea5-92dc-ac22" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="AA-X" id="d164-360a-67e0-bde4" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Area" id="5c83-5f2d-56a5-074f" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Tech Killer" id="5ae1-3086-1f1a-85ab" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Disintegrator" hidden="false" id="a6bf-5c1f-240b-43a4" collective="true">
+          <profiles>
+            <profile name="Heavy Disintegrator (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="26f4-5ee6-725f-68a7">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Disintegrator (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="33e3-8fc7-1c37-9c09">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="bbac-5d2f-f228-5785" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfff-aca1-b3f0-2ab6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fae-947a-5bda-fb4d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Transmatter Beam" hidden="false" id="1191-97fa-27ba-6701" collective="true">
+          <profiles>
+            <profile name="Transmatter Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3767-fa8e-0995-a217">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (All), Devastator-5 (Infantry), Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Transmatter Beam" id="8ca5-1427-9dd0-3e92" hidden="false">
+              <description>This weapon may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not, measuring to the edge of the Garrison they are occupying.</description>
+            </rule>
+            <rule name="Transmatter Teleport" id="2e95-d8c0-c61a-bd08" hidden="false">
+              <description>Friendly squads may use this unit’s Access rule, even if they are not part of this unit’s Battlegroup. Friendly squads using this unit’s Access rule may be placed in line of sight within 12” of this unit. Only units with a transport requirement of 2 or less may use this unit’s Access rule.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0ec-7b07-d891-b50c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73d3-a876-bf86-874e" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Area" id="0e81-0e0c-d784-2397" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Devastator-X" id="c110-0303-f01c-47af" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Strafe-X" id="7df7-ac58-9ca9-9437" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Particle Triad" hidden="false" id="57bd-8b3f-1dcb-9b3f" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bea-12b5-9d15-9e27" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84bb-a4bd-7005-c62e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="High Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5b75-95ed-b2f7-b164">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">5&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (Behemoth, Vehicle), Devastator-4 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Low Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cfca-57e7-5ece-7097">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Strafe-3, Devastator-2 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Particle Triad" id="fa51-b7cf-af13-c4d5" hidden="false" type="rule" targetId="6843-73d2-6b57-5cc4">
+              <modifiers>
+                <modifier type="set" value="Particle Triad" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Alt-X" id="99dd-a5a7-42aa-0a35" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Devastator-X" id="e126-bb14-99b6-54e5" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Strafe-X" id="3d7e-0a97-cb4c-8498" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Laser Fangs" hidden="false" id="df2b-69d5-24ac-3030" collective="true">
+          <profiles>
+            <profile name="Laser Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="38d1-7e1c-e867-0c9a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b31-a686-ea18-bea3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f864-266a-599c-05ef" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="2bb2-a03f-6cd2-6e5c" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gauss Destroyers" hidden="false" id="67c1-725a-075a-1cb2" collective="true">
+          <profiles>
+            <profile name="Gauss Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0113-6357-cf1f-061e">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Strafe-6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08ed-ed9b-5bfe-c452" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d3f-8de2-ce19-61c2" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="3d92-5e01-68a4-4bba" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+            <infoLink name="Strafe-X" id="c495-d000-9e96-94b9" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser Fangs" hidden="false" id="d7b3-24fa-b0d3-ef14" collective="true">
+          <costs>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Heavy Bio-Atomiser Fangs" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b6c0-2d68-b486-94a1">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Focus-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="521e-4679-8025-1bec" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Focus-X" id="ca71-131e-15ce-e5a4" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Super Disruption Cannon" hidden="false" id="c302-face-833c-c3ab" collective="true">
+          <profiles>
+            <profile name="Super Disruption Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="57fa-cc8a-507f-834a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">48&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-4 (Behemoth)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Area" id="2ede-12c3-42c8-1d71" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Devastator-X" id="343f-dc7d-4787-1af7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1024-ff52-5435-ba91" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3675-a354-83dd-56ba" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Super Disruption Cannon" id="0926-46e9-1aec-ebc6" hidden="false">
+              <description>If the target of this weapon is within 24”, increase its Energy by 2. If the target is within 12”, instead increase the Energy by 4.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard" hidden="false" id="1ec6-18fe-45ec-67be" subType="unit-group">
@@ -2977,6 +3216,8 @@ activation. Skimmers increase this bonus to +6”.</description>
             <selectionEntry type="model" import="true" name="Lion Siegestrider" hidden="false" id="1366-587e-bcd3-c95f">
               <entryLinks>
                 <entryLink import="true" name="Shaltari Light Behemoth" hidden="false" id="27e7-a2fe-b8c4-0770" type="selectionEntry" targetId="d032-4438-cb2e-e78b"/>
+                <entryLink import="true" name="Lightning Crown" hidden="false" id="a374-791c-3c55-8485" type="selectionEntry" targetId="aefb-edb6-7be2-dc55"/>
+                <entryLink import="true" name="Transmatter Beam" hidden="false" id="8ec7-81b5-45d5-c2fb" type="selectionEntry" targetId="1191-97fa-27ba-6701"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df82-d692-e3c2-5276" includeChildSelections="false"/>
@@ -2991,6 +3232,21 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Access" id="1f1c-e755-6b3a-eff8" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+                <infoLink name="Teleport" id="a505-3f8b-e163-c8f0" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Lion Siegestrider" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="9230-5052-7419-f6fb">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">10&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A, P5+</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">13</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Access, Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3002,6 +3258,8 @@ activation. Skimmers increase this bonus to +6”.</description>
             <selectionEntry type="model" import="true" name="Tiger Siegestrider" hidden="false" id="6094-2625-200b-d3c9">
               <entryLinks>
                 <entryLink import="true" name="Shaltari Light Behemoth" hidden="false" id="c135-075c-c9ce-a5ed" type="selectionEntry" targetId="d032-4438-cb2e-e78b"/>
+                <entryLink import="true" name="Lightning Crown" hidden="false" id="9447-78de-465c-0a76" type="selectionEntry" targetId="aefb-edb6-7be2-dc55"/>
+                <entryLink import="true" name="Heavy Disintegrator" hidden="false" id="c879-d638-6c14-0d61" type="selectionEntry" targetId="a6bf-5c1f-240b-43a4"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6745-4e36-3316-baff" includeChildSelections="false"/>
@@ -3016,24 +3274,36 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
+              <profiles>
+                <profile name="Tiger Siegestrider" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="138b-68f3-e33b-b0d1">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">10&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A, P5+</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">13</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shaltari Light Behemoth" hidden="false" id="d032-4438-cb2e-e78b">
           <profiles>
-            <profile name="Lion Siegestrider" typeId="60a8-4d72-41c9-086a" typeName="Shaltari Light Weapons" hidden="true" id="c908-5f9f-1791-ad53">
+            <profile name="Tiger Siegestrider" typeId="4ec1-337e-b89e-7b2a" typeName="Shaltari Light Weapons" hidden="true" id="c950-372c-c138-f298">
               <characteristics>
-                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">8</characteristic>
-                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">Transmatter Beam cannot be used for the rest of the game. This unit
-loses all of its transport capacity</characteristic>
+                <characteristic name="Weapons" typeId="93dd-7e8b-348c-b925">4</characteristic>
+                <characteristic name="Weapons" typeId="c0b2-a9c3-00e1-5352">4</characteristic>
+                <characteristic name="Crippled Result" typeId="fd8c-9edf-f781-8fab">One weapon cannot be used for the rest of the game</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
+                    <modifier type="set" value="Tiger Siegestrider" field="name"/>
                     <modifier type="set" value="false" field="hidden"/>
                   </modifiers>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c465-e029-c4aa-df0b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="732e-5c9f-11bf-2bcf" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -3088,20 +3358,19 @@ loses all of its transport capacity</characteristic>
                 </modifierGroup>
               </modifierGroups>
             </profile>
-            <profile name="Tiger Siegestrider" typeId="4ec1-337e-b89e-7b2a" typeName="Shaltari Light Weapons" hidden="true" id="c950-372c-c138-f298">
+            <profile name="Lion Siegestrider" typeId="60a8-4d72-41c9-086a" typeName="Shaltari Light Weapons" hidden="true" id="c908-5f9f-1791-ad53">
               <characteristics>
-                <characteristic name="Weapons" typeId="93dd-7e8b-348c-b925">4</characteristic>
-                <characteristic name="Weapons" typeId="c0b2-a9c3-00e1-5352">4</characteristic>
-                <characteristic name="Crippled Result" typeId="fd8c-9edf-f781-8fab">One weapon cannot be used for the rest of the game</characteristic>
+                <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">8</characteristic>
+                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">Transmatter Beam cannot be used for the rest of the game. This unit
+loses all of its transport capacity</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="Tiger Siegestrider" field="name"/>
                     <modifier type="set" value="false" field="hidden"/>
                   </modifiers>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="732e-5c9f-11bf-2bcf" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c465-e029-c4aa-df0b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -3146,7 +3415,7 @@ used for the rest of the game." field="f7f9-ca6b-8689-452f"/>
               <characteristics>
                 <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">4</characteristic>
                 <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">4</characteristic>
-				<characteristic name="Hull" typeId="8913-0430-9c3c-b4eb">4</characteristic>
+                <characteristic name="Hull" typeId="8913-0430-9c3c-b4eb">4</characteristic>
                 <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit increases its Passive Countermeasures by 1 (4+ becomes 5+ etc)</characteristic>
               </characteristics>
               <modifierGroups>
@@ -3203,12 +3472,20 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9897-083a-6a2d-8f11" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="424a-23f5-b90c-7b37" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Grav Assisted Icosapede" id="505b-4ffa-d611-35fc" hidden="false">
+              <description>Destructible scenery pieces or squads moved onto instead take 2D3 hits. In addition, when moving through Impassable scenery pieces, re-roll any damage rolls against this unit.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Earth Dragon" hidden="false" id="6c42-be3c-3013-8c30">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Earth Dragon" hidden="false" id="ec4c-073c-8179-4e1b">
               <entryLinks>
-                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="1e1a-12e6-87ee-5bff" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f"/>
+                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="1e1a-12e6-87ee-5bff" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f" sortIndex="1"/>
+                <entryLink import="true" name="Gauss Destroyers" hidden="false" id="d88b-7073-e574-0510" type="selectionEntry" targetId="67c1-725a-075a-1cb2" sortIndex="4"/>
+                <entryLink import="true" name="Heavy Bio-Atomiser Fangs" hidden="false" id="99e4-5bc0-0f29-0d5e" type="selectionEntry" targetId="d7b3-24fa-b0d3-ef14" sortIndex="3"/>
+                <entryLink import="true" name="Super Disruption Cannon" hidden="false" id="2f4b-e3f5-f587-b45e" type="selectionEntry" targetId="c302-face-833c-c3ab" sortIndex="2"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1a7-5fa9-dc98-7261" includeChildSelections="false"/>
@@ -3223,6 +3500,17 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
+              <profiles>
+                <profile name="Shaltari Heavy Behemoth" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="0e1f-919a-fc8e-1b22">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">10&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A, P4+</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">14</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-4&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3230,7 +3518,10 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Celestial Dragon" hidden="false" id="4ba8-1824-dd7b-d105">
               <entryLinks>
-                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="55e0-9530-3fa6-ce15" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f"/>
+                <entryLink import="true" name="Shaltari Heavy Behemoth" hidden="false" id="55e0-9530-3fa6-ce15" type="selectionEntry" targetId="c64c-f5b4-9fd3-f63f" sortIndex="1"/>
+                <entryLink import="true" name="Particle Triad" hidden="false" id="6012-c256-4101-268a" type="selectionEntry" targetId="57bd-8b3f-1dcb-9b3f" sortIndex="2"/>
+                <entryLink import="true" name="Laser Fangs" hidden="false" id="f875-4cbe-ff6f-994d" type="selectionEntry" targetId="df2b-69d5-24ac-3030" sortIndex="3"/>
+                <entryLink import="true" name="Gauss Destroyers" hidden="false" id="4d32-efdb-951b-dcff" type="selectionEntry" targetId="67c1-725a-075a-1cb2" sortIndex="4"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f91b-eea5-fc3d-2bbb" includeChildSelections="false"/>
@@ -3245,6 +3536,17 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
+              <profiles>
+                <profile name="Shaltari Heavy Behemoth" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="56d1-fe8e-8aa6-09d1">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">10&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A, P4+</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">14</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-4&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3714,7 +4016,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
         <characteristicType name="Hull" id="bfa5-72bc-fcaf-8f30"/>
         <characteristicType name="Hull" id="b6f8-1b58-bc2f-e84e"/>
         <characteristicType name="Hull" id="8913-0430-9c3c-b4eb"/>
-		<characteristicType name="Crippled Result" id="6129-0fa5-4c85-3e7c"/>
+        <characteristicType name="Crippled Result" id="6129-0fa5-4c85-3e7c"/>
       </characteristicTypes>
       <comment>Shaltari Heavy</comment>
     </profileType>
@@ -3726,7 +4028,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
         <characteristicType name="Legs" id="5934-9162-fa2b-2f7e"/>
         <characteristicType name="Legs" id="db37-71be-6bef-0522"/>
         <characteristicType name="Legs" id="1ffb-ca67-9b06-4711"/>
-		<characteristicType name="Crippled Result" id="4c84-cf9c-f038-5951"/>
+        <characteristicType name="Crippled Result" id="4c84-cf9c-f038-5951"/>
       </characteristicTypes>
       <comment>Shaltari Heavy</comment>
     </profileType>
