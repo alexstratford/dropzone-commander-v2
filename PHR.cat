@@ -304,9 +304,6 @@ been destroyed.</description>
                 <infoLink name="White Nanomachines" id="168b-b0ef-d25c-000b" hidden="true" type="rule" targetId="24c0-9d89-d770-bfcb"/>
               </infoLinks>
               <rules>
-                <rule name="Nanomachine Surge" id="8908-58d4-404b-841b" hidden="true">
-                  <description>This weapon reduces its Shots value by 1 for every 2 Damage Points lost, instead of every 1 Damage Point.</description>
-                </rule>
                 <rule name="Nano-Levitation" id="f523-117c-a18b-05b2" hidden="true">
                   <description>This unit may move over scenery pieces up to 8” inches high.</description>
                 </rule>

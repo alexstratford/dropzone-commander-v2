@@ -1344,75 +1344,75 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecdc-7969-5ef7-f414" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="UMH-1 Mass Driver" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4865-f91a-312c-23fd">
+            <profile name="UMH-1 Mass Driver (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4865-f91a-312c-23fd">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-5 (All)</characteristic>
               </characteristics>
             </profile>
-            <profile name="UMH-1 Mass Driver" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="45cb-466c-c46e-a2d7">
+            <profile name="UMH-1 Mass Driver (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="45cb-466c-c46e-a2d7">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">1+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-5 (All)</characteristic>
               </characteristics>
             </profile>
             <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="66f2-ca3c-24b5-2894">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">9</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
             <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3d21-a492-b431-cf1d">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">9</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
             <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="958c-bbb5-02c3-c06c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area</characteristic>
               </characteristics>
             </profile>
             <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="78f1-bb68-1909-4898">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area</characteristic>
               </characteristics>
             </profile>
@@ -1430,6 +1430,195 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             </infoLink>
             <infoLink name="Structural" id="4991-04a1-1179-fbbd" hidden="false" type="rule" targetId="06ea-b689-94e2-9be4"/>
             <infoLink name="Area" id="fab5-ecaf-95d3-3ab3" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UM-88B Chainguns" hidden="false" id="5aa7-b1e1-3c21-5db2" collective="true">
+          <profiles>
+            <profile name="UM-88B Chainguns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3c91-3b9e-0008-7cc9">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Devastator-2 (Aircraft), Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="e5d6-3ec7-dfda-9180" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Devastator-X" id="00b5-17a0-93b4-9084" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Strafe-X" id="eedc-7c94-459f-d7dd" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8705-93e1-307b-3827" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="589a-9394-ddc4-3569" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UMH-19 Flak Cannon Quad" hidden="false" id="dbbd-1270-95f4-f769" collective="false">
+          <profiles>
+            <profile name="UMH-19 Flak Cannon Pair [1]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0856-f451-a852-f5fe">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-5, Area, Devastator-3 (Aircraft)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="UMH-19 Flak Cannon Pair [2]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b39c-d188-ca89-ae49">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-5, Area, Devastator-3 (Aircraft)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="5c60-ae4c-0664-c0da" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Devastator-X" id="d688-661f-8e0d-53aa" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Area" id="0c4f-844f-9680-73e3" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dd8-a5b9-2d1d-1f18" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07aa-7543-404f-107a" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="UMH-19 Flak Cannon Quad" id="ad93-8a4a-057c-cf3f" hidden="false">
+              <description>This weapon suffers a +2 Accuracy penalty when shooting non-Aircraft units without the Large Special Rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UMH-2 Mass Drivers" hidden="false" id="5f9c-deee-04bb-7b46" collective="false">
+          <profiles>
+            <profile name="UMH-2 Mass Driver Pair [1]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="55f1-fce5-bee0-73ae">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="UMH-2 Mass Driver Pair [2]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f614-cb15-7d5c-4bcc">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71c6-53f7-da09-8109" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2790-b81a-21fe-f5cd" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="5dc0-d309-28c5-ea28" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UMH-9 Stormcrow Cannon, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="1e7a-45b8-490e-24c3" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2de0-28ee-3f54-480f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c146-4fc3-8032-28e4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="UMH-9 Stormcrow Cannon (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="adfa-e93c-0436-f89a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Scenery), Focus (1)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="UMH-9 Stormcrow Cannon (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="857a-7608-3fbb-77cd">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Scenery), Focus (1)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ea72-941c-a8cd-e0e5">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">9</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bd73-4745-fc32-3b05">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">9</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Munitions Hailfire" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a491-3411-0423-f4d8">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-3 (Behemoth), Limited (2)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Munitions Hailfire" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7591-33e6-f1b7-878c">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-3 (Behemoth), Limited (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="aa2f-f75d-f648-81a0" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Cover-X" id="5b50-30d5-b9de-ba9c" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Structural" id="6a2f-9b6e-b25e-5f60" hidden="false" type="rule" targetId="06ea-b689-94e2-9be4"/>
+            <infoLink name="Area" id="9ffa-bc8f-cfa8-3e8c" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Limited-X" id="4027-46ba-db6d-22d9" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -3563,36 +3752,9 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-3&quot;</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Threshold" typeId="a930-add9-74a3-1505" typeName="UCM Heavy Hull" hidden="false" id="228a-ade6-9a72-991f">
-                  <characteristics>
-                    <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">9</characteristic>
-                    <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">9</characteristic>
-                    <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit reduces its Armour by 2, and one Missile Battery cannot be used for the rest of the game.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Threshold" typeId="92bd-be74-95c9-05cf" typeName="UCM Heavy Weapons" hidden="false" id="bdaf-e0ab-d702-5354">
-                  <characteristics>
-                    <characteristic name="Weapons" typeId="790d-ede3-f03d-843c"/>
-                    <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">9</characteristic>
-                    <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f">One UMH-1 Mass Driver cannot be used for the rest of the game.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Threshold" typeId="a04f-0090-a3a5-b2c3" typeName="UCM Heavy Legs" hidden="false" id="35a5-eafa-80bf-ad4a">
-                  <characteristics>
-                    <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee"/>
-                    <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15"/>
-                    <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa"/>
-                    <characteristic name="Legs" typeId="5934-9162-fa2b-2f7e">3</characteristic>
-                    <characteristic name="Crippled Result" typeId="4c84-cf9c-f038-5951">This unit reduces its Move by 2”. Once all Damage Thresholds are passed, this unit loses the Leg Stabilisers special rule.</characteristic>
-                  </characteristics>
-                </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Spread X" id="93bf-051b-b83b-f4f0" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b">
-                  <modifiers>
-                    <modifier type="set" value="Spread-3&quot;" field="name"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink name="Spread X" id="93bf-051b-b83b-f4f0" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
               </infoLinks>
               <rules>
                 <rule name="Leg Stabilisers" id="dfca-0c37-55e1-e2ec" hidden="false">
@@ -3600,14 +3762,15 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </rule>
               </rules>
               <entryLinks>
-                <entryLink import="true" name="2 UMH-1 Mass Drivers, 2 Gatling Cannon Batteries, 2 Missile Batteries" hidden="false" id="a9b1-9418-2a41-5b88" type="selectionEntry" targetId="a21c-2342-fcda-1742"/>
+                <entryLink import="true" name="2 UMH-1 Mass Drivers, 2 Gatling Cannon Batteries, 2 Missile Batteries" hidden="false" id="a9b1-9418-2a41-5b88" type="selectionEntry" targetId="a21c-2342-fcda-1742" sortIndex="2"/>
+                <entryLink import="true" name="UCM Heavy Behemoth" hidden="false" id="a394-9008-12c4-f660" type="selectionEntry" targetId="5148-9a66-be31-be05" sortIndex="1"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="UCM Light Behemoth" hidden="false" id="8c9a-8368-b319-9f56">
           <profiles>
-            <profile name="Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM_Light_Behemoth_Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
+            <profile name="Light Battle-Mech" typeId="60a8-4d72-41c9-086a" typeName="UCM Light Weapons" hidden="false" id="c8ef-71e3-8d6e-8e19">
               <characteristics>
                 <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">5</characteristic>
                 <characteristic name="Weapons" typeId="71b5-8a80-ab42-0ae2">5</characteristic>
@@ -3634,7 +3797,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </modifierGroup>
               </modifierGroups>
             </profile>
-            <profile name="Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM_Light_Behemoth_Hull" hidden="false" id="87ea-076c-8210-3643">
+            <profile name="Light Battle-Mech" typeId="1f6a-0300-e145-f89c" typeName="UCM Light Hull" hidden="false" id="87ea-076c-8210-3643">
               <characteristics>
                 <characteristic name="Hull" typeId="8811-54e4-a9bb-90ce">7</characteristic>
                 <characteristic name="Crippled Result" typeId="33c7-dfa1-0364-1fda">This unit reduces its Armour by 3.</characteristic>
@@ -3658,7 +3821,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </modifierGroup>
               </modifierGroups>
             </profile>
-            <profile name="Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM_Light_Behemoth_Legs" hidden="false" id="0d89-aaa1-54d9-0267">
+            <profile name="Light Battle-Mech" typeId="c969-b6ba-a3e6-b344" typeName="UCM Light Legs" hidden="false" id="0d89-aaa1-54d9-0267">
               <characteristics>
                 <characteristic name="Legs" typeId="642a-6a40-14dc-8266">5</characteristic>
                 <characteristic name="Legs" typeId="4f27-2432-cb23-2fd0">5</characteristic>
@@ -3691,7 +3854,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Brazil Light Battle-Mech" hidden="false" id="ec5d-a790-ce89-89eb">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Brazil Light Battle-Mech" hidden="false" id="7225-7f5a-abb5-fa5d">
+            <selectionEntry type="model" import="true" name="Brazil Light Battle-Mech" hidden="false" id="7225-7f5a-abb5-fa5d" collective="true">
               <profiles>
                 <profile name="Brazil Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="dcf1-a246-7e6d-2d22">
                   <characteristics>
@@ -3720,7 +3883,9 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="1f1f-fab8-f407-c57d" type="selectionEntry" targetId="8c9a-8368-b319-9f56"/>
+                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="1f1f-fab8-f407-c57d" type="selectionEntry" targetId="8c9a-8368-b319-9f56" sortIndex="1"/>
+                <entryLink import="true" name="UM-88B Chainguns" hidden="false" id="4b2f-3023-8a8b-55fb" type="selectionEntry" targetId="5aa7-b1e1-3c21-5db2" sortIndex="3"/>
+                <entryLink import="true" name="UMH-2 Mass Drivers" hidden="false" id="a224-51c3-44c8-5c9b" type="selectionEntry" targetId="5f9c-deee-04bb-7b46" sortIndex="2"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3730,7 +3895,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="India Light Battle-Mech" hidden="false" id="6996-8f40-fc3d-3a11">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680">
+            <selectionEntry type="model" import="true" name="India Light Battle-Mech" hidden="false" id="a060-d288-0558-4680" collective="true">
               <profiles>
                 <profile name="India Light Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="d522-60f6-6d56-2708">
                   <characteristics>
@@ -3759,13 +3924,158 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="07a1-a969-8c40-4884" type="selectionEntry" targetId="8c9a-8368-b319-9f56"/>
+                <entryLink import="true" name="UCM Light Behemoth" hidden="false" id="07a1-a969-8c40-4884" type="selectionEntry" targetId="8c9a-8368-b319-9f56" sortIndex="1"/>
+                <entryLink import="true" name="UM-88B Chainguns" hidden="false" id="3054-b0ea-a21e-7b3d" type="selectionEntry" targetId="5aa7-b1e1-3c21-5db2" sortIndex="3"/>
+                <entryLink import="true" name="UMH-19 Flak Cannon Quad" hidden="false" id="86c8-8613-15e9-571e" type="selectionEntry" targetId="dbbd-1270-95f4-f769" sortIndex="2"/>
               </entryLinks>
+              <rules>
+                <rule name="Harnessbreaker" id="ce89-4f8f-4695-b2f5" hidden="false">
+                  <description>Each of this unit&apos;s useable UMH-19 Flak Cannon Pairs counts as two separate AA weapons for Behemoths arriving via Drop Harness.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Behemoth" hidden="false" id="1431-7112-b3d7-32d3" targetId="97a8-8f9f-5241-a322" primary="true"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM Heavy Behemoth" hidden="false" id="5148-9a66-be31-be05">
+          <profiles>
+            <profile name="Heavy Battle-Mech" typeId="92bd-be74-95c9-05cf" typeName="UCM Heavy Weapons" hidden="false" id="b759-6890-75ac-d1d6">
+              <characteristics>
+                <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">5</characteristic>
+                <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">5</characteristic>
+                <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f"/>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="One UMH-1 Mass Driver cannot be used for the rest of the game." field="name"/>
+                    <modifier type="set" value="America Heavy Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2bd-5105-5e9a-1c5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="One UMH-9 Stromcrow Cannon cannot be used for the rest of the game" field="name"/>
+                    <modifier type="set" value="Japan Heavy Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8ab3-30aa-b994-b7b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Heavy Battle-Mech" typeId="a930-add9-74a3-1505" typeName="UCM Heavy Hull" hidden="false" id="c0f4-19f5-dc17-d7c0">
+              <characteristics>
+                <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">7</characteristic>
+                <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">7</characteristic>
+                <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit reduces its Armour by 2, and one Missile Battery cannot be
+used for the rest of the game.</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="America Heavy Battle-Mech" field="name"/>
+                    <modifier type="set" value="This unit reduces its Armour by 2, and one Missile Battery cannot be
+used for the rest of the game." field="6129-0fa5-4c85-3e7c"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2bd-5105-5e9a-1c5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Japan Heavy Battle-Mech" field="name"/>
+                    <modifier type="set" value="This unit reduces its Armour by 2, and one Heavy Munitions Hailfire
+cannot be used for the rest of the game." field="6129-0fa5-4c85-3e7c"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8ab3-30aa-b994-b7b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+            <profile name="Heavy Battle-Mech" typeId="a04f-0090-a3a5-b2c3" typeName="UCM Heavy Legs" hidden="false" id="2f98-409b-801a-ba7f">
+              <characteristics>
+                <characteristic name="Legs" typeId="97eb-ff55-2bed-87ee">3</characteristic>
+                <characteristic name="Legs" typeId="8d87-086a-8fbe-3b15">3</characteristic>
+                <characteristic name="Legs" typeId="12e0-ec98-92c3-a1fa">3</characteristic>
+                <characteristic name="Legs" typeId="5934-9162-fa2b-2f7e">3</characteristic>
+                <characteristic name="Crippled Result" typeId="4c84-cf9c-f038-5951">This unit reduces its Move by 2”. Once all Damage Thresholds are
+passed, this unit loses the Leg Stabilisers special rule.</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="America Heavy Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2bd-5105-5e9a-1c5d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="Japan Heavy Battle-Mech" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8ab3-30aa-b994-b7b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7347-ee87-787a-d5fe" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a39-fc0e-c131-aaad" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Japan Heavy Battle-Mech" hidden="false" id="8ab3-30aa-b994-b7b9">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="586b-844f-5648-81c9" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Japan Heavy Battle-Mech" hidden="false" id="b639-dc13-38f3-253e" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="525"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da64-decd-b293-cc91" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb41-c507-5e58-3867" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="America Heavy Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="faa6-9c59-35a2-72b8">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">16</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-3&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Spread X" id="8f14-a1ce-e611-ce4c" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+              </infoLinks>
+              <rules>
+                <rule name="Leg Stabilisers" id="c13c-359d-16c5-0fcb" hidden="false">
+                  <description>If this unit does not move in a round, re-roll any unsuccessful hit rolls for that round. If two or more Legs damage thresholds have been lost, re-roll hit rolls of 1 instead.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="UMH-9 Stormcrow Cannon, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="ec3f-aa0a-d9f3-e865" type="selectionEntry" targetId="1e7a-45b8-490e-24c3" sortIndex="2"/>
+                <entryLink import="true" name="UCM Heavy Behemoth" hidden="false" id="9eba-62e1-f549-a4d4" type="selectionEntry" targetId="5148-9a66-be31-be05" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3825,6 +4135,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     <entryLink import="true" name="America Heavy Battle-Mech" hidden="false" id="7d23-e240-cb98-59e1" targetId="a2bd-5105-5e9a-1c5d" type="selectionEntry"/>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
     <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
+    <entryLink import="true" name="Japan Heavy Battle-Mech" hidden="false" id="35be-fde7-e228-4ba5" type="selectionEntry" targetId="8ab3-30aa-b994-b7b9"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
@@ -4342,20 +4653,20 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
     </rule>
   </sharedRules>
   <profileTypes>
-    <profileType name="UCM_Light_Behemoth_Hull" id="1f6a-0300-e145-f89c" hidden="false">
+    <profileType name="UCM Light Hull" id="1f6a-0300-e145-f89c" hidden="false">
       <characteristicTypes>
         <characteristicType name="Hull" id="8811-54e4-a9bb-90ce"/>
         <characteristicType name="Crippled Result" id="33c7-dfa1-0364-1fda"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="UCM_Light_Behemoth_Legs" id="c969-b6ba-a3e6-b344" hidden="false">
+    <profileType name="UCM Light Legs" id="c969-b6ba-a3e6-b344" hidden="false">
       <characteristicTypes>
         <characteristicType name="Legs" id="642a-6a40-14dc-8266"/>
         <characteristicType name="Legs" id="4f27-2432-cb23-2fd0"/>
         <characteristicType name="Crippled Result" id="0b0a-b8da-9bac-d225"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="UCM_Light_Behemoth_Weapons" id="60a8-4d72-41c9-086a" hidden="false">
+    <profileType name="UCM Light Weapons" id="60a8-4d72-41c9-086a" hidden="false">
       <characteristicTypes>
         <characteristicType name="Weapons" id="4ebe-421e-14d3-1fb7"/>
         <characteristicType name="Weapons" id="71b5-8a80-ab42-0ae2"/>
