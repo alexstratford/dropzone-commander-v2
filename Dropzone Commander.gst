@@ -1738,6 +1738,14 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="14&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="56c5-9c94-d5b5-1a48" shared="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -1836,6 +1844,14 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                   </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="30&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1e9e-5eab-ee7f-0e12" shared="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>

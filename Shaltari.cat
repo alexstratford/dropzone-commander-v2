@@ -369,7 +369,7 @@
           </selectionEntries>
           <categoryLinks>
             <categoryLink name="Famous Commander" hidden="false" id="e3fe-b191-a929-3f65" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
-            <categoryLink name="Command" hidden="false" id="2d7b-7573-fb50-7ee5" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink targetId="ff91-8cc3-f775-3d20" id="789d-ba1b-6627-a249" primary="true" name="Heavy"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a40d-f21e-cff7-dcd0" includeChildSelections="true"/>
@@ -1598,7 +1598,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Particle Triad" id="fa51-b7cf-af13-c4d5" hidden="false" type="rule" targetId="6843-73d2-6b57-5cc4">
+            <infoLink name="Particle Cannon" id="fa51-b7cf-af13-c4d5" hidden="false" type="rule" targetId="6843-73d2-6b57-5cc4">
               <modifiers>
                 <modifier type="set" value="Particle Triad" field="name"/>
               </modifiers>

@@ -266,8 +266,8 @@ been destroyed.</description>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Stheno, Medusa Matriarch - Medusa " hidden="false" id="1ee1-3b9e-13a4-1db0">
           <categoryLinks>
-            <categoryLink name="Command" hidden="false" id="41ab-9e8f-a2b5-851b" targetId="ed7f-0593-2e55-430d" primary="true"/>
             <categoryLink targetId="b9fe-b6e1-3716-8d88" id="ee4b-a7f1-f5a0-8f68" primary="false" name="Famous Commander"/>
+            <categoryLink targetId="b09c-78fb-f3c3-4438" id="a84e-ea0d-d377-1cdf" primary="true" name="Exotic"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="4477-2995-1e70-267b" collective="true">

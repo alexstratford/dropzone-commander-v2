@@ -50,7 +50,8 @@
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="3"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="4"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
                 <profile name="Oppressor Command Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="10f3-3117-3f13-1121">
@@ -61,7 +62,7 @@
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -131,6 +132,179 @@
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="a7fc-33f4-b105-5e7a" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Eden’s Dinosaur - Savager Laser Barge" hidden="false" id="1e9e-5eab-ee7f-0e12">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Savager Laser Barge" hidden="false" id="5b86-9174-6e5b-7c5d" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="260"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="6378-d57f-a862-4399">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="966c-6f03-6dd0-3f48" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5fc-6a8d-5705-e860" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Assault Standoff Energy Beam" hidden="false" id="345e-812d-3076-8bb1" type="selectionEntry" targetId="4a30-0037-4c64-02c0" collective="true"/>
+                <entryLink import="true" name="Commander (CV 5)" hidden="false" id="9e9f-c4fe-53c4-23d5" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0a1-cab3-173c-f47e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea5c-a3d9-ec50-ca1a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <rules>
+                <rule name="Benefit" id="03c5-9a3b-e8e9-fea7" hidden="false">
+                  <description>At the end of each turn, look at the top 3 cards of your Command Card deck. Add one to your hand, place one on the bottom of the Command Card Deck, and discard the remaining card.</description>
+                </rule>
+                <rule name="Detriment" id="9637-d9d4-715c-8e3c" hidden="false">
+                  <description>Your opponent increases their initiative roll by 2.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Command Centre" id="743e-ec6e-b225-df88" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="8d4f-4464-3fd8-f1d4" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Heavy" hidden="false" id="3c5a-8acf-122e-6317" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2292-8266-5676-192d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Slaughterhouse V - Overseer Cradle Barge " hidden="false" id="56c5-9c94-d5b5-1a48">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Overseer Cradle Barge" hidden="false" id="69e9-b955-7a92-a5a9" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="145"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="109e-88b5-4829-7cb6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0ec-1ac7-c803-a2aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40fb-e2ba-b9ff-64d1" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Ion Cradle" hidden="false" id="443f-a165-3071-30ca" type="selectionEntry" targetId="5444-bb2d-f179-38af" collective="true" sortIndex="3"/>
+                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="4117-ab0d-91ff-7ff0" type="selectionEntry" targetId="425b-ba23-208f-1d7e" sortIndex="1"/>
+                <entryLink import="true" name="Plasma Vent" hidden="false" id="1cd9-9bd8-ff2e-bd3f" type="selectionEntry" targetId="3141-bd13-038e-5eae" sortIndex="2"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Command Centre" id="6089-7407-ccbb-f396" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+              <rules>
+                <rule name="Plasma Generator" id="c8b6-a83d-9810-7eb9" hidden="false">
+                  <description>Any friendly units with weapons containing the word “Plasma” or “Electroweb” in their name re-roll failed damage rolls if they are within 9” of this unit when firing. Units with the Fast special rule, Behemoth type, or weapons with a range of CQ are not affected.”</description>
+                </rule>
+                <rule name="Benefit" id="a93a-12db-cd26-9788" hidden="false">
+                  <description>At the end of the turn, look through your discarded Command Cards. Pick one and shuffle it back into your Command Card Deck.</description>
+                </rule>
+                <rule name="Detriment" id="ec21-13af-3680-0261" hidden="false">
+                  <description>Discard your entire hand of Command Cards in the second step of the Initiation Phase instead of only unwanted Command Cards.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="874f-276e-bcd3-4d8a" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Support" hidden="false" id="5807-e6ee-e26c-2af8" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6008-e1cd-85a1-87de" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Pest of Olympus - Despot Suppression Walker " hidden="false" id="e33a-ac49-d13d-f24c">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Despot Suppression Walker" hidden="false" id="9ef6-3183-ac31-5254">
+              <costs>
+                <cost name="pts" typeId="points" value="125"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="4"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Despot Suppression Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="cb9c-5df6-2a60-f9fa">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resilient" id="df38-1244-53c2-8e8a" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4294-7e02-3029-901e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34c2-d459-fdbf-ddd3" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Razor Claws" hidden="false" id="125f-dd9e-3ddb-6a37" type="selectionEntry" targetId="1cd2-8918-7972-6556"/>
+                <entryLink import="true" name="Plasma Hose" hidden="false" id="51db-4b85-b70f-1d88" type="selectionEntry" targetId="0da6-2eb2-286d-b11d"/>
+                <entryLink import="true" name="Commander (CV 2)" hidden="false" id="21cd-c036-4bef-b5b8" type="selectionEntry" targetId="3ef3-74ac-9b0a-841f"/>
+              </entryLinks>
+              <rules>
+                <rule name="Micro Subjugation Field" id="598a-2d44-e0fe-466d" hidden="false">
+                  <description>Enemy non-Behemoth units that activate within 3” of this unit reduce the amount of actions they may perform by 1 to a minimum of 1. Additionally, enemy infantry may not benefit from Scan Tokens while they (or the Garrison they’re occupying) are within 3” of this unit.</description>
+                </rule>
+                <rule name="Benefit" id="d9d8-2fd8-d109-4042" hidden="false">
+                  <description>Friendly units weapons with “Plasma” in their name reduce the total accuracy modifier increases those weapons suffer by 1 to a minimum of +1 (i.e. a +3 modifier would become a +2 modifier).</description>
+                </rule>
+                <rule name="Detriment" id="27d3-ba1a-e136-4422" hidden="false">
+                  <description>Command Cards with an area of Influence can only be used within this Commanders Command Radius and within 4” of friendly units with the Scout category.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="261b-5e01-eba0-d86d" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="20a2-5a5e-d80e-e63e" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e5b-8be3-7bd2-0f71" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1891,6 +2065,59 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             <infoLink name="AA-X" id="d3c1-d901-7e4d-0795" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Assault Standoff Energy Beam" hidden="false" id="4a30-0037-4c64-02c0" collective="true">
+          <profiles>
+            <profile name="Assault Standoff Energy Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6b36-a44d-bee3-c87f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Assault Standoff Energy Beam" id="a844-8015-6eff-ba3c" hidden="false">
+              <description>Assault Standoff Energy Beam may still be used even if this unit moves over its M&amp;F value, however it loses the Strafe special rule for that attack.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="eef6-70ca-3fd2-0c03" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+            <infoLink name="Strafe-X" id="cbe8-def8-f1e4-5a21" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="758b-c915-db8f-0e25" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="020f-e2da-8d42-998b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Vent" hidden="false" id="3141-bd13-038e-5eae" collective="true">
+          <profiles>
+            <profile name="Plasma Vent" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="50e1-3efb-3347-87e1">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="331d-b42a-ee3e-bd90" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d0-ff73-1c79-2260" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Area" id="efc9-8411-5f99-cd1b" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Devastator-X" id="3cad-cd94-a9b7-9d1b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
@@ -3004,6 +3231,8 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
     <entryLink import="true" name="Harbinger Dropship" hidden="false" id="2b90-03fd-0da1-0feb" targetId="beee-e955-7cde-1c66" type="selectionEntry"/>
     <entryLink import="true" name="Corsair Interceptor" hidden="false" id="04ad-4c67-5017-3068" targetId="d235-999f-429e-e2e8" type="selectionEntry"/>
     <entryLink import="true" name="Vampire" hidden="false" id="8690-7dbe-2d13-d8e5" targetId="b7a7-38ea-d023-9c27" type="selectionEntry"/>
+    <entryLink import="true" name="Eden’s Dinosaur - Savager Laser Barge" hidden="false" id="c946-245f-afc0-e50b" targetId="1e9e-5eab-ee7f-0e12" type="selectionEntry"/>
+    <entryLink import="true" name="Pest of Olympus - Despot Suppression Walker " hidden="false" id="c935-8755-a97b-30cf" targetId="e33a-ac49-d13d-f24c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
