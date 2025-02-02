@@ -102,6 +102,16 @@
         <characteristicType id="463e-6079-0c6d-3830" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="ff8d-7bf5-5e1d-8ad0" name="Unit (No Transport)">
+      <characteristicTypes>
+        <characteristicType id="eb95-5ff4-e4ee-f207" name="Move"/>
+        <characteristicType id="d5c2-6e3d-7f80-1e21" name="CM"/>
+        <characteristicType id="a5ec-d3f7-784a-6d89" name="A"/>
+        <characteristicType id="e707-608e-5069-cf78" name="DP"/>
+        <characteristicType id="2ed1-82c9-6c88-46ee" name="Type"/>
+        <characteristicType id="89f6-a5e7-b366-70a3" name="Special"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
@@ -917,15 +927,7 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Game Size" hidden="false" id="71a0-476c-277b-1c28">
       <entryLinks>
-        <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64">
-          <modifiers>
-            <modifier type="set" value="7895-d441-b903-8bb2" field="defaultSelectionEntryId">
-              <conditionGroups>
-                <conditionGroup type="and"/>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
