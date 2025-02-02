@@ -18,6 +18,10 @@
     <entryLink import="true" name="Veteran Selection" hidden="false" id="6b40-bd63-fa3b-a80f" targetId="0589-b5ed-f2f4-946e" type="selectionEntry"/>
     <entryLink import="true" name="Resistance Veterans" hidden="false" id="cc95-283a-a07b-aa7d" targetId="ea3e-a83a-7091-ceb1" type="selectionEntry"/>
     <entryLink import="true" name="Resistance Fighters" hidden="false" id="d102-6b5e-6a07-3e6a" targetId="1f3a-db68-bcb9-8fb7" type="selectionEntry"/>
+    <entryLink import="true" name="Napoleon Heavy Tank" hidden="false" id="0615-baa8-408e-4eb3" targetId="41df-2d1c-989a-4e55" type="selectionEntry"/>
+    <entryLink import="true" name="Hannibal Tank" hidden="false" id="66d3-9e6e-c7c6-0f06" targetId="7af0-abb9-8eb0-1edb" type="selectionEntry"/>
+    <entryLink import="true" name="Thunderstorm Heavy Hovercraft" hidden="false" id="90f6-433e-c8b5-8079" targetId="b301-807b-90af-e197" type="selectionEntry"/>
+    <entryLink import="true" name="Gun Bus" hidden="false" id="f707-247e-86c3-cf9f" targetId="1f5e-9174-a2d4-1979" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -709,6 +713,146 @@
             <infoLink name="Focus-X" id="2eac-7f71-034e-78f4" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Banisher Rotary Cannon" hidden="false" id="dc17-9fe8-e1c8-8a1e" collective="true">
+          <profiles>
+            <profile name="Banisher Rotary Cannon [1]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d740-dd20-7f89-6db8">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Focus-1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Banisher Rotary Cannon [2]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ac0b-704a-0f64-9a08">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Focus-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cover-X" id="264f-264d-16d0-f07e" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Focus-X" id="2b92-d351-7072-9864" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6604-9041-90b1-c732" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18e6-9c62-3516-2a33" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Banisher Rotary Cannon" id="117c-c34e-edcc-985f" hidden="false">
+              <description>When using the Focus special rule with this weapon, no individual hit may go above Energy 10.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="90MM Cannon" hidden="false" id="9181-a144-74f7-9bee" collective="true">
+          <profiles>
+            <profile name="90MM Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1278-ef3a-8c09-5569">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9d6-98ee-93ef-8790" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3a3-0969-6d22-d52c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="881b-8979-6afc-f9d7" collective="true">
+          <profiles>
+            <profile name="Machine Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e10e-4232-b631-693b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="571b-59f5-9971-085a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4664-a8e2-b48d-970c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Looted Plasma Cannons" hidden="false" id="c942-4d98-c176-bd6a" collective="true">
+          <profiles>
+            <profile name="Looted Plasma Cannons [1]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ea05-9f04-91dc-e24f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Looted Plasma Cannons [2]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a1d5-3c38-7337-558e">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Looted Plasma Cannons [3]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="315c-423e-43d5-2e6b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Looted Plasma Cannons [4]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7bde-aa41-f030-d02a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ad8-1f25-f3be-6747" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a318-dbe5-4650-d347" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="e22c-c24f-f0d2-0b23" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="d79c-a6cb-4e01-d3d9">
@@ -1209,6 +1353,171 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="0e78-2262-2370-4a0c">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Napoleon Heavy Tank" hidden="false" id="41df-2d1c-989a-4e55">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="a095-e84a-d533-6d68" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Napoleon Heavy Tank" hidden="false" id="8ac7-f1f1-cd61-4eab">
+              <costs>
+                <cost name="pts" typeId="points" value="120"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Banisher Rotary Cannon" hidden="false" id="4c93-3d80-36ee-2f55" type="selectionEntry" targetId="dc17-9fe8-e1c8-8a1e" sortIndex="2"/>
+                <entryLink import="true" name="Chainguns" hidden="false" id="331b-0961-5578-663d" type="selectionEntry" targetId="8d9e-a766-b8df-80d2" sortIndex="4"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef3d-8006-e036-acf9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a52-1acd-8c39-cd75" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Napoleon Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="29da-8ba4-389f-779e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hannibal Tank" hidden="false" id="7af0-abb9-8eb0-1edb">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hannibal Tank" hidden="false" id="7ef0-3034-910d-bf54" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Hannibal Tank Weapon Selection" hidden="false" id="6fad-6b71-4313-4eb8" type="selectionEntryGroup" targetId="76a9-31db-6332-1eb9" sortIndex="1"/>
+                <entryLink import="true" name="Machine Gun" hidden="false" id="0913-79f7-43d1-dfe2" type="selectionEntry" targetId="881b-8979-6afc-f9d7" sortIndex="3"/>
+                <entryLink import="true" name="90MM Cannon" hidden="false" id="8686-f1d9-8720-7076" type="selectionEntry" targetId="9181-a144-74f7-9bee" sortIndex="2"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Hannibal Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ebde-b7d3-a552-49ea">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0475-c397-4b26-efa2" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c530-8032-697d-ffe3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="6571-f28a-3c6e-6f77" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Thunderstorm Heavy Hovercraft" hidden="false" id="b301-807b-90af-e197">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Thunderstorm Heavy Hovercraft" hidden="false" id="8924-3479-29dc-4962">
+              <profiles>
+                <profile name="Thunderstorm Heavy Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="6e10-49dd-716f-2fee">
+                  <characteristics>
+                    <characteristic name="Move" typeId="bf89-fcc7-f093-faca">10&quot;</characteristic>
+                    <characteristic name="CM" typeId="a100-1ed0-8001-534e">A, E+1</characteristic>
+                    <characteristic name="A" typeId="966a-02f8-8ce0-0806">13</characteristic>
+                    <characteristic name="DP" typeId="5167-c8b3-2814-3457">9</characteristic>
+                    <characteristic name="Type" typeId="6153-63f6-5e39-9a03">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="0f17-2aa1-29ec-c7bc">Command Centre, Large</characteristic>
+                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">12 Wheel</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Command Centre" id="1699-07ea-0e78-f45e" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                <infoLink name="Large" id="fe17-451b-9e0a-e058" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+                <infoLink name="Hovercraft" id="246f-27e8-9090-12f6" hidden="false" type="rule" targetId="6b32-5330-83eb-8625"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f5c-b667-39b3-40c2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e75a-d7fa-c7aa-f7a0" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Looted Plasma Cannons" hidden="false" id="0f34-83fe-d364-66e4" type="selectionEntry" targetId="c942-4d98-c176-bd6a"/>
+                <entryLink import="true" name="Commander" hidden="false" id="2d70-1c88-88ad-c5f7" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="190"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-12"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="2a69-cd6b-b843-4c4c" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gun Bus" hidden="false" id="1f5e-9174-a2d4-1979">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gun Bus" hidden="false" id="23c6-f248-400d-a055" collective="true">
+          <profiles>
+            <profile name="Gun Bus" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ec0e-450d-be42-f754">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Bus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Gun Bus Weapon Selection" hidden="false" id="e42f-7074-9af2-69dc" type="selectionEntryGroup" targetId="056c-e9b4-05f8-edfc"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e9d6-3407-ea40-2c8b" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0452-220b-9365-6e69" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="35"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ff91-8cc3-f775-3d20" id="671b-c55d-7e11-a4a4" primary="true" name="Heavy"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Pizzaro Hazard Walker Weapon Selection" id="b5cf-206c-5183-ef30" hidden="false" defaultSelectionEntryId="577b-00e4-30b2-998b" collective="true">
@@ -1432,6 +1741,109 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="603e-e474-96a1-8366" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e29b-b489-f528-1b43" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hannibal Tank Weapon Selection" id="76a9-31db-6332-1eb9" hidden="false" defaultSelectionEntryId="4e11-6237-2387-8c44" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="HI-EX Hammer Cannon" hidden="false" id="3260-a0d3-62bc-f086" collective="true">
+          <profiles>
+            <profile name="HI-EX Hammer Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fbfe-1343-8df8-930c">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="4cf8-dca4-1189-066a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="120MM Punisher Cannon" hidden="false" id="4e11-6237-2387-8c44" collective="true" defaultAmount="1">
+          <profiles>
+            <profile name="120MM Punisher Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8934-a3ee-d993-4420">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7400-9109-0346-3ae3" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b35c-a660-13d5-8c34" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Gun Bus Weapon Selection" id="056c-e9b4-05f8-edfc" hidden="false" collective="true" defaultSelectionEntryId="c4ba-2f08-0d0d-9479">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flak-G88 Cannon" hidden="false" id="c4ba-2f08-0d0d-9479" defaultAmount="1" sortIndex="1" collective="true">
+          <profiles>
+            <profile name="Flak-G88 Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f8e9-3377-0ad4-09bb">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="AA-X" id="e528-58ae-d30c-c76e" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sonic Deterence Projector" hidden="false" id="2155-9ec7-2538-e974" sortIndex="2" collective="true">
+          <profiles>
+            <profile name="Sonic Deterence Projector" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="827f-c002-7f9d-636b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Sonic Deterrence Projector" id="c701-7d46-ab01-a4a2" hidden="false">
+              <description>Infantry squads hit by this weapon cannot use Scan tokens for the rest of the round and may not fire at units outside of their garrison for the rest of the round.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Flame" id="1242-857b-ac89-4e4a" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39a5-0135-9b17-2133" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0370-29c2-5b75-fca2" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

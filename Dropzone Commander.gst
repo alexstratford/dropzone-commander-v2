@@ -112,6 +112,17 @@
         <characteristicType id="89f6-a5e7-b366-70a3" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="f999-cdc5-d912-46a0" name="Hovercraft">
+      <characteristicTypes>
+        <characteristicType id="bf89-fcc7-f093-faca" name="Move"/>
+        <characteristicType id="a100-1ed0-8001-534e" name="CM"/>
+        <characteristicType id="966a-02f8-8ce0-0806" name="A"/>
+        <characteristicType id="5167-c8b3-2814-3457" name="DP"/>
+        <characteristicType id="6153-63f6-5e39-9a03" name="Type"/>
+        <characteristicType id="0f17-2aa1-29ec-c7bc" name="Special"/>
+        <characteristicType id="ab5c-4a91-95a8-9e3a" name="Transport Capacity"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
