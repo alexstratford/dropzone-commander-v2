@@ -769,7 +769,7 @@
             <categoryLink name="Support" hidden="false" id="8d3e-eef2-7eb9-71fe" targetId="1742-0b1d-252f-505d">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b2bf-02c6-8056-10c6" includeChildSelections="true" includeChildForces="true"/>
-                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="08a1-c740-1b39-e35b" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="08a1-c740-1b39-e35b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary" hidden="false" id="f01e-ba8f-6ea5-da5a" targetId="de27-8358-5d78-6eeb">
