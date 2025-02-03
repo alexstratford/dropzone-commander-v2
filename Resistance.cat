@@ -35,6 +35,9 @@
     <entryLink import="true" name="Strikehawk Tilt-Rotor" hidden="false" id="2db7-03b7-744f-b5ef" type="selectionEntry" targetId="515b-3dbc-3470-a461"/>
     <entryLink import="true" name="Rocket Technical" hidden="false" id="6f8d-bfc6-7b73-949f" targetId="34fe-d5e9-fd3d-fafa" type="selectionEntry"/>
     <entryLink import="true" name="K9 Technical" hidden="false" id="bf51-2efa-d6fb-dda7" targetId="165b-2517-aec4-47b5" type="selectionEntry"/>
+    <entryLink import="true" name="Scout ATVs" hidden="false" id="38f0-727d-d841-0917" targetId="b838-eb16-580d-c87f" type="selectionEntry"/>
+    <entryLink import="true" name="AA Gun Technical" hidden="false" id="2e66-ff24-e656-a8fa" targetId="98f1-8f03-db96-2ba6" type="selectionEntry"/>
+    <entryLink import="true" name="Sappers" hidden="false" id="b596-1bb5-44c4-50a6" targetId="6090-e45a-f62b-b8c8" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -886,20 +889,8 @@
             <infoLink name="Reduced-X" id="a01b-5e1d-0341-4182" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Machine Guns, Knives and Pistols" hidden="false" id="cdc4-8483-37b7-0205" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Machine Guns" hidden="false" id="cdc4-8483-37b7-0205" collective="true">
           <profiles>
-            <profile name="Knives and Pistols" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ee5b-2e8a-578f-7e10">
-              <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Machine Guns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b7b6-8fcd-22ef-4052">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
@@ -916,6 +907,11 @@
           <infoLinks>
             <infoLink name="Reduced-X" id="2f1a-ead7-577d-43ad" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abd1-815c-c19d-82b1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abd1-815c-c19d-82b1-max" includeChildSelections="false"/>
+          </constraints>
+          <comment>Freeriders</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Assault Grenade Launchers, Incendiary Grenades, Chem Grenades" hidden="false" id="ebf7-283b-9988-4796" collective="true">
           <rules>
@@ -1166,6 +1162,75 @@
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy AA Machine Gun" hidden="false" id="ef53-3812-b9f0-043a" collective="true">
+          <profiles>
+            <profile name="Heavy AA Machine Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e0be-1256-9def-3d52">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6832-fa03-4f76-579a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-9c72-12d5-0174" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="AA-X" id="d50d-c874-957a-78f4" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knives and Pistols" hidden="false" id="6d5d-19ff-e260-889f" collective="true">
+          <infoLinks>
+            <infoLink name="Reduced-X" id="d640-c0c6-d772-5006" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Knives and Pistols" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0672-aa0a-3e3d-7637">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24bd-5c19-50b3-fec8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24bd-5c19-50b3-fec8-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trigger Demo IED" hidden="false" id="3f55-a7b7-83a5-37b9" collective="true">
+          <infoLinks>
+            <infoLink name="Devastator-X" id="a567-3417-dc9d-3718" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Trigger Demo IED" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2253-0776-f4ea-9ce3">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d044-8f40-2ef7-9f39-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d044-8f40-2ef7-9f39-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1591,7 +1656,7 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atMost" value="0" field="selections" scope="roster" childId="fb04-c25c-1509-5d8f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="dfc8-1d4d-02ce-fd62" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
@@ -1610,7 +1675,7 @@
             <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="bed9-4043-26da-6e85" includeChildSelections="true"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
@@ -2414,7 +2479,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Freeriders" hidden="false" id="4398-4680-5d79-dfe1">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Transport Selection" id="e77c-d18b-c464-401b" hidden="false" collective="true" defaultSelectionEntryId="f3cc-1de1-1a05-2476">
+                <selectionEntryGroup name="Transport Selection" id="e77c-d18b-c464-401b" hidden="false" collective="true" defaultSelectionEntryId="f3cc-1de1-1a05-2476" sortIndex="2">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Wheel" hidden="false" id="acbc-a7ef-636f-fcfd" defaultAmount="1" collective="true" sortIndex="1">
                       <costs>
@@ -2471,8 +2536,9 @@
                 <infoLink name="Resilient" id="0513-022f-2cca-a3b3" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Infiltrating" hidden="false" id="c2ff-7899-0d6c-f895" type="selectionEntry" targetId="5e74-7851-f3ac-10e9"/>
-                <entryLink import="true" name="Machine Guns, Knives and Pistols" hidden="false" id="41f8-fa5a-08df-aa5e" type="selectionEntry" targetId="cdc4-8483-37b7-0205"/>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="c2ff-7899-0d6c-f895" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
+                <entryLink import="true" name="Machine Guns, Knives and Pistols" hidden="false" id="41f8-fa5a-08df-aa5e" type="selectionEntry" targetId="cdc4-8483-37b7-0205" sortIndex="3"/>
+                <entryLink import="true" name="Knives and Pistols" hidden="false" id="3c4a-e349-94e8-59ad" type="selectionEntry" targetId="6d5d-19ff-e260-889f" sortIndex="4"/>
               </entryLinks>
               <rules>
                 <rule name="Bikes" id="456e-9516-ff25-3ba7" hidden="false">
@@ -2569,6 +2635,236 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout" hidden="false" id="bcac-8b29-8fc9-30bf" subType="unit-group">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Scout ATVs" hidden="false" id="b838-eb16-580d-c87f">
+          <categoryLinks>
+            <categoryLink targetId="5f13-c39f-577a-8947" id="15b1-56d3-503e-3162" primary="true" name="Scout"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Scout ATVs" hidden="false" id="e7ed-06de-c10f-da90" collective="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Transport Selection" id="6181-8ab1-20b4-947e" hidden="false" collective="true" defaultSelectionEntryId="f3cc-1de1-1a05-2476">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Wheel" hidden="false" id="0701-1eb6-e8e3-b9ba" defaultAmount="1" collective="true" sortIndex="1">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                        <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                        <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="2"/>
+                        <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Drill" hidden="false" id="9aad-c92d-e3a0-66cb" collective="true" sortIndex="2">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                        <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="2"/>
+                        <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                        <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a704-f601-8318-e021" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a9f-1723-88f1-a018" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bfc2-f962-95bd-fc96" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="34ab-7410-9d50-75f5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Scout ATVs" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f72b-f631-754c-a62e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resilient" id="b3c9-b3b5-2c9b-2503" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <rules>
+                <rule name="Wheels" id="f369-ab76-d381-1a5c" hidden="false">
+                  <description>This unit may not enter Garrisons</description>
+                </rule>
+                <rule name="Enhanced Targeting Array" id="26ba-bd15-7945-3252" hidden="false">
+                  <description>Any friendly Indirect weapon targeting a unit within line of sight of one or more units with this special rule receives a -1 bonus to its Accuracy.</description>
+                </rule>
+                <rule name="Disruptor Array" id="869d-fd97-5326-a9ef" hidden="false">
+                  <description>Once per activation, pick an enemy non-Behemoth Vehicle squad or Infantry squad with at least one unit in line of sight within 18” of this unit. That squad suffers a +2 penalty to its Accuracy until the end of the round. Multiple units in this squad may affect multiple enemy squads, but each enemy squad may only be affected by this special rule once.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="AA Gun Technical" hidden="false" id="98f1-8f03-db96-2ba6">
+          <categoryLinks>
+            <categoryLink targetId="5f13-c39f-577a-8947" id="e544-016a-cbee-317e" primary="true" name="Scout"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="AA Gun Technical" hidden="false" id="f6bc-f2b7-c2f1-be39" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Transport Selection" id="a205-5b5b-d19b-3ddf" hidden="false" collective="true" defaultSelectionEntryId="f3cc-1de1-1a05-2476">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Wheel" hidden="false" id="de8e-70ad-dd31-f92c" defaultAmount="1" collective="true" sortIndex="1">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                        <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                        <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                        <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Drill" hidden="false" id="fe47-249f-769c-be66" collective="true" sortIndex="2">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                        <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                        <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                        <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
+                        <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                        <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ada-d58b-77c3-1d08" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19d1-81b9-d85a-e707" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="a07c-0ba3-0a6b-0f58" includeChildSelections="false"/>
+                <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="cbdd-f3c9-b2a5-73ea" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="AA Gun Technical" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="518b-fe4d-05e1-4223">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Wheel/Drill</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Heavy AA Machine Gun" hidden="false" id="9c0e-5985-40f4-b6b2" type="selectionEntry" targetId="ef53-3812-b9f0-043a"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Sappers" hidden="false" id="6090-e45a-f62b-b8c8">
+          <categoryLinks>
+            <categoryLink name="Scout" hidden="false" id="1711-0f76-57cc-fe0f" targetId="5f13-c39f-577a-8947" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sappers" hidden="false" id="c925-7879-1f7d-3250" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="35"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7fbd-1ad0-292c-a5d0-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7fbd-1ad0-292c-a5d0-max"/>
+              </constraints>
+              <profiles>
+                <profile name="Sappers" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="837f-35c8-8df5-4e65">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 5+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 18&quot;, Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Infiltrate X" id="ff9d-b3d4-0262-4142" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
+                <infoLink name="Rare" id="3176-8500-8cf2-1c55" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="964f-c061-301a-cd7c" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
+                <entryLink import="true" name="Knives and Pistols" hidden="false" id="8bee-ebec-d818-b3a9" type="selectionEntry" targetId="6d5d-19ff-e260-889f" sortIndex="3"/>
+                <entryLink import="true" name="Trigger Demo IED" hidden="false" id="2de9-4b40-3441-b731" type="selectionEntry" targetId="3f55-a7b7-83a5-37b9" sortIndex="2"/>
+              </entryLinks>
+              <rules>
+                <rule name="Cluster IED" id="8d66-124e-493f-32fd" hidden="false">
+                  <description>When an enemy squad enters a Garrison this squad is in, roll 2D6. The enemy squad takes that much damage, distributed in the same way as Close Quarters weapons. Passive and Dodge saves may be used against this damage. If a double is rolled, the explosion was a bit too powerful! Damage is dealt as normal, but one unit from this squad is then removed as a casualty (controlling player’s choice).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b809-0154-d418-98de" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="b809-0154-d418-98de">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="b809-0154-d418-98de">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="b809-0154-d418-98de">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxiliary" hidden="false" id="47d2-c8fe-47f9-fec1" subType="unit-group"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Pizzaro Hazard Walker Weapon Selection" id="b5cf-206c-5183-ef30" hidden="false" defaultSelectionEntryId="577b-00e4-30b2-998b" collective="true">
@@ -2762,7 +3058,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-644a-3ebe-d8fa" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Veteran Selection" id="fb04-c25c-1509-5d8f" hidden="false" defaultSelectionEntryId="77f3-cd88-42e2-900c">
+    <selectionEntryGroup name="Veteran Selection" id="fb04-c25c-1509-5d8f" hidden="true" defaultSelectionEntryId="77f3-cd88-42e2-900c">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Scourge Occupation" hidden="false" id="77f3-cd88-42e2-900c" sortIndex="1" defaultAmount="1">
           <rules>

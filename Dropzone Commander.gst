@@ -968,13 +968,48 @@
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Game Size" hidden="false" id="71a0-476c-277b-1c28">
+    <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
       <entryLinks>
         <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran Selection" hidden="true" id="dfc8-1d4d-02ce-fd62" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Veteran Selection" hidden="false" id="d345-9ee6-1b63-b63e" type="selectionEntryGroup" targetId="63f5-9a9c-e02b-59e0"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="43fe-4a2b-e6ca-dd15" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67d-03eb-5397-658a" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="You need to select a special rule for Resistance Veterans" field="warning">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="dfc8-1d4d-02ce-fd62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Transport Requirement" hidden="false" id="4379-c9b6-890d-afa4">
       <constraints>
@@ -1009,7 +1044,33 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="EAA Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
+                <profile name="EAA Columbus Battlewalker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="1b9c-154b-6a95-b8e0">
+                  <characteristics>
+                    <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A</characteristic>
+                    <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">14</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
+                    <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                          </conditions>
+                          <comment>Enable Resistance</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+                <profile name="Resistance Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="true" id="5e06-46dd-1ab9-10a0">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1017,12 +1078,12 @@
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Bus</characteristic>
                   </characteristics>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                        <modifier type="set" value="false" field="hidden"/>
                       </modifiers>
                       <conditionGroups>
                         <conditionGroup type="and">
@@ -1971,6 +2032,38 @@ When targeting a Behemoth, measure to any point within its Spread.</description
       <categoryLinks>
         <categoryLink targetId="1cac-032f-4580-2381" id="5f3b-4dd0-6a71-3376" primary="true" name="Commander"/>
       </categoryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Veteran Selection" id="63f5-9a9c-e02b-59e0" hidden="false" defaultSelectionEntryId="77f3-cd88-42e2-900c">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scourge Occupation" hidden="false" id="6a6a-afaa-6da5-923b" sortIndex="1" defaultAmount="1">
+          <rules>
+            <rule name="Scourge Occupation" id="879d-92d4-261d-44fd" hidden="false">
+              <description>*These fighters take to the battle with modified Scourge Plasma Rifles salvaged from their foes.*
+Resistance Veteran squads replace their Assault Rifles with Plasma Rifles.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kalium Volunteers" hidden="false" id="7b9c-7171-e030-f89a" sortIndex="3">
+          <rules>
+            <rule name="Kalium Volunteers" id="2d7e-624c-c7fa-9adc" hidden="false">
+              <description>*Iron disciplined soldiers who choose to continue serving long after their conscription is up.*
+Resistance Veteran squads automatically pass Fortitude tests and gain the Resilient special rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marine Force Recon" hidden="false" id="79b7-0c15-46f2-2814" sortIndex="2">
+          <rules>
+            <rule name="Marine Force Recon" id="4a8e-7019-7ea5-88b7" hidden="false">
+              <description>*Specially trained UCM allies that fight alongside Resistance forces.*
+Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2393-7942-8db8-8a69" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e9-b92a-9404-247f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>
