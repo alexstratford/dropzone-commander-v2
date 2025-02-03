@@ -2036,7 +2036,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed87-b415-2bd1-2893" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ca-ba30-2c74-71bf" includeChildSelections="false"/>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="b4ca-ba30-2c74-71bf" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Odin Heavy Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="314d-16cc-1732-e84e">
