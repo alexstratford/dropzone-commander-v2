@@ -2565,65 +2565,6 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <infoLink name="Indirect" id="1cb1-9db4-c08a-f1df" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
             <infoLink name="Tech Killer" id="cfc1-32dd-c6b1-7cf0" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Minigun Pair" hidden="false" id="87ab-00f3-72c9-f511" collective="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aed-dfca-99d2-4084" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3da6-6b83-ad39-a66c" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5f33-ac39-dad4-fbe0">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6729-13a2-7f48-a47c">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nanomachine Swarm" hidden="false" id="12ba-d36b-8002-a811" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1193-682b-a6e9-d370" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d816-f34e-472f-0b41" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b90b-0bc9-2bf6-43e9">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Area" id="81f2-7e69-4c9b-2d40" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
-                <infoLink name="Indirect" id="c2ab-50e4-f337-5db0" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
-                <infoLink name="Tech Killer" id="ed98-23c6-edb9-2695" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Minigun Pair" hidden="false" id="c4db-e9ba-7da2-796f" collective="true">
           <constraints>
@@ -2656,65 +2597,6 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Minigun Pair" hidden="false" id="0f58-2272-4ecd-94b0" collective="true">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c19-b6b8-b057-f7cb" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee08-5835-5393-fd2c" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8962-bd36-e443-b905">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e83b-a784-9da2-27c3">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nanomachine Swarm" hidden="false" id="c061-db1f-040a-3cfe" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0739-bf77-7ec0-8d86" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a143-de9f-bc5f-385f" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7505-175c-b6f0-ba17">
-                  <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Area" id="1ffd-6dfe-d0c2-6919" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
-                <infoLink name="Indirect" id="ec56-7482-73cd-8bd1" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
-                <infoLink name="Tech Killer" id="1bd5-35e5-a4d6-fa0a" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Vanquisher Cannon" hidden="false" id="d22c-0448-62c9-8583" collective="true">
           <constraints>
