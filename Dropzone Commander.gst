@@ -1563,6 +1563,9 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
 
 When targeting a Behemoth, measure to any point within its Spread.</description>
     </rule>
+    <rule name="Large Transport" id="ea19-99eb-b9c6-e3e4" hidden="false">
+      <description>When a unit disembarks from this unit, measure from any point on its edge rather than the centre.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="3fda-65f2-6cc3-ee33">
