@@ -59,7 +59,7 @@
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="b88a-b68e-168b-9f30" name="Aircraft (Drop)">
+    <profileType id="b88a-b68e-168b-9f30" name="Aircraft">
       <characteristicTypes>
         <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
         <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
@@ -69,8 +69,9 @@
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
         <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
       </characteristicTypes>
+      <comment>Drop</comment>
     </profileType>
-    <profileType id="b88a-b68e-168b-9f31" name="Aircraft (Transport)">
+    <profileType id="b88a-b68e-168b-9f31" name="Aircraft">
       <characteristicTypes>
         <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
         <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
@@ -80,8 +81,9 @@
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
         <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
       </characteristicTypes>
+      <comment>Transport Requirement</comment>
     </profileType>
-    <profileType id="a7a0-2f14-30f9-c88b" name="Vehicle (Transport)">
+    <profileType id="a7a0-2f14-30f9-c88b" name="Vehicle">
       <characteristicTypes>
         <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
         <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
@@ -92,6 +94,7 @@
         <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
         <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
       </characteristicTypes>
+      <comment>Transport</comment>
     </profileType>
     <profileType id="d3ad-5a11-6f2d-62a0" name="Behemoth">
       <characteristicTypes>
@@ -102,7 +105,7 @@
         <characteristicType id="463e-6079-0c6d-3830" name="Special"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="ff8d-7bf5-5e1d-8ad0" name="Unit (No Transport)">
+    <profileType id="ff8d-7bf5-5e1d-8ad0" name="Unit">
       <characteristicTypes>
         <characteristicType id="eb95-5ff4-e4ee-f207" name="Move"/>
         <characteristicType id="d5c2-6e3d-7f80-1e21" name="CM"/>
@@ -111,8 +114,9 @@
         <characteristicType id="2ed1-82c9-6c88-46ee" name="Type"/>
         <characteristicType id="89f6-a5e7-b366-70a3" name="Special"/>
       </characteristicTypes>
+      <comment>No Transport Requirement</comment>
     </profileType>
-    <profileType id="f999-cdc5-d912-46a0" name="Hovercraft">
+    <profileType id="f999-cdc5-d912-46a0" name="Vehicle">
       <characteristicTypes>
         <characteristicType id="bf89-fcc7-f093-faca" name="Move"/>
         <characteristicType id="a100-1ed0-8001-534e" name="CM"/>
@@ -122,6 +126,7 @@
         <characteristicType id="0f17-2aa1-29ec-c7bc" name="Special"/>
         <characteristicType id="ab5c-4a91-95a8-9e3a" name="Transport Capacity"/>
       </characteristicTypes>
+      <comment>Transport, No Requirement</comment>
     </profileType>
   </profileTypes>
   <categoryEntries>
@@ -959,7 +964,7 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Game Size" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry" flatten="true">
+    <entryLink import="true" name="Configuration" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry" flatten="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4a0-8867-cb2b-18f5" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d9d-ff46-c224-41ef" includeChildSelections="false"/>
@@ -1044,7 +1049,7 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="EAA Columbus Battlewalker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="1b9c-154b-6a95-b8e0">
+                <profile name="EAA Columbus Battlewalker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A</characteristic>
@@ -2045,6 +2050,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
 Resistance Veteran squads replace their Assault Rifles with Plasma Rifles.</description>
             </rule>
           </rules>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kalium Volunteers" hidden="false" id="7b9c-7171-e030-f89a" sortIndex="3">
           <rules>
@@ -2061,6 +2076,16 @@ Resistance Veteran squads automatically pass Fortitude tests and gain the Resili
 Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</description>
             </rule>
           </rules>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>

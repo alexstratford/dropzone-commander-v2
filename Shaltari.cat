@@ -2160,7 +2160,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Adamah Gungate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="11b9-9213-0524-422b">
+                <profile name="Adamah Gungate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="11b9-9213-0524-422b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
@@ -2604,7 +2604,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Tegu Gatestrider" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="b523-80ee-6984-598a">
+                <profile name="Tegu Gatestrider" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="b523-80ee-6984-598a">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
@@ -2648,7 +2648,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Firedrake Heavy Assault Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="6575-0dba-2379-4ff7">
+                <profile name="Firedrake Heavy Assault Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="6575-0dba-2379-4ff7">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+, E+3</characteristic>
@@ -2778,7 +2778,7 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Haven Terragate" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="f7c3-1769-ff77-66bf">
+                <profile name="Haven Terragate" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="f7c3-1769-ff77-66bf">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2, P5+</characteristic>
@@ -2821,7 +2821,7 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Eden Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="181e-f60b-5110-1e6c">
+                <profile name="Eden Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="181e-f60b-5110-1e6c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
@@ -2864,7 +2864,7 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Gaia Heavy Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="2568-0960-11f8-e111">
+                <profile name="Gaia Heavy Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="2568-0960-11f8-e111">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
@@ -2907,7 +2907,7 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Spirit Light Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="08dc-1c33-82d4-b526">
+                <profile name="Spirit Light Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="08dc-1c33-82d4-b526">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
@@ -3008,7 +3008,7 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Zion Gatespire" hidden="false" id="9837-7ed9-745d-da88" collective="true">
               <profiles>
-                <profile name="Zion Gatespire" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="c88e-f2a1-e48b-ec7d">
+                <profile name="Zion Gatespire" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="c88e-f2a1-e48b-ec7d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>

@@ -480,7 +480,7 @@ been destroyed.</description>
                 </rule>
               </rules>
               <profiles>
-                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="25bd-05c0-3974-f003">
+                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="25bd-05c0-3974-f003">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
@@ -650,7 +650,7 @@ been destroyed.</description>
                 </rule>
               </rules>
               <profiles>
-                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="42f4-faeb-1295-9400">
+                <profile name="Angelos Jetskimmer" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="42f4-faeb-1295-9400">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
@@ -689,7 +689,7 @@ been destroyed.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3221-3a3d-6f80-82e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Juno APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="7246-4f50-7984-34b4">
+                <profile name="Juno APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="7246-4f50-7984-34b4">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -728,7 +728,7 @@ been destroyed.</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a951-9c76-887a-6428" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Neptune Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="c928-1012-39aa-c2bd">
+                <profile name="Neptune Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="c928-1012-39aa-c2bd">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1066,7 +1066,7 @@ been destroyed.</description>
                 <entryLink import="true" name="Light Railgun Pair" hidden="false" id="045e-34f7-e4b9-8af0" type="selectionEntry" targetId="ac44-7ae7-0387-dff5"/>
               </entryLinks>
               <profiles>
-                <profile name="Atlas Bulk Personnel Walker" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="78e1-0188-628d-a826">
+                <profile name="Atlas Bulk Personnel Walker" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="78e1-0188-628d-a826">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>

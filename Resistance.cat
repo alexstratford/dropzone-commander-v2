@@ -49,6 +49,9 @@
     <entryLink import="true" name="Lifthawk Troopship" hidden="false" id="1ca3-fa51-cd44-0ee8" targetId="f86a-89eb-062a-9da3" type="selectionEntry"/>
     <entryLink import="true" name="Tempest Interceptor" hidden="false" id="4721-863c-25d4-7995" targetId="66c8-8549-dbca-6961" type="selectionEntry"/>
     <entryLink import="true" name="Hellhog Jumpjet" hidden="false" id="d62e-dc4c-01dc-28d0" targetId="7188-e1ef-8366-17c4" type="selectionEntry"/>
+    <entryLink import="true" name="Salakhan - Napoleon Heavy Tank" hidden="false" id="183b-253f-563b-a777" targetId="7ea6-9b98-53fb-e5b3" type="selectionEntry"/>
+    <entryLink import="true" name="Rakkon Krell - Pizzaro Hazard Walker" hidden="false" id="9194-66da-f4db-3a07" targetId="1bea-7b0a-95aa-8155" type="selectionEntry"/>
+    <entryLink import="true" name="Moira Sharpe - Hydra Relay Hovercraft" hidden="false" id="e514-0c77-8dee-2ba0" targetId="f3d5-947f-88b1-cbd7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -113,7 +116,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3b6-52b5-9c4c-69f3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Carryhawk Command Bunker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="594d-5acc-a15d-e0be">
+                <profile name="Carryhawk Command Bunker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="594d-5acc-a15d-e0be">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">-</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A</characteristic>
@@ -209,7 +212,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d970-62e9-ede5-08ca" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Hydra Relay Hovercraft" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="b00f-1ccd-6c50-1568">
+                <profile name="Hydra Relay Hovercraft" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="b00f-1ccd-6c50-1568">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">10&quot;</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A, E+1</characteristic>
@@ -230,6 +233,13 @@
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Pizzaro Hazard Walker" hidden="false" id="26ea-e127-42da-c86e">
           <categoryLinks>
@@ -299,6 +309,123 @@
               <comment>Rare Config</comment>
             </modifierGroup>
           </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Salakhan - Napoleon Heavy Tank" hidden="false" id="7ea6-9b98-53fb-e5b3">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="333a-ab6f-7a14-84c4" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="b969-f445-90df-316f" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Napoleon Heavy Tank" hidden="false" id="c7c2-3331-04d0-03a0">
+              <costs>
+                <cost name="pts" typeId="points" value="120"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Banisher Rotary Cannon" hidden="false" id="f508-356e-b499-fac8" type="selectionEntry" targetId="dc17-9fe8-e1c8-8a1e" sortIndex="2"/>
+                <entryLink import="true" name="Chainguns" hidden="false" id="ef28-2ee6-1f1a-c887" type="selectionEntry" targetId="8d9e-a766-b8df-80d2" sortIndex="4"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b4e-5f60-b0a7-6875" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b097-25db-5511-6023" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Napoleon Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6d73-afca-9487-80e5">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Benefit" id="7722-a500-6232-7a53" hidden="false">
+                  <description>All friendly infantry gain: “Kalium Volunteers: Iron disciplined soldiers who choose to continue serving long after their conscription is up. This squad automatically passes Fortitude tests and gains the Resilient special rule.”</description>
+                </rule>
+                <rule name="Detriment" id="ab92-87d4-76bd-5a06" hidden="false">
+                  <description>Resistance Veterans may only pick the Kalium Volunteers special rule. Hydra Relay Hovercraft and units with the Hovercraft special rule may not be included in an army with Salakhan.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Moira Sharpe - Hydra Relay Hovercraft" hidden="false" id="f3d5-947f-88b1-cbd7">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="eda5-346f-ce37-1ae0" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="3673-fbea-8807-656b" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hydra Relay Hovercraft" hidden="false" id="7620-4f22-95e3-07b7">
+              <costs>
+                <cost name="pts" typeId="points" value="160"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Double Missile Pod" hidden="false" id="1550-26cd-2e0f-da65" type="selectionEntry" targetId="557d-999c-ea58-57ce" sortIndex="2"/>
+                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="7fff-1315-b341-402c" type="selectionEntry" targetId="425b-ba23-208f-1d7e"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdbc-099a-603f-b7a9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b94-8b2b-d960-3f6c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hydra Relay Hovercraft" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="6704-aaaa-cd39-0d4c">
+                  <characteristics>
+                    <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">10&quot;</characteristic>
+                    <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A, E+1</characteristic>
+                    <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">13</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
+                    <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Resilient</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resilient" id="a5fc-21d0-5ada-1632" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <rules>
+                <rule name="Scanner Array" id="581b-309b-72c7-5dfb" hidden="false">
+                  <description>At any point during this unit’s activation, pick an enemy unit within line of sight. Until the end of the round, friendly units re-roll dice results of 1 when rolling to hit against that unit’s squad.</description>
+                </rule>
+                <rule name="Benefit" id="50a9-7298-1ff2-457e" hidden="false">
+                  <description>All friendly weapons with “Missile” in their name deal damage with the Penetrative rule on a roll of a 5+.</description>
+                </rule>
+                <rule name="Detriment" id="4bdb-b5d5-e1b1-aa4f" hidden="false">
+                  <description>Moira Sharpe does not count when calculating objectives and always counts as destroyed at the end of the game.
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1402,8 +1529,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Strafe-2
-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1522,6 +1648,19 @@
                 <entryLink import="true" name="Grenade Launcher" hidden="false" id="a574-07cd-5f48-03ff" type="selectionEntry" targetId="6a0b-5a2c-851a-0713"/>
                 <entryLink import="true" name="Patton AFV Weapon Selection" hidden="false" id="bb5d-3742-0ce2-cd08" type="selectionEntryGroup" targetId="229f-1d6f-3ce4-f655"/>
               </entryLinks>
+              <profiles>
+                <profile name="Patton AFV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5e41-4b22-f759-1361">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank/Bus</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1549,7 +1688,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ff7-ddac-c6b7-216e" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Circe Attack Hovercraft" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="aa55-bcf6-cb1d-3bf1">
+                <profile name="Circe Attack Hovercraft" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="aa55-bcf6-cb1d-3bf1">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">10&quot;</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A, E+1</characteristic>
@@ -1566,6 +1705,13 @@
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Atilla Trackwalker" hidden="false" id="caec-eb75-dd1d-21eb">
           <categoryLinks>
@@ -1621,6 +1767,19 @@
                 <entryLink import="true" name="Missile Pod" hidden="false" id="7d69-e024-bf99-b3db" type="selectionEntry" targetId="6246-9e22-5c66-a572"/>
                 <entryLink import="true" name="Atilla Trackwalker Weapon Selection" hidden="false" id="cdd5-7d29-0414-bd8b" type="selectionEntryGroup" targetId="6bc8-6619-7268-1a92"/>
               </entryLinks>
+              <profiles>
+                <profile name="Atilla Trackwalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d6e5-5625-2c23-8a1c">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank/Bus</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1657,6 +1816,13 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="E+1" field="725f-50fa-0778-01b0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9194-66da-f4db-3a07" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -1743,6 +1909,13 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Wheel/Drill</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="E+1" field="725f-50fa-0778-01b0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9194-66da-f4db-3a07" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1779,11 +1952,45 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Assault Rifles, Homemade RPGs, Knives and Pistols" hidden="false" id="e9ff-fa10-f089-f0e5" type="selectionEntry" targetId="3522-a1f0-a0f1-a736"/>
               </entryLinks>
+              <rules>
+                <rule name="Kalium Volunteers" id="d1a2-5ce0-b17b-8fb0" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Resilient" id="6d60-9372-a512-4f89" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -1834,9 +2041,14 @@
                             <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
                           </modifiers>
                           <comment>Kalium Volunteers</comment>
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifierGroup>
                       </modifierGroups>
                     </modifierGroup>
@@ -1847,9 +2059,14 @@
                 <rule name="Kalium Volunteers" id="beba-3985-f2e9-8cef" hidden="true">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <description>This squad automatically passes Fortitude tests.</description>
@@ -1923,7 +2140,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="K9 Attack Unit" hidden="false" id="65f4-05e7-9511-f16e">
               <profiles>
-                <profile name="K9 Attack Unit" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="3443-d569-f0ba-ae18">
+                <profile name="K9 Attack Unit" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="3443-d569-f0ba-ae18">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">4&quot;</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
@@ -1932,14 +2149,44 @@
                     <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Infantry 5+</characteristic>
                     <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Bloodthirsty</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Resilient" field="89f6-a5e7-b366-70a3" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Bloodthirsty" id="baa7-8a67-f6a3-41d3" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
+                <infoLink name="Resilient" id="89bc-7196-d5bd-0293" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <rules>
                 <rule name="Attack Dog" id="2757-664f-9fd1-6552" hidden="false">
                   <description>Squads of K9 Attack Units cannot be bought with points, instead only being used as part of a K9 Technical, and are worth 0 Kill Points. This unit cannot make Signal actions, search for or claim Objectives, and cannot embark in transports during battle. K9 Attack Units always have the Troop Category, regardless of the Category of the vehicle that they originate from.</description>
+                </rule>
+                <rule name="Kalium Volunteers" id="b86d-e8a6-8e3c-bc08" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -1960,7 +2207,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Sentinel Defence Turret" hidden="false" id="9f16-8c82-94ab-3ec7" collective="true">
               <profiles>
-                <profile name="Sentinel Defence Turret" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit (No Transport)" hidden="false" id="9f61-13ca-5d7f-e710">
+                <profile name="Sentinel Defence Turret" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="9f61-13ca-5d7f-e710">
                   <characteristics>
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">0&quot;</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
@@ -2297,7 +2544,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4d0-129c-918f-48d7" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Strikehawk Tilt-Rotor" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="e8c2-2721-68f8-61c7">
+                <profile name="Strikehawk Tilt-Rotor" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="e8c2-2721-68f8-61c7">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2387,7 +2634,12 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="K9 Attack Unit" hidden="false" id="725c-1c5a-7d85-b6d4" type="selectionEntry" targetId="8166-1097-8267-1f87"/>
+            <entryLink import="true" name="K9 Attack Unit" hidden="false" id="725c-1c5a-7d85-b6d4" type="selectionEntry" targetId="8166-1097-8267-1f87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f103-ae7b-3681-95f1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f103-ae7b-3681-95f1-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Repair Technical" hidden="false" id="eba7-0527-813d-f313">
@@ -2504,6 +2756,13 @@
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Hannibal Tank" hidden="false" id="7af0-abb9-8eb0-1edb">
           <selectionEntries>
@@ -2544,12 +2803,19 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="6571-f28a-3c6e-6f77" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Thunderstorm Heavy Hovercraft" hidden="false" id="b301-807b-90af-e197">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Thunderstorm Heavy Hovercraft" hidden="false" id="8924-3479-29dc-4962">
               <profiles>
-                <profile name="Thunderstorm Heavy Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="6e10-49dd-716f-2fee">
+                <profile name="Thunderstorm Heavy Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="6e10-49dd-716f-2fee">
                   <characteristics>
                     <characteristic name="Move" typeId="bf89-fcc7-f093-faca">10&quot;</characteristic>
                     <characteristic name="CM" typeId="a100-1ed0-8001-534e">A, E+1</characteristic>
@@ -2588,6 +2854,13 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="2a69-cd6b-b843-4c4c" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Gun Bus" hidden="false" id="1f5e-9174-a2d4-1979">
           <selectionEntries>
@@ -2626,6 +2899,13 @@
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="671b-c55d-7e11-a4a4" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2657,11 +2937,31 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Rare</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Bloodthirsty" id="ba92-9bda-db9a-d548" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
                 <infoLink name="Rare" id="431b-1c7d-8a39-5be5" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Resilient" id="8c90-2aaf-8700-9254" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7261-dcc1-b619-f97f" includeChildSelections="false"/>
@@ -2670,6 +2970,18 @@
               <entryLinks>
                 <entryLink import="true" name="Vicious Tools" hidden="false" id="2497-868a-fb49-fda1" type="selectionEntry" targetId="28b1-36aa-ea8d-2301"/>
               </entryLinks>
+              <rules>
+                <rule name="Kalium Volunteers" id="13b4-6f0a-9ec2-4903" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2797,6 +3109,17 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 3&quot;, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2804,7 +3127,7 @@
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Infiltrating" hidden="false" id="c2ff-7899-0d6c-f895" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
-                <entryLink import="true" name="Machine Guns, Knives and Pistols" hidden="false" id="41f8-fa5a-08df-aa5e" type="selectionEntry" targetId="cdc4-8483-37b7-0205" sortIndex="3"/>
+                <entryLink import="true" name="Machine Guns" hidden="false" id="41f8-fa5a-08df-aa5e" type="selectionEntry" targetId="cdc4-8483-37b7-0205" sortIndex="3"/>
                 <entryLink import="true" name="Knives and Pistols" hidden="false" id="3c4a-e349-94e8-59ad" type="selectionEntry" targetId="6d5d-19ff-e260-889f" sortIndex="4"/>
               </entryLinks>
               <rules>
@@ -2813,6 +3136,16 @@
                 </rule>
                 <rule name="Sticky Mines" id="4db7-b5e8-9ea9-3cf6" hidden="false">
                   <description>After completing a Moving action, you may target an enemy unit within 1” or enemy unit in the same garrison, following the rules for shooting. That unit suffers an E9 Automatic hit.</description>
+                </rule>
+                <rule name="Kalium Volunteers" id="2693-a61d-6870-65e2" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <constraints>
@@ -2880,6 +3213,17 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2892,6 +3236,16 @@
               <rules>
                 <rule name="Wheels" id="4c46-6b98-2d7c-3be1" hidden="false">
                   <description>This unit may not enter Garrisons</description>
+                </rule>
+                <rule name="Kalium Volunteers" id="f041-fb01-57e7-8fd7" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -2957,6 +3311,17 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2971,6 +3336,16 @@
                 </rule>
                 <rule name="Disruptor Array" id="869d-fd97-5326-a9ef" hidden="false">
                   <description>Once per activation, pick an enemy non-Behemoth Vehicle squad or Infantry squad with at least one unit in line of sight within 18” of this unit. That squad suffers a +2 penalty to its Accuracy until the end of the round. Multiple units in this squad may affect multiple enemy squads, but each enemy squad may only be affected by this special rule once.</description>
+                </rule>
+                <rule name="Kalium Volunteers" id="6641-573b-9a2b-777a" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <costs>
@@ -3085,11 +3460,31 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 18&quot;, Rare</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                      </modifiers>
+                      <comment>Kalium Volunteers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Infiltrate X" id="ff9d-b3d4-0262-4142" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
                 <infoLink name="Rare" id="3176-8500-8cf2-1c55" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Resilient" id="aff7-319a-e2a3-25b5" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Infiltrating" hidden="false" id="964f-c061-301a-cd7c" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
@@ -3099,6 +3494,16 @@
               <rules>
                 <rule name="Cluster IED" id="8d66-124e-493f-32fd" hidden="false">
                   <description>When an enemy squad enters a Garrison this squad is in, roll 2D6. The enemy squad takes that much damage, distributed in the same way as Close Quarters weapons. Passive and Dodge saves may be used against this damage. If a double is rolled, the explosion was a bit too powerful! Damage is dealt as normal, but one unit from this squad is then removed as a casualty (controlling player’s choice).</description>
+                </rule>
+                <rule name="Kalium Volunteers" id="8bb0-2a2f-7621-ddbf" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -3178,7 +3583,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
-                <profile name="Jackson APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="0751-e70c-3167-d251">
+                <profile name="Jackson APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="0751-e70c-3167-d251">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3222,7 +3627,7 @@
                 </rule>
               </rules>
               <profiles>
-                <profile name="Battle Bus" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle (Transport)" hidden="false" id="bf67-da04-4ea0-ea59">
+                <profile name="Battle Bus" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="bf67-da04-4ea0-ea59">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
@@ -3261,7 +3666,7 @@
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Kraken Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="8114-1c1c-3c32-ce7d">
+                <profile name="Kraken Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="8114-1c1c-3c32-ce7d">
                   <characteristics>
                     <characteristic name="Move" typeId="bf89-fcc7-f093-faca">10&quot;</characteristic>
                     <characteristic name="CM" typeId="a100-1ed0-8001-534e">A, E+1</characteristic>
@@ -3320,6 +3725,13 @@
           <categoryLinks>
             <categoryLink name="Auxiliary" hidden="false" id="f708-df1a-d1a8-5022" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Leviathan Heavy Hovercraft" hidden="false" id="1d1e-a62d-eab8-e376">
           <selectionEntries>
@@ -3338,7 +3750,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8550-650d-8dd8-a9ee-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Leviathan Heavy Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="32f5-6c8c-597b-1291">
+                <profile name="Leviathan Heavy Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="32f5-6c8c-597b-1291">
                   <characteristics>
                     <characteristic name="Move" typeId="bf89-fcc7-f093-faca">10&quot;</characteristic>
                     <characteristic name="CM" typeId="a100-1ed0-8001-534e">A, E+1</characteristic>
@@ -3394,6 +3806,13 @@
           <categoryLinks>
             <categoryLink name="Auxiliary" hidden="false" id="3c25-e7e4-8a77-f5b3" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="109 Splitting Drill" hidden="false" id="269d-ddd7-ef99-ee21">
           <selectionEntries>
@@ -3408,7 +3827,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2266-26c7-1201-a006-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="109 Splitting Drill" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="83bf-74b1-09d6-15fe">
+                <profile name="109 Splitting Drill" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="83bf-74b1-09d6-15fe">
                   <characteristics>
                     <characteristic name="Move" typeId="bf89-fcc7-f093-faca">0&quot;</characteristic>
                     <characteristic name="CM" typeId="a100-1ed0-8001-534e">A</characteristic>
@@ -3474,7 +3893,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5105-0846-8814-8623-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="209 Breaching Drill" typeId="f999-cdc5-d912-46a0" typeName="Hovercraft" hidden="false" id="434a-a16f-e2fb-2efc">
+                <profile name="209 Breaching Drill" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="434a-a16f-e2fb-2efc">
                   <characteristics>
                     <characteristic name="Move" typeId="bf89-fcc7-f093-faca">0&quot;</characteristic>
                     <characteristic name="CM" typeId="a100-1ed0-8001-534e">A</characteristic>
@@ -3530,7 +3949,7 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Swifthawk Tilt-Jet" hidden="false" id="71c1-a65e-a653-ee9f" collective="true">
               <profiles>
-                <profile name="Swifthawk Tilt-Jet" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="8b0d-3634-45fe-628a">
+                <profile name="Swifthawk Tilt-Jet" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="8b0d-3634-45fe-628a">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3564,6 +3983,9 @@
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="de27-8358-5d78-6eeb" id="b9f1-c92f-3471-28a3" primary="true" name="Auxiliary"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Lifthawk Dropship" hidden="false" id="ac47-2b91-1ef3-57b1">
           <categoryLinks>
@@ -3594,7 +4016,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff39-46a5-8b33-50b2" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Lifthawk Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="ef39-1b06-ec14-4b56">
+                <profile name="Lifthawk Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="ef39-1b06-ec14-4b56">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3638,7 +4060,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdc2-6979-f430-8b0e" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Lifthawk Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft (Drop)" hidden="false" id="f55f-2453-a155-cd4b">
+                <profile name="Lifthawk Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="f55f-2453-a155-cd4b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3805,6 +4227,64 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rakkon Krell - Pizzaro Hazard Walker" hidden="false" id="1bea-7b0a-95aa-8155">
+      <categoryLinks>
+        <categoryLink name="Command" hidden="false" id="c6b7-16c4-46ff-7798" targetId="ed7f-0593-2e55-430d" primary="true"/>
+        <categoryLink targetId="b9fe-b6e1-3716-8d88" id="0e27-25ff-a7a2-9ea2" primary="false" name="Famous Commander"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="ba1e-aa3b-4e7c-c8a2">
+          <costs>
+            <cost name="pts" typeId="points" value="95"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Commander" hidden="false" id="6880-26a0-929b-c52c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" sortIndex="2"/>
+            <entryLink import="true" name="Infiltrating" hidden="false" id="ac36-6927-1f8a-b053" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
+            <entryLink import="true" name="Pizzaro Hazard Walker Weapon Selection" hidden="false" id="c145-35f2-0e90-8cf8" type="selectionEntryGroup" targetId="b5cf-206c-5183-ef30" sortIndex="3"/>
+            <entryLink import="true" name="Industrial Cutting Claws" hidden="false" id="54da-f6b6-927e-0596" type="selectionEntry" targetId="dc13-8c9f-5aed-1300" sortIndex="4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e49a-7d0f-9489-6aaa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a84-5e65-6f44-f2ec" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pizzaro Hazard Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1a47-3065-d384-5929">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 12&quot;, Rare</characteristic>
+                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Bus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rare" id="0139-06d1-43f4-ba64" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <rules>
+            <rule name="Benefit" id="0cc3-adda-9a31-cf79" hidden="false">
+              <description>Standard units without countermeasures gain E+1 countermeasures.
+
+</description>
+            </rule>
+            <rule name="Detriment" id="73d4-1da5-3e12-c8b3" hidden="false">
+              <description>Units with the Heavy category may not be included in an army with Rakkon Krell.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e2-e1bf-6dfa-750d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
