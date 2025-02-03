@@ -90,6 +90,7 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
+                  <alias>Nemesis</alias>
                 </profile>
               </profiles>
               <infoLinks>
@@ -199,8 +200,7 @@
                   <description>Valkyrie Assault Troops, Mercury Scout Drones, Janus Scout Walkers, and Hermes Disruption Walkers may not be included in an army with Marcus Barros.</description>
                 </rule>
                 <rule name="Benefit" id="aabb-69ad-0d16-c818" hidden="false">
-                  <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades, Persephone, Bellona) can enter play via Drop Harness. Type-4 Walkers deploying this way follow the same rules as Behemoths using Drop Harness with a spread of 2” and a single Zone. Type-4 Walkers arriving this way may activate in the same round as if they had not arrived by Drop Harness. This benefit persists even if Marcus Barros has
-been destroyed.</description>
+                  <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades, Persephone, Bellona) can enter play via Drop Harness. Type-4 Walkers deploying this way follow the same rules as Behemoths using Drop Harness with a spread of 2” and a single Zone. Type-4 Walkers arriving this way may activate in the same round as if they had not arrived by Drop Harness. This benefit persists even if Marcus Barros has been destroyed.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1827,6 +1827,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
+                  <alias>Persephone</alias>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2139,6 +2140,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Rare, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
+                  <alias>Hades</alias>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2227,6 +2229,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
                   </characteristics>
+                  <alias>Bellona</alias>
                 </profile>
               </profiles>
               <infoLinks>
