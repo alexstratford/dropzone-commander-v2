@@ -1484,6 +1484,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
                   </characteristics>
+                  <alias>Mercury Scout Drones</alias>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1542,6 +1543,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
                   </characteristics>
+                  <alias>Janus Scout Walkers</alias>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1582,6 +1584,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Drone</characteristic>
                   </characteristics>
+                  <alias>Hermes Disruption Walkers</alias>
                 </profile>
               </profiles>
               <rules>

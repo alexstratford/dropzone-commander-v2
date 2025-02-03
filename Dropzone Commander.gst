@@ -142,12 +142,11 @@
     <categoryEntry name="Command" id="ed7f-0593-2e55-430d" hidden="false"/>
     <categoryEntry name="Troops" id="43a9-1ec6-f0bc-8f37" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
     <categoryEntry name="Infiltrate" id="8d7c-89a4-5368-5a3c" hidden="false"/>
-    <categoryEntry name="Hovercraft" id="cfdd-90c2-4b0b-c707" hidden="false"/>
-    <categoryEntry name="Drill" id="243f-ea96-5f0b-72e6" hidden="false"/>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
     <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
+    <categoryEntry name="Fauna" id="9a72-031e-b487-67c2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
@@ -1241,6 +1240,100 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Apex" hidden="false" id="cfe2-52ef-460a-fd90">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Apex" hidden="false" id="9b58-91c6-3843-0e25">
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Apex" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="b849-d5f6-06d8-66e6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                    <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">E+1</characteristic>
+                    <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">12</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">4</characteristic>
+                    <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare, Fauna</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rare" id="c84c-ed69-18ed-4bf5" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Fauna" id="e3d6-7c39-0d9c-1934" hidden="false" type="rule" targetId="b2d8-7421-b0b4-dbeb"/>
+              </infoLinks>
+              <rules>
+                <rule name="Intelligent" id="caae-abd5-f382-2764" hidden="false">
+                  <description>Apexes have more intelligence than other Fauna, and can be coerced or tricked into predictable actions. When it activates, it moves towards the closest enemy unit instead of the closest unit.</description>
+                </rule>
+                <rule name="Genetic Modification" id="d01e-2763-ccdd-3fb9" hidden="false">
+                  <description>The Apex is a highly adaptable creature, and has a variety of biomorphs across a number of worlds. At the start of the game, roll 1d3 and apply the result.
+1. Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7
+2. New Eden Apex: Increase Countermeasures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost Damage Point.
+3. Magnum Apex: Increase Armour to 15 and increase Killing Tools energy to 12.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c69-4962-2152-097c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c69-4962-2152-097c-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Killing Tools" hidden="false" id="9b1f-71ba-4184-5904">
+                  <profiles>
+                    <profile name="Killing Tools" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="50cf-5997-bd58-e440">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Melee</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Acid Breath" hidden="false" id="3f13-c449-6ee7-5901">
+                  <profiles>
+                    <profile name="Acid Breath" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5e21-f7fd-fe79-86ec">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51a7-1d96-a67a-0e54-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a7-1d96-a67a-0e54-max" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Flame" id="5869-5b8b-042b-7362" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="9a72-031e-b487-67c2" id="06d0-9ee9-295d-12f4" primary="true" name="Fauna"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Infiltrating" hidden="false" id="5e74-7851-f3ac-10e9" defaultAmount="1" collective="true">
@@ -1570,6 +1663,12 @@ When targeting a Behemoth, measure to any point within its Spread.</description
     </rule>
     <rule name="Large Transport" id="ea19-99eb-b9c6-e3e4" hidden="false">
       <description>When a unit disembarks from this unit, measure from any point on its edge rather than the centre.</description>
+    </rule>
+    <rule name="Fauna" id="b2d8-7421-b0b4-dbeb" hidden="false">
+      <description>Fauna included in your army begin the game in readiness, regardless of the normal scenario rules.
+All Fauna activate as part of the same Battlegroup, after all other Battlegroups have activated, ignoring the rules for activating Auxiliary units. They are placed on the board at the end of the first round at any point along the centre line of the board, between both players deployment zones.
+When this unit activates, it must make a move action towards the closes non-garrisoned unit and attack with any and all weapons it is able to. If two or more units are tied for closest, your opponent decides which unit the Fauna will move towards.
+Special rules on command cards have no effect on Fauna unless explicitly mentioned and they may not search or claim objectives.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
