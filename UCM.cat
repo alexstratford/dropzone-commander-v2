@@ -1640,7 +1640,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9c8e-05d4-113a-fc71" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Kodiak Command ACV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="c676-ad1a-04ab-51ec" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Kodiak Command ACV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="c676-ad1a-04ab-51ec" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1648,7 +1648,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1692,7 +1692,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="aa57-c772-3790-3920" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="f78b-4200-6c72-0e52" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="f78b-4200-6c72-0e52" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1700,7 +1700,6 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1738,7 +1737,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
@@ -1788,7 +1787,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="79f1-fe83-34d2-97ca">
+                <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="79f1-fe83-34d2-97ca">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1796,7 +1795,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">18 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1845,7 +1844,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
@@ -1924,7 +1923,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">18 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1974,7 +1973,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8458-2377-b27c-a729" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b517-fb6f-9aa6-a0eb" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="b517-fb6f-9aa6-a0eb" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1982,7 +1981,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2035,7 +2033,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
@@ -2043,7 +2041,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2073,7 +2071,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f1fc-8a4f-d47e-9ee8" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
@@ -2081,7 +2079,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Rapid Insertion 4”</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2117,7 +2115,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="5f49-b2d3-4242-ca59" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Praetorian Snipers" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="00b1-0755-3fee-34ac" publicationId="0a0b-b837-fa34-a21d" page="30">
+                <profile name="Praetorian Snipers" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="00b1-0755-3fee-34ac" publicationId="0a0b-b837-fa34-a21d" page="30">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">E+4</characteristic>
@@ -2125,7 +2123,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 18&quot;, Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2197,7 +2195,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
@@ -2235,7 +2233,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
               </entryLinks>
               <profiles>
-                <profile name="Buzzard Aerial Target Craft" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
+                <profile name="Buzzard Aerial Target Craft" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2243,7 +2241,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2279,7 +2277,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b9eb-5f04-363e-d8ac" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Flak AA Team" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="f35f-b00b-f288-904f">
+                <profile name="Flak AA Team" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f35f-b00b-f288-904f">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2287,7 +2285,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2312,7 +2310,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2f4-c4ec-61b5-2aea" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Hazard Suits" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="0922-2916-2a3e-08c4">
+                <profile name="Hazard Suits" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="0922-2916-2a3e-08c4">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">1&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2320,7 +2318,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2373,7 +2371,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
               </costs>
               <profiles>
-                <profile name="Rapier AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="fbdf-7c09-b991-8488" publicationId="0a0b-b837-fa34-a21d" page="21">
+                <profile name="Rapier AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fbdf-7c09-b991-8488" publicationId="0a0b-b837-fa34-a21d" page="21">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2381,7 +2379,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2405,7 +2403,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2d63-6da0-21d4-9084" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Longbow Howitzer" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="1cac-4908-b4b2-f555">
+                <profile name="Longbow Howitzer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1cac-4908-b4b2-f555">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2413,7 +2411,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2443,7 +2441,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
               </costs>
               <profiles>
-                <profile name="Crossbow Laser Artillery" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="2285-6780-2ea0-639c">
+                <profile name="Crossbow Laser Artillery" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2285-6780-2ea0-639c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">0&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2451,7 +2449,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2475,7 +2473,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7e76-9c04-18ec-1ea8" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Mortar Team" typeId="b88a-b68e-168b-9f28" typeName="Infantry" hidden="false" id="338c-905a-aa80-0fea">
+                <profile name="Mortar Team" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="338c-905a-aa80-0fea">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
@@ -2483,7 +2481,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2517,7 +2515,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0b-f041-3644-e489" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Falcon Light Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="a793-9d3a-de41-ff15">
+                <profile name="Falcon Light Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="a793-9d3a-de41-ff15">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+4</characteristic>
@@ -2525,7 +2523,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2553,7 +2550,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9353-0a9a-be1b-5d41" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Osprey Light Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="2697-3d36-2562-5e0e">
+                <profile name="Osprey Light Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="2697-3d36-2562-5e0e">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
@@ -2561,7 +2558,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2596,7 +2592,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f15-73c0-f125-0681" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Eagle Heavy Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="82b8-7f75-6aef-f86d">
+                <profile name="Eagle Heavy Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="82b8-7f75-6aef-f86d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2604,7 +2600,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2633,7 +2628,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="54fd-defc-f2d2-e330" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Dingo LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="9f4b-f204-a538-41c2">
+                <profile name="Dingo LAV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9f4b-f204-a538-41c2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2641,7 +2636,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2668,7 +2663,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
               </costs>
               <profiles>
-                <profile name="Grizzly Mortar" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="dd22-0ff3-7d7c-6b53">
+                <profile name="Grizzly Mortar" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="dd22-0ff3-7d7c-6b53">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2676,7 +2671,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2709,15 +2704,16 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b8-b167-2c28-7b30" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Bear APC" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="bdb1-e593-ba60-98a5" publicationId="0a0b-b837-fa34-a21d" page="36">
+                <profile name="Bear APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="bdb1-e593-ba60-98a5" publicationId="0a0b-b837-fa34-a21d" page="36">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2760,7 +2756,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43c2-99c8-b9f3-a311" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Albatross" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="512a-8d4a-710c-e669">
+                <profile name="Albatross" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="512a-8d4a-710c-e669">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2768,7 +2764,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">18 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2782,7 +2778,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Condor Dropship" hidden="false" id="d1b0-a9a7-e78e-ac4d">
               <profiles>
-                <profile name="Condor Dropship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="cc2d-d2cb-a801-cd55">
+                <profile name="Condor Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="cc2d-d2cb-a801-cd55">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2790,7 +2786,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2816,7 +2812,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Vulture Dropship" hidden="false" id="2f8c-c6e4-bc0c-8b36" collective="true">
               <profiles>
-                <profile name="Vulture Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="6480-1cdc-9d9c-d264">
+                <profile name="Vulture Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="6480-1cdc-9d9c-d264">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2824,7 +2820,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2851,7 +2847,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Vulture Troopship" hidden="false" id="4ac7-7031-d88c-5551" collective="true">
               <profiles>
-                <profile name="Vulture Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="41d7-4a76-44ab-fd6a">
+                <profile name="Vulture Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="41d7-4a76-44ab-fd6a">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2859,7 +2855,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2897,7 +2893,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d6b6-e77a-590b-b2d2" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Badger Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="7b64-0563-9d0d-b53c">
+                <profile name="Badger Buggy" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="7b64-0563-9d0d-b53c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2905,7 +2901,8 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">1 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2932,7 +2929,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1c20-59f7-597d-97d3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Ferret Buggy" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="3c5b-b816-490e-6ccd">
+                <profile name="Ferret Buggy" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="3c5b-b816-490e-6ccd">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2940,7 +2937,8 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">1 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2968,7 +2966,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e263-0e04-2de2-5c48" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Panda APC" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="a35f-f2f1-1a16-e070">
+                <profile name="Panda APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="a35f-f2f1-1a16-e070">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2976,7 +2974,8 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3019,7 +3018,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="4d25-797c-daaa-af6c" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
+                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3027,7 +3026,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3054,7 +3053,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="2c1b-ada8-9ea1-7189" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
+                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3062,7 +3061,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3089,7 +3088,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Retribution Cannons" hidden="false" id="0239-5487-bd79-8fa4" type="selectionEntry" targetId="ebc7-fd33-72aa-f69c"/>
               </entryLinks>
               <profiles>
-                <profile name="Archangel Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="55e8-2c80-d419-47e1">
+                <profile name="Archangel Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="55e8-2c80-d419-47e1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
@@ -3097,7 +3096,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3154,7 +3152,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Incendiary Missiles" hidden="false" id="f61d-0b45-c3e4-fd77" type="selectionEntry" targetId="0537-9b76-5814-c1bc"/>
               </entryLinks>
               <profiles>
-                <profile name="Archangel Tactical Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="0410-1c0f-1516-3d8f">
+                <profile name="Archangel Tactical Bomber" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="0410-1c0f-1516-3d8f">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
@@ -3162,7 +3160,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3290,7 +3287,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
               </costs>
               <profiles>
-                <profile name="Sabre Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="8ad0-76cd-0c9a-7487" publicationId="0a0b-b837-fa34-a21d" page="6">
+                <profile name="Sabre Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8ad0-76cd-0c9a-7487" publicationId="0a0b-b837-fa34-a21d" page="6">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3298,7 +3295,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3322,7 +3319,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="edf0-d924-b399-a911" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Katana Light Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="6f8e-3347-c37a-e38c">
+                <profile name="Katana Light Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6f8e-3347-c37a-e38c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3330,7 +3327,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3370,7 +3367,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                   <modifiers>
                     <modifier type="append" value="E+1" field="725f-50fa-0778-01b0" join=", ">
@@ -3398,7 +3395,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Gladius Heavy Tank" hidden="false" id="eba9-c113-0bfa-a169" collective="true">
               <profiles>
-                <profile name="Gladius Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="ecc5-788c-e98e-ce48">
+                <profile name="Gladius Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ecc5-788c-e98e-ce48">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3406,7 +3403,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3444,7 +3441,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Marksman Laser" hidden="false" id="43b8-c6ca-afbb-eea9" type="selectionEntry" targetId="2090-8f2b-72a4-b3bc"/>
               </entryLinks>
               <profiles>
-                <profile name="Scimitar Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="36da-7ee3-9b11-c3bb">
+                <profile name="Scimitar Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="36da-7ee3-9b11-c3bb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3452,7 +3449,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3470,7 +3467,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Flail Heavy Tank" hidden="false" id="fc49-a2d7-d899-8452" collective="true">
               <profiles>
-                <profile name="Flail Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="9167-0867-6fd5-5ef3">
+                <profile name="Flail Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9167-0867-6fd5-5ef3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">3&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3478,7 +3475,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3516,7 +3513,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Broadsword Weapon Selection" hidden="false" id="bdd4-550a-3d20-458c" type="selectionEntryGroup" targetId="ddbf-6660-dc46-6bc1"/>
               </entryLinks>
               <profiles>
-                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="f086-2f23-96e9-66b4">
+                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f086-2f23-96e9-66b4">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3524,7 +3521,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3551,7 +3548,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a548-f74a-645a-2b08" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Vulture Gunship" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="b707-9171-d46c-7357">
+                <profile name="Vulture Gunship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="b707-9171-d46c-7357">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3559,7 +3556,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">10</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3657,7 +3654,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6601-c2c0-c9e3-4e2e" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Jackal LAV" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="917b-c558-c9b4-2139">
+                <profile name="Jackal LAV" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="917b-c558-c9b4-2139">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3665,7 +3662,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
