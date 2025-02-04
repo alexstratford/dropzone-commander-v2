@@ -625,13 +625,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Angelos Jetskimmer" hidden="false" id="5d9a-06f2-0be9-4606" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="30"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="30"/>
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e779-55d5-9d9e-4aaa" includeChildSelections="false"/>
@@ -672,13 +672,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Juno APC" hidden="false" id="7a40-2b6c-a364-b1b3" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a606-9382-2eef-3971" includeChildSelections="false"/>
@@ -711,13 +711,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Neptune Dropship" hidden="false" id="ac2e-aef7-fcaf-de1b" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-2"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="35"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f5-bc0f-63da-08cc" includeChildSelections="false"/>
@@ -749,13 +749,13 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Njord Assault Dropship" hidden="false" id="8ae4-fd23-6a7d-c364" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-4"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="110"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d276-7dab-2c3f-9737" includeChildSelections="false"/>
@@ -788,13 +788,13 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Poseidon Heavy Dropship" hidden="false" id="7245-9365-d483-090f" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="65"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-6"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="65"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e9f-d971-5fa1-b664" includeChildSelections="false"/>
@@ -826,13 +826,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Triton Light Dropship" hidden="false" id="d02b-7a1f-576b-45e4" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="-2"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe72-1d3b-fb37-e683" includeChildSelections="false"/>
@@ -865,13 +865,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Triton Light Troopship" hidden="false" id="17df-7a51-6dd0-212c" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="25"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c47-58ff-17b9-f226" includeChildSelections="false"/>
@@ -904,13 +904,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Athena Air Superiority Fighter" hidden="false" id="a2ee-8df5-19c7-beaf" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="110"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="596e-f6d2-0f68-03b7" includeChildSelections="false"/>
@@ -975,13 +975,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Hecate Target Support Craft" hidden="false" id="6f44-4589-755e-e620" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="65"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="65"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8067-585d-06e3-35b8" includeChildSelections="false"/>
@@ -1045,13 +1045,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Atlas Bulk Personnel Walker" hidden="false" id="9bde-ff43-5599-40b0" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="90"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="2"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="90"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e469-34ea-2b2a-dc54" includeChildSelections="false"/>
@@ -3925,13 +3925,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
             <infoLink name="Flame" id="51c4-c277-3859-ed29" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4235,13 +4235,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Huntsman Cannon" hidden="false" id="e302-9e88-6467-9da2" collective="true">
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="176f-e1c9-afc8-8de0" includeChildSelections="false"/>
@@ -4287,24 +4287,24 @@ Devastator-2 (All) special rules until the end of the round.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="5"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skyhammer Missiles" hidden="false" id="7290-6a85-f34a-15c6" collective="true">
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="5"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="527f-5725-0323-b0d3" includeChildSelections="false"/>
@@ -4362,24 +4362,24 @@ Devastator-2 (All) special rules until the end of the round.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a8-51e7-abc9-5b0a" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Aether Hive Nanomachines" hidden="false" id="250d-f9ad-6c4e-a0eb" collective="true">
           <costs>
-            <cost name="pts" typeId="points" value="20"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="20"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0f-d755-eff2-262b" includeChildSelections="false"/>

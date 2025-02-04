@@ -2769,13 +2769,13 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Haven Terragate" hidden="false" id="705b-2e5f-04ae-79a1" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="20"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="20"/>
               </costs>
               <profiles>
                 <profile name="Haven Terragate" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="f7c3-1769-ff77-66bf">
@@ -2812,13 +2812,13 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Eden Gate" hidden="false" id="2744-fe3a-6547-71f0" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="40"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="40"/>
               </costs>
               <profiles>
                 <profile name="Eden Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="181e-f60b-5110-1e6c">
@@ -2855,13 +2855,13 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Gaia Heavy Gate" hidden="false" id="d181-ffbe-f349-468f" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="70"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-18"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="70"/>
               </costs>
               <profiles>
                 <profile name="Gaia Heavy Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="2568-0960-11f8-e111">
@@ -2898,13 +2898,13 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Spirit Light Gate" hidden="false" id="78fa-24b4-5c5a-4f72" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="30"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="30"/>
               </costs>
               <profiles>
                 <profile name="Spirit Light Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="08dc-1c33-82d4-b526">
@@ -2941,13 +2941,13 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Warspear Interceptor" hidden="false" id="3d7d-e544-d6b4-4377" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="60"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="60"/>
               </costs>
               <profiles>
                 <profile name="Warspear Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="c41f-5607-3702-2465">
@@ -3022,13 +3022,13 @@ activation. Skimmers increase this bonus to +6”.</description>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="50"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c960-1188-b01e-f6b8" includeChildSelections="false"/>
@@ -3090,13 +3090,13 @@ activation. Skimmers increase this bonus to +6”.</description>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="60"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="60"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e62a-1089-547d-8a4b" includeChildSelections="false"/>
@@ -3153,13 +3153,13 @@ activation. Skimmers increase this bonus to +6”.</description>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="50"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8897-6ea5-f6bc-c111" includeChildSelections="false"/>

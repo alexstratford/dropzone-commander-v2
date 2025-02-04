@@ -1488,7 +1488,7 @@
             <infoLink name="Flame" id="bba0-e457-6c1e-f8c3" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5f0-701b-94a2-73d9" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c5f0-701b-94a2-73d9" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc01-dd7b-3a6c-0f7f" includeChildSelections="false"/>
           </constraints>
           <comment>Skulltaker</comment>
@@ -3596,13 +3596,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Jackson APC" hidden="false" id="5d25-dd91-78fd-271d" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="10"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Transport Selection" id="d131-7359-bbd3-bdb1" hidden="false" collective="true" defaultSelectionEntryId="f3cc-1de1-1a05-2476">
@@ -3667,13 +3667,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Battle Bus" hidden="false" id="3a16-33f5-de56-2390" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="3"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <rules>
                 <rule name="Firing Ports" id="1909-2eb7-7d98-8976" hidden="false">
@@ -3711,13 +3711,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Kraken Hovercraft" hidden="false" id="efd4-5d6d-7a3c-fa54" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="40"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="40"/>
               </costs>
               <profiles>
                 <profile name="Kraken Hovercraft" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="8114-1c1c-3c32-ce7d">
@@ -3791,13 +3791,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Leviathan Heavy Hovercraft" hidden="false" id="5c9c-c6dd-e808-6cfd" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="100"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="100"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8550-650d-8dd8-a9ee-min" includeChildSelections="false"/>
@@ -3894,13 +3894,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="-6"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3960,13 +3960,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="90"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-18"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="90"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4016,13 +4016,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="35"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24a8-ccfd-dab3-23b9-min" includeChildSelections="false"/>
@@ -4052,18 +4052,18 @@
                 <entryLink import="true" name="Missile Pod" hidden="false" id="c564-78e7-0d86-00e9" type="selectionEntry" targetId="4f1a-6dac-5c8f-3176" sortIndex="2"/>
                 <entryLink import="true" name="AA Cannon" hidden="false" id="72f2-a850-8ca6-561c" type="selectionEntry" targetId="6eb5-3018-1349-cbad" sortIndex="4">
                   <costs>
-                    <cost name="pts" typeId="points" value="25"/>
+                    <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="25"/>
                   </costs>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="35"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c0-6592-a1e6-7beb" includeChildSelections="false"/>
@@ -4096,18 +4096,18 @@
                 <entryLink import="true" name="Double Missile Pod" hidden="false" id="96b0-74fe-0a11-7c41" type="selectionEntry" targetId="1e93-2dcc-6a74-1ae3" sortIndex="2"/>
                 <entryLink import="true" name="Flamethrower" hidden="false" id="7a5a-398a-cd00-b013" type="selectionEntry" targetId="2209-56bb-7aed-8ebc" sortIndex="4">
                   <costs>
-                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4353-ce1e-817b-b7c9" includeChildSelections="false"/>
@@ -4136,13 +4136,13 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Tempest Interceptor" hidden="false" id="3efa-fd81-3dff-3deb">
               <costs>
-                <cost name="pts" typeId="points" value="70"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="70"/>
               </costs>
               <profiles>
                 <profile name="Tempest Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="8f8d-e0ab-0f78-4c97">
@@ -4210,13 +4210,13 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Hellhog Jumpjet" hidden="false" id="7f94-4309-1f8b-2d21">
               <costs>
-                <cost name="pts" typeId="points" value="140"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="140"/>
               </costs>
               <infoLinks>
                 <infoLink name="Rare" id="cf73-9458-9e9b-55e7" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
@@ -4247,7 +4247,7 @@
                 <entryLink import="true" name="Satan Chaingun" hidden="false" id="a06c-cfdb-1f56-f258" type="selectionEntry" targetId="efe8-1b36-da47-21eb"/>
                 <entryLink import="true" name="Double Missile Pod" hidden="false" id="4e91-84d5-37e3-cc79" type="selectionEntry" targetId="b748-76ec-dc94-75d9">
                   <costs>
-                    <cost name="pts" typeId="points" value="5"/>
+                    <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Cobra Missile" hidden="false" id="22fb-7edf-f72c-0c4f" type="selectionEntry" targetId="124d-8aa0-b894-bf5e"/>
@@ -4755,13 +4755,13 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="AA-X" id="871a-9329-4e59-55ae" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rocket Launcher Battery" hidden="false" id="2723-a8d6-2896-768d" collective="true" sortIndex="1">
@@ -4784,13 +4784,13 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Focus-X" id="7277-7848-cdd2-ba16" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
