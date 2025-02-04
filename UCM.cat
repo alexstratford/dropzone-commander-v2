@@ -1749,13 +1749,16 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="125"/>
-                <cost name="Tank Transport" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="pts" typeId="points" value="55"/>
                 <cost name="Infantry Transport" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
-                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="2"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Tank Transport" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
