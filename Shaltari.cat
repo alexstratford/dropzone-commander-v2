@@ -3513,6 +3513,9 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="97a8-8f9f-5241-a322" id="5ae8-aaf0-be6e-3f29" primary="true" name="Behemoth"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Celestial Dragon" hidden="false" id="5ce0-ef77-6d51-ee29">
           <selectionEntries>
@@ -3549,6 +3552,9 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="97a8-8f9f-5241-a322" id="0fb1-bcdb-105a-1171" primary="true" name="Behemoth"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
