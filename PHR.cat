@@ -4216,6 +4216,10 @@ Devastator-2 (All) special rules until the end of the round.</description>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09a3-688a-a84e-b89a-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09a3-688a-a84e-b89a-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Helios Weapon Selection" id="c797-474d-0034-4cea" hidden="false" collective="true">
       <constraints>
