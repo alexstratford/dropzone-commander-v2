@@ -2386,7 +2386,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Panther AA Warstrider" hidden="false" id="f99a-6a9d-6346-affa" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="95"/>
+                <cost name="pts" typeId="points" value="125"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
