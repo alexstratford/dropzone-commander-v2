@@ -412,9 +412,7 @@
                   <description>All friendly weapons with “Missile” in their name deal damage with the Penetrative rule on a roll of a 5+.</description>
                 </rule>
                 <rule name="Detriment" id="4bdb-b5d5-e1b1-aa4f" hidden="false">
-                  <description>Moira Sharpe does not count when calculating objectives and always counts as destroyed at the end of the game.
-
-</description>
+                  <description>Moira Sharpe does not count when calculating objectives and always counts as destroyed at the end of the game.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -426,6 +424,62 @@
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Rakkon Krell - Pizzaro Hazard Walker" hidden="false" id="1bea-7b0a-95aa-8155">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="c6b7-16c4-46ff-7798" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="0e27-25ff-a7a2-9ea2" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="ba1e-aa3b-4e7c-c8a2">
+              <costs>
+                <cost name="pts" typeId="points" value="95"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Commander" hidden="false" id="6880-26a0-929b-c52c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" sortIndex="2"/>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="ac36-6927-1f8a-b053" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
+                <entryLink import="true" name="Pizzaro Hazard Walker Weapon Selection" hidden="false" id="c145-35f2-0e90-8cf8" type="selectionEntryGroup" targetId="b5cf-206c-5183-ef30" sortIndex="3"/>
+                <entryLink import="true" name="Industrial Cutting Claws" hidden="false" id="54da-f6b6-927e-0596" type="selectionEntry" targetId="dc13-8c9f-5aed-1300" sortIndex="4"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e49a-7d0f-9489-6aaa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a84-5e65-6f44-f2ec" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pizzaro Hazard Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1a47-3065-d384-5929">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 12&quot;, Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Bus</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rare" id="0139-06d1-43f4-ba64" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <rules>
+                <rule name="Benefit" id="0cc3-adda-9a31-cf79" hidden="false">
+                  <description>Standard units without countermeasures gain E+1 countermeasures.</description>
+                </rule>
+                <rule name="Detriment" id="73d4-1da5-3e12-c8b3" hidden="false">
+                  <description>Units with the Heavy category may not be included in an army with Rakkon Krell.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e2-e1bf-6dfa-750d" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -4227,64 +4281,6 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rakkon Krell - Pizzaro Hazard Walker" hidden="false" id="1bea-7b0a-95aa-8155">
-      <categoryLinks>
-        <categoryLink name="Command" hidden="false" id="c6b7-16c4-46ff-7798" targetId="ed7f-0593-2e55-430d" primary="true"/>
-        <categoryLink targetId="b9fe-b6e1-3716-8d88" id="0e27-25ff-a7a2-9ea2" primary="false" name="Famous Commander"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="ba1e-aa3b-4e7c-c8a2">
-          <costs>
-            <cost name="pts" typeId="points" value="95"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Commander" hidden="false" id="6880-26a0-929b-c52c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" sortIndex="2"/>
-            <entryLink import="true" name="Infiltrating" hidden="false" id="ac36-6927-1f8a-b053" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
-            <entryLink import="true" name="Pizzaro Hazard Walker Weapon Selection" hidden="false" id="c145-35f2-0e90-8cf8" type="selectionEntryGroup" targetId="b5cf-206c-5183-ef30" sortIndex="3"/>
-            <entryLink import="true" name="Industrial Cutting Claws" hidden="false" id="54da-f6b6-927e-0596" type="selectionEntry" targetId="dc13-8c9f-5aed-1300" sortIndex="4"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e49a-7d0f-9489-6aaa" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a84-5e65-6f44-f2ec" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Pizzaro Hazard Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1a47-3065-d384-5929">
-              <characteristics>
-                <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
-                <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
-                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
-                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 12&quot;, Rare</characteristic>
-                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Bus</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Rare" id="0139-06d1-43f4-ba64" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
-          </infoLinks>
-          <rules>
-            <rule name="Benefit" id="0cc3-adda-9a31-cf79" hidden="false">
-              <description>Standard units without countermeasures gain E+1 countermeasures.
-
-</description>
-            </rule>
-            <rule name="Detriment" id="73d4-1da5-3e12-c8b3" hidden="false">
-              <description>Units with the Heavy category may not be included in an army with Rakkon Krell.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e2-e1bf-6dfa-750d" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

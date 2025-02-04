@@ -2695,12 +2695,15 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Bear APC" hidden="false" id="c5be-4bcd-2dd2-9b1c" publicationId="0a0b-b837-fa34-a21d" page="36" collective="false">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-3"/>
-                <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Cap" typeId="ff3b-470e-29b7-dc8a" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
+                <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
+                <cost name="Tank_Cap" typeId="ff3b-470e-29b7-dc8a" value="0"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0605-3665-7233-5bca" includeChildSelections="false"/>
@@ -2744,10 +2747,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Albatross" hidden="false" id="22f7-2248-475e-e653" publicationId="0a0b-b837-fa34-a21d" page="39" collective="false">
               <costs>
-                <cost name="pts" typeId="points" value="60"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-18"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="60"/>
                 <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
               </costs>
@@ -2798,12 +2804,15 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d1b-933a-6f94-de17" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="30"/>
-                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Infantry Transport" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="-6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="30"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
+                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2836,9 +2845,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="AA Battery" hidden="false" id="327a-324b-9d71-2d76" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="25"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="-4"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Auxiliary pts" typeId="201f-b481-6ccf-6a5f" value="25"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2871,10 +2884,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="AA Battery" hidden="false" id="375e-0bf3-ba5a-d516" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Auxiliary pts" typeId="201f-b481-6ccf-6a5f" value="35"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2886,10 +2902,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Badger Buggy" hidden="false" id="8f37-d7e8-fbf7-fa0c" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="10"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0c56-9387-0577-cd91" includeChildSelections="false"/>
@@ -2922,10 +2941,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Ferret Buggy" hidden="false" id="f9a0-bdad-a81e-9e2f" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="1"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="73af-e05e-bba3-710d" includeChildSelections="false"/>
@@ -2960,9 +2982,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Panda APC" hidden="false" id="cb69-00ab-7203-8d23" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-3"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aef1-4819-9b7c-2dc1" includeChildSelections="false"/>
@@ -3008,10 +3034,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Raven Light Troopship" hidden="false" id="fa25-7ca3-101f-ed66" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Auxiliary pts" typeId="201f-b481-6ccf-6a5f" value="25"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbe3-50e3-2d3a-0acd" includeChildSelections="false"/>
@@ -3043,10 +3072,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Raven Light Dropship" hidden="false" id="c537-2e0d-fa8c-766d" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="15"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="-2"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="Auxiliary pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b769-ca28-94b9-199c" includeChildSelections="false"/>
@@ -3078,10 +3110,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Archangel Interceptor" hidden="false" id="ec8d-809d-ec70-0bd9" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d404-6e61-b330-e659" includeChildSelections="false"/>
@@ -3141,10 +3176,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Archangel Tactical Bomber" hidden="false" id="bca9-45d0-d2f2-269d" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="50"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="784d-5905-d9e3-9394" includeChildSelections="false"/>
@@ -3205,10 +3243,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Seraphim Bomber" hidden="false" id="9511-ea1a-c317-34db" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="90"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="90"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b13-ae17-aa18-b41d" includeChildSelections="false"/>

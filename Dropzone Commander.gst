@@ -17,6 +17,9 @@
     <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Screamer, Resistance Bus</comment>
     </costType>
+    <costType id="201f-b481-6ccf-6a5f" name="A_pts" defaultCostLimit="-1" hidden="false">
+      <comment>Aux unit pts costs</comment>
+    </costType>
   </costTypes>
   <profileTypes>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
@@ -533,8 +536,20 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <comment>Auxiliary Cost</comment>
+            </modifierGroup>
+          </modifierGroups>
         </forceEntry>
         <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -589,6 +604,16 @@
               </modifiers>
               <comment>Transport Requirements</comment>
             </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <comment>Auxiliary Cost</comment>
+            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -641,7 +666,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
@@ -697,6 +722,16 @@
               </modifiers>
               <comment>Transport Requirements</comment>
             </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <comment>Auxiliary Cost</comment>
+            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -749,7 +784,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
@@ -805,6 +840,16 @@
               </modifiers>
               <comment>Transport Requirements</comment>
             </modifierGroup>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <comment>Auxiliary Cost</comment>
+            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -857,7 +902,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
@@ -870,25 +915,6 @@
             </categoryLink>
           </categoryLinks>
           <comment>0-1/0-2/0-3</comment>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <comment>Battle Size Settings</comment>
-              <modifiers>
-                <modifier type="set" value="3" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                  <comment>Battle Roster Setting</comment>
-                </modifier>
-                <modifier type="set" value="2" field="c1f3-cbe8-b660-eb93" affects="" scope="force">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                  <comment>Clash Roster Setting</comment>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -1000,6 +1026,57 @@
               </conditions>
             </modifierGroup>
           </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Commander Costs" hidden="false" id="2877-bdda-cb9a-ec08">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2be1-ce96-3a5b-8d19-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2be1-ce96-3a5b-8d19-max" includeChildSelections="false"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="35" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="3ef3-74ac-9b0a-841f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="65" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="425b-ba23-208f-1d7e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="95" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="193c-b0e6-c33e-673f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="125" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="8160-acd4-d9ed-2583" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="155" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="5d35-7708-fc13-81bd" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <comment>Commander Costs</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Auxiliary Costs" hidden="false" id="e2d6-9503-563c-23f6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d30-d2e9-eab0-5b0b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d30-d2e9-eab0-5b0b-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="points">
+              <repeats>
+                <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="roster" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1919,6 +1996,12 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="f01f-0533-4c0a-f6ca" targetId="1cac-032f-4580-2381" primary="true"/>
@@ -1964,6 +2047,12 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="65"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="50ec-b7d4-d1fe-094c" targetId="1cac-032f-4580-2381" primary="true"/>
@@ -2019,6 +2108,12 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="95"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="364d-b429-a25f-c5ff" targetId="1cac-032f-4580-2381" primary="true"/>
@@ -2072,6 +2167,12 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="125"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="26ab-fe23-d012-bbe1" targetId="1cac-032f-4580-2381" primary="true"/>
@@ -2109,6 +2210,12 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="155"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="d576-82a9-f874-8d2d" targetId="1cac-032f-4580-2381" primary="true"/>
@@ -2139,6 +2246,38 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
       <categoryLinks>
         <categoryLink targetId="1cac-032f-4580-2381" id="5f3b-4dd0-6a71-3376" primary="true" name="Commander"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="decrement" value="35" field="points" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3ef3-74ac-9b0a-841f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="65" field="points" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="425b-ba23-208f-1d7e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="95" field="points" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="193c-b0e6-c33e-673f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="125" field="points" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8160-acd4-d9ed-2583" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="155" field="points" scope="parent">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d35-7708-fc13-81bd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Commander Costs</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Veteran Selection" id="63f5-9a9c-e02b-59e0" hidden="false" defaultSelectionEntryId="77f3-cd88-42e2-900c">
       <selectionEntries>
