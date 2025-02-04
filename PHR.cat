@@ -8,7 +8,7 @@
             <categoryLink name="Command" hidden="false" id="c68a-163c-d45e-accd" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Hera Command Walker" hidden="false" id="1d60-069e-c352-6c3e" collective="true">
+            <selectionEntry type="model" import="true" name="Hera Command Walker" hidden="false" id="1d60-069e-c352-6c3e" collective="false">
               <costs>
                 <cost name="pts" typeId="points" value="80"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>

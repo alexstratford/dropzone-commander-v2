@@ -536,7 +536,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="self" shared="false" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
@@ -666,7 +666,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="self" shared="false" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
@@ -784,7 +784,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="self" shared="false" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
@@ -902,7 +902,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="33" field="limit::points" scope="force" shared="false" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="33" field="limit::points" scope="self" shared="false" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
