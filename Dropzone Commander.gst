@@ -5,29 +5,29 @@
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="1750"/>
-    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1">
+    <costType name="Infantry_Req" id="466e-b8ec-f298-b782" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Light_Req" id="f4ee-4eec-0c72-6c13" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Tank_Req" id="1832-e9be-1e78-02df" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Faction3_Req" id="5bb1-3f94-8396-e8d2" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Vampires, Resistance Baby Drill</comment>
     </costType>
-    <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1">
+    <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Crab, Resistance Wheel</comment>
     </costType>
-    <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1">
+    <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Screamer, Resistance Bus</comment>
     </costType>
   </costTypes>
   <profileTypes>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">
       <characteristicTypes>
-        <characteristicType id="4d6f76652026204669726523232344415441232323" name="Move &amp; Fire"/>
+        <characteristicType id="4d6f76652026204669726523232344415441232323" name="M&amp;F"/>
         <characteristicType id="4.1726323232344415e+25" name="Arc"/>
-        <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="Range (Full)"/>
-        <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="Range (Countered)"/>
+        <characteristicType id="52616e6765202846756c6c2923232344415441232323" name="R(F)"/>
+        <characteristicType id="52616e67652028436f756e74657265642923232344415441232323" name="R(C)"/>
         <characteristicType id="53686f747323232344415441232323" name="Shots"/>
-        <characteristicType id="4.163637572616379e+35" name="Accuracy"/>
-        <characteristicType id="456e6572677923232344415441232323" name="Energy"/>
+        <characteristicType id="4.163637572616379e+35" name="Acc"/>
+        <characteristicType id="456e6572677923232344415441232323" name="E"/>
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
     </profileType>
@@ -38,23 +38,63 @@
         <characteristicType id="506f696e747323232344415441232323" name="Points"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="4.7617465232323444e+27" name="Gate">
-      <characteristicTypes>
-        <characteristicType id="4d61737320546f74616c23232344415441232323" name="Mass Total"/>
-        <characteristicType id="4761746520546f74616c23232344415441232323" name="Gate Total"/>
-        <characteristicType id="4.761746520537175e+41" name="Gate Squads"/>
-        <characteristicType id="4f746865722053717561647323232344415441232323" name="Other Squads"/>
-      </characteristicTypes>
-    </profileType>
     <profileType id="b88a-b68e-168b-9f28" name="Unit">
       <characteristicTypes>
         <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
-        <characteristicType id="725f-50fa-0778-01b0" name="Countermeasures"/>
-        <characteristicType id="dadd-5f09-c124-988c" name="Armour"/>
-        <characteristicType id="4f0a-b592-a15b-4f82" name="Damage Points"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f29" name="Aircraft">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
         <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
         <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
       </characteristicTypes>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f30" name="Aircraft">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
+      </characteristicTypes>
+      <comment>Drop</comment>
+    </profileType>
+    <profileType id="b88a-b68e-168b-9f31" name="Aircraft">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
+      </characteristicTypes>
+      <comment>Transport Requirement</comment>
+    </profileType>
+    <profileType id="a7a0-2f14-30f9-c88b" name="Vehicle">
+      <characteristicTypes>
+        <characteristicType id="945b-0e28-8a43-adae" name="Move"/>
+        <characteristicType id="725f-50fa-0778-01b0" name="CM"/>
+        <characteristicType id="dadd-5f09-c124-988c" name="A"/>
+        <characteristicType id="4f0a-b592-a15b-4f82" name="DP"/>
+        <characteristicType id="cce5-c8f0-316f-2a02" name="Type"/>
+        <characteristicType id="25ff-0caf-af0d-995f" name="Special"/>
+        <characteristicType id="2f91-fef1-c5bf-04cd" name="Transport Capacity"/>
+        <characteristicType id="730b-1969-f647-f794" name="Transport Requirement"/>
+      </characteristicTypes>
+      <comment>Transport</comment>
     </profileType>
     <profileType id="d3ad-5a11-6f2d-62a0" name="Behemoth">
       <characteristicTypes>
@@ -64,6 +104,29 @@
         <characteristicType id="79c0-084f-6995-f27b" name="Type"/>
         <characteristicType id="463e-6079-0c6d-3830" name="Special"/>
       </characteristicTypes>
+    </profileType>
+    <profileType id="ff8d-7bf5-5e1d-8ad0" name="Unit">
+      <characteristicTypes>
+        <characteristicType id="eb95-5ff4-e4ee-f207" name="Move"/>
+        <characteristicType id="d5c2-6e3d-7f80-1e21" name="CM"/>
+        <characteristicType id="a5ec-d3f7-784a-6d89" name="A"/>
+        <characteristicType id="e707-608e-5069-cf78" name="DP"/>
+        <characteristicType id="2ed1-82c9-6c88-46ee" name="Type"/>
+        <characteristicType id="89f6-a5e7-b366-70a3" name="Special"/>
+      </characteristicTypes>
+      <comment>No Transport Requirement</comment>
+    </profileType>
+    <profileType id="f999-cdc5-d912-46a0" name="Vehicle">
+      <characteristicTypes>
+        <characteristicType id="bf89-fcc7-f093-faca" name="Move"/>
+        <characteristicType id="a100-1ed0-8001-534e" name="CM"/>
+        <characteristicType id="966a-02f8-8ce0-0806" name="A"/>
+        <characteristicType id="5167-c8b3-2814-3457" name="DP"/>
+        <characteristicType id="6153-63f6-5e39-9a03" name="Type"/>
+        <characteristicType id="0f17-2aa1-29ec-c7bc" name="Special"/>
+        <characteristicType id="ab5c-4a91-95a8-9e3a" name="Transport Capacity"/>
+      </characteristicTypes>
+      <comment>Transport, No Requirement</comment>
     </profileType>
   </profileTypes>
   <categoryEntries>
@@ -79,12 +142,11 @@
     <categoryEntry name="Command" id="ed7f-0593-2e55-430d" hidden="false"/>
     <categoryEntry name="Troops" id="43a9-1ec6-f0bc-8f37" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
     <categoryEntry name="Infiltrate" id="8d7c-89a4-5368-5a3c" hidden="false"/>
-    <categoryEntry name="Hovercraft" id="cfdd-90c2-4b0b-c707" hidden="false"/>
-    <categoryEntry name="Drill" id="243f-ea96-5f0b-72e6" hidden="false"/>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
     <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
+    <categoryEntry name="Fauna" id="9a72-031e-b487-67c2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
@@ -464,7 +526,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="1a25-ff9c-c33d-9ea5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="1a25-ff9c-c33d-9ea5" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Frontline Battlegroup" id="9abc-7686-4bab-45ef" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -564,7 +634,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="40c3-4ddf-9496-cdba">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="40c3-4ddf-9496-cdba" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Armour Battlegroup" id="706a-61eb-8e36-7ddf" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -664,7 +742,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="4bce-8379-42b0-398a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="4bce-8379-42b0-398a" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Vanguard Battlegroup" id="88f2-9609-5f41-d02f" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -683,7 +769,7 @@
             <categoryLink name="Support" hidden="false" id="8d3e-eef2-7eb9-71fe" targetId="1742-0b1d-252f-505d">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b2bf-02c6-8056-10c6" includeChildSelections="true" includeChildForces="true"/>
-                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="08a1-c740-1b39-e35b" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="08a1-c740-1b39-e35b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary" hidden="false" id="f01e-ba8f-6ea5-da5a" targetId="de27-8358-5d78-6eeb">
@@ -764,7 +850,15 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="50" field="f3b4-8464-2135-9164">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="33" field="limit::points" scope="roster" shared="true" id="f3b4-8464-2135-9164" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="War Engine Battlegroup" id="8586-e6c8-bde7-4c33" hidden="true" publicationId="9aaf-4a48-3cce-441f" page="41">
           <categoryLinks>
@@ -869,7 +963,7 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Game Size" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry" flatten="true">
+    <entryLink import="true" name="Configuration" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry" flatten="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4a0-8867-cb2b-18f5" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d9d-ff46-c224-41ef" includeChildSelections="false"/>
@@ -878,21 +972,48 @@
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Game Size" hidden="false" id="71a0-476c-277b-1c28">
+    <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
       <entryLinks>
-        <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64">
-          <modifiers>
-            <modifier type="set" value="7895-d441-b903-8bb2" field="defaultSelectionEntryId">
-              <conditionGroups>
-                <conditionGroup type="and"/>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Veteran Selection" hidden="true" id="dfc8-1d4d-02ce-fd62" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Veteran Selection" hidden="false" id="d345-9ee6-1b63-b63e" type="selectionEntryGroup" targetId="63f5-9a9c-e02b-59e0"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="43fe-4a2b-e6ca-dd15" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67d-03eb-5397-658a" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="You need to select a special rule for Resistance Veterans" field="warning">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="dfc8-1d4d-02ce-fd62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Transport Requirement" hidden="false" id="4379-c9b6-890d-afa4">
       <constraints>
@@ -927,19 +1048,46 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="935f-4851-7241-b6e3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="EAA Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
+                <profile name="EAA Columbus Battlewalker" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="1b9c-154b-6a95-b8e0">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="Armour" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="Damage Points" typeId="4f0a-b592-a15b-4f82">3</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A</characteristic>
+                    <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">14</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
+                    <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">-</characteristic>
                   </characteristics>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <modifiers>
-                        <modifier type="set" value="Resistance Columbus Battlewalker" field="name"/>
+                        <modifier type="set" value="true" field="hidden"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="8263-3abb-ae06-a255" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                          </conditions>
+                          <comment>Enable Resistance</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+                <profile name="Resistance Columbus Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="true" id="5e06-46dd-1ab9-10a0">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Bus</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
                       </modifiers>
                       <conditionGroups>
                         <conditionGroup type="and">
@@ -959,13 +1107,13 @@
                   <profiles>
                     <profile name="Twin Punisher Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18b2-52dd-73ce-881b">
                       <characteristics>
-                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                         <characteristic name="Special" typeId="25ff-0caf-af0d-995f"/>
                       </characteristics>
                     </profile>
@@ -979,13 +1127,13 @@
                   <profiles>
                     <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fec9-bbae-7a76-d2ee">
                       <characteristics>
-                        <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                         <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                        <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                        <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                         <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                        <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                        <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                         <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
                       </characteristics>
                     </profile>
@@ -1020,13 +1168,13 @@
                       <profiles>
                         <profile name="Heavy Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8f6a-5544-bf15-7f45">
                           <characteristics>
-                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                            <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                            <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                             <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
                           </characteristics>
                         </profile>
@@ -1042,13 +1190,13 @@
                       <profiles>
                         <profile name="AA Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2716-3df2-9511-a7ab">
                           <characteristics>
-                            <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                            <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                             <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                            <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                            <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                            <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                            <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                             <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                            <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                            <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                            <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                            <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                             <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
                           </characteristics>
                         </profile>
@@ -1091,6 +1239,100 @@
               </modifierGroups>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Apex" hidden="false" id="cfe2-52ef-460a-fd90">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Apex" hidden="false" id="9b58-91c6-3843-0e25">
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Apex" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="b849-d5f6-06d8-66e6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                    <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">E+1</characteristic>
+                    <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">12</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">4</characteristic>
+                    <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare, Fauna</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rare" id="c84c-ed69-18ed-4bf5" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Fauna" id="e3d6-7c39-0d9c-1934" hidden="false" type="rule" targetId="b2d8-7421-b0b4-dbeb"/>
+              </infoLinks>
+              <rules>
+                <rule name="Intelligent" id="caae-abd5-f382-2764" hidden="false">
+                  <description>Apexes have more intelligence than other Fauna, and can be coerced or tricked into predictable actions. When it activates, it moves towards the closest enemy unit instead of the closest unit.</description>
+                </rule>
+                <rule name="Genetic Modification" id="d01e-2763-ccdd-3fb9" hidden="false">
+                  <description>The Apex is a highly adaptable creature, and has a variety of biomorphs across a number of worlds. At the start of the game, roll 1d3 and apply the result.
+1. Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7
+2. New Eden Apex: Increase Countermeasures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost Damage Point.
+3. Magnum Apex: Increase Armour to 15 and increase Killing Tools energy to 12.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c69-4962-2152-097c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c69-4962-2152-097c-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Killing Tools" hidden="false" id="9b1f-71ba-4184-5904">
+                  <profiles>
+                    <profile name="Killing Tools" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="50cf-5997-bd58-e440">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Melee</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Acid Breath" hidden="false" id="3f13-c449-6ee7-5901">
+                  <profiles>
+                    <profile name="Acid Breath" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5e21-f7fd-fe79-86ec">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51a7-1d96-a67a-0e54-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a7-1d96-a67a-0e54-max" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Flame" id="5869-5b8b-042b-7362" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="9a72-031e-b487-67c2" id="06d0-9ee9-295d-12f4" primary="true" name="Fauna"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1419,6 +1661,15 @@ For example, a unit of Scourge Warriors fires their Plasma Rifles with Focus-3.
 
 When targeting a Behemoth, measure to any point within its Spread.</description>
     </rule>
+    <rule name="Large Transport" id="ea19-99eb-b9c6-e3e4" hidden="false">
+      <description>When a unit disembarks from this unit, measure from any point on its edge rather than the centre.</description>
+    </rule>
+    <rule name="Fauna" id="b2d8-7421-b0b4-dbeb" hidden="false">
+      <description>Fauna included in your army begin the game in readiness, regardless of the normal scenario rules.
+All Fauna activate as part of the same Battlegroup, after all other Battlegroups have activated, ignoring the rules for activating Auxiliary units. They are placed on the board at the end of the first round at any point along the centre line of the board, between both players deployment zones.
+When this unit activates, it must make a move action towards the closes non-garrisoned unit and attack with any and all weapons it is able to. If two or more units are tied for closest, your opponent decides which unit the Fauna will move towards.
+Special rules on command cards have no effect on Fauna unless explicitly mentioned and they may not search or claim objectives.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="3fda-65f2-6cc3-ee33">
@@ -1588,9 +1839,9 @@ When targeting a Behemoth, measure to any point within its Spread.</description
         </modifier>
       </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false">
+    <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1" sortIndex="1" subType="crew">
           <profiles>
             <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1598,6 +1849,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">4&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">0</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1606,14 +1867,18 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="2516-18f9-0553-88f8" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ae-d5e0-8412-a8d0"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="92ae-d5e0-8412-a8d0"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="2" subType="crew">
           <profiles>
             <profile name="Commander (CV 2)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="4de3-21cc-7321-e28b" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1621,6 +1886,35 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">8&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">35</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="10&quot;" field="5.261646975732324e+31"/>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5927-42f9-2ef6-e050" shared="true"/>
+                  </conditions>
+                  <comment>Oriana Nueva</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6381-5112-4217-8c4d" shared="true"/>
+                  </conditions>
+                  <comment>Seti the Kinslayer</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1629,8 +1923,18 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="f01f-0533-4c0a-f6ca" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="3" subType="crew">
           <profiles>
             <profile name="Commander (CV 3)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="010d-0e07-7482-a80a" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1638,6 +1942,24 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">12&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">65</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="14&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="56c5-9c94-d5b5-1a48" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1646,8 +1968,18 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="50ec-b7d4-d1fe-094c" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="4" subType="crew">
           <profiles>
             <profile name="Commander (CV 4)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="901c-9dca-dcd2-3cfb" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1655,6 +1987,34 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">16&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">95</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="8&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1ee1-3b9e-13a4-1db0" shared="true"/>
+                  </conditions>
+                  <comment>Stheno</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Apep</comment>
+                  <modifiers>
+                    <modifier type="set" value="4&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ee17-3d29-95aa-3135" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1663,8 +2023,18 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="364d-b429-a25f-c5ff" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="5" subType="crew">
           <profiles>
             <profile name="Commander (CV 5)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="1922-aeda-0451-ebc5" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1672,6 +2042,32 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">20&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">125</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="18&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a335-ee7d-fcd5-dd2d" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="30&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1e9e-5eab-ee7f-0e12" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1680,8 +2076,18 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="26ab-fe23-d012-bbe1" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9">
+        <selectionEntry type="model" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="6" subType="crew">
           <profiles>
             <profile name="Commander (CV 6)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="e778-2aa4-a7cd-1442" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1689,6 +2095,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
                 <characteristic name="Radius" typeId="5.261646975732324e+31">24&quot;</characteristic>
                 <characteristic name="Points" typeId="506f696e747323232344415441232323">155</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="-" field="506f696e747323232344415441232323"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1697,6 +2113,16 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           <categoryLinks>
             <categoryLink name="Commander" hidden="false" id="d576-82a9-f874-8d2d" targetId="1cac-032f-4580-2381" primary="true"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b9fe-b6e1-3716-8d88" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -1710,6 +2136,61 @@ When targeting a Behemoth, measure to any point within its Spread.</description
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1cac-032f-4580-2381" id="5f3b-4dd0-6a71-3376" primary="true" name="Commander"/>
+      </categoryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Veteran Selection" id="63f5-9a9c-e02b-59e0" hidden="false" defaultSelectionEntryId="77f3-cd88-42e2-900c">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Scourge Occupation" hidden="false" id="6a6a-afaa-6da5-923b" sortIndex="1" defaultAmount="1">
+          <rules>
+            <rule name="Scourge Occupation" id="879d-92d4-261d-44fd" hidden="false">
+              <description>*These fighters take to the battle with modified Scourge Plasma Rifles salvaged from their foes.*
+Resistance Veteran squads replace their Assault Rifles with Plasma Rifles.</description>
+            </rule>
+          </rules>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kalium Volunteers" hidden="false" id="7b9c-7171-e030-f89a" sortIndex="3">
+          <rules>
+            <rule name="Kalium Volunteers" id="2d7e-624c-c7fa-9adc" hidden="false">
+              <description>*Iron disciplined soldiers who choose to continue serving long after their conscription is up.*
+Resistance Veteran squads automatically pass Fortitude tests and gain the Resilient special rule.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marine Force Recon" hidden="false" id="79b7-0c15-46f2-2814" sortIndex="2">
+          <rules>
+            <rule name="Marine Force Recon" id="4a8e-7019-7ea5-88b7" hidden="false">
+              <description>*Specially trained UCM allies that fight alongside Resistance forces.*
+Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</description>
+            </rule>
+          </rules>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2393-7942-8db8-8a69" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e9-b92a-9404-247f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>
