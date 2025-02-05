@@ -331,7 +331,7 @@
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="ee17-3d29-95aa-3135">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="71dc-020f-4bf2-8612">
+            <selectionEntry type="model" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="71dc-020f-4bf2-8612" collective="true">
               <profiles>
                 <profile name="Crocodile Heavy Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2684-be6d-0f83-4dcf">
                   <characteristics>
@@ -343,6 +343,13 @@
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -364,7 +371,24 @@
               </entryLinks>
               <infoLinks>
                 <infoLink name="Command Centre" id="e4b0-6cad-dccb-1eb9" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                <infoLink name="Large" id="c118-cf62-7032-6eca" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
+              <rules>
+                <rule name="Benefit" id="2fee-a4dc-8ac3-faaf" hidden="false">
+                  <description>Once per turn, you may give one unit Devastator-2 (Large) to one of its weapon profiles until the end of the turn.</description>
+                </rule>
+                <rule name="Detriment" id="7033-5bf7-94e8-b9ed" hidden="false">
+                  <description>Friendly units with the Heavy category gain Large.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -1343,11 +1367,26 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-3</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="replace" value="" field="25ff-0caf-af0d-995f" arg="Alt-1, ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3a-b39b-f357-6a46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="AA-X" id="51ff-288f-8148-9959" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
-            <infoLink name="Alt-X" id="c1c0-e7a0-b6f2-3db4" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Alt-X" id="c1c0-e7a0-b6f2-3db4" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden" arg="Alt-1, ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3a-b39b-f357-6a46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b91d-f7b1-57d9-a421" includeChildSelections="false"/>
@@ -2170,6 +2209,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
                     <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">9 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -2179,6 +2225,15 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <infoLink name="Access" id="76f4-1492-291e-732b" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
                 <infoLink name="Supplementary Gate" id="7d62-2494-4837-963f" hidden="false" type="rule" targetId="a27a-749c-647f-b073"/>
                 <infoLink name="Teleport" id="3d38-5b20-26b4-a8c2" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
+                <infoLink name="Large" id="e706-ed48-3610-fe21" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478c-d6f4-eeb9-dc70" includeChildSelections="false"/>
@@ -2213,6 +2268,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2220,7 +2282,19 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="78f9-65c2-3d88-cffb" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bobcat Warstrider Weapon Selection" hidden="false" id="acfa-d4f7-24fa-bcf3" type="selectionEntryGroup" targetId="2ded-2210-cf56-c5f9"/>
+                <entryLink import="true" name="Bobcat Warstrider Weapon Selection" hidden="false" id="acfa-d4f7-24fa-bcf3" type="selectionEntryGroup" targetId="2ded-2210-cf56-c5f9">
+                  <infoLinks>
+                    <infoLink name="Large" id="dc1b-50fc-55c5-668f" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2242,6 +2316,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -2261,6 +2342,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <entryLink import="true" name="Laser Pods" hidden="false" id="580a-d11f-1560-3937" type="selectionEntry" targetId="e3f8-0065-8de9-3006"/>
                 <entryLink import="true" name="Gauss Triad" hidden="false" id="c2aa-f515-545f-c997" type="selectionEntry" targetId="745c-5b97-23b9-c690"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="453c-bd59-4336-7755" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2281,6 +2373,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -2299,6 +2398,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
               <entryLinks>
                 <entryLink import="true" name="Particle Cannon" hidden="false" id="dc70-2b7d-c6e7-7951" type="selectionEntry" targetId="ca8c-8778-f2bc-5298"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="d846-dafe-db7d-6a3a" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2328,6 +2438,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2338,6 +2455,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <entryLink import="true" name="Twin Dragon Cannons" hidden="false" id="7426-c28f-d65f-1947" type="selectionEntry" targetId="db78-de6d-138a-6490"/>
                 <entryLink import="true" name="Thermal Lance" hidden="false" id="3844-cb37-a60e-1808" type="selectionEntry" targetId="d94e-e699-4899-b2bc"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="60ac-0e98-e785-2200" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2367,6 +2495,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2376,6 +2511,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
               <entryLinks>
                 <entryLink import="true" name="Particle Cannon" hidden="false" id="4eac-43c7-5ed2-17fa" type="selectionEntry" targetId="e23b-78de-22e0-8460"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="d3a2-ff7b-d8b3-766f" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2405,6 +2551,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2419,6 +2572,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                   <description>This unit may not Reaction Fire.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink name="Large" id="4b5a-0302-94a1-519e" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2448,6 +2612,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2458,6 +2629,17 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <entryLink import="true" name="Twin Gauss Cannons" hidden="false" id="09fc-2b45-b10e-0091" type="selectionEntry" targetId="5a93-95aa-778b-3355"/>
                 <entryLink import="true" name="Sonic Cannon" hidden="false" id="08b9-6495-aef9-cddf" type="selectionEntry" targetId="eb0f-39e1-e1d9-4fba"/>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Large" id="da9d-b3d5-2ec8-2109" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -3626,6 +3808,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
     <entryLink import="true" name="Tiger Siegestrider" hidden="false" id="a4a2-4272-9f83-76ed" targetId="732e-5c9f-11bf-2bcf" type="selectionEntry"/>
     <entryLink import="true" name="Earth Dragon" hidden="false" id="b2e9-f5d2-1138-caa9" targetId="6c42-be3c-3013-8c30" type="selectionEntry"/>
     <entryLink import="true" name="Celestial Dragon" hidden="false" id="fe1f-77f7-2379-786d" targetId="5ce0-ef77-6d51-ee29" type="selectionEntry"/>
+    <entryLink import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="f8ba-daa9-b49f-716a" type="selectionEntry" targetId="ee17-3d29-95aa-3135"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -3944,7 +4127,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
     </selectionEntryGroup>
     <selectionEntryGroup name="Warspear Interceptor Weapon Selection" id="1413-71f6-2b2b-e1d4" hidden="false" collective="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser" hidden="false" id="ca3a-b39b-f357-6a46">
+        <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser" hidden="false" id="ca3a-b39b-f357-6a46" collective="true">
           <costs>
             <cost name="pts" typeId="points" value="10"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
@@ -3993,6 +4176,10 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6684-7d9f-65f3-c9af-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6684-7d9f-65f3-c9af-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>

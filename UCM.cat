@@ -2365,13 +2365,17 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Gatling Gun" hidden="false" id="fc9e-c34b-21b0-58a8" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b" sortIndex="2"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
-                <cost name="Tank Transport" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="pts" typeId="points" value="40"/>
                 <cost name="Infantry Transport" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
-                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+                <cost name="Tank Transport" typeId="ff3b-470e-29b7-dc8a" value="0"/>
+                <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
+                <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
               </costs>
               <profiles>
                 <profile name="Rapier AA Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fbdf-7c09-b991-8488" publicationId="0a0b-b837-fa34-a21d" page="21">
