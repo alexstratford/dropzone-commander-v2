@@ -1534,7 +1534,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             <infoLink name="Devastator-X" id="5dc0-d309-28c5-ea28" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="UMH-9 Stormcrow Cannon, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="1e7a-45b8-490e-24c3" collective="true">
+        <selectionEntry type="upgrade" import="true" name="2 UMH-9 Stormcrow Cannons, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="1e7a-45b8-490e-24c3" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2de0-28ee-3f54-480f" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c146-4fc3-8032-28e4" includeChildSelections="false"/>

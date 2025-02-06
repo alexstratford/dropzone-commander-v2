@@ -52,6 +52,10 @@
     <entryLink import="true" name="Salakhan - Napoleon Heavy Tank" hidden="false" id="183b-253f-563b-a777" targetId="7ea6-9b98-53fb-e5b3" type="selectionEntry"/>
     <entryLink import="true" name="Rakkon Krell - Pizzaro Hazard Walker" hidden="false" id="9194-66da-f4db-3a07" targetId="1bea-7b0a-95aa-8155" type="selectionEntry"/>
     <entryLink import="true" name="Moira Sharpe - Hydra Relay Hovercraft" hidden="false" id="e514-0c77-8dee-2ba0" targetId="f3d5-947f-88b1-cbd7" type="selectionEntry"/>
+    <entryLink import="true" name="Colossus Class Explorator" hidden="false" id="fce4-9f4c-ebd1-64a0" targetId="a0ce-bcb6-184b-779d" type="selectionEntry"/>
+    <entryLink import="true" name="Juggernaut Class Explorator" hidden="false" id="ad0d-6bac-7bfc-6107" targetId="c8ae-17e4-f2ec-eb6f" type="selectionEntry"/>
+    <entryLink import="true" name="Avernus Mining Engine" hidden="false" id="e4e7-17ad-f1f3-bb88" targetId="78af-dd1b-c1a3-eee5" type="selectionEntry"/>
+    <entryLink import="true" name="Cerberus Mining Engine" hidden="false" id="b965-6520-91c0-28d6" targetId="4229-0673-3955-ab62" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -1644,7 +1648,306 @@
             <infoLink name="Limited-X" id="d638-d63f-db24-bfe8" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="800mm Naval Defence Gun, 2 Chainguns, Logging Claws" hidden="false" id="af95-2d7a-6227-f6e1" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c05c-06e4-35ed-c2a6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57f7-fb0a-2be5-ad6a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="800mm Naval Defence Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a2e6-563d-4ad9-8ed8">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Destroyer 5+, Devastator-4 (Behemoth, Scenery)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="03f7-176f-d898-08cb">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3f81-5361-f705-c049">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Logging Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fad3-961d-67c5-0c02">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">8&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">15</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Area" id="e5e8-4aa6-1cdc-2f5f" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Destroyer-X" id="7203-4334-a987-f56b" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+            <infoLink name="Devastator-X" id="c805-5c39-c0c3-538a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Focus-X" id="b173-1acb-3991-c4d8" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 Gilgamesh Missiles, 4 Beowulf AAV Pods, 2 Chainguns, Logging Claws" hidden="false" id="9063-4201-7eec-f819" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="031f-3a08-d721-1db7" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f4-b134-d3b0-3f6b" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gilgamesh Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8332-9be4-9ec4-6e2b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (All), Indirect, Limited-5</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gilgamesh Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="db6c-ebcb-dc7a-1bc0">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (All), Indirect, Limited-5</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Beowulf AAV Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8fbc-ea95-e203-28f5">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Beowulf AAV Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="380d-16d8-efe9-2d2f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Beowulf AAV Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6b73-d2ef-6b92-3b58">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Beowulf AAV Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="28ee-ee74-0d5f-9e4e">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8179-bba7-cec4-f5ec">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="719d-14dc-5d1d-219f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Logging Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ec10-b189-38f1-696a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">8&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">15</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Focus-X" id="19bd-126f-651c-de65" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+            <infoLink name="Devastator-X" id="1293-a617-7e25-883a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Area" id="a71d-59c0-4cbe-2057" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Indirect" id="03ce-0ed1-fbf0-50a5" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Limited-X" id="7e14-2647-7b73-ca9c" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
+            <infoLink name="AA-X" id="2084-aba2-fa87-9e7c" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vent Repeater, 2 Autocannons" hidden="false" id="b714-5f62-c1ab-8fec" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e60f-e69a-700f-50e6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ae0-3830-8740-6489" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Vent Repeater (Standard)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ac28-9aae-fc11-3e8f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Autocannon (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dcce-8206-c987-1bf5">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (R)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Autocannon (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="904f-cd2f-2109-7e1f">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (L)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Vent Repeater (Overcharge)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9f7d-29bf-6f28-625a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-2 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Vent Repeater (Overcharge)" id="ac01-ba5a-7ffc-8597" hidden="false">
+              <description>Failed hit rolls cause this unit to lose 1 DP from a random zone.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mining Laser, Autocannons" hidden="false" id="37c4-cd64-ee11-0ac5" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dbb-967b-a77e-097e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37e2-b970-ec43-977d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mining Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b25b-f74a-805c-5593">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Autocannon (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9387-b51f-de82-55ae">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (R)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Autocannon (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6e21-2a44-a47d-0b93">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (L)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Mining Laser" id="eadf-34fa-7504-a81c" hidden="false">
+              <description>When firing this weapon, do not target a unit. Instead, roll to hit. If successful, draw a 1/2 inch wide straight line directly out horizontally from the Mining Laser. All non-Aircraft, non-Garrisoned units and scenery under the line(either fully or partially and both friendly and enemy) are hit with the attack and are damaged as normal.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dbb-967b-a77e-097e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Standard" hidden="false" id="d79c-a6cb-4e01-d3d9" subType="unit-group">
       <selectionEntries>
@@ -4282,6 +4585,280 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="2686-ce0e-bda1-d5ce">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Resistance Heavy Behemoth" hidden="false" id="8ed8-fd63-5842-49ca">
+          <profiles>
+            <profile name="Hull" typeId="69c8-2374-7885-3156" typeName="Resistance Heavy Hull" hidden="false" id="6fc1-b3c5-46c2-9826">
+              <characteristics>
+                <characteristic name="Hull" typeId="b754-a034-1bd7-8541">16</characteristic>
+                <characteristic name="Crippled Result" typeId="c8c4-54fa-c11d-a6b0">This unit reduces its Armour by 3.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Legs" typeId="7a89-a4aa-4bb8-5e07" typeName="Resistance Heavy Legs" hidden="false" id="d408-a16a-dde4-c504">
+              <characteristics>
+                <characteristic name="Legs" typeId="e376-b914-8cdf-4db5">8</characteristic>
+                <characteristic name="Legs" typeId="8a9e-a8fc-797c-9686">8</characteristic>
+                <characteristic name="Crippled Result" typeId="10ee-7f5b-3e17-e781">Reduce this unit’s Move by 2”, and Shots on Logging Claws by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Weapons" typeId="a973-74eb-815d-bb85" typeName="Resistance Heavy Weapons" hidden="true" id="359d-ddb7-c7f0-08b4">
+              <characteristics>
+                <characteristic name="Weapons" typeId="06d2-31d8-d38c-ca05"/>
+                <characteristic name="Weapons" typeId="40e4-11b8-20a1-147c"/>
+                <characteristic name="Weapons" typeId="0051-495a-d113-679d"/>
+                <characteristic name="Weapons" typeId="0cfa-8f60-3ad4-263e">4</characteristic>
+                <characteristic name="Crippled Result" typeId="1c43-ba6e-e8a6-c6b9">A Gilgamesh Missile has its Limited value reduced by 1. Roll a dice. On a 4+, reduce the Limited value by 1 again. If this happens, keep rolling until either rolling a 1-3 or there are no more Gilgamesh Missiles left.</characteristic>
+              </characteristics>
+              <comment>colossus</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0ce-bcb6-184b-779d" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Weapons" typeId="2cd9-b495-fc16-ab07" typeName="Resistance Heavy Weapons" hidden="true" id="2201-5e43-59ef-9aaa">
+              <characteristics>
+                <characteristic name="Weapons" typeId="9478-427e-e332-fea5">16</characteristic>
+                <characteristic name="Crippled Result" typeId="c292-5c3a-5ff2-1db1">800mm Naval Defence Gun cannot be used for the rest of the game.</characteristic>
+              </characteristics>
+              <comment>juggernaut</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c8ae-17e4-f2ec-eb6f" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e62-4fce-6159-5074" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e72-13f0-b609-7b1e" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Spread X" id="660a-8d76-d5fb-b014" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Resistance Light Behemoth" hidden="false" id="4e50-7d41-ca6d-0679">
+          <profiles>
+            <profile name="Hull" typeId="195d-d7d4-600b-1d8c" typeName="Resistance Light Hull" hidden="false" id="df80-36ca-401f-17db">
+              <characteristics>
+                <characteristic name="Hull" typeId="5d82-9a42-4404-bc1d">8</characteristic>
+                <characteristic name="Crippled Result" typeId="f047-55c3-581c-b307">This unit reduces its Armour by 4.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Legs" typeId="b45b-c12f-d1c2-f536" typeName="Resistance Light Legs" hidden="false" id="b0af-d888-1da8-40b7">
+              <characteristics>
+                <characteristic name="Legs" typeId="9705-6293-73ea-1bff">4</characteristic>
+                <characteristic name="Legs" typeId="205a-0400-c986-5bd8">4</characteristic>
+                <characteristic name="Crippled Result" typeId="6c65-e479-4fbd-ced7">Reduce this unit’s Move by 3”.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Weapons" typeId="c93b-a504-5867-fa73" typeName="Resistance Light Weapons" hidden="true" id="2148-1eb0-cf47-b607">
+              <characteristics>
+                <characteristic name="Weapons" typeId="bf15-f8a5-72a1-07f8">10</characteristic>
+                <characteristic name="Crippled Result" typeId="0df9-4590-bdf6-5994">Vent Repeater (both Alts) cannot be used for the rest of the game.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4229-0673-3955-ab62" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>cerberus</comment>
+            </profile>
+            <profile name="Weapons" typeId="c93b-a504-5867-fa73" typeName="Resistance Light Weapons" hidden="true" id="997e-df77-e2b4-1b8e">
+              <characteristics>
+                <characteristic name="Weapons" typeId="bf15-f8a5-72a1-07f8">10</characteristic>
+                <characteristic name="Crippled Result" typeId="0df9-4590-bdf6-5994">Mining Laser cannot be used for the rest of the game.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="78af-dd1b-c1a3-eee5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>avernus</comment>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d386-2901-1c89-7cf0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="663d-f4be-a1c5-75b9" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Spread X" id="74c7-95bb-256f-8e1a" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Colossus Class Explorator" hidden="false" id="a0ce-bcb6-184b-779d">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="caf9-68aa-9955-b5c8" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Colossus Class Explorator" hidden="false" id="c2f1-fb4d-6045-8474" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="500"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-18"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84b7-e6fb-fc9d-494c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1109-ac6e-09e5-745a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Colossus Class Explorator" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="0f2b-c801-6d84-f3dd">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-4&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Spread X" id="0ea4-c1be-0183-e97d" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Resistance Heavy Behemoth" hidden="false" id="9042-3b14-4681-d210" type="selectionEntry" targetId="8ed8-fd63-5842-49ca"/>
+                <entryLink import="true" name="2 Gilgamesh Missiles, 4 Beowulf AAV Pods, 2 Chainguns, Logging Claws" hidden="false" id="2982-eed8-f5cb-1c72" type="selectionEntry" targetId="9063-4201-7eec-f819"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Juggernaut Class Explorator" hidden="false" id="c8ae-17e4-f2ec-eb6f">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="9cdb-a976-d9f8-9ace" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Juggernaut Class Explorator" hidden="false" id="c8ff-a2ee-2c0f-3a8e" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="500"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-18"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da89-b44e-8530-19c6" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a9c-a3e2-56a8-06f2" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Juggernaut Class Explorator" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="6e12-9966-bba0-3b18">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-4&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Spread X" id="8e7d-99ae-5002-07b4" hidden="false" type="rule" targetId="c4c3-3e64-4970-288b"/>
+              </infoLinks>
+              <rules>
+                <rule name="Supplementary Transport" id="e2a0-6672-897d-2228" hidden="false">
+                  <description>At the start of the game, before deployment, you may pick one squad from another Battlegroup for this unit to transport. For all purposes that squad is treated as part of the Juggernaught’s Battlegroup.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="800mm Naval Defence Gun, 2 Chainguns, Logging Claws" hidden="false" id="7afa-3766-2cd6-6528" type="selectionEntry" targetId="af95-2d7a-6227-f6e1"/>
+                <entryLink import="true" name="Resistance Heavy Behemoth" hidden="false" id="901b-f560-d045-84c6" type="selectionEntry" targetId="8ed8-fd63-5842-49ca"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Avernus Mining Engine" hidden="false" id="78af-dd1b-c1a3-eee5">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="8eb2-f496-041f-9b89" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Avernus Mining Engine" hidden="false" id="1ab9-2a59-933a-a869" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="300"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8df-92dc-4ee6-3983" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db0f-e866-bcb4-1201" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Resistance Light Behemoth" hidden="false" id="30f8-dd4b-cb41-81d7" type="selectionEntry" targetId="4e50-7d41-ca6d-0679"/>
+                <entryLink import="true" name="Mining Laser, Autocannons" hidden="false" id="795f-39ec-c3b7-5d5c" type="selectionEntry" targetId="37c4-cd64-ee11-0ac5"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Avernus Mining Engine" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="747c-2143-37ca-780e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Cerberus Mining Engine" hidden="false" id="4229-0673-3955-ab62">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="c84c-e79d-8251-f371" targetId="97a8-8f9f-5241-a322" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Cerberus Mining Engine" hidden="false" id="64e9-1d24-34b4-c6ea" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="300"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9ae-9fdf-b847-ed90" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdf0-adf4-507c-3a96" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Resistance Light Behemoth" hidden="false" id="4b29-0581-9f87-62f8" type="selectionEntry" targetId="4e50-7d41-ca6d-0679"/>
+                <entryLink import="true" name="Vent Repeater, 2 Autocannons" hidden="false" id="1be3-aaf2-8350-9135" type="selectionEntry" targetId="b714-5f62-c1ab-8fec"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Cerberus Mining Engine" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="74db-fa28-b07e-8312">
+                  <characteristics>
+                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
+                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
+                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-2&quot;</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Pizzaro Hazard Walker Weapon Selection" id="b5cf-206c-5183-ef30" hidden="false" defaultSelectionEntryId="577b-00e4-30b2-998b" collective="true">
@@ -4905,4 +5482,60 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <description>If this unit moves 10” or less, a squad disembarking out of it gains Rapid Insertion until the end of the round.</description>
     </rule>
   </sharedRules>
+  <profileTypes>
+    <profileType name="Resistance Light Weapons" id="c93b-a504-5867-fa73" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="bf15-f8a5-72a1-07f8"/>
+        <characteristicType name="Crippled Result" id="0df9-4590-bdf6-5994"/>
+      </characteristicTypes>
+      <comment>Resistance Light</comment>
+    </profileType>
+    <profileType name="Resistance Heavy Hull" id="69c8-2374-7885-3156" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Hull" id="b754-a034-1bd7-8541"/>
+        <characteristicType name="Crippled Result" id="c8c4-54fa-c11d-a6b0"/>
+      </characteristicTypes>
+      <comment>Resistance Heavy</comment>
+    </profileType>
+    <profileType name="Resistance Heavy Legs" id="7a89-a4aa-4bb8-5e07" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Legs" id="e376-b914-8cdf-4db5"/>
+        <characteristicType name="Legs" id="8a9e-a8fc-797c-9686"/>
+        <characteristicType name="Crippled Result" id="10ee-7f5b-3e17-e781"/>
+      </characteristicTypes>
+      <comment>Resistance Heavy</comment>
+    </profileType>
+    <profileType name="Resistance Heavy Weapons" id="a973-74eb-815d-bb85" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="06d2-31d8-d38c-ca05"/>
+        <characteristicType name="Weapons" id="40e4-11b8-20a1-147c"/>
+        <characteristicType name="Weapons" id="0051-495a-d113-679d"/>
+        <characteristicType name="Weapons" id="0cfa-8f60-3ad4-263e"/>
+        <characteristicType name="Crippled Result" id="1c43-ba6e-e8a6-c6b9"/>
+      </characteristicTypes>
+      <comment>Resistance Heavy Colossus</comment>
+    </profileType>
+    <profileType name="Resistance Light Hull" id="195d-d7d4-600b-1d8c" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Hull" id="5d82-9a42-4404-bc1d"/>
+        <characteristicType name="Crippled Result" id="f047-55c3-581c-b307"/>
+      </characteristicTypes>
+      <comment>Resistance Light</comment>
+    </profileType>
+    <profileType name="Resistance Light Legs" id="b45b-c12f-d1c2-f536" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Legs" id="9705-6293-73ea-1bff"/>
+        <characteristicType name="Legs" id="205a-0400-c986-5bd8"/>
+        <characteristicType name="Crippled Result" id="6c65-e479-4fbd-ced7"/>
+      </characteristicTypes>
+      <comment>Resistance Light</comment>
+    </profileType>
+    <profileType name="Resistance Heavy Weapons" id="2cd9-b495-fc16-ab07" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Weapons" id="9478-427e-e332-fea5"/>
+        <characteristicType name="Crippled Result" id="c292-5c3a-5ff2-1db1"/>
+      </characteristicTypes>
+      <comment>Resistance Heavy Juggernaut</comment>
+    </profileType>
+  </profileTypes>
 </catalogue>
