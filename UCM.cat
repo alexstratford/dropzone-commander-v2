@@ -338,17 +338,20 @@
             <profile name="Point Defence Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d424-7e32-65de-2f2e">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323"/>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323"/>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323"/>
-                <characteristic name="Acc" typeId="4.163637572616379e+35"/>
-                <characteristic name="E" typeId="456e6572677923232344415441232323"/>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <comment>F/S (R) 24&quot;</comment>
+          <infoLinks>
+            <infoLink name="AA-X" id="94bd-ba96-4b3b-72ff" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="9eb4-6880-7782-1e2f" collective="true" flatten="false">
           <profiles>
@@ -4116,7 +4119,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 </rule>
               </rules>
               <entryLinks>
-                <entryLink import="true" name="UMH-9 Stormcrow Cannon, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="ec3f-aa0a-d9f3-e865" type="selectionEntry" targetId="1e7a-45b8-490e-24c3" sortIndex="2"/>
+                <entryLink import="true" name="2 UMH-9 Stormcrow Cannons, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="ec3f-aa0a-d9f3-e865" type="selectionEntry" targetId="1e7a-45b8-490e-24c3" sortIndex="2"/>
                 <entryLink import="true" name="UCM Heavy Behemoth" hidden="false" id="9eba-62e1-f549-a4d4" type="selectionEntry" targetId="5148-9a66-be31-be05" sortIndex="1"/>
               </entryLinks>
             </selectionEntry>
