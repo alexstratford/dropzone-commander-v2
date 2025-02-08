@@ -3831,7 +3831,6 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Infiltrate X" id="ff9d-b3d4-0262-4142" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
                 <infoLink name="Rare" id="3176-8500-8cf2-1c55" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
                 <infoLink name="Resilient" id="aff7-319a-e2a3-25b5" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
                   <modifiers>
@@ -3847,6 +3846,7 @@
                 <entryLink import="true" name="Infiltrating" hidden="false" id="964f-c061-301a-cd7c" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
                 <entryLink import="true" name="Knives and Pistols" hidden="false" id="8bee-ebec-d818-b3a9" type="selectionEntry" targetId="6d5d-19ff-e260-889f" sortIndex="3"/>
                 <entryLink import="true" name="Trigger Demo IED" hidden="false" id="2de9-4b40-3441-b731" type="selectionEntry" targetId="3f55-a7b7-83a5-37b9" sortIndex="2"/>
+                <entryLink import="true" name="Infiltrating" hidden="false" id="d72d-0c17-43a1-8feb" type="selectionEntry" targetId="5e74-7851-f3ac-10e9"/>
               </entryLinks>
               <rules>
                 <rule name="Cluster IED" id="8d66-124e-493f-32fd" hidden="false">
