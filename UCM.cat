@@ -2591,9 +2591,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
               </costs>
-              <categoryLinks>
-                <categoryLink name="Support" hidden="false" id="dbc8-8fb7-5a96-ff03" targetId="1742-0b1d-252f-505d" primary="false"/>
-              </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49b5-0170-9d01-4f95" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f15-73c0-f125-0681" includeChildSelections="false"/>
@@ -4116,7 +4113,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 </rule>
               </rules>
               <entryLinks>
-                <entryLink import="true" name="UMH-9 Stormcrow Cannon, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="ec3f-aa0a-d9f3-e865" type="selectionEntry" targetId="1e7a-45b8-490e-24c3" sortIndex="2"/>
+                <entryLink import="true" name="2 UMH-9 Stormcrow Cannons, 2 Gatling Cannon Batteries, 2 Heavy Munitions Hailfire" hidden="false" id="ec3f-aa0a-d9f3-e865" type="selectionEntry" targetId="1e7a-45b8-490e-24c3" sortIndex="2"/>
                 <entryLink import="true" name="UCM Heavy Behemoth" hidden="false" id="9eba-62e1-f549-a4d4" type="selectionEntry" targetId="5148-9a66-be31-be05" sortIndex="1"/>
               </entryLinks>
             </selectionEntry>

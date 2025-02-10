@@ -1507,10 +1507,13 @@ Passive Countermeasures may still be used against Destroyer hits.</description>
     <rule name="Devastator-X" id="f34b-6e21-a034-1168" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>This weapon is denoted by a value and keywords after it in brackets, e.g. Devastator-2 (Vehicle). 
 
-When a Devastator weapon hits a target with the type in brackets, roll to damage as normal. However, it instead does the amount of damage listed by the X value. If this weapon scores a natural Critical, multiply the X value by 2! For example a weapon with DV-3 (Behemoths) hits a Behemoth once. Roll one dice to Damage as normal. If successful, the Behemoth in fact takes three Damage! This special rule may target particular unit types (such as Infantry, Vehicles etc), or even types of scenery pieces. It may even affect every type of unit, denoted by “All”. Sometimes a Devastator weapon has more than one value for different types of units, and sometimes a unit can be affected by multiple types (such as a Large Vehicle for example). In this situation, simply pick the highest applicable number.
+When a Devastator weapon hits a target with the type in brackets, roll to damage as normal. However, it instead does the amount of damage listed by the X value. If this weapon scores a natural Critical, multiply the X value by 2! 
 
 
-Note that if a weapon is Devastator (Scenery), on a Critical the damage isn’t multiplied by 2 and it still only receives 1 Collateral Damage token.</description>
+For example, a weapon with Devastator-3 (Behemoth) hits a Behemoth once. Roll one dice to Damage as normal. If successful, the Behemoth in fact takes three Damage! This special rule may target particular unit types (such as Infantry, Vehicles etc), or even types of scenery pieces. It may even affect every type of unit, denoted by “All”. Sometimes a Devastator weapon has more than one value for different types of units, and sometimes a unit can be affected by multiple types (such as a Large Vehicle for example). In this situation, simply pick the highest applicable number.
+
+
+Note that if a weapon is Devastator (Scenery), on a Critical the damage isn’t multiplied by 2 and it still only receives 1 Collateral Damage token.</description>
       <alias>Devastator-1</alias>
       <alias>Devastator-2</alias>
       <alias>Devastator-3</alias>
@@ -1518,6 +1521,7 @@ Note that if a weapon is Devastator (Scenery), on a Critical the damage isn’
       <alias>Devastator-5</alias>
       <alias>Devastator-6</alias>
       <alias>Devastator-7</alias>
+      <alias>Devastator-X</alias>
     </rule>
     <rule name="Indirect" id="1b28-deec-5ed9-9e34" hidden="false" page="46" publicationId="9aaf-4a48-3cce-441f">
       <description>An Indirect weapon may draw line of sight from a friendly Scout unit instead of its own unit - simply check line of sight as normal from the Scout unit instead.
