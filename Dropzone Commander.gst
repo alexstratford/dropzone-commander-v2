@@ -144,7 +144,11 @@
     <categoryEntry name="Heavy" id="ff91-8cc3-f775-3d20" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
     <categoryEntry name="Command" id="ed7f-0593-2e55-430d" hidden="false"/>
     <categoryEntry name="Troops" id="43a9-1ec6-f0bc-8f37" hidden="false" page="8" publicationId="9aaf-4a48-3cce-441f"/>
-    <categoryEntry name="Infiltrate" id="8d7c-89a4-5368-5a3c" hidden="false"/>
+    <categoryEntry name="Infiltrate" id="8d7c-89a4-5368-5a3c" hidden="false">
+      <infoLinks>
+        <infoLink name="Infiltrate X" id="c9cf-ec34-09e0-ca69" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry name="Transport Requirement" id="89b8-bfe2-c294-f341" hidden="false"/>
     <categoryEntry name="Drop Harness" id="899b-2d5a-e8f3-1b5b" hidden="false"/>
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
@@ -1418,9 +1422,6 @@
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fdc2-234a-0a2a-398a" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6d5-1980-c84d-1740" includeChildSelections="false"/>
       </constraints>
-      <infoLinks>
-        <infoLink name="Infiltrate X" id="c9cf-ec34-09e0-ca69" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
-      </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -1923,7 +1924,7 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
     </selectionEntryGroup>
     <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1" sortIndex="1" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 1)" hidden="false" id="2722-6a71-f087-7f26" publicationId="9aaf-4a48-3cce-441f" page="9" defaultAmount="1" sortIndex="1" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 1)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="baae-414a-43ff-cac6" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -1960,7 +1961,7 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="2" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 2)" hidden="false" id="3ef3-74ac-9b0a-841f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="2" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 2)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="4de3-21cc-7321-e28b" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -2021,8 +2022,11 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="true" id="8775-fae9-2844-82e2" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="3" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 3)" hidden="false" id="425b-ba23-208f-1d7e" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="3" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 3)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="010d-0e07-7482-a80a" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -2072,8 +2076,11 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="true" id="bd06-0037-2b91-97ee" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="4" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 4)" hidden="false" id="193c-b0e6-c33e-673f" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="4" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 4)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="901c-9dca-dcd2-3cfb" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -2133,8 +2140,11 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="true" id="31bf-74cd-3708-147b" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="5" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 5)" hidden="false" id="8160-acd4-d9ed-2583" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="5" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 5)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="1922-aeda-0451-ebc5" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -2192,8 +2202,11 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="true" id="1490-dc44-2319-ff0e" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="6" subType="crew">
+        <selectionEntry type="model" import="true" name="Commander (CV 6)" hidden="false" id="5d35-7708-fc13-81bd" publicationId="9aaf-4a48-3cce-441f" page="9" sortIndex="6" subType="crew" collective="false">
           <profiles>
             <profile name="Commander (CV 6)" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander" hidden="false" id="e778-2aa4-a7cd-1442" publicationId="9aaf-4a48-3cce-441f" page="9">
               <characteristics>
@@ -2235,11 +2248,15 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="model" shared="true" id="19c2-7858-bac7-bf4e" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9b2a-18a7-dcf4-2499"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a3-df78-bcf3-8201" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="007e-ae11-471b-d093-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="007e-ae11-471b-d093-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8067-e1cf-12aa-f446" includeChildSelections="false"/>
       </constraints>
       <modifiers>
         <modifier type="add" value="{this} does not have a commander!" field="info" scope="parent">

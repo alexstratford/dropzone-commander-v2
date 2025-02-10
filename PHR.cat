@@ -3,54 +3,6 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="d457-5fe5-e40d-4f12">
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Hera Command Walker" hidden="false" id="fd1b-7ec1-91ab-d7f5" collective="true">
-          <categoryLinks>
-            <categoryLink name="Command" hidden="false" id="c68a-163c-d45e-accd" targetId="ed7f-0593-2e55-430d" primary="true"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Hera Command Walker" hidden="false" id="1d60-069e-c352-6c3e" collective="false">
-              <costs>
-                <cost name="pts" typeId="points" value="80"/>
-                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
-                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7d15-69bf-1ee7-74e0" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1175-dd6b-dac0-4f02" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Hera Command Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="028a-eb96-4303-d50e">
-                  <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
-                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Rapid Insertion-X" id="43d8-8000-6de5-bf9f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
-                <infoLink name="Thrusters" id="02d5-5ed3-51e1-d200" hidden="false" type="rule" targetId="eef8-268a-2085-6293"/>
-              </infoLinks>
-              <rules>
-                <rule name="Neural Uplink Network" id="fe92-9939-0802-b0ef" hidden="false">
-                  <description>If a unit from this squad has a Commander mounted, the highest level Commander is used by every unit in the squad. That means that Command Value and Influence can be measured from any unit in the squad, and if one unit is destroyed, the Commander is counted as being in the other unit.</description>
-                </rule>
-              </rules>
-              <entryLinks>
-                <entryLink import="true" name="Light Railgun Pair" hidden="false" id="6a67-0d0a-21d1-928e" type="selectionEntry" targetId="6091-3e09-003b-46a8" collective="true"/>
-                <entryLink import="true" name="Commander" hidden="false" id="d860-6697-9feb-1081" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="true"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
         <selectionEntry type="unit" import="true" name="Nemesis Control Scorpion" hidden="false" id="4d14-5e40-246d-c445">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="b952-228d-42bb-59e5" targetId="ed7f-0593-2e55-430d" primary="true"/>
@@ -323,6 +275,54 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="032e-a267-9832-a274" includeChildSelections="true"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hera Command Walker" hidden="false" id="fd1b-7ec1-91ab-d7f5" collective="false">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="c68a-163c-d45e-accd" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hera Command Walker" hidden="false" id="1d60-069e-c352-6c3e" collective="true" flatten="false">
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1175-dd6b-dac0-4f02" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7d15-69bf-1ee7-74e0" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hera Command Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="028a-eb96-4303-d50e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="43d8-8000-6de5-bf9f" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Thrusters" id="02d5-5ed3-51e1-d200" hidden="false" type="rule" targetId="eef8-268a-2085-6293"/>
+              </infoLinks>
+              <rules>
+                <rule name="Neural Uplink Network" id="fe92-9939-0802-b0ef" hidden="false">
+                  <description>If a unit from this squad has a Commander mounted, the highest level Commander is used by every unit in the squad. That means that Command Value and Influence can be measured from any unit in the squad, and if one unit is destroyed, the Commander is counted as being in the other unit.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Light Railgun Pair" hidden="false" id="6a67-0d0a-21d1-928e" type="selectionEntry" targetId="6091-3e09-003b-46a8" collective="true"/>
+                <entryLink import="true" name="Commander" hidden="false" id="d860-6697-9feb-1081" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" collective="false" flatten="false"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2035,7 +2035,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <categoryLink name="Heavy" hidden="false" id="ff69-bf0b-d426-e1ca" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Zeus Guardian Walker" hidden="false" id="6b33-a475-3846-3002" collective="true">
+            <selectionEntry type="model" import="true" name="Zeus Guardian Walker" hidden="false" id="6b33-a475-3846-3002" collective="false">
               <costs>
                 <cost name="pts" typeId="points" value="80"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
