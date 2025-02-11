@@ -1021,7 +1021,8 @@
             <categoryLink name="Configuration" hidden="false" id="43fe-4a2b-e6ca-dd15" targetId="8a9e-8399-ae64-5be9" primary="true"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67d-03eb-5397-658a" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-max" includeChildSelections="false"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
