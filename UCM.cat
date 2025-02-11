@@ -2035,8 +2035,8 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Assault Rifles, Close Assault Rifles, Missile Launcher" hidden="false" id="323e-3c8a-aec3-6468" type="selectionEntry" targetId="ecec-e116-b37f-68ec"/>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="unit" shared="true" id="3196-acd6-c345-9d4b" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3196-acd6-c345-9d4b" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
