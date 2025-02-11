@@ -17,8 +17,11 @@
     <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Screamer, Resistance Bus</comment>
     </costType>
-    <costType id="201f-b481-6ccf-6a5f" name="pts" defaultCostLimit="-1" hidden="false">
+    <costType id="201f-b481-6ccf-6a5f" name="pts" defaultCostLimit="-1" hidden="true">
       <comment>Aux unit pts costs</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden"/>
+      </modifiers>
     </costType>
   </costTypes>
   <profileTypes>
