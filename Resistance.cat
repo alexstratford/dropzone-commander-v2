@@ -145,6 +145,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d4e-f233-094d-779c" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e5a-ff11-ac7d-d58e" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Resistance Veterans" hidden="false" id="4711-6032-25c5-53e1" type="selectionEntry" targetId="d01d-cf45-75ad-6fdc"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Carryhawk Tilt Carrier" hidden="false" id="ab39-c101-8451-b400">
           <categoryLinks>
@@ -2555,6 +2558,123 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Resistance Veterans" hidden="false" id="d01d-cf45-75ad-6fdc">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Resistance Veterans" hidden="false" id="9fbb-a895-fd82-c71a">
+              <costs>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ec3d-2994-fa6a-78b6" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8d17-a934-2f4e-d133" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Resistance Veterans" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="557c-bcda-b134-31b8">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifierGroups>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Dodge 5+" field="25ff-0caf-af0d-995f" join=", "/>
+                          </modifiers>
+                          <comment>Marine Force Recon</comment>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifierGroup>
+                        <modifierGroup type="and">
+                          <modifiers>
+                            <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
+                          </modifiers>
+                          <comment>Kalium Volunteers</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifierGroup>
+                      </modifierGroups>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Kalium Volunteers" id="4982-19d7-43f9-3b72" hidden="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <description>This squad automatically passes Fortitude tests.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Assault Rifles, Assault Grenades" hidden="false" id="57d3-9e54-3399-e57b" type="selectionEntry" targetId="8d38-61c2-e135-4e1d"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Dodge-X" id="353d-59a5-78d5-904a" hidden="true" type="rule" targetId="4fdb-af55-c6cc-3e6c">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Resilient" id="d712-54ba-ba95-366e" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="You need to select a special rule for Resistance Veterans" field="warning">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="dfc8-1d4d-02ce-fd62" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d01d-cf45-75ad-6fdc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Carryhawk</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c31-f017-4af3-3d0e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c31-f017-4af3-3d0e-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
