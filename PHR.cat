@@ -3452,14 +3452,14 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="R6X-1 Railgun Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c229-9c54-7d32-6a67">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323"/>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323"/>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323"/>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35"/>
+                <characteristic name="E" typeId="456e6572677923232344415441232323"/>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
