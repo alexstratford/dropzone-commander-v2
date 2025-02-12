@@ -381,15 +381,23 @@
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">15&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Focus-3</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <comment>F 36&quot;</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af7-80d5-11cd-fc06-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af7-80d5-11cd-fc06-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="AA-X" id="98a0-0afc-85f7-9935" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Focus-X" id="2a53-9b8c-bd53-41dc" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="2090-8f2b-72a4-b3bc" collective="true">
           <profiles>
@@ -1624,6 +1632,51 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             <infoLink name="Limited-X" id="4027-46ba-db6d-22d9" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Guns" hidden="false" id="0631-b8d3-5d0c-f9e6" collective="true">
+          <comment>Albatross</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56cd-0412-7b76-3ab2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd73-7a90-301e-fb04" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Twin Gatling Gun (F)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2cba-51bd-2cba-7845">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Twin Gatling Gun (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7483-81e2-97c8-1446">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Twin Gatling Gun (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b6e6-b0cb-f962-b2a9">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command" hidden="false" id="a6d2-8eb7-1cb3-86bc">
@@ -2035,8 +2088,8 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <entryLink import="true" name="Assault Rifles, Close Assault Rifles, Missile Launcher" hidden="false" id="323e-3c8a-aec3-6468" type="selectionEntry" targetId="ecec-e116-b37f-68ec"/>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="unit" shared="true" id="3196-acd6-c345-9d4b" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3196-acd6-c345-9d4b" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d33e-e06a-4e41-c899" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e18c-147d-0020-7b9c" publicationId="0a0b-b837-fa34-a21d" page="1">
@@ -2162,12 +2215,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Golden Arrow" hidden="false" id="4e6f-11ad-1230-8313" type="selectionEntry" targetId="978f-a5da-4cad-c695">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43cf-b327-9af0-463f" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c9-b8b0-484f-3978" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Golden Arrow" hidden="false" id="4e6f-11ad-1230-8313" type="selectionEntry" targetId="978f-a5da-4cad-c695"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-min" includeChildSelections="false"/>
@@ -2781,6 +2829,9 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                   </characteristics>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Twin Gatling Guns" hidden="false" id="438e-ecd6-44c3-3bbf" type="selectionEntry" targetId="0631-b8d3-5d0c-f9e6"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -2818,6 +2869,9 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
                 <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="618d-f66c-7ae5-b698" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>

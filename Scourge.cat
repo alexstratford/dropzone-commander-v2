@@ -1568,7 +1568,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="245d-6e88-c356-781f" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Quick Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ae21-a459-29bd-5aba">
+            <profile name="Heavy Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ae21-a459-29bd-5aba">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
@@ -1580,7 +1580,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
-            <profile name="Heavy Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4213-a5ac-a531-ffe9">
+            <profile name="Quick Glaives" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4213-a5ac-a531-ffe9">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>

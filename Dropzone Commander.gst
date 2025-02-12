@@ -1021,16 +1021,22 @@
             <categoryLink name="Configuration" hidden="false" id="43fe-4a2b-e6ca-dd15" targetId="8a9e-8399-ae64-5be9" primary="true"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67d-03eb-5397-658a" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-max" includeChildSelections="false"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="set" value="false" field="hidden"/>
               </modifiers>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ea3e-a83a-7091-ceb1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d01d-cf45-75ad-6fdc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
