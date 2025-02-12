@@ -751,7 +751,7 @@
             <infoLink name="Penetrative" id="e82d-d6b2-d21f-8440" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
             <infoLink name="Articulated" id="06f8-9a0e-ab76-1151" hidden="false" type="rule" targetId="350e-9dc1-106a-3ac3"/>
           </infoLinks>
-          <comment>Atilla, Swifthawk</comment>
+          <comment>Atilla</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="6a0b-5a2c-851a-0713" collective="true">
           <profiles>
@@ -1943,6 +1943,30 @@
               <description>When firing this weapon, do not target a unit. Instead, roll to hit. If successful, draw a 1/2 inch wide straight line directly out horizontally from the Mining Laser. All non-Aircraft, non-Garrisoned units and scenery under the line(either fully or partially and both friendly and enemy) are hit with the attack and are damaged as normal.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="7df4-1994-f559-1e39" collective="true">
+          <profiles>
+            <profile name="Missile Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e4a5-5ee2-9dbd-ec49">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccfc-5c41-5772-4bea" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cbf-185e-347b-f1ff" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Penetrative" id="91db-d073-7b55-62c2" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+          <comment>Swifthawk</comment>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -4335,7 +4359,7 @@
                 <infoLink name="Hover Mode" id="230a-6f1d-f6c2-1699" hidden="false" type="rule" targetId="80a1-8501-41f9-82b6"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Missile Pod" hidden="false" id="4d22-9fb7-0ea5-838b" type="selectionEntry" targetId="6246-9e22-5c66-a572"/>
+                <entryLink import="true" name="Missile Pod" hidden="false" id="4d22-9fb7-0ea5-838b" type="selectionEntry" targetId="7df4-1994-f559-1e39"/>
                 <entryLink import="true" name="Machine Gun" hidden="false" id="4c18-b111-bbfb-b4bf" type="selectionEntry" targetId="881b-8979-6afc-f9d7"/>
               </entryLinks>
             </selectionEntry>
@@ -5261,6 +5285,16 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Area" id="64fc-6ef0-1db1-d481" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
             <infoLink name="Indirect" id="f8b2-a78b-7ee4-8833" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
