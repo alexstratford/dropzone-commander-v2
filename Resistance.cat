@@ -820,7 +820,7 @@
               <modifiers>
                 <modifier type="set" value="false" field="hidden" join=", ">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="77f3-cd88-42e2-900c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6a6a-afaa-6da5-923b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -839,7 +839,7 @@
               <modifiers>
                 <modifier type="set" value="false" field="hidden" join=", ">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="79b7-0c15-46f2-2814" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -848,12 +848,12 @@
           <modifiers>
             <modifier type="set" value="Assault Rifles, Assault Grenades, Machine Pistols" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="79b7-0c15-46f2-2814" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="Plasma Rifles, Assault Grenades" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="77f3-cd88-42e2-900c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6a6a-afaa-6da5-923b" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2417,7 +2417,7 @@
                           </modifiers>
                           <comment>Marine Force Recon</comment>
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="79b7-0c15-46f2-2814" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </modifierGroup>
                         <modifierGroup type="and">
@@ -2428,8 +2428,8 @@
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2447,7 +2447,7 @@
                         <conditionGroup type="or">
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2464,7 +2464,7 @@
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="972c-d8af-2ece-e488" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="79b7-0c15-46f2-2814" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2473,7 +2473,7 @@
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
