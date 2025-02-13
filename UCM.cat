@@ -457,7 +457,7 @@
           </profiles>
           <rules>
             <rule name="Tesla Array" id="949e-f3a8-60ff-6e7d" hidden="false">
-              <description>When firing this weapon, roll to hit as if targeting the firing unit. The firing unit is not damaged, but all other non-Aircraft, non-Garrisoned enemy units (including behemoths) within 4&quot; are hit. After rolling to hit, you may reduce the Energy of this shot to increase the range of its effect by 1’ for each point of Energy the shot is reduced by.</description>
+              <description>When firing this weapon, roll to hit as if targeting the firing unit. The firing unit is not damaged, but all other non-Aircraft, non-Garrisoned enemy units (including behemoths) within 4&quot; are hit. After rolling to hit, you may reduce the Energy of this shot to increase the range of its effect by 1&quot; for each point of Energy the shot is reduced by.</description>
             </rule>
           </rules>
           <constraints>
