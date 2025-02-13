@@ -798,10 +798,6 @@
           </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Cannon" hidden="false" id="f06d-75b8-b138-c494" collective="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c4-5ee9-9309-56b8" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f607-5df6-1226-7421" includeChildSelections="false"/>
-          </constraints>
           <profiles>
             <profile name="Twin Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="083f-d723-39b5-64b2">
               <characteristics>
@@ -2211,7 +2207,12 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="AA Battery" hidden="false" id="9996-94cd-93c6-2d3a" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
+                <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a09e-2e4e-de78-2fb7-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09e-2e4e-de78-2fb7-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Buzzard Aerial Target Craft" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
@@ -3591,8 +3592,12 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="AA Battery" hidden="false" id="6639-8606-7871-626c" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="871a-8dee-8275-951f" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="5aac-4eab-1f9a-665d" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
+                <entryLink import="true" name="Twin Cannon" hidden="false" id="871a-8dee-8275-951f" type="selectionEntry" targetId="f06d-75b8-b138-c494">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d03a-de2a-3943-52d3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d03a-de2a-3943-52d3-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
