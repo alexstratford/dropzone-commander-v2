@@ -1722,6 +1722,10 @@ Remember: always ask your opponent to move their own miniatures!</description>
             <infoLink name="Flame" id="521e-4679-8025-1bec" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Focus-X" id="ca71-131e-15ce-e5a4" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1353-5bf8-1cb7-098e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1353-5bf8-1cb7-098e-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Super Disruption Cannon" hidden="false" id="c302-face-833c-c3ab" collective="true">
           <profiles>

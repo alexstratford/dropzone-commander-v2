@@ -114,7 +114,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4f8-000e-c874-c5b6" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb2-6ae3-18fd-2446" includeChildSelections="false"/>
           </constraints>
-          <comment>F/S/R arc, 24&quot; range, 4+ acc</comment>
+          <comment>Bear APC | F/S/R 24&quot; 4+ Acc</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sniper Rifles" hidden="false" id="4ef4-4035-b0d3-4c05" page="" collective="true">
           <constraints>
@@ -204,7 +204,7 @@
             <infoLink name="Indirect" id="d856-cdb4-8ba9-87cd" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gatling Gun" hidden="false" id="c7e7-14bb-0226-ae6b" collective="true" flatten="false">
+        <selectionEntry type="upgrade" import="true" name="Sabre Machine Gun" hidden="false" id="c7e7-14bb-0226-ae6b" collective="true" flatten="false">
           <profiles>
             <profile name="Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2557-5e6e-9d6e-4c24" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
@@ -355,7 +355,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="9eb4-6880-7782-1e2f" collective="true" flatten="false">
           <profiles>
-            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a4e2-c021-f933-26a0" publicationId="0a0b-b837-fa34-a21d" page="6">
+            <profile name="Twin Gatling Gun (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a4e2-c021-f933-26a0" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
@@ -367,12 +367,24 @@
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
+            <profile name="Twin Gatling Gun (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-6577-0aae-7347" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6491-2f4a-2896-f71b" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f0-e63a-a617-8705" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bc8-dd9f-317e-c800-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bc8-dd9f-317e-c800-max" includeChildSelections="false"/>
           </constraints>
-          <comment>F/S (L) 24&quot;</comment>
+          <comment>Ferrum | F/S (L&amp;R) 24&quot; 4+ Acc</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Golden Arrow" hidden="false" id="978f-a5da-4cad-c695" collective="true">
           <profiles>
@@ -427,37 +439,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa9-b8cf-1a7f-6b6b" includeChildSelections="false"/>
           </constraints>
           <comment>Scimitar version</comment>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="3a62-725f-2c16-700a" collective="true">
-              <profiles>
-                <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3724-b16b-35cf-a91f">
-                  <characteristics>
-                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Destroyer-X" id="0852-94b0-3e3b-77df" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-              </infoLinks>
-              <rules>
-                <rule name="Marksman Laser" id="240a-0bf5-43dd-41c2" hidden="false">
-                  <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eedc-170a-fd9e-c8aa" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc08-b893-fede-1304" includeChildSelections="false"/>
-              </constraints>
-              <comment>Scimitar version</comment>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tesla Array" hidden="false" id="1712-6ae8-68d2-f87f" collective="true">
           <profiles>
@@ -764,27 +745,6 @@
             <infoLink name="Reduced-X" id="adee-f282-4593-f11a" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="f468-a4f9-f0e5-914d" collective="true" flatten="false">
-          <profiles>
-            <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74d2-6577-0aae-7347" publicationId="0a0b-b837-fa34-a21d" page="6">
-              <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6df-8527-fb8a-ee2c" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0de-e4d2-0f64-948e" includeChildSelections="false"/>
-          </constraints>
-          <comment>F/S (R) 24&quot;</comment>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Retribution Cannons" hidden="false" id="ebc7-fd33-72aa-f69c" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d6d-a7fe-4f58-b7b3" includeChildSelections="false"/>
@@ -838,10 +798,6 @@
           </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Cannon" hidden="false" id="f06d-75b8-b138-c494" collective="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29c4-5ee9-9309-56b8" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f607-5df6-1226-7421" includeChildSelections="false"/>
-          </constraints>
           <profiles>
             <profile name="Twin Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="083f-d723-39b5-64b2">
               <characteristics>
@@ -1023,7 +979,7 @@
           <profiles>
             <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="da06-045e-71ba-1619">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
@@ -1047,37 +1003,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0db-72fe-0325-922d" includeChildSelections="false"/>
           </constraints>
           <comment>Crossbow version</comment>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="45c4-b329-5c0b-3c32" collective="true">
-              <profiles>
-                <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c087-fcec-360e-7c2e">
-                  <characteristics>
-                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Destroyer-X" id="414d-6ec0-3ccc-53a9" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-              </infoLinks>
-              <rules>
-                <rule name="Marksman Laser" id="94c1-09be-8a53-0a95" hidden="false">
-                  <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1760-3675-02ee-f835" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa85-105e-770b-52f5" includeChildSelections="false"/>
-              </constraints>
-              <comment>Scimitar version</comment>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mortar Round and Concussion Round" hidden="false" id="cb28-7d13-3c6e-22b9" collective="true">
           <constraints>
@@ -1106,7 +1031,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">-</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Indirect, Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1305,7 +1230,7 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun" hidden="false" id="4929-e36a-d12e-689f" collective="true" flatten="false">
+        <selectionEntry type="upgrade" import="true" name="Twin Gatling Gun (OLD, UNUSED)" hidden="false" id="4929-e36a-d12e-689f" collective="true" flatten="false">
           <profiles>
             <profile name="Twin Gatling Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="85ee-ade8-1bea-e179" publicationId="0a0b-b837-fa34-a21d" page="6">
               <characteristics>
@@ -1837,7 +1762,6 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
                 </entryLink>
                 <entryLink import="true" name="Commander" hidden="false" id="2754-efe8-ae13-1b6c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e5fb-cdaa-be6d-e308" type="selectionEntry" targetId="9eb4-6880-7782-1e2f"/>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="e39b-f355-b2aa-ad87" type="selectionEntry" targetId="f468-a4f9-f0e5-914d"/>
                 <entryLink import="true" name="Starsprite Drones" hidden="false" id="14fb-4883-cfce-ddec" type="selectionEntry" targetId="3bb2-de1a-3350-eb97">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="725b-6cb6-e837-82d8-min" includeChildSelections="false"/>
@@ -1964,7 +1888,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="85f5-f4ae-8fca-64de" type="selectionEntry" targetId="9eb4-6880-7782-1e2f"/>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="143e-98ed-594d-67c7" type="selectionEntry" targetId="f468-a4f9-f0e5-914d"/>
                 <entryLink import="true" name="Starsprite Drones" hidden="false" id="144d-8a2a-54d2-618e" type="selectionEntry" targetId="3bb2-de1a-3350-eb97">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32c9-b60e-0319-4118" includeChildSelections="false"/>
@@ -2284,7 +2207,12 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="AA Battery" hidden="false" id="9996-94cd-93c6-2d3a" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
+                <entryLink import="true" name="Twin Cannon" hidden="false" id="6af2-1eb4-94a1-5cb0" type="selectionEntry" targetId="f06d-75b8-b138-c494">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a09e-2e4e-de78-2fb7-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09e-2e4e-de78-2fb7-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Buzzard Aerial Target Craft" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="bc98-9176-373d-a272">
@@ -2413,7 +2341,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Vindicator" hidden="false" id="bef1-5b83-b080-498e" type="selectionEntry" targetId="c426-45a5-6fb9-71c7" flatten="false" sortIndex="1"/>
-                <entryLink import="true" name="Gatling Gun" hidden="false" id="fc9e-c34b-21b0-58a8" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b" sortIndex="2"/>
+                <entryLink import="true" name="Sabre Machine Gun" hidden="false" id="fc9e-c34b-21b0-58a8" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b" sortIndex="2"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40"/>
@@ -2586,7 +2514,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Falcon Weapon Selection" hidden="false" id="3204-fdb5-32a7-c743" type="selectionEntryGroup" targetId="4130-9275-7528-b75f"/>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="68b1-c59f-41ac-3d8d" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="68b1-c59f-41ac-3d8d" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2659,7 +2587,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="8778-016d-ce6f-284d" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="8778-016d-ce6f-284d" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
                 <entryLink import="true" name="Compound Missile Pods" hidden="false" id="6137-36b4-9a79-0c16" type="selectionEntry" targetId="5d5a-a0f6-603b-f23c"/>
                 <entryLink import="true" name="Twin Heavy Railguns" hidden="false" id="d791-26aa-0326-1307" type="selectionEntry" targetId="9dbc-c182-8189-11d3"/>
               </entryLinks>
@@ -2899,7 +2827,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38f8-ff31-dac8-f25d" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="826f-61e6-8604-ae00" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="826f-61e6-8604-ae00" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
                 <entryLink import="true" name="AA Battery" hidden="false" id="327a-324b-9d71-2d76" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
               </entryLinks>
               <costs>
@@ -2938,7 +2866,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4799-0274-351a-639f" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="08e5-51b2-a52e-21ac" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="08e5-51b2-a52e-21ac" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
                 <entryLink import="true" name="AA Battery" hidden="false" id="375e-0bf3-ba5a-d516" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
               </entryLinks>
               <costs>
@@ -2987,7 +2915,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="d1b3-77dd-d12c-9f53" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="d1b3-77dd-d12c-9f53" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3105,7 +3033,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21de-4d21-54c0-3986" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="4d25-797c-daaa-af6c" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="4d25-797c-daaa-af6c" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
               </entryLinks>
               <profiles>
                 <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="5e60-5964-ecc2-d13d">
@@ -3143,7 +3071,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99d1-3665-7fca-15d4" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="2c1b-ada8-9ea1-7189" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="2c1b-ada8-9ea1-7189" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
               </entryLinks>
               <profiles>
                 <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
@@ -3377,7 +3305,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Avenger Railgun" hidden="false" id="2ee6-e4e6-a44a-7d41" type="selectionEntry" targetId="d921-2ff1-fa9e-6bc7" flatten="false" collective="false"/>
-                <entryLink import="true" name="Gatling Gun" hidden="false" id="a448-31c0-8862-a4c6" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b"/>
+                <entryLink import="true" name="Sabre Machine Gun" hidden="false" id="a448-31c0-8862-a4c6" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35"/>
@@ -3517,7 +3445,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Gladius Weapon Selection" hidden="false" id="4e9b-ee11-5815-2452" type="selectionEntryGroup" targetId="e4be-a6cc-92dd-6397" collective="true" sortIndex="1"/>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="d642-90aa-6f36-11c7" type="selectionEntry" targetId="4929-e36a-d12e-689f" sortIndex="2"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="d642-90aa-6f36-11c7" type="selectionEntry" targetId="5d86-9334-92bb-0cf7" sortIndex="2"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="53bf-19f8-bc3b-2f2d"/>
@@ -3539,7 +3467,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="7db0-3fbb-f5af-f4a3" type="selectionEntry" targetId="4929-e36a-d12e-689f"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="7db0-3fbb-f5af-f4a3" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
                 <entryLink import="true" name="Marksman Laser" hidden="false" id="43b8-c6ca-afbb-eea9" type="selectionEntry" targetId="2090-8f2b-72a4-b3bc"/>
               </entryLinks>
               <profiles>
@@ -3588,7 +3516,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="a396-964a-693a-5126" type="selectionEntry" targetId="4929-e36a-d12e-689f" sortIndex="2"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="a396-964a-693a-5126" type="selectionEntry" targetId="5d86-9334-92bb-0cf7" sortIndex="2"/>
                 <entryLink import="true" name="Tesla Array" hidden="false" id="6d18-03a1-f2df-9e3e" type="selectionEntry" targetId="1712-6ae8-68d2-f87f"/>
               </entryLinks>
               <constraints>
@@ -3664,8 +3592,12 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="AA Battery" hidden="false" id="6639-8606-7871-626c" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="871a-8dee-8275-951f" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
-                <entryLink import="true" name="Twin Cannon" hidden="false" id="5aac-4eab-1f9a-665d" type="selectionEntry" targetId="f06d-75b8-b138-c494"/>
+                <entryLink import="true" name="Twin Cannon" hidden="false" id="871a-8dee-8275-951f" type="selectionEntry" targetId="f06d-75b8-b138-c494">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d03a-de2a-3943-52d3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d03a-de2a-3943-52d3-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4235,6 +4167,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
     <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
     <entryLink import="true" name="Japan Heavy Battle-Mech" hidden="false" id="35be-fde7-e228-4ba5" type="selectionEntry" targetId="8ab3-30aa-b994-b7b9"/>
+    <entryLink import="true" name="Crossbow Laser Artillery" hidden="false" id="b4b8-c14c-3082-c37d" type="selectionEntry" targetId="032c-dafe-d372-5a19"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
