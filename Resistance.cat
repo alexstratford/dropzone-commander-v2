@@ -1187,6 +1187,10 @@
             <infoLink name="Limited-X" id="5005-3cee-8058-541e" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
             <infoLink name="Devastator-X" id="5db9-fffa-1ab9-cf83" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0c0-ad01-da8b-d6b3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0c0-ad01-da8b-d6b3-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="32MM Rail Cannon" hidden="false" id="c029-08d0-7f9c-5c86" collective="true">
           <profiles>
@@ -1207,6 +1211,10 @@
             <infoLink name="AA-X" id="1566-eb7b-3f73-5883" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
             <infoLink name="Devastator-X" id="31fc-79ac-4b5c-89f9" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c11-19df-3c21-4c07-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c11-19df-3c21-4c07-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Machine Gun" hidden="false" id="7382-faa3-9ec0-b002" collective="true">
           <profiles>
