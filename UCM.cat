@@ -439,37 +439,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa9-b8cf-1a7f-6b6b" includeChildSelections="false"/>
           </constraints>
           <comment>Scimitar version</comment>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="3a62-725f-2c16-700a" collective="true">
-              <profiles>
-                <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3724-b16b-35cf-a91f">
-                  <characteristics>
-                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Destroyer-X" id="0852-94b0-3e3b-77df" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-              </infoLinks>
-              <rules>
-                <rule name="Marksman Laser" id="240a-0bf5-43dd-41c2" hidden="false">
-                  <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eedc-170a-fd9e-c8aa" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc08-b893-fede-1304" includeChildSelections="false"/>
-              </constraints>
-              <comment>Scimitar version</comment>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tesla Array" hidden="false" id="1712-6ae8-68d2-f87f" collective="true">
           <profiles>
@@ -1014,7 +983,7 @@
           <profiles>
             <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="da06-045e-71ba-1619">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
@@ -1038,37 +1007,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0db-72fe-0325-922d" includeChildSelections="false"/>
           </constraints>
           <comment>Crossbow version</comment>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Marksman Laser" hidden="false" id="45c4-b329-5c0b-3c32" collective="true">
-              <profiles>
-                <profile name="Marksman Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c087-fcec-360e-7c2e">
-                  <characteristics>
-                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
-                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
-                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Destroyer-X" id="414d-6ec0-3ccc-53a9" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-              </infoLinks>
-              <rules>
-                <rule name="Marksman Laser" id="94c1-09be-8a53-0a95" hidden="false">
-                  <description>The Accuracy of this weapon may not be modified by more than +2 total.</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1760-3675-02ee-f835" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa85-105e-770b-52f5" includeChildSelections="false"/>
-              </constraints>
-              <comment>Scimitar version</comment>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mortar Round and Concussion Round" hidden="false" id="cb28-7d13-3c6e-22b9" collective="true">
           <constraints>
@@ -2402,7 +2340,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Vindicator" hidden="false" id="bef1-5b83-b080-498e" type="selectionEntry" targetId="c426-45a5-6fb9-71c7" flatten="false" sortIndex="1"/>
-                <entryLink import="true" name="Gatling Gun" hidden="false" id="fc9e-c34b-21b0-58a8" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b" sortIndex="2"/>
+                <entryLink import="true" name="Sabre Machine Gun" hidden="false" id="fc9e-c34b-21b0-58a8" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b" sortIndex="2"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40"/>
@@ -3366,7 +3304,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Avenger Railgun" hidden="false" id="2ee6-e4e6-a44a-7d41" type="selectionEntry" targetId="d921-2ff1-fa9e-6bc7" flatten="false" collective="false"/>
-                <entryLink import="true" name="Gatling Gun" hidden="false" id="a448-31c0-8862-a4c6" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b"/>
+                <entryLink import="true" name="Sabre Machine Gun" hidden="false" id="a448-31c0-8862-a4c6" type="selectionEntry" targetId="c7e7-14bb-0226-ae6b"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35"/>
@@ -4224,6 +4162,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
     <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
     <entryLink import="true" name="Japan Heavy Battle-Mech" hidden="false" id="35be-fde7-e228-4ba5" type="selectionEntry" targetId="8ab3-30aa-b994-b7b9"/>
+    <entryLink import="true" name="Crossbow Laser Artillery" hidden="false" id="b4b8-c14c-3082-c37d" type="selectionEntry" targetId="032c-dafe-d372-5a19"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
