@@ -134,6 +134,17 @@
       </characteristicTypes>
       <comment>Transport, No Requirement</comment>
     </profileType>
+    <profileType id="6b44-1da1-86fc-cc56" name="Behemoth">
+      <characteristicTypes>
+        <characteristicType id="cefe-c46f-0c3c-abd7" name="Move"/>
+        <characteristicType id="96f8-1ec3-a7a4-7775" name="Countermeasures"/>
+        <characteristicType id="39c2-a7c9-136a-507f" name="Armour"/>
+        <characteristicType id="c421-7b75-f1b2-0a7f" name="Type"/>
+        <characteristicType id="8e81-11f7-c271-d9c4" name="Special"/>
+        <characteristicType name="Transport Capacity" id="14c2-c7cc-2eb5-5237"/>
+      </characteristicTypes>
+      <comment>With Transport</comment>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>

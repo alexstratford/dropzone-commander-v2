@@ -2832,6 +2832,9 @@
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="2"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Storm Artillery Wagon Weapon Selection" hidden="false" id="22c3-7488-ce46-eaf8" type="selectionEntryGroup" targetId="9399-b87c-9b4f-edaf"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3998,7 +4001,6 @@
                 <entryLink import="true" name="Infiltrating" hidden="false" id="964f-c061-301a-cd7c" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
                 <entryLink import="true" name="Knives and Pistols" hidden="false" id="8bee-ebec-d818-b3a9" type="selectionEntry" targetId="6d5d-19ff-e260-889f" sortIndex="3"/>
                 <entryLink import="true" name="Trigger Demo IED" hidden="false" id="2de9-4b40-3441-b731" type="selectionEntry" targetId="3f55-a7b7-83a5-37b9" sortIndex="2"/>
-                <entryLink import="true" name="Infiltrating" hidden="false" id="d72d-0c17-43a1-8feb" type="selectionEntry" targetId="5e74-7851-f3ac-10e9"/>
               </entryLinks>
               <rules>
                 <rule name="Cluster IED" id="8d66-124e-493f-32fd" hidden="false">
@@ -4908,13 +4910,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a9c-a3e2-56a8-06f2" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Juggernaut Class Explorator" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="6e12-9966-bba0-3b18">
+                <profile name="Juggernaut Class Explorator" typeId="6b44-1da1-86fc-cc56" typeName="Behemoth" hidden="false" id="6e12-9966-bba0-3b18">
                   <characteristics>
-                    <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
-                    <characteristic name="Armour" typeId="79df-458c-d53c-5b64">15</characteristic>
-                    <characteristic name="Type" typeId="79c0-084f-6995-f27b">Behemoth</characteristic>
-                    <characteristic name="Special" typeId="463e-6079-0c6d-3830">Spread-4&quot;</characteristic>
+                    <characteristic name="Move" typeId="cefe-c46f-0c3c-abd7">8&quot;</characteristic>
+                    <characteristic name="Countermeasures" typeId="96f8-1ec3-a7a4-7775">A</characteristic>
+                    <characteristic name="Armour" typeId="39c2-a7c9-136a-507f">15</characteristic>
+                    <characteristic name="Type" typeId="c421-7b75-f1b2-0a7f">Behemoth</characteristic>
+                    <characteristic name="Special" typeId="8e81-11f7-c271-d9c4">Spread-4&quot;</characteristic>
+                    <characteristic name="Transport Capacity" typeId="14c2-c7cc-2eb5-5237">18 Wheel</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5148,6 +5151,16 @@
               <description>This weapon causes Critical hits when it beats the opponent’s Armour by 1 or more instead of 2 or more.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -5461,6 +5474,16 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -5630,6 +5653,57 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5972-bc6d-f0c0-4565-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5972-bc6d-f0c0-4565-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Storm Artillery Wagon Weapon Selection" id="9399-b87c-9b4f-edaf" hidden="false" defaultSelectionEntryId="c89d-6e40-336f-bf5e" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rocket Battery" hidden="false" id="c89d-6e40-336f-bf5e" defaultAmount="1" collective="true" sortIndex="1">
+          <profiles>
+            <profile name="Rocket Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="03be-7467-d1e5-52b9">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Penetrative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Area" id="c08f-b09e-b85b-7286" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Indirect" id="af01-5e5e-cca7-c5b8" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Penetrative" id="6d13-1955-4acc-720c" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Golgotha Missile" hidden="false" id="8bba-3f60-48a5-4ca3" collective="true" sortIndex="2">
+          <profiles>
+            <profile name="Golgotha Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cae4-ecb7-dcac-274c">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Behemoth, Scenery), Indirect, Limited 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Area" id="a811-5446-7fa1-eda4" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+            <infoLink name="Devastator-X" id="d980-bf4c-81f2-2b5c" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Indirect" id="2781-844f-6b27-d2d8" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Limited-X" id="36f0-1b8e-73c9-9197" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce17-2729-76d8-d2e0-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce17-2729-76d8-d2e0-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
