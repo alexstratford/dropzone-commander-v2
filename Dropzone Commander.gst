@@ -228,13 +228,6 @@
                   <conditions>
                     <condition type="greaterThan" value="1" field="forces" scope="roster" childId="e550-8c0c-113b-b654" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -244,13 +237,6 @@
                   <conditions>
                     <condition type="greaterThan" value="2" field="forces" scope="roster" childId="9abc-7686-4bab-45ef" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -260,13 +246,6 @@
                   <conditions>
                     <condition type="greaterThan" value="1" field="forces" scope="roster" childId="88f2-9609-5f41-d02f" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -276,13 +255,6 @@
                   <conditions>
                     <condition type="greaterThan" value="1" field="forces" scope="roster" childId="706a-61eb-8e36-7ddf" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -292,17 +264,25 @@
                   <conditions>
                     <condition type="greaterThan" value="1" field="forces" scope="roster" childId="8586-e6c8-bde7-4c33" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifierGroup>
         <modifierGroup type="and">
           <comment>Clash Maximum Battlegroup Requirements</comment>
@@ -1033,13 +1013,14 @@
             <categoryLink name="Configuration" hidden="false" id="43fe-4a2b-e6ca-dd15" targetId="8a9e-8399-ae64-5be9" primary="true"/>
           </categoryLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-min" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="317a-b866-53b1-9edd-max" includeChildSelections="false"/>
           </constraints>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="317a-b866-53b1-9edd-min"/>
               </modifiers>
               <conditionGroups>
                 <conditionGroup type="and">
