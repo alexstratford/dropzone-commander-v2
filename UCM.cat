@@ -36,17 +36,8 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="AA-X" id="cb4d-19c9-cd53-b170" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
-              <modifiers>
-                <modifier type="set" value="AA-2" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Area" id="17f4-0371-832d-5994" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
-            <infoLink name="Devastator-X" id="8bb2-46c5-6ec1-b1fc" hidden="false" type="rule" targetId="f34b-6e21-a034-1168">
-              <modifiers>
-                <modifier type="set" value="Devastator-2 (Vehicle)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="AA-X" id="cb4d-19c9-cd53-b170" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+            <infoLink name="Devastator-X" id="8bb2-46c5-6ec1-b1fc" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
             <infoLink name="Indirect" id="28a4-a072-6820-b305" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
           </infoLinks>
         </selectionEntry>
@@ -2230,14 +2221,6 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="6ef1-0dd1-aea1-b934">
-          <entryLinks>
-            <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="2423-cd31-c02c-b9d6" type="selectionEntry" targetId="6a59-32ac-aabe-ffd0"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Scout" hidden="false" id="6778-d03a-2ca6-6e99" targetId="5f13-c39f-577a-8947" primary="true"/>
-          </categoryLinks>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exotic" hidden="false" id="1da5-821a-e9e7-6304">
@@ -4125,7 +4108,6 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     <entryLink import="true" name="Albatross Dropship" hidden="false" id="f8fa-10c8-1576-c10a" type="selectionEntry" targetId="8a39-07a4-398a-e447"/>
     <entryLink import="true" name="Praetorian Snipers" hidden="false" id="db4c-1792-65d5-939c" type="selectionEntry" targetId="30bc-c5c0-d2ec-3e6f"/>
     <entryLink import="true" name="Bear APC" hidden="false" id="6588-36cc-6149-cd8a" type="selectionEntry" targetId="4c7f-e5b3-9fbd-e341"/>
-    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="ddaa-8efb-8a3a-643a" type="selectionEntry" targetId="e28e-c594-1ee6-f751"/>
     <entryLink import="true" name="Praetorian Spec-Ops" hidden="false" id="bf8f-c9ed-9a80-e3e4" targetId="87e3-b54c-1acd-0d5a" type="selectionEntry"/>
     <entryLink import="true" name="Gladius Heavy Tank" hidden="false" id="cedf-2c9e-fa85-9ce8" targetId="44f0-a486-d84c-9fdf" type="selectionEntry"/>
     <entryLink import="true" name="Vulture Dropship" hidden="false" id="3e5c-294b-33bd-9b20" targetId="b54c-7b62-f1a9-b869" type="selectionEntry"/>
@@ -4164,7 +4146,6 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     <entryLink import="true" name="Luciana M Cato - Ferrum Drone Base " hidden="false" id="789b-333e-cbf0-5265" targetId="6e4b-14f2-dc26-7c25" type="selectionEntry"/>
     <entryLink import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="fb59-5ea4-9668-d2db" targetId="077a-2fc8-20f2-4084" type="selectionEntry"/>
     <entryLink import="true" name="America Heavy Battle-Mech" hidden="false" id="7d23-e240-cb98-59e1" targetId="a2bd-5105-5e9a-1c5d" type="selectionEntry"/>
-    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="e6ed-ad41-96e9-d4f4" targetId="6ef1-0dd1-aea1-b934" type="selectionEntry"/>
     <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
     <entryLink import="true" name="Japan Heavy Battle-Mech" hidden="false" id="35be-fde7-e228-4ba5" type="selectionEntry" targetId="8ab3-30aa-b994-b7b9"/>
     <entryLink import="true" name="Crossbow Laser Artillery" hidden="false" id="b4b8-c14c-3082-c37d" type="selectionEntry" targetId="032c-dafe-d372-5a19"/>

@@ -1469,14 +1469,6 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="180e-c5f6-873a-9fe6">
-          <entryLinks>
-            <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="ce3d-d671-27f4-33bc" type="selectionEntry" targetId="6a59-32ac-aabe-ffd0"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Scout" hidden="false" id="9b50-fdfc-551d-cdb7" targetId="5f13-c39f-577a-8947" primary="true"/>
-          </categoryLinks>
-        </selectionEntry>
         <selectionEntry type="unit" import="true" name="Janus Scout Walker" hidden="false" id="3bcc-429d-3612-59d9">
           <categoryLinks>
             <categoryLink name="Scout" hidden="false" id="4f0a-e62c-784d-2501" targetId="5f13-c39f-577a-8947" primary="true"/>
@@ -3651,7 +3643,6 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Valkyrie Assault Troops" hidden="false" id="bcd9-109e-91b3-1af9" targetId="1df5-5b02-9a94-a022" type="selectionEntry"/>
     <entryLink import="true" name="Mercury Scout Drone" hidden="false" id="51a1-a0ba-e9f2-c4cd" targetId="8ed5-feda-a9b0-221a" type="selectionEntry"/>
     <entryLink import="true" name="Janus Scout Walker" hidden="false" id="1941-fc38-02e1-b40a" targetId="3bcc-429d-3612-59d9" type="selectionEntry"/>
-    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="bd77-880e-c438-e9a0" targetId="180e-c5f6-873a-9fe6" type="selectionEntry"/>
     <entryLink import="true" name="Janus Scout Walker" hidden="false" id="83bf-d066-e871-420a" targetId="3bcc-429d-3612-59d9" type="selectionEntry"/>
     <entryLink import="true" name="Hermes Disruption walker" hidden="false" id="5ca0-ed01-432a-716a" targetId="8cf9-9ba4-102f-29bb" type="selectionEntry"/>
     <entryLink import="true" name="Juno APC" hidden="false" id="da90-5088-3eca-817d" targetId="0410-71fa-5b8a-617e" type="selectionEntry"/>

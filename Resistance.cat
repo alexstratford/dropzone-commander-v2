@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="8263-3abb-ae06-a255" name="Resistance" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="false">
   <entryLinks>
-    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="1353-1a5f-ade5-8300" type="selectionEntry" targetId="e28e-c594-1ee6-f751">
-      <categoryLinks>
-        <categoryLink targetId="5f13-c39f-577a-8947" id="0e0d-ebfc-7d82-b1bc" primary="true" name="Scout"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Pizzaro Hazard Walker" hidden="false" id="d49b-5413-855f-656a" targetId="26ea-e127-42da-c86e" type="selectionEntry"/>
     <entryLink import="true" name="Hydra Relay Hovercraft" hidden="false" id="50cb-c64e-c8b7-c450" targetId="b44d-580f-c936-da8c" type="selectionEntry"/>
     <entryLink import="true" name="Carryhawk Tilt Carrier" hidden="false" id="4b3a-da8b-1604-884b" targetId="ab39-c101-8451-b400" type="selectionEntry"/>

@@ -1014,6 +1014,7 @@
       </constraints>
     </entryLink>
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
+    <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="2066-1d5d-638e-cf2b" type="selectionEntry" targetId="e28e-c594-1ee6-f751"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
@@ -1137,7 +1138,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shared Units" hidden="false" id="a2ae-d80f-cd56-8d07">
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="false" id="e28e-c594-1ee6-f751" collective="false">
+        <selectionEntry type="unit" import="true" name="EAA Columbus Battlewalker" hidden="true" id="e28e-c594-1ee6-f751" collective="false">
           <categoryLinks>
             <categoryLink name="Scout" hidden="false" id="5142-30bc-824b-68eb" targetId="5f13-c39f-577a-8947" primary="true"/>
             <categoryLink name="Drop Harness" hidden="false" id="e440-f9e3-2b17-6c28" targetId="899b-2d5a-e8f3-1b5b" primary="false"/>
@@ -1340,6 +1341,37 @@
               </modifierGroups>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                      </conditions>
+                      <comment>Enable UCM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                      </conditions>
+                      <comment>Enable PHR</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                      </conditions>
+                      <comment>Enable Resistance</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Apex" hidden="false" id="cfe2-52ef-460a-fd90">
           <selectionEntries>
