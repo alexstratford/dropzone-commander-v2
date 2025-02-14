@@ -2445,6 +2445,7 @@
                       </modifierGroups>
                     </modifierGroup>
                   </modifierGroups>
+                  <alias>Resistance Veteran</alias>
                 </profile>
               </profiles>
               <rules>
@@ -2462,6 +2463,15 @@
                     </modifier>
                   </modifiers>
                   <description>This squad automatically passes Fortitude tests.</description>
+                </rule>
+                <rule name="Veterans" id="48a4-49b4-3a71-7621" hidden="false" noindex="false">
+                  <description>At the start of the game, before deployment, choose one special rule for all Resistance Veteran squads in your army to have a special rule from:
+- Scourge Occupation
+- Marine Force Recon
+- Kalium Volunteers
+
+
+To select this, go to Configuration and select the background there</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -2687,6 +2697,7 @@
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Veterans" id="b542-ca32-38d5-3f19" hidden="false" type="rule" targetId="48a4-49b4-3a71-7621"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
