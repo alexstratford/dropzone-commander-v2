@@ -692,7 +692,7 @@
             <selectionEntry type="model" import="true" name="Vampire" hidden="false" id="46cd-0b99-c2e2-5ae1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18b9-79c4-2d58-ee74"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1e79-0f9c-e899-286a" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1e79-0f9c-e899-286a" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
