@@ -1941,6 +1941,9 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8a9e-8399-ae64-5be9" id="9ab0-14a7-549e-16c3" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Commander" id="35d6-3921-58bd-457c" hidden="false" defaultSelectionEntryId="2722-6a71-f087-7f26">
       <selectionEntries>
