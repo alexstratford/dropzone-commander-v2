@@ -2397,7 +2397,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Crossbow Laser Artillery" hidden="false" id="9c53-71f9-4127-fed8" collective="true">
               <categoryLinks>
-                <categoryLink name="Support" hidden="false" id="bbd0-7e03-d2b9-f4de" targetId="1742-0b1d-252f-505d" primary="true"/>
+                <categoryLink name="Support" hidden="false" id="bbd0-7e03-d2b9-f4de" targetId="1742-0b1d-252f-505d" primary="false"/>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="028b-0ac7-ed2e-00a5" includeChildSelections="false"/>
@@ -2472,7 +2472,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <categoryLink name="Support" hidden="false" id="e4f9-e95b-3113-72ab" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Falcon Light Gunship" hidden="false" id="fc00-8fc2-b3d7-0909" collective="true">
+            <selectionEntry type="model" import="true" name="Falcon Light Gunship" hidden="false" id="fc00-8fc2-b3d7-0909" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
