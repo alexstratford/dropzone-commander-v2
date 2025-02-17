@@ -5683,6 +5683,11 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Indirect" id="af01-5e5e-cca7-c5b8" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
             <infoLink name="Penetrative" id="6d13-1955-4acc-720c" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
+          <rules>
+            <rule name="Rocket Battery" id="9c17-e9ae-57f7-2ea7" hidden="false">
+              <description>This weapon has Accuracy 4+ when targeting Scenery pieces.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Golgotha Missile" hidden="false" id="8bba-3f60-48a5-4ca3" collective="true" sortIndex="2">
           <profiles>
