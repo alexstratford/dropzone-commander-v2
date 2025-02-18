@@ -3743,7 +3743,6 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Valkyrie Assault Troops" hidden="false" id="bcd9-109e-91b3-1af9" targetId="1df5-5b02-9a94-a022" type="selectionEntry"/>
     <entryLink import="true" name="Mercury Scout Drone" hidden="false" id="51a1-a0ba-e9f2-c4cd" targetId="8ed5-feda-a9b0-221a" type="selectionEntry"/>
     <entryLink import="true" name="Janus Scout Walker" hidden="false" id="1941-fc38-02e1-b40a" targetId="3bcc-429d-3612-59d9" type="selectionEntry"/>
-    <entryLink import="true" name="Janus Scout Walker" hidden="false" id="83bf-d066-e871-420a" targetId="3bcc-429d-3612-59d9" type="selectionEntry"/>
     <entryLink import="true" name="Hermes Disruption walker" hidden="false" id="5ca0-ed01-432a-716a" targetId="8cf9-9ba4-102f-29bb" type="selectionEntry"/>
     <entryLink import="true" name="Juno APC" hidden="false" id="da90-5088-3eca-817d" targetId="0410-71fa-5b8a-617e" type="selectionEntry"/>
     <entryLink import="true" name="Neptune Dropship" hidden="false" id="d04b-c27a-d7ca-ed65" targetId="dd58-5585-0a11-6500" type="selectionEntry"/>

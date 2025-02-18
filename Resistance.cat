@@ -2733,10 +2733,6 @@ To select this, go to Configuration and select the background there</description
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4de1-2804-8213-0d6f" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3c5-18e7-e181-614a" includeChildSelections="false"/>
-              </constraints>
               <infoLinks>
                 <infoLink name="Rapid Insertion-X" id="6c0c-f2a9-3b56-5490" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
               </infoLinks>
@@ -2753,9 +2749,6 @@ To select this, go to Configuration and select the background there</description
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Support" hidden="false" id="e0cb-a84f-4de4-b07d" targetId="1742-0b1d-252f-505d" primary="true"/>
-          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Remote Bomb Bus" hidden="false" id="8770-fa34-ec28-fd8d">
           <selectionEntries>
@@ -3043,7 +3036,7 @@ To select this, go to Configuration and select the background there</description
             <categoryLink targetId="1742-0b1d-252f-505d" id="4f89-a6ee-4b28-706b" primary="true" name="Support"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Strikehawk Tilt-Rotor" hidden="false" id="8dc2-c7bc-d225-7ac7" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Strikehawk Tilt-Rotor" hidden="false" id="8dc2-c7bc-d225-7ac7" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="points" value="100"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
@@ -5095,9 +5088,9 @@ To select this, go to Configuration and select the background there</description
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sentinel Defence Turrets" hidden="false" id="f09c-7ed2-71ee-35b7" collective="true">
+        <selectionEntry type="unit" import="true" name="Sentinel Defence Turrets" hidden="false" id="f09c-7ed2-71ee-35b7" collective="true">
           <entryLinks>
-            <entryLink import="true" name="Sentinel Defence Turret" hidden="false" id="cb19-ac47-1970-6469" type="selectionEntry" targetId="c023-e9fc-2df2-6a65">
+            <entryLink import="true" name="Sentinel Defence Turret" hidden="false" id="cb19-ac47-1970-6469" type="selectionEntry" targetId="9f16-8c82-94ab-3ec7">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="72ea-1473-fdd4-22b4" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e58-a31e-4303-7fb2" includeChildSelections="false"/>
@@ -5471,9 +5464,9 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Strafe-X" id="ddec-8c68-b197-7336" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sentinel Defence Turrets" hidden="false" id="d6bb-8304-001e-d513" collective="true">
+        <selectionEntry type="unit" import="true" name="Sentinel Defence Turrets" hidden="false" id="d6bb-8304-001e-d513" collective="true">
           <entryLinks>
-            <entryLink import="true" name="Sentinel Defence Turret" hidden="false" id="18a9-7063-54a3-0ce0" type="selectionEntry" targetId="c023-e9fc-2df2-6a65">
+            <entryLink import="true" name="Sentinel Defence Turret" hidden="false" id="18a9-7063-54a3-0ce0" type="selectionEntry" targetId="9f16-8c82-94ab-3ec7">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="560d-9f59-58f5-d443" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9adb-ef7e-3680-e47e" includeChildSelections="false"/>
