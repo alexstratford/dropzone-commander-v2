@@ -3570,7 +3570,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
