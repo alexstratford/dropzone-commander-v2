@@ -1160,10 +1160,10 @@
                 </profile>
                 <profile name="Chronus" typeId="4027-27ec-cc41-de5e" typeName="PHR Heavy Behemoth Legs" hidden="false" id="f7a1-597f-e626-a5be">
                   <characteristics>
-                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167"/>
-                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659"/>
-                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b"/>
-                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032"/>
+                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167">3</characteristic>
+                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659">3</characteristic>
+                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b">3</characteristic>
+                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032">3</characteristic>
                     <characteristic name="Legs" typeId="d1a1-ab4b-9d6f-0830">3</characteristic>
                     <characteristic name="Crippled Result" typeId="7a0e-0dc0-b0de-2707">This unit reduces its Move by 2”.</characteristic>
                   </characteristics>
@@ -1228,10 +1228,10 @@
                 </profile>
                 <profile name="Tethys" typeId="4027-27ec-cc41-de5e" typeName="PHR Heavy Behemoth Legs" hidden="false" id="fc5d-80b7-87d4-5d18">
                   <characteristics>
-                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167"/>
-                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659"/>
-                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b"/>
-                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032"/>
+                    <characteristic name="Legs" typeId="25bc-b4ac-89a6-9167">3</characteristic>
+                    <characteristic name="Legs" typeId="4b69-79b6-fd5a-8659">3</characteristic>
+                    <characteristic name="Legs" typeId="e13e-737c-686e-ee8b">3</characteristic>
+                    <characteristic name="Legs" typeId="7bf3-6a63-a3a5-2032">3</characteristic>
                     <characteristic name="Legs" typeId="d1a1-ab4b-9d6f-0830">3</characteristic>
                     <characteristic name="Crippled Result" typeId="7a0e-0dc0-b0de-2707">This unit reduces its Move by 2”.</characteristic>
                   </characteristics>
@@ -1309,7 +1309,7 @@
                 </profile>
                 <profile name="Alcyoneus Grand Walker" typeId="516d-1a6f-0e4a-fce2" typeName="PHR Light Behemoth Legs" hidden="false" id="05e9-fbda-ab1e-58fa">
                   <characteristics>
-                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd"/>
+                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd">5</characteristic>
                     <characteristic name="Legs" typeId="efcc-7638-87ac-926f">5</characteristic>
                     <characteristic name="Crippled Result" typeId="4e3c-5e59-96ab-dc00">This unit reduces its Move by 4”.</characteristic>
                   </characteristics>
@@ -1370,12 +1370,12 @@
                 </profile>
                 <profile name="Porphyrion Grand Walker" typeId="516d-1a6f-0e4a-fce2" typeName="PHR Light Behemoth Legs" hidden="false" id="ff70-905b-d9e3-b411">
                   <characteristics>
-                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd"/>
+                    <characteristic name="Legs" typeId="4122-d4e1-efa9-84dd">5</characteristic>
                     <characteristic name="Legs" typeId="efcc-7638-87ac-926f">5</characteristic>
                     <characteristic name="Crippled Result" typeId="4e3c-5e59-96ab-dc00">This unit reduces its Move by 4”.</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Porphyrion Grand Walker" typeId="e855-e236-0b39-8487" typeName="PHR Light Behemoth Weapons (2)" hidden="false" id="d6af-5428-c88b-53d4">
+                <profile name="Porphyrion Grand Walker" typeId="e855-e236-0b39-8487" typeName="PHR Light Behemoth Weapons" hidden="false" id="d6af-5428-c88b-53d4">
                   <characteristics>
                     <characteristic name="Weapons" typeId="af5e-57e8-e357-2311">8</characteristic>
                     <characteristic name="Crippled Result" typeId="394c-cfeb-cf61-ae77">Nova Missile cannot be used for the rest of the game.</characteristic>
@@ -3544,13 +3544,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="R6X-1 Railgun Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c229-9c54-7d32-6a67">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323"/>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323"/>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323"/>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35"/>
-                <characteristic name="E" typeId="456e6572677923232344415441232323"/>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe-2</characteristic>
               </characteristics>
             </profile>
