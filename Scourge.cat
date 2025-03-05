@@ -137,13 +137,14 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Savager Laser Barge" hidden="false" id="5b86-9174-6e5b-7c5d" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="260"/>
+                <cost name="pts" typeId="points" value="340"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="6378-d57f-a862-4399">
@@ -271,7 +272,7 @@
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
@@ -919,7 +920,7 @@
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b70f-fe82-aa85-e68c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0a-27a2-cea9-8344" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ee0a-27a2-cea9-8344" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -955,18 +956,8 @@
               <entryLinks>
                 <entryLink import="true" name="Plasma Hose" hidden="false" id="fb4b-1b34-2dc6-977e" type="selectionEntry" targetId="8f27-272e-556e-4a88"/>
                 <entryLink import="true" name="Razorworms" hidden="false" id="61b3-c6af-1822-4456" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
+                <entryLink import="true" name="Razorworm Pods" hidden="false" id="1f11-242d-5744-5dc2" type="selectionEntry" targetId="f5e0-d22a-cc60-0e74"/>
               </entryLinks>
-              <rules>
-                <rule name="Razorworm Pod" id="5d72-ce4d-e841-951a" hidden="false">
-                  <description>During this squad’s activation, each unit may launch a Razorworm volley at a Garrison within 6”. Roll 1 dice for each unit launching a volley. Rolls of 1 have is no effect. For every roll of 2-4, place 1 unit of Razorworms in that Garrison. For every roll of 5-6 place 2 units of Razorworms in that Garrison.
-
-
-All Razorworm units launched into a Garrison at the same time from the same squad count as being a single squad. That squad is the same Battlegroup as the launching squad and may activate in the same round they are spawned, although do not have to re-roll Damage if Shooting a unit in that Garrison this round.
-
-
-The Garrison receives an equal number of Collateral Damage tokens to units of Razorworms placed.</description>
-                </rule>
-              </rules>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cf2-3537-558c-fc7a" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4269-57b2-7957-5db6" includeChildSelections="false"/>
@@ -1083,9 +1074,9 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             <profile name="Razor Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="578a-a32d-0722-5ab4">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">1&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">1&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
@@ -1105,7 +1096,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Electroweb Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="53c8-5983-9b0b-6a31">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
@@ -1279,7 +1270,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer (6+)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer (5+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1502,14 +1493,14 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Thrust Cutter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4136-b16e-3b1a-2a96">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">4&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">4&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-3 (Large)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle), Devastator-3 (Large)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1525,26 +1516,26 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Light Bio-Mortar (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="98b4-5071-f00d-4073">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Area, Cover (All), Devastator-2 (Infantry), Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Cover (All), Devastator-2 (Infantry), Indirect</characteristic>
               </characteristics>
             </profile>
             <profile name="Light Bio-Mortar (Spread)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e860-1dca-5149-9bd6">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">3&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Alt-1, Cover (All), Devastator-2 (Infantry), Flame, Indirect, Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Cover (All), Devastator-2 (Infantry), Flame, Indirect, Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1745,14 +1736,14 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Plasma Bombard" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7699-c1ae-4d0a-a116">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">30&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Area, Devastator-2 (Vehicle, Scenery), Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Vehicle, Scenery), Indirect</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1849,14 +1840,14 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <profiles>
             <profile name="Ion Cradle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f8cd-7c4e-70ea-4323">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-3, Strafe-3</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-3, Strafe-3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1947,9 +1938,9 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">Devastator-2 (Infantry, Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Infantry, Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2157,7 +2148,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Quake Bombard" hidden="false" id="b342-ece7-a11e-21d7" collective="true">
           <profiles>
-            <profile name="Quake Bombard" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4f63-c670-7ab1-c395">
+            <profile name="Sonic Demolisher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4f63-c670-7ab1-c395">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">R</characteristic>
@@ -2171,8 +2162,8 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
             </profile>
           </profiles>
           <rules>
-            <rule name="Quake Bombard" id="e332-978a-e8c4-fc0a" hidden="false">
-              <description>The Shots of this weapon is equal to half the target’s remaining DP (rounded up). If the target is a Behemoth, the shots of this weapon is 2D3 instead.</description>
+            <rule name="Sonic Demolisher" id="e332-978a-e8c4-fc0a" hidden="false">
+              <description>The Shots of this weapon is equal to half the target’s starting DP (rounded up). If the target is a Behemoth, the shots of this weapon is 2D3 instead.</description>
             </rule>
           </rules>
           <constraints>
@@ -2250,7 +2241,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large, Scenery), Strafe-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Plasma Cannons (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0a38-bce5-efd6-ac01">
@@ -2262,7 +2253,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large, Scenery), Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2336,7 +2327,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">15</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Tech-Killer</characteristic>
               </characteristics>
             </profile>
@@ -2388,7 +2379,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
         <selectionEntry type="upgrade" import="true" name="Bio-Cannon" hidden="false" id="896a-8dde-691d-f3e8" collective="true">
           <rules>
             <rule name="Bio-Cannon" id="42ed-c364-08de-bd1c" hidden="false">
-              <description>After resolving an attack with this weapon, leave the Area template in place. At the end of the round, any unit (friendly or enemy) at least partially under the template gets automatically hit again with the same weapon profile. After resolving any hits, remove the template.</description>
+              <description>After resolving an attack with this weapon, leave the Area template in place and place a second Area template touching the first directly between it and this unit. At the end of the round, any unit (friendly or enemy) at least partially under either template gets automatically hit again with the same weapon profile. After resolving these hits, remove the templates.</description>
             </rule>
           </rules>
           <constraints>
@@ -2413,6 +2404,55 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jaws of Death" hidden="false" id="36bb-da24-d842-9023" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3d4-3ec2-ba26-f7d2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bef-0a9d-088b-7c67" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Jaws of Death" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6de3-f71a-51e0-5856">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Razorworm Pods" hidden="false" id="f5e0-d22a-cc60-0e74" collective="true">
+          <comment>Corruptor version</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96cf-6c96-11e9-761c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed1a-24d1-5149-9de1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Flame" id="fe98-2d30-c836-841e" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Razorworm Pods" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b99a-b9b3-f0ab-49df">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Razorworm Pods" id="c89b-7a40-d3c7-1de6" hidden="false">
+              <description>For each hit that causes damage to a Garrison, place a unit of Razorworms in that Garrison. All Razorworm units placed into a Garrison at the same time count as being a single squad. That squad is part of the Corruptor’s Battlegroup and may activate in the same round they are spawned, although have to re-roll Damage if Shooting a unit in that Garrison this round (as if they entered by disembarking via the Rapid Insertion special rule).</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2473,12 +2513,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Teeth &amp; Claws" hidden="false" id="448f-3fbe-b6d1-5251" type="selectionEntry" targetId="dd1f-581e-86e6-fa6b"/>
+                <entryLink import="true" name="Jaws of Death" hidden="false" id="78e2-846b-ca93-1aa3" type="selectionEntry" targetId="36bb-da24-d842-9023">
+                  <infoLinks>
+                    <infoLink name="Living Weapon" id="410c-9d81-7d10-832c" hidden="false" type="rule" targetId="adf9-64bd-b786-15d2"/>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
-              <rules>
-                <rule name="Living Weapon" id="45fd-4f4e-fa15-243f" hidden="false">
-                  <description>This unit cannot search for or claim Objectives, and cannot embark in transports during battle, though may start the game embarked.</description>
-                </rule>
-              </rules>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aafd-a738-921f-f58a" includeChildSelections="false"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="aa79-1ff3-a06a-5371" includeChildSelections="false"/>
@@ -2499,6 +2539,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <infoLinks>
                 <infoLink name="Bloodthirsty" id="0090-25d1-24f1-e046" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
                 <infoLink name="Dodge-X" id="d350-c298-f1aa-be5a" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+                <infoLink name="Infestation" id="4c57-0c26-ea37-81a2" hidden="false" type="rule" targetId="315e-1212-95ac-8e55"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2523,6 +2564,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <infoLinks>
                 <infoLink name="Tough" id="1b89-a7b2-ab85-0cc0" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
                 <infoLink name="Resilient" id="c600-22c4-572c-8b93" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Rare" id="acca-6483-f849-cf2b" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6ed1-adec-dfb2-03a5" includeChildSelections="false"/>
@@ -2545,6 +2587,34 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <categoryLinks>
             <categoryLink name="Troops" hidden="false" id="c442-557f-96d2-79eb" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Rare" id="e5d5-a953-07ca-ebe3" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e8a4-c2ca-967b-d182" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="e8a4-c2ca-967b-d182">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="e8a4-c2ca-967b-d182">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="e8a4-c2ca-967b-d182">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Prowler Spider Drone" hidden="false" id="7037-0c6d-a6d7-9a02">
           <selectionEntries>
@@ -2578,6 +2648,9 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="39b6-3ff9-40c4-54e4" includeChildSelections="false"/>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="cbeb-37ec-74d5-df3e" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Tough" id="90dd-3cbb-2a2c-9d25" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2598,12 +2671,8 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Teeth &amp; Claws" hidden="false" id="95f6-e69b-67fc-85fb" type="selectionEntry" targetId="dd1f-581e-86e6-fa6b"/>
+                <entryLink import="true" name="Jaws of Death" hidden="false" id="5e83-d73e-7f71-23e0" type="selectionEntry" targetId="36bb-da24-d842-9023"/>
               </entryLinks>
-              <rules>
-                <rule name="Living Weapon" id="c2b1-37be-de60-5643" hidden="false">
-                  <description>This unit cannot search for or claim Objectives, and cannot embark in transports during battle, though may start the game embarked.</description>
-                </rule>
-              </rules>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d5e-dbaf-a7d9-b69e" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2c6-3cbc-f9da-9f12" includeChildSelections="false"/>
@@ -2612,6 +2681,8 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <infoLink name="Bloodthirsty" id="a4f9-a101-50c3-03c0" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
                 <infoLink name="Dodge-X" id="c268-5b57-50c8-5511" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
                 <infoLink name="Razorworms" id="5554-ae24-f764-c6d4" hidden="false" type="profile" targetId="0f23-2f0f-2794-d92d"/>
+                <infoLink name="Infestation" id="0a89-6957-bbb7-922b" hidden="false" type="rule" targetId="315e-1212-95ac-8e55"/>
+                <infoLink name="Living Weapon" id="2926-f823-7e87-d4d8" hidden="false" type="rule" targetId="adf9-64bd-b786-15d2"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2761,13 +2832,14 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Savager Laser Barge" hidden="false" id="027f-1f51-7816-199a" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="120"/>
+                <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b41-5da2-eca5-288b">
@@ -2799,13 +2871,14 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Slaughterer Ordnance Barge" hidden="false" id="bdd9-919c-c6e2-f81f" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="120"/>
+                <cost name="pts" typeId="points" value="130"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Slaughterer Ordnance Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b4f-badd-f224-ff87">
@@ -2848,13 +2921,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <profiles>
                 <profile name="Decapitator Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39c4-66a4-a3b8-74e2">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3013,6 +3086,9 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8eda-1eef-e408-2f98" includeChildSelections="false"/>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="e3bf-b3e0-6de4-9827" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Tough" id="5c74-c929-bbc4-df77" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -3053,7 +3129,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               </entryLinks>
               <rules>
                 <rule name="Abhorrent" id="50ed-8075-0415-3f7a" hidden="false">
-                  <description>Any enemy Infantry in the same or Linked Garrison suffer a further -1 penalty when searching for objectives, and a +1 penalty to their Fortitude.</description>
+                  <description>Any enemy Infantry in the same or Linked Garrison as a unit with this rule suffers a further -1 penalty when searching for objectives, and a +1 penalty to their Fortitude.</description>
                 </rule>
                 <rule name="Squeeze" id="6692-9334-8171-033c" hidden="false">
                   <description>When this unit enters a Garrison or starts its activation in a Garrison, it causes D3 Collateral Damage to that Garrison</description>
@@ -3401,13 +3477,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <profiles>
                 <profile name="Minder AA Drone" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6724-5787-8c4f-dbc0">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 4&quot;, Wide</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3487,7 +3563,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Persecutor Terror-Mech" hidden="false" id="81ae-7d6a-c317-1ce1">
               <costs>
-                <cost name="pts" typeId="points" value="300"/>
+                <cost name="pts" typeId="points" value="285"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -3522,7 +3598,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Punisher Terror-Mech" hidden="false" id="49d6-b38c-29e5-d963">
               <costs>
-                <cost name="pts" typeId="points" value="325"/>
+                <cost name="pts" typeId="points" value="310"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -3535,7 +3611,7 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
                 <entryLink import="true" name="Scourge Light Behemoth" hidden="false" id="ffae-05c4-dab6-1fe3" type="selectionEntry" targetId="ac77-a1db-e3c0-c5ba" sortIndex="1"/>
                 <entryLink import="true" name="Razor Hives" hidden="false" id="963a-5732-a885-c89d" type="selectionEntry" targetId="33ff-42a0-d54a-a887" sortIndex="2"/>
                 <entryLink import="true" name="Heavy Plasma Cannons" hidden="false" id="115a-deee-a587-5a29" type="selectionEntry" targetId="16f4-76fb-efed-6785" sortIndex="4"/>
-                <entryLink import="true" name="Quake Bombard" hidden="false" id="18f7-49e8-2eef-8bb5" type="selectionEntry" targetId="b342-ece7-a11e-21d7" sortIndex="3"/>
+                <entryLink import="true" name="Sonic Demolisher" hidden="false" id="18f7-49e8-2eef-8bb5" type="selectionEntry" targetId="b342-ece7-a11e-21d7" sortIndex="3"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b2d-504e-5084-cb4f-min" includeChildSelections="false"/>
@@ -3682,7 +3758,13 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Dictator" hidden="false" id="b723-c86f-bd6a-13af">
               <entryLinks>
-                <entryLink import="true" name="Static Accelerator" hidden="false" id="e82c-f96c-135d-fac2" type="selectionEntry" targetId="1205-a8b2-eecd-f99e" sortIndex="4"/>
+                <entryLink import="true" name="Static Accelerator" hidden="false" id="e82c-f96c-135d-fac2" type="selectionEntry" targetId="1205-a8b2-eecd-f99e" sortIndex="4">
+                  <rules>
+                    <rule name="Static Accelerator" id="524e-9afc-17e3-431a" hidden="false">
+                      <description>If the target is within 16”, increase this weapon’s Destroyer value to 4+.</description>
+                    </rule>
+                  </rules>
+                </entryLink>
                 <entryLink import="true" name="Arc Maw" hidden="false" id="e7ff-9dfe-1a50-7073" type="selectionEntry" targetId="82eb-53c5-2225-b424" sortIndex="2"/>
                 <entryLink import="true" name="Seeker Lashes" hidden="false" id="138e-2db2-e8c3-b061" type="selectionEntry" targetId="6fd5-bce1-1ee7-0389" sortIndex="3"/>
                 <entryLink import="true" name="Scourge Heavy Behemoth" hidden="false" id="e9d6-3929-d114-e9a7" type="selectionEntry" targetId="a139-c55f-b5f9-552f" sortIndex="1"/>
@@ -3775,8 +3857,8 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
@@ -4067,4 +4149,12 @@ The Garrison receives an equal number of Collateral Damage tokens to units of Ra
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedRules>
+    <rule name="Infestation" id="315e-1212-95ac-8e55" hidden="false">
+      <description>If this squad does not start embarked in a transport at the start of the game you may have it Infest. An Infesting squad is placed In Reserve, even if its Battlegroup is not, and is ignored for the purposes of Aerial Advantage. When you activate an Infesting squad from In Readiness, it enters the table up to 6” from a friendly garrisoned squad that did not Infest (measuring from the edges of the garrison they are occupying), at least 4” away from any non-garrisoned enemy squads. It then continues its activation as normal.</description>
+    </rule>
+    <rule name="Living Weapon" id="adf9-64bd-b786-15d2" hidden="false">
+      <description>This unit can only use the Moving and Shooting actions, and cannot embark in transports during battle, though may start the game embarked. This unit can only use its listed weapon profiles when making a Shooting action.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
