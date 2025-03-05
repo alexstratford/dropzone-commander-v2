@@ -1954,7 +1954,12 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c9db-78cc-aa53-6818" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bradyon Carbines" hidden="false" id="40bf-e1ea-7367-988b" type="selectionEntry" targetId="d315-2166-d726-56ea"/>
+                <entryLink import="true" name="Bradyon Carbines" hidden="false" id="40bf-e1ea-7367-988b" type="selectionEntry" targetId="d315-2166-d726-56ea">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb15-8d7d-69d3-3ec8" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d15-a2db-2124-2791" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <infoLinks>
                 <infoLink name="Climber" id="d414-4406-dfdb-2b24" hidden="false" type="rule" targetId="b86d-8f1a-3fbf-e4bd"/>

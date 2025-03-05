@@ -1787,6 +1787,9 @@ All Fauna activate as part of the same Battlegroup, after all other Battlegroups
 When this unit activates, it must make a move action towards the closes non-garrisoned unit and attack with any and all weapons it is able to. If two or more units are tied for closest, your opponent decides which unit the Fauna will move towards.
 Special rules on command cards have no effect on Fauna unless explicitly mentioned and they may not search or claim objectives.</description>
     </rule>
+    <rule name="Transport Distance" id="244c-816a-8c6b-511e" hidden="false">
+      <description>When a unit disembarks from this unit or embarks into this unit, measure from any point on this unit’s edge rather than the centre.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="3fda-65f2-6cc3-ee33">
