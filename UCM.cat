@@ -1888,6 +1888,15 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <rule name="Scrying Array" id="8b09-1a78-63c6-82d1" hidden="false">
                   <description>At the end of a turn where Terrence Agu is on the board, look at the top two cards of your Command Card Deck. Put any number of them on top of your deck and the rest on the bottom of your deck.</description>
                 </rule>
+                <rule name="Command Card - Keeping Track" id="5edb-f2bf-2a69-896a" hidden="false">
+                  <description>Terrence Agu only. Global Range. 
+
+
+Play at the start of the turn. 
+
+
+When you play this card, do not discard it as normal. Instead keep it separate from your used Command Cards and put a counter on it. For the rest of the game, whenever you play a Command Card, place a counter on this card. Whenever you roll any dice, you may remove a counter to reroll a single dice in that roll.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -1953,6 +1962,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <rule name="Detriment" id="3d0f-cf80-a16d-03d4" hidden="false">
                   <description>Non-transport Auxiliary Aircraft must be permanently assigned to a Battlegroup. These Aircraft can be deployed In Reserve without forcing their respective battlegroups to also deploy fully in reserve.</description>
                 </rule>
+                <rule name="Command Card - A Fleet Friend" id="8ca5-894a-115a-8c22" hidden="false">
+                  <description>Luciana M Cato only. Global Range. 
+
+When you select this Battlegroup to activate.
+
+Add an Archangel Interceptor or Archangel Tactical Bomber In Readiness to this Battlegroup.</description>
+                </rule>
               </rules>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ef5-4760-66ff-b184" includeChildSelections="false"/>
@@ -2012,6 +2028,15 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 </rule>
                 <rule name="Detriment" id="564f-b634-4263-ff09" hidden="false">
                   <description>Kodiak Command ACV, Grizzly Mortar, Bear APC, and Panda APCs may no be included in an army with Kate Rawlins.</description>
+                </rule>
+                <rule name="Command Card - Arrestor Descent" id="2bb3-9983-1aa6-270c" hidden="false">
+                  <description>Kate Rawlins only. Global Range.
+
+
+When you select this Battlegroup to activate. 
+
+
+Place a squad containing 2 units of Praetorians (of any type) in any garrison within 4” of Kate Rawlins. These Praetorians ignore Defenders Advantage this turn. These Praetorians are part of this Battlegroup and can activate this turn.</description>
                 </rule>
               </rules>
             </selectionEntry>

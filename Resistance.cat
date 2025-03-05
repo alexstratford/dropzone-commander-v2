@@ -120,9 +120,9 @@
                     <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">-</characteristic>
                     <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">A</characteristic>
                     <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">14&quot;</characteristic>
-                    <characteristic name="DP" typeId="e707-608e-5069-cf78">2</characteristic>
+                    <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
                     <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Tank</characteristic>
-                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">-</characteristic>
+                    <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Resilient</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -134,6 +134,9 @@
                   <description>This unit comes with one free squad of two units of Resistance Veterans that are automatically embarked as if this were a Transport.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink name="Resilient" id="ee88-6871-1d41-7d3f" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -356,6 +359,13 @@
                 <rule name="Detriment" id="ab92-87d4-76bd-5a06" hidden="false">
                   <description>Resistance Veterans may only pick the Kalium Volunteers special rule. Hydra Relay Hovercraft and units with the Hovercraft special rule may not be included in an army with Salakhan.</description>
                 </rule>
+                <rule name="Command Card - Cunning Ambush" id="8822-668e-0b40-fb2c" hidden="false">
+                  <description>Salakhan only. Influence range. 
+
+When you select a Battlegroup to activate.
+
+Remove a single Squad in this Battlegroup from the table and place them In Readiness. That Squad may move onto the table from ANY table edge next turn.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -414,7 +424,14 @@
                   <description>All friendly weapons with “Missile” in their name deal damage with the Penetrative rule on a roll of a 5+.</description>
                 </rule>
                 <rule name="Detriment" id="4bdb-b5d5-e1b1-aa4f" hidden="false">
-                  <description>Moira Sharpe does not count when calculating objectives and always counts as destroyed at the end of the game.</description>
+                  <description>Moira Sharpe cannot claim objectives and is automatically destroyed at the end of the round up phase of the last round of the game. </description>
+                </rule>
+                <rule name="Command Card - Oan The Protein" id="189f-62d1-7554-5dc9" hidden="false">
+                  <description>Moira Sharpe only. Influence range.
+
+When a friendly Squad would fire a weapon with the Limited special rule.
+
+Ignore Limited for that attack.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -476,6 +493,13 @@
                 <rule name="Detriment" id="73d4-1da5-3e12-c8b3" hidden="false">
                   <description>Units with the Heavy category may not be included in an army with Rakkon Krell.</description>
                 </rule>
+                <rule name="Command Card - Punji Pits" id="1bb4-e209-0753-6596" hidden="false">
+                  <description>Rakkon Krell only. Influence range.
+
+When an enemy Squad in line of sight of Rakkon Krell activates.
+
+Place a blast template over one unit in the targeted squad and roll a dice. On a result of a 4+ any unit with 2DP or less under the template is destroyed.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -494,7 +518,7 @@
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
@@ -517,7 +541,7 @@
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
@@ -958,7 +982,7 @@
           </constraints>
           <rules>
             <rule name="Banisher Rotary Cannon" id="117c-c34e-edcc-985f" hidden="false">
-              <description>When using the Focus special rule with this weapon, no individual hit may go above Energy 10.</description>
+              <description>When using the Focus special rule with this weapon, no individual hit may go above Energy 11.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1071,7 +1095,7 @@
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -1198,7 +1222,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-1, Devastator-2 (Aircraft)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Devastator-2 (Aircraft)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1375,8 +1399,8 @@
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0</characteristic>
               </characteristics>
             </profile>
@@ -1669,7 +1693,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Destroyer 5+, Devastator-4 (Behemoth, Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Destroyer 5+, Devastator-2 (All), Devastator-4 (Behemoth, Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="03f7-176f-d898-08cb">
@@ -1715,6 +1739,11 @@
             <infoLink name="Devastator-X" id="c805-5c39-c0c3-538a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
             <infoLink name="Focus-X" id="b173-1acb-3991-c4d8" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
+          <rules>
+            <rule name="800mm Naval Defence Gun" id="cd30-4ff8-74df-87ec" hidden="false">
+              <description>Instead of the Blast template, this weapon’s Area rule uses a diameter of 8” centered on the target. Behemoths and Scenery pieces not targeted but still within this range are also affected by this weapon, reducing its Devastator value against these targets to 2.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2 Gilgamesh Missiles, 4 Beowulf AAV Pods, 2 Chainguns, Logging Claws" hidden="false" id="9063-4201-7eec-f819" collective="true">
           <constraints>
@@ -1897,7 +1926,7 @@
           </profiles>
           <rules>
             <rule name="Vent Repeater (Overcharge)" id="ac01-ba5a-7ffc-8597" hidden="false">
-              <description>Failed hit rolls cause this unit to lose 1 DP from a random zone.</description>
+              <description>Damage rolls of a 6+ cause this unit to lose 1 DP from a random zone.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1915,8 +1944,8 @@
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All)</characteristic>
               </characteristics>
             </profile>
             <profile name="Autocannon (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9387-b51f-de82-55ae">
@@ -2107,13 +2136,14 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Atilla Trackwalker" hidden="false" id="ffd2-d48d-2595-a57a" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="30"/>
+                <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3ddf-28cf-5d12-2ac5" includeChildSelections="false"/>
@@ -2915,7 +2945,7 @@ To select this, go to Configuration and select the background there</description
                   <description>All friendly non-Behemoth Vehicles with 6” of the Constantine gain Active Countermeasures</description>
                 </rule>
                 <rule name="Countermeasures Booster" id="0260-cc99-29d8-d475" hidden="false">
-                  <description>All friendly non-behemoth vehicles with Armour 13 or more within 6” of the Constantine reduce the Countered Range of enemy attacks against them by 6”. Weapons with a Countered Range of Infinite are reduced to 24” Countered Range instead.</description>
+                  <description>All friendly non-behemoth vehicles with Armour 13 or more within 6” of the Constantine reduce the Countered Range of enemy attacks against them by 6” to a minimum of 6” and reduce the Countered Range of any weapons with Countered Range Infinite to 24”.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -3479,7 +3509,13 @@ To select this, go to Configuration and select the background there</description
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ab5b-8292-94e3-e73e" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Vicious Tools" hidden="false" id="2497-868a-fb49-fda1" type="selectionEntry" targetId="28b1-36aa-ea8d-2301"/>
+                <entryLink import="true" name="Vicious Tools" hidden="false" id="2497-868a-fb49-fda1" type="selectionEntry" targetId="28b1-36aa-ea8d-2301">
+                  <rules>
+                    <rule name="Senseless Carnage" id="1577-2c09-8e0c-6fcc" hidden="false">
+                      <description>For each point of damage this unit has suffered, increase the Energy of Vicious Tools by 1.</description>
+                    </rule>
+                  </rules>
+                </entryLink>
               </entryLinks>
               <rules>
                 <rule name="Kalium Volunteers" id="13b4-6f0a-9ec2-4903" hidden="true">
@@ -4397,6 +4433,7 @@ To select this, go to Configuration and select the background there</description
                 <infoLink name="Access" id="d545-3feb-ba98-b951" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
                 <infoLink name="Rare" id="fe7c-ea99-fb59-8b98" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
                 <infoLink name="Large" id="e44b-4210-cdd3-a68d" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+                <infoLink name="Transport Distance" id="43c6-46e0-892c-1958" hidden="false" type="rule" targetId="244c-816a-8c6b-511e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5105-0846-8814-8623-min" includeChildSelections="false"/>
@@ -4854,7 +4891,7 @@ To select this, go to Configuration and select the background there</description
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Colossus Class Explorator" hidden="false" id="c2f1-fb4d-6045-8474" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="500"/>
+                <cost name="pts" typeId="points" value="470"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -4957,7 +4994,11 @@ To select this, go to Configuration and select the background there</description
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Resistance Light Behemoth" hidden="false" id="30f8-dd4b-cb41-81d7" type="selectionEntry" targetId="4e50-7d41-ca6d-0679" sortIndex="1"/>
-                <entryLink import="true" name="Mining Laser, Autocannons" hidden="false" id="795f-39ec-c3b7-5d5c" type="selectionEntry" targetId="37c4-cd64-ee11-0ac5" sortIndex="2"/>
+                <entryLink import="true" name="Mining Laser, Autocannons" hidden="false" id="795f-39ec-c3b7-5d5c" type="selectionEntry" targetId="37c4-cd64-ee11-0ac5" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Devastator-X" id="c924-05f4-f764-872a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Avernus Mining Engine" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="747c-2143-37ca-780e">
@@ -4980,7 +5021,7 @@ To select this, go to Configuration and select the background there</description
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Cerberus Mining Engine" hidden="false" id="64e9-1d24-34b4-c6ea" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="300"/>
+                <cost name="pts" typeId="points" value="290"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -5027,7 +5068,7 @@ To select this, go to Configuration and select the background there</description
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2</characteristic>
               </characteristics>
             </profile>
@@ -5047,12 +5088,13 @@ To select this, go to Configuration and select the background there</description
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Flammable Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-4 (Flammable Scenery), Devastator-2 (Scenery), Flame</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Devastator-X" id="1a86-1655-ed07-b5cf" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Flame" id="b569-aa1d-00ca-9372" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -5192,20 +5234,32 @@ To select this, go to Configuration and select the background there</description
           <profiles>
             <profile name="Anti-Materiel Guns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0350-df0d-17fd-5b9b">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Cover (All)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Cover (All), Flame, Strafe-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Cover-X" id="2a8d-6016-5430-5679" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Flame" id="cf37-80c7-acea-0810" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Tech Killer" id="730b-254d-48d6-9a4a" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -5230,7 +5284,8 @@ Resistance Veteran squads replace their Assault Rifles with Plasma Rifles.</desc
           <rules>
             <rule name="Kalium Volunteers" id="17c0-bd73-a63b-817c" hidden="false">
               <description>*Iron disciplined soldiers who choose to continue serving long after their conscription is up.*
-Resistance Veteran squads automatically pass Fortitude tests and gain the Resilient special rule.</description>
+
+This squad automatically passes Fortitude tests, gains the Resilient special rule, and increases Assault Grenades Energy to 6.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -5353,30 +5408,18 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
     </selectionEntryGroup>
     <selectionEntryGroup name="Cyclone Attack Copter Weapon Selection" id="4fcd-3e86-2812-9547" hidden="false" defaultSelectionEntryId="3441-7dca-2c14-fa53" collective="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Chainguns" hidden="false" id="3441-7dca-2c14-fa53" collective="true" sortIndex="1" defaultAmount="1">
+        <selectionEntry type="upgrade" import="true" name="Wing Chaingun" hidden="false" id="3441-7dca-2c14-fa53" collective="true" sortIndex="1" defaultAmount="1">
           <profiles>
-            <profile name="Chaingun [1]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7171-1026-09cd-7e1b">
+            <profile name="Wing Chaingun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7171-1026-09cd-7e1b">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Chaingun [2]" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c453-22da-d4c9-441e">
-              <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5389,11 +5432,11 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Penetrative</characteristic>
               </characteristics>
             </profile>
             <profile name="Beowulf Missile (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="edce-ee8c-6467-9fe3">
@@ -5401,7 +5444,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
@@ -5413,7 +5456,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
@@ -5424,6 +5467,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
           <infoLinks>
             <infoLink name="Area" id="64fc-6ef0-1db1-d481" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
             <infoLink name="Indirect" id="f8b2-a78b-7ee4-8833" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Penetrative" id="c046-c8c4-76ab-466e" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5"/>
@@ -5665,7 +5709,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Penetrative</characteristic>
               </characteristics>
@@ -5678,7 +5722,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
           </infoLinks>
           <rules>
             <rule name="Rocket Battery" id="9c17-e9ae-57f7-2ea7" hidden="false">
-              <description>This weapon has Accuracy 4+ when targeting Scenery pieces.</description>
+              <description>This weapon has Accuracy 3+ when targeting Scenery pieces.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -5716,7 +5760,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <description>This unit does not have to start the game In Reserve, ignoring the Aerial Advantage rule.</description>
     </rule>
     <rule name="Subterranean" id="d7bc-105e-0069-f96d" hidden="false">
-      <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain. Any units embarking in this Transport count as leaving the board for the purposes of scoring Objectives.</description>
+      <description>This unit always begins the game in Reserve but is ignored for the purposes of Aerial Advantage. When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain. Any units embarking in this Transport count as leaving the board for the purposes of scoring Objectives.</description>
     </rule>
     <rule name="Hover Mode" id="80a1-8501-41f9-82b6" hidden="false">
       <description>If this unit moves 10” or less, a squad disembarking out of it gains Rapid Insertion until the end of the round.</description>

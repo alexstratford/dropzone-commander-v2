@@ -150,6 +150,15 @@
                 <rule name="Benefit" id="aabb-69ad-0d16-c818" hidden="false">
                   <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades, Persephone, Bellona) can enter play via Drop Harness. Type-4 Walkers deploying this way follow the same rules as Behemoths using Drop Harness with a spread of 2” and a single Zone. Type-4 Walkers arriving this way may activate in the same round as if they had not arrived by Drop Harness. This benefit persists even if Marcus Barros has been destroyed.</description>
                 </rule>
+                <rule name="Command Card - Prototype Signal Unit" id="5378-1f61-78a4-471e" hidden="false">
+                  <description>Marcus Barros Only. Influence range.
+
+
+At the start of the Round Up phase.
+
+
+One friendly Infantry squad immediately makes an out of sequence Signal action.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -188,6 +197,15 @@
                 </rule>
                 <rule name="Detriment" id="74d4-99e4-1687-e298" hidden="false">
                   <description>Until it is destroyed, you may only use this Commander’s Command Value to determine your hand size, regardless of the Command Value of any other friendly Commanders.</description>
+                </rule>
+                <rule name="Command Card - Command Deadzone" id="fba3-dc19-1641-406d" hidden="false">
+                  <description>Oriana Nueva only. Influence range. 
+
+
+When an opponent selects a Battlegroup to activate.
+
+
+One enemy Scout Squad cannot be used as the origin of Influence Command Cards until the end of the turn.</description>
                 </rule>
               </rules>
               <profiles>
@@ -260,6 +278,15 @@
                 </rule>
                 <rule name="Detriment" id="34ba-047e-0817-42a8" hidden="false">
                   <description>Your vehicles gain no benefit from Exceptional scenery.</description>
+                </rule>
+                <rule name="Command card - Resurrection Protocols" id="822c-ed8f-2f6e-148d" hidden="false">
+                  <description>Stheno, Medusa Matriarch only. Influence range. 
+
+
+When a friendly Infantry Squad with a Squad Size of 2 or more would be destroyed.
+
+
+That Squad is not destroyed and remains in play with 1 Unit remaining with full Damage Points.</description>
                 </rule>
               </rules>
               <entryLinks>

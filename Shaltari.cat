@@ -249,6 +249,15 @@
                 <rule name="Detriment" id="c0c2-a8ef-5ebf-76a8" hidden="false">
                   <description>Your area weapons that glance the target deal their damage only to friendly units under that template, with the shot suffering -2 Energy instead of following the normal rules.</description>
                 </rule>
+                <rule name="Command Card - Aeons of Slaughter" id="bbf4-64f6-45bb-c92d" hidden="false">
+                  <description>Seti the Kinslayer only. Global range. 
+
+
+When activating Seti the Kinslayer. 
+
+
+All units (friendly and enemy) within Seti’s Command Radius increase the result of damage rolls by 1 until the end of the round.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -303,10 +312,22 @@
                   <description>Instead of making a Moving action, this squad may immediately go into Holding. Any held objectives are dropped before this squad is put into holding.</description>
                 </rule>
                 <rule name="Benefit" id="5d1c-9677-c02b-32e8" hidden="false">
-                  <description>Friendly Infantry squads ignore Defender’s Advantage.</description>
+                  <description>Friendly squads ignore Defender’s Advantage, but must re-roll successful damage rolls when attacking with CQ weapons in the same round they enter a garrison.</description>
                 </rule>
                 <rule name="Detriment" id="55ae-2e04-792f-5932" hidden="false">
                   <description>Units with the category of Scout or Exotic cannot be included in an army with Akhenten the Mad.</description>
+                </rule>
+                <rule name="Command Card - Vanishing Point" id="46f6-fac7-7305-4e46" hidden="false">
+                  <description>Akhenten the Mad only. Influence range. 
+
+
+At the start of the Round Up Phase pick a friendly and enemy squad with the same type within Akhenten’s Command Radius.
+
+
+Remove both squads from the game.
+
+
+They cease to exist.</description>
                 </rule>
               </rules>
               <profiles>
@@ -391,6 +412,15 @@
                 </rule>
                 <rule name="Detriment" id="7033-5bf7-94e8-b9ed" hidden="false">
                   <description>Friendly units with the Heavy category gain Large.</description>
+                </rule>
+                <rule name="Command Card - Steady as the Godslayer" id="41e1-0599-dc49-4af2" hidden="false">
+                  <description>Apep the Godeater only. Global range. 
+
+
+At the start of the turn.
+
+
+Until the end of the turn, your weapons with M&amp;F of 0” may re-roll failed damage rolls.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -627,18 +657,31 @@
             <profile name="Heavy Microwave Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd94-8fb4-85b4-cccf">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Cover (Body, Soft)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Microwave Cannon (Anti-Tank)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e39b-5c8d-c4e0-01b5">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Cover-X" id="d65d-a323-6ae8-f7bd" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Alt-X" id="e0e5-9956-da40-9b6d" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb06-4e9a-7a4b-207b" includeChildSelections="false"/>
@@ -1013,7 +1056,7 @@
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-4</characteristic>
               </characteristics>
@@ -1024,7 +1067,7 @@
           </infoLinks>
           <rules>
             <rule name="Energy Storm" id="885c-888d-ecab-7a4e" hidden="false">
-              <description>When firing this weapon, add +1 Energy for every other friendly unit in the squad within coherency.</description>
+              <description>When firing this weapon, add +1 Energy for each other friendly unit in the same squad in coherency with the firing unit.</description>
             </rule>
           </rules>
           <constraints>
@@ -1053,11 +1096,9 @@
           </profiles>
           <rules>
             <rule name="Teleport Beamer" id="1652-c4cc-383b-38cb" hidden="false">
-              <description>This unit can choose to target friendly or enemy units, but not units in the same squad. Scenery pieces and Behemoths cannot be targeted.
-If this weapon hits, it does no damage, but every unit in the targeted unit’s squad in coherency must teleport.
-Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This does not count as moving for the purposes of Move &amp; Fire.
-The units must be placed in coherency, although may be placed facing any direction, and ignore all scenery in the path of the move (although must be able to be placed on Passable terrain). It’s easiest to roll all hits first, and then teleport the squad a total distance in one go.
-Remember: always ask your opponent to move their own miniatures!</description>
+              <description>In addition to enemy units, this unit can choose to target friendly units in another squad, ignoring all of that friendly squad’s countermeasures. Scenery pieces and Behemoths cannot be targeted. If this weapon hits, it does no damage, but every unit in the targeted unit’s squad in coherency must teleport.
+
+Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This does not count as moving for the purposes of Move &amp; Fire. The units must be placed in coherency, although may be placed facing any direction, and ignore all scenery in the path of the move (although must be able to be placed on Passable terrain). It’s easiest to roll all hits first, and then teleport the squad a total distance in one go.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1262,7 +1303,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
           <profiles>
             <profile name="High Power Particle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7997-a268-98c2-a103">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
@@ -1304,7 +1345,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
@@ -1405,13 +1446,13 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">*</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Tech Killer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Strafe-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
             <rule name="Ion Storm" id="4043-a6f0-0285-6772" hidden="false">
-              <description>This weapon hits every non-Aircraft unit within range (friendly and enemy). Each unit gets hit by the weapon profile once, but Infantry not in a Garrison instead get hit D6 times each (roll once for all units). Infantry in a Garrison cannot be hit. This weapon has Accuracy 6+ on any units over 6” away</description>
+              <description>Instead of the Blast template, this weapon’s Area rule uses a diameter of 8” centered on the target. Friendly units are not affected by this weapon.</description>
             </rule>
           </rules>
           <constraints>
@@ -1546,7 +1587,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large)</characteristic>
@@ -1558,7 +1599,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Devastator-3 (Large)</characteristic>
@@ -1575,23 +1616,32 @@ Remember: always ask your opponent to move their own miniatures!</description>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Transmatter Beam" hidden="false" id="1191-97fa-27ba-6701" collective="true">
           <profiles>
-            <profile name="Transmatter Beam" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3767-fa8e-0995-a217">
+            <profile name="Transmatter Beam (Focus)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3767-fa8e-0995-a217">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Devastator-2 (All)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Transmatter Beam (Wide)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4c06-0781-cfac-5a61">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (All), Devastator-5 (Infantry), Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-5 (Infantry), Flame, Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule name="Transmatter Beam" id="8ca5-1427-9dd0-3e92" hidden="false">
-              <description>This weapon may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not, measuring to the edge of the Garrison they are occupying.</description>
-            </rule>
             <rule name="Transmatter Teleport" id="2e95-d8c0-c61a-bd08" hidden="false">
               <description>Friendly squads may use this unit’s Access rule, even if they are not part of this unit’s Battlegroup. Friendly squads using this unit’s Access rule may be placed in line of sight within 12” of this unit. Only units with a transport requirement of 2 or less may use this unit’s Access rule.</description>
             </rule>
@@ -1632,7 +1682,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Strafe-3, Devastator-2 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -1650,7 +1700,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Laser Fangs" hidden="false" id="df2b-69d5-24ac-3030" collective="true">
           <profiles>
-            <profile name="Laser Pod" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="38d1-7e1c-e867-0c9a">
+            <profile name="Laser Fangs" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="38d1-7e1c-e867-0c9a">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
@@ -1658,7 +1708,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
               </characteristics>
             </profile>
@@ -1752,7 +1802,7 @@ Remember: always ask your opponent to move their own miniatures!</description>
           </constraints>
           <rules>
             <rule name="Super Disruption Cannon" id="0926-46e9-1aec-ebc6" hidden="false">
-              <description>If the target of this weapon is within 24”, increase its Energy by 2. If the target is within 12”, instead increase the Energy by 4.</description>
+              <description>Instead of the Blast template, this weapon’s Area rule uses a diameter of 8” centered on the target. If the target of this weapon is within 24”, increase its Energy by 2. If the target is within 12”, instead increase the Energy by 4.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2123,13 +2173,14 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f322-5792-94c6-ce40" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="50"/>
+                <cost name="pts" typeId="points" value="45"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Energy Swords" hidden="false" id="b80f-5da2-f9c6-da9b" type="selectionEntry" targetId="f560-83b2-d4fb-0d03" sortIndex="1"/>
@@ -2247,6 +2298,7 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Transport Distance" id="aecd-26ba-e4ef-4bc1" hidden="false" type="rule" targetId="244c-816a-8c6b-511e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="478c-d6f4-eeb9-dc70" includeChildSelections="false"/>
@@ -2262,13 +2314,14 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Bobcat Warstrider" hidden="false" id="23ab-43cb-54a9-4c14" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="135"/>
+                <cost name="pts" typeId="points" value="120"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Bobcat Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="fd4f-6678-2e7e-9628">
@@ -2680,13 +2733,14 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="40"/>
+                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="833b-a00a-c578-5781" includeChildSelections="false"/>
@@ -3075,6 +3129,7 @@ activation. Skimmers increase this bonus to +6”.</description>
                 <infoLink name="Teleport" id="05f4-0c6d-5d2f-3d69" hidden="false" type="rule" targetId="b93f-ff51-7ebd-10cb"/>
                 <infoLink name="Access" id="376a-9db2-5d8c-f34a" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
                 <infoLink name="Interference" id="a39b-c59b-51a3-455b" hidden="false" type="rule" targetId="8955-61d6-c888-4f0f"/>
+                <infoLink name="Transport Distance" id="4af2-3ad6-49fd-51de" hidden="false" type="rule" targetId="244c-816a-8c6b-511e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="252d-cd25-f765-fc44" includeChildSelections="false"/>
@@ -3556,8 +3611,7 @@ activation. Skimmers increase this bonus to +6”.</description>
             <profile name="Lion Siegestrider" typeId="60a8-4d72-41c9-086a" typeName="Shaltari Light Weapons" hidden="true" id="c908-5f9f-1791-ad53">
               <characteristics>
                 <characteristic name="Weapons" typeId="4ebe-421e-14d3-1fb7">8</characteristic>
-                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">Transmatter Beam cannot be used for the rest of the game. This unit
-loses all of its transport capacity</characteristic>
+                <characteristic name="Crippled Result" typeId="92cf-1405-30aa-be7c">Transmatter Beam (both Alts) cannot be used for the rest of the game. This unit loses all of its transport capacity.</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -3687,13 +3741,14 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15c-a606-a0a7-171a" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="500"/>
+                <cost name="pts" typeId="points" value="490"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Shaltari Heavy Behemoth" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="0e1f-919a-fc8e-1b22">
@@ -3726,13 +3781,14 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a954-5508-6ec9-451f" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="500"/>
+                <cost name="pts" typeId="points" value="480"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Shaltari Heavy Behemoth" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="56d1-fe8e-8aa6-09d1">
@@ -4072,7 +4128,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Tech Killer</characteristic>
               </characteristics>
@@ -4100,11 +4156,11 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
           <profiles>
             <profile name="Twin Disintegrators" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="78cb-c071-8aaf-d491">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">16&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle), Penetrative</characteristic>
@@ -4122,10 +4178,10 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">10&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>

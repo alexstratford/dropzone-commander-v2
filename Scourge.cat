@@ -178,6 +178,15 @@
                 <rule name="Detriment" id="9637-d9d4-715c-8e3c" hidden="false">
                   <description>Your opponent increases their initiative roll by 2.</description>
                 </rule>
+                <rule name="Command Card - Predator&apos;s Instinct" id="c4c7-df14-805f-564c" hidden="false">
+                  <description>Eden’s Dinosaur only. Global range. 
+
+
+During one of your activations, pick an opponent.
+
+
+That opponent must show you all of the Command Cards from their hand. Pick one, your opponent discards that Command Card.</description>
+                </rule>
               </rules>
               <infoLinks>
                 <infoLink name="Command Centre" id="743e-ec6e-b225-df88" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
@@ -243,6 +252,15 @@
                 <rule name="Detriment" id="ec21-13af-3680-0261" hidden="false">
                   <description>Discard your entire hand of Command Cards in the second step of the Initiation Phase instead of only unwanted Command Cards.</description>
                 </rule>
+                <rule name="Command Card - Home Wrecker" id="841a-94c9-dabb-142b" hidden="false">
+                  <description>Slaughterhouse V only. Influence range. 
+
+
+When you damage a Garrison with a Shooting action.
+
+
+Increase the Energy of the Collateral Damage caused by that attack to 6. When you roll for this Collateral Damage, it automatically damages on a roll of 5+. Subsequent Collateral Damage rolls are rolled as normal.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -305,6 +323,12 @@
                 </rule>
                 <rule name="Detriment" id="27d3-ba1a-e136-4422" hidden="false">
                   <description>Command Cards with an area of Influence can only be used within this Commanders Command Radius and within 4” of friendly units with the Scout category.</description>
+                </rule>
+                <rule name="Command Card - Uncanny Intel" id="0a2e-76ab-d4f0-8532" hidden="false">
+                  <description>Pest of Olympus only. Global range. 
+
+
+When you select a Battlegroup to activate. Generate D3 Scan Tokens and place them on ANY friendly vehicle. These tokens are lost when that vehicle activates.</description>
                 </rule>
               </rules>
             </selectionEntry>
