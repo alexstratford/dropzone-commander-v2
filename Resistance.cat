@@ -424,7 +424,7 @@ Remove a single Squad in this Battlegroup from the table and place them In Rea
                   <description>All friendly weapons with “Missile” in their name deal damage with the Penetrative rule on a roll of a 5+.</description>
                 </rule>
                 <rule name="Detriment" id="4bdb-b5d5-e1b1-aa4f" hidden="false">
-                  <description>Moira Sharpe cannot claim objectives and is automatically destroyed at the end of the round up phase of the last round of the game. </description>
+                  <description>Moira Sharpe cannot claim objectives and is automatically destroyed at the end of the round up phase of the last round of the game.</description>
                 </rule>
                 <rule name="Command Card - Oan The Protein" id="189f-62d1-7554-5dc9" hidden="false">
                   <description>Moira Sharpe only. Influence range.
@@ -5492,7 +5492,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
           <profiles>
             <profile name="Ground Attack Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3e69-9ccc-068e-eb10">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
