@@ -2106,7 +2106,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f1fc-8a4f-d47e-9ee8" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Legionnaires" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
+                <profile name="Praetorian Spec Ops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>

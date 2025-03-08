@@ -1693,7 +1693,7 @@ A unit deploying using this rule cannot deploy in a Transport, but a Transport 
 They may also disembark straight into a Garrison from any direction (including the roof if the Aerial Transport is on top of it!), regardless of whether it has an entrance point. 
 
 
-Additionally, if this unit enters a Garrison via this rule, it ignores Defender&apos;s Advantage, however it must re-roll all successful damage rolls.</description>
+Additionally, if this unit enters a Garrison via this rule, it ignores Defender&apos;s Advantage, however it must re-roll all successful damage rolls.kr</description>
       <alias>Rapid Insertion</alias>
       <alias>Rapid Insertion 0&quot;</alias>
       <alias>Rapid Insertion 1&quot;</alias>
