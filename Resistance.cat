@@ -4448,7 +4448,7 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="DP" typeId="5167-c8b3-2814-3457">8</characteristic>
                     <characteristic name="Type" typeId="6153-63f6-5e39-9a03">Tank</characteristic>
                     <characteristic name="Special" typeId="0f17-2aa1-29ec-c7bc">Access, Large, Rare</characteristic>
-                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">6 Drill</characteristic>
+                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">18 Drill</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
