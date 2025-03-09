@@ -2090,6 +2090,16 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="56c5-9c94-d5b5-1a48" shared="true"/>
                   </conditions>
+                  <comment>Slaughterhouse</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="16&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="28d9-5abb-5e3b-50eb" shared="true"/>
+                  </conditions>
+                  <comment>Rawlins</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -2153,6 +2163,24 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
                   </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ee17-3d29-95aa-3135" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Agu</comment>
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="077a-2fc8-20f2-4084" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Cato</comment>
+                  <modifiers>
+                    <modifier type="set" value="22&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6e4b-14f2-dc26-7c25" shared="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
