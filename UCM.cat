@@ -1840,7 +1840,7 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
             <selectionEntry type="model" import="true" name="Wolf Command LAV" hidden="false" id="6209-b46b-507d-1a01">
               <entryLinks>
                 <entryLink import="true" name="Wolf Missiles" hidden="false" id="18a6-31be-550a-d4e6" type="selectionEntry" targetId="ebb6-06dd-d92d-43b0"/>
-                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="70d9-4a30-766a-8c4a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="2d34-1d59-f9ac-b4a8" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="667b-712a-9376-116f" includeChildSelections="false"/>
@@ -1931,7 +1931,7 @@ When you play this card, do not discard it as normal. Instead keep it separate 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="006b-11d0-5d27-e17d" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="e9dd-4158-d55f-cb19" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="7dcf-9fcd-cc73-4bc9" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
               </entryLinks>
               <profiles>
                 <profile name="Ferrum Drone base" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ba99-7e1a-4350-cc38">
@@ -1992,7 +1992,6 @@ Add an Archangel Interceptor or Archangel Tactical Bomber In Readiness to this
                 <entryLink import="true" name="AA Battery" hidden="false" id="ec1c-a754-e47a-2564" type="selectionEntry" targetId="8af3-b7bf-054c-6211"/>
                 <entryLink import="true" name="Minigun Triad" hidden="false" id="8f49-9639-9402-d034" type="selectionEntry" targetId="e2e7-cf48-e7af-2d71"/>
                 <entryLink import="true" name="Missile Battery" hidden="false" id="9fd8-5b68-f22d-8387" type="selectionEntry" targetId="e996-2caa-d321-d3f4"/>
-                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="213b-69f7-feec-0505" type="selectionEntry" targetId="425b-ba23-208f-1d7e"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="unit" shared="true" id="de62-dcd3-a9ef-e4be" includeChildSelections="false"/>
@@ -2049,6 +2048,9 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
             <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="43ac-ae4d-3cf3-70ff" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c644-87b4-2475-b1c0" includeChildSelections="true"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Commander (CV 3)" hidden="false" id="a6f3-d529-1675-0af3" type="selectionEntry" targetId="425b-ba23-208f-1d7e"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3677,7 +3679,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da1f-31b8-ff11-c433" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Dominion Heavy Bomber" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="a66c-56d9-02c8-dddb">
+                <profile name="Dominion Heavy Bomber" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a66c-56d9-02c8-dddb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;-24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
