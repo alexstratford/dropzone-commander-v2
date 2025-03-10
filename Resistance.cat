@@ -5470,7 +5470,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Penetrative" id="c046-c8c4-76ab-466e" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
+            <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
