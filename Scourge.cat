@@ -2565,6 +2565,16 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <infoLink name="Dodge-X" id="d350-c298-f1aa-be5a" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
                 <infoLink name="Infestation" id="4c57-0c26-ea37-81a2" hidden="false" type="rule" targetId="315e-1212-95ac-8e55"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Deploying via Infestation" hidden="false" id="abfa-58a0-e02e-fcc4" collective="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7c-9dae-0617-8587" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="466e-b8ec-f298-b782"/>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <comment>Paid Version</comment>
@@ -3635,7 +3645,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <entryLink import="true" name="Scourge Light Behemoth" hidden="false" id="ffae-05c4-dab6-1fe3" type="selectionEntry" targetId="ac77-a1db-e3c0-c5ba" sortIndex="1"/>
                 <entryLink import="true" name="Razor Hives" hidden="false" id="963a-5732-a885-c89d" type="selectionEntry" targetId="33ff-42a0-d54a-a887" sortIndex="2"/>
                 <entryLink import="true" name="Heavy Plasma Cannons" hidden="false" id="115a-deee-a587-5a29" type="selectionEntry" targetId="16f4-76fb-efed-6785" sortIndex="4"/>
-                <entryLink import="true" name="Sonic Demolisher" hidden="false" id="18f7-49e8-2eef-8bb5" type="selectionEntry" targetId="b342-ece7-a11e-21d7" sortIndex="3"/>
+                <entryLink import="true" name="Quake Bombard" hidden="false" id="18f7-49e8-2eef-8bb5" type="selectionEntry" targetId="b342-ece7-a11e-21d7" sortIndex="3"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b2d-504e-5084-cb4f-min" includeChildSelections="false"/>
@@ -4178,7 +4188,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
       <description>If this squad does not start embarked in a transport at the start of the game you may have it Infest. An Infesting squad is placed In Reserve, even if its Battlegroup is not, and is ignored for the purposes of Aerial Advantage. When you activate an Infesting squad from In Readiness, it enters the table up to 6” from a friendly garrisoned squad that did not Infest (measuring from the edges of the garrison they are occupying), at least 4” away from any non-garrisoned enemy squads. It then continues its activation as normal.</description>
     </rule>
     <rule name="Living Weapon" id="adf9-64bd-b786-15d2" hidden="false">
-      <description>This unit can only use the Moving and Shooting actions, and cannot embark in transports during battle, though may start the game embarked. This unit can only use its listed weapon profiles when making a Shooting action.</description>
+      <description>This unit can only use the Moving and Shooting actions, and cannot embark in transports during battle, though may start the game embarked. This unit can only use its listed weapon profiles when making a Shooting action. This unit cannot claim Objectives (including being passed or through destroying a squad).</description>
     </rule>
   </sharedRules>
 </catalogue>
