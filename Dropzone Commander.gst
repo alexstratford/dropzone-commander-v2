@@ -1042,29 +1042,9 @@
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="increment" value="35" field="points">
+                <modifier type="increment" value="1" field="points">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="3ef3-74ac-9b0a-841f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="65" field="points">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="425b-ba23-208f-1d7e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="95" field="points">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="193c-b0e6-c33e-673f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="125" field="points">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="8160-acd4-d9ed-2583" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="155" field="points">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="5d35-7708-fc13-81bd" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="points" scope="force" childId="1cac-032f-4580-2381" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
