@@ -2225,6 +2225,14 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1e9e-5eab-ee7f-0e12" shared="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1bea-7b0a-95aa-8155" shared="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>

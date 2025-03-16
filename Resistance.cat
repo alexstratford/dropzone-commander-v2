@@ -461,10 +461,15 @@ Ignore Limited for that attack.</description>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Commander" hidden="false" id="6880-26a0-929b-c52c" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" sortIndex="2"/>
                 <entryLink import="true" name="Infiltrating" hidden="false" id="ac36-6927-1f8a-b053" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
                 <entryLink import="true" name="Pizzaro Hazard Walker Weapon Selection" hidden="false" id="c145-35f2-0e90-8cf8" type="selectionEntryGroup" targetId="b5cf-206c-5183-ef30" sortIndex="3"/>
                 <entryLink import="true" name="Industrial Cutting Claws" hidden="false" id="54da-f6b6-927e-0596" type="selectionEntry" targetId="dc13-8c9f-5aed-1300" sortIndex="4"/>
+                <entryLink import="true" name="Commander (CV 5)" hidden="false" id="65cb-e5f5-c9a2-59bb" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1305-0b21-1581-153d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1305-0b21-1581-153d-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e49a-7d0f-9489-6aaa" includeChildSelections="false"/>
