@@ -4,7 +4,7 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="true" id="e9a7-3680-5faf-edb5" flatten="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wolf Missiles" hidden="false" id="ebb6-06dd-d92d-43b0" page="" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Wolf Missiles" hidden="false" id="ebb6-06dd-d92d-43b0" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7230-f312-38c8-dae9" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="174f-b113-d70a-e558" includeChildSelections="false"/>
@@ -107,13 +107,13 @@
           </constraints>
           <comment>Bear APC | F/S/R 24&quot; 4+ Acc</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sniper Rifles" hidden="false" id="4ef4-4035-b0d3-4c05" page="" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifles" hidden="false" id="4ef4-4035-b0d3-4c05" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c87-8614-a7b9-189a" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6cb-6d70-7aa5-e2d9" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Sniper Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="30ad-a5b0-7751-30bd" page="">
+            <profile name="Sniper Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="30ad-a5b0-7751-30bd">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
@@ -139,13 +139,13 @@
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Sidearms" hidden="false" id="f24f-ba9d-04c8-371c" page="" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Sidearms" hidden="false" id="f24f-ba9d-04c8-371c" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f86-5b0d-4215-9a6c" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2156-da2a-0063-fc8c" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Sidearms" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="57b1-3f3e-24d8-5e87" page="">
+            <profile name="Sidearms" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="57b1-3f3e-24d8-5e87">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
@@ -166,7 +166,7 @@
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Orbital Strike" hidden="false" id="b205-7170-fa0f-d817" page="" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Orbital Strike" hidden="false" id="b205-7170-fa0f-d817" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c84-12ab-d1d7-1551" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="429d-49ca-eb8f-09f3" includeChildSelections="false"/>
@@ -273,7 +273,7 @@
           </constraints>
           <comment>Phoenix</comment>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="SMGs, Assault Grenades" hidden="false" id="78c0-b1d5-2689-52b6" page="" collective="true">
+        <selectionEntry type="upgrade" import="true" name="SMGs, Assault Grenades" hidden="false" id="78c0-b1d5-2689-52b6" collective="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fde-2b9e-0b06-0a59" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b87-a0ac-5ce9-92a3" includeChildSelections="false"/>
@@ -2104,8 +2104,8 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <entryLink import="true" name="SMGs, Assault Grenades" hidden="false" id="bf6a-376e-5fbf-c36b" type="selectionEntry" targetId="78c0-b1d5-2689-52b6"/>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="unit" shared="true" id="560f-de5e-2d6e-0879" includeChildSelections="false"/>
                 <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f1fc-8a4f-d47e-9ee8" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2475-f7e7-21d1-7a9b" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Praetorian Spec Ops" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7885-c620-5b11-0c68" publicationId="0a0b-b837-fa34-a21d" page="1">
