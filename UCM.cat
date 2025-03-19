@@ -2472,9 +2472,6 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Crossbow Laser Artillery" hidden="false" id="9c53-71f9-4127-fed8" collective="true">
-              <categoryLinks>
-                <categoryLink name="Support" hidden="false" id="bbd0-7e03-d2b9-f4de" targetId="1742-0b1d-252f-505d" primary="false"/>
-              </categoryLinks>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="028b-0ac7-ed2e-00a5" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0b9-6411-b754-dbd3" includeChildSelections="false"/>
