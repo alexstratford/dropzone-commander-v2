@@ -80,11 +80,6 @@
                 <entryLink import="true" name="Plasma Carbines" hidden="false" id="2733-0fa2-5950-0e37" type="selectionEntry" targetId="74b7-1ab4-0905-7bcc"/>
                 <entryLink import="true" name="Commander" hidden="false" id="888c-97ca-97bb-1e03" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
-              <rules>
-                <rule name="Micro Subjugation Field" id="5c23-713b-732d-00f6" hidden="false">
-                  <description>Enemy non-Behemoth units that activate within 3” of this unit reduce the amount of actions they may perform by 1 to a minimum of 1. Additionally, enemy infantry may not benefit from Scan Tokens while they (or the Garrison they’re occupying) are within 3” of this unit.</description>
-                </rule>
-              </rules>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -127,6 +122,11 @@
                 <entryLink import="true" name="Plasma Hose" hidden="false" id="9d09-315c-2d02-5e82" type="selectionEntry" targetId="0da6-2eb2-286d-b11d"/>
                 <entryLink import="true" name="Commander" hidden="false" id="c95f-2ef9-1c5a-8302" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
               </entryLinks>
+              <rules>
+                <rule name="Micro Subjugation Field" id="5c23-713b-732d-00f6" hidden="false">
+                  <description>Enemy non-Behemoth units that activate within 3” of this unit reduce the amount of actions they may perform by 1 to a minimum of 1. Additionally, enemy infantry may not benefit from Scan Tokens while they (or the Garrison they’re occupying) are within 3” of this unit.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -1197,7 +1197,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <profiles>
             <profile name="Plasma Hose" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9199-edcb-3daa-a8dd">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
@@ -1512,6 +1512,11 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="635a-6cc9-9114-49f7" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43e6-dd5d-98f6-eba7" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Plasma Howitzer" id="a275-65bf-22f5-4a99" hidden="false">
+              <description>This weapon counts as Devastator-2 (Vehicle) on any units touched by the Plasma Howitzer’s template that aren’t directly underneath the centre.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Thrust Cutter" hidden="false" id="6c78-2414-2a53-7061" collective="true">
           <profiles>
