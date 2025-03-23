@@ -2076,7 +2076,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
@@ -2114,7 +2114,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Dodge 4+, Rapid Insertion 4”</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
@@ -2133,6 +2133,10 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <cost name="Light_Cap" typeId="acb7-4263-ce1f-84d0" value="0"/>
                 <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="3a11-2a88-c350-9e90" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Dodge-X" id="a5f9-ae90-d349-4912" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3181,7 +3185,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="2c1b-ada8-9ea1-7189" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
               </entryLinks>
               <profiles>
-                <profile name="Raven Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
+                <profile name="Raven Light Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="80dc-54e7-32e0-39ca">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>

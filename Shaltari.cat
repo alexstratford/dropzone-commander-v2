@@ -3159,10 +3159,10 @@ activation. Skimmers increase this bonus to +6”.</description>
               <profiles>
                 <profile name="Spirit Light Gate" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="08dc-1c33-82d4-b526">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">20&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Access</characteristic>
                     <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Infantry</characteristic>
