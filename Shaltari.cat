@@ -4198,13 +4198,14 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser" hidden="false" id="ca3a-b39b-f357-6a46" collective="true">
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
+            <cost name="pts" typeId="points" value="15"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
           </costs>
           <profiles>
             <profile name="Heavy Bio-Atomiser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2585-5816-2e4a-8ad8">
