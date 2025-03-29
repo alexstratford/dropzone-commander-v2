@@ -3372,30 +3372,33 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <entryLink import="true" name="Firestorm Heavenfire" hidden="false" id="fe11-b7b7-1953-55c0" type="selectionEntry" targetId="6629-2cff-b113-8cc5"/>
                 <entryLink import="true" name="Seraphim Weapons Selection" hidden="false" id="1541-c1a7-9bfb-399d" type="selectionEntryGroup" targetId="6151-7503-1bcb-eaea"/>
               </entryLinks>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="set" value="3" field="5dc6-0f30-deb0-c9ca">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="1" field="5dc6-0f30-deb0-c9ca">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="2" field="5dc6-0f30-deb0-c9ca">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <comment>Rare Config</comment>
-                </modifierGroup>
-              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="7229-6d3f-5924-8b55">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="7229-6d3f-5924-8b55">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="7229-6d3f-5924-8b55">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7229-6d3f-5924-8b55" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
