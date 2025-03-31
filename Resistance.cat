@@ -5742,7 +5742,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">1</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Behemoth, Scenery), Indirect, Limited 1</characteristic>
               </characteristics>
             </profile>
