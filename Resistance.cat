@@ -2809,13 +2809,14 @@ To select this, go to Configuration and select the background there</description
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d671-bdaf-a51a-6088" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="35"/>
+                <cost name="pts" typeId="points" value="25"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="3"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <infoLinks>
                 <infoLink name="Wide" id="8662-73e3-2ffc-7cb2" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
