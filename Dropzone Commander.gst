@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem profiles="" rules="" infoLinks="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="2.03" id="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" name="Dropzone Commander v2.2.0" revision="5" authorName="Alex" authorContact="https://github.com/alexstratford/dropzone-commander-v2" authorUrl="https://github.com/alexstratford/dropzone-commander-v2" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="2.03" id="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" name="Dropzone Commander v2.2.0" revision="5" authorName="Alex" authorContact="https://github.com/alexstratford/dropzone-commander-v2" authorUrl="https://github.com/alexstratford/dropzone-commander-v2" type="gameSystem">
   <publications>
     <publication name="Dropzone Commander Rulebook" id="9aaf-4a48-3cce-441f" hidden="false" shortName="Core Rules" publicationDate="01/05/2024" publisherUrl="https://cdn.shopify.com/s/files/1/0965/1274/files/Desktop_Dropzone_Rulebook_ac593214-77aa-4252-841f-0085439a4629.pdf?v=1617981364"/>
   </publications>
@@ -12,7 +12,7 @@
       <comment>Scourge Vampires, Resistance Baby Drill</comment>
     </costType>
     <costType name="Faction1_Req" id="adf6-547d-2c51-e81a" defaultCostLimit="-1" hidden="true">
-      <comment>Scourge Crab, Resistance Wheel</comment>
+      <comment>Scourge Crab, Resistance Wheel, Walkers</comment>
     </costType>
     <costType name="Faction2_Req" id="1657-edf7-a484-c3e7" defaultCostLimit="-1" hidden="true">
       <comment>Scourge Screamer, Resistance Bus</comment>
@@ -589,6 +589,9 @@
                             <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="adf6-547d-2c51-e81a" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1657-edf7-a484-c3e7" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="5bb1-3f94-8396-e8d2" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -707,6 +710,9 @@
                             <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="adf6-547d-2c51-e81a" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1657-edf7-a484-c3e7" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="5bb1-3f94-8396-e8d2" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -825,6 +831,9 @@
                             <condition type="greaterThan" value="0" field="466e-b8ec-f298-b782" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="f4ee-4eec-0c72-6c13" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="greaterThan" value="0" field="1832-e9be-1e78-02df" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="adf6-547d-2c51-e81a" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="1657-edf7-a484-c3e7" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="greaterThan" value="0" field="5bb1-3f94-8396-e8d2" scope="force" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
