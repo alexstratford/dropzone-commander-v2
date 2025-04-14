@@ -1849,7 +1849,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
                   </characteristics>
                 </profile>

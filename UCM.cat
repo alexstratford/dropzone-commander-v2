@@ -3411,8 +3411,8 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Sabre Tank" hidden="false" id="284f-11a8-9e6d-2be6">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="unit" shared="true" id="2a33-df3c-9cc6-36b2" includeChildSelections="false"/>
                 <constraint type="max" value="9" field="selections" scope="unit" shared="true" id="bdc7-4e95-a0ba-342c" includeChildSelections="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d0f7-af2a-5a91-8048" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Avenger Railgun" hidden="false" id="2ee6-e4e6-a44a-7d41" type="selectionEntry" targetId="d921-2ff1-fa9e-6bc7" flatten="false" collective="false"/>
