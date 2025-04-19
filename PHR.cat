@@ -487,9 +487,10 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0b4b-bcb9-c076-6573" includeChildSelections="false"/>
@@ -534,9 +535,10 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="3cf8-a3dc-440c-05f3" includeChildSelections="false"/>
@@ -678,11 +680,12 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Angelos Jetskimmer" hidden="false" id="5d9a-06f2-0be9-4606" collective="true">
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                 <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="30"/>
               </costs>
@@ -2122,9 +2125,9 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed87-b415-2bd1-2893" includeChildSelections="false"/>
@@ -2161,9 +2164,9 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="1"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3948-99ca-3412-b629" includeChildSelections="false"/>
@@ -2209,8 +2212,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="6"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="6"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                 <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
