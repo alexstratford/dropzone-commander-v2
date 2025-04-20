@@ -3615,7 +3615,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Wide</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
@@ -3634,6 +3634,9 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="abc4-37a9-e961-4dfa"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8d93-d95a-da97-ef6c"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Wide" id="a675-e2f3-5a98-352a" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>

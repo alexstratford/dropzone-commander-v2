@@ -189,7 +189,7 @@ One friendly Infantry squad immediately makes an out of sequence Signal action.
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f790-2cd1-bbfc-17b3" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Orbital Shot" hidden="false" id="f44d-abe7-3c8c-dd11" type="selectionEntry" targetId="0b7d-70db-ebdb-f8a1"/>
+                <entryLink import="true" name="Orbital Shot" hidden="false" id="f44d-abe7-3c8c-dd11" type="selectionEntry" targetId="0b7d-70db-ebdb-f8a1" collective="true"/>
               </entryLinks>
               <rules>
                 <rule name="Benefit" id="e614-404b-8840-b96b" hidden="false">
