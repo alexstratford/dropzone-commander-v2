@@ -1462,6 +1462,24 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flying on" hidden="false" id="9619-353b-b268-cb5d" defaultAmount="1" collective="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3945-418e-7a15-6744" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67f4-d752-aa6d-c88c" includeChildSelections="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="466e-b8ec-f298-b782" scope="model"/>
+            <modifier type="set" value="0" field="f4ee-4eec-0c72-6c13" scope="model"/>
+            <modifier type="set" value="0" field="1832-e9be-1e78-02df" scope="model"/>
+            <modifier type="set" value="0" field="adf6-547d-2c51-e81a" scope="model"/>
+            <modifier type="set" value="0" field="1657-edf7-a484-c3e7" scope="model"/>
+            <modifier type="set" value="0" field="5bb1-3f94-8396-e8d2" scope="model"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">

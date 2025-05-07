@@ -106,7 +106,7 @@
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -358,7 +358,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
               </costs>
               <profiles>
-                <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39b9-4ee3-b465-6c2c">
+                <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="39b9-4ee3-b465-6c2c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -366,7 +366,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Infantry/Screamer, 2 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -427,7 +427,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="40"/>
               </costs>
               <profiles>
-                <profile name="Marauder Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4347-3059-ca72-b429">
+                <profile name="Marauder Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="4347-3059-ca72-b429">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -435,7 +435,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -456,7 +456,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Invader APC" hidden="false" id="b77f-19d5-e2ca-a89e">
               <profiles>
-                <profile name="Invader APC" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="17cc-3c9d-7b80-1d53">
+                <profile name="Invader APC" typeId="a7a0-2f14-30f9-c88b" typeName="Vehicle" hidden="false" id="17cc-3c9d-7b80-1d53">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
@@ -464,7 +464,8 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Infantry</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -505,7 +506,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="70"/>
               </costs>
               <profiles>
-                <profile name="Despoiler Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9a7e-ff16-642c-8c66">
+                <profile name="Despoiler Heavy Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="9a7e-ff16-642c-8c66">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -513,7 +514,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">18 Tank, 4 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -534,7 +535,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Intruder Light Dropship" hidden="false" id="0dfd-fcd5-e86d-5d2b">
               <profiles>
-                <profile name="Intruder Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e46f-de1c-7779-5961">
+                <profile name="Intruder Light Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="e46f-de1c-7779-5961">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -542,7 +543,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -572,7 +573,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Intruder Light Troopship" hidden="false" id="10ee-e2d5-eafb-23a3">
               <profiles>
-                <profile name="Intruder Light Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8a5f-848f-41d1-a5dc">
+                <profile name="Intruder Light Troopship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="8a5f-848f-41d1-a5dc">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -580,7 +581,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">2 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -619,15 +620,15 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
               </costs>
               <profiles>
-                <profile name="Harbinger Troopship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b717-70aa-d7fa-7117">
+                <profile name="Harbinger Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="b717-70aa-d7fa-7117">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Walker, 2 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -669,7 +670,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -737,7 +738,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -816,7 +817,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -842,15 +843,15 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Stalker Beetle" typeId="b88a-b68e-168b-9f28" typeName="Vehicle" hidden="false" id="d727-e46c-cb04-05d6">
+                <profile name="Stalker Beetle" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d727-e46c-cb04-05d6">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 8&quot;, Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Claw</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -884,7 +885,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Screamer</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -922,7 +923,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -952,51 +953,11 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <categoryLink name="Standard" hidden="false" id="63e3-bb25-ef7b-06aa" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Corruptor Hiveship" hidden="false" id="f9b7-d72f-fed1-f473">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Corruptor Hiveship" hidden="false" id="69d7-0946-750b-403a" collective="true">
-              <profiles>
-                <profile name="Corruptor Hiveship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="5696-6191-e555-287d">
-                  <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="80"/>
-                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Plasma Hose" hidden="false" id="fb4b-1b34-2dc6-977e" type="selectionEntry" targetId="8f27-272e-556e-4a88"/>
-                <entryLink import="true" name="Razorworms" hidden="false" id="61b3-c6af-1822-4456" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
-                <entryLink import="true" name="Razorworm Pods" hidden="false" id="1f11-242d-5744-5dc2" type="selectionEntry" targetId="f5e0-d22a-cc60-0e74"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cf2-3537-558c-fc7a" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4269-57b2-7957-5db6" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Support" hidden="false" id="9c6f-b136-f8af-fb58" targetId="1742-0b1d-252f-505d" primary="true"/>
-          </categoryLinks>
-        </selectionEntry>
         <selectionEntry type="unit" import="true" name="Reaver Gunship" hidden="false" id="8fca-6c5e-71ec-d34d">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Reaver Gunship" hidden="false" id="f860-397f-8fc0-bb4f" collective="true">
               <profiles>
-                <profile name="Reaver Gunship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="aba4-df79-afb8-e1e1">
+                <profile name="Reaver Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="aba4-df79-afb8-e1e1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -1004,7 +965,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2511,7 +2471,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2561,7 +2521,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Dodge 5+</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2596,7 +2556,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2667,7 +2627,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2751,12 +2711,12 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <profile name="Slayer Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8f81-42e5-514e-352b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A, E+2</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2789,12 +2749,12 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <profile name="Subjugator Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="c916-3c9c-e87e-d4da">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">8&quot;</characteristic>
-                    <characteristic name="Countermeasures" typeId="725f-50fa-0778-01b">A</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Claw</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2834,7 +2794,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Obliterator Mobile Ordnance" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="9655-d723-2eb1-7555">
+                <profile name="Obliterator Mobile Ordnance" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="9655-d723-2eb1-7555">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2842,7 +2802,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2881,7 +2840,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
-                <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b41-5da2-eca5-288b">
+                <profile name="Savager Laser Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="3b41-5da2-eca5-288b">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2889,7 +2848,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2920,7 +2878,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
-                <profile name="Slaughterer Ordnance Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3b4f-badd-f224-ff87">
+                <profile name="Slaughterer Ordnance Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="3b4f-badd-f224-ff87">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2928,7 +2886,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2961,12 +2918,12 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <profile name="Decapitator Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="39c4-66a4-a3b8-74e2">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2999,12 +2956,12 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <profile name="Executioner Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="ad26-064c-e57d-9d5c">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0"/>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3053,7 +3010,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 3+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Resilient, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3105,7 +3062,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3159,7 +3116,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 2+</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Screamer</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3199,7 +3156,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3246,7 +3203,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 8&quot;, Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Claw</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3289,7 +3246,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Claw</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3356,7 +3313,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Annihilator Mobile Ordnance" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b7ff-13c4-4a1d-9dfa">
+                <profile name="Annihilator Mobile Ordnance" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="b7ff-13c4-4a1d-9dfa">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3364,7 +3321,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3424,7 +3380,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3472,7 +3428,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <profiles>
-                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="46fd-f99c-7f7b-cec3">
+                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="46fd-f99c-7f7b-cec3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -3480,7 +3436,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3506,6 +3461,45 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <categoryLink name="Support" hidden="false" id="cff7-1302-6e7f-d383" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Corruptor Hiveship" hidden="false" id="f9b7-d72f-fed1-f473">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Corruptor Hiveship" hidden="false" id="69d7-0946-750b-403a" collective="true">
+              <profiles>
+                <profile name="Corruptor Hiveship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="5696-6191-e555-287d">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Hose" hidden="false" id="fb4b-1b34-2dc6-977e" type="selectionEntry" targetId="8f27-272e-556e-4a88"/>
+                <entryLink import="true" name="Razorworms" hidden="false" id="61b3-c6af-1822-4456" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
+                <entryLink import="true" name="Razorworm Pods" hidden="false" id="1f11-242d-5744-5dc2" type="selectionEntry" targetId="f5e0-d22a-cc60-0e74"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cf2-3537-558c-fc7a" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4269-57b2-7957-5db6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="9c6f-b136-f8af-fb58" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scout" hidden="false" id="5a6b-45c7-f00c-f7ec">
@@ -3522,7 +3516,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 4&quot;, Wide</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3541,6 +3535,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Micro Arc Caster" hidden="false" id="086d-1795-8d73-8cc9" type="selectionEntry" targetId="e171-8ea0-75f8-e57d"/>
+                <entryLink import="true" name="Flying on" hidden="false" id="aba3-8c8c-c09b-6e0e" type="selectionEntry" targetId="9619-353b-b268-cb5d"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="acde-e9ab-2668-44b7" includeChildSelections="false"/>
@@ -3564,7 +3559,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 0&quot;, Wide</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3583,6 +3578,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Twin Shard Cannons, Self-Destruct" hidden="false" id="fe23-261d-f076-e4c8" type="selectionEntry" targetId="fd34-cf0f-6cc2-4422"/>
+                <entryLink import="true" name="Flying on" hidden="false" id="14cf-1f0a-3100-55f8" type="selectionEntry" targetId="9619-353b-b268-cb5d"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b87f-5d56-c58f-40fa" includeChildSelections="false"/>

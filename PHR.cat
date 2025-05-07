@@ -1543,6 +1543,9 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                   <alias>Mercury Scout Drones</alias>
                 </profile>
               </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Flying on" hidden="false" id="fcd6-16af-2880-8ce8" type="selectionEntry" targetId="9619-353b-b268-cb5d"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <modifierGroups>
