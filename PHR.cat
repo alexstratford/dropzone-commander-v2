@@ -1877,7 +1877,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="6"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                 <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
@@ -2206,7 +2206,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <categoryLink name="Heavy" hidden="false" id="9943-5de9-8e4d-a191" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hades Scorpion" hidden="false" id="f300-b4d2-4e8e-b4e9" collective="true">
+            <selectionEntry type="model" import="true" name="Hades Scorpion" hidden="false" id="f300-b4d2-4e8e-b4e9" collective="true">
               <costs>
                 <cost name="pts" typeId="points" value="170"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
