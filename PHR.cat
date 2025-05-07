@@ -822,7 +822,7 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                 <entryLink import="true" name="Heavy Stealth Missile Batteries" hidden="false" id="f3df-8d10-3139-a1c4" type="selectionEntry" targetId="b232-62fa-4464-97e2"/>
               </entryLinks>
               <profiles>
-                <profile name="Njord Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3ada-2719-371d-59a3">
+                <profile name="Njord Heavy Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="3ada-2719-371d-59a3">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -830,7 +830,7 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Walker</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">4 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -863,7 +863,7 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                 <entryLink import="true" name="Stealth Missile Battery" hidden="false" id="874a-75f5-0233-3f60" type="selectionEntry" targetId="ff06-ce47-4afc-3656"/>
               </entryLinks>
               <profiles>
-                <profile name="Poseidon Heavy Dropship" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="e70c-148c-2e14-9723">
+                <profile name="Poseidon Heavy Dropship" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="e70c-148c-2e14-9723">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -871,7 +871,7 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Walker</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Walker</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3267,13 +3267,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Light Railgun Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="53be-bbf8-798b-a92e">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>

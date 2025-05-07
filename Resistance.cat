@@ -3623,6 +3623,13 @@ To select this, go to Configuration and select the background there</description
                         <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="2"/>
                         <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="0" field="adf6-547d-2c51-e81a">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="5e74-7851-f3ac-10e9" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Drill" hidden="false" id="6de3-fb54-fd1a-5bce" collective="true" sortIndex="2">
                       <costs>
@@ -3634,6 +3641,13 @@ To select this, go to Configuration and select the background there</description
                         <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                         <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="0" field="5bb1-3f94-8396-e8d2">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="5e74-7851-f3ac-10e9" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>

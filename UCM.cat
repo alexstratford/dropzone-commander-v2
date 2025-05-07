@@ -3348,7 +3348,6 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b13-ae17-aa18-b41d" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="870f-6bda-e9ba-99ba" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5dc6-0f30-deb0-c9ca" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <profiles>
                 <profile name="Seraphim Bomber" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="929d-ff37-c3b7-e52b">
