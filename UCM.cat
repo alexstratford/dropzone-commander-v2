@@ -2001,7 +2001,7 @@ Add an Archangel Interceptor or Archangel Tactical Bomber In Readiness to this
                 <profile name="Phoenix Command Gunship" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="b517-fb6f-9aa6-a0eb" publicationId="0a0b-b837-fa34-a21d" page="1">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
