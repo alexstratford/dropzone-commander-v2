@@ -2192,7 +2192,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Starsprite Drones" hidden="false" id="8cf7-8d90-45fa-042a">
               <profiles>
-                <profile name="Starsprite Drones" typeId="b88a-b68e-168b-9f28" typeName="Aircraft" hidden="false" id="b5fd-5302-449f-3492">
+                <profile name="Starsprite Drones" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="b5fd-5302-449f-3492">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">30&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
@@ -2211,6 +2211,15 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-min" includeChildSelections="false"/>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="23be-d930-6de6-3a67-max" includeChildSelections="false"/>
               </constraints>
+              <rules>
+                <rule name="Short Ranged Drones" id="f079-eddd-07d0-a8bb" hidden="false">
+                  <description>Squads of Starsprite Drones cannot be bought with points, instead only being used as part of a Ferrum Drone Base, and are worth 0 Kill Points. In addition, Starsprite Drones may not Reaction Fire and their Focus ability can be
+used to combine shots from the whole squad. Starsprite Drones always have the Scout Category regardless of the Category of the vehicle that Launched them.</description>
+                </rule>
+                <rule name="Self-Destruct" id="5827-a071-8c4b-c62a" hidden="false">
+                  <description>Instead of making a shooting action, you may choose to remove this entire squad from the board as casualties.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
