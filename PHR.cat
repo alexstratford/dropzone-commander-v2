@@ -2816,13 +2816,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </profile>
             <profile name="Assault Magnums" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="10c0-633b-1d63-afba">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
