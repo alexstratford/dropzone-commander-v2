@@ -323,13 +323,14 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Napoleon Heavy Tank" hidden="false" id="c7c2-3331-04d0-03a0">
               <costs>
-                <cost name="pts" typeId="points" value="120"/>
+                <cost name="pts" typeId="points" value="285"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Banisher Rotary Cannon" hidden="false" id="f508-356e-b499-fac8" type="selectionEntry" targetId="dc17-9fe8-e1c8-8a1e" sortIndex="2"/>
@@ -452,13 +453,14 @@ Ignore Limited for that attack.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="ba1e-aa3b-4e7c-c8a2">
               <costs>
-                <cost name="pts" typeId="points" value="95"/>
+                <cost name="pts" typeId="points" value="270"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Infiltrating" hidden="false" id="ac36-6927-1f8a-b053" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
@@ -4468,11 +4470,12 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="DP" typeId="5167-c8b3-2814-3457">8</characteristic>
                     <characteristic name="Type" typeId="6153-63f6-5e39-9a03">Tank</characteristic>
                     <characteristic name="Special" typeId="0f17-2aa1-29ec-c7bc">Access, Large, Rare</characteristic>
-                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">18 Drill</characteristic>
+                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">18 Wheel</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
