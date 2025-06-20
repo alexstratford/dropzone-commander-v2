@@ -4827,4 +4827,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
       <comment>UCM Heavy</comment>
     </profileType>
   </profileTypes>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Fauna" id="3ba7-b2ae-e57d-3543" targetId="d1bc-cb9d-6df5-02e1" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

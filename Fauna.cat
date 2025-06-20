@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d1bc-cb9d-6df5-02e1" name="Fauna" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="d1bc-cb9d-6df5-02e1" name="Fauna" gameSystemId="6d58e2c7-f67a-3e19-7acf-5b8a58cf919c" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Apex" hidden="false" id="cfe2-52ef-460a-fd90">
       <selectionEntries>
@@ -28,7 +28,6 @@
           </profiles>
           <infoLinks>
             <infoLink name="Rare" id="c84c-ed69-18ed-4bf5" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
-            <infoLink name="Fauna" id="e3d6-7c39-0d9c-1934" hidden="false" type="rule" targetId="b2d8-7421-b0b4-dbeb"/>
           </infoLinks>
           <rules>
             <rule name="Intelligent" id="caae-abd5-f382-2764" hidden="false">
@@ -57,7 +56,7 @@
                     <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                     <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                     <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Melee</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -95,6 +94,287 @@
       <categoryLinks>
         <categoryLink name="Fauna" hidden="false" id="06d0-9ee9-295d-12f4" targetId="9a72-031e-b487-67c2" primary="true"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="57dd-72bd-bfff-848c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="57dd-72bd-bfff-848c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="57dd-72bd-bfff-848c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="57dd-72bd-bfff-848c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Minotaur Alpha" hidden="false" id="0df2-4014-9163-dd54">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Minotaur Alpha" hidden="false" id="20b0-46ea-9e49-b872">
+          <profiles>
+            <profile name="Minotaur Alpha" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="0887-d6fb-f659-ce4e">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">13</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">6</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Tank</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d90b-bf7f-896a-9c2e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9117-ca2f-fe88-b9f0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rare" id="dc26-0f2e-025b-04dc" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <rules>
+            <rule name="Rage Through Pain" id="0529-212d-17f6-110e" hidden="false">
+              <description>While this unit has 3 or fewer Damage Points remaining, it counts all dice results of 6 when rolling to hit as 2 successful hits instead of 1.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Huge Jaw" hidden="false" id="1ec7-ef21-5d97-2542">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2a1-f11c-2339-4150" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2e9-2e2c-0311-f673" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Huge Jaw" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7b26-53ab-550d-2bf8">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastator-X" id="2c45-48a6-3dcc-902a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Colossal Claws" hidden="false" id="fd2a-ab55-6599-b97a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fde7-f950-096c-4705" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51aa-c08d-34a3-ea78" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Colossal Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f6c9-3b75-e211-f36a">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative, Strafe-3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Strafe-X" id="2c51-da59-2e92-e0f6" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+                <infoLink name="Penetrative" id="545f-77bc-8f30-a5ae" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spines" hidden="false" id="e050-8715-2845-5063">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c4f-a3e8-3552-76eb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c18b-f356-a0b0-bf23" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2dbd-257f-294b-f11f">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="AA-X" id="006b-1190-94e6-ca74" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="105"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="19b6-c581-69ad-5d18" primary="true" name="Fauna"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7de7-a9cf-7d04-d65a" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="7de7-a9cf-7d04-d65a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="7de7-a9cf-7d04-d65a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="7de7-a9cf-7d04-d65a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Minotaur" hidden="false" id="071d-ff11-2c7b-182d">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Minotaur" hidden="false" id="3515-2c81-0eee-d289" defaultAmount="2">
+          <profiles>
+            <profile name="Minotaur Alpha" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="4d07-c830-3f18-f9c6">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">13</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">6</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Tank</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="617e-0274-a313-ef53" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fd3f-07a0-57a1-d1ab" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rare" id="72c7-a2fe-492d-8efa" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Huge Jaw" hidden="false" id="9f8d-88a6-8daf-4e7d" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c685-c89b-a54a-7abc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b86f-2e14-2e81-73c5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Huge Jaw" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b5b1-1308-a625-b6b4">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastator-X" id="1ad7-04af-3738-f4ad" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spines" hidden="false" id="b626-8763-1689-b515" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b15-9cba-482a-73e6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cdf-c96e-8d1d-f449" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="040b-852e-c5c6-b34c">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="AA-X" id="495c-6885-dad8-248e" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="55"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="f749-44d9-3c0a-b088" primary="true" name="Fauna"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f8f7-4797-7a7f-c562" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="f8f7-4797-7a7f-c562">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="f8f7-4797-7a7f-c562">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="f8f7-4797-7a7f-c562">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Apex" hidden="false" id="1f19-e962-1842-4913" targetId="cfe2-52ef-460a-fd90" type="selectionEntry"/>
+    <entryLink import="true" name="Minotaur Alpha" hidden="false" id="4a21-a6ba-874f-f7a2" targetId="0df2-4014-9163-dd54" type="selectionEntry"/>
+    <entryLink import="true" name="Minotaur" hidden="false" id="20bc-cc89-2c00-704f" targetId="071d-ff11-2c7b-182d" type="selectionEntry"/>
+  </entryLinks>
 </catalogue>

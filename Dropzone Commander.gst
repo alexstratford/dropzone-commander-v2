@@ -968,6 +968,26 @@
             </modifier>
           </modifiers>
         </forceEntry>
+        <forceEntry name="Beasts" id="269e-316b-dc6a-63a4" hidden="true">
+          <constraints>
+            <constraint type="max" value="15" field="limit::points" scope="self" shared="false" id="10e5-d3f1-a80d-abd8" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="10e5-d3f1-a80d-abd8">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="10c7-8a84-b1a2-3134" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Fauna" hidden="false" id="8f6f-6008-56ad-89a8" targetId="9a72-031e-b487-67c2"/>
+          </categoryLinks>
+        </forceEntry>
       </forceEntries>
       <modifiers>
         <modifier type="add" value="Insufficient Vehicle Access capacity to deploy entire force turn 1" field="info">
@@ -1009,6 +1029,7 @@
     <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
       <entryLinks>
         <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64"/>
+        <entryLink import="true" name="Configuration Selection" hidden="false" id="e828-3397-9bc1-6190" type="selectionEntryGroup" targetId="75a0-e793-845d-acf4"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
@@ -1694,14 +1715,35 @@ When targeting a Behemoth, measure to any point within its Spread.</description
     <rule name="Large Transport" id="ea19-99eb-b9c6-e3e4" hidden="false">
       <description>When a unit disembarks from this unit, measure from any point on its edge rather than the centre.</description>
     </rule>
-    <rule name="Fauna" id="b2d8-7421-b0b4-dbeb" hidden="false">
-      <description>Fauna included in your army begin the game in readiness, regardless of the normal scenario rules.
-All Fauna activate as part of the same Battlegroup, after all other Battlegroups have activated, ignoring the rules for activating Auxiliary units. They are placed on the board at the end of the first round at any point along the centre line of the board, between both players deployment zones.
-When this unit activates, it must make a move action towards the closes non-garrisoned unit and attack with any and all weapons it is able to. If two or more units are tied for closest, your opponent decides which unit the Fauna will move towards.
-Special rules on command cards have no effect on Fauna unless explicitly mentioned and they may not search or claim objectives.</description>
-    </rule>
     <rule name="Transport Distance" id="244c-816a-8c6b-511e" hidden="false">
       <description>When a unit disembarks from this unit or embarks into this unit, measure from any point on this unit’s edge rather than the centre.</description>
+    </rule>
+    <rule name="Fauna" id="05aa-56b9-670c-a818" hidden="false">
+      <description>Fauna included in your army begin the game in Readiness, regardless of the normal scenario rules.
+
+
+
+
+You can only activate your Beasts Battlegroup after all other non-Auxiliary friendly Battlegroups have activated.
+
+
+
+
+Unless otherwise specified, when Fauna deploy, they are placed on the board at any point along the centre line of the board between
+both player&apos;s deployment zones.
+
+
+
+
+When you activate a Fauna squad, it must make a Moving action towards the closest non-garrisoned unit and attack with any and
+all weapons it is able to (even against different targets). If two or more units are tied for closest, you choose which unit to move
+towards.
+
+
+
+
+Fauna can only make Moving and Shooting actions and can only use the weapons listed on their profile. Fauna cannot claim
+Objectives (including being passed or through destroying a squad).</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -1717,7 +1759,6 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="500" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="atMost" value="999" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -1739,7 +1780,7 @@ Special rules on command cards have no effect on Fauna unless explicitly mention
           <modifiers>
             <modifier type="set" value="0" field="359e-b704-99ef-3452">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="lessThan" value="1000" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="greaterThan" value="1999" field="limit::points" scope="roster" childId="any" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -2341,6 +2382,20 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2393-7942-8db8-8a69" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e9-b92a-9404-247f" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Configuration Selection" id="75a0-e793-845d-acf4" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fauna" hidden="false" id="10c7-8a84-b1a2-3134">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d5-52bb-9b1d-3786" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="0a4c-47ea-3135-9429">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4c-16ab-c448-dedd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>

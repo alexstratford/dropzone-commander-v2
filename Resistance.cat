@@ -5845,4 +5845,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <comment>Resistance Heavy Juggernaut</comment>
     </profileType>
   </profileTypes>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Fauna" id="47eb-f7a5-bef0-c6d8" targetId="d1bc-cb9d-6df5-02e1" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

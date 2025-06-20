@@ -4198,4 +4198,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
       <description>This unit can only use the Moving and Shooting actions, and cannot embark in transports during battle, though may start the game embarked. This unit can only use its listed weapon profiles when making a Shooting action. This unit cannot claim Objectives (including being passed or through destroying a squad).</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Fauna" id="53a5-86df-27c5-77a0" targetId="d1bc-cb9d-6df5-02e1" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

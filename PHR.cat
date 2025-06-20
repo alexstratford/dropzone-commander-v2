@@ -2353,7 +2353,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Stealth Missile Battery" hidden="false" id="8fba-f693-6c26-3c37" type="selectionEntry" targetId="ff06-ce47-4afc-3656"/>
-                <entryLink import="true" name="Super-Heavy Rail Cannons" hidden="false" id="d7e2-ffa2-8e02-4f3c" type="selectionEntry" targetId="b6ed-642d-bc5c-2611"/>
+                <entryLink import="true" name="Super Heavy Rail Cannons" hidden="false" id="d7e2-ffa2-8e02-4f3c" type="selectionEntry" targetId="b6ed-642d-bc5c-2611"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2634,7 +2634,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nemesis Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="84ab-59f5-78c7-a02a">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">- </characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
@@ -4995,7 +4995,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
         <selectionEntry type="upgrade" import="true" name="Guardian Shield" hidden="false" id="1d92-0ca9-2c4e-bdcb" collective="true">
           <rules>
             <rule name="Guardian Shield" id="7e35-270b-5ee5-5d85" hidden="false">
-              <description>This unit has a 3+ Passive Countermeasures save. </description>
+              <description>This unit has a 3+ Passive Countermeasures save.</description>
             </rule>
           </rules>
           <constraints>
@@ -5185,4 +5185,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
       <comment>Porphyrion version</comment>
     </profileType>
   </profileTypes>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Fauna" id="e4d2-e288-47c7-e643" targetId="d1bc-cb9d-6df5-02e1" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

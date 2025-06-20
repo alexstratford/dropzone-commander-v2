@@ -1410,7 +1410,7 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-3</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="replace" value="" field="25ff-0caf-af0d-995f" arg="Alt-1, ">
+                <modifier type="replace" field="25ff-0caf-af0d-995f" arg="Alt-1, ">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3a-b39b-f357-6a46" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -4311,4 +4311,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
       <comment>Tiger</comment>
     </profileType>
   </profileTypes>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Fauna" id="18b0-3320-3e83-5d60" targetId="d1bc-cb9d-6df5-02e1" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
