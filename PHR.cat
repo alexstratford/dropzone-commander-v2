@@ -1951,7 +1951,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Luna Gunship" hidden="false" id="3371-f1c6-c794-65dc">
+        <selectionEntry type="unit" import="true" name="Luna Gunship" hidden="false" id="3371-f1c6-c794-65dc">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="b510-6f48-6e56-890e" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
@@ -1989,6 +1989,50 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mithra Ordnance Walker" hidden="false" id="44fa-4fd3-1399-55a1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Mithra Ordnance Walker" hidden="false" id="bbea-fdee-2804-4fb4" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="120"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef7a-449b-4d70-43ed" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2fad-705b-21a3-5bf5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mithra Ordnance Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="92ea-3f91-e859-6007">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">5&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 6&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="4801-ec3c-3a74-489e" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="RX-20 Exterminator Miniguns" hidden="false" id="035f-2b0a-3817-0203" type="selectionEntry" targetId="629e-cd56-6437-0e41"/>
+                <entryLink import="true" name="Twin RX-1000 Battlefield Laser" hidden="false" id="9541-d2f0-0ed8-6d5c" type="selectionEntry" targetId="d10c-30b6-ea62-005d"/>
+                <entryLink import="true" name="RXs-120 Obliterator Cannons" hidden="false" id="ba36-1e5f-3c96-0af5" type="selectionEntry" targetId="c3a7-f15d-3fcf-e175"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="e104-8459-359a-14b0" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2398,6 +2442,165 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Dahaka Battle Walker" hidden="false" id="91fd-cbb5-c7f4-cd13">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="4a08-1e7d-e0da-2982" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dahaka Battle Walker" hidden="false" id="ffb7-d10a-09de-8c67" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="70"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7628-932f-40ad-12e2" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e940-6daa-0936-38b4" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="RX-20 Exterminator Miniguns" hidden="false" id="6165-4e5b-cbc9-0163" type="selectionEntry" targetId="629e-cd56-6437-0e41"/>
+                <entryLink import="true" name="Electro Gladius" hidden="false" id="b5ed-456b-a96c-843c" type="selectionEntry" targetId="68e5-c22a-c4aa-c088"/>
+                <entryLink import="true" name="RX-80 Styx Autocannon - Airbursting" hidden="false" id="5cf5-67c7-0c94-09be" type="selectionEntry" targetId="d21d-57be-4c31-c2e8"/>
+                <entryLink import="true" name="Foeslayer Missiles" hidden="false" id="740a-03c8-cfe0-9ae4" type="selectionEntry" targetId="7744-be6b-4909-f35e"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="4a64-dafa-f0f6-d745" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Dahaka Battle Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1385-04e8-aff6-ff44">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">5&quot;</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 6&quot;</characteristic>
+                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Agas Battle Walker" hidden="false" id="ce5f-9aed-11b4-7c72">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="68ef-ba1c-edd1-3d74" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Agas Battle Walker" hidden="false" id="4b19-d9ff-5726-9982" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="65"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5112-0c20-c7c7-99d8" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8b95-33cc-ef30-d92d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Agas Battle Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a0c9-3baf-6bf7-5cc5">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">5&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 6&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="7866-c6c6-5e91-2b4a" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="RX-20 Exterminator Miniguns" hidden="false" id="9922-30a5-ab54-3875" type="selectionEntry" targetId="629e-cd56-6437-0e41"/>
+                <entryLink import="true" name="Beastslayer Blade" hidden="false" id="e4c6-ef72-3184-b57e" type="selectionEntry" targetId="abc7-d45a-ad2e-0e9b"/>
+                <entryLink import="true" name="RX-1 Firehammer Railgun" hidden="false" id="df52-034b-2b0a-4f37" type="selectionEntry" targetId="90a5-b1ff-c741-ffa1"/>
+                <entryLink import="true" name="RX-666 Hellblaze Flamethrower" hidden="false" id="e268-de05-c446-ee22" type="selectionEntry" targetId="8a3e-0e1d-0175-fefb"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Rashnu Guardian Walker" hidden="false" id="13d7-c6c4-f6a9-8efb">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="8819-64fc-2f5f-f0d1" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Rashnu Guardian Walker" hidden="false" id="f764-d95a-6698-a28c" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="60"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d742-e5f1-d0d6-04af" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4031-95e2-7c99-2217" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rashnu Guardian Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="cd6f-fed8-4797-5336">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">5&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 6&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="1d92-0ca9-2c4e-bdcb" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Rashnu Guardian Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="true" id="fd61-cfec-a680-4e3e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">5&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P3+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 6&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="1d92-0ca9-2c4e-bdcb" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="d32b-80c1-557d-1064" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="RX-20 Exterminator Miniguns" hidden="false" id="15d8-7508-1e85-fa22" type="selectionEntry" targetId="629e-cd56-6437-0e41"/>
+                <entryLink import="true" name="Rashnu Weapon Selection #1" hidden="false" id="ae78-5660-0e2d-a299" type="selectionEntryGroup" targetId="432b-6135-904f-858d"/>
+                <entryLink import="true" name="Rashnu Weapon Selection #2" hidden="false" id="7048-d917-e23d-4763" type="selectionEntryGroup" targetId="a44a-c052-bc8c-dfc7"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="true" id="a0b7-b24d-1405-2028" flatten="true">
@@ -2406,13 +2609,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Light Railgun Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7c7e-d92e-0be1-c30a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">12&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2431,13 +2634,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nemesis Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="84ab-59f5-78c7-a02a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">- </characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Devastator-2 (Behemoth, Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -2451,13 +2654,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Rail Repeater" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1499-f0a7-2a35-657d">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
               </characteristics>
             </profile>
@@ -2474,13 +2677,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Molecular Agitator" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="eff5-5e99-4d4f-ef47">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle), Focus-2</characteristic>
               </characteristics>
             </profile>
@@ -2507,37 +2710,37 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Assault Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="79bd-7862-bbb6-ab46">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Longreach Rifle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c903-78ba-d672-a77a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Penetrative</characteristic>
               </characteristics>
             </profile>
             <profile name="Close Assault Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="66d3-c512-4b45-c008">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -2556,25 +2759,25 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Longreach Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bd7a-7691-d3db-2bb0">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Penetrative, Reduced-1</characteristic>
               </characteristics>
             </profile>
             <profile name="Sidearms" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="64ca-c2de-adb7-d5fe">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">2</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -2593,13 +2796,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9b69-c83f-6746-7029">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2614,13 +2817,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Super-Heavy Rail Repeater" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1eb6-a68f-3e07-4b1a">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Strafe-3</characteristic>
               </characteristics>
             </profile>
@@ -2638,13 +2841,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0598-5888-a66e-16ae">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -2663,25 +2866,25 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ac47-6973-c2cf-ee69">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="297f-e7d7-ddff-2153">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2695,13 +2898,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Vanquisher Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="65b0-7a86-69b1-e5df">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">2&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Devastator-3 (All)</characteristic>
               </characteristics>
             </profile>
@@ -2711,21 +2914,21 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <infoLink name="Devastator-X" id="f543-da69-53e1-d5f7" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Super-Heavy Rail Cannons" hidden="false" id="b6ed-642d-bc5c-2611" collective="true">
+        <selectionEntry type="upgrade" import="true" name="Super Heavy Rail Cannons" hidden="false" id="b6ed-642d-bc5c-2611" collective="true">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0535-9a54-2fcd-5b9b" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b89f-3aed-85a3-3d70" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Super-Heavy Rail Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="442c-2d1c-be33-3429">
+            <profile name="Super Heavy Rail Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="442c-2d1c-be33-3429">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All), Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -2743,13 +2946,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Rail Repeater Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7775-e7d5-c4a8-46d9">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2 Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -2767,25 +2970,25 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nanomachine Surge" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c045-64c3-3223-f4d2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Reduced-1, Flame</characteristic>
               </characteristics>
             </profile>
             <profile name="Nanomachine Tendrils" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f443-9de8-2fc0-c2da">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -2804,13 +3007,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Autosensing Magnums" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d33e-496a-2ebc-4c11">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">5</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -2840,13 +3043,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d444-0446-e1cb-d833">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2860,26 +3063,26 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Light Railgun (L)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4685-10eb-3384-0707">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>F/S (Left)</comment>
             </profile>
             <profile name="Light Railgun (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="507b-fcc4-b0ea-f5f2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
               <comment>F/S (Right)</comment>
@@ -2895,13 +3098,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="554f-a85f-58ae-3835">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -2920,25 +3123,25 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="85df-3c8a-3a18-4d75">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="44a2-dc48-14d5-1b5d">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -2952,25 +3155,25 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1382-7632-9e53-ee65">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
             <profile name="Nanomachine Swarm" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1614-40f1-97e2-bd95">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -2990,13 +3193,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <profiles>
             <profile name="Shield Beamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ff5d-03b2-b8cd-650c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">-</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">1</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3+</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3021,13 +3224,13 @@ One unit in the squad may choose to not shoot. If the remaining unit is in coher
           <profiles>
             <profile name="Starglaive Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5956-34a3-b836-d00e">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -3051,13 +3254,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Huntsman Cluster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="728e-8d12-d303-42be">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3072,25 +3275,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Submachine Guns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b1f0-a5e3-6072-7091">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Combat Submachine Guns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="afd4-4b83-3c26-cdea">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -3107,13 +3310,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="293d-67b0-aeef-32dc">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">3+</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3132,13 +3335,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="AA Stealth Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="74ab-9f8d-98c0-35f1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0, Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -3152,13 +3355,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2e39-c737-8400-de7c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3169,25 +3372,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Heavy Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d60e-8624-361a-351f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="90e2-5ada-35d1-49ca">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3208,13 +3411,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2196-3f66-73fa-1ddb">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -3232,13 +3435,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="4e79-9938-adf1-4a9d">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -3253,13 +3456,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Huntsman Cluster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f328-1fb8-6d47-64e7">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3295,13 +3498,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Minigun Pair" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="eff9-e952-5b0c-ca1f">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3334,25 +3537,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="R7X-2 Sunglaive (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6b3b-2529-eba1-6508">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
             <profile name="R7X-2 Sunglaive (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3152-01b0-a9f4-7646">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -3417,13 +3620,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Dual RX-30 Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a027-a36e-4b71-aa56">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3437,13 +3640,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Nova Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6496-4cf3-45f9-f1d0">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-3</characteristic>
               </characteristics>
             </profile>
@@ -3461,25 +3664,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Stealth-X Missile Cluster (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="81bb-16e8-6398-97c4">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
             <profile name="Stealth-X Missile Cluster (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6e62-8049-3644-29a2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -3496,25 +3699,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="R7X-5 Rotary Cannon (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="99bf-43c3-22b5-1124">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Left)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Focus-2</characteristic>
               </characteristics>
             </profile>
             <profile name="R7X-5 Rotary Cannon (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d8e1-8c32-1780-1d9c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S (Right)</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Focus-2</characteristic>
               </characteristics>
             </profile>
@@ -3573,13 +3776,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Nova Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="02ab-9262-51dc-85bc">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">13</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Behemoth), Devastator-5 (Scenery), Limited-3</characteristic>
               </characteristics>
             </profile>
@@ -3621,13 +3824,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Railgun Triad" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9236-9d3c-28a8-0253">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Structural</characteristic>
               </characteristics>
             </profile>
@@ -3748,6 +3951,208 @@ Devastator-2 (All) special rules until the end of the round.</description>
             <infoLink name="Tech Killer" id="9e99-c340-fc4f-69f9" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beastslayer Blade" hidden="false" id="abc7-d45a-ad2e-0e9b" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06e7-6cd7-a8d9-93b4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ad1-d74f-1a28-2fb8" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Beastslayer Blade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2aad-17f9-1544-aae0">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="d016-a1f1-b402-151d" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Foeslayer Missiles" hidden="false" id="7744-be6b-4909-f35e" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91c7-0c2b-4735-76d4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdd5-deec-b3f8-f90a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Foeslayer Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a428-f915-3037-572b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="7e22-acb3-75a0-7efd" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Electro Gladius" hidden="false" id="68e5-c22a-c4aa-c088" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b0-daff-7a89-a6a5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d778-f2e4-3fe5-b059" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Electro Gladius" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2ce6-0704-d536-a4a3">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="9855-aebd-288f-0264" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RX-1 Firehammer Railgun" hidden="false" id="90a5-b1ff-c741-ffa1" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a43e-e54c-4dc5-c22c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="328b-edf6-3324-4c37" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="RX-1 Firehammer Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3468-1392-bfd7-1fc9">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RX-20 Exterminator Miniguns" hidden="false" id="629e-cd56-6437-0e41" collective="true">
+          <profiles>
+            <profile name="RX-20 Exterminator Miniguns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b789-dceb-2c88-899a">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f7e-c163-6707-d9f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5172-d68e-bd67-58a7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RX-80 Styx Autocannon - Airbursting" hidden="false" id="d21d-57be-4c31-c2e8" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8afd-466b-4eda-944f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1d1-569a-97d8-d6c0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="2787-3aa3-0eaf-100a" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+            <infoLink name="AA-X" id="39d4-0eb0-5f20-5efe" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+          </infoLinks>
+          <profiles>
+            <profile name="RX-80 Styx Autocannon - Airbursting" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a41e-c202-b948-0ca4">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0, Strafe-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RX-666 Hellblaze Flamethrower" hidden="false" id="8a3e-0e1d-0175-fefb" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c45e-d576-a566-35a3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87ca-f5f3-1288-7273" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="RX-666 Hellblaze Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dfe8-c738-d39f-a7e3">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="7fe6-12e5-4205-d165" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RXs-120 Obliterator Cannons" hidden="false" id="c3a7-f15d-3fcf-e175" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdf3-6111-8558-06ed" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c300-ecaf-322d-b4ff" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="RXs-120 Obliterator Cannons" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6f00-497c-df32-6b1b">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="90c3-f2b3-306a-35af" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin RX-1000 Battlefield Laser" hidden="false" id="d10c-30b6-ea62-005d" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44c1-3c84-de9b-2eda" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8141-11ce-4267-1fe8" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="80a6-50f2-b0fc-c5a2" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Twin RX-1000 Battlefield Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="df4a-917f-4766-f5aa">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Stealth Missile Battery" hidden="false" id="841c-b1be-bdb2-075b" type="selectionEntry" targetId="bb58-4c58-4493-9979">
@@ -3764,13 +4169,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
               <profiles>
                 <profile name="Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="29b6-5de0-4ce9-e6f0">
                   <characteristics>
-                    <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                     <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                    <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                    <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                     <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                    <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                    <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
                   </characteristics>
                 </profile>
@@ -3849,6 +4254,10 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Marcus Barros - Nemesis Control Scorpion " hidden="false" id="89b3-ba5f-9883-33b6" targetId="a335-ee7d-fcd5-dd2d" type="selectionEntry"/>
     <entryLink import="true" name="Oriana Nueva - Proteus Mobile Command Post" hidden="false" id="feb1-8f53-0df4-cdde" targetId="5927-42f9-2ef6-e050" type="selectionEntry"/>
     <entryLink import="true" name="Stheno, Medusa Matriarch - Medusa " hidden="false" id="04ef-50ca-463e-c0ba" targetId="1ee1-3b9e-13a4-1db0" type="selectionEntry"/>
+    <entryLink import="true" name="Mithra Ordnance Walker" hidden="false" id="2d1e-0ac0-7b46-ce4a" targetId="44fa-4fd3-1399-55a1" type="selectionEntry"/>
+    <entryLink import="true" name="Dahaka Battle Walker" hidden="false" id="0410-ad81-b0f9-431f" targetId="91fd-cbb5-c7f4-cd13" type="selectionEntry"/>
+    <entryLink import="true" name="Agas Battle Walker" hidden="false" id="d5eb-361c-3e88-041f" targetId="ce5f-9aed-11b4-7c72" type="selectionEntry"/>
+    <entryLink import="true" name="Rashnu Guardian Walker" hidden="false" id="4888-6208-97db-95ba" targetId="13d7-c6c4-f6a9-8efb" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Menchit Weapon Selection" id="d1c5-ecfd-1738-1e8d" hidden="false" collective="true">
@@ -3865,13 +4274,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0e5f-62b8-2592-d922">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
               </characteristics>
             </profile>
@@ -3887,13 +4296,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Styx Autocannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="6872-5c16-1d94-e500">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-2</characteristic>
               </characteristics>
             </profile>
@@ -3923,13 +4332,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Triple Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="013f-8999-601d-d9fa">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3945,25 +4354,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b843-3420-7f4d-4fb1">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Foeslayer Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="24a3-e0f6-648e-cc13">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle)</characteristic>
               </characteristics>
             </profile>
@@ -4001,13 +4410,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Smoothbore" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b0e8-ff7a-3c9d-2bba">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -4023,13 +4432,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Flamethrower" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="8a57-93ae-4ece-7416">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">8</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
               </characteristics>
             </profile>
@@ -4062,13 +4471,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Dual Railguns" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1cbc-0821-c7ae-6830">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -4081,13 +4490,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Dual Smoothbores" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1f21-028c-5f72-9e12">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">10</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
@@ -4104,13 +4513,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Hyperion Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9066-761f-85cf-a39c">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
               </characteristics>
             </profile>
@@ -4142,13 +4551,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Aether Hive Nanomachines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="95e3-f364-46d6-bce7">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -4166,25 +4575,25 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Galaxy Missile Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7a25-a3fb-21d5-9290">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Penetrative</characteristic>
               </characteristics>
             </profile>
             <profile name="Galaxy Missile Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2cd1-8087-a594-9464">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -4291,13 +4700,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Anti-Materiel Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="48a0-72c1-5d9e-4afc">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">24&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Flame, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -4334,13 +4743,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Dual Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="48d2-a009-4d72-3608">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -4362,13 +4771,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Huntsman Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9e83-c44f-4e1d-0b7b">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">8</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -4388,13 +4797,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Dual Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9a96-7006-bac4-0828">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -4430,13 +4839,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Skyhammer Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="514e-b78c-a99c-d1f2">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">5+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Indirect, Limited-2</characteristic>
               </characteristics>
             </profile>
@@ -4457,13 +4866,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="48d0-4b02-bcff-da11">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -4500,13 +4909,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Aether Hive Nanomachines" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="095d-3664-bcd4-b755">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Focus-2, Indirect, Tech Killer</characteristic>
               </characteristics>
             </profile>
@@ -4536,13 +4945,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Cruise Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0f2e-e77c-e340-2137">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-2</characteristic>
               </characteristics>
             </profile>
@@ -4559,13 +4968,13 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <profiles>
             <profile name="Shooting Star Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ebcb-1e01-64c5-daec">
               <characteristics>
-                <characteristic name="Move &amp; Fire" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="Range (Full)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                <characteristic name="Range (Countered)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
-                <characteristic name="Accuracy" typeId="4.163637572616379e+35">4+</characteristic>
-                <characteristic name="Energy" typeId="456e6572677923232344415441232323">7</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Penetrative</characteristic>
               </characteristics>
             </profile>
@@ -4573,6 +4982,150 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <infoLinks>
             <infoLink name="Cover-X" id="cc23-cf86-2571-1e08" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Penetrative" id="706e-1150-e5a0-7aad" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rashnu Weapon Selection #1" id="432b-6135-904f-858d" hidden="false" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29da-e727-b398-6125" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b3f-768d-ad3c-82e7" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Guardian Shield" hidden="false" id="1d92-0ca9-2c4e-bdcb" collective="true">
+          <rules>
+            <rule name="Guardian Shield" id="7e35-270b-5ee5-5d85" hidden="false">
+              <description>This unit has a 3+ Passive Countermeasures save. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3207-2974-eb74-f376" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="816c-e78e-47ed-de6e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="3207-2974-eb74-f376"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beastslayer Blade" hidden="false" id="acae-132a-f637-4b0f" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec52-636f-0aa1-5006" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Beastslayer Blade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1e22-e33c-d7e0-d8b1">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="94dc-cd18-19fa-626d" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Electro Gladius" hidden="false" id="6b03-dd6c-f655-264f" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="809e-5df3-036a-f91c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Electro Gladius" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2d2d-4557-915e-d895">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="707f-51db-a845-759c" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rashnu Weapon Selection #2" id="a44a-c052-bc8c-dfc7" hidden="false" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63c4-5c9e-c37a-19b4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72eb-a233-4d0c-2e49" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grav-Hammer" hidden="false" id="11e0-e9f7-1464-4d6b" collective="true">
+          <profiles>
+            <profile name="Grav-Hammer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="10c3-76ee-5673-18c9">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (All)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Devastator-X" id="c75d-a640-9814-ba5b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="7821-0842-f67c-ed61"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7821-0842-f67c-ed61" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934b-569a-098f-5a2a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beastslayer Blade" hidden="false" id="9f5a-c2ad-ec6b-6511" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dee4-5ecf-4d51-e4c7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Beastslayer Blade" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1848-ba58-3c3e-07b8">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Strafe-4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Strafe-X" id="23ad-cd3f-7a59-6582" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Electro Gladius" hidden="false" id="1547-3901-9b0a-27f4" collective="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01dd-fb87-175f-cdc6" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Electro Gladius" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="aedd-6061-3720-8fdf">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Destroyer-X" id="27d9-db95-94b9-7c7c" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>

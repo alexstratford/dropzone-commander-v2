@@ -2722,11 +2722,17 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Slayer Heavy Tank Weapon Selection" hidden="false" id="1c44-e4ea-2c18-852a" type="selectionEntryGroup" targetId="58ba-b6c0-4293-a877" collective="true"/>
+                <entryLink import="true" name="Razorworms" hidden="false" id="8a25-cc4b-ea7d-dc54" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="73bf-60be-e17e-0938" includeChildSelections="false"/>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8ec0-83b7-15ec-62ba" includeChildSelections="false"/>
               </constraints>
+              <rules>
+                <rule name="Hive" id="5608-0ae3-b973-d2a4" hidden="false">
+                  <description>This unit comes with a free unit of Razorworms that are automatically embarked as if this were a Transport. Any units of Razorworms embarked in the same squad of Slayers count as a single squad.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
