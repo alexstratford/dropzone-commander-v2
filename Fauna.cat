@@ -24,6 +24,35 @@
                 <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
                 <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare, Fauna</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="15" field="a5ec-d3f7-784a-6d89"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a052-f477-2f0f-de34" shared="true"/>
+                  </conditions>
+                  <comment>Maganum</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="7" field="e707-608e-5069-cf78"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="dd29-b284-a0d9-d7cc" shared="true"/>
+                  </conditions>
+                  <comment>Ferrum</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="E+3" field="d5c2-6e3d-7f80-1e21"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="5e27-df64-c5fd-4352" shared="true"/>
+                  </conditions>
+                  <comment>New Eden</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -32,12 +61,6 @@
           <rules>
             <rule name="Intelligent" id="caae-abd5-f382-2764" hidden="false">
               <description>Apexes have more intelligence than other Fauna, and can be coerced or tricked into predictable actions. When it activates, it moves towards the closest enemy unit instead of the closest unit.</description>
-            </rule>
-            <rule name="Genetic Modification" id="d01e-2763-ccdd-3fb9" hidden="false">
-              <description>The Apex is a highly adaptable creature, and has a variety of biomorphs across a number of worlds. At the start of the game, roll 1d3 and apply the result.
-1. Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7
-2. New Eden Apex: Increase Countermeasures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost Damage Point.
-3. Magnum Apex: Increase Armour to 15 and increase Killing Tools energy to 12.</description>
             </rule>
           </rules>
           <constraints>
@@ -58,12 +81,46 @@
                     <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="Strafe-2" field="25ff-0caf-af0d-995f"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="dd29-b284-a0d9-d7cc" shared="true"/>
+                      </conditions>
+                      <comment>Ferrum</comment>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="12" field="456e6572677923232344415441232323"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a052-f477-2f0f-de34" shared="true"/>
+                      </conditions>
+                      <comment>Maganum</comment>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6930-8b76-7464-c1b9-max" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Strafe-X" id="6d58-e5da-5098-47af" hidden="true" type="rule" targetId="c922-67ea-3ea5-b76d">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="dd29-b284-a0d9-d7cc" shared="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Acid Breath" hidden="false" id="3f13-c449-6ee7-5901">
               <profiles>
@@ -89,6 +146,46 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Genetic Modification" id="1c36-b7eb-a200-1fbd" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ferrum Apex" hidden="false" id="dd29-b284-a0d9-d7cc" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d5-b701-5c5a-c504" includeChildSelections="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Ferrum Apex" id="e3c8-8c4c-eea8-71ce" hidden="false">
+                      <description>Killing Tools gains Strafe-2 and increase Damage Points to 7.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="New Eden Apex" hidden="false" id="5e27-df64-c5fd-4352" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762c-eb7a-17fe-0036" includeChildSelections="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="New Eden Apex" id="1071-86bd-20a1-8be4" hidden="false">
+                      <description>Increase Counter Measures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost Damage Point.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Maganum Apex" hidden="false" id="a052-f477-2f0f-de34" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfaf-6385-82b9-a2fd" includeChildSelections="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Maganum Apex" id="b063-9b99-b139-f458" hidden="false">
+                      <description>Increase Armour to 15 and increase Killing Tools Energy to 12.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd6-c249-94a4-e3d5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edcb-f5b7-257b-ecc4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>

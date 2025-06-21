@@ -168,6 +168,7 @@
     <categoryEntry name="Famous Commander" id="b9fe-b6e1-3716-8d88" hidden="false"/>
     <categoryEntry name="Infantry" id="4416-02b4-a45b-07f0" hidden="false"/>
     <categoryEntry name="Fauna" id="9a72-031e-b487-67c2" hidden="false"/>
+    <categoryEntry name="Operation Artemis" id="d712-291f-4fc7-cd23" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Configuration" id="db3e-91ce-045f-707c" hidden="false" childForcesLabel="Battlegroups">
