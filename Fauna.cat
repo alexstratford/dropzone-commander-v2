@@ -373,7 +373,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mauler" hidden="false" id="485f-f59b-e2d6-de1e">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Mauler" hidden="false" id="12ea-a693-79b1-32f3" defaultAmount="2">
+        <selectionEntry type="model" import="true" name="Mauler" hidden="false" id="12ea-a693-79b1-32f3" defaultAmount="3">
           <profiles>
             <profile name="Mauler" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="63d4-b021-9916-46c4">
               <characteristics>
@@ -666,6 +666,424 @@ Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll tha
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bullhorn" hidden="false" id="0c89-b7cb-65fb-73c3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bullhorn" hidden="false" id="f2a3-04fe-c648-46e9" defaultAmount="1">
+          <profiles>
+            <profile name="Bullhorn" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="9dcd-dd22-6cf7-4954">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">10&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">12</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">10</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Walker</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="743d-89f2-9d11-8faa" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c219-e58a-c116-f4d9" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rare" id="1a23-990b-3f27-ec7e" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Thick Skull" hidden="false" id="c81d-a39d-da99-c75a" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8848-c4f4-2076-0173" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e51-c11c-e182-7553" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Large Jaws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2e90-6fbd-2e9a-8787">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="125"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Doze Through" id="b467-3780-4d4a-6078" hidden="false">
+              <description>This unit may move through Impassable scenery pieces over half the height of the model, provided they can physically be placed where it ends its Moving action. Any Destructible scenery pieces moved through in this way suffer D3 Energy 8 automatic hits.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="8e61-c636-7dd1-46f9" primary="true" name="Fauna"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ab85-1d14-78b7-b1cd" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="ab85-1d14-78b7-b1cd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="ab85-1d14-78b7-b1cd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="ab85-1d14-78b7-b1cd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Feral Razorworms" hidden="false" id="7add-9ea0-9741-be74">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Feral Razorworms" hidden="false" id="baa1-e06c-fe97-2ba1" defaultAmount="1">
+          <profiles>
+            <profile name="Feral Razorworms" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="6b63-396e-0f16-9f43">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">3&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">8</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Infantry 2+</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Dodge-5+, Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5898-5d59-e8a3-de2c" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f82e-5c89-650c-b2e1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Dodge-X" id="011a-6e47-92a7-444b" hidden="false" type="rule" targetId="4fdb-af55-c6cc-3e6c"/>
+            <infoLink name="Rare" id="c6ba-18c0-a20c-782d" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Teeth &amp; Claws" hidden="false" id="8041-997e-ff3d-cd6d" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0efd-2157-9d56-7936" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95d1-bbde-3fab-a0fc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Teeth &amp; Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="28e9-8a68-bf46-e147">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">-</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">CQ</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Reduced-X" id="8fb2-45ac-e24f-e521" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Jaws of Death" hidden="false" id="93d0-8769-af3c-7e36" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d2a-90e4-e5fa-b549" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f80-c912-b5ea-e7e6" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Jaws of Death" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e9f0-a34e-b8bf-479c">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Subterranean Nightmare" id="3ec0-b145-165d-f925" hidden="false">
+              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any enemy units, or in an occupied Garrison (containing either friendly or enemy units).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="8630-f08c-baf0-a818" primary="true" name="Fauna"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5474-c2b4-ed10-fd20" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="5474-c2b4-ed10-fd20">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="5474-c2b4-ed10-fd20">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="5474-c2b4-ed10-fd20">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Feral Vampires" hidden="false" id="3cb5-32cc-7b71-a1c0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Feral Vampires" hidden="false" id="0dd9-1605-11be-3f83">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d139-5a1e-a793-03f6" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2bc9-83bf-68e2-6eb2" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Diving Interference" id="6692-1863-a02c-629c" hidden="false">
+              <description>Once each round, when an Aircraft squad (friendly or enemy) makes a Moving action within 6&quot; of any unit in this squad, this squad must Reaction Fire with Claws &amp; Teeth against that Aircraft squad with all units able to do so,
+using a R(F) and R(C) of 6&quot;. After completing its Reaction Fire, move this squad 4&quot; towards the targeted Aircraft squad (or where it used to be if it is no longer on the table) and this squad cannot make another Reaction Fire this
+round.
+Units in this squad may use Claws &amp; Teeth once during its activation and once to Reaction Fire.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Claws &amp; Teeth" hidden="false" id="b178-f560-0d3d-ba82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb5d-2ee6-c3fb-bc46" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90fc-0d8f-3fcf-3556" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Claws &amp; Teeth" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a9d9-84fc-9b09-ed8a">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2, Penetrative</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="AA-X" id="8bd0-872e-c845-73b6" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+                <infoLink name="Penetrative" id="f3ff-7fce-51eb-db07" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Feral Vampires" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="af1e-a5f9-5a2a-35e7">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">E+2</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">6</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">1</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Aircraft-S</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rare" id="f9fa-908f-1e70-ad58" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="387e-a904-c5fc-32ec" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="387e-a904-c5fc-32ec">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="387e-a904-c5fc-32ec">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="387e-a904-c5fc-32ec">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="50c8-6bb1-1a6c-795f" primary="true" name="Fauna"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Harpies" hidden="false" id="a24d-6649-d001-9a68">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Harpies" hidden="false" id="0a5d-c91a-928b-ea2b">
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c24-c921-4c3b-c0bf" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="273c-aab0-ea6f-f697" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Screeching Swarm" id="e109-8827-4727-3d66" hidden="false">
+              <description>This squad cannot Reaction Fire and their Focus ability can be used to combine shots from its whole squad.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Small Claws" hidden="false" id="2ad6-4f71-09f7-0f60">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78ee-6aa8-c608-aefc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02ae-39b0-634b-5866" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Small Claws" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="788f-7967-56ad-8429">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">2&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0, Focus-2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="AA-X" id="619a-cd17-e67c-eb72" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+                <infoLink name="Focus-X" id="ab30-0981-2221-8d40" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Toxic Vomit" hidden="false" id="9644-e494-6b35-706b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8226-b084-575f-8483" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd59-fbb3-bc56-15dc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Toxic Vomit" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="afd5-3e02-d36a-91af">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Flame" id="02d6-5168-002c-d24d" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Harpies" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="d342-3a58-f983-d61a">
+              <characteristics>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">E+2</characteristic>
+                <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">5</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">1</characteristic>
+                <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Aircraft-S</characteristic>
+                <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Rare</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rare" id="ee94-d787-b731-6210" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db27-8f78-4630-08ae" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="3" field="db27-8f78-4630-08ae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="db27-8f78-4630-08ae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="db27-8f78-4630-08ae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Rare Config</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="9a72-031e-b487-67c2" id="d464-94d6-f9e9-24b4" primary="true" name="Fauna"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Apex" hidden="false" id="1f19-e962-1842-4913" targetId="cfe2-52ef-460a-fd90" type="selectionEntry"/>
@@ -674,5 +1092,9 @@ Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll tha
     <entryLink import="true" name="Mauler" hidden="false" id="1715-1e60-ce3b-9167" targetId="485f-f59b-e2d6-de1e" type="selectionEntry"/>
     <entryLink import="true" name="Sphinx" hidden="false" id="fc59-25ab-eb7c-ffbf" targetId="cfbd-5971-2267-8d70" type="selectionEntry"/>
     <entryLink import="true" name="Daggers" hidden="false" id="660f-3d8f-8557-8a46" targetId="fbcc-ccd5-0bb2-5443" type="selectionEntry"/>
+    <entryLink import="true" name="Bullhorn" hidden="false" id="dde7-6603-9dd8-27e4" targetId="0c89-b7cb-65fb-73c3" type="selectionEntry"/>
+    <entryLink import="true" name="Feral Razorworms" hidden="false" id="2572-76de-456a-a4c4" targetId="7add-9ea0-9741-be74" type="selectionEntry"/>
+    <entryLink import="true" name="Feral Vampires" hidden="false" id="9fb2-b08b-b690-679c" targetId="3cb5-32cc-7b71-a1c0" type="selectionEntry"/>
+    <entryLink import="true" name="Harpies" hidden="false" id="f33c-3960-8973-d5f1" targetId="a24d-6649-d001-9a68" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
