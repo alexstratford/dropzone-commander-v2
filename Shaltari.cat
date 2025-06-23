@@ -2801,13 +2801,14 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Dreamsnare Shieldstrider" hidden="false" id="52eb-62f0-14dd-5218" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="95"/>
+                <cost name="pts" typeId="points" value="85"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Dreamsnare Shieldstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6c5d-c8b4-39c6-55ce">
