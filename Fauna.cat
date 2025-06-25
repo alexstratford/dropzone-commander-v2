@@ -62,6 +62,13 @@
             <rule name="Intelligent" id="caae-abd5-f382-2764" hidden="false">
               <description>Apexes have more intelligence than other Fauna, and can be coerced or tricked into predictable actions. When it activates, it moves towards the closest enemy unit instead of the closest unit.</description>
             </rule>
+            <rule name="Genetic Modification" id="1f8f-823a-9b74-7575" hidden="false">
+              <description>The Apex is a highly adaptable creature and has a variety of biomorphs across a number of worlds. At the start of the game, roll 1D3 and apply the result:
+1: Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7.
+2: New Eden Apex: Increase Counter Measures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost
+Damage Point.
+3: Maganum Apex: Increase Armour to 15 and increase Killing Tools Energy to 12.</description>
+            </rule>
           </rules>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c69-4962-2152-097c-min" includeChildSelections="false"/>
