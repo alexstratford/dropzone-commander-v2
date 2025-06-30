@@ -730,13 +730,11 @@ Damage Point.
           </costs>
           <rules>
             <rule name="Lie In Wait" id="8108-45d9-6c95-9314" hidden="false">
-              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any enemy units.
-
-
-Each activation, Daggers must attack another squad (friendly or enemy) in the same Garrison if they are able to, ignoring friendly Fauna squads.
-
-
-Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll that many D6. For each result of a 3+, the attacking squad suffers a point of damage, resolving it against the most damaged unit first, or the defending player deciding if there is a tie. Damage from Lie In Wait counts towards Fortitude Tests due to Close Quarters weapons.</description>
+              <description>When this unit enters play from In Readiness, place it in a garrison anywhere up to 6&quot; from the centre line of the board between both player&apos;s deployment zones.
+Each activation, Daggers must attack another squad (friendly or enemy) in the same Garrison if they are able to, ignoring friendly Fauna squads. Instead of moving towards the nearest non-garrisoned squad, Daggers must move
+towards the nearest Garrisoned squad if they are able to, ignoring friendly Fauna squads.
+Whenever a unit of Daggers suffers damage from a Close Quarters weapon (after Passive Saves), roll that many D6. For each result of a 3+, the attacking squad is inflicted a point of damage (after Passive Countermeasures), resolving
+it against the most damaged unit first, or the defending player deciding if there is a tie. Damage from Lie In Wait counts towards Fortitude Tests due to Close Quarters weapons.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -826,7 +824,10 @@ Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll tha
           </costs>
           <rules>
             <rule name="Doze Through" id="b467-3780-4d4a-6078" hidden="false">
-              <description>This unit may move through Impassable scenery pieces over half the height of the model, provided they can physically be placed where it ends its Moving action. Any Destructible scenery pieces moved through in this way suffer D3 Energy 8 automatic hits.</description>
+              <description>When this unit moves, it moves its full Move, even if it would move past the unit it moves towards, only stopping at the edge of the table.
+This unit may move through Impassable scenery pieces over half the height of the model, provided they can physically be placed where it ends its Moving action. Any Destructible scenery pieces moved through in this way
+suffer D3 Energy 8 automatic hits.
+If this unit moves over other units, it makes an attack with Thick Skull against each of those units (use the width of the model, about 32mm, to see what units it moves over). After its movement, it may use Thick Skull as normal.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -940,7 +941,8 @@ Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll tha
           </costs>
           <rules>
             <rule name="Subterranean Nightmare" id="3ec0-b145-165d-f925" hidden="false">
-              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any enemy units, or in an occupied Garrison (containing either friendly or enemy units).</description>
+              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any non-garrisoned enemy units, or in an occupied Garrison (containing either friendly or enemy units).
+Instead of moving towards the nearest non-garrisoned squad, Feral Razorworms must move towards the nearest Garrisoned squad if they are able to, ignoring friendly Fauna squads.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -995,8 +997,10 @@ Whenever a unit of Daggers suffers damage from a Close Quarters weapon, roll tha
             <rule name="Diving Interference" id="6692-1863-a02c-629c" hidden="false">
               <description>Once each round, when an Aircraft squad (friendly or enemy) makes a Moving action within 6&quot; of any unit in this squad, this squad must Reaction Fire with Claws &amp; Teeth against that Aircraft squad with all units able to do so,
 using a R(F) and R(C) of 6&quot;. After completing its Reaction Fire, move this squad 4&quot; towards the targeted Aircraft squad (or where it used to be if it is no longer on the table) and this squad cannot make another Reaction Fire this
-round.
-Units in this squad may use Claws &amp; Teeth once during its activation and once to Reaction Fire.</description>
+round. 
+
+
+Each round, units in this squad may use Claws &amp; Teeth once during its activation and once to Reaction Fire.</description>
             </rule>
           </rules>
           <selectionEntries>
@@ -1090,7 +1094,10 @@ Units in this squad may use Claws &amp; Teeth once during its activation and onc
           </constraints>
           <rules>
             <rule name="Screeching Swarm" id="e109-8827-4727-3d66" hidden="false">
-              <description>This squad cannot Reaction Fire and their Focus ability can be used to combine shots from its whole squad.</description>
+              <description>This squad cannot Reaction Fire and their Focus ability must be used to combine shots from its whole squad.</description>
+            </rule>
+            <rule name="Toxic Vomit" id="464d-821a-fba1-2d8d" hidden="false">
+              <description>When this unit makes a Shoot action during its activation, it must use Toxic Vomit against the closest garrisoned unit if able to.</description>
             </rule>
           </rules>
           <selectionEntries>
