@@ -1260,7 +1260,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-5 (All)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="66f2-ca3c-24b5-2894">
+            <profile name="Gatling Cannon Battery (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="66f2-ca3c-24b5-2894">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1272,7 +1272,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
-            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3d21-a492-b431-cf1d">
+            <profile name="Gatling Cannon Battery (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="3d21-a492-b431-cf1d">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1284,7 +1284,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
-            <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="958c-bbb5-02c3-c06c">
+            <profile name="Missile Battery (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="958c-bbb5-02c3-c06c">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1296,7 +1296,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area</characteristic>
               </characteristics>
             </profile>
-            <profile name="Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="78f1-bb68-1909-4898">
+            <profile name="Missile Battery (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="78f1-bb68-1909-4898">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1456,7 +1456,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Scenery), Focus (1)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ea72-941c-a8cd-e0e5">
+            <profile name="Gatling Cannon Battery (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ea72-941c-a8cd-e0e5">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1468,7 +1468,7 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
-            <profile name="Gatling Cannon Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bd73-4745-fc32-3b05">
+            <profile name="Gatling Cannon Battery (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="bd73-4745-fc32-3b05">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
@@ -1480,9 +1480,9 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft, Body), Structural</characteristic>
               </characteristics>
             </profile>
-            <profile name="Heavy Munitions Hailfire" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a491-3411-0423-f4d8">
+            <profile name="Heavy Munitions Hailfire (Left)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a491-3411-0423-f4d8">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
@@ -1492,9 +1492,9 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-3 (Behemoth), Limited (2)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Heavy Munitions Hailfire" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7591-33e6-f1b7-878c">
+            <profile name="Heavy Munitions Hailfire (Right)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7591-33e6-f1b7-878c">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
@@ -2408,8 +2408,8 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Rapier AA Tank" hidden="false" id="e8f8-6ee6-12f5-8330" collective="false">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="unit" shared="true" id="3c57-3578-64de-12bc" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="unit" shared="true" id="f923-e741-4031-89ab" includeChildSelections="false"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="aa16-d84e-47e4-3a72-min" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="aa16-d84e-47e4-3a72-max" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Vindicator" hidden="false" id="bef1-5b83-b080-498e" type="selectionEntry" targetId="c426-45a5-6fb9-71c7" flatten="false" sortIndex="1"/>
@@ -4181,7 +4181,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb41-c507-5e58-3867" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="America Heavy Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="faa6-9c59-35a2-72b8">
+                <profile name="Japan Heavy Battle-Mech" typeId="d3ad-5a11-6f2d-62a0" typeName="Behemoth" hidden="false" id="faa6-9c59-35a2-72b8">
                   <characteristics>
                     <characteristic name="Move" typeId="fb57-0d3e-9738-5de3">8&quot;</characteristic>
                     <characteristic name="Countermeasures" typeId="ff6e-fe09-97fb-a7c9">A</characteristic>
