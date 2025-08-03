@@ -435,7 +435,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank, 2 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3769,7 +3769,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <entryLink import="true" name="Scourge Heavy Behemoth" hidden="false" id="35c0-bf02-f5b3-38dd" type="selectionEntry" targetId="a139-c55f-b5f9-552f" sortIndex="1"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="480"/>
+                <cost name="pts" typeId="points" value="500"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>

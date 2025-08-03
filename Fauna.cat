@@ -586,7 +586,7 @@ Damage Point.
           <profiles>
             <profile name="Sphinx" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="d4ed-94db-8db9-99f8">
               <characteristics>
-                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
                 <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
                 <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">14</characteristic>
                 <characteristic name="DP" typeId="e707-608e-5069-cf78">2</characteristic>
@@ -679,7 +679,7 @@ Damage Point.
                 <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">3&quot;</characteristic>
                 <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
                 <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">8</characteristic>
-                <characteristic name="DP" typeId="e707-608e-5069-cf78">5</characteristic>
+                <characteristic name="DP" typeId="e707-608e-5069-cf78">3</characteristic>
                 <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Infantry 4+</characteristic>
                 <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Dodge-4+, Rare</characteristic>
               </characteristics>
