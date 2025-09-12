@@ -511,7 +511,7 @@ Until the end of this Unit’s activation, its Plasma Bombard increases its R(F
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Tank, 2 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
