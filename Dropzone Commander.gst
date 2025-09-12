@@ -1075,7 +1075,34 @@
     <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
       <entryLinks>
         <entryLink import="true" name="Game Size" hidden="false" id="f047-8554-71ea-10f4" type="selectionEntryGroup" targetId="1e1a-b867-1538-7a64"/>
-        <entryLink import="true" name="Configuration Selection" hidden="false" id="e828-3397-9bc1-6190" type="selectionEntryGroup" targetId="75a0-e793-845d-acf4"/>
+        <entryLink import="true" name="Configuration Selection" hidden="false" id="e828-3397-9bc1-6190" type="selectionEntryGroup" targetId="75a0-e793-845d-acf4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Playing September 2025 Experimental Rules" hidden="false" id="164c-fae8-0ea2-0104">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbcc-8dea-8ebe-b429" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Experimental Rules" id="1812-bbd4-2530-b606" hidden="false">
+                  <description>These experimental rules shift the balance of power in close combat. With the ability to retaliate in close quarters, as well as multiple different close quarters combats being able to happen in quick succession, this shakeup should see combat within garrisons get a lot more deadly for everyone involved.
+
+
+When using these rules, there will be units that have rules for making shooting actions within garrisons that may not work as intended with these experimental rules. Whenever you use these rules and have a unit that affects shooting with close quarters weapons in a garrison, treat that rule as if it was affected by these changes, replacing Shooting with Close Quarters weapons with making a Close Quarters attack (or an equivalent wording that would allow the rule to work).
+
+
+Additionally, using these Experimental Rules reduces the points cost of the following units by 5 points:
+• UCM Legionnaires
+• Scourge Warriors
+• PHR Immortals
+• Shaltari Braves
+• Resistance Fighters (Including Salakhan&apos;s Fighters)
+
+
+The full experimental rules can be found in the &quot;FAQ and Errata&quot; document on the TTCombat Dropzone Commander resources page. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="4b1f-78ba-b6cc-2dc2" targetId="8a9e-8399-ae64-5be9" primary="true"/>
@@ -1298,7 +1325,7 @@
               </costs>
               <rules>
                 <rule name="Retro Thrusters" id="4384-d054-967b-f0af" hidden="false">
-                  <description>When deploying this squad, you may declare that it will deploy via Retro Thrusters. It is placed in Reserve. An Infantry unit may use one action during their activation to call in this squad from In Readiness. Place 1 unit from this squad within 6” of one of the Infantry units. Then place any other units from the squad within coherency. All of these units must be placed on Passable terrain, and cannot be placed within 3” of enemy units. The squad is free to activate during their Battlegroup’s activation, but any Shooting attacks made by them suffer a +2 penalty to their Accuracy.</description>
+                  <description>When you deploy this Squad, you may have it deploy via Retro Thrusters. If you do, this Squad is placed In Reserve, is ignored for the purposes of Aerial Advantage, and gains the Call-In special rule. In a round this Squad enters the table via Call-In, it suffers a +2 penalty to its Accuracy.</description>
                 </rule>
               </rules>
               <selectionEntryGroups>
@@ -1499,7 +1526,9 @@ Infantry units hit by an Area weapon instead suffer D6 hits, and Destructible 
 
 When targeting Infantry against an edge of a Garrison, do not place the template. Instead, all units on that edge are hit (for D6 hits as above). An infantry unit on the edge of a Garrison that is touched by the template but not the target of the Shooting action is not hit.
 
-Area weapons with multiple Shots or squads with multiple area weapons place all of the blast markers at the same time, although can place them on different units in the same squad. Resolve hits and damage for each blast marker simultaneously. Area weapons with the AA special rule may target Aircraft as normal, but only other Aircraft can be hit by the Blast template.</description>
+Area weapons with multiple Shots or squads with multiple area weapons place all of the blast markers at the same time, although can place them on different units in the same squad. Resolve hits and damage for each blast marker simultaneously. Area weapons with the AA special rule may target Aircraft as normal, but only other Aircraft can be hit by the Blast template.
+
+Area templates from weapons without the AA-X special rule can only affect Aircraft while they are landed.</description>
     </rule>
     <rule name="Cover-X" id="96af-8bf9-11b1-3754" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
       <description>Cover weapons can have up to four keywords denoted: Soft, Body, Hull and All. Weapons with Soft ignore Soft Cover, weapons with Body ignore Body Cover, weapons with Hull ignore Hull Down, and weapons with All ignore all cover!</description>
@@ -1620,17 +1649,15 @@ Any squads that start the game in Holding must be declared as such. Those squad
     <rule name="Fast" id="5ca6-fb78-323a-0702" hidden="false">
       <description>This unit has two stats on its MV value - a minimum and a maximum. Unlike other units, a Fast unit has to make a Moving action each activation, and must move at least its minimum MV, up to its maximum MV, in a straight line.
 
-
 Fast units may only turn on their axis a maximum of 90 degrees after completing their move, and cannot land.
-
 
 Due to the speed of these units, it’s common for them to travel away from the battlefield. Unlike other units, a Fast unit can move off the board as part of their move. If they do so, they’re put In Readiness, coming on from the usual point of the table edge for your army in subsequent rounds.
 
-
 A Fast unit can elect to fly high as part of its Moving action. When flying high, it ignores all Impassable scenery, but cannot make Shooting actions in the same round. If a unit otherwise couldn’t complete its move (due to Impassable scenery over 8” being in the way), it must fly high.
 
+Unless explicitly mentioned in the scenario special rules, units with this special rule always begin the game In Reserve, and are ignored for determining Victory Points at any time, but still concede Kill Points.
 
-Unless explicitly mentioned in the scenario special rules, units with this special rule always begin the game In Reserve, and are ignored for determining Victory Points at any time, but still concede Kill Points.</description>
+When you activate a non-Auxiliary Battlegroup, only a single squad (regardless of Category) with this rule may be chosen to activate alongside it. After activating all of your Battlegroups, any remaining un-activated units with this rule may activate as if they were a single Auxiliary Battlegroup.</description>
     </rule>
     <rule name="Infiltrate X" id="6dbe-5af2-2a9b-abb1" hidden="false">
       <description>Infiltrate units are denoted with a number value. This unit may be Directly Deployed even when the scenario would not normally allow it to do so, ignoring the Aerial Advantage rule. It may deploy up to the listed number of inches from a friendly table edge. Infantry with this special rule may deploy directly into a Garrison if within range. The rest of this unit’s Battlegroup deploys normally, and this unit can make actions even if the rest of its Battlegroup are In Readiness or In Reserve.
@@ -1669,11 +1696,12 @@ A unit deploying using this rule cannot deploy in a Transport, but a Transport 
     <rule name="Rapid Insertion-X" id="ed15-ec95-1603-67f8" hidden="false">
       <description>This unit may disembark from Aerial Transports that haven’t landed. Some units with this rule will have a number listed after. That is the number of inches further than normal an Aerial Transport they’re embarked in can move and still disembark this unit (up to its maximum MV value). 
 
-
 They may also disembark straight into a Garrison from any direction (including the roof if the Aerial Transport is on top of it!), regardless of whether it has an entrance point. 
 
+Additionally, if this unit enters a Garrison via this rule, it ignores Defender&apos;s Advantage, however it must re-roll all successful damage rolls.
 
-Additionally, if this unit enters a Garrison via this rule, it ignores Defender&apos;s Advantage, however it must re-roll all successful damage rolls.kr</description>
+IF PLAYING WITH SIMULTANEOUS CQB RULES: 
+When a squad uses this rule to enter a garrison and make a Close Quarters action in the same activation, defending squads retaliating against its Close Quarters action only do so after this squad has completed its attacks and damage against the defending squad has been inflicted. If a defending unit is removed from play, it does not get to retaliate.</description>
       <alias>Rapid Insertion</alias>
       <alias>Rapid Insertion 0&quot;</alias>
       <alias>Rapid Insertion 1&quot;</alias>
@@ -1790,6 +1818,23 @@ towards.
 
 Fauna can only make Moving and Shooting actions and can only use the weapons listed on their profile. Fauna cannot claim
 Objectives (including being passed or through destroying a squad).</description>
+    </rule>
+    <rule name="Call-In" id="3b72-688a-eaf5-f75e" hidden="false">
+      <description>While this Squad is In Readiness, you may choose to have it be called in instead of deploying it normally. 
+
+If you do, this Squad requires a Signal action to enter the table. Infantry units entering via Call-In cannot make Signal actions in the same round.</description>
+    </rule>
+    <rule name="Airburst" id="eb0c-0156-1432-9b74" hidden="false">
+      <description>This weapon may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not. Simply target the edge of a Garrison as if they were on that edge.</description>
+    </rule>
+    <rule name="Grav" id="a894-2c20-86df-75ef" hidden="false">
+      <description>When rolling to damage with this weapon, add together the target units Armour value and starting Damage Points (including all Zones) and consult the table below to determine the energy of the shot and any additional special rules it has.
+
+
+Total 0-10 = Energy 5, no special rules
+Total 11-14 = Energy 8, no special rules
+Total 15-17 = Energy 10, Devastator-2 (Large)
+Total 18+ = Energy 11, Devastator-2 (Vehicle, Behemoth), Devastator-3 (Scenery)</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -2183,6 +2228,25 @@ Objectives (including being passed or through destroying a squad).</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6e4b-14f2-dc26-7c25" shared="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Cavebreaker</comment>
+                  <modifiers>
+                    <modifier type="set" value="12&quot;" field="5.261646975732324e+31">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b41e-f861-b2dc-0f15" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="9&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ed40-a544-8c64-7a12" shared="true"/>
+                  </conditions>
+                  <comment>Jesse</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -2243,6 +2307,14 @@ Objectives (including being passed or through destroying a squad).</description>
                   </modifiers>
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1e9e-5eab-ee7f-0e12" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="22&quot;" field="5.261646975732324e+31"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="96aa-91d3-753c-0e7b" shared="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">

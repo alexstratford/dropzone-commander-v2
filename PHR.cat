@@ -47,6 +47,13 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Proteus Mobile Command Post" hidden="false" id="db0e-a250-0d0f-e369">
           <categoryLinks>
@@ -148,7 +155,7 @@
                   <description>Valkyrie Assault Troops, Mercury Scout Drones, Janus Scout Walkers, and Hermes Disruption Walkers may not be included in an army with Marcus Barros.</description>
                 </rule>
                 <rule name="Benefit" id="aabb-69ad-0d16-c818" hidden="false">
-                  <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades, Persephone, Bellona) can enter play via Drop Harness. Type-4 Walkers deploying this way follow the same rules as Behemoths using Drop Harness with a spread of 2” and a single Zone. Type-4 Walkers arriving this way may activate in the same round as if they had not arrived by Drop Harness. This benefit persists even if Marcus Barros has been destroyed.</description>
+                  <description>If Marcus Barros is included in your army, all Type-4 Walkers (Nemesis, Hades,Persephone, Bellona) gain the Call-In special rule.</description>
                 </rule>
                 <rule name="Command Card - Prototype Signal Unit" id="5378-1f61-78a4-471e" hidden="false">
                   <description>Marcus Barros Only. Influence range.
@@ -165,6 +172,13 @@ One friendly Infantry squad immediately makes an out of sequence Signal action.
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c047-f771-423a-c95c" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Oriana Nueva - Proteus Mobile Command Post" hidden="false" id="5927-42f9-2ef6-e050">
           <categoryLinks>
@@ -238,13 +252,14 @@ One enemy Scout Squad cannot be used as the origin of Influence Command Cards 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="4477-2995-1e70-267b" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="220"/>
+                <cost name="pts" typeId="points" value="230"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f80-7421-a5aa-e0d6" includeChildSelections="false"/>
@@ -274,7 +289,9 @@ One enemy Scout Squad cannot be used as the origin of Influence Command Cards 
                   <description>This unit may move over scenery pieces up to 8” inches high.</description>
                 </rule>
                 <rule name="Benefit" id="7e86-322c-d667-ec89" hidden="false">
-                  <description>Infantry outside of a garrison in base contact with scenery pieces larger than 2” in diameter gain Soft and Body cover</description>
+                  <description>Infantry outside of a garrison gain the following:
+- They may perform up to two Move actions if both actions start outside of a garrison.
+- They gain +2 Armour when in base contact with scenery pieces larger than 2” in diameter.</description>
                 </rule>
                 <rule name="Detriment" id="34ba-047e-0817-42a8" hidden="false">
                   <description>Your vehicles gain no benefit from Exceptional scenery.</description>
@@ -296,7 +313,17 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67cc-f639-5c4a-dbce" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Machine Eater and Man Eater" hidden="false" id="217a-a7bb-aef6-80f6" type="selectionEntry" targetId="1634-2de0-b6f1-30da"/>
+                <entryLink import="true" name="Machine Eater and Man Eater" hidden="false" id="217a-a7bb-aef6-80f6" type="selectionEntry" targetId="1634-2de0-b6f1-30da">
+                  <infoLinks>
+                    <infoLink name="Devastator-X" id="5e94-647c-5876-89af" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+                    <infoLink name="Reduced-X" id="d197-38e5-3c33-d9ad" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
+                  </infoLinks>
+                  <rules>
+                    <rule name="Man Eater" id="5a13-0790-8fa0-461e" hidden="false">
+                      <description>Man Eater: This weapon reduces its Shots value by 1 for every 2 Damage Points lost, instead of every 1 Damage Point.</description>
+                    </rule>
+                  </rules>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -563,6 +590,103 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Helios Lightspear" hidden="true" id="de82-89ba-60be-ac66">
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="b100-9eda-0e78-8109" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Helios Support Jetskimmer" hidden="false" id="9823-12ae-d383-e139" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4827-3fc7-7d12-1507" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="216a-6814-30d5-027f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Helios Support Jetskimmer" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="4f37-95b6-9914-c07b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Helios Weapon Selection" hidden="false" id="3d35-5423-51c7-d929" type="selectionEntryGroup" targetId="c797-474d-0034-4cea"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="33db-1fea-b287-cd48" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Apollo Swiftspear" hidden="false" id="cf14-ff4c-d664-3296">
+          <categoryLinks>
+            <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="7260-3d6d-5959-855a" primary="true" name="Standard"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Apollo Strike Walker" hidden="false" id="be99-eecb-d00c-5d36" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="40"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Apollo/Erebos Weapon Selection" hidden="false" id="521f-b409-2387-3edd" type="selectionEntryGroup" targetId="fd29-33cc-90de-b658"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Thrusters" id="d1df-6e5c-1b60-dd29" hidden="false" type="rule" targetId="eef8-268a-2085-6293"/>
+                <infoLink name="Rapid Insertion-X" id="c9f5-724b-d805-105d" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8">
+                  <modifiers>
+                    <modifier type="set" value="Rapid Insertion 8&quot;" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <profiles>
+                <profile name="Apollo Strike Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7672-212f-ad3c-2960">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4927-4679-8c50-0092" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c7a-4a79-c2be-1899" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="ae6b-2bc8-9a8e-55f1" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="acb6-deed-f996-3a54">
@@ -602,6 +726,13 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
               <entryLinks>
                 <entryLink import="true" name="Assault Rifles, Longreach Rifle, Close Assault Rifles" hidden="false" id="be74-1e1f-22d3-6135" type="selectionEntry" targetId="8344-30ea-313c-e5f0"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1236,6 +1367,13 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Tethys" hidden="false" id="c94f-afa5-a8cf-085e">
           <categoryLinks>
@@ -1308,6 +1446,13 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
               <description>This unit may use one of its actions to launch White Nanomachines. Replenish 3 Damage Points from 1 Zone. If that would take that Zone above its Damage Threshold, it undoes the Crippled result, ignoring the usual rules.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Alcyoneus Grand Walker" hidden="false" id="50ab-112e-dbf3-5910">
           <categoryLinks>
@@ -1370,6 +1515,13 @@ That Squad is not destroyed and remains in play with 1 Unit remaining with full
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Porphyrion Grand Walker" hidden="false" id="3c4b-996e-4b59-6c14">
           <categoryLinks>
@@ -1438,6 +1590,13 @@ If a Porphyrion Grand Walker is destroyed, remove squads of Venus Light Drones 
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1875,7 +2034,7 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="949b-e842-aa17-ddf2" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="160"/>
+                <cost name="pts" typeId="points" value="165"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -1912,6 +2071,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="2002-e344-830e-b968" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Aurora Jetskimmer" hidden="false" id="8e00-555b-824a-639e">
           <categoryLinks>
@@ -2199,6 +2365,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Zeus Guardian Walker" hidden="false" id="ec1e-766f-81e1-288a">
           <categoryLinks>
@@ -2255,10 +2428,11 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Hades Scorpion" hidden="false" id="f300-b4d2-4e8e-b4e9" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="170"/>
+                <cost name="pts" typeId="points" value="180"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="6"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
                 <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
@@ -2319,6 +2493,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c80e-2595-32ae-87a9" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Tiamat Ordnance Ship" hidden="false" id="fd25-2d5b-f8fd-58f9">
           <categoryLinks>
@@ -2401,6 +2582,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lokheira Bulk Walker" hidden="false" id="df06-0110-db19-887a">
           <categoryLinks>
@@ -2441,6 +2629,13 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6b8-68fd-0b6c-cb7c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Dahaka Battle Walker" hidden="false" id="91fd-cbb5-c7f4-cd13">
           <categoryLinks>
@@ -2600,6 +2795,73 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Jocasta Caine - Hera Command Walker" hidden="false" id="1b55-0346-6a34-ba15" collective="false">
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="9e7c-8a3f-fe7c-ccd7" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hera Command Walker" hidden="false" id="9b54-357a-51df-620e" collective="true" flatten="false">
+              <costs>
+                <cost name="pts" typeId="points" value="175"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="1"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bc7-cefe-cb36-6108" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7d1-bb52-bdcf-1165" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hera Command Walker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="8be8-61e6-0b77-4fef">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre, Rapid Insertion 8&quot;</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Walker</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rapid Insertion-X" id="de29-52ed-483e-3d43" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+                <infoLink name="Thrusters" id="bfae-7faf-b7e9-52ac" hidden="false" type="rule" targetId="eef8-268a-2085-6293"/>
+                <infoLink name="Command Centre" id="eed6-9b4d-26d6-5483" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                <infoLink name="Commander (CV 4)" id="775d-cee6-d58e-e5fd" hidden="false" type="profile" targetId="901c-9dca-dcd2-3cfb"/>
+              </infoLinks>
+              <rules>
+                <rule name="Retinue" id="b3e8-e693-c260-b8e4" hidden="false">
+                  <description>While this unit is within 3” of an Apollo Strike Walker or Apollo Lightspear squad, it counts as being part of that squad when being allocated shots (for purposes of Shooting at Commanders).</description>
+                </rule>
+                <rule name="Benefit" id="f0fa-fa18-5bd5-4612" hidden="false">
+                  <description>You may take up to two squads of “Helios Lightspear”, squads of Helios Support Jetskimmers with the Standard Category. You may take up to two squads of “Apollo Swiftspear”, squads of Apollo Strike Walkers with the Standard Category (paying points for these as normal).</description>
+                </rule>
+                <rule name="Detriment" id="2482-937c-39d3-4354" hidden="false">
+                  <description>Nemesis, Hades, Bellona, and Persephone Scorpions may not be included in an army with Jocasta Caine. Odin Heavy Walkers, Lokheira Bulk Walkers, and Behemoths may not be included in an army with Jocasta Caine.</description>
+                </rule>
+                <rule name="Command Card - Hit and Run" id="54db-37ea-a384-f9a1" hidden="false">
+                  <description>Jocasta Caine only. Influence range.
+
+When you activate a friendly Battlegroup
+containing Jocasta Caine.
+
+Choose one squad of Apollo Strike Walkers / Apollo Lightspears within 6” of Jocasta Caine. If Jocasta Caine and that squad make a Moving action before making a Shooting action this activation, they may make an additional Moving action after that Shooting action.</description>
+                </rule>
+              </rules>
+              <entryLinks>
+                <entryLink import="true" name="Light Railgun Pair" hidden="false" id="028f-d9d9-3d8e-61fb" type="selectionEntry" targetId="6091-3e09-003b-46a8" collective="true"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afd-2763-1008-e743" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2787,6 +3049,11 @@ Move distance when exiting a Garrison, although cannot embark into a Transport i
             <infoLink name="Penetrative" id="24b1-e14a-f371-e236" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
             <infoLink name="Reduced-X" id="2e62-6a33-4a43-7711" hidden="false" type="rule" targetId="a7e1-7b0f-c257-7510"/>
           </infoLinks>
+          <rules>
+            <rule name="Longreach Rifles" id="2fc3-edfc-dfe7-17f8" hidden="false">
+              <description>When allocating shots with this weapon, you may allocate each shot to a separate unit.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Minigun" hidden="false" id="0d74-3948-5288-519a" collective="true">
           <constraints>
@@ -3315,8 +3582,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">2</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3+</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
               </characteristics>
             </profile>
@@ -3941,8 +4208,8 @@ Devastator-2 (All) special rules until the end of the round.</description>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Infantry), Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4200,7 +4467,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
     </rule>
     <rule name="White Nanomachines" id="24c0-9d89-d770-bfcb" hidden="false">
       <comment>Medusa version</comment>
-      <description>Once per activation pick one friendly damaged non-Behemoth Vehicle within 9”. That Vehicle replenishes one Damage point. Units with the Large Special Rule instead replenish two Damage points.</description>
+      <description>Once per activation, pick one friendly damaged non-Behemoth Unit within 9”. That Unit replenishes one Damage point.</description>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -4258,6 +4525,9 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Dahaka Battle Walker" hidden="false" id="0410-ad81-b0f9-431f" targetId="91fd-cbb5-c7f4-cd13" type="selectionEntry"/>
     <entryLink import="true" name="Agas Battle Walker" hidden="false" id="d5eb-361c-3e88-041f" targetId="ce5f-9aed-11b4-7c72" type="selectionEntry"/>
     <entryLink import="true" name="Rashnu Guardian Walker" hidden="false" id="4888-6208-97db-95ba" targetId="13d7-c6c4-f6a9-8efb" type="selectionEntry"/>
+    <entryLink import="true" name="Jocasta Caine - Hera Command Walker" hidden="false" id="b6b8-68fd-0b6c-cb7c" targetId="1b55-0346-6a34-ba15" type="selectionEntry"/>
+    <entryLink import="true" name="Helios Lightspears" hidden="false" id="ebf2-5f38-5193-1723" targetId="de82-89ba-60be-ac66" type="selectionEntry"/>
+    <entryLink import="true" name="Apollo Swiftspear" hidden="false" id="7851-f854-acd9-9b18" targetId="cf14-ff4c-d664-3296" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Menchit Weapon Selection" id="d1c5-ecfd-1738-1e8d" hidden="false" collective="true">
@@ -4707,14 +4977,14 @@ Devastator-2 (All) special rules until the end of the round.</description>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Flame, Tech Killer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst, Cover (Soft), Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Cover-X" id="895e-d2c1-71bb-fb94" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
-            <infoLink name="Flame" id="c2b7-334b-5362-6c81" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Tech Killer" id="da03-5ef6-82e9-5e51" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
+            <infoLink name="Airburst" id="d4c0-e8bf-49bd-0fb9" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>

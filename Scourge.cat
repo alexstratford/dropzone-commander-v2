@@ -40,6 +40,13 @@
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="7790-82d5-cda4-8d7b" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="caa2-cb05-69dd-e2b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Oppressor Command Arthropod" hidden="false" id="442f-08dd-d233-04d3">
           <selectionEntries>
@@ -50,8 +57,9 @@
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Vampire_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="4"/>
+                <cost name="Crab_Req" typeId="adf6-547d-2c51-e81a" value="3"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Oppressor Command Arthropod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="10f3-3117-3f13-1121">
@@ -62,7 +70,7 @@
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">9</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large, Resilient</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">4 Light</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 claw</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -339,6 +347,74 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           </categoryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e5b-8be3-7bd2-0f71" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="The Cavebreaker - Annihilator Mobile Ordnance" hidden="false" id="b41e-f861-b2dc-0f15">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Annihilator Mobile Ordnance" hidden="false" id="16ee-31a2-bbf6-f6b1" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="265"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Annihilator Mobile Ordnance" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="ca83-4368-d055-ad02">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">6</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Large</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Large" id="0a13-e875-1500-eca9" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4f6-759f-b81a-37da" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="500d-8dd6-0e41-3888" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Bombard" hidden="false" id="58ea-08df-559e-4336" type="selectionEntry" targetId="674b-b716-1aa2-7862"/>
+              </entryLinks>
+              <rules>
+                <rule name="Flight Mode" id="a50c-9e63-b317-4fe7" hidden="false">
+                  <description>When making a Moving action this unit may move 18”, ignoring scenery pieces up to 8” high. Enemy AA weapons may choose to Reaction Fire against an Annihilator when it does this, counting it as an Aircraft with Armour 10. In addition, this unit counts as an aircraft for Aerial Advantage deployment purposes.</description>
+                </rule>
+                <rule name="Benefit" id="243e-4a43-b5e0-a54b" hidden="false">
+                  <description>You may take up to two squads of “Cavebreaker’s Demolishers”, squads of Demolishers with the Standard Category. You may take a single squad of “Cavebreaker’s Slayers”, a squad of Slayer Heavy Tanks with the Standard Category (paying points for both as normal).</description>
+                </rule>
+                <rule name="Detriment" id="fd1d-ccbf-5e57-29ee" hidden="false">
+                  <description>Desolators, Hunters, and Reapers may not be included in an army with The Cavebreaker.</description>
+                </rule>
+                <rule name="Command Card - Fist of Doom" id="968c-ff4a-46ca-0a6f" hidden="false">
+                  <description>The Cavebreaker only. Influence Range. 
+
+
+When you activate this Battlegroup.
+
+
+Until the end of this Unit’s activation, its Plasma Bombard increases its R(F) and R(C) by 6” and its Devastator rule becomes Devastator-3 (All).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="38d2-7d92-23e6-7ebd" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Command" hidden="false" id="49c9-5d41-3253-a494" targetId="ed7f-0593-2e55-430d" primary="true"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Commander (CV 4)" hidden="false" id="eb2d-1752-bf68-e9a2" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="610f-271c-5391-b944" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -628,7 +704,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Walker, 2 Vampire</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">3 Claw, 2 Vampire</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -678,13 +754,36 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <infoLink name="Fast" id="aa80-c2aa-4dae-a11e" hidden="false" type="rule" targetId="5ca6-fb78-323a-0702"/>
                 <infoLink name="Rare" id="b648-5765-0954-31f2" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Corsair Interceptor Weapon Selection" hidden="false" id="696d-fd1e-5366-71f0" type="selectionEntryGroup" targetId="6502-b75c-ad8f-a6e5"/>
-              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e7-540c-9093-8050" includeChildSelections="false"/>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a778-de4f-dd21-3b24" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a778-de4f-dd21-3b24" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="50e6-5c4f-74c2-aace" collective="true" defaultAmount="1">
+                  <profiles>
+                    <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="236f-5786-1105-6bf9">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-0, Devastator-2 (Scenery, Infantry)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastator-X" id="16cc-43a4-c01b-d76a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+                    <infoLink name="AA-X" id="12dd-4814-6fc8-be04" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7e6-16b8-52ac-c59f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7e6-16b8-52ac-c59f-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <modifierGroups>
@@ -788,6 +887,101 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <categoryLink name="Auxiliary" hidden="false" id="59a3-2a59-56fb-feee" targetId="de27-8358-5d78-6eeb" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Brigand Interceptor" hidden="false" id="a645-4866-8821-26f1">
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="3825-4805-9931-2ae7" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Brigand Interceptor" hidden="false" id="a224-478c-58aa-187c">
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
+              </costs>
+              <profiles>
+                <profile name="Brigand Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3e63-a56c-f665-ea83">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fast" id="0820-bd11-e77e-5993" hidden="false" type="rule" targetId="5ca6-fb78-323a-0702"/>
+                <infoLink name="Rare" id="10f4-4c9a-65f4-2f01" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c1-d000-5ca2-ca8d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="33ea-2a93-08c4-afa0" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Arc Caster" hidden="false" id="9ba9-e5a9-df80-f3c0" collective="true" defaultAmount="1">
+                  <profiles>
+                    <profile name="Arc Caster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5dc9-18dc-b8ab-2db1">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">9&quot;</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">6+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="AA-X" id="d29a-1658-3059-211a" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7907-fbf4-e4bd-ab2d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7907-fbf4-e4bd-ab2d-max" includeChildSelections="false"/>
+                  </constraints>
+                  <rules>
+                    <rule name="Arc Caster" id="179b-f149-a944-aff9" hidden="false">
+                      <description>If targeting an Aircraft this weapon hits on a 2+. If targeting a Scenery Piece this weapon hits on a 6+.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="0c1e-12eb-6f5b-5e0a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="0c1e-12eb-6f5b-5e0a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="0c1e-12eb-6f5b-5e0a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0c1e-12eb-6f5b-5e0a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="d3b9-6431-8d13-9d71">
@@ -829,6 +1023,13 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <categoryLinks>
             <categoryLink name="Standard" hidden="false" id="5b81-d459-a5f2-a830" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="caa2-cb05-69dd-e2b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Stalker Beetle" hidden="false" id="df73-3aaa-95fd-99b7">
           <selectionEntries>
@@ -991,6 +1192,132 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <categoryLink name="Support" hidden="false" id="8569-715f-110f-9c2a" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Cavebreaker&apos;s Demolishers" hidden="true" id="c7be-cc1c-c4f5-4e5f">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Cavebreaker&apos;s Demolishers" hidden="false" id="92ab-4fdc-ba58-5756">
+              <profiles>
+                <profile name="Cavebreaker&apos;s Demolishers" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="86ca-b7fb-411c-cfa8">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">P4+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">9</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 4+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Tough" id="a70f-0701-fdf3-2228" hidden="false" type="rule" targetId="48e3-db2d-d554-e0dc"/>
+                <infoLink name="Resilient" id="24e7-c942-06f4-52a0" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+                <infoLink name="Rare" id="539e-04ad-c734-d7ee" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0458-bfaf-a5ec-d339" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="10e0-6709-42f8-6278" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="45"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Plasma Charger, Shard Cannon" hidden="false" id="c2ec-6b61-0a21-9efa" type="selectionEntry" targetId="f6f3-9a52-9b3a-adfc"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="06e6-5b8f-b534-597b" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Rare" id="8450-064c-1c5a-15fd" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8c93-aa15-28bc-63f9" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="f4b0-0042-c0e8-ae12" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="3" field="8c93-aa15-28bc-63f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="8c93-aa15-28bc-63f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="8c93-aa15-28bc-63f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Rare Config</comment>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b41e-f861-b2dc-0f15" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="5df3-26fb-4b8d-2352">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="b230-c01e-e66f-779b" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="65"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Cavebreaker&apos;s Slayers" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1fb6-ec0a-86ed-b570">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">3</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">3 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Slayer Heavy Tank Weapon Selection" hidden="false" id="ca5e-b456-52b5-52fb" type="selectionEntryGroup" targetId="58ba-b6c0-4293-a877" collective="true"/>
+                <entryLink import="true" name="Razorworms" hidden="false" id="634b-cf8e-af32-9f6c" type="selectionEntry" targetId="50ee-13d2-7059-c2fa"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1257-b94b-fbc9-1f43" includeChildSelections="false"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="76d7-53e2-b0bb-4e66" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Hive" id="3c76-cad8-586b-57fb" hidden="false">
+                  <description>This unit comes with a free unit of Razorworms that are automatically embarked as if this were a Transport. Any units of Razorworms embarked in the same squad of Slayers count as a single squad.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="90f9-5b96-21e0-bd6a" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9dce-aee1-0c8d-c644" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Weapons" hidden="false" id="8795-24cb-12be-bec3">
@@ -1031,18 +1358,19 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">*</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">9</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Tech Killer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Devastator-4 (Infantry), Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
             <rule name="Ion Storm" id="2e9c-cfdf-8730-df09" hidden="false">
-              <description>This weapon hits every non-Aircraft unit within range (friendly and enemy). Each unit gets hit by the weapon profile once, but Infantry not in a Garrison instead get hit D6 times each (roll once for all units). Infantry in a Garrison cannot be hit. This weapon has Accuracy 6+ on any units over 6” away</description>
+              <description>“Instead of firing normally, when firing this weapon, it allocates a single shot to each non-Aircraft unit outside of a garrison in range (ignoring line of sight). This weapon has an Accuracy of 6+ when rolling to hit against units over 6” away.</description>
             </rule>
           </rules>
           <infoLinks>
             <infoLink name="Tech Killer" id="30ef-889a-8d40-c4ab" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
             <infoLink name="Alt-X" id="584e-9489-8b20-d175" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Devastator-X" id="b0c8-509c-3510-cc1d" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a03-bc0c-f642-100d" includeChildSelections="false"/>
@@ -2443,6 +2771,32 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="674b-b716-1aa2-7862" collective="true">
+          <infoLinks>
+            <infoLink name="Indirect" id="0885-bd4c-fcef-8134" hidden="false" type="rule" targetId="1b28-deec-5ed9-9e34"/>
+            <infoLink name="Devastator-X" id="d9cd-3dad-16da-47f5" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Area" id="df9e-9bc8-5c80-a9ed" hidden="false" type="rule" targetId="2c4f-a243-5354-a407"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Plasma Bombard" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="9cdd-44c8-7da3-e2fe">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">30&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">30&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">12</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Area, Devastator-2 (Vehicle, Scenery), Indirect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84c1-ceb9-7d4e-e3cb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cba-f000-27da-6b9c" includeChildSelections="false"/>
+          </constraints>
+          <comment>Cavebreaker version, improved M&amp;F</comment>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Troops" hidden="false" id="7fd9-7097-df15-336c">
@@ -2482,6 +2836,13 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
               <entryLinks>
                 <entryLink import="true" name="Plasma Rifles, Assault Pistols" hidden="false" id="d48b-54af-ce44-5a28" type="selectionEntry" targetId="1eb4-139b-7aa2-a907"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -3187,6 +3548,13 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="af4f-01e8-e07f-a20b" targetId="1742-0b1d-252f-505d" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="caa2-cb05-69dd-e2b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Ravager AA Beetle" hidden="false" id="8da5-5552-5807-3702">
           <selectionEntries>
@@ -3235,13 +3603,14 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Eradicator Chameleopod" hidden="false" id="4603-47d0-1ba5-6029" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="110"/>
+                <cost name="pts" typeId="points" value="130"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="3"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Eradicator Chameleopod" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2639-4049-c80e-7216">
@@ -3521,14 +3890,14 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">8</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft-S</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Rapid Insertion 4&quot;, Wide</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 6&quot;, Wide</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Light</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Rapid Insertion-X" id="f2cc-5c75-6a3d-88ca" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
                 <infoLink name="Wide" id="2cd2-b3ed-29d9-cf78" hidden="false" type="rule" targetId="3ab1-40ff-10e9-2f89"/>
+                <infoLink name="Infiltrate X" id="1614-ce57-a633-5edf" hidden="false" type="rule" targetId="6dbe-5af2-2a9b-abb1"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
@@ -3769,7 +4138,7 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
                 <entryLink import="true" name="Scourge Heavy Behemoth" hidden="false" id="35c0-bf02-f5b3-38dd" type="selectionEntry" targetId="a139-c55f-b5f9-552f" sortIndex="1"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="480"/>
+                <cost name="pts" typeId="points" value="500"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -3888,6 +4257,10 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
     <entryLink import="true" name="Punisher Terror-Mech" hidden="false" id="adb2-fb49-02f3-a5a2" targetId="fa9e-966f-9ec2-a813" type="selectionEntry"/>
     <entryLink import="true" name="Dictator" hidden="false" id="db74-252a-4555-4496" targetId="8c1c-de80-9d57-cbe9" type="selectionEntry"/>
     <entryLink import="true" name="Tyrant" hidden="false" id="9764-0870-50fe-5bb1" targetId="3bff-7793-84e9-590c" type="selectionEntry"/>
+    <entryLink import="true" name="Brigand Interceptor" hidden="false" id="5e04-ca8c-815a-5bb3" targetId="a645-4866-8821-26f1" type="selectionEntry"/>
+    <entryLink import="true" name="The Cavebreaker - Annihilator Mobile Ordnance" hidden="false" id="caa2-cb05-69dd-e2b8" targetId="b41e-f861-b2dc-0f15" type="selectionEntry"/>
+    <entryLink import="true" name="Cavebreaker&apos;s Demolishers" hidden="false" id="a0e9-c8db-7351-df5b" targetId="c7be-cc1c-c4f5-4e5f" type="selectionEntry"/>
+    <entryLink import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="7f54-c06b-323d-be5f" targetId="5df3-26fb-4b8d-2352" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
@@ -4057,13 +4430,14 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <infoLink name="AA-X" id="b1c0-ce77-acfa-8af3" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="40"/>
+            <cost name="pts" typeId="points" value="20"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4103,25 +4477,6 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="50e6-5c4f-74c2-aace" collective="true" defaultAmount="1">
-          <profiles>
-            <profile name="Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="236f-5786-1105-6bf9">
-              <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
-                <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="5370656369616c23232344415441232323">AA-0, Devastator-2 (Scenery, Infantry)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Devastator-X" id="16cc-43a4-c01b-d76a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -4192,7 +4547,9 @@ When you select a Battlegroup to activate. Generate D3 Scan Tokens and place th
   </sharedProfiles>
   <sharedRules>
     <rule name="Infestation" id="315e-1212-95ac-8e55" hidden="false">
-      <description>If this squad does not start embarked in a transport at the start of the game you may have it Infest. An Infesting squad is placed In Reserve, even if its Battlegroup is not, and is ignored for the purposes of Aerial Advantage. When you activate an Infesting squad from In Readiness, it enters the table up to 6” from a friendly garrisoned squad that did not Infest (measuring from the edges of the garrison they are occupying), at least 4” away from any non-garrisoned enemy squads. It then continues its activation as normal.</description>
+      <description>If this squad does not start embarked in a transport at the start of the game you may have it Infest. An Infesting squad is placed In Reserve, even if its Battlegroup is not, and is ignored for the purposes of Aerial Advantage. 
+
+When you activate an Infesting squad from In Readiness, it enters the table up to 6” from a friendly garrisoned squad that did not Infest (measuring from the edges of the garrison they are occupying), outside of a garrison occupied by an enemy squad, and at least 4” away from any non-garrisoned enemy squads. It then continues its activation as normal.</description>
     </rule>
     <rule name="Living Weapon" id="adf9-64bd-b786-15d2" hidden="false">
       <description>This unit can only use the Moving and Shooting actions, and cannot embark in transports during battle, though may start the game embarked. This unit can only use its listed weapon profiles when making a Shooting action. This unit cannot claim Objectives (including being passed or through destroying a squad).</description>

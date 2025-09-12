@@ -51,6 +51,9 @@
     <entryLink import="true" name="Juggernaut Class Explorator" hidden="false" id="ad0d-6bac-7bfc-6107" targetId="c8ae-17e4-f2ec-eb6f" type="selectionEntry"/>
     <entryLink import="true" name="Avernus Mining Engine" hidden="false" id="e4e7-17ad-f1f3-bb88" targetId="78af-dd1b-c1a3-eee5" type="selectionEntry"/>
     <entryLink import="true" name="Cerberus Mining Engine" hidden="false" id="b965-6520-91c0-28d6" targetId="4229-0673-3955-ab62" type="selectionEntry"/>
+    <entryLink import="true" name="Salakhan&apos;s Fighters" hidden="false" id="ab68-7de3-1121-8ae2" targetId="e47e-7700-0e7c-bb42" type="selectionEntry"/>
+    <entryLink import="true" name="Lifthawk Skulltaker" hidden="false" id="29e0-329f-4c64-5804" targetId="a15f-2e87-6849-8b84" type="selectionEntry"/>
+    <entryLink import="true" name="Jesse Adams - 201 Breaching Drill" hidden="false" id="824c-72b2-86e1-4537" targetId="ed40-a544-8c64-7a12" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -253,13 +256,14 @@
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="b130-3657-968d-a46b">
               <costs>
-                <cost name="pts" typeId="points" value="95"/>
+                <cost name="pts" typeId="points" value="110"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="6"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Commander" hidden="false" id="fe13-89ab-3eec-497d" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c" sortIndex="2"/>
@@ -355,7 +359,7 @@
               </profiles>
               <rules>
                 <rule name="Benefit" id="7722-a500-6232-7a53" hidden="false">
-                  <description>All friendly infantry gain: “Kalium Volunteers: Iron disciplined soldiers who choose to continue serving long after their conscription is up. This squad automatically passes Fortitude tests and gains the Resilient special rule.”</description>
+                  <description>You may take up to two squads of Salakhan’s Fighters, squads of Resistance Fighters that automatically pass Fortitude tests and gain the Resilient special rule, but cost an additional +5 pts per unit.</description>
                 </rule>
                 <rule name="Detriment" id="ab92-87d4-76bd-5a06" hidden="false">
                   <description>Resistance Veterans may only pick the Kalium Volunteers special rule. Hydra Relay Hovercraft and units with the Hovercraft special rule may not be included in an army with Salakhan.</description>
@@ -365,7 +369,7 @@
 
 When you select a Battlegroup to activate.
 
-Remove a single Squad in this Battlegroup from the table and place them In Readiness. That Squad may move onto the table from ANY table edge next turn.</description>
+Remove a single Squad in this Battlegroup from the table and place them In Readiness. That squad must move onto the table from ANY table edge next turn and must make a Shoot action if able. That squad cannot be placed into readiness or reserve next turn for any reason (including scenarios). This Command Card cannot be used on squads carrying an objective.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -453,7 +457,7 @@ Ignore Limited for that attack.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Pizzaro Hazard Walker" hidden="false" id="ba1e-aa3b-4e7c-c8a2">
               <costs>
-                <cost name="pts" typeId="points" value="270"/>
+                <cost name="pts" typeId="points" value="275"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -498,7 +502,7 @@ Ignore Limited for that attack.</description>
                   <description>Standard units without countermeasures gain E+1 countermeasures.</description>
                 </rule>
                 <rule name="Detriment" id="73d4-1da5-3e12-c8b3" hidden="false">
-                  <description>Units with the Heavy category may not be included in an army with Rakkon Krell.</description>
+                  <description>Strikehawk Tilt-Rotors, Lifthawk Dropships, Lifthawk Troopships, Swifthawk Tilt-Jets gain the Rare special rule.</description>
                 </rule>
                 <rule name="Command Card - Punji Pits" id="1bb4-e209-0753-6596" hidden="false">
                   <description>Rakkon Krell only. Influence range.
@@ -512,6 +516,77 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e2-e1bf-6dfa-750d" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Jesse Adams - 201 Breaching Drill" hidden="false" id="ed40-a544-8c64-7a12">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="da2d-8cc4-4076-fb13" targetId="ed7f-0593-2e55-430d" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="4b4a-a203-59ef-9492" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Jesse Adams - 201 Breaching Drill" hidden="false" id="d0ea-804d-ac69-3253">
+              <costs>
+                <cost name="pts" typeId="points" value="245"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-18"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba3e-1ea8-2edd-b047" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fbb-261f-2cd1-5472" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Jesse Adams - 201 Breaching Drill" typeId="f999-cdc5-d912-46a0" typeName="Vehicle" hidden="false" id="3780-230b-14a9-2006">
+                  <characteristics>
+                    <characteristic name="Move" typeId="bf89-fcc7-f093-faca">0&quot;</characteristic>
+                    <characteristic name="CM" typeId="a100-1ed0-8001-534e">A</characteristic>
+                    <characteristic name="A" typeId="966a-02f8-8ce0-0806">15</characteristic>
+                    <characteristic name="DP" typeId="5167-c8b3-2814-3457">8</characteristic>
+                    <characteristic name="Type" typeId="6153-63f6-5e39-9a03">Tank</characteristic>
+                    <characteristic name="Special" typeId="0f17-2aa1-29ec-c7bc">Access, Call-In, Large</characteristic>
+                    <characteristic name="Transport Capacity" typeId="ab5c-4a91-95a8-9e3a">18 Wheel</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Access" id="ab1e-9d64-7946-e993" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
+                <infoLink name="Call-In" id="b901-fe78-1019-c7c2" hidden="false" type="rule" targetId="3b72-688a-eaf5-f75e"/>
+                <infoLink name="Large" id="4fb6-dc4c-7286-c353" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Commander (CV 4)" hidden="false" id="2629-24c9-6ecc-383a" type="selectionEntry" targetId="193c-b0e6-c33e-673f"/>
+              </entryLinks>
+              <rules>
+                <rule name="Subterranean Command" id="e8de-5147-c79c-401c" hidden="false">
+                  <description>This unit always begins the game In Readiness but is ignored for the purposes of Aerial Advantage. When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain up to 24” from your deployment zone. This distance increases by 6” at the end of each round. Units embarking into this transport pass any Objective they are carrying to the transport.</description>
+                </rule>
+                <rule name="Large Transport" id="0f65-3736-01d1-5562" hidden="false">
+                  <description>When a unit disembarks from this unit or embarks into this unit, measure from any point on this unit’s edge rather than the centre.</description>
+                </rule>
+                <rule name="Benefit" id="7d1b-b13f-6b7f-64d3" hidden="false">
+                  <description>At the start of the roundup phase, choose one squad of Technicals (of any type) within 9” of a Drill unit that are under their starting squad size, that squad gains D3 Technicals of the same type in coherency, up to that squad’s starting squad size.</description>
+                </rule>
+                <rule name="Detriment" id="6421-5f68-e07c-8ab2" hidden="false">
+                  <description>Lifthawk Dropships gain the Rare special rule. Leviathan and Thunderstorm Heavy Hovercrafts may not be included in an army with Jessie Adams.</description>
+                </rule>
+                <rule name="Command Card - Master Trap" id="5c04-5045-db26-1721" hidden="false">
+                  <description>Jesse Adams only. Influence Range. 
+
+
+When you deploy Jesse Adams.
+
+
+Target a destructible scenery piece within 6” of this unit. Roll a dice for each of that scenery pieces starting damage points. For each result of a 3+, that scenery piece gains a collateral damage token. Additionally, for each result of a 5+, that scenery piece is inflicted 1 point of damage.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="342d-904c-1edd-647c" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1102,7 +1177,7 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">10</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-2</characteristic>
               </characteristics>
             </profile>
@@ -1144,6 +1219,9 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
             <rule name="Chem Grenades" id="4718-c2d5-a1c5-ccd1" hidden="false">
               <description>When you hit a Garrison with this weapon, it deals no damage to that Garrison. Instead, place a Chem token on that Garrison. When rolling for Collateral Damage, remove all Chem tokens from that Garrison. For each removed Chem token, increase the E of any Collateral Damage dealt to occupying Infantry by 1 to a maximum of E7.</description>
             </rule>
+            <rule name="Grenade Arcs" id="dff5-7f05-aaff-685e" hidden="false">
+              <description>This unit’s weapons cannot gain the AA rule due to their Reduced special rule.</description>
+            </rule>
           </rules>
           <profiles>
             <profile name="Chem Grenades" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="d8e7-3378-a899-b397">
@@ -1167,7 +1245,7 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Flame, Reduced-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Flame, Reduced-2</characteristic>
               </characteristics>
             </profile>
             <profile name="Assault Grenade Launchers" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f21e-30bb-ca15-2d63">
@@ -1326,14 +1404,14 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
             </profile>
             <profile name="Goliath Bomb" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="243f-407e-8c0f-3e52">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">6&quot;</characteristic>
-                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">3&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">3&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">5+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Limited 1, Devastator-2 (Behemoth, Vehicle), Devastator-8 (Scenery)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Area, Limited-1, Devastator-2 (Behemoth, Vehicle), Devastator-6 (Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1392,7 +1470,7 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">2</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1669,7 +1747,7 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
           <profiles>
             <profile name="Cobra Missile" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7955-ebb5-625b-66aa">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">24&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323"/>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
@@ -1693,7 +1771,7 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
           <profiles>
             <profile name="800mm Naval Defence Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a2e6-563d-4ad9-8ed8">
               <characteristics>
-                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">1&quot;</characteristic>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">4&quot;</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">∞</characteristic>
@@ -2094,13 +2172,14 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Circe Attack Hovercraft" hidden="false" id="d327-e344-d820-2933" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="70"/>
+                <cost name="pts" typeId="points" value="80"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <infoLinks>
                 <infoLink name="Hovercraft" id="e938-fd97-3c73-31ea" hidden="false" type="rule" targetId="6b32-5330-83eb-8625"/>
@@ -2415,6 +2494,13 @@ Place a blast template over one unit in the targeted squad and roll a dice. On 
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2749,6 +2835,71 @@ To select this, go to Configuration and select the background there</description
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c31-f017-4af3-3d0e-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c31-f017-4af3-3d0e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Salakhan&apos;s Fighters" hidden="true" id="e47e-7700-0e7c-bb42">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Salakhan&apos;s Fighters" hidden="false" id="3b2d-847d-6d53-a732">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="992a-e33a-c5e1-358c" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0a43-ffde-29e8-707b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Salakhan&apos;s Fighters" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="431c-7896-ba76-b9ef">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">2&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">-</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">7</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">5</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Infantry 5+</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Assault Rifles, Homemade RPGs, Knives and Pistols" hidden="false" id="94cc-7004-a51d-dc75" type="selectionEntry" targetId="3522-a1f0-a0f1-a736"/>
+              </entryLinks>
+              <rules>
+                <rule name="Salakhan&apos;s Fighters" id="9947-6bfe-03ce-538c" hidden="false">
+                  <description>This squad automatically pass Fortitude tests.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Resilient" id="8b48-e02e-23e0-cd8e" hidden="false" type="rule" targetId="bee8-5b68-340e-b6bb"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="8091-2358-2811-462e" targetId="43a9-1ec6-f0bc-8f37" primary="true"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1769-b6c2-b52a-2f99" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6ef1-4f90-e6c9-19c0" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -3119,7 +3270,7 @@ To select this, go to Configuration and select the background there</description
             <selectionEntry type="model" import="true" name="K9 Technical" hidden="false" id="d726-09ab-0f8d-ac96" collective="true">
               <rules>
                 <rule name="K9 Kennel" id="0d95-81eb-c076-ba16" hidden="false">
-                  <description>During this squad’s activation, each unit may send a K9 Attack Unit into a Garrison within 6”. Roll 1 dice for each unit sending a K9 Attack Unit. Rolls of 1 have is no effect. For every roll of a 2+, place 1 unit of K9 Attack Unit in that Garrison. All K9 Attack Unit units sent into a Garrison at the same time from the same squad count as being a single squad. That squad is the same Battlegroup as the launching squad and may activate in the same round they are spawned, although do not have to re-roll Damage if Shooting a unit in that Garrison this round.</description>
+                  <description>During this squad’s activation, each unit may send a K9 Attack Unit into a Garrison within 6”. Roll 1 dice for each unit sending a K9 Attack Unit. Rolls of 1 have is no effect. For every roll of a 2+, place 1 unit of K9 Attack Unit in that Garrison. All K9 Attack Unit units sent into a Garrison at the same time from the same squad count as being a single squad. That squad is the same Battlegroup as the launching squad and may activate in the same round they are spawned, although do not have to re-roll Damage if Shooting a unit in that Garrison this round (as if they entered by disembarking via the Rapid Insertion special rule).</description>
                 </rule>
               </rules>
               <costs>
@@ -3407,6 +3558,11 @@ To select this, go to Configuration and select the background there</description
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1bea-7b0a-95aa-8155" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ed40-a544-8c64-7a12" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4380,6 +4536,11 @@ To select this, go to Configuration and select the background there</description
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ea6-9b98-53fb-e5b3" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ed40-a544-8c64-7a12" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="109 Splitting Drill" hidden="false" id="269d-ddd7-ef99-ee21">
@@ -4389,6 +4550,7 @@ To select this, go to Configuration and select the background there</description
                 <infoLink name="Subterranean" id="6157-2f73-497f-f2e8" hidden="false" type="rule" targetId="d7bc-105e-0069-f96d"/>
                 <infoLink name="Access" id="2027-bfb9-4e8f-8c8e" hidden="false" type="rule" targetId="0c03-83da-1be7-bdec"/>
                 <infoLink name="Rare" id="c29b-de7e-c023-2bf7" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Call-In" id="5898-9603-230e-8605" hidden="false" type="rule" targetId="3b72-688a-eaf5-f75e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2266-26c7-1201-a006-min" includeChildSelections="false"/>
@@ -4408,13 +4570,14 @@ To select this, go to Configuration and select the background there</description
                 </profile>
               </profiles>
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="-6"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="30"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4456,6 +4619,7 @@ To select this, go to Configuration and select the background there</description
                 <infoLink name="Rare" id="fe7c-ea99-fb59-8b98" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
                 <infoLink name="Large" id="e44b-4210-cdd3-a68d" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
                 <infoLink name="Transport Distance" id="43c6-46e0-892c-1958" hidden="false" type="rule" targetId="244c-816a-8c6b-511e"/>
+                <infoLink name="Call-In" id="69e0-2d7c-6a6b-72b4" hidden="false" type="rule" targetId="3b72-688a-eaf5-f75e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5105-0846-8814-8623-min" includeChildSelections="false"/>
@@ -4482,7 +4646,7 @@ To select this, go to Configuration and select the background there</description
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="-18"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="90"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="75"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4726,13 +4890,14 @@ To select this, go to Configuration and select the background there</description
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Hellhog Jumpjet" hidden="false" id="7f94-4309-1f8b-2d21">
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="140"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="115"/>
               </costs>
               <infoLinks>
                 <infoLink name="Rare" id="cf73-9458-9e9b-55e7" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
@@ -4746,7 +4911,7 @@ To select this, go to Configuration and select the background there</description
                 <profile name="Hellhog Jumpjet" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="e388-ee4e-4a91-07e0">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+3</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
@@ -4756,7 +4921,7 @@ To select this, go to Configuration and select the background there</description
               </profiles>
               <rules>
                 <rule name="Tilt-Jets" id="ad9f-1552-959f-1f91" hidden="false">
-                  <description>If this unit moves at least 18”, it gains Evasion+3 until the beginning of its next activation</description>
+                  <description>At the start of this unit’s activation, you may have it use its Tilt-Jets. If you do, until the start of this unit’s next activation its Move becomes 3&quot;-6” and it loses its Evasion countermeasures.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -4795,6 +4960,82 @@ To select this, go to Configuration and select the background there</description
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be0f-455c-9211-93c2" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Lifthawk Skulltaker" hidden="false" id="a15f-2e87-6849-8b84">
+          <categoryLinks>
+            <categoryLink name="Auxiliary" hidden="false" id="4f43-ca23-4083-8f1d" targetId="de27-8358-5d78-6eeb" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Lifthawk Skulltaker" hidden="false" id="5279-656d-39a1-6a0b" collective="true">
+              <entryLinks>
+                <entryLink import="true" name="Skulltaker Heavy Machine Gun" hidden="false" id="9215-f9bf-0552-406b" type="selectionEntry" targetId="40f8-4dad-3fbe-770c" sortIndex="3"/>
+                <entryLink import="true" name="Double Missile Pod" hidden="false" id="b521-acfd-3bab-3d06" type="selectionEntry" targetId="1e93-2dcc-6a74-1ae3" sortIndex="2"/>
+                <entryLink import="true" name="Flamethrower" hidden="false" id="e212-8e67-5ad8-6f47" type="selectionEntry" targetId="2209-56bb-7aed-8ebc" sortIndex="4">
+                  <costs>
+                    <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Commander" hidden="false" id="47c1-7210-0857-4391" type="selectionEntryGroup" targetId="35d6-3921-58bd-457c"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-6"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="70"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51da-38ad-0675-52a3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a147-257c-7b7a-c14c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Lifthawk Skulltaker" typeId="b88a-b68e-168b-9f30" typeName="Aircraft" hidden="false" id="8389-c79e-6d0d-c43c">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">16&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Capacity" typeId="2f91-fef1-c5bf-04cd">6 Infantry</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Lifthawk Skulltaker" id="6c4c-e02c-0e58-027e" hidden="false">
+                  <description>This unit is a Lifthawk Troopship that has been upgraded to a Lifthawk Skulltaker for +25 points, gaining the Command Centre special rule, granting Rapid Insertion 0”to embarked units, and the Rare special rule (counting as a “Lifthawk Skulltaker” for it), but can only transport Berserkers.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Rare" id="da53-1ba9-34ed-a639" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
+                <infoLink name="Command Centre" id="d287-637e-0b53-2d7e" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+                <infoLink name="Rapid Insertion-X" id="426e-4fcb-4ae0-d263" hidden="false" type="rule" targetId="ed15-ec95-1603-67f8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0416-81d6-25b9-7402" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="0416-81d6-25b9-7402">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="0416-81d6-25b9-7402">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="0416-81d6-25b9-7402">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -5264,14 +5505,14 @@ To select this, go to Configuration and select the background there</description
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Articulated, Cover (All), Flame, Strafe-2, Tech Killer</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst, Articulated, Cover (Soft), Strafe-2, Tech Killer</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Cover-X" id="2a8d-6016-5430-5679" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
-            <infoLink name="Flame" id="cf37-80c7-acea-0810" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Tech Killer" id="730b-254d-48d6-9a4a" hidden="false" type="rule" targetId="d9e0-d31c-1f00-9d05"/>
+            <infoLink name="Airburst" id="a628-8cd1-b004-ec4e" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -5783,7 +6024,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
       <description>This unit does not have to start the game In Reserve, ignoring the Aerial Advantage rule.</description>
     </rule>
     <rule name="Subterranean" id="d7bc-105e-0069-f96d" hidden="false">
-      <description>This unit always begins the game in Reserve but is ignored for the purposes of Aerial Advantage. When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain. Any units embarking in this Transport count as leaving the board for the purposes of scoring Objectives.</description>
+      <description>This unit always begins the game In Reserve but is ignored for the purposes of Aerial Advantage. This unit must enter via its Call-In rule, using a Signal action to enter the table, but can be placed up to 9” from the signalling Infantry unit instead. Units embarking into this transport pass any Objective they are carrying to the transport.</description>
     </rule>
     <rule name="Hover Mode" id="80a1-8501-41f9-82b6" hidden="false">
       <description>If this unit moves 10” or less, a squad disembarking out of it gains Rapid Insertion until the end of the round.</description>

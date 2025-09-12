@@ -5,7 +5,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Apex" hidden="false" id="9b58-91c6-3843-0e25">
           <costs>
-            <cost name="pts" typeId="points" value="85"/>
+            <cost name="pts" typeId="points" value="125"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -17,7 +17,7 @@
           <profiles>
             <profile name="Apex" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="b849-d5f6-06d8-66e6">
               <characteristics>
-                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
                 <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">E+1</characteristic>
                 <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">12</characteristic>
                 <characteristic name="DP" typeId="e707-608e-5069-cf78">4</characteristic>
@@ -63,11 +63,10 @@
               <description>Apexes have more intelligence than other Fauna, and can be coerced or tricked into predictable actions. When it activates, it moves towards the closest enemy unit instead of the closest unit.</description>
             </rule>
             <rule name="Genetic Modification" id="1f8f-823a-9b74-7575" hidden="false">
-              <description>The Apex is a highly adaptable creature and has a variety of biomorphs across a number of worlds. At the start of the game, roll 1D3 and apply the result:
-1: Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7.
-2: New Eden Apex: Increase Counter Measures to E+3 and at the start of the Apex&apos;s activation it recovers 1 lost
-Damage Point.
-3: Maganum Apex: Increase Armour to 15 and increase Killing Tools Energy to 12.</description>
+              <description>The Apex is a highly adaptable creature and has a variety of biomorphs across a number of worlds. At the start of the game, choose one of the following: 
+- Ferrum Apex: Killing Tools gains Strafe-2 and increase Damage Points to 7 for +10 points
+- New Eden Apex: Increase Countermeasures to E+3 and at the start of the Apex’s activation it recovers 1 lost Damage Point for +0 points.
+- Maganum Apex: Increase Armour to 15 and increase Killing Tools Energy to 12 for +5 points.</description>
             </rule>
           </rules>
           <constraints>
@@ -162,9 +161,19 @@ Damage Point.
                   </constraints>
                   <rules>
                     <rule name="Ferrum Apex" id="e3c8-8c4c-eea8-71ce" hidden="false">
-                      <description>Killing Tools gains Strafe-2 and increase Damage Points to 7.</description>
+                      <description>Killing Tools gains Strafe-2 and increase Damage Points to 7 </description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                    <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="New Eden Apex" hidden="false" id="5e27-df64-c5fd-4352" sortIndex="2">
                   <constraints>
@@ -185,6 +194,16 @@ Damage Point.
                       <description>Increase Armour to 15 and increase Killing Tools Energy to 12.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                    <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -481,7 +500,7 @@ Damage Point.
           <profiles>
             <profile name="Mauler" typeId="ff8d-7bf5-5e1d-8ad0" typeName="Unit" hidden="false" id="63d4-b021-9916-46c4">
               <characteristics>
-                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">12&quot;</characteristic>
+                <characteristic name="Move" typeId="eb95-5ff4-e4ee-f207">6&quot;</characteristic>
                 <characteristic name="CM" typeId="d5c2-6e3d-7f80-1e21">-</characteristic>
                 <characteristic name="A" typeId="a5ec-d3f7-784a-6d89">14</characteristic>
                 <characteristic name="DP" typeId="e707-608e-5069-cf78">2</characteristic>
@@ -532,15 +551,18 @@ Damage Point.
                     <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">6&quot;</characteristic>
                     <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                     <characteristic name="Acc" typeId="4.163637572616379e+35">4+</characteristic>
-                    <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Penetrative</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Penetrative" id="4102-e08b-711e-5a84" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="30"/>
+            <cost name="pts" typeId="points" value="35"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -825,9 +847,10 @@ it against the most damaged unit first, or the defending player deciding if ther
           <rules>
             <rule name="Doze Through" id="b467-3780-4d4a-6078" hidden="false">
               <description>When this unit moves, it moves its full Move, even if it would move past the unit it moves towards, only stopping at the edge of the table.
-This unit may move through Impassable scenery pieces over half the height of the model, provided they can physically be placed where it ends its Moving action. Any Destructible scenery pieces moved through in this way
-suffer D3 Energy 8 automatic hits.
-If this unit moves over other units, it makes an attack with Thick Skull against each of those units (use the width of the model, about 32mm, to see what units it moves over). After its movement, it may use Thick Skull as normal.</description>
+
+This unit may move through Impassable scenery pieces over half the height of the model, provided they can physically be placed where it ends its Moving action. Any Destructible scenery pieces moved through in this way suffer D3 Energy 8 automatic hits.
+
+If this unit moves over other units, it makes an attack with Thick Skull against each of those units (use the width of the model, about 32mm, to see what units it moves over) hitting automatically. After its movement, it may use Thick Skull as normal.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -877,7 +900,7 @@ If this unit moves over other units, it makes an attack with Thick Skull against
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5898-5d59-e8a3-de2c" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5898-5d59-e8a3-de2c" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f82e-5c89-650c-b2e1" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
@@ -941,8 +964,9 @@ If this unit moves over other units, it makes an attack with Thick Skull against
           </costs>
           <rules>
             <rule name="Subterranean Nightmare" id="3ec0-b145-165d-f925" hidden="false">
-              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any non-garrisoned enemy units, or in an occupied Garrison (containing either friendly or enemy units).
-Instead of moving towards the nearest non-garrisoned squad, Feral Razorworms must move towards the nearest Garrisoned squad if they are able to, ignoring friendly Fauna squads.</description>
+              <description>When this unit enters play from In Readiness, place it anywhere on the board on Passable terrain at least 6&quot; away from any non-garrisoned enemy units, or in an occupied Garrison (containing either friendly or enemy units). Instead of moving towards the nearest non-garrisoned squad, Feral Razorworms must move towards the nearest Garrisoned squad if they are able to, ignoring friendly Fauna squads.
+
+If this squad ends its move within 2” of a Garrison containing an enemy Squad, it enters that Garrison as if it had the Rapid Insertion rule.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1095,9 +1119,6 @@ Each round, units in this squad may use Claws &amp; Teeth once during its activa
           <rules>
             <rule name="Screeching Swarm" id="e109-8827-4727-3d66" hidden="false">
               <description>This squad cannot Reaction Fire and their Focus ability must be used to combine shots from its whole squad.</description>
-            </rule>
-            <rule name="Toxic Vomit" id="464d-821a-fba1-2d8d" hidden="false">
-              <description>When this unit makes a Shoot action during its activation, it must use Toxic Vomit against the closest garrisoned unit if able to.</description>
             </rule>
           </rules>
           <selectionEntries>

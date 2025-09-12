@@ -122,7 +122,7 @@
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1, Destroyer-6+</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Reduced-1, Destroyer-6+, Cover (Soft)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -137,7 +137,13 @@
                 <modifier type="set" value="Destroyer-6+" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Cover-X" id="e43f-bd0a-6ec1-8a29" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
           </infoLinks>
+          <rules>
+            <rule name="Sniper Rifles" id="d69c-652f-23da-52d3" hidden="false">
+              <description>When allocating shots with this weapon, you may allocate each shot to a separate unit.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sidearms" hidden="false" id="f24f-ba9d-04c8-371c" collective="true">
           <constraints>
@@ -299,7 +305,7 @@
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">CQ</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">-</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-1</characteristic>
               </characteristics>
             </profile>
@@ -919,7 +925,7 @@
           </profiles>
           <rules>
             <rule name="Smart Smoke" id="3492-ce8c-4a7a-06a7" hidden="false">
-              <description>For each unit in this squad, as part of its Shooting action, instead of using any of its weapons, that unit gives a friendly non-Behemoth squad in line of sight that is in coherency the benefits of Smoke until the end of the round. Weapons targeting a squad with the benefits of Smoke and other non-Behemoth units within 2” of any unit in that squad suffer a +2 Accuracy modifier. The benefits of Smoke are not cumulative and and only cause a maximum of a +2 Accuracy modifier (not including other modifiers), regardless of 
+              <description>For each unit in this squad, as part of its Shooting action, instead of using any of its weapons, that unit gives a friendly non-Behemoth, non-Aircraft squad in line of sight that is in coherency the benefits of Smoke until the end of the round. Weapons targeting a squad with the benefits of Smoke and other non-Behemoth units within 2” of any unit in that squad suffer a +2 Accuracy modifier. The benefits of Smoke are not cumulative and and only cause a maximum of a +2 Accuracy modifier (not including other modifiers), regardless of 
 the amount of Smoke.</description>
             </rule>
           </rules>
@@ -968,7 +974,7 @@ the amount of Smoke.</description>
             <profile name="Mortar Round" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a1f2-bc8b-ae0b-a5f2">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">0&quot;</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">48&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
@@ -1172,7 +1178,7 @@ the amount of Smoke.</description>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">-</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1181,8 +1187,7 @@ the amount of Smoke.</description>
               <description>This weapon deals no damage. If it hits a destructible scenery piece, that scenery piece replenishes 5 Damage Points and removes all Collateral Damage tokens. 
 
 If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if it fails, it is destroyed.
-
-This weapon may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not.</description>
+</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1769,6 +1774,9 @@ This weapon may target enemy Infantry that are in Garrisons, whether they have 
                 <cost name="Light Transport" typeId="acb7-4263-ce1f-84d0" value="0"/>
                 <cost name="Infantry_Cap" typeId="89b0-730e-0a38-bfab" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Retinue" id="22f1-5a7b-a2a0-93f1" hidden="false" type="rule" targetId="8f63-3a9a-78eb-8063"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1830,6 +1838,13 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="4451-214c-2c29-e177" targetId="ed7f-0593-2e55-430d" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fca2-d32d-6ba5-8e55" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Terrence Agu - Wolf Command LAV" hidden="false" id="077a-2fc8-20f2-4084">
           <categoryLinks>
@@ -1891,13 +1906,14 @@ If a Ferrum Drone Base is destroyed, remove squads of Starsprite Drones as casua
                 <rule name="Command Card - Keeping Track" id="5edb-f2bf-2a69-896a" hidden="false">
                   <description>Terrence Agu only. Global Range. 
 
-
 Play at the start of the turn. 
 
-
-When you play this card, do not discard it as normal. Instead keep it separate from your used Command Cards and put a counter on it. For the rest of the game, whenever you play a Command Card, place a counter on this card. Whenever you roll any dice, you may remove a counter to reroll a single dice in that roll.</description>
+When you play this card, do not discard it as normal. Instead keep it separate from your used Command Cards and put a counter on it. For the rest of the game, whenever you play a Command Card, place a counter on this card. Whenever you Roll to Hit, you may remove a counter to re-roll a single dice in that roll.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink name="Retinue" id="f9b9-1cef-3e70-869a" hidden="false" type="rule" targetId="8f63-3a9a-78eb-8063"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1984,6 +2000,13 @@ Add an Archangel Interceptor or Archangel Tactical Bomber In Readiness to this
             <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="ffa8-7ea2-6215-c89d" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d271-99c1-5e2d-e5ad" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fca2-d32d-6ba5-8e55" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Kate Rawlins - Phoenix Command Gunship" hidden="false" id="28d9-5abb-5e3b-50eb">
           <selectionEntries>
@@ -2091,6 +2114,13 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -2121,7 +2151,7 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="45"/>
+                <cost name="pts" typeId="points" value="40"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -2187,6 +2217,13 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fca2-d32d-6ba5-8e55" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Starsprite Drones" hidden="false" id="3bb2-de1a-3350-eb97">
           <selectionEntries>
@@ -2478,6 +2515,13 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fca2-d32d-6ba5-8e55" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Crossbow Laser Artillery" hidden="false" id="032c-dafe-d372-5a19">
           <categoryLinks>
@@ -2697,7 +2741,11 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Reinforcing Cement" hidden="false" id="8a6e-e40e-bc72-674f" type="selectionEntry" targetId="450f-e328-8dd2-d4e8"/>
+                <entryLink import="true" name="Reinforcing Cement" hidden="false" id="8a6e-e40e-bc72-674f" type="selectionEntry" targetId="450f-e328-8dd2-d4e8">
+                  <infoLinks>
+                    <infoLink name="Airburst" id="a211-d119-3a16-f3a8" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2713,10 +2761,14 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c851-0abb-3be5-0911" includeChildSelections="false"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="30"/>
+                <cost name="pts" typeId="points" value="35"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="3"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Grizzly Mortar" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="dd22-0ff3-7d7c-6b53">
@@ -3213,13 +3265,14 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Archangel Interceptor" hidden="false" id="ec8d-809d-ec70-0bd9" collective="true">
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="45"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="40"/>
               </costs>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d404-6e61-b330-e659" includeChildSelections="false"/>
@@ -3231,7 +3284,7 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
               <profiles>
                 <profile name="Archangel Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="55e8-2c80-d419-47e1">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;-36&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
@@ -3298,7 +3351,7 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
               <profiles>
                 <profile name="Archangel Tactical Bomber" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="0410-1c0f-1516-3d8f">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">24&quot;-36&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">18&quot;-36&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+5</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">10</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
@@ -3533,6 +3586,48 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
             <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="ff49-6b33-8518-53ca" primary="true" name="Standard"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Wade&apos;s Armoured Fist" hidden="true" id="393e-817b-6f89-78ad">
+          <categoryLinks>
+            <categoryLink name="Standard" hidden="false" id="6414-3d31-443b-49c6" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="b5c7-0106-1528-88eb" includeChildSelections="true"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="2c75-a4e8-f7a4-fe8b" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb5-5ef2-34a2-9719" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Wade&apos;s Armoured Fist" hidden="false" id="0175-be65-9c39-c868" type="selectionEntryGroup" targetId="44c0-e424-7470-f5eb">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Gladius Heavy Tank" hidden="false" id="f5f2-7820-8f0e-74ff">
+                  <entryLinks>
+                    <entryLink import="true" name="Gladius Heavy Tank" hidden="false" id="371c-d6f9-9987-8045" type="selectionEntry" targetId="eba9-c113-0bfa-a169"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3895-1043-9c89-5b7d" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63b2-2732-b732-d2bd" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="63b2-2732-b732-d2bd"/>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scimitar Heavy Tank" hidden="false" id="301a-0ef8-3fd8-b5df">
+                  <entryLinks>
+                    <entryLink import="true" name="Scimitar Heavy Tank" hidden="false" id="8dbb-034a-9f24-d7c9" type="selectionEntry" targetId="26a7-c30a-6d92-5a85"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e7c-05e6-1cba-de08" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy" hidden="false" id="c182-e034-7b11-17c0">
@@ -3696,18 +3791,18 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
               <profiles>
                 <profile name="Dominion Heavy Bomber" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="a66c-56d9-02c8-dddb">
                   <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;-24&quot;</characteristic>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">9&quot;-24&quot;</characteristic>
                     <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+2</characteristic>
                     <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Fast, Rare</characteristic>
-                    <characteristic typeId="730b-1969-f647-f794" name="Transport Requirement"/>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794"/>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="points" value="190"/>
+                <cost name="pts" typeId="points" value="205"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -3848,6 +3943,101 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Arthur J. Wade - Broadsword Super-Heavy Tank" hidden="false" id="fca2-d32d-6ba5-8e55">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Broadsword Super-Heavy Tank" hidden="false" id="947c-9fea-6445-457d" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58c1-abc8-e1dc-26cc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-247a-b903-3a50" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="255"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1fb6-6362-74f3-1896">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Godslayer Railgun" hidden="false" id="3479-8a26-85dc-5dab">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c7e-8df8-a191-d89c" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="596e-e36f-35e5-b27d" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Godslayer Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1ffe-eddd-e23c-af0c">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Devastator-4 (Behemoth) </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destroyer-X" id="e7d8-99f5-05bf-0d07" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+                    <infoLink name="Devastator-X" id="9fc8-16b1-f16e-178b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <rules>
+                <rule name="Retinue" id="d440-3a50-c570-3bd7" hidden="false">
+                  <description>While this unit is within 3” of a Broadsword Super Heavy Tank squad, it counts as being part of that squad when being allocated shots (for purposes of Shooting at Commanders).</description>
+                </rule>
+                <rule name="Benefit" id="860e-f11f-5490-0389" hidden="false">
+                  <description>You may take up to two squads of “Wade’s Armoured Fist”, your choice of a squad of Gladius or a squad of Scimitar Heavy Tanks with the Standard Category (paying points as normal).</description>
+                </rule>
+                <rule name="Detriment" id="afd2-dbdc-7926-d1e1" hidden="false">
+                  <description>Ferrum Drone Bases, Longbow Howitzers, and Praetorian Sniper Teams may not be included in an army with Arthur J. Wade.
+
+All non-Aircraft squads in an army containing Arthur J. Wade must be embarked in an Aerial Transport or a Transport embarked in an Aerial Transport.</description>
+                </rule>
+                <rule name="Command Card - Armoured Spearhead" id="4097-6cb9-9bb6-19cd" hidden="false">
+                  <description>Arthur J. Wade only. Influence Range.
+
+At the start of the round.
+
+All non-Aircraft Squads in this Commander’s Battlegroup gain the Resilient special rule until the end of the round.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="b642-d6f7-c3ee-582f" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+            <categoryLink targetId="b9fe-b6e1-3716-8d88" id="d5e6-8ec7-a407-68cd" primary="false" name="Famous Commander"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f866-1c96-c355-dd6c" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="de55-aa4f-c18b-84ce" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Commander (CV 5)" hidden="false" id="70fb-b711-cb54-82f7" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0421-64a4-5768-dca9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd96-499d-574c-fb13" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Behemoth" hidden="false" id="2d03-84c9-45b4-8276">
@@ -3859,13 +4049,14 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
           <selectionEntries>
             <selectionEntry type="model" import="true" name="America Heavy Battle-Mech" hidden="false" id="6a1c-4326-1b9f-9669" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="525"/>
+                <cost name="pts" typeId="points" value="505"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1536-6895-1759-f997" includeChildSelections="false"/>
@@ -4264,6 +4455,8 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     <entryLink import="true" name="Brazil Light Battle-Mech" hidden="false" id="c0a5-afdd-99c6-5cf2" targetId="ec5d-a790-ce89-89eb" type="selectionEntry"/>
     <entryLink import="true" name="Japan Heavy Battle-Mech" hidden="false" id="35be-fde7-e228-4ba5" type="selectionEntry" targetId="8ab3-30aa-b994-b7b9"/>
     <entryLink import="true" name="Crossbow Laser Artillery" hidden="false" id="b4b8-c14c-3082-c37d" type="selectionEntry" targetId="032c-dafe-d372-5a19"/>
+    <entryLink import="true" name="Arthur J. Wade - Broadsword Super-Heavy Tank" hidden="false" id="fcb5-5ef2-34a2-9719" targetId="fca2-d32d-6ba5-8e55" type="selectionEntry"/>
+    <entryLink import="true" name="Wade&apos;s Armoured Fist" hidden="false" id="d22f-6553-283f-0d37" targetId="393e-817b-6f89-78ad" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Gladius Weapon Selection" id="e4be-a6cc-92dd-6397" hidden="false">
@@ -4410,7 +4603,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5da4-76bf-2c84-f259" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Flame" id="cd97-9420-a7c2-a4b5" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
+            <infoLink name="Airburst" id="bcb4-56c3-8d67-3687" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
           <profiles>
             <profile name="Twin Nemesis Minigun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="fe3e-7817-cf93-a485">
@@ -4421,8 +4614,8 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">8&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">5</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">3</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4454,7 +4647,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">13</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Vehicle), Devastator 2 (Behemoth)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Vehicle, Behemoth)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4491,15 +4684,15 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (All), Flame, Strafe-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Soft), Airburst, Strafe-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Devastator-X" id="a738-aaf6-8cac-d233" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
             <infoLink name="Cover-X" id="1230-ea0b-a693-e0ab" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
-            <infoLink name="Flame" id="e9ac-e74c-08c8-3485" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Strafe-X" id="2162-b52d-fa41-9e7e" hidden="false" type="rule" targetId="c922-67ea-3ea5-b76d"/>
+            <infoLink name="Airburst" id="fa39-d030-ee41-26e8" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4773,10 +4966,20 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Wade&apos;s Armoured Fist" id="44c0-e424-7470-f5eb" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dc7-990b-4903-af8d" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee04-c3e3-e8cc-1bb9" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Loader" id="694d-50d6-1840-d6c4" hidden="false">
       <description>This unit reduces its Shots value by 1 for every 2 Damage Points lost, instead of every 1 Damage Point.</description>
+    </rule>
+    <rule name="Retinue" id="8f63-3a9a-78eb-8063" hidden="false">
+      <comment>terrence / wolf version</comment>
+      <description>While this unit is within 3” of a Jackal LAV squad, it counts as being part of that squad when being allocated shots (for purposes of Shooting at Commanders).</description>
     </rule>
   </sharedRules>
   <profileTypes>

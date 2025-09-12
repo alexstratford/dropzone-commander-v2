@@ -432,6 +432,13 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a40d-f21e-cff7-dcd0" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -557,6 +564,13 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
           <categoryLinks>
             <categoryLink name="Scout" hidden="false" id="29f6-e215-9887-6b25" targetId="5f13-c39f-577a-8947" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Yari Light Gravtank" hidden="false" id="cd20-8b32-abe9-c01a">
           <selectionEntries>
@@ -596,6 +610,18 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
           <categoryLinks>
             <categoryLink name="Scout" hidden="false" id="2f1a-7382-54c4-a74a" targetId="5f13-c39f-577a-8947" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -654,7 +680,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heavy Microwave Cannon" hidden="false" id="1d81-2481-98f3-0e35" collective="true">
           <profiles>
-            <profile name="Heavy Microwave Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd94-8fb4-85b4-cccf">
+            <profile name="Heavy Microwave Cannon (Flame)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cd94-8fb4-85b4-cccf">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                 <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S</characteristic>
@@ -663,7 +689,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Cover (Body, Soft)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Flame</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Microwave Cannon (Anti-Tank)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="e39b-5c8d-c4e0-01b5">
@@ -680,8 +706,8 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Cover-X" id="d65d-a323-6ae8-f7bd" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
             <infoLink name="Alt-X" id="e0e5-9956-da40-9b6d" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
+            <infoLink name="Flame" id="5969-de32-2eec-7d72" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb06-4e9a-7a4b-207b" includeChildSelections="false"/>
@@ -699,7 +725,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
             <profile name="Neutron Launchers (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="13db-57e5-00e1-4f47">
@@ -711,13 +737,12 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">10</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery), Limited-1</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-3 (Scenery)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Devastator-X" id="4f62-39ec-606b-d368" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-            <infoLink name="Limited-X" id="a895-998e-9b8e-16b6" hidden="false" type="rule" targetId="df42-8b65-9b46-e48d"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c2b-105b-d521-15ad" includeChildSelections="false"/>
@@ -856,13 +881,13 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">*</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Grav</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="a9db-2d5d-5252-5a0e" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Grav" id="b456-11dd-74e5-a8d1" hidden="false" type="rule" targetId="a894-2c20-86df-75ef"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Discus Launchers" hidden="false" id="5184-4291-4967-c0fa" collective="true">
@@ -1033,19 +1058,14 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Penetrative</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst, Penetrative</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Flame" id="b889-d4c6-7f11-7286" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Penetrative" id="80b5-2500-3db0-4aa0" hidden="false" type="rule" targetId="d90e-d63f-649e-1ca6"/>
+            <infoLink name="Airburst" id="a93e-ee57-6f38-383d" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
-          <rules>
-            <rule name="Bradyon Carbines" id="b4d0-ceee-31c0-694e" hidden="false">
-              <description>Missed shots from this weapon are discarded, ignoring the usual rules for Flame weapons.</description>
-            </rule>
-          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Energy Storm" hidden="false" id="c774-322d-14fe-6f60" collective="true">
           <profiles>
@@ -1116,8 +1136,8 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">*</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Grav</characteristic>
               </characteristics>
             </profile>
             <profile name="Gravity Cannon (R)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7ba3-5b81-170c-7a6f">
@@ -1128,13 +1148,13 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">*</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Grav</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="6545-ab10-9981-dd5c" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Grav" id="1535-82c0-3742-78bb" hidden="false" type="rule" targetId="a894-2c20-86df-75ef"/>
           </infoLinks>
           <comment>Adamah Ver</comment>
         </selectionEntry>
@@ -1732,7 +1752,7 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Strafe-6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 6+, Strafe-6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1847,6 +1867,13 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
           <categoryLinks>
             <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="d189-3fcc-5839-c01e" primary="true" name="Standard"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Tarantula Battlewalker" hidden="false" id="7c49-c313-9216-75a8">
           <selectionEntries>
@@ -1981,8 +2008,8 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <profile name="Widow Battlewalker" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="f027-ebdb-62d1-c5cb">
                   <characteristics>
                     <characteristic name="Move" typeId="945b-0e28-8a43-adae">6&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                    <characteristic name="A" typeId="dadd-5f09-c124-988c">13</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, E+1, P5+</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">12</characteristic>
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">2</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
@@ -2057,6 +2084,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <categoryLinks>
             <categoryLink name="Standard" hidden="false" id="0506-b7fc-2fbe-25a1" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Arrowhead Gravtank" hidden="false" id="06c2-a374-7c70-c239">
           <selectionEntries>
@@ -2098,6 +2132,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <categoryLinks>
             <categoryLink name="Standard" hidden="false" id="4729-2c59-131b-c0aa" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2141,6 +2182,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 <entryLink import="true" name="Gauss Rifle" hidden="false" id="81fc-0afc-0cc4-a2b0" type="selectionEntry" targetId="178b-faaa-399a-9c46" sortIndex="2"/>
                 <entryLink import="true" name="Warsuits" hidden="false" id="6536-59b6-aee2-29c5" type="selectionEntry" targetId="e9da-1237-6df0-5010" sortIndex="3"/>
               </entryLinks>
+              <modifiers>
+                <modifier type="decrement" value="5" field="points">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="164c-fae8-0ea2-0104" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2424,6 +2472,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="e6a9-4a6a-d35d-0d0d" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Crocodile Heavy Gravtank" hidden="false" id="3311-fcb3-3530-03a5">
           <selectionEntries>
@@ -2480,6 +2535,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="e709-054a-25d4-cc83" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Leopard Warstrider" hidden="false" id="091c-0c94-b491-0b6a">
           <selectionEntries>
@@ -2588,6 +2650,57 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="f6af-e2af-b0c9-fe23" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="95"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6f1e-9388-01d6-9e5e">
+                      <characteristics>
+                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                        <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                        <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                        <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                        <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c3c-4c06-b657-1474" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8a72-8766-a37d-7fd3" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Particle Cannon" hidden="false" id="9e26-df55-49ea-d685" type="selectionEntry" targetId="e23b-78de-22e0-8460"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Large" id="c76b-777d-a196-57bc" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -2711,6 +2824,13 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <categoryLinks>
             <categoryLink name="Heavy" hidden="false" id="f227-ffaa-e0eb-2ffb" targetId="ff91-8cc3-f775-3d20" primary="true"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3192,13 +3312,14 @@ activation. Skimmers increase this bonus to +6”.</description>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Warspear Interceptor" hidden="false" id="3d7d-e544-d6b4-4377" collective="true">
               <costs>
+                <cost name="pts" typeId="points" value="0"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="60"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="70"/>
               </costs>
               <profiles>
                 <profile name="Warspear Interceptor" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="c41f-5607-3702-2465">
@@ -3813,6 +3934,326 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ramses the Fireborn - Puma Sonic Warstrider" hidden="false" id="96aa-91d3-753c-0e7b">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Puma Sonic Warstrider" hidden="false" id="9f92-eaef-a6e0-af87" collective="true">
+          <costs>
+            <cost name="pts" typeId="points" value="295"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Puma Sonic Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="54ec-191e-d7c5-d01c">
+              <characteristics>
+                <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a27-bc87-d527-6ec9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b392-99f0-8e41-0bae" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Twin Gauss Cannons" hidden="false" id="65d1-57b2-4c13-a5df" type="selectionEntry" targetId="5a93-95aa-778b-3355"/>
+            <entryLink import="true" name="Commander (CV 5)" hidden="false" id="d23e-18dc-0959-2c2d" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbd0-fa9c-97d1-fa70-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbd0-fa9c-97d1-fa70-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Large" id="6602-44c4-5b6f-f75f" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sonic Cannon" hidden="false" id="9f16-3a35-7202-f01b" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46dd-83e1-cc22-78a5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a05d-bb36-750e-5e49" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sonic Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0389-adc2-5614-fb57">
+                  <characteristics>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                    <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                    <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                    <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">18&quot;</characteristic>
+                    <characteristic name="Shots" typeId="53686f747323232344415441232323">4</characteristic>
+                    <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                    <characteristic name="E" typeId="456e6572677923232344415441232323">8</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Scenery)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Sonic Cannon" id="5f2a-561f-fe17-76d2" hidden="false">
+                  <description>This weapon’s Devastator value becomes 4 when the target is within 12” or 6 when the target is within 6”.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Devastator-X" id="4929-d614-d596-fc48" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Benefit" id="07a7-f933-5085-8723" hidden="false">
+              <description>You may take up to two squads of “Firesworn”, your choice of a squad of Leopard, Panther, or Ocelot Warstriders with the Standard Category (paying points as normal).</description>
+            </rule>
+            <rule name="Detriment" id="a9ba-a69b-4f5f-18f5" hidden="false">
+              <description>Units with “Gravtank” in their name may not be included in an army with Ramses. Other Puma Sonic Warstriders may not be included in an army with Ramses.</description>
+            </rule>
+            <rule name="Command Card - Eons of War" id="24f7-8482-7c00-d3f2" hidden="false">
+              <description>Ramses, the Fireborn only. Global Range. 
+
+When you activate a Battlegroup.
+
+Shuffle your hand into your Command Card Deck, then draw five Command Cards.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Heavy" hidden="false" id="fbae-82b5-a68d-41c4" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+        <categoryLink targetId="b9fe-b6e1-3716-8d88" id="e77c-deb9-660a-36d6" primary="false" name="Famous Commander"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6688-6fcc-136c-3f5a" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ramses&apos; Firesworn " hidden="false" id="9f95-98d2-322c-8f08">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="45e1-0ad1-5e3f-556a" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="7bea-a1e7-3cab-7ecb" id="6210-e4ac-ece9-56dc" primary="true" name="Standard"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Firesworn " id="acfb-7b3d-19bc-2ef2" hidden="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27f5-7e2c-8f44-45fc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27f5-7e2c-8f44-45fc-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Leopard Warstrider" hidden="false" id="a01e-612f-815c-fff1">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Leopard Warstrider" hidden="false" id="746a-e49f-16c6-dd56" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="75"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Leopard Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="18e0-a78d-29c7-eae2">
+                      <characteristics>
+                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                        <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                        <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                        <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                        <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d98-279f-59fb-99c5" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4fbc-86bc-643d-785a" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Twin Dragon Cannons" hidden="false" id="1260-83eb-57af-786f" type="selectionEntry" targetId="db78-de6d-138a-6490"/>
+                    <entryLink import="true" name="Thermal Lance" hidden="false" id="8668-7b75-8671-9890" type="selectionEntry" targetId="d94e-e699-4899-b2bc"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Large" id="4c2c-440d-cfb0-8f82" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7091-dcfd-7620-b763" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ad8-a39d-5530-c666" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="9ad8-a39d-5530-c666"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Panther AA Warstrider" hidden="false" id="82e5-108f-7358-edd7">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Panther AA Warstrider" hidden="false" id="a441-aaa8-c732-bdbf" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="125"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Panther AA Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="2c76-93e6-6ab4-9d3e">
+                      <characteristics>
+                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                        <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                        <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                        <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                        <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1884-83a1-6e6a-94c5" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d599-cf4f-d88f-0317" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="AA Particle Triad" hidden="false" id="7089-f1f0-5a7c-417d" type="selectionEntry" targetId="7cab-05ad-a546-6fb9"/>
+                  </entryLinks>
+                  <rules>
+                    <rule name="Slow to Traverse" id="c5fc-5fea-04f9-18fe" hidden="false">
+                      <description>This unit may not Reaction Fire.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Large" id="6af8-199e-11f5-11d7" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a51-f18a-7247-0ff1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="82f5-2c70-f807-3653">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="80d9-9b14-e5ac-de5b" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="points" value="95"/>
+                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3ef1-a158-44c5-907b">
+                      <characteristics>
+                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                        <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
+                        <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
+                        <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                        <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c537-29f9-19d5-7d6e" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e907-34f6-e8ba-7a61" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Particle Cannon" hidden="false" id="eed3-9280-1b35-f95a" type="selectionEntry" targetId="e23b-78de-22e0-8460"/>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Large" id="af06-7ef8-71aa-d932" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7779-6018-3c06-36cb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="987c-7933-fff7-961e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Firesworn" id="8438-ddd2-0883-33f3" hidden="false">
+          <description>When fielding Ramses the Fireborn, you may take up to two squads of “Firesworn”, your choice of a squad of Leopard, Panther, or Ocelot Warstriders with the Standard Category (paying points as normal).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
@@ -3882,6 +4323,8 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
     <entryLink import="true" name="Earth Dragon" hidden="false" id="b2e9-f5d2-1138-caa9" targetId="6c42-be3c-3013-8c30" type="selectionEntry"/>
     <entryLink import="true" name="Celestial Dragon" hidden="false" id="fe1f-77f7-2379-786d" targetId="5ce0-ef77-6d51-ee29" type="selectionEntry"/>
     <entryLink import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="f8ba-daa9-b49f-716a" type="selectionEntry" targetId="ee17-3d29-95aa-3135"/>
+    <entryLink import="true" name="Ramses the Fireborn - Puma Sonic Warstrider" hidden="false" id="987c-7933-fff7-961e" targetId="96aa-91d3-753c-0e7b" type="selectionEntry"/>
+    <entryLink import="true" name="Firesworn" hidden="false" id="002d-3fcf-82eb-4111" targetId="9f95-98d2-322c-8f08" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -3897,12 +4340,13 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">6</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">4</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Cover (Body, Soft)</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Airburst, Cover (Body, Soft)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Cover-X" id="bf0f-43f3-75a1-b3b3" hidden="false" type="rule" targetId="96af-8bf9-11b1-3754"/>
+            <infoLink name="Airburst" id="1524-2619-9cbe-88f4" hidden="false" type="rule" targetId="eb0c-0156-1432-9b74"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Light Ion Cannon" hidden="false" id="b64a-cc32-cb19-ea27" sortIndex="2" collective="true">
@@ -3948,10 +4392,11 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="1"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4114,13 +4559,13 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">24&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">2+</characteristic>
-                <characteristic name="E" typeId="456e6572677923232344415441232323">11</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Devastator-2 (Tank, Walker), Devastator-3 (Large)</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">*</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Grav</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Devastator-X" id="b3af-2c70-1061-ff6a" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+            <infoLink name="Grav" id="1170-5786-b083-4748" hidden="false" type="rule" targetId="a894-2c20-86df-75ef"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ion Cannon Array" hidden="false" id="83ea-13e8-bc98-56a3" collective="true">
@@ -4202,7 +4647,7 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Heavy Bio-Atomiser" hidden="false" id="ca3a-b39b-f357-6a46" collective="true">
           <costs>
-            <cost name="pts" typeId="points" value="15"/>
+            <cost name="pts" typeId="points" value="5"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
@@ -4215,19 +4660,20 @@ Once all Damage Thresholds are passed, Gauss Destroyers may not be used for the
             <profile name="Heavy Bio-Atomiser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="2585-5816-2e4a-8ad8">
               <characteristics>
                 <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                 <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">12&quot;</characteristic>
                 <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
                 <characteristic name="Shots" typeId="53686f747323232344415441232323">3</characteristic>
                 <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
                 <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
-                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Flame, Focus-2</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Flame, Focus-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Flame" id="49fa-9bb2-49f9-1ce3" hidden="false" type="rule" targetId="7fe5-1098-f28b-e066"/>
             <infoLink name="Focus-X" id="6ff2-02b5-a259-6787" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
+            <infoLink name="Alt-X" id="aba3-bedb-784d-1fb7" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gauss Cannon" hidden="false" id="56d7-31dc-da44-6794" collective="true">
