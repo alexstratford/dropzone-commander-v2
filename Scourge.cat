@@ -1271,7 +1271,7 @@ Until the end of this Unit’s activation, its Plasma Bombard increases its R(F
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="5df3-26fb-4b8d-2352">
+        <selectionEntry type="unit" import="true" name="Cavebreaker&apos;s Slayers" hidden="true" id="5df3-26fb-4b8d-2352">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="b230-c01e-e66f-779b" collective="true">
               <costs>
@@ -1315,8 +1315,15 @@ Until the end of this Unit’s activation, its Plasma Bombard increases its R(F
             <categoryLink name="Standard" hidden="false" id="90f9-5b96-21e0-bd6a" targetId="7bea-a1e7-3cab-7ecb" primary="true"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9dce-aee1-0c8d-c644" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9dce-aee1-0c8d-c644" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b41e-f861-b2dc-0f15" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
