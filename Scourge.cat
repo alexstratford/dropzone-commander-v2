@@ -209,77 +209,6 @@ That opponent must show you all of the Command Cards from their hand. Pick one
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2292-8266-5676-192d" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Slaughterhouse V - Overseer Cradle Barge " hidden="false" id="56c5-9c94-d5b5-1a48">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Overseer Cradle Barge" hidden="false" id="69e9-b955-7a92-a5a9" collective="true">
-              <costs>
-                <cost name="pts" typeId="points" value="145"/>
-                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="109e-88b5-4829-7cb6">
-                  <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0ec-1ac7-c803-a2aa" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40fb-e2ba-b9ff-64d1" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Ion Cradle" hidden="false" id="443f-a165-3071-30ca" type="selectionEntry" targetId="5444-bb2d-f179-38af" collective="true" sortIndex="3"/>
-                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="4117-ab0d-91ff-7ff0" type="selectionEntry" targetId="425b-ba23-208f-1d7e" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba3a-d7ac-ffc1-05da" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42b6-3269-3558-69fc" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Plasma Vent" hidden="false" id="1cd9-9bd8-ff2e-bd3f" type="selectionEntry" targetId="3141-bd13-038e-5eae" sortIndex="2"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Command Centre" id="6089-7407-ccbb-f396" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
-              </infoLinks>
-              <rules>
-                <rule name="Plasma Generator" id="c8b6-a83d-9810-7eb9" hidden="false">
-                  <description>Any friendly units with weapons containing the word “Plasma” or “Electroweb” in their name re-roll failed damage rolls if they are within 9” of this unit when firing. Units with the Fast special rule, Behemoth type, or weapons with a range of CQ are not affected.”</description>
-                </rule>
-                <rule name="Benefit" id="a93a-12db-cd26-9788" hidden="false">
-                  <description>At the end of the turn, look through your discarded Command Cards. Pick one and shuffle it back into your Command Card Deck.</description>
-                </rule>
-                <rule name="Detriment" id="ec21-13af-3680-0261" hidden="false">
-                  <description>Discard your entire hand of Command Cards in the second step of the Initiation Phase instead of only unwanted Command Cards.</description>
-                </rule>
-                <rule name="Command Card - Home Wrecker" id="841a-94c9-dabb-142b" hidden="false">
-                  <description>Slaughterhouse V only. Influence range. 
-
-
-When you damage a Garrison with a Shooting action.
-
-
-Increase the Energy of the Collateral Damage caused by that attack to 6. When you roll for this Collateral Damage, it automatically damages on a roll of 5+. Subsequent Collateral Damage rolls are rolled as normal.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Famous Commander" hidden="false" id="874f-276e-bcd3-4d8a" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
-            <categoryLink name="Support" hidden="false" id="5807-e6ee-e26c-2af8" targetId="1742-0b1d-252f-505d" primary="true"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6008-e1cd-85a1-87de" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="unit" import="true" name="Pest of Olympus - Despot Suppression Walker " hidden="false" id="e33a-ac49-d13d-f24c">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Despot Suppression Walker" hidden="false" id="9ef6-3183-ac31-5254">
@@ -415,6 +344,77 @@ Until the end of this Unit’s activation, its Plasma Bombard increases its R(F
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="610f-271c-5391-b944" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Slaughterhouse V - Overseer Cradle Barge " hidden="false" id="56c5-9c94-d5b5-1a48">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Overseer Cradle Barge" hidden="false" id="69e9-b955-7a92-a5a9" collective="true">
+              <costs>
+                <cost name="pts" typeId="points" value="145"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Overseer Cradle Barge" typeId="b88a-b68e-168b-9f29" typeName="Aircraft" hidden="false" id="109e-88b5-4829-7cb6">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">12&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">11</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">7</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Aircraft</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Command Centre</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0ec-1ac7-c803-a2aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40fb-e2ba-b9ff-64d1" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Ion Cradle" hidden="false" id="443f-a165-3071-30ca" type="selectionEntry" targetId="5444-bb2d-f179-38af" collective="true" sortIndex="3"/>
+                <entryLink import="true" name="Commander (CV 3)" hidden="false" id="4117-ab0d-91ff-7ff0" type="selectionEntry" targetId="425b-ba23-208f-1d7e" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba3a-d7ac-ffc1-05da" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42b6-3269-3558-69fc" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Vent" hidden="false" id="1cd9-9bd8-ff2e-bd3f" type="selectionEntry" targetId="3141-bd13-038e-5eae" sortIndex="2"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Command Centre" id="6089-7407-ccbb-f396" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
+              </infoLinks>
+              <rules>
+                <rule name="Plasma Generator" id="c8b6-a83d-9810-7eb9" hidden="false">
+                  <description>Any friendly units with weapons containing the word “Plasma” or “Electroweb” in their name re-roll failed damage rolls if they are within 9” of this unit when firing. Units with the Fast special rule, Behemoth type, or weapons with a range of CQ are not affected.”</description>
+                </rule>
+                <rule name="Benefit" id="a93a-12db-cd26-9788" hidden="false">
+                  <description>At the end of the turn, look through your discarded Command Cards. Pick one and shuffle it back into your Command Card Deck.</description>
+                </rule>
+                <rule name="Detriment" id="ec21-13af-3680-0261" hidden="false">
+                  <description>Discard your entire hand of Command Cards in the second step of the Initiation Phase instead of only unwanted Command Cards.</description>
+                </rule>
+                <rule name="Command Card - Home Wrecker" id="841a-94c9-dabb-142b" hidden="false">
+                  <description>Slaughterhouse V only. Influence range. 
+
+
+When you damage a Garrison with a Shooting action.
+
+
+Increase the Energy of the Collateral Damage caused by that attack to 6. When you roll for this Collateral Damage, it automatically damages on a roll of 5+. Subsequent Collateral Damage rolls are rolled as normal.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Famous Commander" hidden="false" id="874f-276e-bcd3-4d8a" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+            <categoryLink name="Support" hidden="false" id="5807-e6ee-e26c-2af8" targetId="1742-0b1d-252f-505d" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6008-e1cd-85a1-87de" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -4268,6 +4268,7 @@ Until the end of this Unit’s activation, its Plasma Bombard increases its R(F
     <entryLink import="true" name="The Cavebreaker - Annihilator Mobile Ordnance" hidden="false" id="caa2-cb05-69dd-e2b8" targetId="b41e-f861-b2dc-0f15" type="selectionEntry"/>
     <entryLink import="true" name="Cavebreaker&apos;s Demolishers" hidden="false" id="a0e9-c8db-7351-df5b" targetId="c7be-cc1c-c4f5-4e5f" type="selectionEntry"/>
     <entryLink import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="7f54-c06b-323d-be5f" targetId="5df3-26fb-4b8d-2352" type="selectionEntry"/>
+    <entryLink import="true" name="Slaughterhouse V - Overseer Cradle Barge " hidden="false" id="d53c-4e0c-e4e8-d029" targetId="56c5-9c94-d5b5-1a48" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
