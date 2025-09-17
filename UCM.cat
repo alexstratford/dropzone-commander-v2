@@ -1186,8 +1186,7 @@ the amount of Smoke.</description>
             <rule name="Reinforcing Cement" id="79f8-8b43-1187-ed48" hidden="false">
               <description>This weapon deals no damage. If it hits a destructible scenery piece, that scenery piece replenishes 5 Damage Points and removes all Collateral Damage tokens. 
 
-If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if it fails, it is destroyed.
-</description>
+If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if it fails, it is destroyed.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1589,12 +1588,16 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
               </modifiers>
             </infoLink>
           </infoLinks>
-          <comment>+10pt version</comment>
+          <comment>+10pt version - Auxiliary</comment>
           <costs>
-            <cost name="pts" typeId="points" value="10"/>
+            <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="AA Battery" hidden="false" id="9b67-9b97-6b5c-f493" collective="true" flatten="false">
@@ -1633,6 +1636,40 @@ If this weapon hits an Infantry unit, that unit must make a Fortitude roll, if i
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
             <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="AA Battery" hidden="false" id="d49a-c1cd-5528-940f" collective="true" flatten="false">
+          <profiles>
+            <profile name="AA Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="c31d-90e1-1465-6614" publicationId="0a0b-b837-fa34-a21d" page="6">
+              <characteristics>
+                <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">8&quot;</characteristic>
+                <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
+                <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">9&quot;</characteristic>
+                <characteristic name="Shots" typeId="53686f747323232344415441232323">2</characteristic>
+                <characteristic name="Acc" typeId="4.163637572616379e+35">3+</characteristic>
+                <characteristic name="E" typeId="456e6572677923232344415441232323">6</characteristic>
+                <characteristic name="Special" typeId="25ff-0caf-af0d-995f">AA-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7340-a9b7-d68b-54ce" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54b9-7ad0-f662-d654" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="AA-X" id="7f79-fa3d-a78c-1d80" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936">
+              <modifiers>
+                <modifier type="set" value="AA-2" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <comment>+10pt version</comment>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2073,6 +2110,101 @@ Place a squad containing 2 units of Praetorians (of any type) in any garrison 
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Commander (CV 3)" hidden="false" id="a6f3-d529-1675-0af3" type="selectionEntry" targetId="425b-ba23-208f-1d7e"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Arthur J. Wade - Broadsword Super-Heavy Tank" hidden="false" id="fca2-d32d-6ba5-8e55">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Broadsword Super-Heavy Tank" hidden="false" id="947c-9fea-6445-457d" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58c1-abc8-e1dc-26cc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-247a-b903-3a50" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="255"/>
+                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
+                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1fb6-6362-74f3-1896">
+                  <characteristics>
+                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
+                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
+                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
+                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
+                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
+                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Godslayer Railgun" hidden="false" id="3479-8a26-85dc-5dab">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c7e-8df8-a191-d89c" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="596e-e36f-35e5-b27d" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Godslayer Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1ffe-eddd-e23c-af0c">
+                      <characteristics>
+                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
+                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
+                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
+                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
+                        <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
+                        <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
+                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Devastator-4 (Behemoth)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Destroyer-X" id="e7d8-99f5-05bf-0d07" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
+                    <infoLink name="Devastator-X" id="9fc8-16b1-f16e-178b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <rules>
+                <rule name="Retinue" id="d440-3a50-c570-3bd7" hidden="false">
+                  <description>While this unit is within 3” of a Broadsword Super Heavy Tank squad, it counts as being part of that squad when being allocated shots (for purposes of Shooting at Commanders).</description>
+                </rule>
+                <rule name="Benefit" id="860e-f11f-5490-0389" hidden="false">
+                  <description>You may take up to two squads of “Wade’s Armoured Fist”, your choice of a squad of Gladius or a squad of Scimitar Heavy Tanks with the Standard Category (paying points as normal).</description>
+                </rule>
+                <rule name="Detriment" id="afd2-dbdc-7926-d1e1" hidden="false">
+                  <description>Ferrum Drone Bases, Longbow Howitzers, and Praetorian Sniper Teams may not be included in an army with Arthur J. Wade.
+
+All non-Aircraft squads in an army containing Arthur J. Wade must be embarked in an Aerial Transport or a Transport embarked in an Aerial Transport.</description>
+                </rule>
+                <rule name="Command Card - Armoured Spearhead" id="4097-6cb9-9bb6-19cd" hidden="false">
+                  <description>Arthur J. Wade only. Influence Range.
+
+At the start of the round.
+
+All non-Aircraft Squads in this Commander’s Battlegroup gain the Resilient special rule until the end of the round.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="b642-d6f7-c3ee-582f" targetId="ff91-8cc3-f775-3d20" primary="true"/>
+            <categoryLink name="Famous Commander" hidden="false" id="d5e6-8ec7-a407-68cd" targetId="b9fe-b6e1-3716-8d88" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f866-1c96-c355-dd6c" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="de55-aa4f-c18b-84ce" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Commander (CV 5)" hidden="false" id="70fb-b711-cb54-82f7" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0421-64a4-5768-dca9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd96-499d-574c-fb13" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2819,7 +2951,7 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="AA Battery" hidden="false" id="6639-8606-7871-626c" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
+                <entryLink import="true" name="AA Battery" hidden="false" id="6639-8606-7871-626c" type="selectionEntry" targetId="d49a-c1cd-5528-940f"/>
                 <entryLink import="true" name="Twin Cannon" hidden="false" id="871a-8dee-8275-951f" type="selectionEntry" targetId="f06d-75b8-b138-c494">
                   <constraints>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d03a-de2a-3943-52d3-min" includeChildSelections="false"/>
@@ -3035,8 +3167,8 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4799-0274-351a-639f" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="08e5-51b2-a52e-21ac" type="selectionEntry" targetId="5d86-9334-92bb-0cf7"/>
-                <entryLink import="true" name="AA Battery" hidden="false" id="375e-0bf3-ba5a-d516" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c"/>
+                <entryLink import="true" name="Twin Gatling Gun" hidden="false" id="08e5-51b2-a52e-21ac" type="selectionEntry" targetId="5d86-9334-92bb-0cf7" collective="false"/>
+                <entryLink import="true" name="AA Battery" hidden="false" id="375e-0bf3-ba5a-d516" type="selectionEntry" targetId="c1d2-2fb9-8967-e81c" collective="false"/>
               </entryLinks>
               <costs>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="-4"/>
@@ -3942,101 +4074,6 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-        <selectionEntry type="unit" import="true" name="Arthur J. Wade - Broadsword Super-Heavy Tank" hidden="false" id="fca2-d32d-6ba5-8e55">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Broadsword Super-Heavy Tank" hidden="false" id="947c-9fea-6445-457d" collective="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58c1-abc8-e1dc-26cc" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-247a-b903-3a50" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="255"/>
-                <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
-                <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-                <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Broadsword Super-Heavy Tank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="1fb6-6362-74f3-1896">
-                  <characteristics>
-                    <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                    <characteristic name="CM" typeId="725f-50fa-0778-01b0">A</characteristic>
-                    <characteristic name="A" typeId="dadd-5f09-c124-988c">15</characteristic>
-                    <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
-                    <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Tank</characteristic>
-                    <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Godslayer Railgun" hidden="false" id="3479-8a26-85dc-5dab">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c7e-8df8-a191-d89c" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="596e-e36f-35e5-b27d" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Godslayer Railgun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="1ffe-eddd-e23c-af0c">
-                      <characteristics>
-                        <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
-                        <characteristic name="Arc" typeId="4.1726323232344415e+25">F/S/R</characteristic>
-                        <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">∞</characteristic>
-                        <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">36&quot;</characteristic>
-                        <characteristic name="Shots" typeId="53686f747323232344415441232323">1</characteristic>
-                        <characteristic name="Acc" typeId="4.163637572616379e+35">1+</characteristic>
-                        <characteristic name="E" typeId="456e6572677923232344415441232323">14</characteristic>
-                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Destroyer 5+, Devastator-4 (Behemoth) </characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Destroyer-X" id="e7d8-99f5-05bf-0d07" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
-                    <infoLink name="Devastator-X" id="9fc8-16b1-f16e-178b" hidden="false" type="rule" targetId="f34b-6e21-a034-1168"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <rules>
-                <rule name="Retinue" id="d440-3a50-c570-3bd7" hidden="false">
-                  <description>While this unit is within 3” of a Broadsword Super Heavy Tank squad, it counts as being part of that squad when being allocated shots (for purposes of Shooting at Commanders).</description>
-                </rule>
-                <rule name="Benefit" id="860e-f11f-5490-0389" hidden="false">
-                  <description>You may take up to two squads of “Wade’s Armoured Fist”, your choice of a squad of Gladius or a squad of Scimitar Heavy Tanks with the Standard Category (paying points as normal).</description>
-                </rule>
-                <rule name="Detriment" id="afd2-dbdc-7926-d1e1" hidden="false">
-                  <description>Ferrum Drone Bases, Longbow Howitzers, and Praetorian Sniper Teams may not be included in an army with Arthur J. Wade.
-
-All non-Aircraft squads in an army containing Arthur J. Wade must be embarked in an Aerial Transport or a Transport embarked in an Aerial Transport.</description>
-                </rule>
-                <rule name="Command Card - Armoured Spearhead" id="4097-6cb9-9bb6-19cd" hidden="false">
-                  <description>Arthur J. Wade only. Influence Range.
-
-At the start of the round.
-
-All non-Aircraft Squads in this Commander’s Battlegroup gain the Resilient special rule until the end of the round.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink name="Heavy" hidden="false" id="b642-d6f7-c3ee-582f" targetId="ff91-8cc3-f775-3d20" primary="true"/>
-            <categoryLink targetId="b9fe-b6e1-3716-8d88" id="d5e6-8ec7-a407-68cd" primary="false" name="Famous Commander"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f866-1c96-c355-dd6c" includeChildSelections="true"/>
-            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="de55-aa4f-c18b-84ce" includeChildSelections="true"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Commander (CV 5)" hidden="false" id="70fb-b711-cb54-82f7" type="selectionEntry" targetId="8160-acd4-d9ed-2583">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0421-64a4-5768-dca9" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd96-499d-574c-fb13" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>

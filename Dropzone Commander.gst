@@ -542,7 +542,7 @@
               <modifiers>
                 <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
                   <repeats>
-                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="self" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -610,7 +610,7 @@
               <modifiers>
                 <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
                   <repeats>
-                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="self" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -731,7 +731,7 @@
               <modifiers>
                 <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
                   <repeats>
-                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="self" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -852,7 +852,7 @@
               <modifiers>
                 <modifier type="decrement" value="1" field="201f-b481-6ccf-6a5f">
                   <repeats>
-                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="force" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                    <repeat value="1" repeats="1" field="201f-b481-6ccf-6a5f" scope="self" childId="de27-8358-5d78-6eeb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -1097,7 +1097,7 @@ Additionally, using these Experimental Rules reduces the points cost of the foll
 • Resistance Fighters (Including Salakhan&apos;s Fighters)
 
 
-The full experimental rules can be found in the &quot;FAQ and Errata&quot; document on the TTCombat Dropzone Commander resources page. </description>
+The full experimental rules can be found in the &quot;FAQ and Errata&quot; document on the TTCombat Dropzone Commander resources page.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1956,6 +1956,13 @@ Total 18+ = Energy 11, Devastator-2 (Vehicle, Behemoth), Devastator-3 (Scenery)<
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa19-a355-87fd-1580" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Transport Req" hidden="false" id="cb46-2269-a3b6-774f" sortIndex="1" defaultAmount="1">
           <constraints>
