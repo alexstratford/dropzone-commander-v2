@@ -587,6 +587,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Yari Light Gravtank Weapon Selection" hidden="false" id="3165-b218-f6f9-45d6" type="selectionEntryGroup" targetId="fbc5-b3cc-cfa7-83ee"/>
@@ -601,7 +602,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                     <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">1</characteristic>
                     <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Skimmer</characteristic>
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Infantry/Tank</characteristic>
+                    <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry / 2 Tank</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2604,13 +2605,14 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="946b-d600-d8a2-0243" collective="true">
               <costs>
-                <cost name="pts" typeId="points" value="95"/>
+                <cost name="pts" typeId="points" value="105"/>
                 <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                 <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                 <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
               </costs>
               <profiles>
                 <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="7802-71ca-3764-b671">
@@ -2633,8 +2635,8 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c6-7d7f-59be-2fd8" includeChildSelections="false"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="664e-7fb9-0d20-7669" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b66-cec5-4b42-ee00" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6ddc-c6a0-0711-f2cc" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Particle Cannon" hidden="false" id="4eac-43c7-5ed2-17fa" type="selectionEntry" targetId="e23b-78de-22e0-8460"/>
@@ -2650,57 +2652,6 @@ the number of nearby Mirrorwalkers) and this ability cannot be used on Passive C
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="f6af-e2af-b0c9-fe23" collective="true">
-                  <costs>
-                    <cost name="pts" typeId="points" value="95"/>
-                    <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
-                    <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-                    <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
-                    <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
-                    <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
-                    <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="6f1e-9388-01d6-9e5e">
-                      <characteristics>
-                        <characteristic name="Move" typeId="945b-0e28-8a43-adae">4&quot;</characteristic>
-                        <characteristic name="CM" typeId="725f-50fa-0778-01b0">A, P5+</characteristic>
-                        <characteristic name="A" typeId="dadd-5f09-c124-988c">14</characteristic>
-                        <characteristic name="DP" typeId="4f0a-b592-a15b-4f82">4</characteristic>
-                        <characteristic name="Type" typeId="cce5-c8f0-316f-2a02">Walker</characteristic>
-                        <characteristic name="Special" typeId="25ff-0caf-af0d-995f">-</characteristic>
-                        <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">6 Tank</characteristic>
-                      </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="Large" field="25ff-0caf-af0d-995f" join=", ">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c3c-4c06-b657-1474" includeChildSelections="false"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8a72-8766-a37d-7fd3" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Particle Cannon" hidden="false" id="9e26-df55-49ea-d685" type="selectionEntry" targetId="e23b-78de-22e0-8460"/>
-                  </entryLinks>
-                  <infoLinks>
-                    <infoLink name="Large" id="c76b-777d-a196-57bc" hidden="true" type="rule" targetId="45e1-bc6d-e75c-45a2">
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee17-3d29-95aa-3135" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
@@ -4186,13 +4137,14 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Ocelot Ordnance Warstrider" hidden="false" id="80d9-9b14-e5ac-de5b" collective="true">
                   <costs>
-                    <cost name="pts" typeId="points" value="95"/>
+                    <cost name="pts" typeId="points" value="105"/>
                     <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
                     <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
                     <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="6"/>
                     <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                     <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                     <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+                    <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
                   </costs>
                   <profiles>
                     <profile name="Ocelot Ordnance Warstrider" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3ef1-a158-44c5-907b">
@@ -4324,7 +4276,7 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
     <entryLink import="true" name="Celestial Dragon" hidden="false" id="fe1f-77f7-2379-786d" targetId="5ce0-ef77-6d51-ee29" type="selectionEntry"/>
     <entryLink import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="f8ba-daa9-b49f-716a" type="selectionEntry" targetId="ee17-3d29-95aa-3135"/>
     <entryLink import="true" name="Ramses the Fireborn - Puma Sonic Warstrider" hidden="false" id="987c-7933-fff7-961e" targetId="96aa-91d3-753c-0e7b" type="selectionEntry"/>
-    <entryLink import="true" name="Firesworn" hidden="false" id="002d-3fcf-82eb-4111" targetId="9f95-98d2-322c-8f08" type="selectionEntry"/>
+    <entryLink import="true" name="Ramses&apos; Firesworn " hidden="false" id="002d-3fcf-82eb-4111" targetId="9f95-98d2-322c-8f08" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
