@@ -2471,29 +2471,6 @@ Target a destructible scenery piece within 6” of this unit. Roll a dice for e
               <entryLinks>
                 <entryLink import="true" name="Assault Rifles, Homemade RPGs, Knives and Pistols" hidden="false" id="e9ff-fa10-f089-f0e5" type="selectionEntry" targetId="3522-a1f0-a0f1-a736"/>
               </entryLinks>
-              <rules>
-                <rule name="Kalium Volunteers" id="d1a2-5ce0-b17b-8fb0" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink name="Resilient" id="6d60-9372-a512-4f89" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <modifiers>
                 <modifier type="decrement" value="5" field="points">
                   <conditions>
@@ -2551,14 +2528,9 @@ Target a destructible scenery piece within 6” of this unit. Roll a dice for e
                             <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
                           </modifiers>
                           <comment>Kalium Volunteers</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
                         </modifierGroup>
                       </modifierGroups>
                     </modifierGroup>
@@ -2570,14 +2542,9 @@ Target a destructible scenery piece within 6” of this unit. Roll a dice for e
                 <rule name="Kalium Volunteers" id="beba-3985-f2e9-8cef" hidden="true">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <description>This squad automatically passes Fortitude tests.</description>
@@ -2669,44 +2636,14 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Type" typeId="2ed1-82c9-6c88-46ee">Infantry 5+</characteristic>
                     <characteristic name="Special" typeId="89f6-a5e7-b366-70a3">Bloodthirsty</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Resilient" field="89f6-a5e7-b366-70a3" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Bloodthirsty" id="baa7-8a67-f6a3-41d3" hidden="false" type="rule" targetId="9134-48fd-ee38-1054"/>
-                <infoLink name="Resilient" id="89bc-7196-d5bd-0293" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
               </infoLinks>
               <rules>
                 <rule name="Attack Dog" id="2757-664f-9fd1-6552" hidden="false">
                   <description>Squads of K9 Attack Units cannot be bought with points, instead only being used as part of a K9 Technical, and are worth 0 Kill Points. This unit cannot make Signal actions, search for or claim Objectives, and cannot embark in transports during battle. K9 Attack Units always have the Troop Category, regardless of the Category of the vehicle that they originate from.</description>
-                </rule>
-                <rule name="Kalium Volunteers" id="b86d-e8a6-8e3c-bc08" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -2762,14 +2699,9 @@ To select this, go to Configuration and select the background there</description
                             <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
                           </modifiers>
                           <comment>Kalium Volunteers</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
                         </modifierGroup>
                       </modifierGroups>
                     </modifierGroup>
@@ -2780,14 +2712,9 @@ To select this, go to Configuration and select the background there</description
                 <rule name="Kalium Volunteers" id="4982-19d7-43f9-3b72" hidden="true">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="9eae-6884-1dd7-423e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <description>This squad automatically passes Fortitude tests.</description>
@@ -3642,17 +3569,6 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Bloodthirsty, Rare</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3681,18 +3597,6 @@ To select this, go to Configuration and select the background there</description
                   </rules>
                 </entryLink>
               </entryLinks>
-              <rules>
-                <rule name="Kalium Volunteers" id="13b4-6f0a-9ec2-4903" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
-                </rule>
-              </rules>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3834,17 +3738,6 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 3&quot;, Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3861,16 +3754,6 @@ To select this, go to Configuration and select the background there</description
                 </rule>
                 <rule name="Sticky Mines" id="4db7-b5e8-9ea9-3cf6" hidden="false">
                   <description>After completing a Moving action, you may target an enemy unit within 1” or enemy unit in the same garrison, following the rules for shooting. That unit suffers an E9 Automatic hit.</description>
-                </rule>
-                <rule name="Kalium Volunteers" id="2693-a61d-6870-65e2" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <constraints>
@@ -3938,17 +3821,6 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3961,16 +3833,6 @@ To select this, go to Configuration and select the background there</description
               <rules>
                 <rule name="Wheels" id="4c46-6b98-2d7c-3be1" hidden="false">
                   <description>This unit may not enter Garrisons</description>
-                </rule>
-                <rule name="Kalium Volunteers" id="f041-fb01-57e7-8fd7" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <entryLinks>
@@ -4036,17 +3898,6 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Resilient</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">2 Wheel/Drill</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4061,16 +3912,6 @@ To select this, go to Configuration and select the background there</description
                 </rule>
                 <rule name="Disruptor Array" id="869d-fd97-5326-a9ef" hidden="false">
                   <description>Once per activation, pick an enemy non-Behemoth Vehicle squad or Infantry squad with at least one unit in line of sight within 18” of this unit. That squad suffers a +2 penalty to its Accuracy until the end of the round. Multiple units in this squad may affect multiple enemy squads, but each enemy squad may only be affected by this special rule once.</description>
-                </rule>
-                <rule name="Kalium Volunteers" id="6641-573b-9a2b-777a" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
               <costs>
@@ -4185,30 +4026,10 @@ To select this, go to Configuration and select the background there</description
                     <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Infiltrate 18&quot;, Rare</characteristic>
                     <characteristic name="Transport Requirement" typeId="730b-1969-f647-f794">1 Infantry</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="Resilient" field="25ff-0caf-af0d-995f" join=", "/>
-                      </modifiers>
-                      <comment>Kalium Volunteers</comment>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7ea6-9b98-53fb-e5b3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Rare" id="3176-8500-8cf2-1c55" hidden="false" type="rule" targetId="b430-8b04-52c2-a2c6"/>
-                <infoLink name="Resilient" id="aff7-319a-e2a3-25b5" hidden="true" type="rule" targetId="bee8-5b68-340e-b6bb">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Infiltrating" hidden="false" id="964f-c061-301a-cd7c" type="selectionEntry" targetId="5e74-7851-f3ac-10e9" sortIndex="1"/>
@@ -4218,16 +4039,6 @@ To select this, go to Configuration and select the background there</description
               <rules>
                 <rule name="Cluster IED" id="8d66-124e-493f-32fd" hidden="false">
                   <description>When an enemy squad enters a Garrison this squad is in, roll 2D6. The enemy squad takes that much damage, distributed in the same way as Close Quarters weapons. Passive and Dodge saves may be used against this damage. If a double is rolled, the explosion was a bit too powerful! Damage is dealt as normal, but one unit from this squad is then removed as a casualty (controlling player’s choice).</description>
-                </rule>
-                <rule name="Kalium Volunteers" id="8bb0-2a2f-7621-ddbf" hidden="true">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="183b-253f-563b-a777" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <description>This squad automatically passes Fortitude tests.</description>
                 </rule>
               </rules>
             </selectionEntry>

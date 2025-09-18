@@ -4526,7 +4526,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Agas Battle Walker" hidden="false" id="d5eb-361c-3e88-041f" targetId="ce5f-9aed-11b4-7c72" type="selectionEntry"/>
     <entryLink import="true" name="Rashnu Guardian Walker" hidden="false" id="4888-6208-97db-95ba" targetId="13d7-c6c4-f6a9-8efb" type="selectionEntry"/>
     <entryLink import="true" name="Jocasta Caine - Hera Command Walker" hidden="false" id="b6b8-68fd-0b6c-cb7c" targetId="1b55-0346-6a34-ba15" type="selectionEntry"/>
-    <entryLink import="true" name="Helios Lightspears" hidden="false" id="ebf2-5f38-5193-1723" targetId="de82-89ba-60be-ac66" type="selectionEntry"/>
+    <entryLink import="true" name="Helios Lightspear" hidden="false" id="ebf2-5f38-5193-1723" targetId="de82-89ba-60be-ac66" type="selectionEntry"/>
     <entryLink import="true" name="Apollo Swiftspear" hidden="false" id="7851-f854-acd9-9b18" targetId="cf14-ff4c-d664-3296" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
@@ -4725,6 +4725,17 @@ Devastator-2 (All) special rules until the end of the round.</description>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
           </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+                <modifier type="set" value="5" field="201f-b481-6ccf-6a5f"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="de27-8358-5d78-6eeb" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
