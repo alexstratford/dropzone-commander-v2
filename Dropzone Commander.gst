@@ -176,8 +176,8 @@
         <categoryLink name="Configuration" hidden="false" id="6c0e-eeab-b788-eedb" targetId="8a9e-8399-ae64-5be9"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="dd46-a6d4-ee4d-118f" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="4f10-8eee-cd4f-1cb2" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="dd46-a6d4-ee4d-118f" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="4f10-8eee-cd4f-1cb2" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1034,6 +1034,70 @@
             <categoryLink name="Fauna" hidden="false" id="8f6f-6008-56ad-89a8" targetId="9a72-031e-b487-67c2"/>
           </categoryLinks>
         </forceEntry>
+        <forceEntry name="Command Cards" id="2152-31c0-5b70-49ba" hidden="true">
+          <constraints>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="edb0-f2bb-fc45-aed0" includeChildSelections="true"/>
+            <constraint type="min" value="30" field="selections" scope="roster" shared="true" id="97d0-67fb-0f4a-d493-min" automatic="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="30" field="selections" scope="roster" shared="true" id="97d0-67fb-0f4a-d493-max" automatic="false" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="0" field="forces" scope="roster" shared="true" id="b4d9-49ce-61f2-a6f9" includeChildSelections="true"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden"/>
+                <modifier type="set" value="1" field="b4d9-49ce-61f2-a6f9" scope="roster"/>
+              </modifiers>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7504-b7a2-cf56-9902" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7504-b7a2-cf56-9902" shared="true"/>
+                          </conditions>
+                          <comment>Enable UCM</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d4a3-4b36-bde2-4468" shared="true"/>
+                          </conditions>
+                          <comment>Enable Scourge</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e38a-38cc-1ad6-cc14" shared="true"/>
+                          </conditions>
+                          <comment>Enable PHR</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c017-50c0-52a0-3f24" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c017-50c0-52a0-3f24" shared="true"/>
+                          </conditions>
+                          <comment>Enable Shaltari</comment>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8263-3abb-ae06-a255" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8263-3abb-ae06-a255" shared="true"/>
+                          </conditions>
+                          <comment>Enable Resistance</comment>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifierGroup>
+          </modifierGroups>
+        </forceEntry>
       </forceEntries>
       <modifiers>
         <modifier type="add" value="Insufficient Vehicle Access capacity to deploy entire force turn 1" field="info">
@@ -1070,6 +1134,7 @@
     </entryLink>
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="2066-1d5d-638e-cf2b" type="selectionEntry" targetId="e28e-c594-1ee6-f751"/>
+    <entryLink import="true" name="Intel Report" hidden="false" id="32cb-5542-5fdf-287a" targetId="dfe2-996e-9994-6733" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
@@ -2515,9 +2580,24 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d5-52bb-9b1d-3786" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="0a4c-47ea-3135-9429">
+        <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="0a4c-47ea-3135-9429">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4c-16ab-c448-dedd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Generic Command Cards" id="f5ba-c702-7018-4389" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Intel Report" hidden="false" id="dfe2-996e-9994-6733">
+          <rules>
+            <rule name="Intel Report" id="1f70-4b2e-1dd0-3a80" hidden="false">
+              <description>During one of your activations, pick an opponent.
+That opponent must show you all of the Command Cards from their hand.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="95ea-d862-97b5-1387" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
