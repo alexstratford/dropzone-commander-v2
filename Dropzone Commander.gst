@@ -1546,24 +1546,6 @@ The full experimental rules can be found in the &quot;FAQ and Errata&quot; docum
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="b5ef-f956-a97c-9ab0">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Intel Report" hidden="false" id="dfe2-996e-9994-6733">
-          <rules>
-            <rule name="Intel Report" id="1f70-4b2e-1dd0-3a80" hidden="false">
-              <description>During one of your activations, pick an opponent.
-That opponent must show you all of the Command Cards from their hand.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="Command Card" hidden="false" id="253a-f950-101b-63ce" targetId="f628-713d-67d7-f842" primary="true"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="95ea-d862-97b5-1387" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Articulated" id="350e-9dc1-106a-3ac3" hidden="false" publicationId="9aaf-4a48-3cce-441f" page="45">
