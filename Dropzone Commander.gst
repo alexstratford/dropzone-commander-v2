@@ -970,9 +970,10 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Beasts" id="269e-316b-dc6a-63a4" hidden="true">
+        <forceEntry name="Beasts Battlegroup" id="269e-316b-dc6a-63a4" hidden="false">
           <constraints>
             <constraint type="max" value="15" field="limit::points" scope="self" shared="false" id="10e5-d3f1-a80d-abd8" includeChildSelections="true" percentValue="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="98fd-3e39-cbfc-b262" includeChildSelections="true"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="20" field="10e5-d3f1-a80d-abd8">
@@ -1135,7 +1136,6 @@
     </entryLink>
     <entryLink import="true" name="Transport Requirement" hidden="false" id="56fb-9345-79f2-15ae" type="selectionEntry" targetId="4379-c9b6-890d-afa4" flatten="true"/>
     <entryLink import="true" name="EAA Columbus Battlewalker" hidden="false" id="2066-1d5d-638e-cf2b" type="selectionEntry" targetId="e28e-c594-1ee6-f751"/>
-    <entryLink import="true" name="Intel Report" hidden="false" id="32cb-5542-5fdf-287a" targetId="dfe2-996e-9994-6733" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Configuration" hidden="false" id="71a0-476c-277b-1c28">
@@ -2576,7 +2576,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
     </selectionEntryGroup>
     <selectionEntryGroup name="Configuration Selection" id="75a0-e793-845d-acf4" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Fauna" hidden="false" id="10c7-8a84-b1a2-3134">
+        <selectionEntry type="upgrade" import="true" name="Fauna" hidden="true" id="10c7-8a84-b1a2-3134">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d5-52bb-9b1d-3786" includeChildSelections="false"/>
           </constraints>
@@ -2590,15 +2590,656 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
     </selectionEntryGroup>
     <selectionEntryGroup name="Generic Command Cards" id="f5ba-c702-7018-4389" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Intel Report" hidden="false" id="dfe2-996e-9994-6733">
+        <selectionEntry type="upgrade" import="true" name="1 - Intel Report" hidden="false" id="dfe2-996e-9994-6733" sortIndex="1">
           <rules>
-            <rule name="Intel Report" id="1f70-4b2e-1dd0-3a80" hidden="false">
+            <rule name="1 - Intel Report" id="1f70-4b2e-1dd0-3a80" hidden="false">
               <description>During one of your activations, pick an opponent.
-That opponent must show you all of the Command Cards from their hand.</description>
+That opponent must show you all of the Command Cards from their hand.
+Global range.</description>
             </rule>
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="95ea-d862-97b5-1387" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2 - Espionage" hidden="false" id="0fb6-edfb-e794-f9df" sortIndex="2">
+          <rules>
+            <rule name="2 - Espionage" id="2e0d-57e7-6514-dbfa" hidden="false">
+              <description>When an opponent uses a Command Card, play this to negate the effects of that Command Card.
+
+Note that you may play an Espionage card on another Espionage card!
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="43c7-4f50-6448-367e" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3 - System Jammer" hidden="false" id="dde6-761d-a1af-0018" sortIndex="3">
+          <rules>
+            <rule name="3 - System Jammer" id="7195-854f-e1cd-55ec" hidden="false">
+              <description>During one of your activations, pick an opponent.
+
+That opponent must discard D3 Command Cards, chosen at random, from their hand.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1621-cfab-66a8-6bb6" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="6 - Interference" hidden="false" id="8fc9-3ec9-410b-634a" sortIndex="5">
+          <rules>
+            <rule name="6 - Interference" id="6bcd-d99a-041b-79d3" hidden="false">
+              <description>When an opponent selects a Battlegroup to activate (including specifying which Auxiliary Squads are activating), roll 1D3.
+
+The resulting number is the number of squads chosen by the controlling player which may only make 1 action instead of 2 for that activation.
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff4d-e586-7f55-b30c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="5 - Quick Strategist" hidden="false" id="05cb-0626-3d8a-26b0" sortIndex="4">
+          <rules>
+            <rule name="5 - Quick Strategist" id="67f7-c4fd-a782-964a" hidden="false">
+              <description>That Commander increases its Command Value by 3 for the initiative roll, and you may force your opponent to re-roll any 6s they roll.
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fc40-9898-777e-0b66" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="7 - Shock Assault" hidden="false" id="60cf-344a-b6c3-a3e0" sortIndex="6">
+          <rules>
+            <rule name="7 - Shock Assault" id="2a4f-459c-27e8-1004" hidden="false">
+              <description>After drawing Command Cards, pick one friendly squad to activate immediately.
+
+This squad cannot activate during its Battlegroup’s activation this round. 
+
+This card can be used to activate an Auxiliary Transport with embarked units, in which case the embarked units may activate as normal as part of their Battlegroup.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="66a1-fe4a-60ea-7e03" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="8 - Reactionary Tactics" hidden="false" id="940c-ee08-f781-3ae2" sortIndex="6">
+          <rules>
+            <rule name="8 - Reactionary Tactics" id="10b1-bdfa-5c52-2c01" hidden="false">
+              <description>Play after an enemy squad completes its activation.
+
+Pick one friendly squad in Influence. That squad makes an out of sequence action.
+
+This cannot be an action that uses both actions in an activation (such as Scanning or Signalling).
+
+This doesn’t affect the friendly squad’s activation in any way (including shooting weapons or M&amp;F values).
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="899e-7ff7-35b8-9a30" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="9 - Underground Passage" hidden="false" id="5997-b6df-96a2-7a65" sortIndex="6">
+          <rules>
+            <rule name="9 - Underground Passage" id="3d02-745e-07d5-9619" hidden="false">
+              <description>When a friendly squad in a Garrison makes a Moving action, you may move them to any Garrison within 12” instead of their normal move.
+
+This counts as entering the new Garrison, following all the normal rules.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f943-a736-450b-d847" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="10 - Move! Move! Move!" hidden="false" id="36c8-774c-15d3-775d" sortIndex="6">
+          <rules>
+            <rule name="10 - Move! Move! Move!" id="0f8d-6f54-ef81-88c3" hidden="false">
+              <description>After an enemy squad completes its activation, pick one friendly Transport.
+
+
+Immediately disembark all units from that Transport, regardless of how far it has moved this round.
+
+
+This doesn’t affect the friendly squad’s activation in any way (including Accuracy penalties or M&amp;F values). Infantry squads disembarking may still automatically enter Garrisons as normal.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e65a-0d54-4b36-6a1f" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="11 - Evasive Manoeuvres" hidden="false" id="c0ed-c64e-d950-4049" sortIndex="6">
+          <rules>
+            <rule name="11 - Evasive Manoeuvres" id="40a3-ae92-a11e-60e6" hidden="false">
+              <description>Play after making a Moving action with a friendly Aircraft squad (and after Reaction Fire is declared by a unit).
+
+
+That squad gains Evasion +3 until the end of the round.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="02fb-77da-634e-806c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="12 - Get to the LZ!" hidden="false" id="be3b-65e0-f5cd-d1cd" sortIndex="6">
+          <rules>
+            <rule name="12 - Get to the LZ!" id="6f09-6564-2953-867b" hidden="false">
+              <description>When a friendly squad activates, it may double its MV value for that activation, provided it embarks into a Transport.
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fc51-1118-131c-aaf1" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="13 - Assisted Targeting" hidden="false" id="9260-6281-dc5d-8c05" sortIndex="6">
+          <rules>
+            <rule name="13 - Assisted Targeting" id="73ef-0aff-79fb-fce1" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, after all rolls to hit.
+
+That squad re-rolls any of those failed hit rolls.
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2463-26eb-9d41-0ded" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="15 - Velocity Tracker" hidden="false" id="6600-033f-4cf5-e1b1" sortIndex="6">
+          <rules>
+            <rule name="15 - Velocity Tracker" id="345a-ddbf-dc28-5cb8" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, before rolling to hit.
+
+
+All of its weapons gain the AA special rule for this activation, but only hit on a 6+, regardless  of any modifiers.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="54e1-0b9e-f61f-7aac" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="14 - Incendiary Rounds" hidden="false" id="ecc5-c221-dcd1-0d1b" sortIndex="6">
+          <rules>
+            <rule name="14 - Incendiary Rounds" id="e48c-d115-2dd3-af68" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, after all rolls to Damage.
+
+
+That squad re-rolls any of those failed Damage rolls.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dc13-6683-0b1b-d3b7" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="16 - Armour Piercing" hidden="false" id="a0fc-fdd4-edcd-1aba" sortIndex="6">
+          <rules>
+            <rule name="16 - Armour Piercing" id="ac4e-ced6-fc9f-d3fd" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, before declaring targets.
+
+
+That squad gains the Penetrative special rule on its weapons for this activation.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="367f-1e9f-fb3c-86cb" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="17 - Cloaking Field" hidden="false" id="2be3-8f97-a56b-1b00" sortIndex="6">
+          <rules>
+            <rule name="17 - Cloaking Field" id="e288-c09e-8527-8926" hidden="false">
+              <description>After discarding Command Cards, pick one friendly squad.
+
+
+For this round that squad gains 5+ Passive Countermeasures.
+
+
+If the squad already has equal or better Passive Countermeasures, they gain no benefit.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0946-2497-0157-9842" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="18 - Deploy Flares" hidden="false" id="5142-d0d1-2ea7-aaed" sortIndex="6">
+          <rules>
+            <rule name="18 - Deploy Flares" id="8530-b2cb-f65d-c810" hidden="false">
+              <description>Play when an enemy squad makes a Shooting action, before they roll to Damage.
+
+
+For this activation they must re-roll any successful Damage rolls.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2a2-43ae-a699-b45d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="19 - Experimental Firepower" hidden="false" id="efc9-b24f-2d02-c435" sortIndex="6">
+          <rules>
+            <rule name="19 - Experimental Firepower" id="f9d2-9398-483f-ace8" hidden="false">
+              <description>Play when a friendly squad activates. Roll a dice.
+
+
+On a 3+, increase the Energy value of their weapons by 1 until the end of the round.
+
+
+On a 5+, instead increase the Energy value of their weapons by 2 until the end of the round.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be7e-c579-d5e8-444c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="20 - Marksmanship" hidden="false" id="2237-bf16-3db6-b3ad" sortIndex="6">
+          <rules>
+            <rule name="20 - Marksmanship" id="09dc-34a4-9b43-194c" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, before rolling to hit.
+
+
+The squad’s weapons ignore Accuracy modifiers for this activation.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16b0-65da-6530-3028" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="21 - Room Clearance" hidden="false" id="a912-2de5-55ab-2469" sortIndex="6">
+          <rules>
+            <rule name="21 - Room Clearance" id="328a-4095-cafb-135e" hidden="false">
+              <description>Play when a friendly squad makes a Shooting action, before declaring targets.
+
+
+Double the number of Shots on their Close Quarters weapons for that action.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a94f-49d2-ca02-8261" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="22 - Occupier’s Advantage" hidden="false" id="aac9-cbb6-0414-975c" sortIndex="6">
+          <rules>
+            <rule name="22 - Occupier’s Advantage" id="0a61-2a95-217c-1e90" hidden="false">
+              <description>When an enemy squad enters a Garrison occupied by a friendly squad. That friendly squad immediately makes an out of sequence Shooting action against them with Close Quarters weapons.
+
+
+This doesn’t affect the friendly squad’s activation in any way (including shooting a weapon more than once in a round).
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="16d3-2ecb-62b5-1778" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="23 - Inspiring Presence" hidden="false" id="fc3d-5e83-b35b-1e42" sortIndex="6">
+          <rules>
+            <rule name="23 - Inspiring Presence" id="d1f7-6516-cdfa-07c7" hidden="false">
+              <description>After drawing Command Cards, pick a friendly Commander.
+ 
+
+For the rest of the round, when a friendly squad has to make a Fortitude Test, they may re-roll it if they are within this Commander’s Influence range.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c207-3058-496a-5fbc" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="24 - Nerves of Steel" hidden="false" id="f65a-ddcc-d64d-1af8" sortIndex="6">
+          <rules>
+            <rule name="24 - Nerves of Steel" id="25c0-e2c0-c67f-6f5e" hidden="false">
+              <description>Play when a friendly squad has to make a Fortitude Test.
+
+
+Instead of rolling, it automatically passes.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cf51-08d2-1efb-cda1" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="25 - Tactical Withdrawal" hidden="false" id="1faa-d6d5-408f-7281" sortIndex="6">
+          <rules>
+            <rule name="25 - Tactical Withdrawal" id="605a-d963-1eb6-f4a8" hidden="false">
+              <description>When an enemy squad enters a Garrison occupied by a friendly squad, the friendly squad immediately makes an out of sequence Moving action, either leaving the Garrison or moving to a Linked Garrison.
+
+
+This does not affect the friendly squad’s activation in any way (such as M&amp;F values).
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6137-26c8-6a4f-038b" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="26 - Explosive Charges" hidden="false" id="b888-c08e-c718-c47b" sortIndex="6">
+          <rules>
+            <rule name="26 - Explosive Charges" id="fc84-7314-0471-8e01" hidden="false">
+              <description>Play after rolling to Damage with Collateral Damage on a single scenery piece. 
+
+
+Re-roll all failed dice for this roll.
+
+
+In addition, any of these Collateral Damage tokens that fail to damage are not removed from the Garrison.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="940e-ba70-ae48-b4ea" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="27 - Reinforced Steel" hidden="false" id="8bdf-141c-2496-30ad" sortIndex="6">
+          <rules>
+            <rule name="27 - Reinforced Steel" id="8247-93c4-1705-12bb" hidden="false">
+              <description>Play after rolling to Damage with Collateral Damage on a single scenery piece.
+
+
+Re-roll all successful dice for this roll.
+
+
+Global range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2766-10a0-802b-a74f" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="28 - Booby Trap" hidden="false" id="13e3-7d9e-ac6e-2eeb" sortIndex="6">
+          <rules>
+            <rule name="28 - Booby Trap" id="1032-e138-8bf3-4080" hidden="false">
+              <description>Play after an enemy squad completes any action in a Garrison (including entering).
+
+
+Roll 1 dice. That Garrison suffers that many automatic Energy 10 hits.
+
+
+Resolve any new Collateral Damage tokens immediately, as if the Garrison took damage from a weapon.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f10-ebf9-1e85-3892" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="29 - Field Repairs" hidden="false" id="5888-8f6e-5d38-452d" sortIndex="6">
+          <rules>
+            <rule name="29 - Field Repairs" id="abc5-31e3-77c1-907d" hidden="false">
+              <description>Play after a friendly or enemy squad completes its activation.
+
+
+Pick any friendly squad.
+
+
+That squad replenishes 1D3 Damage points, distributed to any number of units by the controlling player.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c77-4144-ee68-d83c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="30 - Call For Extraction" hidden="false" id="1cc7-b641-178c-df07" sortIndex="6">
+          <rules>
+            <rule name="30 - Call For Extraction" id="1f04-d66f-d7d5-9b07" hidden="false">
+              <description>Play when activating a friendly Battlegroup. Any Transport activated with that Battlegroup may choose to make 2 Moving actions during their activation.
+
+
+This still counts as 2 actions, meaning they cannot perform any other actions during their activation.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed32-f14e-2740-b300" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="4 - Signal Booster" hidden="false" id="f6eb-c3bf-4b8d-0c72" sortIndex="3">
+          <rules>
+            <rule name="4 - Signal Booster" id="b04f-9187-4298-4871" hidden="false">
+              <description>Before rolling for Initiative, pick a friendly Commander.
+
+
+That Commander increases its Command Value by 1 until the end of the round.
+
+
+This doesn’t increase its Influence range.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d86-59d1-d499-5196" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="31 - Objective Located" hidden="false" id="7a60-8594-e8da-ed3d" sortIndex="6">
+          <rules>
+            <rule name="31 - Objective Located" id="f00d-f3d1-fd8f-66a0" hidden="false">
+              <description>When a friendly Infantry squad makes a Search action. 
+Double the current round number for that Search action. If that Search action causes that squad to claim a Mobile objective, that objective cannot be passed to another friendly squad this round (but can still drop it due to being destroyed).
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6d4b-96f9-1e18-8de8" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="32 - Close Enough" hidden="false" id="f8d7-91e5-4bbd-bd1c" sortIndex="6">
+          <rules>
+            <rule name="32 - Close Enough" id="d29f-6711-017c-e8e9" hidden="false">
+              <description>After rolling to hit with a friendly unit. 
+
+
+Choose one of that units Area weapons that glanced its target.
+
+
+That weapon does not suffer the -2 Energy penalty for glancing.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0a21-5f6e-000b-32f3" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="33 - Titanomachy" hidden="false" id="9900-7d77-a515-0b6a" sortIndex="6">
+          <rules>
+            <rule name="33 - Titanomachy" id="76c7-c10d-0aae-109b" hidden="false">
+              <description>When a friendly weapon with the Devastator-X (Behemoth) rule hits an enemy Behemoth or enemy unit with the Large Special rule.
+
+Choose 1:
+
+• In addition to any normal damage, each other Zone on the enemy Behemoth takes 1 damage.
+
+• That hit gains the Destroyer 2+ special rule and its effects for that hit. Other hits are unaffected.
+
+
+Global range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce69-1678-02de-9d84" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="34 - Luck of the Shot" hidden="false" id="be8e-b63b-27de-316a" sortIndex="6">
+          <rules>
+            <rule name="34 - Luck of the Shot" id="4d9f-cdd5-473c-551a" hidden="false">
+              <description>When a friendly unit attacks a Behemoth with a weapon with Devastator-2 (Behemoth) or Devastator-2 (Large).
+
+
+Roll a dice. On a roll of a 3+, increase that weapon’s Devastator value by 2 for that attack. On a result of a 1-2 increase that weapon’s Devastator value by 1 for that attack.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="afe1-1d2b-a28e-db27" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="35 - Consider Your Options" hidden="false" id="13ce-1f56-38ff-79cc" sortIndex="6">
+          <rules>
+            <rule name="35 - Consider Your Options" id="9d9a-7999-ccaa-472a" hidden="false">
+              <description>Before drawing Command Cards.
+
+
+Look at the top 3 cards of your Command Card deck then put them back, you may then shuffle your Command Card deck.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a32c-6ef0-5e9c-40ed" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="36 - Tried and Tested" hidden="false" id="69ff-5af5-02b6-9615" sortIndex="6">
+          <rules>
+            <rule name="36 - Tried and Tested" id="9bb4-3e41-7e6c-5f68" hidden="false">
+              <description>After discarding Command Cards.
+
+
+Pick 3 Command Cards from your discard pile and shuffle them back into your deck.
+
+
+OR
+
+
+Pick 2 Command Cards from your discard pile and shuffle them back into your deck. You may use one of your Famous Commander Command Cards an additional time.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3574-7361-458b-fd7e" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="38 - Highly Volatile Contents" hidden="false" id="670c-011e-91f6-16f2" sortIndex="6">
+          <rules>
+            <rule name="38 - Highly Volatile Contents" id="2c0f-5786-d993-976c" hidden="false">
+              <description>Play in the Round Up Phase before rolling to Damage with Collateral Damage on a single scenery piece.
+
+
+Double the Energy value of Collateral Damage tokens on that scenery piece this round.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2fa8-689d-1db3-7062" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="37 - Counter Operation" hidden="false" id="4037-08cf-8c6d-2a40" sortIndex="6">
+          <rules>
+            <rule name="37 - Counter Operation" id="3b57-8130-3ac5-4a32" hidden="false">
+              <description>When you activate a Battlegroup.
+
+
+Your opponent reveals the top 3 cards of their Command deck, pick a card from among them and put it into their discard pile. Then that opponent chooses a card from among them and puts it on the bottom of their Command deck. Then put the remaining card into their discard pile.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="251c-04e8-9a32-a07c" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="39 - Long Shot" hidden="false" id="f44e-78b2-5987-cffd" sortIndex="6">
+          <rules>
+            <rule name="39 - Long Shot" id="c896-9497-fad9-9dd0" hidden="false">
+              <description>When a friendly squad makes a shooting action.
+
+
+That squad measures range using its weapons R(F) value this activation, even if the target has Active Countermeasures.
+
+
+Influence range.
+</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce0a-2f2c-966a-0aff" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="40 - Destructive Firepower" hidden="false" id="ffa2-1521-75cd-5942" sortIndex="6">
+          <rules>
+            <rule name="40 - Destructive Firepower" id="b1d7-a521-730b-9b56" hidden="false">
+              <description>When a friendly squad makes a shooting action.
+
+
+If that squad has not made a Moving action this round, One of that squad’s weapon profiles becomes M&amp;F 0” and gains Devastator-2 (Vehicle, Infantry) or increases its value by 1 if it already has an identical special rule. Weapons with a range of CQ are unaffected.
+
+
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a093-75db-6bb9-42c2" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>

@@ -4438,7 +4438,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="00dc-802a-547b-9018">
       <entryLinks>
-        <entryLink import="true" name="Command Cards" hidden="false" id="ad9b-2186-959b-6734" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="ad9b-2186-959b-6734" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
         <entryLink import="true" name="UCM Command Cards" hidden="false" id="323d-b464-3763-e19c" type="selectionEntryGroup" targetId="6a35-bbdf-02db-beb3" sortIndex="1"/>
       </entryLinks>
       <constraints>
@@ -5039,15 +5039,314 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup name="UCM Command Cards" id="6a35-bbdf-02db-beb3" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="f2d1-aed7-7858-742b">
+        <selectionEntry type="upgrade" import="true" name="UCM 1 - Ace in the Making" hidden="false" id="f2d1-aed7-7858-742b">
           <rules>
-            <rule name="Ace in the Making" id="974d-5cd8-8586-6635" hidden="false">
+            <rule name="UCM 1 - Ace in the Making" id="974d-5cd8-8586-6635" hidden="false">
               <description>When you activate a squad with the Fast special rule.
-One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
+One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation.
+Global range. </description>
             </rule>
           </rules>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f3ce-5449-4d68-8091" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 2 - MF-B Insertion" hidden="false" id="f6d1-2949-3fa8-db00">
+          <rules>
+            <rule name="UCM 2 - MF-B Insertion" id="6f12-c475-a969-7280" hidden="false">
+              <description>When you activate an aerial transport containing any type of Praetorians. That transport cannot be the target of Reaction Fire this activation.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="85d9-20b2-5dc3-3d97" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 3 - Central HQ Directive" hidden="false" id="7634-9119-cc09-e503">
+          <rules>
+            <rule name="UCM 3 - Central HQ Directive" id="678d-e46c-919f-1513" hidden="false">
+              <description>Immediately after players roll for initiative. All players must re-roll their Initiative roll.
+
+
+Count your Commander as having a CV of 5 for this re-roll.
+
+
+Global range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8cf1-d93f-b93d-1496" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 4 - Crazy Pilot" hidden="false" id="3a98-ad08-3bea-62b9">
+          <rules>
+            <rule name="UCM 4 - Crazy Pilot" id="c17b-017d-cc00-b355" hidden="false">
+              <description>When an aerial transport you control is targeted by a weapon with the AA special rule.
+
+
+That transports Countermeasures become A, E+4 for that attack.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a80f-8157-7eea-678a" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 5 - Heroic Sacrifice" hidden="false" id="d8cc-1a8f-6cf4-18d3">
+          <rules>
+            <rule name="UCM 5 - Heroic Sacrifice" id="cff6-8481-458d-87af" hidden="false">
+              <description>When an Infantry squad you control is targeted by a Close Quarters weapon inside a garrison.
+
+Immediately remove a unit from that squad as a casualty, then you may have that squad exit the garrison as if it was making a move action, ignoring any Fortitude tests.
+
+
+Influence Range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1ab7-c527-b0db-40a3" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 6 - Intel Gathering" hidden="false" id="9cfe-9a0e-57f8-46ed">
+          <rules>
+            <rule name="UCM 6 - Intel Gathering" id="dac7-c9c3-9bf1-57d2" hidden="false">
+              <description>During one of your activations, pick an opponent.
+
+
+That opponent must show you all of the Command Cards from their hand.
+
+
+Global range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8031-56b5-e7a0-d37f" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 7 - No Retreat" hidden="false" id="21fd-09f2-bffb-d4bc">
+          <rules>
+            <rule name="UCM 7 - No Retreat" id="bfcd-fa5d-494f-2dcd" hidden="false">
+              <description>When a friendly Infantry squad would fail a Fortitude test.
+
+
+That squad passes its Fortitude test.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f01-d29f-0512-ef0f" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 8 - CQB Training" hidden="false" id="e8ca-6ffb-b3d9-eecc">
+          <rules>
+            <rule name="UCM 8 - CQB Training" id="db4a-7592-03e2-b1ba" hidden="false">
+              <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+That squad counts as having an additional full unit for that attack.
+
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="064d-8686-7757-0f9e" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 10 - Quick Thinking" hidden="false" id="b1be-dd47-5181-809e">
+          <rules>
+            <rule name="UCM 10 - Quick Thinking" id="efd0-82a4-19b4-99d6" hidden="false">
+              <description>When an enemy Battlegroup activates, pick one friendly squad that has not activated this round to activate immediately.
+
+
+That squad activates before the enemy Battlegroup and cannot activate during its Battlegroup’s activation this round. 
+
+
+This card cannot be used to activate an Auxiliary Transport, a squad embarked in a transport, or a squad in Holding.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c4d-f027-c7fa-8fac" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 9 - Demo Charges" hidden="false" id="0467-c30e-3c9d-baed">
+          <rules>
+            <rule name="UCM 9 - Demo Charges" id="cb93-6d24-4c63-7349" hidden="false">
+              <description>When you activate a Battlegroup.
+
+
+One target building containing any friendly Infantry squads loses D3 damage points and gains D3+3 Collateral Damage tokens.
+
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e8fe-d4a0-07c7-3e2d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 11 - Secret Entrance" hidden="false" id="9b86-0e9c-4a74-fcb0">
+          <rules>
+            <rule name="UCM 11 - Secret Entrance" id="55df-c488-1823-6bd0" hidden="false">
+              <description>When you activate a friendly Infantry squad.
+
+
+That Infantry Squad may enter a garrison from up to 6” away instead of the normal 2” this activation. Squads using Rapid Insertion are unaffected.
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58ac-6d96-1efa-6736" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 12 - Field Medic" hidden="false" id="4e23-2252-77c3-a675">
+          <rules>
+            <rule name="UCM 12 - Field Medic" id="0a2e-3dd9-a4e0-0902" hidden="false">
+              <description>When you activate a friendly Infantry squad.
+
+
+One Unit in that Squad recovers D3+1 lost Damage Points.
+
+Influence range.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4584-c37f-d91b-f70b" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 13 - No Fear to Tread" hidden="false" id="f808-6ce1-fb5d-174c">
+          <rules>
+            <rule name="UCM 13 - No Fear to Tread" id="0c6d-cb01-d8be-5ec3" hidden="false">
+              <description>When you activate a squad of Tanks.
+
+
+That Squad counts as having the benefit of Exceptional Scenery and ignores the effects of Tough Scenery during its movement this activation.
+
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="87b2-9c40-d1f6-64f5" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 15 - Orbital Strike" hidden="false" id="b2c6-2334-1a54-0f0f">
+          <rules>
+            <rule name="UCM 15 - Orbital Strike" id="0a9b-3bab-693a-9a07" hidden="false">
+              <description>During one of your activations, pick an enemy squad in Influence and line of sight of a friendly Commander.
+
+
+Roll a D3. The enemy squad takes that many 3+ Acc attacks at E13, allocated as you choose.
+
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d6d7-b5e4-db1e-bef9" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 14 - Shrapnel Rounds" hidden="false" id="181e-9bd1-513d-c8e4">
+          <rules>
+            <rule name="UCM 14 - Shrapnel Rounds" id="badb-0e3f-2a71-6c55" hidden="false">
+              <description>When a friendly squad makes a Shooting action with a weapon with “Railgun” in its name.
+
+
+One unit in the attacking Squad loses any Devastator-X rule it has but gains Area on one Railgun profile for that attack.
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4600-22d1-c4bb-054b" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 16 - Falconry" hidden="false" id="b61b-3daf-4679-e877">
+          <rules>
+            <rule name="UCM 16 - Falconry" id="0f68-28c6-cd8a-cfb7" hidden="false">
+              <description>When you activate a squad of Falcon Light Gunships.
+
+
+That squad recovers D3 lost models in coherency. This cannot take the Squad above its starting number of models and the new models must take the same weapons as the rest of the Squad.
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2e53-33dc-21b8-4cea" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 17 - Tank Drills" hidden="false" id="f917-b38b-69ba-7d5d">
+          <rules>
+            <rule name="UCM 17 - Tank Drills" id="fbbc-f2f2-90dc-aff4" hidden="false">
+              <description>When a friendly Tank squad makes a Shooting action, after all rolls to Damage.
+
+
+That squad re-rolls any of those failed Damage rolls.
+
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a3d-58d5-9890-3d18" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 19 - Cunning Strategist" hidden="false" id="3635-1488-1b5a-d923">
+          <rules>
+            <rule name="UCM 19 - Cunning Strategist" id="c454-2d38-fb7a-0ccb" hidden="false">
+              <description>In the Initiation Phase, after rolling for initiative.
+
+
+The Commander you used to roll for initiative gains D3 to their Command Value this turn.
+
+
+Global range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="41ba-5303-6453-de2d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 18 - Air Parade" hidden="false" id="6ddc-3fd4-0b99-e5c5">
+          <rules>
+            <rule name="UCM 18 - Air Parade" id="9422-476b-16b6-7b13" hidden="false">
+              <description>When a friendly Aircraft squad makes a Shooting action, after all rolls to Damage.
+
+
+That squad re-rolls any of those failed Damage rolls.
+
+
+Influence range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="651b-a818-36c9-f4ce" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="UCM 20 - Aurum Mulligan" hidden="false" id="de70-6ac6-3f41-3ad5">
+          <rules>
+            <rule name="UCM 20 - Aurum Mulligan" id="edaa-b59a-7ada-6ac9" hidden="false">
+              <description>After drawing Command Cards.
+
+
+Discard your hand of Command Cards, then draw that many plus D3.
+
+Global range. </description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c326-030d-46eb-a4c8" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
