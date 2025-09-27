@@ -1891,7 +1891,7 @@ Objectives (including being passed or through destroying a squad).</description>
 If you do, this Squad requires a Signal action to enter the table. Infantry units entering via Call-In cannot make Signal actions in the same round.</description>
     </rule>
     <rule name="Airburst" id="eb0c-0156-1432-9b74" hidden="false">
-      <description>This weapon may target enemy Infantry that are in Garrisons, whether they have moved to an edge or not. Simply target the edge of a Garrison as if they were on that edge.</description>
+      <description>This weapon may target enemy Infantry that are in the centre of a Garrison as if they had moved to an edge of the garrison the shooting unit has line of sight to (they still gain any applicable cover).</description>
     </rule>
     <rule name="Grav" id="a894-2c20-86df-75ef" hidden="false">
       <description>When rolling to damage with this weapon, add together the target units Armour value and starting Damage Points (including all Zones) and consult the table below to determine the energy of the shot and any additional special rules it has.

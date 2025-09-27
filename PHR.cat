@@ -2860,7 +2860,7 @@ Choose one squad of Apollo Strike Walkers / Apollo Lightspears within 6” of 
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afd-2763-1008-e743" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5afd-2763-1008-e743" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
