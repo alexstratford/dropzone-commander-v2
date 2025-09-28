@@ -5129,6 +5129,33 @@ To select this, go to Configuration and select the background there</description
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="a019-b800-4c7a-f7fe">
+      <entryLinks>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="3a06-4ab5-a456-9a7e" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Resistance Command Cards" hidden="false" id="9819-c54f-7b90-1c31" type="selectionEntryGroup" targetId="3072-398e-21f3-4ee0" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5666-6a2d-8d1b-7c4b" includeChildSelections="true"/>
+        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="383b-3b48-06b3-e62d" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="6b01-ca82-7e61-07c9" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6b57-e2d7-abde-a32a" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7fbe-c729-e6a0-4d7d" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="6b01-ca82-7e61-07c9"/>
+            <modifier type="set" value="1" field="6b57-e2d7-abde-a32a"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Pizzaro Hazard Walker Weapon Selection" id="b5cf-206c-5183-ef30" hidden="false" defaultSelectionEntryId="577b-00e4-30b2-998b" collective="true">
@@ -5828,6 +5855,21 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce17-2729-76d8-d2e0-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce17-2729-76d8-d2e0-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Resistance Command Cards" id="3072-398e-21f3-4ee0" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="a798-5e3a-f75f-8b2b">
+          <rules>
+            <rule name="Ace in the Making" id="b094-65a3-92f6-3084" hidden="false">
+              <description>When you activate a squad with the Fast special rule.
+One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eb51-6539-90bb-5e7d" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

@@ -4206,6 +4206,33 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="03ff-b38f-9730-a30c">
+      <entryLinks>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7750-52ec-f796-b40c" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Shaltari Command Cards" hidden="false" id="a6d4-cabc-e608-fc84" type="selectionEntryGroup" targetId="5018-8027-a810-1bfe" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5434-5d41-0ee3-b816" includeChildSelections="true"/>
+        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="01bd-1b83-394d-f4f8" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="802d-82a0-7261-cb58" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="109e-be2e-775b-223e" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="2779-45d2-9396-56b9" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="802d-82a0-7261-cb58"/>
+            <modifier type="set" value="1" field="109e-be2e-775b-223e"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Warsuit" id="78ab-d7d9-dfe8-de1e" hidden="false">
@@ -4652,6 +4679,21 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6684-7d9f-65f3-c9af-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6684-7d9f-65f3-c9af-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Shaltari Command Cards" id="5018-8027-a810-1bfe" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="3b7f-38ec-416b-6fb9">
+          <rules>
+            <rule name="Ace in the Making" id="55a8-9c31-3a78-733c" hidden="false">
+              <description>When you activate a squad with the Fast special rule.
+One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5f1d-7365-ab1d-4df9" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>

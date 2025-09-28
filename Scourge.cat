@@ -4213,6 +4213,33 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="b829-fe1b-fdf3-a7fd">
+      <entryLinks>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7a8c-79f0-7718-f1fa" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Scourge Command Cards" hidden="false" id="3767-dae6-8578-390a" type="selectionEntryGroup" targetId="f68e-4a3b-640b-90fa" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="f28e-7538-fec7-2dcd" includeChildSelections="true"/>
+        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="1472-58aa-e8b7-43fe" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7b6c-5df9-6e94-87d3" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="82c2-910f-7693-341e" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9a8c-2380-0062-b05b" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="7b6c-5df9-6e94-87d3"/>
+            <modifier type="set" value="1" field="82c2-910f-7693-341e"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Harbinger Troopship" hidden="false" id="25e0-2a04-cfe1-4493" targetId="f4f3-caf4-529e-56bb" type="selectionEntry"/>
@@ -4495,6 +4522,21 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
       <infoLinks>
         <infoLink name="AA-X" id="cbc4-4fa9-740e-78da" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
       </infoLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Scourge Command Cards" id="f68e-4a3b-640b-90fa" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="025d-db6b-f986-cd6e">
+          <rules>
+            <rule name="Ace in the Making" id="aaf0-b305-082e-e170" hidden="false">
+              <description>When you activate a squad with the Fast special rule.
+One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="daa8-2c03-3cd0-28cd" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>

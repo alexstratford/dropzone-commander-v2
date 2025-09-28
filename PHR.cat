@@ -4453,6 +4453,33 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="a49d-73f8-a70e-b4ce">
+      <entryLinks>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="6bf1-5357-0c0c-5a4b" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="PHR Command Cards" hidden="false" id="9fd3-5311-6e87-6162" type="selectionEntryGroup" targetId="c58f-eba4-f8ed-ed4a" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5eed-282b-c6c6-73b0" includeChildSelections="true"/>
+        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="dc0e-d9c8-7538-31ac" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7066-ec44-2d22-22d4" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="1cf0-f0b1-6414-f61d" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b192-1c04-576c-1ff6" targetId="8a9e-8399-ae64-5be9" primary="true"/>
+      </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="1" field="7066-ec44-2d22-22d4"/>
+            <modifier type="set" value="1" field="1cf0-f0b1-6414-f61d"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Thrusters" id="eef8-268a-2085-6293" hidden="false">
@@ -5408,6 +5435,21 @@ Devastator-2 (All) special rules until the end of the round.</description>
           <infoLinks>
             <infoLink name="Destroyer-X" id="27d9-db95-94b9-7c7c" hidden="false" type="rule" targetId="fc5c-a89b-86c1-8f46"/>
           </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="PHR Command Cards" id="c58f-eba4-f8ed-ed4a" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="8c67-7acb-8d09-a0ea">
+          <rules>
+            <rule name="Ace in the Making" id="4496-15d3-b7d5-31cf" hidden="false">
+              <description>When you activate a squad with the Fast special rule.
+One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4d29-2552-8170-4398" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
