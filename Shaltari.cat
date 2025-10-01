@@ -4208,7 +4208,11 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="03ff-b38f-9730-a30c">
       <entryLinks>
-        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7750-52ec-f796-b40c" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7750-52ec-f796-b40c" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="de08-9a3c-5488-9515" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink import="true" name="Shaltari Command Cards" hidden="false" id="a6d4-cabc-e608-fc84" type="selectionEntryGroup" targetId="5018-8027-a810-1bfe" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Shaltari 11 - Shield Booster" hidden="false" id="21c6-3e8a-747a-b0bb">
@@ -4527,19 +4531,23 @@ Influence range.</description>
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="7fc0-2316-b4a0-5ed5" primary="false" name="Command Card"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c66-8532-99dd-31fb" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="1bc3-6229-868e-faf7-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="1bc3-6229-868e-faf7-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="2779-45d2-9396-56b9" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="30" field="1bc3-6229-868e-faf7-min"/>
-        <modifier type="set" value="30" field="1bc3-6229-868e-faf7-max"/>
+        <modifier type="add" value="Command Cards requires 30 selections" field="error">
+          <conditions>
+            <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -4450,16 +4450,17 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min-max" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b16a-d2cb-8db7-51ef" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="8a9e-8399-ae64-5be9" id="221e-779a-29d9-f573" primary="true" name="Configuration"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="30" field="8d4f-8fd4-60d3-4729-min-min"/>
-        <modifier type="set" value="30" field="8d4f-8fd4-60d3-4729-min-max"/>
+        <modifier type="add" value="Command Cards requires 30 selections" field="error">
+          <conditions>
+            <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>

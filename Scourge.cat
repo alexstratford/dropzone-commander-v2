@@ -4215,7 +4215,11 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="b829-fe1b-fdf3-a7fd">
       <entryLinks>
-        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7a8c-79f0-7718-f1fa" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="7a8c-79f0-7718-f1fa" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="f181-0a27-d2fe-4c38" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink import="true" name="Scourge Command Cards" hidden="false" id="3767-dae6-8578-390a" type="selectionEntryGroup" targetId="f68e-4a3b-640b-90fa" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Scourge 1 - Abandon All Hope" hidden="false" id="7bd8-a0f0-0563-1ec5">
@@ -4542,19 +4546,23 @@ Influence range.</description>
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="bdef-3966-e1a2-99da" primary="false" name="Command Card"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e55e-3bfc-6926-ef15" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="5351-02e8-7633-e295-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="5351-02e8-7633-e295-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9a8c-2380-0062-b05b" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="30" field="5351-02e8-7633-e295-min"/>
-        <modifier type="set" value="30" field="5351-02e8-7633-e295-max"/>
+        <modifier type="add" value="Command Cards requires 30 selections" field="error">
+          <conditions>
+            <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>

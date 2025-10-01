@@ -5132,7 +5132,11 @@ To select this, go to Configuration and select the background there</description
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="a019-b800-4c7a-f7fe">
       <entryLinks>
-        <entryLink import="true" name="Generic Command Cards" hidden="false" id="3a06-4ab5-a456-9a7e" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="3a06-4ab5-a456-9a7e" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="1cbf-23cd-18fd-b529" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink import="true" name="Resistance Command Cards" hidden="false" id="9819-c54f-7b90-1c31" type="selectionEntryGroup" targetId="3072-398e-21f3-4ee0" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Resistance 3 - Demo Charges" hidden="false" id="b6c2-43d2-7451-00f6">
@@ -5479,19 +5483,23 @@ Influence range.</description>
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="6f85-119b-8df6-bccd" primary="false" name="Command Card"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="965e-a410-4022-d873" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="84be-0898-6dcc-9bda-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="84be-0898-6dcc-9bda-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="7fbe-c729-e6a0-4d7d" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="30" field="84be-0898-6dcc-9bda-min"/>
-        <modifier type="set" value="30" field="84be-0898-6dcc-9bda-max"/>
+        <modifier type="add" value="Command Cards requires 30 selections" field="error">
+          <conditions>
+            <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>

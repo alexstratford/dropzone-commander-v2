@@ -4455,7 +4455,11 @@ Devastator-2 (All) special rules until the end of the round.</description>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="a49d-73f8-a70e-b4ce">
       <entryLinks>
-        <entryLink import="true" name="Generic Command Cards" hidden="false" id="6bf1-5357-0c0c-5a4b" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="6bf1-5357-0c0c-5a4b" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="ff47-42bc-997b-5a9c" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
         <entryLink import="true" name="PHR Command Cards" hidden="false" id="9fd3-5311-6e87-6162" type="selectionEntryGroup" targetId="c58f-eba4-f8ed-ed4a" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="PHR 1 - Crazy Pilot" hidden="false" id="8cb2-b8bc-4985-d947">
@@ -4781,19 +4785,23 @@ Global range.</description>
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="44c5-a463-3dfa-02b3" primary="false" name="Command Card"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-fc53-06f5-2c37" includeChildSelections="false"/>
-        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="12d2-e995-e346-fc61-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="12d2-e995-e346-fc61-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b192-1c04-576c-1ff6" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="30" field="12d2-e995-e346-fc61-min"/>
-        <modifier type="set" value="30" field="12d2-e995-e346-fc61-max"/>
+        <modifier type="add" value="Command Cards requires 30 selections" field="error">
+          <conditions>
+            <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
