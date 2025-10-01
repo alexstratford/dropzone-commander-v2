@@ -4223,7 +4223,7 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
 For this Shooting action, that friendly squad reduces its Passive Countermeasures by 2. For example, a squad with 5+ reduces it to 3+ and a squad with no Passive Countermeasures reduces it to 5+. Passive Countermeasures from the Dodge special rule are unaffected.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4287,7 +4287,7 @@ Influence range.</description>
 Look at the top 5 cards of your command card deck. Put any number on the top of the deck in any order and put the rest on the bottom of the deck in any order.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4302,7 +4302,7 @@ Global range. </description>
 
 Discard your hand of Command Cards, then draw that many plus D3.
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4318,7 +4318,7 @@ Global range. </description>
 All players discard a Command Card at random, then draw a Command Card.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4334,7 +4334,7 @@ Global range. </description>
 Roll a dice, on a 3+ they must instead activate a different Battlegroup. If no other Battlegroups are able to be activated, they activate the original Battlegroup.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4349,7 +4349,7 @@ Influence range. </description>
 
 You may re-roll all failed Passive Countermeasures saves for that Shooting action against that friendly squad.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4365,7 +4365,7 @@ Influence range. </description>
 That garrison gains a 5+ Passive Countermeasures save for that Shooting action.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4380,7 +4380,7 @@ Influence range. </description>
 
 One of that squad’s weapon profiles gains the Airburst special rule for that Shooting action.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4412,7 +4412,7 @@ Influence range.</description>
 Pick an opponent, they shuffle their hand of Command Cards into their Command Card deck and then draws that many Command Cards.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4427,7 +4427,7 @@ Global range. </description>
 
 That squad recovers D3 destroyed units up to its starting squad size with their full DP.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4443,7 +4443,7 @@ Influence range. </description>
 That squad is not destroyed and is placed in Holding with 1DP remaining (regardless of starting DP or damage taken) as if it was embarking into a transport. If that squad was carrying an objective, it drops that objective before being placed into Holding.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4475,7 +4475,7 @@ Global range.</description>
 That squad gains the Penetrative special rule on its weapons for this activation.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4491,7 +4491,7 @@ Influence range. </description>
 The squad’s weapons ignore Accuracy modifiers for this activation.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4506,7 +4506,7 @@ Influence range. </description>
 
 That Infantry squad may be placed anywhere outside of a Garrison within range as if it was disembarked by an aerial transport’s free disembark.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4522,7 +4522,7 @@ Influence range. </description>
 Units inside that Garrison are automatically destroyed instead of rolling for damage.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4530,13 +4530,17 @@ Influence range. </description>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5434-5d41-0ee3-b816" includeChildSelections="true"/>
-        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="01bd-1b83-394d-f4f8" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c66-8532-99dd-31fb" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="1bc3-6229-868e-faf7-min" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="1bc3-6229-868e-faf7-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="2779-45d2-9396-56b9" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="30" field="1bc3-6229-868e-faf7-min"/>
+        <modifier type="set" value="30" field="1bc3-6229-868e-faf7-max"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

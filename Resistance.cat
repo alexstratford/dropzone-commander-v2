@@ -5166,7 +5166,7 @@ Choose a 109 Splitting Drill on the table. Place that Drill In Readiness. If th
 During your next Battlegroup’s activation, if the Chosen Drill is still In Readiness, when a friendly squad uses a Signal action for the chosen Drill, that action does not use any of their actions for this activation (but must still be able to use that Signal action).
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5185,7 +5185,7 @@ Choose a 109 Splitting Drill on the table. Place that Drill In Readiness. If th
 During your next Battlegroup’s activation, if the Chosen Drill is still In Readiness, when a friendly squad uses a Signal action for the chosen Drill, that action does not use any of their actions for this activation (but must still be able to use that Signal action).
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5201,8 +5201,7 @@ Global range. </description>
 That transports Countermeasures become A, E+4 for that attack.
 
 
-Global range. 
-</description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5218,9 +5217,7 @@ Global range. 
 One unit in that squad ignores all modifiers (positive and negative) to its weapon’s Accuracy until the end of its activation.
 
 
-Global range. 
-
-</description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5236,7 +5233,7 @@ Global range. 
 Increase your highest CV by 3 when replenishing Command Cards this round. Next round you may not draw any Command Cards for any reason.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5252,7 +5249,7 @@ Global range. </description>
 Immediately remove a unit from that squad as a casualty, then you may have that squad exit the garrison as if it was making a move action, ignoring any Fortitude tests.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5267,7 +5264,7 @@ Influence range. </description>
 
 That squad passes its Fortitude test.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5282,7 +5279,7 @@ Influence range. </description>
 
 That Infantry Squad may enter a garrison from up to 6” away instead of the normal 2” this activation. Squads using Rapid Insertion are unaffected.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5298,7 +5295,7 @@ Influence range. </description>
 One Unit in that Squad recovers D3+1 lost Damage Points.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5316,7 +5313,7 @@ One friendly Infantry Squad in a garrison containing an enemy Infantry squad i
 
 If the friendly squad was carrying an objective, it is dropped before abandoning the Garrison and becomes an unclaimed Hidden Mobile Objective.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5332,7 +5329,7 @@ Influence range. </description>
 All of that squad’s weapons M&amp;F values become M&amp;F “-” until the end of its activation.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5347,7 +5344,7 @@ Influence range. </description>
 
 That unit recovers D3+1 lost units in coherency. This cannot take the Squad above its starting number of units and the new units must take the same weapons as the rest of the Squad.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5363,7 +5360,7 @@ Influence range. </description>
 That unit is not destroyed and remains in play with 1DP remaining. Any remaining allocated damage is ignored.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5382,7 +5379,7 @@ You and that opponent both place a Blast marker over a unit. Roll a dice, on a 
 On a 3+ all units (including Aircraft and Behemoths) under your Blast marker suffer an E11 hit.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5477,7 +5474,7 @@ Influence range.</description>
 That Squad suffers no penalties to its Accuracy due to disembarking this round.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -5485,13 +5482,17 @@ Influence range. </description>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5666-6a2d-8d1b-7c4b" includeChildSelections="true"/>
-        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="383b-3b48-06b3-e62d" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="965e-a410-4022-d873" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="84be-0898-6dcc-9bda-min" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="84be-0898-6dcc-9bda-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="7fbe-c729-e6a0-4d7d" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="30" field="84be-0898-6dcc-9bda-min"/>
+        <modifier type="set" value="30" field="84be-0898-6dcc-9bda-max"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

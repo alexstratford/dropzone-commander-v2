@@ -4230,7 +4230,7 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
 That opponent must show you all the Command Cards in their hand. Pick 1. Your opponent discards that card.
 
 
-Global Range. </description>
+Global Range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4246,7 +4246,7 @@ Global Range. </description>
 That squad passes its Fortitude test.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4261,7 +4261,7 @@ Influence range. </description>
 That Infantry Squad may enter a garrison from up to 6” away instead of the normal 2” this activation. Squads using Rapid Insertion are unaffected.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4277,7 +4277,7 @@ Influence range. </description>
 That squad counts as having an additional full unit for that attack.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4293,7 +4293,7 @@ Influence range. </description>
 That squads weapons M&amp;F becomes M&amp;F “-” this activation.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4312,7 +4312,7 @@ Place an Invader APC within 6” of the friendly Infantry squad, outside of lin
 That Invader cannot activate this round. It may activate as normal next round.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4328,7 +4328,7 @@ Influence range. </description>
 That attack can inflict Criticals.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4344,7 +4344,7 @@ Influence range. </description>
 If all targets of the shooting squad are within half of those Plasma weapon’s R(C) range, increase the Energy of those weapons by 1.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4359,7 +4359,7 @@ Influence range. </description>
 
 The friendly Infantry squad recovers D3 lost DP, allocated as you choose.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4374,7 +4374,7 @@ Influence range. </description>
 
 Place a blast marker anywhere in range. At the end of the turn any enemy non-Aircraft units under the marker lose D3-1 DP (roll for each) and the marker is removed.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4390,7 +4390,7 @@ Influence range. </description>
 Increase those weapons’ Devastator (Scenery) values by 1.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4406,7 +4406,7 @@ Global range. </description>
 Double the squad’s attacks for that Shooting action. Once the shooting action is complete, remove the squad from play as a casualty.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4421,7 +4421,7 @@ Influence range. </description>
 
 Pick an opponent, they shuffle their hand of Command Cards into their Command Card deck and then draws that many Command Cards.
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4437,7 +4437,7 @@ Global range. </description>
 Draw a Command Card. If that unit had 5 or more starting Damage Points, draw D3 Command Cards.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4453,7 +4453,7 @@ Global range. </description>
 Increase the shots of that attack by D3.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4469,7 +4469,7 @@ Influence range. </description>
 They activate another Battlegroup. After they finish their activation, you activate a Battlegroup as normal.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4488,7 +4488,7 @@ The opponent then shuffles the negated Command Card back into their Command Ca
 Note that you may play a Terrifying Communique/Espionage card on another Terrifying Communique/Espionage card.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4504,7 +4504,7 @@ Global range. </description>
 All players discard all Command Cards intheir hands, then shuffle all of their discarded Command Cards back into their Command Card Deck.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4522,7 +4522,7 @@ For this activation, that squad may move as if it were an aircraft, ignoring sc
 
 Additionally, the Skimmer squad suffers a +1 Accuracy penalty to any shooting actions this activation.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4537,7 +4537,7 @@ Influence range. </description>
 
 All of its weapons gain the AA special rule for this activation, but only hit on a 6+, regardless of any modifiers.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4545,13 +4545,17 @@ Influence range. </description>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="f28e-7538-fec7-2dcd" includeChildSelections="true"/>
-        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="1472-58aa-e8b7-43fe" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e55e-3bfc-6926-ef15" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="5351-02e8-7633-e295-min" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="5351-02e8-7633-e295-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9a8c-2380-0062-b05b" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="30" field="5351-02e8-7633-e295-min"/>
+        <modifier type="set" value="30" field="5351-02e8-7633-e295-max"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

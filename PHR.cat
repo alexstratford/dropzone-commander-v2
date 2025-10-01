@@ -4470,7 +4470,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
 That transports Countermeasures become A, E+4 for that attack.
 
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4500,7 +4500,7 @@ Global range.</description>
 
 Immediately remove a unit from that squad as a casualty, then you may have that squad exit the garrison as if it was making a move action, ignoring any Fortitude tests.
 
-Influence range. </description>
+Influence range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4725,7 +4725,7 @@ Influence range.</description>
 All players draw D3 Command Cards.
 
 
-Global range. </description>
+Global range.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4784,13 +4784,17 @@ Global range.</description>
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5eed-282b-c6c6-73b0" includeChildSelections="true"/>
-        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="dc0e-d9c8-7538-31ac" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-fc53-06f5-2c37" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="12d2-e995-e346-fc61-min" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="12d2-e995-e346-fc61-max" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b192-1c04-576c-1ff6" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="30" field="12d2-e995-e346-fc61-min"/>
+        <modifier type="set" value="30" field="12d2-e995-e346-fc61-max"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
