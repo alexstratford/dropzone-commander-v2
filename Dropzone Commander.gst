@@ -2581,7 +2581,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d5-52bb-9b1d-3786" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="0a4c-47ea-3135-9429">
+        <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="0a4c-47ea-3135-9429">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f4c-16ab-c448-dedd" includeChildSelections="false"/>
           </constraints>
@@ -2991,7 +2991,7 @@ Global range.</description>
 Re-roll all successful dice for this roll.
 
 
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>
@@ -3114,7 +3114,7 @@ Choose 1:
 • That hit gains the Destroyer 2+ special rule and its effects for that hit. Other hits are unaffected.
 
 
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>
@@ -3216,8 +3216,7 @@ Global range.</description>
 That squad measures range using its weapons R(F) value this activation, even if the target has Active Countermeasures.
 
 
-Influence range.
-</description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>

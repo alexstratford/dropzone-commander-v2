@@ -4213,32 +4213,345 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="b829-fe1b-fdf3-a7fd">
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="b829-fe1b-fdf3-a7fd">
       <entryLinks>
         <entryLink import="true" name="Generic Command Cards" hidden="false" id="7a8c-79f0-7718-f1fa" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
-        <entryLink import="true" name="Scourge Command Cards" hidden="false" id="3767-dae6-8578-390a" type="selectionEntryGroup" targetId="f68e-4a3b-640b-90fa" sortIndex="1"/>
+        <entryLink import="true" name="Scourge Command Cards" hidden="false" id="3767-dae6-8578-390a" type="selectionEntryGroup" targetId="f68e-4a3b-640b-90fa" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scourge 1 - Abandon All Hope" hidden="false" id="7bd8-a0f0-0563-1ec5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8dae-bf0c-252c-9293" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 1 - Abandon All Hope" id="e5d5-bb4c-8ee0-4c8a" hidden="false">
+                  <description>During one of your activations, pick an opponent.
+
+
+That opponent must show you all the Command Cards in their hand. Pick 1. Your opponent discards that card.
+
+
+Global Range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 2 - No Retreat" hidden="false" id="1f15-b1d1-dff2-6e51">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f831-2062-6cff-7630" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 2 - No Retreat" id="b297-dd75-d0e3-8adf" hidden="false">
+                  <description>When a friendly Infantry squad would fail a Fortitude test.
+
+
+That squad passes its Fortitude test.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 3 - Secret Entrance" hidden="false" id="f2d8-8557-871e-5210">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5b40-fc12-0eb3-47c6" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 3 - Secret Entrance" id="9b43-0ecf-d51e-d192" hidden="false">
+                  <description>When you activate a friendly Infantry squad. 
+
+That Infantry Squad may enter a garrison from up to 6” away instead of the normal 2” this activation. Squads using Rapid Insertion are unaffected.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 4 - CQB Brutality" hidden="false" id="7afc-82ac-f2ed-b557">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3f15-a44b-7524-8070" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 4 - CQB Brutality" id="e3e2-7f05-1069-d38c" hidden="false">
+                  <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+That squad counts as having an additional full unit for that attack.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 5 - Run With Knives" hidden="false" id="8634-f971-b462-626a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e5b1-f7b2-c55b-e2ff" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 5 - Run With Knives" id="6cab-9f6a-6236-f5c9" hidden="false">
+                  <description>When a friendly squad activates.
+
+
+That squads weapons M&amp;F becomes M&amp;F “-” this activation.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 6 - Hidden Transport" hidden="false" id="bf8f-e9b4-be1b-3b6c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fcac-f2c2-1b04-62f6" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 6 - Hidden Transport" id="6f00-ca9f-8739-188a" hidden="false">
+                  <description>After you have activated a friendly Infantry squad.
+
+
+Place an Invader APC within 6” of the friendly Infantry squad, outside of line of sight of any enemy units.
+
+
+That Invader cannot activate this round. It may activate as normal next round.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 8 - Critical Assault" hidden="false" id="0e75-72fa-f118-facf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fb2d-02d6-7fb3-bd2d" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 8 - Critical Assault" id="c439-a03d-a76b-274c" hidden="false">
+                  <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+That attack can inflict Criticals.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 7 - Close and Impersonal" hidden="false" id="9b45-e2e2-5f18-427d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="827f-0cc3-8229-e061" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 7 - Close and Impersonal" id="0360-1590-3d12-1bd7" hidden="false">
+                  <description>When a friendly squad makes a Shooting action with any weapons with “Plasma” in their name.
+
+
+If all targets of the shooting squad are within half of those Plasma weapon’s R(C) range, increase the Energy of those weapons by 1.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 9 - Bloodthirsty Nightmares" hidden="false" id="2f26-dc20-c755-0c80">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3e60-b408-4627-6c6c" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 9 - Bloodthirsty Nightmares" id="b526-64ce-10af-0199" hidden="false">
+                  <description>When a friendly Infantry squad destroys an enemy Infantry unit with a weapon with range of CQ.
+
+
+The friendly Infantry squad recovers D3 lost DP, allocated as you choose.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 10 - Deploy Toxins" hidden="false" id="a00d-4865-9cce-db79">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1302-bc9d-b8ae-9072" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 10 - Deploy Toxins" id="49f1-7f22-f13e-53aa" hidden="false">
+                  <description>During one of your activations. 
+
+
+Place a blast marker anywhere in range. At the end of the turn any enemy non-Aircraft units under the marker lose D3-1 DP (roll for each) and the marker is removed.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 11 - Plasma Demolitions" hidden="false" id="0463-725e-9a5d-d468">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="276f-d4a9-e420-f7e0" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 11 - Plasma Demolitions" id="5532-b672-208f-7235" hidden="false">
+                  <description>When a friendly squad makes a shooting action with a weapon with the Devastator (Scenery) special rule targeting a garrison.
+
+
+Increase those weapons’ Devastator (Scenery) values by 1.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 12 - Dying Gasp" hidden="false" id="8033-6318-fa06-88dd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="633f-1f53-88bc-f964" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 12 - Dying Gasp" id="19a3-d021-a263-d67a" hidden="false">
+                  <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+Double the squad’s attacks for that Shooting action. Once the shooting action is complete, remove the squad from play as a casualty.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 13 - Incite Madness" hidden="false" id="90cd-c04a-af87-849d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2e9a-8c0c-d3b5-e161" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 13 - Incite Madness" id="ea3f-c166-5b76-cfae" hidden="false">
+                  <description>During one of your activations.
+
+
+Pick an opponent, they shuffle their hand of Command Cards into their Command Card deck and then draws that many Command Cards.
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 14 - Fell Beast" hidden="false" id="25d9-4795-75ee-1433">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7ae3-5eb9-ddea-ac74" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 14 - Fell Beast" id="ed22-72d4-ca47-e7a3" hidden="false">
+                  <description>Whenever you destroy a non-Infantry enemy unit with a shooting action.
+
+
+Draw a Command Card. If that unit had 5 or more starting Damage Points, draw D3 Command Cards.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 15 - Rending Claws" hidden="false" id="d8a5-7e65-220f-74da">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e87f-0849-a4a6-93fe" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 15 - Rending Claws" id="13aa-b39d-c8cd-ee1a" hidden="false">
+                  <description>When a friendly unit makes a Shooting action with a weapon with “Claws” in its name.
+
+
+Increase the shots of that attack by D3.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 16 - Bide" hidden="false" id="bf0e-836c-8c6b-b89e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="575e-480d-0183-a731" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 16 - Bide" id="ca58-99c7-e79c-3f71" hidden="false">
+                  <description>Play when your opponent finishes activating a Battlegroup.
+
+
+They activate another Battlegroup. After they finish their activation, you activate a Battlegroup as normal.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 17 - Terrifying Communique" hidden="false" id="398a-a26d-34f3-ea5c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e4e0-721e-8a5d-1b7f" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 17 - Terrifying Communique" id="0b2f-eff2-e68a-6c76" hidden="false">
+                  <description>When an opponent uses a Command Card, play this to negate the effects of that Command Card.
+
+
+The opponent then shuffles the negated Command Card back into their Command Card Deck.
+
+
+Note that you may play a Terrifying Communique/Espionage card on another Terrifying Communique/Espionage card.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 18 - Tactical Reset" hidden="false" id="049f-baa5-37a8-471a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0e54-6c20-223d-fbfb" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 18 - Tactical Reset" id="6086-876a-4502-25d1" hidden="false">
+                  <description>In the Initiation Phase, when players discard Command Cards.
+
+
+All players discard all Command Cards intheir hands, then shuffle all of their discarded Command Cards back into their Command Card Deck.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 19 - Overcharge Skimmer" hidden="false" id="0873-3a0e-7fdd-22fb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b3fb-e188-088d-955e" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 19 - Overcharge Skimmer" id="715c-dd4f-0c33-ec72" hidden="false">
+                  <description>When you activate a friendly Skimmer squad.
+
+
+For this activation, that squad may move as if it were an aircraft, ignoring scenery pieces up to 8” high. Enemy AA weapons may choose to Reaction Fire against the units in the squad when it does this, counting them as a Aircraft with Armour 11.
+
+
+Additionally, the Skimmer squad suffers a +1 Accuracy penalty to any shooting actions this activation.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scourge 20 - Blight the Skies" hidden="false" id="0e86-20b4-d071-729e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="df3d-5a71-fafc-458d" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Scourge 20 - Blight the Skies" id="60dc-20a3-8ecb-e022" hidden="false">
+                  <description>Play when a friendly squad makes a Shooting action, before rolling to hit.
+
+
+All of its weapons gain the AA special rule for this activation, but only hit on a 6+, regardless of any modifiers.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="30" field="selections" scope="self" shared="true" id="f28e-7538-fec7-2dcd" includeChildSelections="true"/>
         <constraint type="max" value="30" field="selections" scope="self" shared="true" id="1472-58aa-e8b7-43fe" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7b6c-5df9-6e94-87d3" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="82c2-910f-7693-341e" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e55e-3bfc-6926-ef15" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9a8c-2380-0062-b05b" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="7b6c-5df9-6e94-87d3"/>
-            <modifier type="set" value="1" field="82c2-910f-7693-341e"/>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -4297,6 +4610,7 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
     <entryLink import="true" name="Cavebreaker&apos;s Demolishers" hidden="false" id="a0e9-c8db-7351-df5b" targetId="c7be-cc1c-c4f5-4e5f" type="selectionEntry"/>
     <entryLink import="true" name="Cavebreaker&apos;s Slayers" hidden="false" id="7f54-c06b-323d-be5f" targetId="5df3-26fb-4b8d-2352" type="selectionEntry"/>
     <entryLink import="true" name="Slaughterhouse V - Overseer Cradle Barge " hidden="false" id="d53c-4e0c-e4e8-d029" targetId="56c5-9c94-d5b5-1a48" type="selectionEntry"/>
+    <entryLink import="true" name="Command Cards" hidden="false" id="3dbf-542b-c1d6-130d" targetId="b829-fe1b-fdf3-a7fd" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Spectre Skimtank Weapon Selection" id="312e-3583-62e7-8d1c" hidden="false" collective="true">
@@ -4523,21 +4837,7 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
         <infoLink name="AA-X" id="cbc4-4fa9-740e-78da" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
       </infoLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Scourge Command Cards" id="f68e-4a3b-640b-90fa" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="025d-db6b-f986-cd6e">
-          <rules>
-            <rule name="Ace in the Making" id="aaf0-b305-082e-e170" hidden="false">
-              <description>When you activate a squad with the Fast special rule.
-One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="daa8-2c03-3cd0-28cd" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Scourge Command Cards" id="f68e-4a3b-640b-90fa" hidden="false"/>
   </sharedSelectionEntryGroups>
   <profileTypes>
     <profileType name="Behemoth Hull" id="b848-ac06-0c6b-11d4" hidden="false">

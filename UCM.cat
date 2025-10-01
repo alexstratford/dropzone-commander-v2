@@ -4436,7 +4436,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="00dc-802a-547b-9018">
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="00dc-802a-547b-9018">
       <entryLinks>
         <entryLink import="true" name="Generic Command Cards" hidden="false" id="ad9b-2186-959b-6734" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
         <entryLink import="true" name="UCM Command Cards" hidden="false" id="323d-b464-3763-e19c" type="selectionEntryGroup" targetId="6a35-bbdf-02db-beb3" sortIndex="1"/>
@@ -4444,24 +4444,11 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
       <constraints>
         <constraint type="min" value="30" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min" includeChildSelections="true"/>
         <constraint type="max" value="30" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-max" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9124-f561-d274-95a4-min" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9124-f561-d274-95a4-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b16a-d2cb-8db7-51ef" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="8a9e-8399-ae64-5be9" id="221e-779a-29d9-f573" primary="true" name="Configuration"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="9124-f561-d274-95a4-min"/>
-            <modifier type="set" value="1" field="9124-f561-d274-95a4-max"/>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
@@ -5044,7 +5031,7 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
             <rule name="UCM 1 - Ace in the Making" id="974d-5cd8-8586-6635" hidden="false">
               <description>When you activate a squad with the Fast special rule.
 One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation.
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5073,7 +5060,7 @@ Influence range.</description>
 Count your Commander as having a CV of 5 for this re-roll.
 
 
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5152,7 +5139,7 @@ Influence range.</description>
 That squad counts as having an additional full unit for that attack.
 
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5233,7 +5220,7 @@ Influence range.</description>
 That Squad counts as having the benefit of Exceptional Scenery and ignores the effects of Tough Scenery during its movement this activation.
 
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5249,7 +5236,7 @@ Influence range. </description>
 Roll a D3. The enemy squad takes that many 3+ Acc attacks at E13, allocated as you choose.
 
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5264,7 +5251,7 @@ Influence range. </description>
 
 One unit in the attacking Squad loses any Devastator-X rule it has but gains Area on one Railgun profile for that attack.
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5279,7 +5266,7 @@ Influence range. </description>
 
 That squad recovers D3 lost models in coherency. This cannot take the Squad above its starting number of models and the new models must take the same weapons as the rest of the Squad.
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5295,7 +5282,7 @@ Influence range. </description>
 That squad re-rolls any of those failed Damage rolls.
 
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5311,7 +5298,7 @@ Influence range. </description>
 The Commander you used to roll for initiative gains D3 to their Command Value this turn.
 
 
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5327,7 +5314,7 @@ Global range. </description>
 That squad re-rolls any of those failed Damage rolls.
 
 
-Influence range. </description>
+Influence range.</description>
             </rule>
           </rules>
           <constraints>
@@ -5342,7 +5329,7 @@ Influence range. </description>
 
 Discard your hand of Command Cards, then draw that many plus D3.
 
-Global range. </description>
+Global range.</description>
             </rule>
           </rules>
           <constraints>

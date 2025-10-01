@@ -4436,7 +4436,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
               <profiles>
                 <profile name="Stealth Missile Battery" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="29b6-5de0-4ce9-e6f0">
                   <characteristics>
-                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">9&quot;</characteristic>
+                    <characteristic name="M&amp;F" typeId="4d6f76652026204669726523232344415441232323">-</characteristic>
                     <characteristic name="Arc" typeId="4.1726323232344415e+25">F</characteristic>
                     <characteristic name="R(F)" typeId="52616e6765202846756c6c2923232344415441232323">36&quot;</characteristic>
                     <characteristic name="R(C)" typeId="52616e67652028436f756e74657265642923232344415441232323">12&quot;</characteristic>
@@ -4453,32 +4453,344 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="a49d-73f8-a70e-b4ce">
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="a49d-73f8-a70e-b4ce">
       <entryLinks>
         <entryLink import="true" name="Generic Command Cards" hidden="false" id="6bf1-5357-0c0c-5a4b" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
-        <entryLink import="true" name="PHR Command Cards" hidden="false" id="9fd3-5311-6e87-6162" type="selectionEntryGroup" targetId="c58f-eba4-f8ed-ed4a" sortIndex="1"/>
+        <entryLink import="true" name="PHR Command Cards" hidden="false" id="9fd3-5311-6e87-6162" type="selectionEntryGroup" targetId="c58f-eba4-f8ed-ed4a" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="PHR 1 - Crazy Pilot" hidden="false" id="8cb2-b8bc-4985-d947">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a2d1-5fd9-d37a-cbde" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 1 - Crazy Pilot" id="f3de-6252-6ed7-6fc4" hidden="false">
+                  <description>When an aerial transport you control is targeted by a weapon with the AA special rule.
+
+
+That transports Countermeasures become A, E+4 for that attack.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 3 - Intel Gathering" hidden="false" id="7d6f-5750-656b-322f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="972a-915c-59d5-a020" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 3 - Intel Gathering" id="ad71-d022-ff54-7e11" hidden="false">
+                  <description>During one of your activations, pick an opponent.
+
+
+That opponent must show you all of the Command Cards from their hand.
+ 
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 2 - Heroic Sacrifice" hidden="false" id="7296-239b-f5fe-d3d1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4857-1a02-45ac-19b7" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 2 - Heroic Sacrifice" id="59c1-de35-2295-ac07" hidden="false">
+                  <description>When an Infantry squad you control is targeted by a Close Quarters weapon inside a garrison.
+
+
+Immediately remove a unit from that squad as a casualty, then you may have that squad exit the garrison as if it was making a move action, ignoring any Fortitude tests.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 4 - Quick Thinking" hidden="false" id="8d49-b71a-d99c-5027">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4907-f3b4-dfc9-9801" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 4 - Quick Thinking" id="e20f-f209-2f47-a6d3" hidden="false">
+                  <description>When an enemy Battlegroup activates, pick one friendly squad that has not activated this round to activate immediately.
+
+
+That squad activates before the enemy Battlegroup and cannot activate during its Battlegroup’s activation this round. This card cannot be used to activate an Auxiliary Transport, a squad embarked in a transport, or a squad in Holding.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 5 - Field Medic" hidden="false" id="f5df-8805-5b8e-6ec7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5ac0-f20e-d0be-f869" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 5 - Field Medic" id="2b84-6105-11e5-ae56" hidden="false">
+                  <description>When you activate a friendly Infantry squad.
+
+
+One Unit in that Squad recovers D3+1 lost Damage Points.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 7 - Communications Scrambler" hidden="false" id="e7a3-0c98-2c8b-6365">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="48e5-13df-96e9-dfa9" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 7 - Communications Scrambler" id="d6fb-1b23-ff2e-3d43" hidden="false">
+                  <description>When an opponent activates a Battlegroup.
+
+
+Roll a dice, on a 3+ they must instead activate a different Battlegroup. If no other Battlegroups are able to be activated, they activate the original Battlegroup.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 6 - Shrapnel Rounds" hidden="false" id="c80c-9434-9429-abd2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="940a-52c2-ac86-622b" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 6 - Shrapnel Rounds" id="059b-b4e2-f944-8621" hidden="false">
+                  <description>When a friendly squad makes a Shooting action with a weapon with “Railgun” in its name.
+
+
+One unit in the attacking Squad loses any Devastator-X rule it has but gains Area on one Railgun profile for that attack.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 8 - Holographic Camouflage" hidden="false" id="a884-0727-f0cf-e11d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4937-dd02-c85d-3de2" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 8 - Holographic Camouflage" id="ad28-5ca3-e1e7-029d" hidden="false">
+                  <description>At the start of the turn, before any Battlegroups have activated.
+
+
+One friendly squad without Evasion Countermeasures gains E+1 Countermeasures.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 10 - Black Nanomachines" hidden="false" id="a5da-7db0-1eca-71f9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b4a7-5a8f-b822-8b44" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 10 - Black Nanomachines" id="04f1-10c7-0ecd-ea45" hidden="false">
+                  <description>During one of your activations, pick an enemy unit.
+
+
+Roll a dice, on a 3+ that unit suffers an E10 hit.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 9 - Fire From the Hip" hidden="false" id="ee1b-519e-e1f7-ea46">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dd9a-c33f-71f4-b413" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 9 - Fire From the Hip" id="bf7b-0400-8e4c-054b" hidden="false">
+                  <description>When a friendly Walker squad makes a Shooting action, after all rolls to Damage.
+
+
+That squad re-rolls any of those failed Damage rolls.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 11 - Drive Hack" hidden="false" id="0209-3a5b-4397-b5b3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="49f6-e6cb-f3b1-6f4d" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 11 - Drive Hack" id="3b0d-9ca5-8200-9b5e" hidden="false">
+                  <description>When an opponent activates a Vehicle squad.
+
+
+That group halves its movement value for its movement this activation.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 12 - Experimental Gyros" hidden="false" id="e32d-853d-94a4-19e9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dabd-edb4-4016-bcf2" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 12 - Experimental Gyros" id="8986-01bd-4f8f-ce33" hidden="false">
+                  <description>When you activate a friendly Walker squad.
+
+
+All units in this squad gain 2” to their Movement and M&amp;F values for this activation.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 13 - Nano Repairs" hidden="false" id="f861-11f9-2866-4feb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d407-baeb-6a93-8843" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 13 - Nano Repairs" id="3bbe-3f6e-1c52-f107" hidden="false">
+                  <description>At the end of the turn.
+
+
+One friendly unit recovers D3 lost DP.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 14 - Spy Ring" hidden="false" id="299b-7594-faab-c245">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad43-17ed-7e0f-3f5b" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 14 - Spy Ring" id="d5fb-56ba-13f1-27d1" hidden="false">
+                  <description>At the end of the turn.
+
+
+Pick one enemy Commander on the table or embarked in a Transport on the table.
+
+
+Your opponent discards a Command Card from their hand, they may repeat this as many times as they have Command Cards in hand.
+
+
+Your opponent must use the number of discarded cards as the CV of the chosen Commander during the next Round.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 15 - Nanomachine Shield" hidden="false" id="1ab5-1161-b3e2-9017">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="db7f-b7a8-7b61-d3d1" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 15 - Nanomachine Shield" id="be8b-d158-b649-e6c3" hidden="false">
+                  <description>When an enemy squad targets a friendly squad with a Shooting action.
+
+
+The friendly squad gains a 5+ Passive Countermeasures save for that shooting action.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 16 - Scanning Nanomachines" hidden="false" id="9fb2-7c94-a038-1cea">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dbe3-53fd-0e54-cfd9" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 16 - Scanning Nanomachines" id="25ac-d730-d787-ceac" hidden="false">
+                  <description>When you complete an activation with a unit with a weapon with “Nanomachines” in its name.
+
+
+That unit gains D3 Scan Tokens.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 17 - Triumvirate Distraction" hidden="false" id="b2ae-358f-6036-46e4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3906-4b33-5eea-95a2" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 17 - Triumvirate Distraction" id="cda6-3cae-ec75-3e8b" hidden="false">
+                  <description>After Command Cards have been drawn, before any Battlegroups activate.
+
+
+All players draw D3 Command Cards.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 18 - Data Duplication" hidden="false" id="8624-f9d3-34c3-e587">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7de-63db-55f6-34aa" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 18 - Data Duplication" id="039c-6a8d-32eb-bf6f" hidden="false">
+                  <description>During one of your activations, pick an opponent.
+
+
+That opponent shows you one of the Command Cards in their hand at random.
+
+
+Gain a copy of that card.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 19 - Holographic Infantry" hidden="false" id="40a9-07be-3685-a4d7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="54bc-f58b-7a61-6700" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 19 - Holographic Infantry" id="cdb4-897d-518f-8a94" hidden="false">
+                  <description>When an enemy squad targets a friendly Infantry squad with a Shooting action.
+
+
+Remove the friendly Infantry squad from the game and embark them in a transport within 6”. They drop any objective they were carrying and must be able to completely fit into the transport.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="PHR 20 - Tactics of the Sphere" hidden="false" id="0d45-62e7-26a1-06e6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a0c9-c199-b3d1-2902" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="PHR 20 - Tactics of the Sphere" id="c63c-584b-e0e0-24d5" hidden="false">
+                  <description>After drawing Command Cards.
+
+
+Search your Command Card Deck for a Command Card, reveal it and add it to your hand. Shuffle your Command Card Deck.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5eed-282b-c6c6-73b0" includeChildSelections="true"/>
         <constraint type="max" value="30" field="selections" scope="self" shared="true" id="dc0e-d9c8-7538-31ac" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7066-ec44-2d22-22d4" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="1cf0-f0b1-6414-f61d" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d2-fc53-06f5-2c37" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="b192-1c04-576c-1ff6" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="7066-ec44-2d22-22d4"/>
-            <modifier type="set" value="1" field="1cf0-f0b1-6414-f61d"/>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -4555,6 +4867,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
     <entryLink import="true" name="Jocasta Caine - Hera Command Walker" hidden="false" id="b6b8-68fd-0b6c-cb7c" targetId="1b55-0346-6a34-ba15" type="selectionEntry"/>
     <entryLink import="true" name="Helios Lightspear" hidden="false" id="ebf2-5f38-5193-1723" targetId="de82-89ba-60be-ac66" type="selectionEntry"/>
     <entryLink import="true" name="Apollo Swiftspear" hidden="false" id="7851-f854-acd9-9b18" targetId="cf14-ff4c-d664-3296" type="selectionEntry"/>
+    <entryLink import="true" name="Command Cards" hidden="false" id="68b3-17a2-9c0a-eaa3" targetId="a49d-73f8-a70e-b4ce" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Menchit Weapon Selection" id="d1c5-ecfd-1738-1e8d" hidden="false" collective="true">
@@ -5438,21 +5751,7 @@ Devastator-2 (All) special rules until the end of the round.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="PHR Command Cards" id="c58f-eba4-f8ed-ed4a" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="8c67-7acb-8d09-a0ea">
-          <rules>
-            <rule name="Ace in the Making" id="4496-15d3-b7d5-31cf" hidden="false">
-              <description>When you activate a squad with the Fast special rule.
-One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4d29-2552-8170-4398" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="PHR Command Cards" id="c58f-eba4-f8ed-ed4a" hidden="false"/>
   </sharedSelectionEntryGroups>
   <profileTypes>
     <profileType name="PHR Heavy Behemoth Hull" id="cd36-62c5-443d-6715" hidden="false">

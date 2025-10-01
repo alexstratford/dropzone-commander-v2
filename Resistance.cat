@@ -54,6 +54,7 @@
     <entryLink import="true" name="Salakhan&apos;s Fighters" hidden="false" id="ab68-7de3-1121-8ae2" targetId="e47e-7700-0e7c-bb42" type="selectionEntry"/>
     <entryLink import="true" name="Lifthawk Skulltaker" hidden="false" id="29e0-329f-4c64-5804" targetId="a15f-2e87-6849-8b84" type="selectionEntry"/>
     <entryLink import="true" name="Jesse Adams - 201 Breaching Drill" hidden="false" id="824c-72b2-86e1-4537" targetId="ed40-a544-8c64-7a12" type="selectionEntry"/>
+    <entryLink import="true" name="Command Cards" hidden="false" id="0798-f9c0-dfb9-56e3" targetId="a019-b800-4c7a-f7fe" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Command" hidden="false" id="de31-0d17-7482-b77a" subType="unit-group">
@@ -5129,32 +5130,368 @@ To select this, go to Configuration and select the background there</description
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="a019-b800-4c7a-f7fe">
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="a019-b800-4c7a-f7fe">
       <entryLinks>
         <entryLink import="true" name="Generic Command Cards" hidden="false" id="3a06-4ab5-a456-9a7e" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
-        <entryLink import="true" name="Resistance Command Cards" hidden="false" id="9819-c54f-7b90-1c31" type="selectionEntryGroup" targetId="3072-398e-21f3-4ee0" sortIndex="1"/>
+        <entryLink import="true" name="Resistance Command Cards" hidden="false" id="9819-c54f-7b90-1c31" type="selectionEntryGroup" targetId="3072-398e-21f3-4ee0" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Resistance 3 - Demo Charges" hidden="false" id="b6c2-43d2-7451-00f6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b9e5-51d3-bc28-deff" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 3 - Demo Charges" id="58e4-d9ad-3382-4af9" hidden="false">
+                  <description>When you activate a Battlegroup.
+
+
+One target building containing any friendly Infantry squads loses D3 damage points and gains D3+3 Collateral Damage tokens.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 1 - Submerge Tunneler" hidden="false" id="f82f-7fd0-27c1-024b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="200c-495f-bbc4-5d8c" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 1 - Submerge Tunneler" id="3c91-a1d2-25c2-8220" hidden="false">
+                  <description>Play when activating a friendly Battlegroup.
+
+
+Choose a 109 Splitting Drill on the table. Place that Drill In Readiness. If the Scenario allows Objectives to be removed from the game, any Objective the Drill has is removed from the game this way, otherwise, it drops any Objective it is carrying.
+
+
+During your next Battlegroup’s activation, if the Chosen Drill is still In Readiness, when a friendly squad uses a Signal action for the chosen Drill, that action does not use any of their actions for this activation (but must still be able to use that Signal action).
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 2 - Drill Away" hidden="false" id="cbee-9e83-2a30-7c0d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f62a-d6cc-1a7a-dd41" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 2 - Drill Away" id="54c0-5fb7-eaab-6826" hidden="false">
+                  <description>Play when activating a friendly Battlegroup.
+
+
+Choose a 109 Splitting Drill on the table. Place that Drill In Readiness. If the Scenario allows Objectives to be removed from the game, any Objective the Drill has is removed from the game this way, otherwise, it drops any Objective it is carrying.
+
+
+During your next Battlegroup’s activation, if the Chosen Drill is still In Readiness, when a friendly squad uses a Signal action for the chosen Drill, that action does not use any of their actions for this activation (but must still be able to use that Signal action).
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 5 - Crazy Pilot" hidden="false" id="54d3-4847-0274-a905">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d633-0453-add7-deb5" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 5 - Crazy Pilot" id="04cf-117d-979a-0ee6" hidden="false">
+                  <description>When an aerial transport you control is targeted by a weapon with the AA special rule.
+
+
+That transports Countermeasures become A, E+4 for that attack.
+
+
+Global range. 
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 4 - Ace in the Making" hidden="false" id="8ab0-98d4-be78-cd25">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7842-6e5b-f76c-d430" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 4 - Ace in the Making" id="fd5a-4733-5b96-d4b8" hidden="false">
+                  <description>When you activate a squad with the Fast special rule.
+
+
+One unit in that squad ignores all modifiers (positive and negative) to its weapon’s Accuracy until the end of its activation.
+
+
+Global range. 
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 21 - Moment of Genius" hidden="false" id="c831-17f7-8134-6d88">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7e58-4cde-b9e0-ff1c" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 21 - Moment of Genius" id="0134-8ff8-a4ca-1571" hidden="false">
+                  <description>Before drawing Command Cards.
+
+
+Increase your highest CV by 3 when replenishing Command Cards this round. Next round you may not draw any Command Cards for any reason.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 6 - Heroic Sacrifice" hidden="false" id="03a0-5cd1-566e-fb76">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dc81-3eb9-e84f-8020" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 6 - Heroic Sacrifice" id="3b80-c42e-dced-a6fe" hidden="false">
+                  <description>When an Infantry squad you control is targeted by a Close Quarters weapon inside a garrison.
+
+
+Immediately remove a unit from that squad as a casualty, then you may have that squad exit the garrison as if it was making a move action, ignoring any Fortitude tests.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 7 - No Retreat" hidden="false" id="8455-772f-f54f-4fc8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5916-1ca6-7987-de6b" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 7 - No Retreat" id="5fcc-6c24-28c7-a054" hidden="false">
+                  <description>When a friendly Infantry squad would fail a Fortitude test.
+
+
+That squad passes its Fortitude test.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 8 - Secret Entrance" hidden="false" id="5bb9-62b8-6f07-5ca8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3973-76e2-d1ea-ae60" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 8 - Secret Entrance" id="2689-028d-5eee-1f0e" hidden="false">
+                  <description>When you activate a friendly Infantry squad.
+
+
+That Infantry Squad may enter a garrison from up to 6” away instead of the normal 2” this activation. Squads using Rapid Insertion are unaffected.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 9 - Field Medic" hidden="false" id="27d1-e3fb-51bc-41c4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b25b-5f14-8f8d-9b85" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 9 - Field Medic" id="5341-cefa-3c79-9873" hidden="false">
+                  <description>When you activate a friendly Infantry squad.
+
+
+One Unit in that Squad recovers D3+1 lost Damage Points.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 10 - Bait and Bail" hidden="false" id="16a9-4aa4-d764-8695">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d24-25b1-250a-88cb" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 10 - Bait and Bail" id="9d2a-26dd-5ba4-e66b" hidden="false">
+                  <description>At the end of a round.
+
+
+One friendly Infantry Squad in a garrison containing an enemy Infantry squad immediately abandons that Garrison without making Fortitude rolls. 
+
+
+If the friendly squad was carrying an objective, it is dropped before abandoning the Garrison and becomes an unclaimed Hidden Mobile Objective.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 11 - Gunship Assault" hidden="false" id="036e-48ba-11cf-f368">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5070-9dfb-253e-9a81" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 11 - Gunship Assault" id="3b3a-44a7-8faa-4fc3" hidden="false">
+                  <description>When you activate a friendly Aircraft squad.
+
+
+All of that squad’s weapons M&amp;F values become M&amp;F “-” until the end of its activation.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 12 - Technically New" hidden="false" id="9bf0-9dc3-6829-1ed2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d82-a846-abb6-5a49" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 12 - Technically New" id="0591-5b99-9200-d265" hidden="false">
+                  <description>When you activate a squad of Technicals.
+
+
+That unit recovers D3+1 lost units in coherency. This cannot take the Squad above its starting number of units and the new units must take the same weapons as the rest of the Squad.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 13 - Tough as Nails" hidden="false" id="9842-8483-c7b5-b86a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6f63-404a-4dba-ebef" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 13 - Tough as Nails" id="5a52-a608-ce1f-5dc8" hidden="false">
+                  <description>When a friendly Tank with A15 would be destroyed.
+
+
+That unit is not destroyed and remains in play with 1DP remaining. Any remaining allocated damage is ignored.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 14 - Orbital Debris" hidden="false" id="7e3c-2c8a-924d-41ed">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3581-823c-9888-7465" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 14 - Orbital Debris" id="9483-6339-a5f2-0409" hidden="false">
+                  <description>At the end of a round, pick an opponent. 
+
+
+You and that opponent both place a Blast marker over a unit. Roll a dice, on a 1-2 all units (including Aircraft and Behemoths) under the opponent’s Blast marker suffer an E11 hit. 
+
+
+On a 3+ all units (including Aircraft and Behemoths) under your Blast marker suffer an E11 hit.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 15 - Hiding in Plain Sight" hidden="false" id="063c-eb16-53ff-ea11">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1df2-068e-f5b2-6208" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 15 - Hiding in Plain Sight" id="7530-869d-1d75-8874" hidden="false">
+                  <description>At the start of the round, choose a friendly non-Aircraft squad.
+
+
+That squad cannot be targeted by Shooting actions made from over 6” away until the end of its activation.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 16 - Berserk" hidden="false" id="ab72-bcf1-0414-fb4b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3353-baf3-b5e7-689e" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 16 - Berserk" id="5cf7-0388-e9d1-bcf8" hidden="false">
+                  <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+That attack gains a +1 Energy bonus and can inflict Criticals.
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 17 - Timely Bailout" hidden="false" id="8f32-0ab4-3cd7-c100">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="954d-1e06-585a-d8e8" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 17 - Timely Bailout" id="64ed-8b48-8618-5182" hidden="false">
+                  <description>When a friendly transport is destroyed. 
+
+
+Embarked units do no suffer any damage from the destroyed transport.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 18 - Collapse Façade" hidden="false" id="aacc-47d3-687c-4718">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b0bb-5b74-2db4-b055" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 18 - Collapse Façade" id="8788-4c5e-af11-d64e" hidden="false">
+                  <description>When an enemy Infantry squad moves to the wall of a Garrison.
+
+
+Until the end of the game, Infantry squads in that Garrison do not gain the benefits of Soft Cover and Body Cover while at the walls of that Garrison. Squads in that Garrison but not at its walls are unaffected.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 19 - Practiced Chaos" hidden="false" id="8485-d340-b28c-d2cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f9f8-3f8e-fbaa-419a" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 19 - Practiced Chaos" id="cf32-780e-83c9-3ad4" hidden="false">
+                  <description>When you activate a Battlegroup pick an opponent.
+
+
+That opponent cannot use command cards until the end of this Battlegroup’s activation. 
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Resistance 20 - Hovercraft Assault" hidden="false" id="de62-2d53-4f55-b10b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b382-b33e-8801-b130" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Resistance 20 - Hovercraft Assault" id="93b5-fb7c-f98f-9786" hidden="false">
+                  <description>When disembarking a Squad from a Transport with the Hovercraft special rule.
+
+
+That Squad suffers no penalties to its Accuracy due to disembarking this round.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5666-6a2d-8d1b-7c4b" includeChildSelections="true"/>
         <constraint type="max" value="30" field="selections" scope="self" shared="true" id="383b-3b48-06b3-e62d" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="6b01-ca82-7e61-07c9" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="6b57-e2d7-abde-a32a" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="965e-a410-4022-d873" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="7fbe-c729-e6a0-4d7d" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="6b01-ca82-7e61-07c9"/>
-            <modifier type="set" value="1" field="6b57-e2d7-abde-a32a"/>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5856,21 +6193,7 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce17-2729-76d8-d2e0-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Resistance Command Cards" id="3072-398e-21f3-4ee0" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="a798-5e3a-f75f-8b2b">
-          <rules>
-            <rule name="Ace in the Making" id="b094-65a3-92f6-3084" hidden="false">
-              <description>When you activate a squad with the Fast special rule.
-One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eb51-6539-90bb-5e7d" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Resistance Command Cards" id="3072-398e-21f3-4ee0" hidden="false"/>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Hovercraft" id="6b32-5330-83eb-8625" hidden="false">

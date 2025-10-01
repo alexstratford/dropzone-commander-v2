@@ -4206,32 +4206,337 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="true" id="03ff-b38f-9730-a30c">
+    <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="03ff-b38f-9730-a30c">
       <entryLinks>
         <entryLink import="true" name="Generic Command Cards" hidden="false" id="7750-52ec-f796-b40c" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
-        <entryLink import="true" name="Shaltari Command Cards" hidden="false" id="a6d4-cabc-e608-fc84" type="selectionEntryGroup" targetId="5018-8027-a810-1bfe" sortIndex="1"/>
+        <entryLink import="true" name="Shaltari Command Cards" hidden="false" id="a6d4-cabc-e608-fc84" type="selectionEntryGroup" targetId="5018-8027-a810-1bfe" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 11 - Shield Booster" hidden="false" id="21c6-3e8a-747a-b0bb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1288-73c3-8fcf-e0d6" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 11 - Shield Booster" id="2805-09f9-8c50-65b6" hidden="false">
+                  <description>When an opponent targets a friendly squad in Influence range with a Shooting action.
+
+
+For this Shooting action, that friendly squad reduces its Passive Countermeasures by 2. For example, a squad with 5+ reduces it to 3+ and a squad with no Passive Countermeasures reduces it to 5+. Passive Countermeasures from the Dodge special rule are unaffected.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 1 - Leagues Ahead" hidden="false" id="320a-7a4d-8442-7984">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a1b0-1bc9-08d6-d307" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 1 - Leagues Ahead" id="047f-f5e2-b7ce-b7df" hidden="false">
+                  <description>When an opponent uses a Command Card, play this to negate the effects of that Command Card.
+
+
+Note that you may play a Leagues Ahead/Espionage card on another Leagues Ahead/Espionage card.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 2 - Intel Gathering" hidden="false" id="b4c5-3312-6224-591d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2cae-e193-01fc-bb55" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 2 - Intel Gathering" id="0ae4-9e8a-98d2-369d" hidden="false">
+                  <description>During one of your activations, pick an opponent.
+
+
+That opponent must show you all of the Command Cards from their hand.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 3 - Phase Shift" hidden="false" id="dbb4-4764-b1cf-d205">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="65c8-3dbe-1365-ecfb" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 3 - Phase Shift" id="4fc4-1848-22b7-6197" hidden="false">
+                  <description>When a friendly squad makes a moving action.
+
+
+That squad ignores all scenery and intervening units for that moving action, including impassable scenery.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 4 - Pondering Time" hidden="false" id="7b5b-a329-cc45-e453">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="74c4-f7b4-d653-c120" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 4 - Pondering Time" id="9829-d1dc-740e-68bf" hidden="false">
+                  <description>After discarding Command Cards.
+
+
+Look at the top 5 cards of your command card deck. Put any number on the top of the deck in any order and put the rest on the bottom of the deck in any order.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 5 - Aaru Mulligan" hidden="false" id="3df3-3011-7a70-3a41">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b1ba-c502-d0c0-01a3" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 5 - Aaru Mulligan" id="c6ea-e607-bfb0-4da0" hidden="false">
+                  <description>After drawing Command Cards.
+
+
+Discard your hand of Command Cards, then draw that many plus D3.
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 6 - Shift Fates" hidden="false" id="6972-4363-7a17-d9ea">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="833a-b56c-13b2-4a50" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 6 - Shift Fates" id="7455-0fc9-f8b5-3b1f" hidden="false">
+                  <description>During one of your activations.
+
+
+All players discard a Command Card at random, then draw a Command Card.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 7 - Communication Scrambler" hidden="false" id="66a2-52a0-fdd6-f17f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="325a-8068-b5c8-226e" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 7 - Communication Scrambler" id="826b-f22f-ec89-15d8" hidden="false">
+                  <description>When an opponent activates a Battlegroup.
+
+
+Roll a dice, on a 3+ they must instead activate a different Battlegroup. If no other Battlegroups are able to be activated, they activate the original Battlegroup.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 8 - Shield Modulation" hidden="false" id="fecd-ca93-9431-e783">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d1f0-54a9-8f19-6553" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 8 - Shield Modulation" id="cad0-d4ab-24f8-8766" hidden="false">
+                  <description>When an opponent targets a friendly squad in Influence range with Passive Countermeasures with a Shooting action.
+
+
+You may re-roll all failed Passive Countermeasures saves for that Shooting action against that friendly squad.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 9 - Shield Structure" hidden="false" id="e1fd-eff2-0ddf-f334">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2bfa-628b-a459-5264" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 9 - Shield Structure" id="6949-ab24-ddbb-bc50" hidden="false">
+                  <description>When an opponent targets a garrison containing a friendly infantry squad with a Shooting action.
+
+
+That garrison gains a 5+ Passive Countermeasures save for that Shooting action.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 10 - Microwave Harmonics" hidden="false" id="5307-5cff-d37b-48ec">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f68d-3c86-ca9f-3889" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 10 - Microwave Harmonics" id="747a-1326-2e9b-4230" hidden="false">
+                  <description>When a friendly squad makes a Shooting action.
+
+
+One of that squad’s weapon profiles gains the Airburst special rule for that Shooting action.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 13 - Combat Fervour" hidden="false" id="de5a-6c40-69ca-a57b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dfe3-5588-ea28-d38f" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 13 - Combat Fervour" id="f9e6-ca8f-8aa9-5ec2" hidden="false">
+                  <description>When a friendly Infantry squad would attack with a Close Quarters weapon.
+
+
+That attack can inflict Criticals.
+
+
+Influence range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 12 - Incite Madness" hidden="false" id="e9ef-211f-78c5-3abf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="958f-c07b-307f-8950" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 12 - Incite Madness" id="dbab-d8e4-f04f-47d1" hidden="false">
+                  <description>During one of your activations.
+
+
+Pick an opponent, they shuffle their hand of Command Cards into their Command Card deck and then draws that many Command Cards.
+
+
+Global range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 20 - Horde of Serfs" hidden="false" id="ed88-8aea-9b14-4f15">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="85dc-4ff7-959b-892d" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 20 - Horde of Serfs" id="3d61-3c84-6956-f5f0" hidden="false">
+                  <description>Play when you activate a squad of Pungari.
+
+
+That squad recovers D3 destroyed units up to its starting squad size with their full DP.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 14 - Emergency Teleport" hidden="false" id="9822-3a58-70c2-350a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d655-8493-51fe-7199" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 14 - Emergency Teleport" id="73e3-a22f-8320-b917" hidden="false">
+                  <description>When a friendly squad with any transport requirement and a single unit remaining would be destroyed.
+
+
+That squad is not destroyed and is placed in Holding with 1DP remaining (regardless of starting DP or damage taken) as if it was embarking into a transport. If that squad was carrying an objective, it drops that objective before being placed into Holding.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 15 - Tribal Tactics" hidden="false" id="82d7-0d50-2950-a7a1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1803-8786-2aa0-edec" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 15 - Tribal Tactics" id="b9eb-5260-9103-88c1" hidden="false">
+                  <description>After drawing Command Cards.
+
+
+Search your Command Card Deck for a Command Card, reveal it and add it to your hand. Shuffle your Command Card Deck.
+
+
+Global range.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 16 - Phased Attacks" hidden="false" id="ff35-e585-23c5-9ea2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a9e7-a25e-a4b4-9548" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 16 - Phased Attacks" id="43d6-0cad-d5f2-994b" hidden="false">
+                  <description>Play when a friendly squad makes a Shooting action, before declaring targets. 
+
+
+That squad gains the Penetrative special rule on its weapons for this activation.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 17 - Uncanny Marksmanship" hidden="false" id="9e47-aace-fe0d-330e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="93c3-fcbf-e93a-d790" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 17 - Uncanny Marksmanship" id="b35f-70f6-f80a-343f" hidden="false">
+                  <description>Play when a friendly squad makes a Shooting action, before rolling to hit.
+
+
+The squad’s weapons ignore Accuracy modifiers for this activation.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 18 - Teleport Assault" hidden="false" id="fff3-ab1c-dc3a-6745">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="455f-1838-ce0b-aa54" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 18 - Teleport Assault" id="e6cb-85f7-8418-bf80" hidden="false">
+                  <description>Play when activating a Infantry squad that is in Holding.
+
+
+That Infantry squad may be placed anywhere outside of a Garrison within range as if it was disembarked by an aerial transport’s free disembark.
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shaltari 19 - Micro Singularity " hidden="false" id="2b31-dffe-1b69-4e13">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="38c5-72b5-f84f-39d3" includeChildSelections="true"/>
+              </constraints>
+              <rules>
+                <rule name="Shaltari 19 - Micro Singularity " id="c712-51f1-61af-e568" hidden="false">
+                  <description>Play when you destroy a Garrison.
+
+
+Units inside that Garrison are automatically destroyed instead of rolling for damage.
+
+
+Influence range. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="30" field="selections" scope="self" shared="true" id="5434-5d41-0ee3-b816" includeChildSelections="true"/>
         <constraint type="max" value="30" field="selections" scope="self" shared="true" id="01bd-1b83-394d-f4f8" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="802d-82a0-7261-cb58" includeChildSelections="true"/>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="109e-be2e-775b-223e" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c66-8532-99dd-31fb" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="2779-45d2-9396-56b9" targetId="8a9e-8399-ae64-5be9" primary="true"/>
       </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="1" field="802d-82a0-7261-cb58"/>
-            <modifier type="set" value="1" field="109e-be2e-775b-223e"/>
-            <modifier type="set" value="false" field="hidden"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0a4c-47ea-3135-9429" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -4304,6 +4609,7 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
     <entryLink import="true" name="Apep the Godeater - Crocodile Heavy Gravtank" hidden="false" id="f8ba-daa9-b49f-716a" type="selectionEntry" targetId="ee17-3d29-95aa-3135"/>
     <entryLink import="true" name="Ramses the Fireborn - Puma Sonic Warstrider" hidden="false" id="987c-7933-fff7-961e" targetId="96aa-91d3-753c-0e7b" type="selectionEntry"/>
     <entryLink import="true" name="Ramses&apos; Firesworn " hidden="false" id="002d-3fcf-82eb-4111" targetId="9f95-98d2-322c-8f08" type="selectionEntry"/>
+    <entryLink import="true" name="Command Cards" hidden="false" id="f31b-80c0-b69a-7687" targetId="03ff-b38f-9730-a30c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Yari Light Gravtank Weapon Selection" id="fbc5-b3cc-cfa7-83ee" hidden="false" collective="true">
@@ -4680,21 +4986,7 @@ Shuffle your hand into your Command Card Deck, then draw five Command Cards.</
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6684-7d9f-65f3-c9af-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Shaltari Command Cards" id="5018-8027-a810-1bfe" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ace in the Making" hidden="false" id="3b7f-38ec-416b-6fb9">
-          <rules>
-            <rule name="Ace in the Making" id="55a8-9c31-3a78-733c" hidden="false">
-              <description>When you activate a squad with the Fast special rule.
-One unit in that squad ignores all modifiers (positive and negative) to its weapons Accuracy until the end of its activation</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5f1d-7365-ab1d-4df9" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Shaltari Command Cards" id="5018-8027-a810-1bfe" hidden="false"/>
   </sharedSelectionEntryGroups>
   <profileTypes>
     <profileType name="Shaltari Light Hull" id="1f6a-0300-e145-f89c" hidden="false">
