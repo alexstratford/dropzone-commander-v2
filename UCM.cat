@@ -4438,17 +4438,29 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Cards" hidden="false" id="00dc-802a-547b-9018">
       <entryLinks>
-        <entryLink import="true" name="Generic Command Cards" hidden="false" id="ad9b-2186-959b-6734" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389"/>
-        <entryLink import="true" name="UCM Command Cards" hidden="false" id="323d-b464-3763-e19c" type="selectionEntryGroup" targetId="6a35-bbdf-02db-beb3" sortIndex="1"/>
+        <entryLink import="true" name="Generic Command Cards" hidden="false" id="ad9b-2186-959b-6734" type="selectionEntryGroup" targetId="f5ba-c702-7018-4389">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="6f07-f4a0-5a28-893e" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="UCM Command Cards" hidden="false" id="323d-b464-3763-e19c" type="selectionEntryGroup" targetId="6a35-bbdf-02db-beb3" sortIndex="1">
+          <categoryLinks>
+            <categoryLink targetId="f628-713d-67d7-f842" id="d8bb-aab3-93dd-2215" primary="false" name="Command Card"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="30" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min" includeChildSelections="true"/>
-        <constraint type="max" value="30" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-max" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min-min" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="selections" scope="self" shared="true" id="8d4f-8fd4-60d3-4729-min-max" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b16a-d2cb-8db7-51ef" includeChildSelections="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="8a9e-8399-ae64-5be9" id="221e-779a-29d9-f573" primary="true" name="Configuration"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="30" field="8d4f-8fd4-60d3-4729-min-min"/>
+        <modifier type="set" value="30" field="8d4f-8fd4-60d3-4729-min-max"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
@@ -5337,6 +5349,9 @@ Global range.</description>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="f628-713d-67d7-f842" id="c4f5-c072-df2e-f29f" primary="false" name="Command Card"/>
+      </categoryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
