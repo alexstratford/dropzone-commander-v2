@@ -23,6 +23,11 @@
         <modifier type="set" value="false" field="hidden"/>
       </modifiers>
     </costType>
+    <costType name="Command Cards" id="8245-1492-f1e6-1e20" defaultCostLimit="30" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden"/>
+      </modifiers>
+    </costType>
   </costTypes>
   <profileTypes>
     <profileType id="576561706f6e23232344415441232323" name="Weapon">

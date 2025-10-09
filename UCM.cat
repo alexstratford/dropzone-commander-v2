@@ -4461,6 +4461,11 @@ passed, this unit loses the Leg Stabilisers special rule.</characteristic>
             <condition type="notEqualTo" value="30" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="8245-1492-f1e6-1e20">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="self" childId="f628-713d-67d7-f842" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
