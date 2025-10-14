@@ -4300,14 +4300,14 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
           <profiles>
             <profile name="Heavy Battle-Mech" typeId="92bd-be74-95c9-05cf" typeName="UCM Heavy Weapons" hidden="false" id="b759-6890-75ac-d1d6">
               <characteristics>
-                <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">5</characteristic>
-                <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">5</characteristic>
+                <characteristic name="Weapons" typeId="790d-ede3-f03d-843c">9</characteristic>
+                <characteristic name="Weapons" typeId="7c5b-f73e-689b-8eb4">9</characteristic>
                 <characteristic name="Crippled Result" typeId="f7f9-ca6b-8689-452f"/>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="One UMH-1 Mass Driver cannot be used for the rest of the game." field="name"/>
+                    <modifier type="set" value="One UMH-1 Mass Driver cannot be used for the rest of the game." field="f7f9-ca6b-8689-452f"/>
                     <modifier type="set" value="America Heavy Battle-Mech" field="name"/>
                   </modifiers>
                   <conditions>
@@ -4316,7 +4316,7 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
                 </modifierGroup>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="set" value="One UMH-9 Stromcrow Cannon cannot be used for the rest of the game" field="name"/>
+                    <modifier type="set" value="One UMH-9 Stromcrow Cannon cannot be used for the rest of the game" field="f7f9-ca6b-8689-452f"/>
                     <modifier type="set" value="Japan Heavy Battle-Mech" field="name"/>
                   </modifiers>
                   <conditions>
@@ -4327,8 +4327,8 @@ used to combine shots from the whole squad. Starsprite Drones always have the Sc
             </profile>
             <profile name="Heavy Battle-Mech" typeId="a930-add9-74a3-1505" typeName="UCM Heavy Hull" hidden="false" id="c0f4-19f5-dc17-d7c0">
               <characteristics>
-                <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">7</characteristic>
-                <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">7</characteristic>
+                <characteristic name="Hull" typeId="bfa5-72bc-fcaf-8f30">9</characteristic>
+                <characteristic name="Hull" typeId="b6f8-1b58-bc2f-e84e">9</characteristic>
                 <characteristic name="Crippled Result" typeId="6129-0fa5-4c85-3e7c">This unit reduces its Armour by 2, and one Missile Battery cannot be
 used for the rest of the game.</characteristic>
               </characteristics>
