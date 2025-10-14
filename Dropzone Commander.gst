@@ -2030,7 +2030,7 @@ Total 18+ = Energy 11, Devastator-2 (Vehicle, Behemoth), Devastator-3 (Scenery)<
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fca2-d32d-6ba5-8e55" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
