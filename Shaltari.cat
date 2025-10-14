@@ -1983,8 +1983,8 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cb3-8d2a-c800-563c" includeChildSelections="false"/>
-                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="0f06-a10d-db6c-6ec2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cb3-8d2a-c800-563c" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0f06-a10d-db6c-6ec2" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Climber" id="f817-eb3e-4428-1142" hidden="false" type="rule" targetId="b86d-8f1a-3fbf-e4bd"/>
