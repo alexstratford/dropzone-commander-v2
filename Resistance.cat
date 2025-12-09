@@ -907,6 +907,17 @@ Target a destructible scenery piece within 6” of this unit. Roll a dice for e
                 <characteristic name="E" typeId="456e6572677923232344415441232323">5</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, Reduced-1</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="6" field="456e6572677923232344415441232323" join=", "/>
+                  </modifiers>
+                  <comment>Kalium Volunteers</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7b9c-7171-e030-f89a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
             <profile name="Plasma Rifles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="true" id="0097-ba32-e1cc-9001">
               <characteristics>
