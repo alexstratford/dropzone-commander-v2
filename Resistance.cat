@@ -3469,7 +3469,7 @@ To select this, go to Configuration and select the background there</description
               <infoLinks>
                 <infoLink name="Command Centre" id="1699-07ea-0e78-f45e" hidden="false" type="rule" targetId="69c8-c7bd-0b67-dfbe"/>
                 <infoLink name="Large" id="fe17-451b-9e0a-e058" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
-                <infoLink name="Hovercraft" id="246f-27e8-9090-12f6" hidden="false" type="rule" targetId="6b32-5330-83eb-8625"/>
+                <infoLink name="Hovercraft" id="246f-27e8-9090-12f6" hidden="false" type="rule" targetId="8b27-af38-4a57-5992"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f5c-b667-39b3-40c2" includeChildSelections="false"/>
@@ -4226,7 +4226,7 @@ To select this, go to Configuration and select the background there</description
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Hovercraft" id="e76a-1d14-7e0c-6aab" hidden="false" type="rule" targetId="6b32-5330-83eb-8625"/>
+                <infoLink name="Hovercraft" id="e76a-1d14-7e0c-6aab" hidden="false" type="rule" targetId="8b27-af38-4a57-5992"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="90MM Cannon" hidden="false" id="5bf0-ab58-c478-35ce" type="selectionEntry" targetId="5901-3d25-60bf-381f"/>
@@ -4310,7 +4310,7 @@ To select this, go to Configuration and select the background there</description
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Hovercraft" id="01b0-5f25-281f-ffb5" hidden="false" type="rule" targetId="6b32-5330-83eb-8625"/>
+                <infoLink name="Hovercraft" id="01b0-5f25-281f-ffb5" hidden="false" type="rule" targetId="8b27-af38-4a57-5992"/>
                 <infoLink name="Large" id="77b2-c2ee-92a6-e2ec" hidden="false" type="rule" targetId="45e1-bc6d-e75c-45a2"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -6024,13 +6024,15 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="AA-X" id="871a-9329-4e59-55ae" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
           </infoLinks>
           <costs>
+            <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rocket Launcher Battery" hidden="false" id="2723-a8d6-2896-768d" collective="true" sortIndex="1">
@@ -6053,13 +6055,15 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
             <infoLink name="Focus-X" id="7277-7848-cdd2-ba16" hidden="false" type="rule" targetId="5d31-f577-8070-6820"/>
           </infoLinks>
           <costs>
+            <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="15"/>
+            <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="10"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6229,6 +6233,12 @@ Resistance Veteran squads gain Machine Pistols and the Dodge 5+ special rule.</d
     </rule>
     <rule name="Hover Mode" id="80a1-8501-41f9-82b6" hidden="false">
       <description>If this unit moves 10” or less, a squad disembarking out of it gains Rapid Insertion until the end of the round.</description>
+    </rule>
+    <rule name="Hovercraft" id="8b27-af38-4a57-5992" hidden="false">
+      <description>When a unit disembarks from this unit, measure from any point on its edge rather than the centre. a disembarking unit suffers only a +1 penalty to its Accuracy instead of a +2, and can target Aircraft in the same round.
+
+Additionally, this unit does not have to start the game In Reserve, ignoring the Aerial Advantage rule.</description>
+      <comment>Hovercraft (Transports)</comment>
     </rule>
   </sharedRules>
   <profileTypes>

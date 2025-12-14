@@ -539,7 +539,7 @@ Until the end of the turn, your weapons with M&amp;F of 0” to 2&quot; may re-
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Light Gravtank Transport Selection" hidden="false" id="5bb2-ea5b-4678-23db" type="selectionEntryGroup" targetId="4ad1-c263-af99-b8e7"/>
+                <entryLink import="true" name="Light Gravtank Transport Selection" hidden="false" id="5bb2-ea5b-4678-23db" type="selectionEntryGroup" targetId="4e39-e76a-9211-faee"/>
               </entryLinks>
               <profiles>
                 <profile name="Tate Light Gravtank" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="d1e0-22b3-f118-9c56">
@@ -4681,12 +4681,14 @@ Influence range.</description>
         <selectionEntry type="upgrade" import="true" name="Infantry Transport" hidden="false" id="9ce5-bf79-a5d3-3f1f" defaultAmount="1" collective="true">
           <costs>
             <cost name="pts" typeId="points" value="0"/>
-            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="1"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
             <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Vehicle Transport" hidden="false" id="af42-bf13-9334-5749" collective="true">
@@ -4694,11 +4696,12 @@ Influence range.</description>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
             <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
-            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="1"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
             <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
             <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
             <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
             <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5004,6 +5007,40 @@ Influence range.</description>
       </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Shaltari Command Cards" id="5018-8027-a810-1bfe" hidden="false"/>
+    <selectionEntryGroup name="Light Gravtank Transport Selection" id="4e39-e76a-9211-faee" hidden="false" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infantry Transport" hidden="false" id="6535-4bde-03f8-cb40" defaultAmount="1" collective="true">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="2"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="0"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vehicle Transport" hidden="false" id="41e3-d7dc-0965-08df" collective="true">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Infantry_Req" typeId="466e-b8ec-f298-b782" value="0"/>
+            <cost name="Light_Req" typeId="f4ee-4eec-0c72-6c13" value="0"/>
+            <cost name="Tank_Req" typeId="1832-e9be-1e78-02df" value="2"/>
+            <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
+            <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
+            <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
+            <cost name="pts" typeId="201f-b481-6ccf-6a5f" value="0"/>
+            <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0a5-a647-2463-f2e1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba8c-03b1-df09-ab7f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <profileTypes>
     <profileType name="Shaltari Light Hull" id="1f6a-0300-e145-f89c" hidden="false">
