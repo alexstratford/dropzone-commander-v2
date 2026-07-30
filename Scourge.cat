@@ -902,7 +902,8 @@ Increase the Energy of the Collateral Damage caused by that attack to 6. When 
                 <cost name="Faction3_Req" typeId="5bb1-3f94-8396-e8d2" value="0"/>
                 <cost name="Faction1_Req" typeId="adf6-547d-2c51-e81a" value="0"/>
                 <cost name="Faction2_Req" typeId="1657-edf7-a484-c3e7" value="0"/>
-                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="50"/>
+                <cost name="A_pts" typeId="201f-b481-6ccf-6a5f" value="40"/>
+                <cost name="Command Cards" typeId="8245-1492-f1e6-1e20" value="0"/>
               </costs>
               <profiles>
                 <profile name="Brigand Interceptor" typeId="b88a-b68e-168b-9f28" typeName="Unit" hidden="false" id="3e63-a56c-f665-ea83">

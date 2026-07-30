@@ -1430,26 +1430,11 @@ Move friendly units up to 6” per hit, or enemy units up to 3” per hit. This 
                 <characteristic name="E" typeId="456e6572677923232344415441232323">7</characteristic>
                 <characteristic name="Special" typeId="25ff-0caf-af0d-995f">Alt-1, AA-3</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="replace" field="25ff-0caf-af0d-995f" arg="Alt-1, ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3a-b39b-f357-6a46" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="AA-X" id="51ff-288f-8148-9959" hidden="false" type="rule" targetId="9545-9da8-9b0d-8936"/>
-            <infoLink name="Alt-X" id="c1c0-e7a0-b6f2-3db4" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden" arg="Alt-1, ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3a-b39b-f357-6a46" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Alt-X" id="c1c0-e7a0-b6f2-3db4" hidden="false" type="rule" targetId="b470-85c7-b67e-8dc4"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b91d-f7b1-57d9-a421" includeChildSelections="false"/>
